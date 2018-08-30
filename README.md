@@ -1,7 +1,7 @@
 # Todoyu for PHP7!
 
-This is the latest version of `todoyu` modded to work with PHP 7.x
-Worked all the bugs I could find so far.
+This is the latest version of `todoyu` modded to work with PHP 7.x.
+I worked all the bugs I could find so far.
 
 # Todoyu Project Management
 
