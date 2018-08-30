@@ -13,3 +13,17 @@ as well as MySQLi.
 
 Enjoy.
 
+Please create issues here to submit your bugs.
+
+We have been thinking of continuing support for `todoyu` (since we
+actively use it). We would also like to get your feedback on which features
+or integrations you would like added. Any useful APIs that would take
+Todoyu to do next level?
+
+We are also taking suggestions on new names for this revival fork.
+
+If you like this revival, Please buy us a beer :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/edimensionz)
+
+
