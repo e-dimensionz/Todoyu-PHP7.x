@@ -10,8 +10,3 @@ Tracking and Team Collaboration. This is a fork created from the [SVN
 repository] using [svn2git] in February, 2014. I may or may not rebase
 this repository to include later changes.
 
-
-~~~
-# git clone https://github.com/sebfisch/todoyu
-# git submodule update --init
-~~~
