@@ -17,6 +17,8 @@ ExpiresByType application/x-javascript "access plus 1 week"
 # dont add ETag statenent into response of file based documents:
 FileETag none
 
+Options +FollowSymLinks
+
 <IfModule mod_deflate.c>
 # compress text/ html/ xml/ javascript / json output:
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/json
