@@ -1,0 +1,16 @@
+todoyu imap extension changelog
+
+imap 1.0.2 - 2013-05-03
+	* Changes: added config for certification validation author: mbaumgaertner
+
+imap 1.0.1 - 2013-04-19
+	* Bugfix: Deletion of an address mapped to wrong method
+	* Bugfix: charstet detection
+
+imap 1.0.0 - 2013-01-22
+	* Bugfixes and general improvements
+	* Store messages in subfolders
+	* Custom mailbox config to support new mail server
+
+imap 0.9.0 - 2012-07-11
+	* Initial internal release

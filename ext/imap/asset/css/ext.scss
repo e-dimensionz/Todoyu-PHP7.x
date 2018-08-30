@@ -1,0 +1,38 @@
+/* ----------------------------------------------
+	Extension icon: stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconImap {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconImap .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+
+.fElement.typeRecords.recordsMailAddress .recordIcon {
+	background:url(../img/icons.png) no-repeat 0 2px;
+}
+
+
+
+/* ------------------------
+	Record items
+   ------------------------ */
+.fElement.typeRecords .typeImapaddress .recordIcon {
+	background:url(../img/icons.png) no-repeat 0 0;
+}
+
+
+.fElement.typeRecords.recordsPersonAndAddress {
+	.imapaddress {
+		.recordIcon {
+			background:url(../img/icons.png) no-repeat 0 0;
+		}
+	}
+	.contactperson {
+		.recordIcon {
+			background:url(../../../contact/asset/img/icons.png) no-repeat 0 -420px;
+		}
+	}
+}

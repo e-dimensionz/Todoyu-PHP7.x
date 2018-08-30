@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">imap email address</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>imap.form.legend.admin.address.record.basics</legend>
+			<elements>
+
+				<field type="text" name="address">
+					<label>imap.ext.record.address.attr.address</label>
+					<required />
+				</field>
+
+				<field type="text" name="name">
+					<label>imap.ext.record.address.attr.name</label>
+				</field>
+
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

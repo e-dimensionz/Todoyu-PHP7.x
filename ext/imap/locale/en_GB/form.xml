@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.admin.account.record.basics">IMAP Account</label>
+	<label index="legend.admin.address.record.basics">Email Address</label>
+</labels>

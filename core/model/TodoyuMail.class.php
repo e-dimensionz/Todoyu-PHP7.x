@@ -552,7 +552,7 @@ class TodoyuMail extends PHPMailer {
 	 * @param	String		$name
  	 * @return	Boolean
 	 */
-	public function addAttachment($path, $name) {
+	public function addAttachment($path, $name = '', $encoding = 'base64', $type = 'application/octet-stream') {
 		$path	= TodoyuFileManager::pathAbsolute($path);
 
 		return parent::AddAttachment($path, $name);
@@ -591,7 +591,7 @@ class TodoyuMail extends PHPMailer {
 	 *
 	 * @param	TodoyuMailReceiverInterface		$mailReceiver
 	 */
-	public function addReplyTo(TodoyuMailReceiverInterface $mailReceiver) {
+	public function addReplyTo($mailReceiver, $name ='') {
 		$this->_replyto[] = $mailReceiver;
 	}
 
@@ -614,7 +614,7 @@ class TodoyuMail extends PHPMailer {
 	 * @param TodoyuMailReceiverInterface $mailReceiver
 	 * @return bool|void
 	 */
-	public function addCC(TodoyuMailReceiverInterface $mailReceiver) {
+	public function addCC($mailReceiver, $name = '') {
 		$this->_cc[] = $mailReceiver;
 	}
 

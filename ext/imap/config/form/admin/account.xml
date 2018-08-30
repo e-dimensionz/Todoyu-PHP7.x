@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>imap.form.legend.admin.account.record.basics</legend>
+			<elements>
+
+				<field type="checkbox" name="is_active">
+					<label>imap.ext.record.account.attr.is_active</label>
+				</field>
+
+				<field type="text" name="host">
+					<label>imap.ext.record.account.attr.host</label>
+					<required />
+				</field>
+
+				<field type="text" name="username">
+					<label>imap.ext.record.account.attr.username</label>
+					<required />
+				</field>
+
+				<field type="text" name="password">
+					<label>imap.ext.record.account.attr.password</label>
+					<type>password</type>
+					<required>
+						<noCheck />
+					</required>
+				</field>
+
+				<field type="text" name="port">
+					<label>imap.ext.record.account.attr.port</label>
+					<default>143</default>
+					<extraAttributes>onkeyup="Todoyu.Form.assistNumericInput(this,true)"</extraAttributes>
+					<required />
+				</field>
+
+				<field type="text" name="folder">
+					<label>imap.ext.record.account.attr.folder</label>
+					<default>INBOX</default>
+				</field>
+
+				<field type="text" name="delimiter">
+					<label>imap.ext.record.account.attr.delimiter</label>
+					<default>.</default>
+					<maxlength>1</maxlength>
+				</field>
+
+				<field type="checkbox" name="use_starttls">
+					<label>imap.ext.record.account.attr.use_starttls</label>
+				</field>
+
+				<field type="checkbox" name="use_ssl">
+					<label>imap.ext.record.account.attr.use_ssl</label>
+				</field>
+
+				<field type="checkbox" name="cert_novalidate">
+					<label>imap.ext.record.account.attr.cert_novalidate</label>
+				</field>
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

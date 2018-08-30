@@ -90,7 +90,7 @@ abstract class TodoyuFormElement_Records extends TodoyuFormElement {
 	 *
 	 * @param	Array		$value
 	 */
-	public function setValue($value) {
+	public function setValue($value, $updateForm = true) {
 		$value	= TodoyuArray::assure($value);
 		$first	= reset($value);
 

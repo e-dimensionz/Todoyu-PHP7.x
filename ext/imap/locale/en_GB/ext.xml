@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">IMAP Mail Import</label>
+	<label index="title">IMAP Mail Import</label>
+	<label index="account">IMAP Account</label>
+	<label index="address">Email Address</label>
+	<label index="message">Message</label>
+	<label index="record.address.description">Email Addresses collected from incomming messages</label>
+	<label index="record.account.description">IMAP account connection settings</label>
+	<label index="record.account.attr.is_active">Active</label>
+	<label index="record.account.attr.title">Account Label</label>
+	<label index="record.account.attr.host">Host name (e.g. mail.example.com)</label>
+	<label index="record.account.attr.username">Username (e.g. name@example.com)</label>
+	<label index="record.account.attr.password">Password</label>
+	<label index="record.account.attr.port">Port (default: 143)</label>
+	<label index="record.account.attr.folder">Base Folder (norm. INBOX)</label>
+	<label index="record.account.attr.delimiter">Folder separator</label>
+	<label index="record.account.attr.use_starttls">Use START TLS (:143)</label>
+	<label index="record.account.attr.use_ssl">Use SSL (:993)</label>
+	<label index="record.account.attr.cert_novalidate">Don't validate certificate</label>
+	<label index="record.address.attr.address">Email Address</label>
+	<label index="record.address.attr.name">Person Name</label>
+	<label index="inlineImageReplacement">IMAGE</label>
+</labels>
