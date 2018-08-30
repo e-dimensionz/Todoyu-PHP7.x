@@ -22,9 +22,17 @@ spl_autoload_register(function ($class_name) {
 	{
 		require_once $_SERVER['DOCUMENT_ROOT']."/ext/imap/model/".$class_name.".class.php";
 	}
-	if(file_exists($_SERVER['DOCUMENT_ROOT']."/ext/imap/controller/".$class_name.".php"))
+	if(file_exists($_SERVER['DOCUMENT_ROOT']."/ext/imap/controller/".$class_name.".class.php"))
 	{
-		require_once $_SERVER['DOCUMENT_ROOT']."/ext/imap/model/".$class_name.".php";
+		require_once $_SERVER['DOCUMENT_ROOT']."/ext/imap/model/".$class_name.".class.php";
+	}
+	if(file_exists($_SERVER['DOCUMENT_ROOT']."/ext/admin/controller/".$class_name.".class.php"))
+	{
+		require_once $_SERVER['DOCUMENT_ROOT']."/ext/admin/controller/".$class_name.".class.php";
+	}
+	if(file_exists($_SERVER['DOCUMENT_ROOT']."/ext/admin/model/".$class_name.".class.php"))
+	{
+		require_once $_SERVER['DOCUMENT_ROOT']."/ext/admin/model/".$class_name.".class.php";
 	}
 });
 	// Add allowed paths where files can be downloaded from

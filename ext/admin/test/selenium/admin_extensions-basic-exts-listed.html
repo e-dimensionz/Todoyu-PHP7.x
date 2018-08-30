@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>admin > extensions - basic extensions listed?</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">admin > extensions - basic extensions listed?</td></tr>
+</thead><tbody>
+<!------ admin > extensions list - basic extensions listed?-->
+<!--ensure extensions list to be active-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--check presents of basic extensions-->
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[2]/td[2]</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[3]/td[2]</td>
+	<td>assets</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[4]/td[2]</td>
+	<td>bookmark</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[5]/td[2]</td>
+	<td>calendar</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[6]/td[2]</td>
+	<td>comment</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[7]/td[2]</td>
+	<td>contact</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[8]/td[2]</td>
+	<td>daytracks</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[9]/td[2]</td>
+	<td>firststeps</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[10]/td[2]</td>
+	<td>loginpage</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[11]/td[2]</td>
+	<td>portal</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[12]/td[2]</td>
+	<td>profile</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[13]/td[2]</td>
+	<td>project</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[14]/td[2]</td>
+	<td>search</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[15]/td[2]</td>
+	<td>sysmanager</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content-body']/table/tbody/tr[16]/td[2]</td>
+	<td>timetracking</td>
+</tr>
+</tbody></table>
+</body>
+</html>

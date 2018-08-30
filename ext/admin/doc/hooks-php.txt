@@ -1,0 +1,4 @@
+Admin Extension - PHP Hooks
+===========================
+
+No hooks

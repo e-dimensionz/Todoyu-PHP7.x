@@ -1,0 +1,2 @@
+Admin Extension - JavaScript Hooks
+==================================

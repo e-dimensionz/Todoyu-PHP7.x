@@ -1,0 +1,9 @@
+#panelwidget-adminmodules h1 .title {
+	background:url(../img/icons.png) no-repeat 6px 5px;
+}
+
+#panelwidget-adminmodules li {}
+
+#panelwidget-adminmodules li:hover {
+	background-color:#e3eace;
+}
