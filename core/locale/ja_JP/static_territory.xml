@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="num2.name">アフリカ</label>
+	<label index="num9.name">オセアニア</label>
+	<label index="num19.name">アメリカ</label>
+	<label index="num142.name">アジア</label>
+	<label index="num150.name">ヨーロッパ</label>
+	<label index="num30.name">東アジア</label>
+	<label index="num35.name">東南アジア</label>
+	<label index="num62.name">南中央アジア</label>
+	<label index="num145.name">西アジア</label>
+	<label index="num39.name">南ヨーロッパ</label>
+	<label index="num151.name">東ヨーロッパ</label>
+	<label index="num154.name">北ヨーロッパ</label>
+	<label index="num155.name">西ヨーロッパ</label>
+	<label index="num830.name">チャンネル諸島</label>
+	<label index="num833.name">マン島</label>
+	<label index="num5.name">南アメリカ</label>
+	<label index="num13.name">中央アメリカ</label>
+	<label index="num21.name">北アメリカ</label>
+	<label index="num29.name">カリブ海</label>
+	<label index="num11.name">西アフリカ</label>
+	<label index="num14.name">東アフリカ</label>
+	<label index="num15.name">北アフリカ</label>
+	<label index="num17.name">中部アフリカ</label>
+	<label index="num18.name">南アフリカ</label>
+	<label index="num53.name">オーストラリアとニュージーランド</label>
+	<label index="num54.name">メラネシア</label>
+	<label index="num57.name">ミクロネシア地域</label>
+	<label index="num61.name">ポリネシア</label>
+</labels>

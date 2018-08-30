@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Gestão de Horas</label>
+	<label index="title">Gestão de Horas</label>
+	<label index="noTracksYet">Nenhum Registro</label>
+	<label index="attr.date_create">Data</label>
+	<label index="attr.date_track">Data</label>
+	<label index="attr.workload_tracked">Workload</label>
+	<label index="attr.workload_chargeable">Honorários</label>
+	<label index="attr.comment">Nota</label>
+	<label index="search.label">Gestão de Horas</label>
+	<label index="task.attr.overtimed">Tarefa Overbooked</label>
+	<label index="headlet.label">Gestão de Horas</label>
+	<label index="totalTrackedTime">Total de Horas</label>
+	<label index="tasktab.edit">Click Aqui para Editar Este Registro</label>
+	<label index="start">Iniciar Gestão de Horas</label>
+	<label index="stop">Parar Gestão de Horas</label>
+	<label index="currentTask">Tarefa Atual</label>
+	<label index="showCurrentTaskInProject">Exibir Tarefa no Projeto</label>
+	<label index="quicktask.workload_done">Horas Já Trabalhadas</label>
+	<label index="estimated_workload">Est. Workload</label>
+	<label index="jumpToTask">Click aqui para ir a esta tarefa</label>
+	<label index="jumpToProject">Click aqui para ir a este projeto</label>
+	<label index="extconf.stopOnLogout">Parar Gestão Se As Pessoas Fizerem Logoff</label>
+</labels>

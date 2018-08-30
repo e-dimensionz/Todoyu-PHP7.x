@@ -1,0 +1,290 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/*  -------------------------------------------------------
+	Project & Task common context menu items:
+
+	e.g. "Show inside project"-option for tasks and projects
+	in listview in "foreign" areas (e.g. portal, search)
+	--------------------------------------------------------*/
+/*a.task-showinproject,*/
+/*a.projectContextMenu.showInProject {*/
+	/*background-image:url('../img/contextmenu.png') !important;*/
+	/*background-position:3px -689px !important;*/
+/*}*/
+
+
+
+
+/* --------------------------
+	Project context menu
+   -------------------------- */
+#contextmenu .projectContextMenu {
+	background-image:url('../img/contextmenu.png');
+}
+
+#contextmenu .taskContextMenu.showInProject,
+#contextmenu .projectContextMenu.showInProject {
+	background-position:3px -689px;
+}
+
+#contextmenu .taskContextMenu.editInProject,
+#contextmenu .projectContextMenu.editInProject {
+	background-position:3px -838px;
+}
+
+#contextmenu .projectDetails {
+	background-position:3px -718px;
+}
+
+#contextmenu .projectStatus {
+	background-position:3px 3px;
+}
+
+#contextmenu .projectEdit {
+	background-position:3px -748px;
+}
+
+#contextmenu .projectDelete {
+	background-position:3px -778px;
+}
+
+#contextmenu .projectAddTask {
+	background-position:3px -85px;
+}
+
+#contextmenu .projectAddContainer {
+	background-position:3px -115px;
+}
+
+#contextmenu .projectContextMenu.taskPaste {
+	background-position:3px -808px;
+}
+
+
+
+/* ---------------------------
+	Task context menu
+   --------------------------- */
+#contextmenu .taskContextMenu {
+	background-image:url(../img/contextmenu.png);
+}
+
+#contextmenu .status ul li a {
+	background-image:url(../img/projectstatus.png);
+}
+	#contextmenu .status ul li a.taskContextMenu {
+		background-image:url(../img/taskstatus.png) !important;
+	}
+
+#contextmenu .task-showinproject {
+	background-position:3px -718px;
+}
+
+#contextmenu .taskEdit {
+	background-position:3px -28px;
+}
+
+#contextmenu .taskActions {
+	background-position:3px -297px;
+}
+
+#contextmenu .taskCopy {
+	background-position:3px -387px;
+}
+
+#contextmenu .taskCut {
+	background-position:3px -327px;
+}
+
+#contextmenu .taskClone {
+	background-position:3px -147px;
+}
+
+#contextmenu .taskDelete {
+	background-position:4px -56px;
+}
+
+#contextmenu .taskPaste {
+	background-position:3px -537px;
+}
+#contextmenu .taskPaste.disabled {
+	background-position:3px -657px;
+}
+
+#contextmenu .taskPasteIn {
+	background-position:3px -567px;
+}
+
+#contextmenu .taskPasteBefore {
+	background-position:3px -628px;
+}
+
+#contextmenu .taskPasteAfter {
+	background-position:3px -598px;
+}
+
+#contextmenu .taskAdd {
+	background-position:3px -177px;
+}
+
+#contextmenu .taskAddTask {
+	background-position:3px -87px;
+}
+
+#contextmenu .taskAddContainer {
+	background-position:3px -117px;
+}
+
+
+
+/* --------------------------------
+	Change task status icons
+   -------------------------------- */
+#contextmenu .taskStatus {
+	background-position:3px 3px;
+}
+
+#contextmenu .taskStatusPlanning {
+	background-position:4px 3px;
+}
+
+#contextmenu .taskStatusOpen {
+	background-position:4px -27px;
+}
+
+#contextmenu .taskStatusProgress {
+	background-position:4px -57px;
+}
+
+#contextmenu .taskStatusConfirm {
+	background-position:4px -90px;
+}
+
+#contextmenu .taskStatusDone {
+	background-position:4px -117px;
+}
+
+#contextmenu .taskStatusAccepted {
+	background-position:4px -117px;
+}
+
+#contextmenu .taskStatusRejected {
+	background-position:4px -147px;
+}
+
+#contextmenu .taskStatusCleared {
+	background-position:4px -177px;
+}
+
+#contextmenu .taskStatusWarranty {
+	background-position:4px -237px;
+}
+
+#contextmenu .taskStatusAccepted {
+	background-position:4px -267px;
+}
+
+#contextmenu .taskStatusWaiting {
+	background-position:4px -297px;
+}
+
+
+
+/* --------------------------------
+	Change project status icons
+   -------------------------------- */
+#contextmenu .projectStatus {
+	background-position:3px 3px;
+}
+
+#contextmenu .projectStatusPlanning {
+	background-position:4px 2px;
+}
+
+#contextmenu .projectStatusOpen {
+	background-position:4px -27px;
+}
+
+#contextmenu .projectStatusProgress {
+	background-position:4px -57px;
+}
+
+#contextmenu .projectStatusConfirm {
+	background-position:4px -87px;
+}
+
+#contextmenu .projectStatusDone {
+	background-position:4px -114px;
+}
+
+#contextmenu .projectStatusAccepted {
+	background-position:4px -117px;
+}
+
+#contextmenu .projectStatusRejected {
+	background-position:4px -147px;
+}
+
+#contextmenu .projectStatusCleared {
+	background-position:4px -174px;
+}
+
+#contextmenu .projectStatusWarranty {
+	background-position:4px -234px;
+}
+
+#contextmenu .projectStatusAccepted {
+	background-position:4px -267px;
+}
+
+
+
+/* ---------------------------
+	Container context menu
+   --------------------------- */
+#contextmenu .containerEdit {
+	background-position:3px -207px;
+}
+
+#contextmenu .containerAdd {
+	background-position:3px -177px;
+}
+
+#contextmenu .containerActions {
+	background-position:3px -508px;
+}
+
+#contextmenu .containerCopy {
+	background-position:3px -418px;
+}
+
+#contextmenu .containerCut {
+	background-position:3px -447px;
+}
+
+#contextmenu .containerClone {
+	background-position:3px -479px;
+}
+
+#contextmenu .containerDelete {
+	background-position:3px -237px;
+}
+
+#contextmenu .containerAddTask {
+	background-position:3px -87px;
+}
+
+#contextmenu .containerAddContainer {
+	background-position:3px -117px;
+}
+
+/* ---------------------------
+	Paste Warning
+   --------------------------- */
+
+#contextmenu .pastewarning a {
+	padding-left:10px;
+	background:#f6f4de none;
+}

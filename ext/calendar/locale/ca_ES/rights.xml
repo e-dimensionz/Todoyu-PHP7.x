@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General</label>
+	<label index="general.use">Utiliza la funcionalitat del calendari</label>
+	<label index="general.area">Utilitzar l'àrea del calendari</label>
+	<label index="event"Cita</label>
+	<label index="event.seeAll">Mostrar totes les cites</label>
+	<label index="event.editAssigned">Editar les cites assignades</label>
+	<label index="event.editAll">Editar totes les cites</label>
+	<label index="event.deleteAssigned">Eliminar les cites assignades</label>
+	<label index="event.deleteAll">Eliminar totes les cites</label>
+	<label index="event.add">Afegir noves cites</label>
+	<label index="event.search">Cercar cites</label>
+	<label index="event.assignOthers">Assignar cites a totes les persones</label>
+	<label index="mailing">Correu dels esdeveniments</label>
+	<label index="mailing.sendAsEmail">Enviar correus sobre cites a persones escollides</label>
+	<label index="reminders">Recordatoris dels esdeveniments</label>
+	<label index="reminders.popup">Utilitzar recordatoris per finestra emergent</label>
+	<label index="reminders.email">Utilitzar recordatoris per correu</label>
+</labels>

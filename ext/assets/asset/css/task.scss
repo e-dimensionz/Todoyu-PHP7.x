@@ -1,0 +1,58 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ----------------------------------------------
+	Task inline upload form
+   ---------------------------------------------- */
+.inlineAssetUpload {
+	.fieldnameDelete,
+	.inlineAssetUpload .fieldnameUpload {
+		float:left;
+		width:auto;
+	}
+
+	.fieldnameDelete .fField,
+	.inlineAssetUpload .fieldnameUpload .fField {
+		width:auto;
+	}
+
+	.fieldnameDelete .fLabel {
+		width:0;
+	}
+}
+
+
+
+/* ------------------------
+	Context menu task
+   ------------------------ */
+#contextmenu .taskContextMenu.task-add-asset {
+	background-image:url(../img/icons.png);
+	background-repeat:no-repeat;
+	background-position:6px -27px;
+}
+
+
+
+/* --------------------------
+ 	Task tab
+   --------------------------*/
+.tabContent .assetList {
+	padding-top:5px;
+}
+div.task div.taskTabs ul li.assets span.icon {
+	background:url(../img/icons.png) no-repeat 0 -25px;
+}
+
+th.assetsFilelistHeaderFilenames {
+	width:50%;
+}
+
+.assetFilesList {
+	margin-top: -4px !important;
+}
+
+.task span.taskIcons .assets {
+	background:url(../img/icons.png) no-repeat 0 -28px;
+}

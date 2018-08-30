@@ -1,0 +1,94 @@
+@import "../../config/theme.scss";
+
+
+/* ---------------------------------------
+	Standard Table
+   --------------------------------------- */
+
+table.list {
+	width:100%;
+	max-width: 100%;
+	background-color:$white;
+	table-layout: fixed;
+
+	&.autoWidthTable {
+		width:auto;
+	}
+	
+	col.icon {
+		width: 30px;
+	}
+
+	th,
+	td {
+		padding:3px 12px 3px 12px;
+		vertical-align:top;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+
+		> span.icon {
+			height:25px;
+			margin: -2px 4px -8px -2px;
+		}
+	}
+
+
+	tr {
+		&.nowrap {
+			white-space:nowrap;
+		}
+	}
+
+	a {
+		text-decoration:underline;
+
+		&:focus {
+			outline:none; }
+	}
+
+	a:hover {
+		background-color:$colorNeutral01;
+	}
+}
+
+
+/* ------------
+	Hover
+   ------------ */
+table.withMouseHover tr:hover,
+table.withMouseHover tr:hover .odd,
+table.withMouseHover tr:hover .even,
+ul.withMouseHover li.odd:hover,
+ul.withMouseHover li.even:hover {
+	background-color:$colorNeutral00 !important; }
+
+table.withMouseHover tr.header:hover {
+	background-color:transparent !important; }
+
+
+
+/* -----------------------------------
+	Odd and even alternation, hover
+   ---------------------------------- */
+table.list tr.odd,
+table.listsimple tr.odd,
+li.odd {
+	background-color:$colorNeutral01; }
+
+table.list tr.even,
+table.listsimple tr.even,
+li.even {
+	background-color:$white; }
+
+#extendlisting a {
+	display:block;
+	font-weight:bold;
+	padding:9px 0 9px 20px;
+	background:url(../img/icons.png) no-repeat 5px -289px;
+	cursor:pointer;
+
+	&:hover {
+		background-color:$colorNeutral00;
+	}
+}

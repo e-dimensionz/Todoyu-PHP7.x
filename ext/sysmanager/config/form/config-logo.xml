@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=sysmanager&amp;controller=config</attribute>
+		<attribute name="name">logo</attribute>
+		<attribute name="enctype">multipart/form-data</attribute>
+
+	</attributes>
+	<hiddenFields>
+		<field name="MAX_FILE_SIZE" value="5000000" noWrap="true" noStorage="true" />
+		<field name="action" noWrap="true" value="logo" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>sysmanager.form.legend.logo.general</legend>
+			<class>main</class>
+			<elements>
+
+				<field type="comment" name="info">
+					<comment>sysmanager.ext.config.selectlogo.info</comment>
+				</field>
+
+				<field type="upload" name="image">
+					<label>sysmanager.ext.config.selectlogo</label>
+					<onchange>Todoyu.Ext.sysmanager.Config.Logo.onFileSelectionChange(this.form)</onchange>
+				</field>
+
+			</elements>
+		</fieldset>
+
+<!--
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.sysmanager.Config.Logo.save(this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+-->
+
+	</fieldsets>
+</form>

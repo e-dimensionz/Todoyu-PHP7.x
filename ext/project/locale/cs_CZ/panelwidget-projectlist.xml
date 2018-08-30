@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Projekty</label>
+	<label index="search">Vyhledat</label>
+	<label index="list.empty">Žádný projekt nebyl nalezen (pro vybraný filtr)</label>
+</labels>

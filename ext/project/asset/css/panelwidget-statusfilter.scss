@@ -1,0 +1,59 @@
+.panelWidgetStatusFilter .content {
+	margin:0 0 4px 0;
+}
+
+.panelWidgetStatusFilter select option {
+	background-image:url(../img/status.png);
+	cursor:pointer;
+	height:16px !important;
+	padding-left:26px !important;
+	padding-top:4px !important;
+}
+
+
+
+/* -------------------
+	Status icons
+   ------------------ */
+.panelWidgetStatusFilter option.statusPlanning {
+	background-position:2px -1px;
+}
+
+.panelWidgetStatusFilter option.statusOpen {
+	background-position:2px -31px;
+}
+
+.panelWidgetStatusFilter option.statusProgress {
+	background-position:2px -60px;
+}
+.panelWidgetStatusFilter option.statusConfirm {
+	background-position:2px -90px;
+}
+
+.panelWidgetStatusFilter option.statusDone {
+	background-position:2px -120px;
+}
+
+.panelWidgetStatusFilter option.statusAccepted {
+	background-position:2px -267px;
+}
+
+.panelWidgetStatusFilter option.statusRejected {
+	background-position:2px -148px;
+}
+
+.panelWidgetStatusFilter option.statusCleared {
+	background-position:2px -210px;
+}
+
+.panelWidgetStatusFilter option.statusWarranty {
+	background-position:2px -238px;
+}
+
+.panelWidgetStatusFilter option.statusCustomer {
+	background-position:2px -2px;
+}
+
+.panelWidgetStatusFilter option.statusWaiting {
+	background-position:6px -295px;
+}

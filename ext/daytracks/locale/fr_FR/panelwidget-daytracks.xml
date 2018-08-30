@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Feuille de temps</label>
+	<label index="pwidget.title">Temps suivi aujourd'hui</label>
+	<label index="totalToday">Temps total suivi aujourd'hui</label>
+	<label index="showHistory">Afficher les feuilles de temps</label>
+	<label index="goToTask">Basculer vers la tâche</label>
+</labels>

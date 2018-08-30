@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Configurações Gerais</label>
+	<label index="general.extensions">Gerenciador de Extensões</label>
+	<label index="general.records">Exibir Todos os Registros Editar Visão</label>
+	<label index="general.rights">Gestão de Permissões</label>
+	<label index="general.roles">Gestão de Perfil</label>
+	<label index="extensions">Extensões</label>
+	<label index="extensions.info">Informação de Extensões</label>
+	<label index="extensions.config">Editar Configuração</label>
+	<label index="extensions.rights">Editar Permisões</label>
+	<label index="extensions.records">Editar Registros</label>
+	<label index="extensions.uninstall">Desinstalar Extensões</label>
+	<label index="extensions.install">Instalar Extensões</label>
+	<label index="extensions.download">Download de Arquivo de Extensão</label>
+	<label index="extensions.update">Atualizar Extensões</label>
+	<label index="roles">Perfis</label>
+	<label index="roles.edit">Editar Perfil</label>
+	<label index="roles.delete">Excluir Perfil</label>
+</labels>

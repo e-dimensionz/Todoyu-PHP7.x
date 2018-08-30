@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Pesquisa e Filtros</label>
+	<label index="page.title">Pesquisa</label>
+	<label index="or">OU</label>
+	<label index="and">E</label>
+	<label index="search.label">Pesquisar Tudo</label>
+	<label index="filterlabel.filterset">Grupos de Filtro</label>
+	<label index="filterset.rename">Renomear Grupo de Filtro</label>
+	<label index="filterset.delete">Excluir Grupo de Filtro</label>
+	<label index="filterset.confirm.delete">Deseja Realmente Excluir o Grupo de Filtro?</label>
+	<label index="filterset.confirm.overwrite">Substituir o Existente Grupo de Filtro?</label>
+	<label index="filterset.error.saveWrongType">Você tentou salvar o grupo de filtro em um tipo errado</label>
+	<label index="filterset.error.saveNoConditions">Nenhum parâmetro a ser salvo</label>
+	<label index="filterset.error.saveEmptyName">Entre com um nome para o grupo de filtro</label>
+	<label index="negation.default.true">Não é</label>
+	<label index="negation.default.false">É</label>
+	<label index="negation.datetime.true">De</label>
+	<label index="negation.datetime.false">Para</label>
+	<label index="newFilterLabel">Entre com um nome para o novo filtro</label>
+	<label index="newFilterLabel.preset">Novo Filtro</label>
+	<label index="subMenuEntry.task">Tarefas</label>
+	<label index="subMenuEntry.project">Projetos</label>
+	<label index="filterwidget.condtion.remove">Remover Condição</label>
+	<label index="search.noEntryFound">Nenhum Resultado Encontrado</label>
+	<label index="search.noResultsForActiveFilters">Não foram encontrados resultados para o filtro selecionado</label>
+	<label index="contextmenu.project.showinproject">Abrir em Visão de Projeto</label>
+	<label index="headlet.label">Pesquisar Em</label>
+</labels>

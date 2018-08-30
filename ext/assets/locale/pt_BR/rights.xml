@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Configurações Gerais</label>
+	<label index="general.use">Utilizar Recursos</label>
+	<label index="asset">Recursos</label>
+	<label index="asset.seeAll">Exibir Todos os Recursos</label>
+	<label index="asset.delete">Excluir Recurso</label>
+</labels>

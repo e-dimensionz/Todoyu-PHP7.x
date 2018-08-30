@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Algemene instellingen</label>
+	<label index="general.use">Bijlagen gebruiken</label>
+	<label index="asset">Bijlagen</label>
+	<label index="asset.seeAll">Alle bijlagen tonen</label>
+	<label index="asset.delete">Een bijlage tonen</label>
+</labels>

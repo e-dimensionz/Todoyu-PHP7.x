@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=bookmark&amp;controller=profile</attribute>
+		<attribute name="name">taskbookmark</attribute>
+
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>bookmark.form.legend.basics</legend>
+			<elements>
+
+				<field type="text" name="title">
+					<label>bookmark.ext.bookmark.attr.title</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.bookmark.Profile.closeForm('task')</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.bookmark.Profile.save('task', this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

@@ -1,0 +1,65 @@
+@import "../../config/theme.scss";
+
+
+
+.dpPicker {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:3000;
+	display:block;
+	width:50px;
+	height:110px;
+	overflow:hidden;
+	font: {
+		family:"Courier New", Courier, monospace;
+		size:16px;
+	}
+	cursor:pointer;
+	background-color:$colorNeutral00;
+	border:1px solid $colorNeutral03;
+	box-shadow:2px 2px 5px $colorNeutral06;
+
+	.dpHour {
+		position:absolute;
+		padding-top:44px;
+		padding-bottom:44px;
+		top:44px;
+		left:0px;
+		width:24px;
+		float:left;
+		clear:none;
+		z-index:10;
+		border-right:1px solid $colorNeutral02; }
+
+	.dpMinute {
+		position:absolute;
+		padding-top:44px;
+		padding-bottom:44px;
+		top:44px;
+		left:25px;
+		width:25px;
+		float:left;
+		clear:none;
+		display:block;
+		z-index:10; }
+
+	div div {
+		text-align:right;
+		padding:2px;
+		height:18px; }
+}
+
+.dpMask {
+	position:absolute;
+	top:43px;
+	left:0px;
+	z-index:9;
+	background-color:$colorNeutral02;
+	width:50px;
+	height:22px; }
+
+.durationPickerIcon {
+	background:url(../img/icons.png) no-repeat 0 -1660px;
+	cursor:pointer;
+	margin-left:3px; }

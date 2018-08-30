@@ -1,0 +1,100 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* -----------------------------------------------------
+	Staff selector
+   ----------------------------------------------------- */
+#panelwidget-staffselector {
+	h5 {
+		margin-bottom:2px;
+	}
+
+	li{
+		border-left:5px solid $white;
+		padding-left:2px;
+
+		a {
+			width:250px;
+
+			span {
+				background-image:url(../../../../core/asset/img/icons.png);
+				background-repeat:no-repeat;
+				display:inline-block;
+				float:right;
+				height:16px;
+				margin-right:40px;
+				width:16px;
+
+				&.deletegroup {
+					background-image:url(../img/panelwidget-staffselector.png);
+					background-position:2px -32px;
+				}
+			}
+		}
+
+		&.group a {
+			background:url(../../../sysmanager/asset/img/icons.png) no-repeat 2px -210px;
+		}
+
+		&.person a {
+			background:url(../img/icons.png) no-repeat 2px 2px;
+		}
+
+		&.virtualgroup a {
+			background:url(../img/panelwidget-staffselector.png) no-repeat 2px 0;
+		}
+	}
+
+	.selection li a span.deletegroup {
+		margin-right:10px !important;
+	}
+}
+
+
+
+#panelwidget-staffselector-list li {
+	border-left-color:$white !important;
+
+	&.hot a {
+		font-weight:bold;
+	}
+}
+
+
+
+#panelwidget-staffselector-selection {
+	display:inline-block;
+	margin-top:3px;
+	padding:5px;
+	width:95%;
+
+	li {
+		a span {
+			&.remove {
+				background-position:2px -358px;
+			}
+			&.deletegroup {
+				margin-right:2px !important;
+			}
+		}
+
+		&.disabled {
+			opacity:.50;
+
+			&:hover {
+				opacity:1;
+			}
+		}
+
+		.virtualgroup a span{
+			&.add {
+				background-position:2px -28px;
+			}
+
+			&.remove {
+				margin-right: -34px;
+			}
+		}
+	}
+}

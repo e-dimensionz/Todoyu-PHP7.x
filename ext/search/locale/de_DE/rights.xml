@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Allgemeine Einstellungen</label>
+	<label index="general.use">Such-Funktionalitäten benutzen</label>
+	<label index="general.area">Such-Bereich Verwenden</label>
+</labels>

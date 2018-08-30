@@ -1,0 +1,21 @@
+{if !$listOnly}
+	{$searchForm}
+{/if}
+
+{if !$listOnly}
+<ul id="panelwidget-{$id}-list" class="searchList">
+{/if}
+
+{foreach $items item}
+	<li id="panelwidget-{$id}-item-{$item.id}" class="{$item.class}">
+		<a href="javascript:void(0)" {if $item.title}title="{$item.title}"{/if}>
+			{htmlencode $item.label}
+		</a>
+	</li>
+{/foreach}
+
+{if !$listOnly}
+</ul>
+{/if}
+
+

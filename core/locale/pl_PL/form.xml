@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Proszę wybrać</label>
+	<label index="field.isrequired">To pole jest wymagane</label>
+	<label index="field.hasError">Wprowadzona wartość jest niedozwolona</label>
+	<label index="field.save">Zapisz</label>
+	<label index="field.cancel">Anuluj</label>
+	<label index="records.add">Dodat Record</label>
+	<label index="records.remove">Usuń Record</label>
+	<label index="records.edit">Edytuj Record</label>
+	<label index="records.removeconfirm">Czy napewno chcesz usunąć ten Rekord ?</label>
+	<label index="databaserelation.nolabel">[Nowy wpis]</label>
+	<label index="databaserelation.expandAllRecords">Pokaż szczegóły</label>
+	<label index="error.notUnique">Ten wpis już istnieje</label>
+	<label index="ac.noResults">Autouzupełnienie: nie odnaleziono żadnych wyników</label>
+	<label index="is_preferred">Preferowane</label>
+	<label index="dateselector.open">Otwórz okno wyboru daty, aby wybrać datę</label>
+	<label index="autocompleteInfo">To jest pole autouzupełniania. Zacznij wpisywać, aby uzyskać sugestie</label>
+	<label index="legend.main">Definicja Roli</label>
+	<label index="daterange.choose">Wybierz zakres czasu</label>
+	<label index="daterange.monthToDate">Miesiąc do Daty</label>
+	<label index="daterange.yearToDate">Rok do Daty</label>
+	<label index="daterange.quarterToDate">Kwardał do Daty</label>
+	<label index="daterange.previousMonth">Poprzedni Miesiąc</label>
+	<label index="daterange.previousQuarter">Poprzedni Kwartał</label>
+	<label index="daterange.previousYear">Poprzedni Rok</label>
+	<label index="daterange.fullTimeRange">Całkowity Możliwy Zakres Czasu</label>
+</labels>

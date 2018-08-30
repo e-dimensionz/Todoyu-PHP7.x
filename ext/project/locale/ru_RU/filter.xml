@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="project">Проект</label>
+	<label index="task.acknowledged">Признан</label>
+	<label index="task.assignedPerson">Назначен участнику</label>
+	<label index="task.assignedRoles">Назначен роли</label>
+	<label index="task.ownerPerson">Владелец - участник</label>
+	<label index="task.ownerRoles">Владелец - роль</label>
+	<label index="task.currentPersonIsOwner">Владелец - я</label>
+	<label index="task.creatorPerson">Создан участником</label>
+	<label index="task.creatorRoles">Создан ролью</label>
+	<label index="task.parentTask">Родительская задача</label>
+	<label index="task.isPublic">Публтчная</label>
+	<label index="task.billingType">Тип оплаты</label>
+	<label index="task.title">Название</label>
+	<label index="task.fulltext">Полный текст</label>
+	<label index="task.type">Тип</label>
+	<label index="task.activity">Тип работы</label>
+	<label index="task.timemanagement.label">Управление временем</label>
+	<label index="task.deadlinedate">Срок</label>
+	<label index="task.deadlinedateDyn">Срок (динамичный)</label>
+	<label index="task.startdate">Начальная дата</label>
+	<label index="task.startdateDyn">Начальная дата (динамичная)</label>
+	<label index="task.enddate">Конечная дата</label>
+	<label index="task.enddateDyn">Конечная дата (динамическая)</label>
+	<label index="task.editdate">Последний раз редактировано</label>
+	<label index="task.editdateDyn">Последний раз редактировалось (динамически)</label>
+	<label index="task.createdate">Создано</label>
+	<label index="task.createdateDyn">Создано (динамически)</label>
+	<label index="project.status">Статус проекта</label>
+	<label index="project.fulltext">Полнотекстовый заголовок</label>
+	<label index="project.company">клиента</label>
+	<label index="project.projectrole">Роль проекта</label>
+	<label index="project.projectleader">Лидер проекта</label>
+	<label index="project.projectsupervisor">Супервизор проекта</label>
+	<label index="project.timemanagement.label">Управление временем</label>
+	<label index="project.date_start">Дата начала проекта</label>
+	<label index="project.date_end">Дата конца проекта</label>
+	<label index="project.deadline">Срок проекта</label>
+	<label index="project.createdate">Создан</label>
+	<label index="project.createdateDyn">Создан (динамически)</label>
+	<label index="project.editdate">Изменён</label>
+	<label index="project.editdateDyn">Изменён (динамически)</label>
+	<label index="project.taskfilter">Задача из фильтра задач</label>
+</labels>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Забељежавање времена</label>
+	<label index="timetrackedPerson">Особа је забељежила време</label>
+	<label index="timetrackedRoles">Улоге су забељежиле време</label>
+</labels>

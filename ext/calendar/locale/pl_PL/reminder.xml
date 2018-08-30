@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">Przypomnienia</label>
+	<label index="myremindersMoje przypomnienia</label>
+	<label index="email">E-mail</label>
+	<label index="popup">Pop-Up</label>
+	<label index="deactivated">Przypomnienia Wyłączone</label>
+	<label index="notify.email.deactivated">Przypomnienie e-mail Wyłączone</label>
+	<label index="notify.popup.deactivated">Przypomnienie Pop-Up Wyłączone</label>
+	<label index="notify.email.timeupdated">Harmonogram przypomnień e-mail został zmieniony</label>
+	<label index="notify.popup.timeupdated">Harmonogram przypomnień pop-up został zmieniony</label>
+	<label index="beforeDateStart">przed spotkaniem</label>
+	<label index="atDateStart">Kiedy spotkanie się rozpocznie</label>
+	<label index="email.subject">Przypomnienie o Spotkaniu</label>
+	<label index="email.title">Automatycznie przypominanie o spotkaniach</label>
+	<label index="noReminder">Nie przypominaj</label>
+	<label index="cli.infocomment">W celu automatycznego przesłania powiadomienia e-mailem, cronjob musi zostać ustawiony w instalacji todoyu. Instrukcje o tym jak to zrobić:</label>
+</labels>

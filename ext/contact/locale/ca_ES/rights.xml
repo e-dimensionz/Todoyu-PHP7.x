@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Característiques generals</label>
+	<label index="general.use">Utilitzar la funcionalitat del mòdul</label>
+	<label index="general.profile">Utilitzar el perfil</label>
+	<label index="general.area">Utilitzar l'àrea de contactes</label>
+	<label index="person">Persona</label>
+	<label index="person.seeAllInternalPersons">Veure totes les persones internes</label>
+	<label index="person.seeAllPersons">Veure totes les persones</label>
+	<label index="person.add">Afegir persones</label>
+	<label index="person.editAndDeleteAll">Editar i eliminar totes les persones</label>
+	<label index="person.enableLogin">Afegir una conta</label>
+	<label index="person.seeComment">Veure els comentaris de les persones</label>
+	<label index="person.editComment">Editar comentaris de les persones</label>
+	<label index="company">Empreses</label>
+	<label index="company.seeAllCompanies">Veure totes les empreses</label>
+	<label index="company.add">Afegir empreses</label>
+	<label index="company.editOwn">Editar l'empresa pròpia (treballador)</label>
+	<label index="company.editAndDeleteAll">Editar i eliinar totes les empreses</label>
+	<label index="company.seeComment">Veure comentaris de les empreses</label>
+	<label index="company.editComment">Editar comentaris de les empreses</label>
+	<label index="relation">Relació de contactes</label>
+	<label index="relation.seeAllContactinfotypes">Veure tots els tipus d'informacions de contacte</label>
+	<label index="relation.seeHomeAddress">Veure adreça de casa</label>
+	<label index="relation.seeBusinessAddress">Veure adreça professional</label>
+	<label index="relation.seeBillingAddress">Veure adreça de facturació</label>
+	<label index="panelwidgets">Panel Widgets</label>
+	<label index="panelwidgets.staffSelector">Selector de personals</label>
+	<label index="panelwidgets.export">Exportar</label>
+</labels>

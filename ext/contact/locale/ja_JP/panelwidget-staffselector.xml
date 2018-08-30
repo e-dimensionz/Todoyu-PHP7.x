@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">スタッフ</label>
+	<label index="selection">選択された対象</label>
+	<label index="selection.empty">選択されたものはありません。検索を使って個人やグループを追加してください。</label>
+</labels>

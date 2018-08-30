@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Configuració general</label>
+	<label index="general.use">Utilitza el control del temps</label>
+	<label index="task">Control de tasques</label>
+	<label index="task.track">Control del temps</label>
+	<label index="task.editOwn">Es pot editar el temps controlat dels registres propis</label>
+	<label index="task.editOwnChargeable">Es pot editar el temps cobrable dels registres propis</label>
+	<label index="task.editAll">Es pot editar el temps controlat de tots el usuaris</label>
+	<label index="task.editAllChargeable">Es pot editar el temps cobrable de tots els usuaris</label>
+</labels>

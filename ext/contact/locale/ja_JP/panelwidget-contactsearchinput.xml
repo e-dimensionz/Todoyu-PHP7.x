@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">検索</label>
+	<label index="showAll.label">全て表示</label>
+	<label index="clearSword">入力のクリア</label>
+</labels>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="project">Project</label>
+	<label index="task.acknowledged">Bevestigd</label>
+	<label index="task.assignedPerson">Aan persoon toewijzen</label>
+	<label index="task.assignedRoles">Toegewezen aan rollen</label>
+	<label index="task.ownerPerson">Eigenaar is persoon</label>
+	<label index="task.ownerRoles">Eigenaar zijn rollen</label>
+	<label index="task.currentPersonIsOwner">Ik ben eigenaar</label>
+	<label index="task.creatorPerson">Aangemaakt door persoon</label>
+	<label index="task.creatorRoles">Aangemaakt door rollen</label>
+	<label index="task.parentTask">Valt onder taak</label>
+	<label index="task.isPublic">Is openbaar</label>
+	<label index="task.billingType">Facturatiesoort</label>
+	<label index="task.title">Titel</label>
+	<label index="task.fulltext">Full-Text</label>
+	<label index="task.type">Type</label>
+	<label index="task.activity">Werktype</label>
+	<label index="task.timemanagement.label">Urenbeheer</label>
+	<label index="task.deadlinedate">Deadline</label>
+	<label index="task.deadlinedateDyn">Deadline (Dynamisch)</label>
+	<label index="task.startdate">Begindatum</label>
+	<label index="task.startdateDyn">Begindatum (Dynamisch)</label>
+	<label index="task.enddate">Einddatum</label>
+	<label index="task.enddateDyn">Eindddatum (Dynamisch)</label>
+	<label index="task.editdate">Laatste wijziging</label>
+	<label index="task.editdateDyn">Laatste wijziging (Dynamisch)</label>
+	<label index="task.createdate">Aangemaakt</label>
+	<label index="task.createdateDyn">Aangemaakt (Dynamisch)</label>
+	<label index="project.fulltext">Titel Full-Text</label>
+	<label index="project.company">Klantnaam</label>
+	<label index="project.projectrole">Projectrol</label>
+	<label index="project.projectleader">Projectmanager</label>
+	<label index="project.projectsupervisor">Projectsupervisie</label>
+</labels>

@@ -1,0 +1,99 @@
+<table class="eventDetailView">
+{* ------------------------ Type *}
+	<tr class="odd">
+		<td class="type label">
+			{Label calendar.event.attr.eventtype}
+		</td>
+		<td class="">{EventTypeLabel $event.eventtype}</td>
+	</tr>
+{* ------------------------ Title *}
+	<tr class="even">
+		<td class="title label">
+			{Label core.global.title}
+		</td>
+		<td class="">{$event.title}</td>
+	</tr>
+{* ------------------------ Place *}
+{if ! empty($event.place)}
+	<tr class="odd">
+		<td class="place label">
+			{Label calendar.event.attr.place}
+		</td>
+		<td class="place">{$event.place}</td>
+	</tr>
+{/if}
+{* ------------------------ Range *}
+	<tr class="even">
+		<td class="label">
+			{Label calendar.event.attr.timespan}
+		</td>
+		<td class="">
+			{$event.rangeLabel}
+		</td>
+	</tr>
+{* ------------------------ Description *}
+{if ! empty($event.description)}
+	<tr class="odd">
+		<td class="label">
+			{Label core.global.description}
+		</td>
+		<td class="description">
+			{substituteLinkableElements(cleanHtml($event.description))}
+		</td>
+	</tr>
+{/if}
+{* ------------------------ Creator person *}
+	<tr class="even">
+		<td class="label">
+			{Label calendar.event.attr.creator}
+		</td>
+		<td class="">
+			{personLabel idPrefix="event-personcreate" idRecord=$event.person_create.id idPerson=$event.person_create.id}
+		</td>
+	</tr>
+
+{* ------------------------ Attendees *}
+	<tr class="odd">
+		<td class="label">
+			{Label calendar.event.attr.attendees}
+		</td>
+		<td class="">
+			{foreach $event.persons person personData}
+				{if $personData.is_acknowledged}
+					{$class='eventperson-acknowledged'}
+				{else}
+					{$class='eventperson-unacknowledged'}
+				{/if}
+				{if in_array($personData.id, array_keys($event.persons_email))}
+					{$class.='-email'}
+				{/if}
+				{personLabel idPrefix="event-personattend" idRecord=$personData.id idPerson=$personData.id class=$class}
+				<br />
+			{/foreach}
+			<br />
+		</td>
+	</tr>
+
+{* ------------------------ Series *}
+{if $event.id_series}
+	<tr class="even">
+		<td class="label">Series</td>
+		<td id="event-{$event.id}-series">
+			{$event.series.label}
+		</td>
+	</tr>
+{/if}
+
+{* ------------------------ Scheduled Reminders *}
+{if $event.date_start > NOW || true}
+	{if isAllowedEventReminderPopup($event.id) || isAllowedEventReminderEmail($event.id)}
+		{$personID = personid()}
+		<tr class="even">
+			<td class="label">{Label calendar.reminder.myreminders}</td>
+			<td id="event-{$event.id}-reminders">
+				{include file="event-view-details-reminders.tmpl"}
+			</td>
+		</tr>
+	{/if}
+{/if}
+</table>

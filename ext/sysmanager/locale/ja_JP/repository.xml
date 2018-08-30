@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="form">todoyu拡張機能リポジトリで検索</label>
+	<label index="query">キーワードで検索</label>
+	<label index="extension.moreDetails">もっと詳しく</label>
+	<label index="extension.installUpdate">アップデートをインストール</label>
+	<label index="core.installUpdate">コアアップデートをインストール</label>
+	<label index="extension.moreDetails">もっと詳しく</label>
+	<label index="extension.installUpdate">アップデートをインストール</label>
+	<label index="core.installUpdate">コアアップデートをインストール</label>
+	<label index="error.downloadNoArchiveForExtVersion">このバージョンに関するアップデートアーカイブが見つかりません</label>
+	<label index="error.downloadNoArchiveForCoreVersion">このバージョンに関するアップデートアーカイブが見つかりません</label>
+	<label index="error.downloadNoFileAccess">このファイルのダウンロードは許可されていません</label>
+	<label index="error.registerTodoyuIdMissing">todoyu IDが見つかりません。あなたのIDをシステムの設定画面で入力してください。</label>
+	<label index="error.registerExtensionMissing">登録のために送信された拡張機能はありません</label>
+	<label index="error.registerDomainMissing">todoyuは登録するためのあなたのドメインを見つけられませんでした</label>
+	<label index="error.registerExtNotFound">あなたは利用できない拡張機能のTARを登録しようとしました</label>
+	<label index="error.registerNoUserForTodoyuId">あなたの todoyu ID は todoyu.com のユーザと一致しませんでした</label>
+	<label index="error.registerNoFreeLicensesAvailable">あなたはこの拡張機能の無償ライセンスを持っていません。ショップで購入してください。</label>
+</labels>

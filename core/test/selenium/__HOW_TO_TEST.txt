@@ -1,0 +1,11 @@
+All selenium tests are requiring the following setup:
+
+-You must be logged out from todoyu
+-The admin user "admin" with password "password" exists
+-todoyu language must be english
+-The installation contains the unaltered demo data and prefs
+
+
+!!!WARNING!!! --- !!!WARNING!!! --- !!!WARNING!!! --- !!!WARNING!!! --- !!!WARNING!!! --- !!!WARNING!!!
+Please make sure, that you only test on a testing environment and never on your live instance!
+!!!WARNING!!! --- !!!WARNING!!! --- !!!WARNING!!! --- !!!WARNING!!! --- !!!WARNING!!! --- !!!WARNING!!!

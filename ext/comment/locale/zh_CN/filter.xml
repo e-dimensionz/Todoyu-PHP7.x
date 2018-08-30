@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">请求反馈</label>
+	<label index="unseenFeedbackPerson">Person's feedback still due</label>
+	<label index="unseenFeedbackRoles">Due feedback requested by roles</label>
+	<label index="commentFulltext">富文本评论</label>
+	<label index="commentWrittenPerson">评论人</label>
+	<label index="commentWrittenRoles">评论角色</label>
+	<label index="commentCreatedate">评论时间</label>
+	<label index="sorting.commentLastAdd">上次评论时间</label>
+	<label index="sorting.commentLastAddPublic">上次公开评论</label>
+	<label index="isSeen.negation.true">看到评论的人</label>
+	<label index="isSeen.negation.false">未看评论的人</label>
+	<label index="project.commentMyFeedbackRequest">我请求了反馈, 但对方还没有看的评论</label>
+</labels>

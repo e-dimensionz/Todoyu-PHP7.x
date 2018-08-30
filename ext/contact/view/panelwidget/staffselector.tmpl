@@ -1,0 +1,15 @@
+<h5>{Label contact.panelwidget-staffselector.selection}</h5>
+<ul class="selection" id="panelwidget-staffselector-selection">
+	{foreach $items item}
+		<li id="panelwidget-{$id}-item-{$item.id}" class="{$item.class}">
+			<a href="javascript:void(0)" {if $item.title}title="{$item.title}"{/if}>
+				{htmlencode $item.label}
+			</a>
+		</li>
+	{else}
+		<p>{Label contact.panelwidget-staffselector.selection.empty}</p>
+	{/foreach}
+</ul>
+
+<br/><br/>
+{Button label="contact.panelwidget-staffselector.button.save.newgroup" class="save" id="panelwidget-$id-button-savegroup"}

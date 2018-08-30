@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Přílohy</label>
+	<label index="search.label">Přílohy</label>
+	<label index="tab.noAssets">Přidat první přílohu</label>
+	<label index="tab.asset">Příloha</label>
+	<label index="tab.assets">Přílohy</label>
+	<label index="tab.toggle">Přílohy Zap/Vyp</label>
+	<label index="list.header.uploaddate">Datum vložení</label>
+	<label index="alt.download">Stáhnout soubor</label>
+	<label index="alt.uploadedby">Nahráno</label>
+	<label index="alt.delete">Odstranit soubor</label>
+	<label index="alt.changeVisibility">Zveřejnit</label>
+	<label index="alt.selectall">Vybrat vše/nic</label>
+	<label index="upload.selectfile">Zvolte soubor k nahrání</label>
+	<label index="upload.filename">Jméno souboru</label>
+	<label index="upload.new">Nahrát nový soubor</label>
+	<label index="delete.confirm">Opravdu chcete odstranit soubor?</label>
+	<label index="delete.notifiy.success">Soubor byl smazán.</label>
+	<label index="togglepublic.notifiy.ispublic">Soubor je nyní viditelný i pro zákazníky, kteří můžou vidět tento úkol.</label>
+	<label index="togglepublic.notifiy.notpublic">Soubor nyní není viditelný pro zákazníky, kteří můžou vidět tento úkol.</label>
+	<label index="download.selection">Stáhnout vybrané</label>
+	<label index="download.normal">Vybrali jste pouze jeden soubor -&gt; standardní stažení souboru</label>
+	<label index="download.compressed">Zvolené soubory byly zabaleny do archivu ke stažení</label>
+	<label index="error.minimumFile">Zvolte alespoň jeden soubor</label>
+	<label index="error.download">Stažení této položky není možné</label>
+	<label index="error.access">Nemáte přístup k této položce</label>
+	<label index="maxFileSizeExceeded">Soubor '#{filename}' překročil povolenou velikost (#{maxFileSize}bajtů) pro nahrání</label>
+	<label index="maxLengthFileNameExceeded">Jméno souboru '#{filename}' přesáhlo maximální povolenou délku (#{maxLengthFileName})</label>
+	<label index="uploadFailed">Nahrání souboru '#{filename}' se nezdařilo</label>
+	<label index="uploadOk">Soubor byl nahrán</label>
+	<label index="locked">Tento úkol je uzamčen. Nemůžete přidávat soubory</label>
+	<label index="task.icon">Úkol má přílohy</label>
+	<label index="contextmenu.task.addasset">Příloha</label>
+</labels>

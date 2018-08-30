@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">个人设置</label>
+	<label index="page.title">个人信息</label>
+	<label index="headlet.label">我的设置</label>
+	<label index="module.general">普通设置</label>
+	<label index="general.main.tab">Main</label>
+	<label index="general.main.locale">语言</label>
+	<label index="general.main.saved">设置已保存</label>
+	<label index="general.main.saved.pleaseWait">todoyu 需要生成你新选择语言的缓存文件, 请稍等...</label>
+	<label index="general.password.title">更新密码</label>
+	<label index="general.password.tab">密码</label>
+	<label index="general.password.current">当前密码</label>
+	<label index="general.password.current.empty">请输入原密码</label>
+	<label index="general.password.current.wrong">原密码不正常</label>
+	<label index="general.password.new1">新密码</label>
+	<label index="general.password.new2">请重输</label>
+	<label index="general.password.error">无法更改密码</label>
+	<label index="general.password.success">密码已更改</label>
+	<label index="general.password.notEqual">两次输入的新密码不一致</label>
+	<label index="general.main.header">个人配置</label>
+	<label index="general.password.header">密码</label>
+</labels>

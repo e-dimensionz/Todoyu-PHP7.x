@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Arbeitszeit-Info</label>
+	<label index="title">Tagesarbeiten</label>
+	<label index="history.title">Stundenblatt</label>
+	<label index="history.total">Total erfasste Zeit</label>
+	<label index="history.showdetails">Zeige Details</label>
+	<label index="history.noTracks">In diesem Zeitabschnitt wurde keine Zeit erfasst.</label>
+	<label index="totalToday">Total heute erfasste Zeit</label>
+	<label index="daysinmonth">Tage im Monat</label>
+	<label index="export.title">Export</label>
+	<label index="export.company">Kunde</label>
+	<label index="export.popup.title">Arbeitszeiten Export</label>
+	<label index="export.popup.date_end">End-Datum</label>
+	<label index="export.popup.error.allFieldsEmpty">Alle Felder sind leer</label>
+	<label index="export.view">Anzeigen</label>
+	<label index="export.noData">Zu den Filter-Kriterien wurden keine Daten gefunden.</label>
+	<label index="persons.internal">Interne Personen</label>
+	<label index="persons.external">Externe Personen</label>
+</labels>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extconf.legend.config">Nastavení komentáře</label>
+	<label index="fallback.legend.fallback">Šablona komentáře</label>
+	<label index="fallback.legend.help">Jak to funguje</label>
+	<label index="fallback.legend.general">Obecné nastavení</label>
+	<label index="fallback.legend.feedback">Vyžadovaná odpověď</label>
+	<label index="fallback.legend.email">Odeslat e-mail</label>
+</labels>

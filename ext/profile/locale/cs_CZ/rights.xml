@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Obecné nastavení</label>
+	<label index="general.use">Používat profil</label>
+	<label index="settings">Nastavení účtu</label>
+	<label index="settings.password">Změnit heslo</label>
+</labels>

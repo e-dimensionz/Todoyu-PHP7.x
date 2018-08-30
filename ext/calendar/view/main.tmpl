@@ -1,0 +1,40 @@
+<div id="calendar" {if ! $showCalendar}style="display:none"{/if}>
+
+	{* ----------------- Calendar header ----------------- *}
+	<h1 id="calendar-header" class="headerLine">
+		<span id="calendar-title"></span>
+		<span id="calendar-quicknav" class="dateNavi">
+			<span id="calendar-quicknav-backward" title="{Label calendar.ext.quicknav.backward.title}" class="icon goBackward" onclick="Todoyu.Ext.calendar.Navi.goBackward()"></span>
+			<span id="calendar-quicknav-today" title="{Label calendar.ext.quicknav.today.title}" class="icon goToday" onclick="Todoyu.Ext.calendar.Navi.goToday()"></span>
+			<span id="calendar-quicknav-forward" title="{Label calendar.ext.quicknav.forward.title}" class="icon goForward" onclick="Todoyu.Ext.calendar.Navi.goForward()"></span>
+			<span id="calendar-quicknav-toggleDayView" title="{Label calendar.ext.quicknav.toggleDayView.title}" class="icon toggleDayView" onclick="Todoyu.Ext.calendar.CalendarBody.toggleFullDayView()"></span>
+			<span id="calendar-quicknav-toggleWeekend" title="{Label calendar.ext.quicknav.toggleWeekend.title}" class="icon toggleWeekend" onclick="Todoyu.Ext.calendar.CalendarBody.toggleWeekend()"></span>
+		</span>
+	</h1>
+
+	{* -------------- Calendar body --------------------- *}
+	<div id="calendar-body">
+		{if $showCalendar}
+			{$content}
+			<script type="text/javascript">
+				Todoyu.Ext.calendar.CalendarBody.setCompactViewRange({$rangeStart}, {$rangeEnd}, false);
+			</script>
+		{/if}
+	</div>
+
+</div>
+
+<div id="calendar-edit" {if $tab != 'edit'}style="display:none"{/if}>
+{if $tab == 'edit'}
+	{$content}
+{/if}
+</div>
+
+<div id="calendar-view" {if $tab != 'view'}style="display:none"{/if}>
+{if $tab == 'view'}
+	{$content}
+	<script>
+	Todoyu.Ext.calendar.setTime.bind(Todoyu.Ext.calendar).delay(1, {$date}, true);
+	</script>
+{/if}
+</div>

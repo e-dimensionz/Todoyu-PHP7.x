@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.export.filter">Сконфигурировать экспорт [Сделано]</label>
+	<label index="legend.export.timerage">Определить временной диапазон [Сделано]</label>
+</labels>

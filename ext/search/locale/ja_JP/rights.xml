@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般設定</label>
+	<label index="general.use">検索機能の表示および使用</label>
+	<label index="general.area">検索エリアの使用</label>
+</labels>

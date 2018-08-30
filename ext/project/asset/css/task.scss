@@ -1,0 +1,560 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ------------
+	Task
+   ----------- */
+div.task,
+div.task .task:last-child {
+	border-bottom:1px solid $colorNeutral02;
+}
+div.task {
+	.subtasks {
+		border-top:1px solid $colorNeutral02;
+
+		.task:last-child {
+			border-bottom:none;
+		}
+	}
+}
+
+.task.marked,
+.task.marked h3,
+.task.marked div {
+	background-color:$colorHighlight04 !important;
+}
+
+/* --------------------
+	Task header
+   -------------------- */
+.task {
+	> h3 {
+		background-color:transparent;
+		clear:both;
+		display:block;
+		height:22px;
+		padding:0;
+		position:relative;
+
+		> .subtaskTrigger {
+			display:inline-block;
+			float:left;
+			height:22px;
+			margin-left:10px;
+			width:13px;
+
+			&.expandable {
+				cursor:pointer;
+				background:url(../../../../core/asset/img/tree-icons.png) no-repeat 1px -23px;
+
+				&.expanded {
+					background:url(../../../../core/asset/img/tree-icons.png) no-repeat 1px 7px;
+				}
+			}
+		}
+
+		.headLabel {
+			cursor:pointer;
+			display:inline-block;
+			height:22px;
+			padding:4px;
+
+			span {
+				display:inline-block;
+			}
+
+			.taskDate {
+				width:50px;
+			}
+
+			.projectName {
+				margin-left:5px;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+
+	&.expanded {
+		> h3 {
+			background-color:$colorNeutral01;
+
+			.headLabel {
+				font-weight:bold;
+			}
+		}
+	}
+
+	.statusColor {
+		position:absolute;
+		width:1px;
+		height:22px;
+		left:0;
+		top:0;
+		border-left-width:4px;
+		border-left-style:solid;
+	}
+
+	.dndHandle {
+		position:absolute;
+		width:12px;
+		height:22px;
+		left: -4px;
+		top:0;
+
+		&:hover {
+			background-color:transparent;
+		}
+	}
+}
+
+/* -------------------------
+	Project task tree
+   ----------------------- */
+.taskTree {
+	.task {
+		.headLabel {
+			width: 650px;
+
+			.projectName {
+				max-width: 550px;
+			}
+		}
+	}
+}
+
+/* -------------------------
+	Flat task listing
+   ----------------------- */
+.taskListing {
+	.headerLine .taskDate,
+	.task .headLabel .taskDate {
+		width:49px;
+	}
+
+	.headerLine .customer,
+	.task .headLabel .customer {
+		width:100px;
+	}
+
+	.headerLine .projectName,
+	.task .headLabel .projectName {
+		width:500px;
+	}
+
+	.task {
+		.headLabel {
+			padding-left: 15px;
+			min-width: 700px;
+
+			.customer,
+			.projectName,
+			.taskNumber {
+				margin:0 0 0 5px;
+			}
+		}
+	}
+}
+
+
+
+
+/* -------------------------------------
+	Drag'n'drop hover styles
+   ------------------------------------- */
+#dragDropMarker {
+	height:0;
+	overflow:visible;
+	position:absolute;
+	z-index:100000;
+
+	div {
+		position:absolute;
+		left: -31px;
+		top: -12px;
+		height:25px;
+		width:30px;
+		background:url(../img/icons.png) no-repeat;
+	}
+
+	&.in div {
+		top:1px;
+		background-position:0 -650px;
+	}
+
+	&.after div {
+		background-position:0 -678px;
+	}
+
+	&.before div {
+		top: -14px;
+		background-position:0 -710px;
+	}
+}
+
+
+
+div.task.dragDropTarget > h3 {
+	background-color:$colorCorporate02;
+}
+.task {
+	.dndHandle.draggable {
+		cursor:move;
+	}
+}
+
+.lostTasks {
+	.task {
+		.dndHandle.draggable {
+			cursor:default;
+		}
+	}
+}
+
+
+/* -------------------------
+	Task header (container)
+   ------------------------ */
+
+.task.container {
+	> h3 {
+		background-color:$colorNeutral00;
+		border-right-width:4px;
+		border-right-style:solid;
+
+		> .statusColor {
+			border-left-width:8px;
+		}
+	}
+}
+
+
+/* end of styles only for container element */
+
+.task {
+	h3 {
+		.taskHeadExtras {
+			display:inline-block;
+			overflow:hidden;
+			padding:2px 3px 1px 3px;
+			position:absolute;
+			right:145px;
+			text-align:right;
+			top:2px;
+			width:100px;
+		}
+	}
+}
+.task.container {
+	> h3 {
+		> .taskHeadExtras {
+			right:141px;
+			border-right:0 solid $colorNeutral02;
+		}
+	}
+}
+.task.expanded {
+	h3 {
+		.taskHeadExtras,
+		.taskIcons {
+			border-color:$colorNeutral03;
+		}
+	}
+}
+
+
+.task {
+	h3 {
+		.taskHeadExtras {
+			span {
+				cursor:default;
+			}
+		}
+	}
+}
+.headerLine .taskNumber,
+.task h3 .taskNumber {
+	display:inline-block;
+	position:absolute;
+	width:45px;
+}
+.headerLine {
+	.taskNumber {
+		right:92px;
+	}
+}
+.task {
+	h3 {
+		.taskNumber {
+			top:4px;
+			right:93px;
+			cursor:text;
+		}
+	}
+}
+.task.container {
+	> h3 {
+		> .taskNumber {
+			right:89px;
+		}
+	}
+}
+
+.task {
+	h3 {
+		.headLabel {
+			a.title {
+				display:block;
+				width:420px;
+				padding:2px 0;
+				margin-top: -2px;
+			}
+		}
+	}
+}
+
+
+
+/* ----------------------
+	Task Icons
+   ---------------------- */
+.task {
+	span.taskIcons {
+		position:absolute;
+		right:0;
+		height:16px;
+		width:75px;
+		overflow:hidden;
+		margin-top:2px;
+		padding:0 3px 1px 3px;
+		border-left:1px solid $colorNeutral02;
+	}
+}
+.task.container {
+	> h3 {
+		> .taskIcons {
+			width:71px;
+		}
+	}
+}
+
+.task {
+	span.taskIconsOverflow {
+		background:url(../img/icons.png) no-repeat right -527px;
+
+		&:hover {
+			width:auto;
+			position:absolute;
+			background:white;
+			z-index:1000;
+		}
+	}
+}
+
+
+.expanded {
+	span.taskIconsOverflow:hover {
+		background:$colorCorporate02;
+	}
+}
+
+.task{
+	span.taskIcons {
+		span {
+			float:left;
+			clear:none;
+			width:14px;
+			height:16px;
+			margin:0 0 0 3px;
+		}
+
+		.taskcontainer {
+			background:url(../img/icons.png) no-repeat 0 -87px;
+		}
+
+		.isPublic {
+			background:url(../../../../core/asset/img/icons.png) no-repeat 1px -1108px;
+		}
+
+		.notAcknowledged {
+			width:10px;
+			cursor:pointer;
+			background:transparent url('../../../../core/asset/img/icons.png') no-repeat 0 -1288px;
+		}
+
+		.dateover {
+			width:14px;
+			background:url(../img/icons.png) no-repeat 0 -328px;
+		}
+
+		.locked {
+			width:14px;
+			background:url(../img/icons.png) no-repeat 0 -480px;
+		}
+	}
+}
+
+
+/* ------------------
+	Task details
+   ------------------ */
+.task {
+	> .details {
+		border-left-width:1px;
+		border-left-style:solid;
+	}
+}
+
+.tasks {
+	.task {
+		.details {
+			.data {
+				padding:7px 0;
+
+				.task-inline-edit {
+					margin: -7px 0;
+				}
+
+				.description {
+					float:left;
+					width:536px;
+					max-width:45%;
+					padding:0 0 0 27px;
+
+					* {
+						line-height:15px;
+						white-space:normal;
+						word-wrap:break-word;
+					}
+				}
+
+				.properties {
+					width:276px;
+					max-width:45%;
+					float:right;
+
+					* {
+						font-weight:normal;
+					}
+
+					dt {
+						color:$colorNeutral08;
+						float:left;
+						clear:left;
+						padding:2px 0;
+						width:50%;
+					}
+					dd {
+						float:left;
+						padding:2px 0;
+						width:50%;
+
+						span.icon {
+							display:none;
+							width:14px;
+							height:14px;
+						}
+					}
+
+					.unread .icon {
+						background:url(../../../../core/asset/img/icons.png) no-repeat 0 -1288px;
+						display:block !important;
+						margin-left: -14px;
+					}
+					.acknowledged .icon {
+						background:url(../../../../core/asset/img/icons.png) no-repeat 0 -1312px;
+						display:block !important;
+						margin-left: -14px;
+					}
+
+					.sectionStart {
+						padding-top:10px;
+						margin-top:2px;
+						border-top:1px solid $colorNeutral01;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.task {
+	.formTask {
+		fieldset.basic,
+		fieldset.details {
+			padding-top:15px;
+		}
+	}
+}
+
+/* -----------------
+	Task colors
+   ---------------- */
+
+	/* sub tasks */
+.tasks {
+	.subtasks {
+		padding-left:10px;
+	}
+}
+
+.task-inline-edit {
+	.type-date input {
+		width:50px;
+	}
+}
+
+.taskDetails {
+	.comment p {
+		padding:5px;
+	}
+}
+
+.taskcontainer {
+	background:url('../img/icons.png') no-repeat -5px -75px;
+}
+
+.task-inline-edit {
+	.bottom {
+		float:left;
+		clear:both;
+	}
+}
+
+#taskList,
+#tasks {
+	z-index:1;
+}
+
+#taskList {
+	h1.headerProjTermine {
+		margin-top:20px;
+	}
+}
+
+
+
+/* ----------------------------
+	Additional task icons
+   ---------------------------- */
+.task-status-container {
+	h3 a,
+	div.taskdetails {
+		border-left-color:$colorNeutral09;
+		background-color:$colorNeutral00;
+	}
+}
+
+
+/* ---------------------------
+	Task Search Modification
+   --------------------------- */
+#action-panel {
+	.button.exportCsv {
+		.icon {
+			background:transparent url('../../../../core/asset/img/icons.png') 6px -1598px no-repeat;
+			width:24px;
+		}
+	}
+}

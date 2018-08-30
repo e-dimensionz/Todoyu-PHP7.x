@@ -1,0 +1,253 @@
+@import "../../../../core/config/theme.scss";
+
+/* -------------------
+	Sysmanager modules
+   ------------------- */
+#todoyu-sysmanager h1.headerLine span.title {
+	margin-left: -14px;
+}
+
+#panelwidget-sysmanagermodules li.extensions a {
+	background:url(../img/icons.png) no-repeat 1px 1px;
+}
+
+
+
+/* -------------------
+	Tabs
+   ------------------- */
+#extension-tabs li span.icon {
+	background:url(../img/icons.png) no-repeat;
+}
+#extension-tabs li.installed span.icon {
+	background-position:0 5px;
+}
+#extension-tabs li.info span.icon {
+	background-position:0 -85px;
+}
+#extension-tabs li.config span.icon {
+	background-position:0 -115px;
+}
+#extension-tabs li.records span.icon {
+	background-position:0 -325px;
+}
+#extension-tabs li.imported span.icon {
+	background-position:0 -26px;
+}
+#extension-tabs li.update span.icon {
+	background-position:0 -687px;
+}
+#extension-tabs li.search span.icon {
+	background-position:0 -836px;
+}
+#sysmanager-tabs li.nomodules span.icon {
+	background:url(../img/icons.png) no-repeat 0 -905px;
+}
+
+/* Extension tabs right */
+#extension-tabs li.info,
+#extension-tabs li.config {
+	float:right;
+}
+
+/* Special tabs right */
+#extension-tabs li.imported,
+#extension-tabs li.update,
+#extension-tabs li.search {
+	float:right;
+}
+
+
+
+/* -------------------
+	Extension list
+   ------------------- */
+.extlist {
+	
+	col.icon {
+		width: 30px;
+	}
+
+	.extkey {
+		width: 15.795%
+	}
+	
+	.version {
+		width: 9.477%;
+	}
+	
+	.edit {
+		width: 17.211%;
+	}
+
+	.state {
+		width:45px;
+	}
+
+	.download,
+	.doc {
+		width:30px;
+	}
+
+	tr {
+
+		&.missing {
+			td {
+				background-color: $colorNotice01;
+
+				&.title div {
+						text-transform:uppercase;
+						font-weight:bold;
+						letter-spacing:2px;
+				}
+			}
+		}
+
+		td {
+			&.edit a {
+				width:18px;
+				height:18px;
+				display:inline-block;
+				background:url(../img/icons.png) no-repeat;
+
+				&.disabled {
+					opacity:0.3;
+					cursor:default !important;
+				}
+
+				&.uninstall {
+					background-position:0 -58px;
+				}
+
+				&.install {
+					background-position:0 -29px;
+				}
+
+				&.remove {
+					background-position:0 -660px;
+				}
+
+				&.info {
+					background-position:0 -88px;
+				}
+
+				&.config {
+					background-position:0 -119px;
+				}
+
+				&.records {
+					background-position:0 -329px;
+				}
+
+				&.rights {
+					background-position:0 -150px;
+				}
+			}
+
+			&.doc a {
+				background:url(../img/icons.png) no-repeat 0 -510px;
+			}
+
+			&.download a.download {
+				background:url(../img/icons.png) no-repeat 0 -480px;
+			}
+		}
+	}
+}
+
+
+/* ----------------------
+	State tag images
+   ---------------------- */
+	span.extensionstate {
+		display:inline-block;
+		width:32px;
+		height:12px;
+	}
+		span.extensionstate.alpha {
+			background:url(../img/status.png) no-repeat 0 0;
+		}
+
+		span.extensionstate.beta {
+			background:url(../img/status.png) no-repeat 0 -16px;
+		}
+
+		span.extensionstate.stable {
+			background:url(../img/status.png) no-repeat 0 -32px;
+		}
+
+
+
+/* -------------------
+	Import and install
+   ------------------- */
+p.importInfo {
+	margin:10px 10px 10px 0;
+}
+#installed-action {
+	margin-top:10px;
+}
+#installed-action button.extensionInfo .icon {
+	background:url(../img/icons.png) no-repeat 4px -87px;
+	width:20px;
+}
+#installed-action button.extensionConfig .icon {
+	background:url(../img/icons.png) no-repeat 4px -119px;
+	width:20px;
+}
+
+form.formImportExtension button.uploadExtension span.icon {
+	background:url(../img/icons.png) no-repeat 4px -28px;
+	width:20px;
+}
+
+.uninstalled button .icon {
+	background-image:url(../img/icons.png);
+	background-repeat:no-repeat;
+}
+
+.uninstalled button.download .icon {
+	background-position:4px -478px;
+	width:20px;
+}
+
+.uninstalled button.delete .icon {
+	background-position:4px -658px;
+	width:20px;
+}
+
+.uninstalled button.install .icon {
+	background-position:4px -28px;
+	width:20px;
+}
+
+.installAlternatives {
+	margin-top:10px;
+}
+
+.installAlternatives button .icon {
+	background-image:url(../img/icons.png);
+}
+
+.installAlternatives button.ter .icon,
+.installAlternatives button.upload .icon {
+	background-position:4px -28px;
+	width:22px;
+}
+
+
+
+/* -------------------
+	Upload extension
+   ------------------- */
+#importExtension-form .fLabel {
+	width:250px;
+}
+
+#importExtension-form fieldset {
+	padding-top:20px;
+}
+
+#importExtension-form legend {
+	display:none;
+}

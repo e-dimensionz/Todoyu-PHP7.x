@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="project">Projekt</label>
+	<label index="task.acknowledged">Potweirdzone</label>
+	<label index="task.assignedPerson">Przypisane do osoby</label>
+	<label index="task.assignedRoles">Przypisane do ról</label>
+	<label index="task.ownerPerson">Właścicielem jest osoba</label>
+	<label index="task.ownerRoles">Właścicielem są role</label>
+	<label index="task.currentPersonIsOwner">Jestem właścicielem</label>
+	<label index="task.creatorPerson">Utworzone przez osobę</label>
+	<label index="task.creatorRoles">Utworzone przez role</label>
+	<label index="task.parentTask">Nadrzędne zadanie</label>
+	<label index="task.isPublic">Jest publiczne</label>
+	<label index="task.billingType">Rodzaj płatności</label>
+	<label index="task.title">Tytuł</label>
+	<label index="task.fulltext">Pełny tekst</label>
+	<label index="task.type">Typ</label>
+	<label index="task.activity">Rodzaj działalności</label>
+	<label index="task.timemanagement.label">Zarządzanie czasem</label>
+	<label index="task.deadlinedate">Deadline</label>
+	<label index="task.deadlinedateDyn">Deadline (Dynamiczny)</label>
+	<label index="task.startdate">Data rozpoczęcia</label>
+	<label index="task.startdateDyn">Data rozpoczęcia (Dynamiczna)</label>
+	<label index="task.enddate">Data zakończenia</label>
+	<label index="task.enddateDyn">Data zakończenia (Dynamiczna)</label>
+	<label index="task.editdate">Ostatio edytowany</label>
+	<label index="task.editdateDyn">Ostatio edytowany (Dynamiczny)</label>
+	<label index="task.createdate">Utworzony</label>
+	<label index="task.createdateDyn">Utworzony (Dynamiczny)</label>
+	<label index="project.status">Status projektu</label>
+	<label index="project.fulltext">Tytuł Rozszerzony</label>
+	<label index="project.title">Tytuł prjketu</label>
+	<label index="project.company">Klienta</label>
+	<label index="project.projectrole">Rola projektu</label>
+	<label index="project.projectleader">Menadzer projektu</label>
+	<label index="project.projectsupervisor">Kierownik projektu</label>
+	<label index="project.timemanagement.label">Zarządzanie czasu</label>
+	<label index="project.date_start">Data rozpoczęcia projektu</label>
+	<label index="project.date_end">Data zakończenia projektu</label>
+	<label index="project.deadline">Deadline dla projektu</label>
+	<label index="project.createdate">Utwórz</label>
+	<label index="project.createdateDyn">Utwórz (Dynamiczny)</label>
+	<label index="project.editdate">Edytowane</label>
+	<label index="project.editdateDyn">Edytowane (Dynamiczny)</label>
+	<label index="project.taskfilter">Zadania z filtra zadań</label>
+</labels>

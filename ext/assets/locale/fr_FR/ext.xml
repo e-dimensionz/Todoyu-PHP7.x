@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Documents relatifs aux tâches</label>
+	<label index="tab.noAssets">Ajouter un premier document</label>
+	<label index="tab.asset">Document</label>
+	<label index="tab.assets">Documents</label>
+	<label index="tab.toggle">Document On/Off</label>
+	<label index="list.header.uploaddate">Date de téléversement</label>
+	<label index="alt.download">Télécharger le fichier</label>
+	<label index="alt.uploadedby">Téléversé par</label>
+	<label index="alt.delete">Effacer le fichier</label>
+	<label index="alt.changeVisibility">Modifier la visibilité</label>
+	<label index="alt.selectall">Sélectionner tout/aucun</label>
+	<label index="upload.selectfile">Sélectionner un fichier à téléverser</label>
+	<label index="upload.filename">Nom du fichier</label>
+	<label index="upload.new">Ajouter un nouveau fichier</label>
+	<label index="delete.confirm">Souhaitez-vous vraiment effacer ce fichier?</label>
+	<label index="download.selection">Télécharger la sélection</label>
+	<label index="download.normal">Vous avez sélectionné un seul fichier, téléchargement standard</label>
+	<label index="download.compressed">Les fichiers sélectionnés ont été compressés pour les télécharger</label>
+	<label index="error.minimumFile">SVP, sélectionner au moins un fichier</label>
+	<label index="maxFileSizeExceeded">Le fichier '#{filename}' dépasse la limite de (#{maxFileSize}) pour le téléversement</label>
+	<label index="uploadFailed">Le téléversement du fichier '#{filename}' a échoué</label>
+	<label index="uploadOk">Le fichier a été téléversé</label>
+</labels>

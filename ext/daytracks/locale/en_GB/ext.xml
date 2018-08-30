@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Journal of tracked time</label>
+	<label index="title">Journal of tracked time</label>
+	<label index="history.title">Time Tracking Journal</label>
+	<label index="history.total">Total Tracked Time</label>
+	<label index="history.showdetails">Show Details</label>
+	<label index="history.noTracks">No time tracking available for this period</label>
+	<label index="totalToday">Total tracked time today</label>
+	<label index="daysinmonth">Days in month</label>
+	<label index="export.title">Export</label>
+	<label index="export.company">Customer</label>
+	<label index="export.popup.title">Time Sheet Export</label>
+	<label index="export.popup.date_end">End Date</label>
+	<label index="export.popup.error.allFieldsEmpty">All fields are empty</label>
+	<label index="export.view">View</label>
+	<label index="export.noData">No data suiting the filter conditions was found.</label>
+	<label index="persons.external">External Users</label>
+	<label index="persons.internal">Users of the internal company</label>
+</labels>

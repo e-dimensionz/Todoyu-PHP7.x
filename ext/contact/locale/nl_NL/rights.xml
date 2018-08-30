@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Algemene instellingen</label>
+	<label index="general.use">Module functionaliteiten gebruiken</label>
+	<label index="general.area">Contactgebied gebruiken</label>
+	<label index="person">Persoon</label>
+	<label index="person.add">Personen toevoegen</label>
+	<label index="person.editAndDeleteAll">Personen bewerken en verwijderen</label>
+	<label index="person.enableLogin">Inlogaccount aanmaken voor personen</label>
+	<label index="company">Bedrijven</label>
+	<label index="company.add">Bedrijven toevoegen</label>
+	<label index="company.editAndDeleteAll">Bedrijven bewerken en verwijderen</label>
+	<label index="panelwidgets">Stuurelementen</label>
+	<label index="panelwidgets.staffSelector">Medewerker-kiezer</label>
+</labels>

@@ -1,0 +1,18 @@
+{Header "LLL:sysmanager.ext.rights.header"}
+{$form}
+
+<div class="saveButtonBox">
+	{Button label="sysmanager.ext.rights.save" class="save" onclick="Todoyu.Ext.sysmanager.RightsEditor.saveRights()"}
+</div>
+
+<div id="rightsmatrix">
+	{$matrix}
+</div>
+
+<div class="saveButtonBox">
+	{Button label="sysmanager.ext.rights.save" class="fElement save" onclick="Todoyu.Ext.sysmanager.RightsEditor.saveRights()"}
+</div>
+
+<script type="text/javascript">
+	Todoyu.Ext.sysmanager.RightsEditor.init();
+</script>

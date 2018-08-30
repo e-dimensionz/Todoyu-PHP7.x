@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > panelwidget: filters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > panelwidget: filters</td></tr>
+</thead><tbody>
+<!------ portal > panelwidget: filters-->
+<!--verfiy all elements to be present-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-filterpresetlist-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-filterpresetlist-toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>My Filters</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='panelwidget-filterpresetlist-content']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.portal.PanelWidget.FilterPresetList.manageFiltersets();this.blur()']</td>
+	<td></td>
+</tr>
+<!--test toggle content, incl. pref-->
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-filterpresetlist.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &gt; 50}</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#panelwidget-filterpresetlist.panelWidget h1#panelwidget-filterpresetlist-h1 span#panelwidget-filterpresetlist-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#panelwidget-filterpresetlist.panelWidget h1#panelwidget-filterpresetlist-h1.expand span#panelwidget-filterpresetlist-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-filterpresetlist.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &lt; 45}</td>
+	<td>true</td>
+</tr>
+<!--go to project area-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemProject a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTitle</td>
+	<td>varPageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['varPageTitle'].substr(0,&nbsp;&nbsp;storedVars['varPageTitle'].indexOf(&quot;-&quot;) - 1);}</td>
+	<td>Projects</td>
+</tr>
+<!--return to portal area-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemPortal a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Portal - todoyu</td>
+	<td></td>
+</tr>
+<!--widget still collapsed?-->
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-filterpresetlist.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &lt; 45}</td>
+	<td>true</td>
+</tr>
+<!--re-expand-->
+<tr>
+	<td>click</td>
+	<td>css=div#panelwidget-filterpresetlist.panelWidget h1#panelwidget-filterpresetlist-h1 span#panelwidget-filterpresetlist-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=h1#panelwidget-filterpresetlist-h1.expand span#panelwidget-filterpresetlist-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-filterpresetlist.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &gt; 200}</td>
+	<td>true</td>
+</tr>
+<!--click"manage filters" verify search area to be available, return to portal-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#panelwidget-filterpresetlist button.manageFilters</td>
+	<td>//html/body/div[3]/div/div/div/div[2]/div/div/button</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Search - todoyu</td>
+	<td></td>
+</tr>
+<!--return to portal-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=ul#navi-main-list li.itemPortal a</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

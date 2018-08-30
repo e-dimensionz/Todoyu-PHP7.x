@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > panelwidget: filters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > panelwidget: filters</td></tr>
+</thead><tbody>
+<!------ portal > panelwidget: daytracks-->
+<!--verfiy all elements to be present-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-daytracks-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-daytracks-toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Time Sheet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='panelwidget-daytracks-content']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.daytracks.PanelWidget.Daytracks.showHistory();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.daytracks.Export.openExportPopup();this.blur()']</td>
+	<td></td>
+</tr>
+<!--test toggle content, incl. pref-->
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-daytracks.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &gt; 50}</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#panelwidget-daytracks.panelWidget h1#panelwidget-daytracks-h1 span#panelwidget-daytracks-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#panelwidget-daytracks.panelWidget h1#panelwidget-daytracks-h1.expand span#panelwidget-daytracks-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-daytracks.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &lt; 50}</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemProject a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTitle</td>
+	<td>varPageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['varPageTitle'].substr(0,&nbsp;&nbsp;storedVars['varPageTitle'].indexOf(&quot;-&quot;) - 1);}</td>
+	<td>Projects</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemPortal a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Portal - todoyu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-daytracks.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &lt; 45}</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#panelwidget-daytracks.panelWidget h1#panelwidget-daytracks-h1 span#panelwidget-daytracks-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=h1#panelwidget-daytracks-h1.expand span#panelwidget-daytracks-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-daytracks.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &gt; 50}</td>
+	<td>true</td>
+</tr>
+<!--open time sheet popup-->
+<tr>
+	<td>click</td>
+	<td>css=div#panelwidget-daytracks-content.content div.contentdaytrackspwidget div.history button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div#daytracks-history.dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Time Tracking Journal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>css=td#daytracks-history_table_content.dialog_content</td>
+	<td>heightDaytracksWithoutDetails</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input#showtracksdetails</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>css=td#daytracks-history_table_content.dialog_content</td>
+	<td>heightDaytracksWithDetails</td>
+</tr>
+<tr>
+	<td>assertNotExpression</td>
+	<td>javascript{storedVars['heightDaytracksWithoutDetails'] == storedVars['heightDaytracksWithDetails'];}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#daytracks-history_close.dialog_close</td>
+	<td></td>
+</tr>
+<!--open daytrack export-->
+<tr>
+	<td>click</td>
+	<td>css=div.contentdaytrackspwidget div.timeexport button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div#time-export.dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Time Sheet Export</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Person</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Employer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Project</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Customer</td>
+	<td></td>
+</tr>
+<!--close the popup-->
+<tr>
+	<td>click</td>
+	<td>css=div#time-export.dialog div#time-export_close.dialog_close</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

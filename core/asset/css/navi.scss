@@ -1,0 +1,148 @@
+@import "../../config/theme.scss";
+
+
+
+#navi-main {
+	position:absolute;
+	z-index:100;
+	bottom:0px;
+	left:0px;
+	width:100%; }
+
+#navi-main-list {
+	margin:0 auto;
+	width:1237px;
+
+	li {
+		float:left;
+		margin-right:3px;
+
+		&.level1 {
+		  	border-radius:10px 10px 0 0;
+		 	box-shadow:0 -1px 1px $colorCorporate04 inset;
+
+			&:hover,
+			&.active {
+				box-shadow:none; }
+		}
+
+		a {
+			display:block;
+			width:auto !important;
+			width:1px;
+			height:auto !important;
+			height:1px;
+			line-height:30px;
+			padding:0 12px;
+			font: {
+				size:13px;
+				weight:bold; }
+			text-transform:uppercase;
+			letter-spacing:1px;
+			white-space:nowrap;
+		}
+
+		&.item a {
+			color:$colorNeutral08;
+
+			&.active,
+			&:hover {
+				color:$colorTextGeneral; }
+		}
+
+		&.active,
+		&:hover {
+		 	background-color:$colorCorporate02; }
+
+		&.itemTodoyu {
+			/* Todoyu tab */
+			float:right; }
+	}
+
+	> li:hover a,
+	> li a.active {
+		background-image:none; }
+
+	&-todoyu {
+		/* Todoyu sub menu */
+		margin-left: -146px !important;
+	}
+}
+
+
+
+// @todo move this style to loginpage extension
+#todoyu-loginpage ul#navi-main-list li:hover {
+	background-color:$colorCorporate02; }
+
+
+
+/* -------------------
+	Level 2
+   ------------------- */
+ul#navi-main-list li {
+	&:hover ul {
+		left:auto;
+	}
+
+	ul {
+		position:absolute;
+		top:29px;
+		left: -9999px;
+		z-index:1;
+		width:270px !important;
+		margin-top:1px;
+		text-transform:none;
+		box-shadow:2px 2px 5px $colorNeutral06;
+
+		li {
+			width:100%;
+			background: {
+				image:none;
+				color:$colorCorporate02; }
+			text-align:left;
+			margin-right:0px;
+
+			a {
+				padding:2px 10px 2px 30px;
+				line-height:20px;
+				font: {
+					size:10px;
+					weight:normal; }
+
+				&:hover {
+					background-color:$colorCorporate00; }
+			}
+		}
+	}
+}
+
+
+
+/* ---------------------------------------------
+	To top button (appears when scrolling down)
+   --------------------------------------------- */
+#to-top {
+	@include gradient-header;
+	cursor:pointer;
+	padding:0 5px 5px 5px;
+	border-radius:10px;
+	box-shadow:0 -1px 1px $colorCorporate04 inset;
+	z-index:200;
+	position:absolute;
+	border:1px solid #cacaca;
+
+	span.label {
+		padding:10px 0 0 3px;
+	}
+	span.arrow {
+		width:24px;
+		height:32px;
+		margin-left:5px;
+		background:url(../img/ico-toggle.png) no-repeat scroll 6px 50% transparent;
+	}
+
+	&:hover {
+		@include gradient-header-highlight;
+	}
+}

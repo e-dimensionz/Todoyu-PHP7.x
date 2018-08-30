@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=contact&amp;controller=formhandling&amp;action=uploadcontactimage</attribute>
+		<attribute name="name">uploadcontactimage</attribute>
+		<attribute name="target">upload-iframe-contactimage</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="MAX_FILE_SIZE" value="512000" noWrap="true" noStorage="true" />
+		<field name="idContact" />
+		<field name="recordType" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="upload">
+			<legend>Upload</legend>
+			<class>uploadform</class>
+			<elements>
+
+				<field type="upload" name="file">
+					<label>contact.ext.contactimage.upload</label>
+					<onchange>Todoyu.Ext.contact.Upload.upload(this.form)</onchange>
+				</field>
+
+				<field type="button" name="cancel">
+					<text>core.global.cancel</text>
+					<class>buttonCancel cancel</class>
+					<hasIcon />
+					<onclick>Todoyu.Ext.contact.Upload.removeUploadForm()</onclick>
+				</field>
+				
+				<field type="comment" name="note">
+					<comment>contact.ext.contactimage.note</comment>
+					<noStorage />
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

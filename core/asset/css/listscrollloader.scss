@@ -1,0 +1,12 @@
+@import "../../config/theme.scss";
+
+
+.listScrollBox {
+	.scrollLoaderInfo {
+		padding: 10px;
+		color: $colorNeutral06;
+		background-color: $colorNeutral01;
+		border: 1px solid $colorNeutral03;
+		position: relative;
+	}
+}

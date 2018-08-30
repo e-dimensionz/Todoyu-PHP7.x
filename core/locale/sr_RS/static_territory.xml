@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="num2.name">Африка</label>
+	<label index="num9.name">Океанија</label>
+	<label index="num19.name">Америка</label>
+	<label index="num142.name">Азија</label>
+	<label index="num150.name">Европа</label>
+	<label index="num30.name">Источна Азија</label>
+	<label index="num35.name">Југоисточна Азија</label>
+	<label index="num62.name">Јужна и централна Азија</label>
+	<label index="num145.name">Западна Азија</label>
+	<label index="num39.name">Јужна Европа</label>
+	<label index="num151.name">Источна Европа</label>
+	<label index="num154.name">Северна Европа</label>
+	<label index="num155.name">Западна Европа</label>
+	<label index="num830.name">Каналска острва</label>
+	<label index="num833.name">Острво Ман</label>
+	<label index="num5.name">Јужна Америка</label>
+	<label index="num13.name">Централна Америка</label>
+	<label index="num21.name">Северна Америка</label>
+	<label index="num29.name">Кариба</label>
+	<label index="num11.name">Западна Африка</label>
+	<label index="num14.name">Источна Африка</label>
+	<label index="num15.name">Северна Африка</label>
+	<label index="num17.name">Средња Африка</label>
+	<label index="num18.name">Јужна Африка</label>
+	<label index="num53.name">Аустралија и Нови Зеланд</label>
+	<label index="num54.name">Меланезија</label>
+	<label index="num57.name">Регијон Микронезија</label>
+	<label index="num61.name">Полинезија</label>
+</labels>

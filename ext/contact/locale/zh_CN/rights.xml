@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">通用设置</label>
+	<label index="general.use">使用模块功能</label>
+	<label index="general.profile">描述</label>
+	<label index="general.area">使用联系区域</label>
+	<label index="person">人员</label>
+	<label index="person.seeAllInternalPersons">查看所有内部人员</label>
+	<label index="person.seeAllPersons">查看所有人员</label>
+	<label index="person.add">添加人员</label>
+	<label index="person.editAndDeleteAll">编辑和删除所有人员</label>
+	<label index="person.enableLogin">建立可登陆账号</label>
+	<label index="person.seeComment">查看人员评论</label>
+	<label index="person.editComment">编辑人员评论</label>
+	<label index="company">公司</label>
+	<label index="company.seeAllCompanies">查看所有公司</label>
+	<label index="company.add">添加公司</label>
+	<label index="company.editOwn">编辑自己的公司(公司老板))</label>
+	<label index="company.editAndDeleteAll">编辑和删除所有公司</label>
+	<label index="company.seeComment">查看所有公司</label>
+	<label index="company.editComment">编辑公司评论</label>
+	<label index="relation">联系关联</label>
+	<label index="relation.seeAllContactinfotypes">查看所有联系信息类型</label>
+	<label index="relation.seeHomeAddress">查看家庭地址</label>
+	<label index="relation.seeBusinessAddress">查看工作地址</label>
+	<label index="relation.seeBillingAddress">查看账单地址</label>
+	<label index="panelwidgets">面板小工具</label>
+	<label index="panelwidgets.staffSelector">员工选择器</label>
+	<label index="panelwidgets.export">导出</label>
+</labels>

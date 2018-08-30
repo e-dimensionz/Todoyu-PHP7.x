@@ -1,0 +1,12 @@
+todoyu selenium testsuite steps: core
+-------------------------------------
+
+* durationpicker working? (tested inside quicktask form)
+* task context menu (1st task in todo tab) can be opened/closed, options are there?
+* project autocompleter (in quicktask form) works?
+* headlet "about":
+	check presents
+	open/close popup
+	check popup elements, check 3rd party credits
+* headlet "quickcreate":
+	present with all options?

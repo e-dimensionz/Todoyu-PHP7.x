@@ -1,0 +1,83 @@
+<div class="repositoryDialog extensionDialog {$dialogClass}">
+	<h1>{$title}</h1>
+	{if $info.installStatus != 'noLicense'}
+		<div class="warningMessage">
+			<span class="icon"></span>
+			<span class="label">
+				{Label sysmanager.repository.update.warning.general}
+			</span>
+		</div>
+	{/if}
+
+	{if $isMajorUpdate}
+		<div class="info warningMajorUpdate">{Label sysmanager.repository.update.warning.majorupdate}</div>
+	{/if}
+
+	<div class="clear"></div>
+	<br />
+
+	<div class="col versionInformation">
+		<span class="subtitle">Version Information</span>
+		{if $info.version.version_information}
+			{$info.version.version_information}
+		{else}
+			{Label sysmanager.repository.error.noVersionInformation}
+		{/if}
+	</div>
+
+	<div class="col versionDetails">
+		<table>
+			<tr>
+				<th>{Label core.global.title}</th>
+				<td>{$info.title}</td>
+			</tr>
+			<tr>
+				<th>{Label sysmanager.extension.keyAbbr}</th>
+				<td>{$info.ext_key}</td>
+			</tr>
+			<tr>
+				<th>{Label core.global.version}</th>
+				<td>{$info.version.version}</td>
+			</tr>
+			<tr>
+				<th>{Label core.global.status}</th>
+				<td>{ExtensionStatusIcon $info.version.state}</td>
+			</tr>
+			<tr>
+				<th>{Label core.date.date_update}</th>
+				<td>{dateFormat $info.version.date_update date}</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<div class="clear"></div>
+
+	{if $install && $info.commercial}
+		{if $license && $info.installStatus != 'noLicense'}
+			<div class="license">
+				<pre width="90">{$license}</pre>
+			</div>
+			{if $info.installStatus != 'noLicense'}
+				<div class="info acceptlicense">
+					<input type="checkbox" value="1" name="acceptlicense" id="acceptlicense">
+					<label for="acceptlicense">{Label sysmanager.repository.license.label.accept}</label>
+				</div>
+			{/if}
+		{/if}
+
+		<div class="info licenseinfo {$info.installStatus}">
+			{$licenseInfo}
+		</div>
+
+		{if $info.installStatus == 'noLicense'}
+			<div class="info licenseinfo buyextension"><a href="{$info.ter_link}" target="_blank">{Label sysmanager.repository.license.buyinrepository}</a></div>
+		{/if}
+
+	{/if}
+
+	<div class="buttons">
+		{Button class="install" label=$labelOk onclick=$actionOk disabled=$disableOk}
+		{Button class="cancel" label=$labelCancel onclick="Todoyu.Ext.sysmanager.Repository.closeDialog()"}
+	</div>
+</div>

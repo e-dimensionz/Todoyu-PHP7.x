@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">задатни прилог</label>
+	<label index="search.label">Додаци</label>
+	<label index="tab.noAssets">приложи додатак</label>
+	<label index="tab.asset">Прилог</label>
+	<label index="tab.assets">Прилоге</label>
+	<label index="tab.toggle">Укључи/Искључи прилоге</label>
+	<label index="list.header.uploaddate">Датум учитавања</label>
+	<label index="alt.download">Скини фајл</label>
+	<label index="alt.uploadedby">Ажурирано од</label>
+	<label index="alt.delete">Изриши фајл</label>
+	<label index="alt.changeVisibility">Промени видљивост</label>
+	<label index="alt.selectall">Изабери све/ниједно</label>
+	<label index="upload.selectfile">Изаберите фајл за учитавање</label>
+	<label index="upload.filename">Име фајл-а</label>
+	<label index="upload.new">Додај нови фајл</label>
+	<label index="delete.confirm">Да ли стварно желите да избришете овај фајл?</label>
+	<label index="delete.notifiy.success">Фајл је избрисан.</label>
+	<label index="download.selection">Скините избор</label>
+	<label index="download.normal">Изабрали сте само један фајл. Обично скидање фајл-а.</label>
+	<label index="download.compressed">Припремају се изабране фајлове за скидање</label>
+	<label index="error.minimumFile">Молимо вас изаберите најманје један фајл.</label>
+	<label index="maxFileSizeExceeded">Фајл '#{filename}' превазилази максимално дозвољену количину (#{maxFileSize}) за учитавање.</label>
+	<label index="maxLengthFileNameExceeded">Назив Фајл-а '#{filename}' је прекорачио максимално дозвољену дужину (#{maxLengthFileName}) за уплоад.</label>
+	<label index="uploadFailed">Уцитавање фајл-а '#{filename}' није успело.</label>
+	<label index="uploadOk">Учитавање фајл-а је било успешно.</label>
+	<label index="locked">Овај задатак је блокиран. Не можете да додајете фајлове.</label>
+	<label index="task.icon">Задатак има додатке</label>
+</labels>

@@ -1,0 +1,53 @@
+<style type="text/css">
+body,table,td {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+th {
+	background-color:#efefef;
+	border-right:1px solid #999;
+}
+td {
+	border-bottom:1px solid #999;
+}
+table {
+	border:4px solid #f00;
+	background-color:#fef7e7;
+}
+.errmsg {
+	background-color:#ffb871;
+	font-weight:bold;
+}
+</style>
+<h1>Database Error!</h1>
+<table width="600" border="0" cellspacing="4" cellpadding="3">
+	<tr>
+		<th width="100" align="left" valign="top" scope="row">Error Message</th>
+		<td width="480" class="errmsg">{$message}</td>
+	</tr>
+	<tr>
+		<th align="left" valign="top" scope="row">Error Code</th>
+		<td>{$code}</td>
+	</tr>
+	<tr>
+		<th align="left" valign="top" scope="row">Error Position</th>
+		<td>{$file} : {$line}</td>
+	</tr>
+	<tr>
+		<th align="left" valign="top" scope="row">Failed Query</th>
+		<td><code>{$query}</code></td>
+	</tr>
+		<tr>
+			<th align="left" valign="top" scope="row">Backtrace</th>
+			<td><code>
+				{foreach $trace step implode="<br />"}
+					<strong>{$step.file}</strong> : {$step.line}<br />
+					&nbsp;&nbsp;{$step.class}{$step.type}{$step.function}()<br />
+					{foreach $step.args nr argument}
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[{$nr}] {$argument}<br />
+				{/foreach}
+	{/foreach}
+	</code>
+	</td>
+	</tr>
+</table>

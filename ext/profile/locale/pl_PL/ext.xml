@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Ustawienia osobiste</label>
+	<label index="page.title">Mój Profil</label>
+	<label index="headlet.label">Moje ustawienia</label>
+	<label index="module.general">Ustawienia ogólne</label>
+	<label index="general.main.tab">Główny</label>
+	<label index="general.main.locale">Język</label>
+	<label index="general.main.saved">UStawienia zapisane</label>
+	<label index="general.main.saved.pleaseWait">todoyu musi wygenerować plik wymiany dla wybranego języka. Wróć za moment.</label>
+	<label index="general.password.title">Zmień własne hasło</label>
+	<label index="general.password.tab">Hasło</label>
+	<label index="general.password.current">Aktualne hasło</label>
+	<label index="general.password.current.empty">Podaj stare hasło aby je zmienić</label>
+	<label index="general.password.current.wrong">Stare hasło, któe podałeś, jest nieprawidłowe</label>
+	<label index="general.password.new1">Nowe hasło</label>
+	<label index="general.password.new2">Powtórz hasło</label>
+	<label index="general.password.error">Nie mogę zmienić hasła</label>
+	<label index="general.password.success">Hasło zostało zmienione</label>
+	<label index="general.password.notEqual">Nowe hasło nie pasuje</label>
+	<label index="general.main.header">Ustawienia osobiste</label>
+	<label index="general.password.header">Hasło</label>
+</labels>

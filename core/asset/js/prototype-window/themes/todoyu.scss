@@ -1,0 +1,212 @@
+/* --------------------
+	Overlays
+   -------------------- */
+.overlay_dialog,
+.overlay___invisible__ {
+	background:#7b806e;
+}
+
+.overlay_dialog {
+	opacity:0.7;
+}
+
+.overlay___invisible__ {
+	opacity:0;
+}
+
+
+
+/* -----------------------------------------------
+	Dialog borders and corners from north to west
+   ----------------------------------------------- */
+.dialog_nw,
+.dialog_ne,
+.dialog_sw,
+.dialog_se,
+.dialog_sizer {
+	width:9px;
+}
+
+.dialog_nw,
+.dialog_n,
+.dialog_ne {
+	height:28px;
+}
+
+.dialog_nw,
+.dialog_n,
+.dialog_ne,
+.dialog_s,
+.dialog_sw,
+.dialog_se,
+.dialog_sizer,
+.dialog_close,
+.dialog_minimize,
+.dialog_maximize {
+	background:transparent url(todoyu.png) no-repeat;
+}
+
+.dialog_e,
+.dialog_w {
+	background:transparent url(todoyurepeaty.png);
+	width:2px;
+}
+
+.dialog_nw {
+	background-position:0 -645px;
+}
+
+.dialog_n {
+	background-repeat:repeat-x;
+	background-position:0 -700px;
+}
+
+.dialog_ne {
+	background-position: -1px -750px;
+}
+
+.dialog_e {
+	background-position: -41px 0;
+}
+
+.dialog_w {
+	background-position:0 0;
+}
+
+.dialog_s,
+.dialog_sw,
+.dialog_se,
+.dialog_sizer {
+	height:19px;
+}
+
+.dialog_s {
+	background-repeat:repeat-x;
+	background-position:0 -51px;
+}
+
+.dialog_sw {
+	background-position:0 0;
+}
+
+.dialog_se {
+	background-position:0 -153px;
+}
+
+
+
+/* -------------------------------
+	Window decorations
+   ------------------------------- */
+.dialog_sizer {
+	background-position:0 -594px;
+	cursor:se-resize;
+}
+
+.dialog_close,
+.dialog_minimize,
+.dialog_maximize {
+	width:14px;
+	top:5px;
+	cursor:pointer;
+	z-index:2000;
+}
+
+.dialog_close,
+.dialog_title {
+	height:14px;
+}
+
+.dialog_close {
+	background-position:0 -320px;
+	right:5px;
+}
+
+.dialog_close,
+.dialog_minimize,
+.dialog_maximize,
+.wired_frame,.dialog {
+	position:absolute;
+}
+
+.dialog_minimize,
+.dialog_maximize {
+	height:14px;
+}
+
+.dialog_minimize {
+	background-position:0 -459px;
+	right:33px;
+}
+
+.dialog_maximize {
+	background-position:0 -413px;
+	right:17px;
+}
+
+.dialog_title {
+	font-size:11px;
+	float:left;
+	margin:5px 0 -5px 0;
+	letter-spacing:0.4px;
+	font-weight:bold;
+	text-align:left;
+	text-transform:uppercase;
+	color:#151614;
+}
+
+.dialog_title,
+.dialog table.table_window {
+	width:100%;
+}
+
+.bottom_draggable,
+.top_draggable {
+	cursor:move;
+}
+
+.status_bar input,
+.status_bar {
+	font-size:12px;
+}
+
+.wired_frame,
+.dialog {
+	display:block;
+}
+
+.wired_frame {
+	border:1px #000 dashed;
+}
+
+.dialog {
+	z-index:1900;
+}
+
+
+
+/* ------------------------
+	Dialog content
+   ------------------------ */
+.dialog_content {
+	font-size:10px;
+	background-color:#fff;
+	color:#ddd;
+	height:auto !important;
+}
+
+.dialog table.table_window {
+	border-collapse:collapse;
+	border-spacing:0;
+	margin:0;
+}
+
+/*.dialog table.table_window,*/
+/*.dialog table.table_window th,*/
+/*.dialog table.table_window td {*/
+	/*padding:0;*/
+/*}*/
+
+.dialog .title_window {
+	-moz-user-select:none;
+}

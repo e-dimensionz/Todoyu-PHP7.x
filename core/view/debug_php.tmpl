@@ -1,0 +1,14 @@
+<div style="margin-top:10px;text-align:left;padding:10px; border:2px solid #F00; background-color:#FEF7E7; margin-bottom:10px">
+	<em style="display:block;padding-bottom:10px; font-size:12px;font-family:'Courier New'">{$caller.fileshort} : {$caller.line}</em>
+	{if $title}
+		<strong style="font-size:14px">Debug: {$title}</strong>
+	{/if}
+	<p style="font-family:'Courier New',Courier,monospace; margin-top:10px; margin-bottom:0">{$debug}</pre>
+	{if $backtrace}
+	<hr/>
+	<strong style="font-size:14px">Backtrace:</strong><br />
+	<p>
+		{$backtrace}
+	</pre>
+	{/if}
+</div>

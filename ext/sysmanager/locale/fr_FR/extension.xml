@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extension">Extension</label>
+	<label index="key">Clé de l'extension</label>
+	<label index="keyAbbr">Clé</label>
+	<label index="version">Version/État</label>
+	<label index="author">Auteur</label>
+	<label index="dependencies">Dépend de</label>
+	<label index="conflicts">En conflit avec</label>
+	<label index="importExtArchive">Importer l'archive d'une extension</label>
+	<label index="version">Version</label>
+	<label index="showInfo">Afficher les informations de l'extension</label>
+	<label index="download">Télécharger l'extension</label>
+	<label index="remove">Supprimer l'extension</label>
+	<label index="remove.confirm">Supprimer l'extension (et tous ses fichiers) du serveur?</label>
+	<label index="rights">Permissions</label>
+	<label index="documentation">Documentation</label>
+	<label index="install">Installer une extension</label>
+	<label index="install.confirm">Installer l'extension?</label>
+	<label index="install.ok">L'extension a été installée avec succès</label>
+	<label index="install.error">L'installation de l'extension a échoué</label>
+	<label index="uninstall">Désinstaller une extension</label>
+	<label index="uninstall.confirm">Désinstaller l'extension?</label>
+	<label index="uninstall.ok">L'extension a bien été désinstallée</label>
+	<label index="uninstall.error.general">La désinstallation de l'extension a échoué</label>
+</labels>

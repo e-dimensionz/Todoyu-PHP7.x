@@ -1,0 +1,55 @@
+@import "../../config/theme.scss";
+
+
+
+/* ----------------------
+	contentItem Tabs
+   ---------------------- */
+.contentItemTabContainer .tabs {
+	top:0;
+	left:0;
+	width:auto;
+	margin:0 10px;
+}
+
+.contentItemTabContainer {
+	margin-top:10px;
+}
+
+contentItemTabContainer .tabs li {
+	background-color:$colorCorporate01 !important;
+}
+
+.contentItemTabContainer .tabs li:hover,
+.contentItemTabContainer .tabs li.active {
+	background-color:$colorCorporate02 !important;
+}
+
+/* contentItem tabs content */
+.contentItemTabContainer .tabContent {
+	background-color:$colorCorporate02;
+	/*border-bottom:1px solid $colorNeutral02;*/
+}
+
+.contentItemTabContainer .tabContent .tab {
+	margin:9px;
+	border:1px solid $colorNeutral01;
+}
+
+.contentItemTabContainer .tabContent .tabBlock {
+	position:relative;
+	background:$white;
+}
+.contentItemTabContainer .tabContent .tab {
+	padding:5px;
+	background:$white;
+}
+.contentItemTabContainer .tabContent .tabBlock .toggle {
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	width:25px;
+	height:30px;
+	background:$colorCorporate04 url(../img/toggle.png) no-repeat 0 -65px;
+}

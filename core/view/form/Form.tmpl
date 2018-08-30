@@ -1,0 +1,26 @@
+{if ! $noFormTag }
+	<form name="{$name}" id="{$htmlId}" class="fForm form{ucfirst($name)} {$class}" method="{$method|default:'post'}" action="{$action}" onsubmit="{$onsubmit|default:'return false'}" {if $enctype}enctype="{$enctype}"{/if} {if $target}target="{$target}"{/if} {$extraAttributes}>
+{/if}
+
+{$hiddenFields}
+{$fieldsets}
+
+{if ! $noFormTag}
+	</form>
+
+	<script type="text/javascript">
+	{if $isAjax}
+		Todoyu.Form.onFormDisplay('{$htmlId}', '{$name}', '{$id}');
+		{if $onDisplayJsCallback}{$onDisplayJsCallback};{/if}
+		{if $extraOnDisplay}{$extraOnDisplay};{/if}
+	{else}
+		document.observe('dom:loaded', function(){
+			(function() {
+				Todoyu.Form.onFormDisplay('{$htmlId}', '{$name}', '{$id}');
+				{if $onDisplayJsCallback}{$onDisplayJsCallback};{/if}
+				{if $extraOnDisplay}{$extraOnDisplay};{/if}
+			}).defer();
+		});
+	{/if}
+	</script>
+{/if}

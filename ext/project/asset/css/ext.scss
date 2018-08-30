@@ -1,0 +1,375 @@
+@import "../../../project/config/theme.scss";
+
+
+
+/* ----------------------------------------------
+	Extension icon: stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconProject {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconProject .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+
+
+/* -----------------
+	Sub menu
+   ----------------- */
+	/* Projects */
+#navi-main-list-project li.item a,
+#navi-main-list-search li.itemSearchProject a {
+	background: {
+		image:url(../img/icons.png) !important;
+		repeat:no-repeat;
+		position:6px -446px;
+	}
+
+}
+
+  /* Search */
+#navi-main-list-search li.itemSearchTask a {
+	background: {
+		image:url(../img/icons.png) !important;
+		repeat:no-repeat;
+		position:6px 6px;
+	}
+}
+
+
+
+/* ------------------------
+	Quick create wizard popUp styling
+   ------------------------ */
+#quickcreate.dialog.project div#quickcreate_top.dialog_title {
+	padding:0 0 0 22px;
+	background:url(../img/icons.png) no-repeat 0 -355px;
+}
+
+#quickcreate.dialog.task div#quickcreate_top.dialog_title {
+	padding:0 0 0 22px;
+	background:url(../img/icons.png) no-repeat 0 2px;
+}
+
+
+
+/* -----------------------------------------------
+	Quick create (headlet) mode selector entries
+   ----------------------------------------------- */
+#todoyuheadletquickcreate li.itemProjectProject a {
+	background:url(../img/icons.png) no-repeat 5px -388px;
+}
+
+#todoyuheadletquickcreate li.itemProjectTask a {
+	background:url(../img/icons.png) no-repeat 5px -58px;
+}
+
+
+
+/* -----------------
+	Search
+   ----------------- */
+#todoyusearchheadletquicksearch-modes li.searchmodeTask a {
+	background:url(../img/icons.png) no-repeat 3px 3px !important;
+}
+#todoyusearchheadletquicksearch form.searchmodeTask a.mode {
+	background:url(../img/icons.png) no-repeat 3px -23px !important;
+}
+#todoyusearchheadletquicksearch-modes li.searchmodeProject a {
+	background:url(../img/icons.png) no-repeat 3px -447px !important;
+}
+#todoyusearchheadletquicksearch form.searchmodeProject a.mode {
+	background:url(../img/icons.png) no-repeat 1px -614px !important;
+}
+
+/* -----------------------------------------------
+	Search Listing of Projects
+   ----------------------------------------------- */
+.projects {}
+.projectlist .headerLine .fulltitle {}
+
+.projectlist .headerLine .projectNumber {
+	float:right;
+	padding:0 10px;
+}
+
+
+.project h3.projectheader {
+	background-color:transparent;
+	border-bottom:1px solid $colorNeutral02;
+	clear:both;
+	cursor:pointer;
+	display:block;
+	height:14px !important;
+	padding:4px 0;
+
+}
+
+.project .expanded h3 {
+	border-bottom:none;
+}
+
+.projects .project h3 .headLabel {
+	border-left-style:solid;
+	border-left-width:8px;
+	display:block;
+	float:left;
+	height:auto !important;
+	margin: -4px 0 -4px 0;
+	min-height:14px;
+	padding:4px 0 4px 17px;
+
+}
+
+.projects .project h3 .projectName{
+	width:826px;
+	float:left;
+}
+
+.projects .project h3 .projectNumber {
+	padding:0 10px;
+	float:right;
+}
+
+.projects .project.expanded h3 {
+	background-color:$colorNeutral02;
+	border-bottom:none;
+	font-weight:bold;
+}
+
+
+
+/* --------------------------------------
+	Task and project properties
+   ------------------------------------- */
+
+.details .description a {
+	text-decoration:underline !important;
+}
+.details .description a:hover {
+	background-color:$colorNeutral02;
+}
+
+.data ul {
+	margin:0;
+	padding:0 0 5px 14px;
+}
+.data ul li {
+	padding-left:5px;
+}
+.data ol {
+	margin:0 0 0 5px;
+	padding:0 0 5px 14px;
+}
+.data ul  {
+	list-style:disc;
+}
+.data ul.ulList {
+	padding:0;
+}
+
+.data ul.assignedPersons li span {
+	padding-left:20px;
+}
+
+
+
+#project-tabs {
+	width:100%;
+	overflow:hidden;
+	margin-top: -20px;
+}
+
+	/* No project selected */
+.noProjectSelected {
+	padding:10px;
+}
+
+	.noProjectSelected .option {
+		background-color:$colorNeutral01;
+		border:1px solid $colorNeutral05;
+		cursor:pointer;
+		font-size:14px;
+		margin-bottom:10px;
+		padding:10px;
+	}
+
+	.noProjectSelected p.message {
+		padding:10px;
+	}
+
+
+
+/* --------------------------------------
+	Project tree tabs
+   ------------------------------------- */
+#project-tabs li span.icon {
+	background:url(../img/icons.png) no-repeat 0 -445px;
+}
+
+
+
+/* --------------------------------------
+	Search tabs
+   ------------------------------------- */
+#search-tab-task span.icon {
+	background:url(../img/icons.png) no-repeat 0 6px;
+}
+
+#search-tab-project span.icon {
+	background:url(../img/icons.png) no-repeat 0 -350px;
+}
+
+
+
+/* --------------------------------------
+	Tab content
+   ------------------------------------- */
+.task .tabContent .tabBlock {
+	background: none;
+
+	&.fForm fieldset {
+		padding-top: 15px;
+
+		legend {
+			display: none;
+		}
+	}
+}
+
+.task .tabContent .fForm fieldset.buttons {
+	padding-top:0;
+}
+
+/* -------------------------------------
+	Extconf and task preset set form
+   ------------------------------------- */
+fieldset.defaultsforlimited {
+	margin-top:10px;
+	border-top:1px solid $colorNeutral02;
+	padding-top:10px;
+}
+
+
+
+/* -------------------------------------
+	Status colors for task and project
+   ------------------------------------- */
+
+	/* planning */
+.bcStatus1 {
+	border-color:$colorStatusPlanning;
+}
+
+.bgStatus1 {
+	background-color:$colorStatusPlanning;
+}
+
+	/* open */
+.bcStatus2 {
+	border-color:$colorStatusOpen;
+}
+
+.bgStatus2 {
+	background-color:$colorStatusOpen;
+}
+
+	/* progress */
+.bcStatus3 {
+	border-color:$colorStatusProgress;
+}
+
+.bgStatus3 {
+	background-color:$colorStatusProgress;
+}
+
+	/* confirm */
+.bcStatus4 {
+	border-color:$colorStatusConfirm;
+}
+
+.bgStatus4 {
+	background-color:$colorStatusConfirm;
+}
+
+	/* done */
+.bcStatus5 {
+	border-color:$colorStatusDone;
+}
+
+.bgStatus5 {
+	background-color:$colorStatusDone;
+}
+
+	/* accepted */
+.bcStatus6 {
+	border-color:$colorStatusAccepted;
+}
+
+.bgStatus6 {
+	background-color:$colorStatusAccepted;
+}
+
+	/* rejected */
+.bcStatus7 {
+	border-color:$colorStatusRejected;
+}
+
+.bgStatus7 {
+	background-color:$colorStatusRejected;
+}
+
+	/* cleared */
+.bcStatus8 {
+	border-color:$colorStatusCleared;
+}
+
+.bgStatus8 {
+	background-color:$colorStatusCleared;
+}
+
+	/* warranty */
+.bcStatus9 {
+	border-color:$colorStatusWarranty;
+}
+
+.bgStatus9 {
+	background-color:$colorStatusWarranty;
+}
+
+	/* customer */
+.bcStatus10 {
+	border-color:$colorStatusWaiting;
+}
+
+.bgStatus10 {
+	background-color:$colorStatusWaiting;
+}
+
+
+/* ---------------------------------
+	Project details task preset
+	--------------------------------*/
+.project .infoBox.expandable h4 {
+	cursor: pointer;
+
+	background: {
+	  image: url(../img/icons.png);
+	  repeat: no-repeat;
+	  position: right -745px;
+	}
+
+	&.closed {
+	  background-position: right -775px;
+	}
+}
+
+
+/* -----------------------------
+	Records form elements
+   ---------------------------- */
+.fElement.typeRecords.recordsProject .recordIcon {
+	background:url(../img/icons.png) no-repeat 2px -354px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.task.basics">Základní informace</label>
+	<label index="legend.task.attributes">Vlastnosti</label>
+	<label index="legend.container.basics">Základní informace</label>
+	<label index="legend.container.attributes">Vlastnosti</label>
+	<label index="legend.project.basics">Základní informace</label>
+	<label index="legend.project.preset">Nastavení šablon</label>
+	<label index="legend.project.members">Členové projektu</label>
+	<label index="legend.quicktask.basics">Základní informace o vašich úkolech</label>
+	<label index="legend.project.approvalroles">Role schvalování faktur</label>
+	<label index="legend.admin.basics">Standardní nastavení vašich úkolů</label>
+	<label index="legend.admin.quicktask">Standardní chování rychlých úkolů</label>
+	<label index="legend.admin.fallbacks">Standardní postupy pro osoby s omezenými právy</label>
+	<label index="legend.admin.projectrole.record.general">Role projektu</label>
+	<label index="legend.admin.activity.record.general">Pracovní položka</label>
+	<label index="legend.admin.taskpreset.record.preset">Šablona úkolu</label>
+	<label index="legend.admin.taskpreset.record.general">Standardní nastavení úkolů</label>
+	<label index="legend.admin.taskpreset.record.quicktask">Standardní chování rychlých úkolů</label>
+	<label index="legend.admin.taskpreset.record.fallbacks">Standardní postupy pro osoby s omezenými právy</label>
+	<label index="extconf.basic">Základní nastavení</label>
+</labels>

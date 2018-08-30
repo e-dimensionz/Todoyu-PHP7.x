@@ -1,0 +1,38 @@
+todoyu loginpage extension changelog
+
+loginpage 1.3.1 - 2013-12-31
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+
+loginpage 1.3.0 - 2013-03-27
+	* Require: core 2.3, contact 1.3.1
+	* Added: Users can identify themselves by username or email address when requesting a password reset
+	* Changed: Use mailReceivers for mailings
+	* Bugfix: Forgotten password didn't work
+
+loginpage 1.2.0 - 2012-05-03
+	* Adapted to core 2.2
+	* Added: Cancel button in request forgotten password form to return to login
+
+loginpage 1.1.4 - 2011-12-13
+	* Added: CapsLock detection + warning
+	* Added: Real names of demo-account persons
+	* Added: Hook "loginpage.relogin.onreloginresponse"
+	* Changed: Style of login-links to buttons to be easier recognized as clickable
+
+loginpage 1.1.3 - 2011-11-17
+	* Translation: Polish
+
+loginpage 1.1.2 - 2011-09-15
+	* Added: Hooks: login, login.failed
+
+loginpage 1.1.1 - 2011-07-25
+	* Bugfix: Login status icon styling fixed (icon was cropped)
+
+loginpage 1.1.0 - 2011-06-17
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
+
+loginpage 1.0.6
+	* Bugfix: Removed whitespace after password in email body to prevent copy/paste problems
+	* Bugfix: Fixed label key: forgotpassword.mail.tologin

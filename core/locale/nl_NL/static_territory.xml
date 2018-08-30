@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="num2.name">Afrika</label>
+	<label index="num9.name">Oceanië</label>
+	<label index="num19.name">Amerika's</label>
+	<label index="num142.name">Azië</label>
+	<label index="num150.name">Europa</label>
+	<label index="num30.name">Oost-Azië</label>
+	<label index="num35.name">Zuid-Oost-Azië</label>
+	<label index="num62.name">Zuid- en Centraal Azië</label>
+	<label index="num145.name">West-Azië</label>
+	<label index="num39.name">Zuid-Europa</label>
+	<label index="num151.name">Oost-Europa</label>
+	<label index="num154.name">Noord-Europa</label>
+	<label index="num155.name">West-Europa</label>
+	<label index="num830.name">Kanaaleilanden</label>
+	<label index="num833.name">Maneiland</label>
+	<label index="num5.name">Zuid-Amerika</label>
+	<label index="num13.name">Centraal Amerika</label>
+	<label index="num21.name">Noord-Amerika</label>
+	<label index="num29.name">Caribbean</label>
+	<label index="num11.name">West-Afrika</label>
+	<label index="num14.name">Oost-Afrika</label>
+	<label index="num15.name">Noord-Afrika</label>
+	<label index="num17.name">Midden-Afrika</label>
+	<label index="num18.name">Zuid-Afrika</label>
+	<label index="num53.name">Australië en Nieuw-Zeeland</label>
+	<label index="num54.name">Melanesië</label>
+	<label index="num57.name">Micronesië</label>
+	<label index="num61.name">Polynesië</label>
+</labels>

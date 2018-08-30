@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Login</label>
+	<label index="page.title">Login</label>
+	<label index="tab.login">Login</label>
+	<label index="tab.help">Ajuda</label>
+	<label index="tab.blog">Blog</label>
+	<label index="loginbox.title">Bem-vindo! Entrar no todoyu</label>
+	<label index="form.field.username">Usuário</label>
+	<label index="form.field.password">Senha</label>
+	<label index="form.field.submit">Login</label>
+	<label index="form.remainLogin">Continuar Conectado</label>
+	<label index="form.loginFailed">Usuário ou senha incorretos. Tentar novamente.</label>
+	<label index="form.status.enterLoginData">Entre com seu usuário e senha</label>
+	<label index="form.status.verifyingLoginData">Verificando usuário e senha</label>
+	<label index="form.status.loginOk">Login Ok</label>
+	<label index="form.status.loginFailed">Login falhou</label>
+	<label index="error.enterUsername">Digite seu usuário</label>
+	<label index="error.enterPassword">Digite sua senha</label>
+	<label index="headlet.label">Logout</label>
+</labels>

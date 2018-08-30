@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Basic information about your event</label>
+	<label index="legend.participants">Participants</label>
+	<label index="legend.details">Further Information</label>
+	<label index="legend.notification">Notify Participants</label>
+	<label index="legend.autonotification">Participants receiving an automatical notification email</label>
+	<label index="legend.reminders">My reminders for this appointment</label>
+	<label index="legend.profile.appearance">Appearance</label>
+	<label index="legend.profile.general">General Calendar Settings</label>
+	<label index="legend.profile.reminder.general">Configure your reminders to your needs</label>
+	<label index="legend.admin.appearance">Appearance</label>
+	<label index="legend.admin.overbooking">Configure the overbooking behaviour</label>
+	<label index="legend.admin.reminders">Default settings for reminders</label>
+	<label index="legend.admin.automaticEmail">Configure the notification behaviour</label>
+	<label index="legend.admin.holidayset.record.general">Holiday Set</label>
+	<label index="legend.admin.holiday.record.general">Holiday</label>
+	<label index="comment.autonotification.label">Send Emails To:</label>
+	<label index="comment.autonotification.noroles">No participant is in a role preset for auto-notification.</label>
+	<label index="legend.series">Event series</label>
+</labels>

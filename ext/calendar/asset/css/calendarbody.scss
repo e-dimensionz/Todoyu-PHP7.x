@@ -1,0 +1,184 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ---------------
+	Grid
+   --------------- */
+.mainGrid {
+	border-bottom:1px solid $colorNeutral02;
+	background:$colorCorporate04;
+}
+
+#gridContainer {
+	background:#f2f3ed;
+	position:relative;
+	overflow:hidden;
+}
+
+
+
+/* Scrolling or not */
+#calendarBody {
+	overflow:hidden;
+
+	&.month {
+		height:auto;
+	}
+
+	&.full {
+		overflow:visible;
+	}
+}
+
+#tgnowptr {
+	background:$colorCorporate00 url(../img/background-hours.png) repeat-y;
+}
+
+#calendar .colHours {
+//	width:40px;
+	background:$colorCorporate00 url(../img/background-hours.png) repeat-y;
+
+	.hour {
+		padding-left:2px;
+		color:$colorNeutral08;
+		height:41px;
+		margin-top:1px;
+		-moz-user-select: none;
+		user-select: none;
+		cursor: default;
+
+		&:hover {
+			background-color:$colorHighlight03;
+		}
+
+		&.currentHour {
+			font-weight:bold;
+		}
+	}
+}
+
+#calendar .dayMode .colHours .hour {
+	cursor:pointer;
+}
+
+	/* Marker layer of current hour */
+#currentTimePastArea {
+	position:absolute;
+	top:0px;
+	z-index:10;
+	width:100%;
+	pointer-events:none;
+	background-color:$colorNeutral03;
+ 	opacity:0.4;
+	overflow:hidden;
+}
+
+#currentTimeMarker {
+	position:absolute;
+	z-index:20;
+	height:2px;
+	width:100%;
+	pointer-events:none;
+	background-color:$colorAlert00;
+}
+
+.timeSpacer {
+	width: 4.5%;
+}
+.dayEvents {
+	background-color:$white;
+	border: {
+		right:1px solid $colorNeutral03;
+		left:1px solid $colorCorporate04;
+	}
+
+		table {
+		table-layout:fixed;
+		width:100%;
+	}
+}
+
+
+
+/* ----------------------
+	Area tabs
+   ---------------------- */
+#calendar-tabs span.icon {
+	background-image:url(../img/icons.png);
+}
+
+#calendar-tab-day span.icon {
+	background-position:2px -204px;
+}
+#calendar-tab-week span.icon {
+	background-position:2px -234px;
+}
+#calendar-tab-month span.icon {
+	background-position:2px -264px;
+}
+
+#calendar-tab-edit,
+#calendar-tab-view {
+	float:right !important;
+}
+
+#calendar-tab-edit span.icon {
+	background-position:2px -24px;
+}
+#calendar-tab-view span.icon {
+	background-position:2px 6px;
+}
+
+
+/* ----------------------
+	Calendar
+   ---------------------- */
+#calendar {
+	background-color:$white;
+}
+
+#calendar-body {
+	background-color:$white;
+	padding-bottom:10px;
+	width:100%;
+}
+
+
+/* ------------------------
+	Create or update event
+   ------------------------ */
+li.editeventtab p.label span.icon {
+	background:transparent url(../img/icons.png) no-repeat scroll -1px -30px;
+	margin-right:2px;
+}
+
+#createevent {
+	.label {
+		float:left;
+		font-weight:bold;
+		width:125px; }
+
+	.saveButton {
+		background-color:green;
+		color:$white;
+	}
+
+	#repeatsChoices {
+		background-color:$colorCorporate00;
+		margin: {
+			left:130px;
+			top:5px;
+			bottom:5px;
+		}
+		padding:4px;
+	}
+
+	#repeatsChoices_when {
+		margin-top:10px;
+		font-weight:bold; }
+
+	#repeatsChoices_area {
+		margin-top:10px;
+		font-weight:bold; }
+}

@@ -1,0 +1,37 @@
+todoyu daytracks extension changelog
+
+daytracks 1.3.1 - 2013-12-31
+	* Added: Possibility to switch user in time sheet
+	* Added: Show start and end of week in history (complete calendar-week)
+	* Added: Daytracks export can be viewed in popup
+	* Added: Status colors on Tasks' left border in daytracks detail view
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+	* Bugfix: Check for employer fields
+	* Bugfix: Selector-Group-Labels were defined in dev-extension.
+
+daytracks 1.3.0 - 2013-03-27
+	* Added: TodoyuDaytracksExportManager::getDateLastTimeTracking()
+
+daytracks 1.2.0 - 2012-05-03
+	* Added: Date of track now states also calendar week
+	* Changed: When opening the daytracks popup w/o any trackings in the current month, the last month with trackings is shown
+	* Changed: Show label "no tracked time" instead of time 00:00:00
+	* Changed: Modified export. use tracked time as chargeable time if no chargeable defined
+
+daytracks 1.1.2 - 2011-11-17
+	* Bugfix: Timetracking option in task context menu of daytracks was missing
+	* Bugfix: History was not available for not-admins
+	* Changed: Refresh panelwidget when task was deleted
+	* Changed: Deleted tasks are greyed out
+	* Changed: Removed employer option from export form for users who can only export their own trackings
+	* Translation: Polish
+
+daytracks 1.1.1 - 2011-09-15
+	* Minor cleanups, styling and layout
+
+daytracks 1.1.0 - 2011-06-17
+	* Bugfix: Calculate correct total time even if there are multiple tracks on a task for a single day
+	* Feature: Rights cleanup, restricted accessing timetracking history
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name

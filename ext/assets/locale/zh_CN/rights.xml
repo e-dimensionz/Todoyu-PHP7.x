@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">普通设置</label>
+	<label index="general.use">使用资源</label>
+	<label index="asset">资源</label>
+	<label index="asset.seeAll">显示所有资源</label>
+	<label index="asset.delete">删除资源</label>
+</labels>

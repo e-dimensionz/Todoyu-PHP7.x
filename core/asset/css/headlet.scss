@@ -1,0 +1,78 @@
+@import "../../config/theme.scss";
+
+
+
+#headlets {
+	position:absolute;
+	top:0px;
+	right:89px;
+	z-index:200;
+
+	ul.content {
+		box-shadow:2px 2px 7px $colorNeutral06;
+		background-color:$white; }
+
+	> li {
+		position:relative;
+		float:left;
+		z-index:200;
+
+		&.active,
+		&:hover {
+			z-index:202;
+
+			> a {
+				border-color:$colorNeutral03;
+				z-index:203;
+				background-color:$white;}
+		}
+
+		> a {
+			display:block;
+			position:relative;
+			height:26px;
+			width:26px;
+			margin-left: -1px;
+			border:1px solid $colorCorporate02;
+			border-width:0 1px;
+			cursor:pointer;
+			z-index:200;
+		}
+
+		> ul {
+			position:absolute;
+			top:25px;
+			left: -1px;
+			border:1px solid $colorNeutral03;
+			z-index:202;
+			background-color:$white;
+
+
+			> li {
+				float:none;
+				margin:0px;
+				border:none;
+
+				a {
+					width:auto;
+					height:auto;
+					margin:0px;
+					padding:5px 30px 3px 30px;
+					border:none;
+					font-size:11px;
+					white-space:nowrap;
+					cursor:pointer;
+					display:block;
+
+					&.primary {
+						border-bottom:1px solid $colorNeutral03; }
+				}
+			}
+		}
+	}
+
+	li.menu li:hover a {
+		border:none;
+		background-color:$colorCorporate01;
+	}
+}

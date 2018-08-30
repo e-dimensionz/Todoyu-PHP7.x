@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > headlet: timetracking</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > headlet: timetracking</td></tr>
+</thead><tbody>
+<!------ portal > headlet: timetracking-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyutimetrackingheadlettracking-button</td>
+	<td></td>
+</tr>
+<!--assert cont (timetracks list) to be openable-->
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=#todoyutimetrackingheadlettracking-content</td>
+	<td></td>
+</tr>
+<!--Open tracking headlet-->
+<tr>
+	<td>click</td>
+	<td>css=a#todoyutimetrackingheadlettracking-button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#todoyutimetrackingheadlettracking-content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=#todoyutimetrackingheadlettracking-content</td>
+	<td></td>
+</tr>
+<!--close headlet content-->
+<tr>
+	<td>click</td>
+	<td>css=a#todoyutimetrackingheadlettracking-button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=#todoyutimetrackingheadlettracking-content</td>
+	<td></td>
+</tr>
+<!--expand task 33 with status:open, open timetrack tab, start timetracking-->
+<tr>
+	<td>click</td>
+	<td>css=div#task-33.statusOpen h3.contextmenutask</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-33&quot;]</td>
+	<td></td>
+</tr>
+<!--activate timetracking tab of task 33-->
+<tr>
+	<td>click</td>
+	<td>//p[@id='task-33-tab-timetracking-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--active?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;task-35-tab-timetracking&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<!--Start tracking-->
+<tr>
+	<td>click</td>
+	<td>task-33-timetracking-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@id=&quot;task-33-timetracking-button&quot;][contains(@class,&quot;stopTracking&quot;)]</td>
+	<td></td>
+</tr>
+<!--open headlet content, assert that the task runs, stop it here-->
+<tr>
+	<td>click</td>
+	<td>css=a#todoyutimetrackingheadlettracking-button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Total Tracked Time</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//ul[@id=&quot;todoyutimetrackingheadlettracking-content&quot;]/li/div[@class=&quot;stop&quot;]/button[contains(@class,&quot;stopTracking&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id=&quot;todoyutimetrackingheadlettracking-content&quot;]/li/div[@class=&quot;stop&quot;]/button[contains(@class,&quot;stopTracking&quot;)]</td>
+	<td></td>
+</tr>
+<!--tracking headlet shown?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//ul[@id=&quot;todoyutimetrackingheadlettracking-content&quot;]</td>
+	<td></td>
+</tr>
+<!--close headlet content-->
+<tr>
+	<td>click</td>
+	<td>css=a#todoyutimetrackingheadlettracking-button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>//ul[@id=&quot;todoyutimetrackingheadlettracking-content&quot;]</td>
+	<td></td>
+</tr>
+<!--collapse task 33 again, assert it's status is now: in progress-->
+<tr>
+	<td>click</td>
+	<td>css=div#task-33.statusOpen h3.contextmenutask</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-33&quot;][contains(@class,&quot;bcStatus3&quot;)]</td>
+	<td></td>
+</tr>
+<!--open task 33 contextmenu > status > click "open"-->
+<tr>
+	<td>contextMenu</td>
+	<td>css=div#task-33.statusOpen h3.contextmenutask</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>css=ul#contextmenu li#contextmenu-status.status a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul#contextmenu li#contextmenu-status.status ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-open.status-open a.taskStatusOpen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-33&quot;][contains(@class,&quot;bcStatus2&quot;)]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

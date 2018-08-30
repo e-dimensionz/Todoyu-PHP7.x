@@ -1,0 +1,51 @@
+<div class="wizard wizard{ucfirst $wizardName}" id="wizard">
+
+	<div class="navi">
+		<ol>
+			{foreach $steps step}
+				{$done = in_array($step.step, $doneSteps)}
+				<li class="{if $stepName==$step.step}active{/if}{if $done} done{/if}" {if $done}onclick="Todoyu.Wizard.goToStep('{$step.step}')"{/if}>{Label $step.title}</li>
+			{/foreach}
+		</ol>
+	</div>
+
+	<div class="content">
+		<h1 class="title">{$title}</h1>
+
+		{if $info}
+			<p class="info">{$info}</p>
+		{/if}
+
+		<form method="post" name="data" action="index.php?ext=core&amp;controller=wizard" id="wizard-form">
+			<input type="hidden" name="action" value="save" />
+			<input type="hidden" name="wizard" value="{$wizardName}" id="wizard-wizard" />
+			<input type="hidden" name="step" value="{$stepName}" id="wizard-step" />
+			<input type="hidden" name="direction" value="next" id="wizard-direction" />
+			<input type="hidden" name="nosave" value="0" id="wizard-nosave" />
+			{$content}
+		</form>
+
+	</div>
+
+	<div class="help">
+		{$help}
+	</div>
+
+	<div class="buttons">
+		<div class="close">
+			{Button label="core.global.wizard.close" class="close" onclick="Todoyu.Wizard.close()"}
+		</div>
+		<div class="main">
+			{if !$isFirst}
+				{Button label="core.global.wizard.back" class="back" onclick="Todoyu.Wizard.back()"}
+			{/if}
+			{if !$isLast}
+				{Button label="core.global.wizard.next" class="next" onclick="Todoyu.Wizard.next()"}
+			{/if}
+		</div>
+
+	</div>
+
+	<div class="clear"></div>
+
+</div>

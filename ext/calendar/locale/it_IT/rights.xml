@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Generale</label>
+	<label index="general.use">Usa le funzioni del calendario</label>
+	<label index="general.area">Usa l'area del calendario</label>
+	<label index="event">Evento</label>
+	<label index="event.seeAll">Vede ogni evento</label>
+	<label index="event.editAndDeleteAssigned">Modifica e elimina eventi assegnati (o creati da questa persona)</label>
+	<label index="event.editAndDeleteAll">Modifica e elimina ogni evento</label>
+	<label index="event.add">Aggiunta nuovi eventi</label>
+	<label index="event.search">Ricerca eventi</label>
+	<label index="event.assignOthers">Assegna eventi ad altre persone</label>
+</labels>

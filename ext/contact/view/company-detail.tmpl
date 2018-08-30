@@ -1,0 +1,130 @@
+<div id="contact-details" class="company">
+	<h1 class="headerLine">
+		<span class="title first">{$title}</span>
+	</h1>
+
+	<div class="infoBoxOuter">
+		{* ------------ Main company data (name, primary email, image, etc.) ------------ *}
+		<div class="infoBox main-company-data">
+			<h4>{Label LLL:contact.ext.company.maincompanydata}</h4>
+			<div class="content overflow">
+				<div class="left image">{companyImage $id}</div>
+				<p>
+					<h1>{$title}</h1>
+				</p>
+			</div>
+		</div>
+	
+		{* ------------ Dynamic contact info types (emails, phone numbers, etc.) ------------ *}
+		{if $contactinfo}
+			<div class="infoBox contact-info">
+				<h4>{Label LLL:contact.ext.contactinfo}</h4>
+				<div class="content overflow">
+					<table class="list autoWidthTable">
+						{foreach $contactinfo numCi ciData}
+							{if isContactinfotypeSeeAllowed('company', $id, $ciData.id_contactinfotype)}
+								<tr>
+									<th>{labelContactinfotype $ciData.id_contactinfotype}:</th>
+									<td>
+										{renderContactInfoType $ciData}
+									</td>
+								</tr>
+							{/if}
+						{/foreach}
+					</table>
+				</div>
+			</div>
+		{/if}
+		
+		{* ------------ Addresses ------------ *}
+		{foreach $address numAddr addressType}
+			{if isAddressTypeSeeAllowed('company', $id, $addressType.id_addresstype)}
+				<div class="infoBox addressPart">
+					<h4>{addressType $addressType.id_addresstype}</h4>
+					<div class="content overflow address">
+						{if strlen($addressType.street) > 0}
+							{nl2br $addressType.street}<br />
+						{/if}
+
+						{if strlen($addressType.postbox)>0}
+							{Label contact.ext.address.attr.postbox}: {htmlencode wordwrap($addressType.postbox 30 cut=true)}<br />
+						{/if}
+
+						{if strlen($addressType.zip)>0 || strlen($addressType.city)>0}
+							{$addressType.zip} {$addressType.city}<br/>
+						{/if}
+						{countryName $addressType.id_country}
+
+
+
+						{if strlen($addressType.comment) > 0}
+							<br />
+							<br />
+							{nl2br $addressType.comment}
+						{/if}
+					</div>
+				</div>
+			{/if}
+		{/foreach}
+
+
+
+		{* ------------ Company employees with job type and work address ------------ *}
+		{if count($person) > 0}
+			<div class="infoBox employeePart">
+				<h4>{Label LLL:contact.ext.company.attr.person}</h4>
+				{List ext=contact list=employee noPaging=true params=array(idCompany=$id)}
+				<br/><br/>
+			</div>
+		{/if}
+
+
+		{* ------------ Projects ------------ *}
+		{include file="ext/contact/view/detail-project-part.tmpl" header="LLL:contact.ext.company.details.projectPartHeader"}
+
+
+
+		{* ------------ Additional infos (date of entry) ------------ *}
+
+		<div class="infoBox others">
+			<h4>{Label LLL:contact.ext.other}</h4>
+			<div class="content overflow address">
+				<table class="list autoWidthTable">
+					{if $date_enter > 0 && isInternal()}
+						<tr>
+							<th>{Label LLL:contact.ext.company.attr.date_enter}:</th>
+							<td>{dateFormat $date_enter "date"}</td>
+						</tr>
+					{/if}
+					{if allowed('contact', 'company:seeComment')}
+						<tr>
+							<th>{Label LLL:contact.ext.company.attr.comment}:</th>
+							<td>{$comment|default:"-"}</td>
+						</tr>
+					{/if}
+				</table>
+			</div>
+		</div>
+
+
+
+		{* ------------ Hooked content ------------ *}
+		{$hookedContent}
+	
+		{* ------------ Actions panel (edit, delete, close) ------------ *}
+		<div class="actions">
+			{if constant('AREA') == constant('EXTID_CONTACT')}
+				{if isCompanyEditAllowed($id)}
+					{Button label='contact.ext.company.edit' onclick='Todoyu.Ext.contact.Company.edit($id)' class='buttonCompanyEdit' id='company-edit' title='LLL:contact.ext.company.edit'}
+				{/if}
+				{if isCompanyDeleteAllowed($id)}
+					{Button label='contact.ext.company.delete' onclick='Todoyu.Ext.contact.Company.remove($id)' class='buttonCompanyDelete' id='company-delete' title='LLL:contact.ext.company.delete'}
+				{/if}
+			{/if}
+
+			{Button label='contact.ext.backToList' onclick='Todoyu.Ext.contact.Company.closeDetailView()' class='backToList' id='company-backtolist' title='LLL:contact.ext.backToList'}
+		</div>
+		<div class="clear"></div>
+
+	</div>
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Общие</label>
+	<label index="general.use">Использовать закладки</label>
+	<label index="task">Закладки задач</label>
+	<label index="task.add">Закладка задачи</label>
+	<label index="task.remove">Удалить закладки</label>
+	<label index="panelwidgets">Виджеты панели</label>
+</labels>

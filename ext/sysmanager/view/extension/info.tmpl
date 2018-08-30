@@ -1,0 +1,54 @@
+<div>
+	{Header(cat($ext.title " (" $extKey ")"), cat("extIcon" ucfirst($extKey) " " "hasIcon"))}
+
+	<table class="extInfo" cellspacing="2" cellpadding="3">
+		<tr>
+			<th class="label" scope="row">{Label core.global.title}</th>
+			<td class="value">{$ext.title}</td>
+		</tr>
+		<tr>
+			<th scope="row">{Label sysmanager.extension.key}</th>
+			<td>{$extKey}</td>
+		</tr>
+		<tr>
+			<th scope="row">{Label sysmanager.extension.version} / {Label sysmanager.extension.state}</th>
+			<td>{$ext.version} / {$ext.state}</td>
+		</tr>
+		<tr>
+			<th scope="row">{Label core.global.description}</th>
+			<td>{$ext.description}</td>
+		</tr>
+		<tr>
+			<th scope="row">{Label sysmanager.extension.author}</th>
+			<td>{if $ext.author.name}{$ext.author.name}, {/if} {$ext.author.company} ({$ext.author.email})</td>
+		</tr>
+		<tr>
+			<th scope="row">{Label sysmanager.extension.dependencies}</th>
+			<td>
+				{if $ext.constraints.depends}
+					<ul>
+						{foreach $ext.constraints.depends extkey version}
+							<li>{$extkey} ({$version})</li>
+						{/foreach}
+					</ul>
+				{else}
+					-
+				{/if}
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">{Label sysmanager.extension.conflicts}</th>
+			<td>
+				{if $ext.constraints.conflicts}
+					<ul>
+						{foreach $ext.constraints.conflicts extkey version}
+							<li>{$extkey} ({$version})</li>
+						{/foreach}
+					</ul>
+				{else}
+					-
+				{/if}
+			</td>
+		</tr>
+	</table>
+</div>

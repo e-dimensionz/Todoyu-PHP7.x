@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Sledování času</label>
+	<label index="title">Sledování času</label>
+	<label index="noTracksYet">Žádný čas nezaznamenán</label>
+	<label index="chargeable">Zpoplatněný</label>
+	<label index="attr.date_create">Datum</label>
+	<label index="attr.date_track">Datum</label>
+	<label index="attr.workload_tracked">Odpracovaný</label>
+	<label index="attr.workload_chargeable">Zpoplatněný</label>
+	<label index="attr.comment">Komentář</label>
+	<label index="search.label">Sledování času</label>
+	<label index="task.attr.overtimed">Přesčasový úkol</label>
+	<label index="headlet.label">Sledování času</label>
+	<label index="totalTrackedTime">Veškerý zaznamenaný čas</label>
+	<label index="totalChargeableTime">Veškerý zpoplatněný čas</label>
+	<label index="tasktab.edit">Pro úpravu záznamu klikněte zde</label>
+	<label index="start">Začít sledovat čas</label>
+	<label index="stop">Ukončit sledování času</label>
+	<label index="currentTask">Současný úkol</label>
+	<label index="showCurrentTaskInProject">Zobrazit úkol v projektu</label>
+	<label index="quicktask.workload_done">Odpracovaný čas</label>
+	<label index="estimated_workload">Časový odhad</label>
+	<label index="jumpToTask">Kliknutím přejít na úkol</label>
+	<label index="jumpToProject">Kliknutím přejít na projekt</label>
+	<label index="extconf.stopOnLogout">Ukončit sledování času když uživatel klikne na odhlásit se</label>
+</labels>

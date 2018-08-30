@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Работники</label>
+	<label index="selection">Активная выборка</label>
+	<label index="selection.empty">Ничего не выбрано. Используйте поиск для добавления групп или людей.</label>
+</labels>

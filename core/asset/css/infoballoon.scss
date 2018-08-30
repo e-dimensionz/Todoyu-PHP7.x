@@ -1,0 +1,47 @@
+@import "../../config/theme.scss";
+
+
+
+em.infoBalloonAnchor {
+	background:url(../img/icons.png) no-repeat 1px -630px;
+	cursor:help;
+	display:inline-block;
+	height:16px;
+	text-indent: -9999px;
+	width:16px;
+}
+
+.infoBalloon {
+	position:absolute;
+	float:left;
+	z-index:200;
+}
+
+span.infoBalloon p,
+.infoBox span.infoBalloon p {
+	background-color:$colorHighlight02;
+	border:1px solid $colorApprove03;
+	border-radius:1px 1px 1px 1px;
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.25);
+	font-size:11px;
+	left:60px;
+	line-height:17px;
+	margin:0;
+	padding:15px;
+	position:absolute;
+	top: -10px;
+	width:200px;
+	z-index:1;
+}
+
+span.infoBalloon .pointer,
+.infoBox span.infoBalloon .pointer {
+	background:url('../img/infoballoonArrow.png');
+	display:block;
+	height:30px;
+	left:32px;
+	position:absolute;
+	top: -5px;
+	width:30px;
+	z-index:3;
+}

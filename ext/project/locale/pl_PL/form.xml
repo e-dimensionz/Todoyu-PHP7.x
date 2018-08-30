@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.task.basics">Podstawowe informacje</label>
+	<label index="legend.task.attributes">Atrybuty</label>
+	<label index="legend.container.basics">Podstawowe informacje</label>
+	<label index="legend.container.attributes">Atrybuty</label>
+	<label index="legend.project.basics">Podstawowe informacje</label>
+	<label index="legend.project.taskpreset">Konfiguracja zadań</label>
+	<label index="legend.project.members">Członkowie projektu</label>
+	<label index="legend.quicktask.basics">Podstawowe informacje</label>
+	<label index="legend.project.approvalroles">Role potwierdzające faktury</label>
+	<label index="legend.quicktask.basics">Podstawowe informacje o zadaniu</label>
+	<label index="legend.admin.basics">Domyślne ustawienia zadania</label>
+	<label index="legend.admin.quicktask">Domyślne zachowania dla szybkich zadań</label>
+	<label index="legend.admin.fallbacks">Domyslny zwrot dla osób z ograniczonymi uprawnieniami</label>
+	<label index="legend.admin.projectrole.record.general">Rola projektu</label>
+	<label index="legend.admin.activity.record.general">Rodzaj działalności</label>
+	<label index="legend.admin.taskpreset.record.general">Domyślne ustawienia zadania</label>
+	<label index="legend.admin.taskpreset.record.quicktask">Domyślne zachowania dla szybkich zadań</label>
+	<label index="legend.admin.taskpreset.record.fallbacks">Domyslny zwrot dla osób z ograniczonymi uprawnieniami</label>
+</labels>

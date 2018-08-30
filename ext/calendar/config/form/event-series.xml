@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">event</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="series">
+			<legend>calendar.form.legend.series</legend>
+			<elements>
+
+				<field type="comment" name="serieslabel">
+					<comment type="function">
+						<function>TodoyuCalendarEventSeriesViewHelper::getSeriesLabel</function>
+					</comment>
+				</field>
+
+				<field type="select" name="seriesfrequency">
+					<label>calendar.series.frequency</label>
+					<source type="function">
+						<function>TodoyuCalendarEventSeriesViewHelper::getFrequencyOptions</function>
+					</source>
+					<noPleaseSelect />
+				</field>
+
+				<field type="select" name="seriesinterval">
+					<label>calendar.series.interval</label>
+					<source type="function">
+						<function>TodoyuCalendarEventSeriesViewHelper::getIntervalOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+
+				<field type="select" name="seriesweekdays">
+					<label>calendar.series.weekdays</label>
+					<source type="function">
+						<function>TodoyuCalendarEventSeriesViewHelper::getWeekdayOptions</function>
+					</source>
+					<size>7</size>
+					<multiple />
+					<required />
+				</field>
+
+				<field type="date" name="seriesdate_end">
+					<label>calendar.series.enddate</label>
+					<calendar>
+						<disableFunc>Todoyu.Ext.calendar.Event.Series.seriesEndCalendarDisableCheck</disableFunc>
+					</calendar>
+				</field>
+
+				<field type="comment" name="seriesoverbooking">
+					<label>calendar.series.conflicts</label>
+					<comment type="function">
+						<function>TodoyuCalendarEventSeriesViewHelper::getOverbookingWarnings</function>
+					</comment>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

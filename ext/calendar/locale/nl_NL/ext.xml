@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Kalender</label>
+	<label index="page.title">Kalender</label>
+	<label index="maintab.label">Planning</label>
+	<label index="subMenuEntries.prefix">Kalender</label>
+	<label index="subMenuEntry.day">Dag</label>
+	<label index="subMenuEntry.week">Week</label>
+	<label index="subMenuEntry.month">Maand</label>
+	<label index="yearsold">jaren oud</label>
+	<label index="workingtime">Werktijden</label>
+	<label index="search.label">Agenda-items</label>
+	<label index="search.mode.label">Agenda-items zoeken</label>
+	<label index="portal.tab.appointments">Afspraken</label>
+	<label index="portal.tab.appointments">Afspraken</label>
+	<label index="quicknav.backward.title">Terug</label>
+	<label index="quicknav.forward.title">Vooruit</label>
+	<label index="quicknav.today.title">Naar vandaag</label>
+	<label index="dayview.workingtime">Alleen werktijden weergeven (08h-18h)</label>
+	<label index="dayview.fullday">Uren van hele dag weergeven (00h-24h)</label>
+	<label index="holidayset">Set feestdagen</label>
+	<label index="records.holidayset">Feestdagen</label>
+	<label index="holidayset.attr.name">Naam</label>
+	<label index="holidayset.attr.holiday">Feestdag</label>
+	<label index="holidayset.attr.holiday.new">Nieuwe feestdag</label>
+	<label index="holiday">Feestdag</label>
+	<label index="holiday.attr.workingtime">Werktijden</label>
+	<label index="holiday.attr.holidayset">Set feestdagen</label>
+	<label index="holiday.attr.holidayset.new">Nieuwe set feestdagen</label>
+	<label index="today">Vandaag</label>
+	<label index="owner">Eigenaar</label>
+	<label index="extconf.allowoverbooking.label">Overboeken toestaan?</label>
+	<label index="profile.module">Kalender</label>
+	<label index="profile.module.main.tab">Algemeen</label>
+</labels>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Algemene instellingen</label>
+	<label index="general.use">Urenregistratie gebruiken</label>
+	<label index="task">Taakregistratie</label>
+	<label index="task.track">Urenregistratie</label>
+	<label index="task.editOwn">Kan eigen registraties in taak bewerken</label>
+	<label index="task.editAll">Kan alle registraties in taak bewerken</label>
+</labels>

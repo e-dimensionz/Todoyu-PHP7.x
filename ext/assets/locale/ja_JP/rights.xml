@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般的な設定</label>
+	<label index="general.use">資源の使用</label>
+	<label index="asset">資源</label>
+	<label index="asset.seeAll">全ての資源を表示</label>
+	<label index="asset.delete">資源の削除</label>
+</labels>

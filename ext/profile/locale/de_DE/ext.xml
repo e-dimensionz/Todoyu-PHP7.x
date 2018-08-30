@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Benutzereinstellungen</label>
+	<label index="page.title">Mein Profil</label>
+	<label index="headlet.label">Meine Einstellungen</label>
+	<label index="module.general">Allgemeine Einstellungen</label>
+	<label index="general.main.tab">Allgemein</label>
+	<label index="general.main.locale">Sprache</label>
+	<label index="general.main.saved">Einstellungen gespeichert</label>
+	<label index="general.main.saved.pleaseWait">todoyu erstellt gerade neue Cache Dateien für die gewählte Sprache. Lehnen Sie sich einen Moment zurück.</label>
+	<label index="general.password.title">Eigenes Passwort ändern</label>
+	<label index="general.password.tab">Passwort</label>
+	<label index="general.password.current">Aktuelles Passwort</label>
+	<label index="general.password.current.empty">Sie müssen Ihr altes Passwort eingeben, um ein neues zu setzen</label>
+	<label index="general.password.current.wrong">Das alte Passwort ist nicht korrekt</label>
+	<label index="general.password.new1">Neues Passwort</label>
+	<label index="general.password.new2">Passwort wiederholen</label>
+	<label index="general.password.error">Passwortänderung fehlgeschlagen</label>
+	<label index="general.password.success">Passwort geändert</label>
+	<label index="general.password.notEqual">Die beiden neuen Passwörter stimmen nicht überein</label>
+	<label index="general.main.header">Persönliche Einstellungen</label>
+	<label index="general.password.header">Passwort</label>
+</labels>

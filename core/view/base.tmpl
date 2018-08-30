@@ -1,0 +1,62 @@
+{include "core/view/pageheader.tmpl"}
+
+<body id="todoyu-{constant(EXT)}" class="todoyu-{constant(EXT)} {trim $bodyClass}" {foreach $bodyAttributes attribut}{$attribute.name}="{$attribute.value}" {/foreach}>
+
+{foreach $bodyElements bodyElement}
+{$bodyElement}
+{/foreach}
+
+<div id="header">
+	<div class="inner bclFF">
+		{include "core/view/toppanel.tmpl"}
+		{$navigation}
+	</div>
+</div>
+
+<div id="notifications">
+	<div class="notes" id="notes"></div>
+</div>
+
+<div id="box">
+	<div id="contentBox">
+		<div id="main">
+			<div id="panel" class="panel">
+			{block "panel"}
+				{$panelWidgets}
+			{/block}
+				<div class="panelFooter"><!-- panel footer --></div>
+			</div>
+			<div id="right" class="bclFF">
+				<div id="content" class="content">
+					{if $fullContent}
+						{block "content"}{$fullContent}{/block}
+					{else}
+						<div id="content-tabs">
+							{block "contentTabs"}{$tabs}{/block}
+						</div>
+						<div id="content-body">
+							{block "contentBody"}{$content}{/block}
+						</div>
+					{/if}
+				</div><!-- /inner -->
+			</div>
+			<div class="clear"><!-- --></div>
+		</div>
+		<div class="clear"><!-- --></div>
+	</div>
+</div>
+
+{include "core/view/footer.tmpl"}
+
+<ul id="contextmenu"></ul>
+
+{if $jsInlines}
+<script type="text/javascript">
+{foreach $jsInlines jsInline}
+	{$jsInline.code}
+{/foreach}
+</script>
+{/if}
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">联系信息导出</label>
+	<label index="export.instruction">导出为CSV.将使用上面的条件搜索.</label>
+	<label index="export.button">导出联系信息</label>
+</labels>

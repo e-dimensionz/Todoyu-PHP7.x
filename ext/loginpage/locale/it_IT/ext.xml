@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Pagina di accesso</label>
+	<label index="page.title">Accesso</label>
+	<label index="tab.login">Accesso</label>
+	<label index="tab.help">Aiuto</label>
+	<label index="tab.blog">Blog</label>
+	<label index="loginbox.title">Accesso a todoyu</label>
+	<label index="form.field.username">Nome utente</label>
+	<label index="form.field.password">Password</label>
+	<label index="form.field.submit">Accedi</label>
+	<label index="form.remainLogin">Ricordami su questo computer</label>
+	<label index="form.loginFailed">Il nome utente e/o la password non sono corretti. Riprovare.</label>
+	<label index="form.status.enterLoginData">Inserire il nome utente e la password</label>
+	<label index="form.status.verifyingLoginData">Verifica del nome utente e della password in corso</label>
+	<label index="form.status.loginOk">Accesso effettuato. Caricamento di todoyu in corso.</label>
+	<label index="form.status.loginFailed">L'accesso è fallito</label>
+	<label index="error.enterUsername">Inserire il proprio nome utente</label>
+	<label index="error.enterPassword">Inserire la propria password</label>
+	<label index="headlet.label">Esci</label>
+</labels>

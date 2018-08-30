@@ -1,0 +1,47 @@
+/* -------------------
+	Status icons
+   ------------------ */
+#panelwidget-taskstatusfilter-list option {
+	background-image:url(../img/taskstatus.png);
+	height:16px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusPlanning {
+	background-position:4px 0;
+}
+
+#panelwidget-taskstatusfilter-list option.statusOpen {
+	background-position:4px -29px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusProgress {
+	background-position:4px -60px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusConfirm {
+	background-position:4px -90px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusDone {
+	background-position:4px -117px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusAccepted {
+	background-position:4px -117px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusRejected {
+	background-position:4px -147px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusCleared {
+	background-position:4px -176px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusWarranty {
+	background-position:4px -233px;
+}
+
+#panelwidget-taskstatusfilter-list option.statusAccepted {
+	background-position:4px -267px;
+}

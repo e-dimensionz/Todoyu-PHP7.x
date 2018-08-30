@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">Rappels</label>
+	<label index="myreminders">Mes rappels</label>
+	<label index="email">Email</label>
+	<label index="popup">Pop-Up</label>
+	<label index="deactivated">Rappel désactivé</label>
+	<label index="notify.email.deactivated">Rappel par Email désactivé</label>
+	<label index="notify.popup.deactivated">Rappel par Pop-Up désactivé</label>
+	<label index="notify.email.timeupdated">Calendrier de rappel par Email a été changé</label>
+	<label index="notify.popup.timeupdated">Calendrier de rappel par Pop-Up a été changé</label>
+	<label index="beforeDateStart">Avant l'affectation</label>
+	<label index="atDateStart">Quand l'affectation commence</label>
+	<label index="email.subject">Rappel de l'affectation</label>
+	<label index="email.title">Rappel automatique de l'affectation</label>
+	<label index="noReminder">Ne me rappelez pas</label>
+	<label index="cli.infocomment">To automatically send event reminders per email, a cronjob must be setup for your todoyu installation. Instructions on how to setup the todoyu cronjob:</label>
+</labels>

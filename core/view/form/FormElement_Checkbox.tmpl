@@ -1,0 +1,7 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+	{*** The hidden field is a workaround, because unchecked checkboxes are not submitted ***}
+	<input type="hidden"name="{$htmlName}" value="0" />
+	<input class="{$inputClass} {$class}" type="checkbox" name="{$htmlName}" id="{$htmlId}" value="1" {if $disabled}disabled="disabled"{/if}{if $onclick}onclick="{$onclick}"{/if} {if $checked}checked="checked"{/if} {$extraAttributes} />
+{/block}

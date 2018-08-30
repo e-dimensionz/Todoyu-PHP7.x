@@ -1,0 +1,3 @@
+<select name="{$htmlName}" id="{$htmlId}" {if $class != ''}class="{$class}"{/if} size="{$size}" {if $multiple}multiple="multiple"{/if} {if $disabled}disabled="disabled"{/if} {if $onchange}onchange="{$onchange}"{/if} {if $onclick}onclick="{$onclick}"{/if} {$extraAttributes}>
+	{include "core/view/form/FormElement_Select_Options.tmpl"}
+</select>

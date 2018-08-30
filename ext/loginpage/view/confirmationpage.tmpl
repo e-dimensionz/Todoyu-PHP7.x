@@ -1,0 +1,21 @@
+{extends "core/view/base.tmpl"}
+
+{block "panel"}
+	{$panelWidgets}
+{/block}
+
+{block "contentBody"}
+	{Header $title}
+
+	<div class="passwordResetConfirmationText {$class}">
+		<p>
+			{$confirmationpagetext}
+		</p>
+
+		<p>
+			{$tologinlink}
+		</p>
+	</div>
+
+	{include file="ext/loginpage/view/todoyuinfo.tmpl"}
+{/block}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">工作人员</label>
+	<label index="search">搜索</label>
+	<label index="list.empty">没有搜索到人员(选择的过滤器已启用)</label>
+</labels>

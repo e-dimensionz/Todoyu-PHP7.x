@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>sysmanager > panelwidget - sysmanagermodules - present?</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">sysmanager > panelwidget - sysmanagermodules - present?</td></tr>
+</thead><tbody>
+<!--sysmanager > panelwidget: sysmanager modules - present?-->
+<!--widget there, all options present?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-sysmanagermodules-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-sysmanagermodules-toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Manage Records</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Rights &amp; Roles</td>
+	<td></td>
+</tr>
+<!--Modules widget present?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]</td>
+	<td>Extensions</td>
+</tr>
+<!--Modules presents?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-extensions&quot;]</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-records&quot;]</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-rights&quot;]</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-extensions&quot;]</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-config&quot;]</td>
+	<td>Extensions</td>
+</tr>
+<!--All modules reachable?-->
+<!--1. extensions module-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-extensions&quot;]/a</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-extensions&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-records&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-rights&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-config&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<!--2. records module-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-records&quot;]/a</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-extensions&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-records&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-rights&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-config&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<!--3. rights&roles module-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-rights&quot;]/a</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-extensions&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-records&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-rights&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-config&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<!--4. system config module-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-config&quot;]/a</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-extensions&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-records&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-rights&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules-content&quot;]/div/ul/li[@id=&quot;sysmanager-mod-config&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-extensions&quot;]/a</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=System Configuration</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

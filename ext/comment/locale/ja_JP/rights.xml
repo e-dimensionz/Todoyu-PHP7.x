@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般設定</label>
+	<label index="general.use">コメントの使用</label>
+	<label index="comment">コメント</label>
+	<label index="comment.seeAll">全コメント (非パブリック) の表示</label>
+	<label index="comment.editOwn">自分のコメントを編集</label>
+	<label index="comment.editAll">全コメントを編集</label>
+	<label index="comment.requestFeedback">フィードバックの要求</label>
+	<label index="comment.sendAsEmail">メールでのコメント送信</label>
+	<label index="comment.deleteAll">全コメントを削除</label>
+	<label index="comment.deleteOwn">自分のコメントを削除</label>
+	<label index="comment.makePublic">コメントを公開する</label>
+</labels>

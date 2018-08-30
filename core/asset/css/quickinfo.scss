@@ -1,0 +1,36 @@
+@import "../../config/theme.scss";
+
+#quickinfo {
+	display:block;
+	left:200px;
+	position:absolute;
+	top:200px;
+	width:auto;
+	min-width:382px;	// @note	when changing adapt also in asset quickInfo hook
+	border:1px solid $colorNeutral03;
+	background-color:$colorCorporate02;
+	z-index:3000;
+	box-shadow:2px 2px 5px $colorNeutral06;
+
+	dl {
+//		white-space:nowrap;
+		dt {
+			clear:left;
+			float:left;
+			width:20px;
+			min-height:25px;
+			padding:2px;
+		}
+
+		dd {
+			width:auto;
+			min-width:350px;
+			min-height:25px;
+			padding:2px 4px;
+			margin-left: 20px;
+			background-color:$colorCorporate01;
+			text-align:left;
+			font-size:10px;
+		}
+	}
+}

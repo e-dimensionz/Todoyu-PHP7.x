@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">通用设置</label>
+	<label index="general.use">使用系统管理</label>
+	<label index="general.extensions">插件管理</label>
+	<label index="general.records">编辑记录</label>
+	<label index="general.config">系统配置</label>
+	<label index="extensions">插件</label>
+	<label index="extensions.config">管理配置</label>
+	<label index="extensions.download">下载插件</label>
+	<label index="extensions.modify">安装/删除/更新</label>
+</labels>

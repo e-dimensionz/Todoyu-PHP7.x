@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Horas Trabalhadas de Hoje</label>
+	<label index="pwidget.title">Horas Trabalhadas de Hoje</label>
+	<label index="totalToday">Total de Horas Trabalhadas de Hoje</label>
+	<label index="showHistory">Exibir Histórico de Horas Trabalhadas</label>
+	<label index="goToTask">Ir para Tarefas</label>
+</labels>

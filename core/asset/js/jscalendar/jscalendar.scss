@@ -1,0 +1,276 @@
+@import "../../../config/theme.scss";
+
+
+
+/* The main calendar widget.  DIV containing a table. */
+
+div.calendar {
+	z-index:3000;
+	box-shadow:2px 2px 5px $colorNeutral06;
+}
+
+div.calendar,
+div.calendar table {
+	background-color: $colorNeutral01;
+	background-color: $white;
+	border-radius: 5px;
+	color:$black;
+	cursor:default;
+	font-family:tahoma,verdana,sans-serif;
+	font-size:11px;
+
+	tr:first-child {
+		border: {
+			color: $colorNeutral02;
+			width: 1px 1px 0 1px;
+		};
+	}
+}
+
+/* remove border-radius and box-shadow for panelwidget */
+#panelwidget-calendar.calendar {
+	box-shadow:none;
+}
+
+#panelwidget-calendar.calendar,
+#panelwidget-calendar.calendar table {
+	background:none;
+	border-radius:0;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+div.calendar {
+
+	.button { /* "<<", "<", ">", ">>" buttons have this class */
+		text-align:center;
+		vertical-align:middle; /* They are the navigation buttons */
+		padding:4px;
+		border-bottom:1px solid $white;
+	}
+
+	.nav {
+		background:#D7DCC6 url(menuarrow.gif) no-repeat 100% 100%;
+	}
+
+	table {
+		.wn {
+			padding:2px 3px 2px 2px;
+			border-right:1px solid $colorNeutral03;
+			background:$colorCorporate02;
+		}
+	}
+
+	thead {
+
+		.title {	/* This holds the current "month, year" */
+			text-align:center;
+			color:$black;
+			padding:2px;
+			vertical-align:middle;
+			text-transform:uppercase;
+			letter-spacing: 1px;
+			border-bottom:1px solid $white;
+		}
+
+		.headrow { /* Row <TR> containing navigation buttons */
+			background:#D7DCC6;
+			color:$white;
+
+			.button {
+				border-bottom: 1px solid $colorNeutral03;
+			}
+		}
+
+		.daynames { /* Row <TR> containing the day names */
+			background:$colorCorporate02;
+		}
+
+		.name { /* Cells <TD> containing the day names */
+			border-bottom:1px solid $colorNeutral03;
+			padding:2px;
+			text-align:center;
+			text-transform:uppercase;
+			color:$black;
+		}
+
+		.weekend { /* How a weekend day name shows in header */
+			color:$black;
+			text-transform:uppercase;
+		}
+
+		.hilite { /* How do the buttons in header appear when hover */
+			background-color:$white;
+			color:$black;
+		}
+	}
+
+	/* The body part -- contains all the days in month. */
+	tbody {
+		.day { /* Cells <TD> containing month days dates */
+			width:2em;
+			color:$black;
+			text-align:right;
+			padding:2px 4px 2px 2px;
+			border-right:1px dotted $colorNeutral02;
+			border-bottom:1px dotted $colorNeutral02;
+
+			&.othermonth {
+				font-size:80%;
+				color:$colorNeutral04;
+
+				&.oweekend {
+					color: $colorAlert03;
+				}
+			}
+		}
+
+		.rowhilite td {
+			background:$colorCorporate01;
+
+			&.wn {
+				background:$colorCorporate04;
+			}
+		}
+
+		td {
+			&.hilite { /* Hovered cells <TD> */
+				background:$blue05;
+				color:$white;
+
+				&.weekend { /* Cells showing weekend days */
+					color:$white;
+				}
+			}
+
+			&.selected { /* Cell showing today date */
+				font-weight:bold;
+				padding:1px 3px 1px 1px;
+				background:$white;
+				color:$black;
+			}
+
+			&.weekend { /* Cells showing weekend days */
+				color:$colorNeutral06;
+			}
+
+			&.today { /* Cell showing selected date */
+				font-weight:bold;
+				color:$black;
+				background-color: $colorCorporate02;
+			}
+
+			&.time {
+				padding:5px 0;
+				text-align:center;
+				background-color:$white;
+
+				.hour,
+				.minute,
+				.ampm {
+					padding:0 3px 0 4px;
+					border:1px solid $colorNeutral06;
+					font-weight:bold;
+					background-color:$white;
+				}
+
+				.ampm {
+					text-align:center;
+				}
+
+				.colon {
+					padding:0 2px 0 3px;
+					font-weight:bold;
+				}
+
+				.hilite {
+					border-color:$black;
+					background-color: $colorNeutral07;
+					color:$white;
+				}
+
+				.active {
+					border-color: $colorAlert00;
+					background-color:$black;
+					color:	$colorApprove07;
+				}
+			}
+		}
+
+		.disabled {
+			color:$colorNeutral06;
+		}
+
+		.emptycell { /* Empty cells (the best is to hide them) */
+			visibility:hidden;
+		}
+
+		.emptyrow { /* Empty row (some months need less than 6 rows) */
+			display:none;
+		}
+	}
+
+	/* The footer part -- status bar and "Close" button */
+	tfoot {
+		.footrow { /* The <TR> in footer (only one right now) */
+			text-align:center;
+			background: $colorNeutral07;
+			color:$white;
+		}
+
+		.ttip { /* Tooltip (status bar) cell <TD> */
+			background:$white;
+			color: $colorNeutral08;
+			border-top:1px solid $colorNeutral03;
+			padding:4px;
+			/* Bugfix for opera to force word wrap an table cell */
+			width:223px;
+		}
+
+		.hilite { /* Hover style for buttons in footer */
+			background: $blue03;
+			border:1px solid $blue04;
+			color:$black;
+			padding:1px;
+		}
+
+		.active { /* Active (pressed) style for buttons in footer */
+			background: $blue07;
+			padding:2px 0 0 2px;
+		}
+	}
+
+	/* Combo boxes (menus that display months/years for direct selection) */
+	.combo {
+		position:absolute;
+		display:none;
+		top:0;
+		left:0;
+		width:4em;
+		cursor:default;
+		background: $colorCorporate04;
+		color:$black;
+		font-size:90%;
+		z-index:3000;
+		box-shadow:2px 2px 5px $colorNeutral06;
+
+		.label,
+		.label-IEfix {
+			text-align:center;
+			padding:2px;
+		}
+
+		.label-IEfix {
+			width:4em;
+		}
+
+		.hilite {
+			background: $colorCorporate02;
+		}
+
+		.active {
+			background:$white;
+			font-weight:bold;
+		}
+	}
+}

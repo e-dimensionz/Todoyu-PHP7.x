@@ -1,0 +1,49 @@
+todoyu search changelog
+
+search 1.5.1 - 2013-12-31
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+	* Changed: Headlet initialisation only if present (fullscreen-support)
+
+search 1.5.0 - 2013-03-27
+	* Added: Ability to toggle visibility for separator
+	* Changed: Text-cropping over css and css clean-up
+	* Changed: Removed widget elements former workaround background images
+	* Bugfix: Tables from filterset filter were fetched with whitespaces and not removed by removeTables option
+	* Bugfix: Added missing icon
+	* Bugfix: fixed cropping of filter-set-labels
+	* Bugfix: Update title-tag on filterset rename
+	* Bugfix: Fixed Problem with default value 0 in select widget
+	* Require: core 2.3
+
+search 1.4.0 - 2012-05-03
+	* Adapted to core 2.2
+
+search 1.3.0 - 2012-02-24
+	* Feature: Added option to manage item separators for filters list
+	* Feature: Search area keeps prefs of currently set-up unsaved filter conditions
+	* Changed: Filter area buttons (clear, save filter, export) are now placed above filter widgets
+
+search 1.2.0 - 2011-12-13
+	* Feature: Filter result sorting
+	* Feature: Use MySQL internals to count result instead of php (performance boost)
+	* Bugfix: Fixed empty exports caused by too long get-parameter (conditions)
+	* Bugfix: Search date widget now uses jsCalendar initialization of todoyuForm API (fixes bug in english date widgets)
+	* Added: Limit parameter to filterset item fetching methods
+
+search 1.1.2 - 2011-11-17
+	* Bugfix: External filter methods were not called correct (not found)
+	* Added: Newly added filter widgets are given focus
+	* Changed: Namespace of filter-widget
+	* Translation: Polish
+
+search 1.1.1 - 2011-09-15
+	* Added: Hooks: filterset.add, filterset.update, filterset.delete
+
+search 1.1.0 - 2011-06-17
+	* Bugfix: Dynamic foreign filtersets are not found anymore after big class rename session
+	* Bugfix: Fixed date-time negation labels (renamed From/To => Before/After)
+	* Bugfix: Fixed missing rights init/check methods in controllers
+	* Feature: Added display of result items amount to search results in search area
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name

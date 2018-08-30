@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">(Qualsevol) Sense llegir i que vol resposta</label>
+	<label index="unseenFeedbackPerson">La persona no ha vist la demanda de resposta</label>
+	<label index="unseenFeedbackRoles">La demanda de resposta no s'ha vist pels rols</label>
+	<label index="commentFulltext">Comentari complert</label>
+	<label index="commentWrittenPerson">Comentari escrit per la persona</label>
+	<label index="commentWrittenRoles">Comentari escrit pel rol</label>
+	<label index="commentCreatedate">Creació de la data del comentari</label>
+	<label index="sorting.commentLastAdd">Data de l'últim comentari</label>
+	<label index="sorting.commentLastAddPublic">Data de l'últim comentari públic</label>
+	<label index="isSeen.negation.true">La persona ha vist el comentari</label>
+	<label index="isSeen.negation.false">La persona no ha vist el comentari</label>
+	<label index="project.commentMyFeedbackRequest">He demanat resposta, la persona ha/no ha vist el comentari</label>
+</labels>

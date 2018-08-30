@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">第一步</label>
+	<label index="wizard.start.title">使用 todoyu 的第一步</label>
+	<label index="wizard.start.info"><![CDATA[ 此安装向导将帮你配置 todoyu. 整个过程将花费几分钏, 然后你将有一个可用的 todoyu. <br /><br />点击"继续"开始.]]></label>
+	<label index="wizard.start.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.start.dontUseWizard">我不想用安装向导, 不要再提醒了</label>
+	<label index="wizard.start.disableAssistant">禁用安装向导</label>
+	<label index="wizard.start.reactivateInAdmin">可以在管理页面重新启用安装向导</label>
+	<label index="wizard.jobtypes.title">工作类型</label>
+	<label index="wizard.jobtypes.info">请输入你公司或项目中经常用到的工作类型. 稍后你可以在管理页面配置.</label>
+	<label index="wizard.jobtypes.help"><![CDATA[ 工作类型可以是:<br />CEO, CFO, 经理, 主管, 助理, 销售等. ]]></label>
+	<label index="wizard.projectroles.title">项目角色</label>
+	<label index="wizard.projectroles.info">请输入你在项目中经常拥有的角色.</label>
+	<label index="wizard.projectroles.help"><![CDATA[ 建议的项目角色:<br />PM, 研发工程师, 前端工程师, 产品经理, 市场专员, 协调员, 培训讲师 ]]></label>
+	<label index="wizard.activities.title">活动类型</label>
+	<label index="wizard.activities.info">活动类型是是你分配给你的组的工作内容类型.</label>
+	<label index="wizard.activities.help">活动类型可以是咨询, 开发, 支持, 内部事务...</label>
+	<label index="wizard.userroles.title">用户组</label>
+	<label index="wizard.userroles.info">用户组是用于管理目的. 你可以在管理页面给你的用户组分配相应权限</label>
+	<label index="wizard.userroles.help">一般来说用户组与工作类型一致. 当然你可以定义更多的用户组.</label>
+	<label index="wizard.company.title">你的公司</label>
+	<label index="wizard.company.info">请输入你公司的基本信息. 你可以在联系页面更改这些信息.</label>
+	<label index="wizard.company.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.employees.title">员工</label>
+	<label index="wizard.employees.info">输入你的团队成员. 用户登陆后可在个人页面设置他们的个人信息.</label>
+	<label index="wizard.employees.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.employees.confirmRemove">删除员工</label>
+	<label index="wizard.employees.added">员工已加入列表</label>
+	<label index="wizard.customers.title">客户</label>
+	<label index="wizard.customers.info">希望你现在已经拥有了一部分客户了.输入进来吧.</label>
+	<label index="wizard.customers.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.customers.confirmRemove">确认删除客户?</label>
+	<label index="wizard.project.title">你的第一个项目</label>
+	<label index="wizard.project.info">最后, 建立你的第一个项目</label>
+	<label index="wizard.project.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.project.confirmRemovePerson">确认要从项目中移除此人?</label>
+	<label index="wizard.finish.title">就是这样!</label>
+	<label index="wizard.finish.info"><![CDATA[ 你已经 <strong>成功</strong> 输入了所有需要的信息, 开始工作吧!]]></label>
+	<label index="wizard.finish.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.finish.closeWizard">安装设置向导</label>
+	<label index="employee.addCompany">添加公司</label>
+	<label index="employee.addEmployee">添加员工</label>
+	<label index="employee.addPerson">为项目添加人员</label>
+	<label index="extconf.disableWizard">禁用设置向导</label>
+	<label index="wizardDisabledInfo">设置向导已禁用</label>
+</labels>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extension">拡張機能</label>
+	<label index="key">拡張機能キー</label>
+	<label index="keyAbbr">拡張機能キー</label>
+	<label index="version">バージョン</label>
+	<label index="author">著作者</label>
+	<label index="dependencies">要因は</label>
+	<label index="conflicts">衝突対象</label>
+	<label index="importExtArchive">拡張機能のアーカイブをインポート</label>
+	<label index="showInfo">拡張機能の情報を表示</label>
+	<label index="configure">拡張機能の設定</label>
+	<label index="download">拡張機能のダウンロード</label>
+	<label index="remove">拡張機能の削除</label>
+	<label index="remove.confirm">サーバから拡張機能 (全ファイル) を削除しますか？</label>
+	<label index="rights">権限</label>
+	<label index="documentation">ドキュメント</label>
+	<label index="showInstalledList">インストール済みの拡張機能の一覧を表示</label>
+	<label index="install">拡張機能のインストール</label>
+	<label index="install.confirm">拡張機能をインストールしますか？</label>
+	<label index="install.ok">拡張機能のインストールは成功しました</label>
+	<label index="installed.notify">拡張機能のインストールが完了:</label>
+	<label index="install.error">拡張機能のインストールは失敗しました</label>
+	<label index="install.error.notify.dependencies">先に以下の拡張機能をインストールする必要があるため、拡張機能のインストールは失敗しました:</label>
+	<label index="install.error.missing">要求された拡張機能はインストールされていません</label>
+	<label index="install.error.lowVersion">要求された拡張機能はインストールされていますが、古いバージョンです</label>
+	<label index="install.error.conflicts">インストールされている拡張機能と競合します</label>
+	<label index="install.error.core">コアバージョンが古すぎます</label>
+	<label index="uninstall">拡張機能のアンインストール</label>
+	<label index="uninstall.confirm">拡張機能をアンインストールしますか？</label>
+	<label index="uninstall.ok">拡張機能のアンインストールは成功しました</label>
+	<label index="uninstall.error.general">拡張機能のアンインストールは失敗しました</label>
+	<label index="notify.remove.error">拡張機能の削除に失敗しました</label>
+	<label index="notify.remove.success">拡張機能をサーバから削除しました</label>
+	<label index="upload.selectfile">拡張機能アーカイブ(zip)の選択</label>
+	<label index="upload.override">既存の拡張機能(ファイル)を上書き</label>
+	<label index="upload.title">新しい拡張機能をアップロード</label>
+	<label index="upload.button">拡張機能をアップロード</label>
+	<label index="upload.noArchiveSelected">アップロードする拡張機能アーカイブを選択してください</label>
+	<label index="upload.ok">拡張機能をインポートしました</label>
+	<label index="upload.error">拡張機能のアップロードが失敗しました</label>
+	<label index="upload.archivehint">todoyuの拡張機能アーカイブの正しい命名規則: todoyuExt_EXTNAME_VERSION.zip. (例: todoyuExt_project_1.1.0.zip)</label>
+</labels>

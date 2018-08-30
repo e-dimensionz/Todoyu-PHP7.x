@@ -1,0 +1,64 @@
+{extends "list-base.tmpl"}
+
+{block name="title"}{Title "LLL:sysmanager.ext.installedExtensions"}{/block}
+
+{block name="contentMessage"}{/block}
+
+{block name="edit"}
+	<td class="edit">
+		{restrict 'sysmanager' 'extensions:modify'}
+			<a href="javascript:void(0)" title="{Label sysmanager.extension.uninstall}"
+				{if !extMgr_isSysExt($extKey)}
+					onclick="Todoyu.Ext.sysmanager.Extensions.Install.uninstall('{$extKey}')" class="uninstall">
+				{else}
+					class="uninstall disabled">
+				{/if}
+				<span class="hidden">{Label sysmanager.extension.uninstall}</span>
+			</a>
+		{/restrict}
+
+		<a href="javascript:void(0)" title="{Label sysmanager.extension.showInfo}"
+			{if extMgr_hasExtInfo($extKey)}
+				onclick="Todoyu.Ext.sysmanager.Extensions.showTab('{$extKey}', 'info')" class="info">
+			{else}
+				class="info disabled">
+			{/if}
+			<span class="hidden">info</span>
+		</a>
+
+		{restrict 'sysmanager' 'extensions:config'}
+			<a href="javascript:void(0)" title="{Label sysmanager.ext.tabs.config}"
+				{if extMgr_hasConfig($extKey)}
+					onclick="Todoyu.Ext.sysmanager.Extensions.showTab('{$extKey}', 'config')" class="config">
+				{else}
+					class="config disabled">
+				{/if}
+				<span class="hidden">config</span>
+			</a>
+		{/restrict}
+
+		{restrictAdmin}
+			<a href="javascript:void(0)" title="{Label sysmanager.extension.rights}"
+				{if extMgr_hasRighsConfig($extKey)}
+					onclick="Todoyu.Ext.sysmanager.Extensions.showRights('{$extKey}')" class="rights">
+				{else}
+					class="rights disabled">
+				{/if}
+				<span class="hidden">rights</span>
+			</a>
+		{/restrictAdmin}
+
+		{restrict 'sysmanager' 'general:records'}
+			<a href="javascript:void(0)" title="{Label core.global.records}"
+				{if extMgr_hasRecords($extKey)}
+					onclick="Todoyu.Ext.sysmanager.Extensions.showRecords('{$extKey}')" class="records">
+				{else}
+					class="records disabled">
+				{/if}
+				<span class="hidden">records</span>
+			</a>
+		{/restrict}
+	</td>
+{/block}
+
+{block name="noExtensions"}{/block}

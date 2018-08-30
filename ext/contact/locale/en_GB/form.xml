@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.person.basics">Basic Person Information</label>
+	<label index="legend.person.picture">Profile Picture</label>
+	<label index="legend.person.furtherInformation">Further information</label>
+	<label index="legend.person.login">User Account</label>
+	<label index="legend.company.basics">Main Company Information</label>
+	<label index="legend.company.logo">Company Logo</label>
+	<label index="legend.admin.jobtype.record">Job Type</label>
+	<label index="legend.admin.contactinfotype.record">Contact Information Type</label>
+	<label index="warning.duplicatedEntries">Following entries do already exist:</label>
+</labels>

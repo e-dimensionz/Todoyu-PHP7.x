@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedbackPerson">Requêtes de suivi</label>
+	<label index="unseenFeedbackRoles">Requêtes de suivi par rôles</label>
+	<label index="commentFulltext">Commentaire textuel</label>
+	<label index="commentWrittenPerson">Commentaire écrit par cette personne</label>
+	<label index="commentWrittenRoles">ommentaire écrit selon ce rôle</label>
+</labels>

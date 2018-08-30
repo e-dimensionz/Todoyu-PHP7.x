@@ -1,0 +1,139 @@
+todoyu comment extension changelog
+
+comment 1.3.1 - 2013-12-31
+	* Added: Preview (Quickinfo) for comment - assets
+	* Added: Adaption to rte-input-field enlargement
+	* Added: Hook to add a task icon if any comment has an asset attached
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+
+comment 1.3.0 - 2013-03-27
+	* Require: assets 1.3 and core 2.3.0
+	* Feature: New option + right to mark feedback requests of dummy users acknowledged
+	* Feature: Comments that request a feedback can be reverted into "unseen" status
+	* Feature: Upload assets to comments
+	* Feature: Add additional content to comment text area with a hook: comment,comment.additionalContentItems
+	* Feature: Quote a comment. Use comment text as prefixed template
+	* Added: TodoyuCommentComment->getComment() and ->getCommentResponseText()
+	* Changed: Adapted warning-message to new global style
+	* Changed: Send same email to all receivers (all receivers are "to" and visible to each other)
+	* Changed: Image to contacts avatar
+	* Changed: Cleanup header values: idTask => task, idComment => comment
+	* Changed: Comment actions are now dynamic. Use hook comment.comment.actions
+	* Changed: Split up comments getTemplateData() into normal foreign data and special details render data
+	* Changed: Rename TodoyuCommentFallback->apply() to applyFallbackData()
+	* Changed: Don't check for rights in fallback, check if field data is available/submitted
+	* Changed: Larger field type for comment (mediumtext)
+	* Changed: Only add feedback tab to portal if comment general use is allowed (prevents error)
+	* Bugfix: Issue with multi-select in opera (css disabled ctrl-click)
+	* Bugfix: Fixed negation in comment filter
+	* Bugfix: TodoyuCommentComment->hasOpenFeedbacksFromExternals() did take persons with multiple employers as external only
+	* Bugfix: Portal feedback parent IDs did not exclude containers
+	* Bugfix: Negation was wrong in filter
+	* Bugfix: Fixed layout bug on canceling first comment form
+	* Bugfix: Added # to not allowed sings for comment links
+	* Bugfix: Avoid long names to overflow
+	* Bugfix: Fixed scrolling error with approval-icon
+	* Bugfix: fixed icon of asset upload button
+	* Bugfix: Fixed asset upload button label
+	* Bugfix: Label in javascript was built dynamically and so ignored by the pre-parser
+
+comment 1.2 - 2012-05-03
+	* Feature: Save and show time and person of last update of comment
+	* Feature: No reload required to change comment sorting
+	* Feature: Warn user if a person which is in the feedback request list is external, but task or comment not public
+	* Feature: Use fallback configuration to define what should happen with a comment if it's created by a user with limited privileges
+	* Added: Filter - my seen/unseen feedback request from person
+	* Added: Create and sorting button also at the bottom of the comment list
+	* Changed: When manually sending comments per email, the mail sender is the current logged-in person (not the system mail)
+	* Changed: When the comments list is empty there is now only one button to add a comment displayed
+	* Changed: Use core button icon class for sorting button
+	* Changed: Unify fetching of feedback requests to synchronize listing and feedback count. Check for public flags
+	* Changed: Feedbacks count (portal) did also count invisible feedbacks of disallowed projects
+	* Changed: Latest comment is on top in the comment listig (sorting order = descending)
+	* Changed: Removed workaround to handle limited user support (removed autoemail and autofeedback)
+
+comment  1.1.0 - 2011-06-17
+	* Bugfix: (UI) expanding task on add comment after collapse after adding comment failed
+	* Bugfix: fixed toggle email receivers of comment
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
+	* Changed: moved globally used icons (unacknowledged/acknowledged, etc.) to core
+	* Changed: Moved logging of sent comment mails into TodoyuMailManager of core / table system_log_email table
+	* Changed: Renamed DB table ext_comment_feedback to ext_comment_mm_comment_feedback
+	* Changed: Removed TodoyuComment::getCreatePersonID() and getCreatePerson() methods (in baseObject now)
+	* Changed: Moved comment emailing options into separate fieldset of comment form
+	* Changed: Comments identifier is now "C" (not "K") - header, comment detail, search, linkage
+
+comment 1.0.8
+	* Feature: Implemented logging of emailed comments and listed it in comments header
+	* Feature: Added marking of seen feedbacks in comments header
+	* Feature: Added placeholders for to-be spanish locale files
+
+comment 1.0.1 to 1.0.7 - 1.0.7 released 2011-01-17
+	* Bugfix: Limited comments feedback person options to allowed to be seen persons
+	* Bugfix: Add comment in task restriction check
+	* Bugfix: Ensured 'add' items group exists for adding 'add comment' option
+	* Bugfix: RTE saving problem. Check if element which has to be saved really exists
+	* Bugfix: Remove RTE when cancel comment form
+	* Bugfix: Comment mailing - replaced "manual" setting of phpmailer-properties by use of provided setters
+	* Bugfix: Comment RTE iFrame renders itself inside comments
+	* Bugfix: JS bug in comment email receivers field
+	* Bugfix: Fixed autorename of filtersets of different types
+	* Bugfix: Fixed form->idRecord. String is allowed again (fixed comment saving), fixed link parsing in text
+	* Bugfix: All user with unseen feedback can now be removed from comment
+	* Bugfix: Updating amount of feedback tasks in portal's tab-label
+	* Bugfix: Feedback query did not exclude deleted comments and such with id_task = 0
+	* Bugfix: Fixed logo path in HTML mails
+	* Bugfix: Comment feedbacks cannot be removed
+	* Bugfix: Send comment as email JS error fixed
+	* Bugfix: Added missing options in unseenFeedbackRoles filter
+	* Bugfix: Fix in lock manager
+	* Feature: Added icon for persons who has approved task comment
+	* Feature: Added cleanHTML to comment text
+	* Feature: Added support for linked task number in comment text (project, task, comment)
+	* Feature: Added indexes to tables to improve SQL performance
+	* Feature: Moved styles from global.css to ext.css
+	* Feature: Added <pre> and <a> tag to RTE allowed tags list
+	* Feature: Added use of system default email as comment emails sender address
+	* Feature: Substitution of URLs by hyperlinks in project description, task description, comments
+	* Feature: Added hiding of email addresses from within comments being sent via email
+	* Feature: Added pre-selection of the author of the last comment of a task
+	* Feature: Added hooks documentation
+	* Feature: New filter for comments
+	* Feature: Added Rights
+	* Changed: Incremented year in copyright notice to 2011
+	* Changed: Renamed tag config to "allowedtags"
+	* Changed: Removed word len splitter for comments
+	* Changed: Sorting of feedbacks is now by creation date
+	* Changed: Removed manual requiring of auto-loaded config files
+	* Changed: Moved the global $CONFIG variable to Todoyu class. Is now a public static member variable
+	* Translation: Italian
+	* Translation: Serbian
+	* Translation: Japanese
+	* Translation: Czech
+	* Translation: Dutch
+	* Translation: Parts of French translation
+	* Translation: Russian
+
+comment 0.0.1 to 1.0.0 - 1.0.0 released on 2010-05-10
+	* Bugfix: Tab loading fixed
+	* Bugfix: Sender of comment mail is now current user
+	* Bugfix: Fixed comment mailer - send mails over mail() instead sendmail
+	* Bugfix: Icons in comment buttons
+	* Bugfix: Icons in comment buttons
+	* Bugfix: Comments editing rights check
+	* Bugfix: Comments HTML mail bug fixed
+	* Bugfix: Rights conflict: when editing own comments is disallowed also edit icon isn't shown
+	* Bugfix: Comment right fixes: makePublic
+	* Bugfix: Added record cache flushing before mailing modified comments
+	* Bugfix: HTML template contained dwoo error
+	* Bugfix: Comment approval
+	* Feature: Added portuguese translation
+	* Feature: Added access check to searching comments, added TodoyuCommentRights class
+	* Feature: Extended search headlet with search for comments by comment identification numbers
+	* Feature: Added rights for registrable search engines
+	* Feature: Split comment JS into files of functional areas (ext, list, edit)
+	* Changed: Moved page config to own config/page.php which is loaded only on page rendering
+	* Changed: Switched license from BSC to BSD ;)
+	* Changed: Switched license from GPL to BSC

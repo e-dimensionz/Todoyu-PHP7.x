@@ -1,0 +1,3 @@
+<select {$extraAttributes} {if $htmlName}name="{$htmlName}"{/if} {if $htmlId}id="{$htmlId}"{/if} class="{$inputClass} {$class}" size="{$size}" {if $multiple}multiple="multiple"{/if} {if $fieldClass}class="{$fieldClass}"{/if} {if $onchange}onchange="{$onchange}"{/if}>
+	{include file="select-grouped-options.tmpl"}
+</select>

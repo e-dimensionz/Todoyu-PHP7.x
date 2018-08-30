@@ -1,0 +1,23 @@
+@import "../../config/theme.scss";
+
+
+
+.progressBox {
+	.bar {
+		width:180px;
+		height:16px;
+		background-color:$colorNeutral01;
+		border:1px solid $colorNeutral03;
+		margin-top:5px; }
+
+	.progress {
+		background-color:$colorCorporate02;
+		width:0px;
+		height:16px; }
+
+	.button {
+		margin-top:5px; }
+
+	.cancelProgress .icon {
+		background:url(../img/icons.png) no-repeat 3px -357px; }
+}

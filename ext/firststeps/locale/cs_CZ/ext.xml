@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">První kroky</label>
+	<label index="wizard.start.title">Vaše první kroky v todoyu</label>
+	<label index="wizard.start.info">Tento průvodce vás provede prvními kroky v todoyu. Samotná procedura zabere pouhých &lt;strong&gt;pár minut&lt;/strong&gt; vašeho vzácného času. Poté budete mít připravenou instalaci.&lt;br /&gt;&lt;br /&gt;Pro pokračování zmáčkněte tlačítko "pokračovat".</label>
+	<label index="wizard.start.help">&amp;nbsp;</label>
+	<label index="wizard.start.dontUseWizard">Nechci použít průvodce. Příště nezobrazovat toto okno.</label>
+	<label index="wizard.start.disableAssistant">Zakázat průvodce</label>
+	<label index="wizard.start.reactivateInAdmin">Průvodce můžete znovu zapnout v sekci správce.</label>
+	<label index="wizard.jobtypes.title">Pracovní místa</label>
+	<label index="wizard.jobtypes.info">Zadejte prosím názvy pracovních míst, které se nejčastěji používají ve vaší firmě a projektech. Můžete je kdykoliv změnit v sekci správce.</label>
+	<label index="wizard.jobtypes.help"> Pracovní místa mohou být:&lt;br /&gt;CEO, CFO, manager, team leader, sekretářka, obchodník </label>
+	<label index="wizard.projectroles.title">Role projektů</label>
+	<label index="wizard.projectroles.info">Vyplňte prosím role, které obvykle používáte u svých projektů.</label>
+	<label index="wizard.projectroles.help"> Abychom vám přiblížili situaci, v todoyu týmu máme následující role:&lt;br /&gt;project manager, developer, frontend engineer, product manager, marketing responsible, community manager, trainer </label>
+	<label index="wizard.activities.title">Typy činností</label>
+	<label index="wizard.activities.info">Typy činností definují druh práce, kterou zadáváte vašemu týmu.</label>
+	<label index="wizard.activities.help">Typy činností mohou být: konzultace, programování, podpora, interní práce...</label>
+	<label index="wizard.userroles.title">Skupiny uživatelů</label>
+	<label index="wizard.userroles.info">Skupiny uživatelů jsou použity pro účely správce. Skupinám můžete přidělit práva později v sekci správce.</label>
+	<label index="wizard.userroles.help">Velmi často jsou uživatelské skupiny provázány s typy činností, které jste zadávali výše. Vše záleží pouze na vás a můžete si vytvořit tolik skupin kolik chcete.</label>
+	<label index="wizard.company.title">Vaše společnost</label>
+	<label index="wizard.company.info">Zadejte prosím základní informace o vaší společnosti. Údaje můžete kdykoliv změnit ve správcovské sekci.</label>
+	<label index="wizard.company.help">&amp;nbsp;</label>
+	<label index="wizard.employees.title">Zaměstnanci</label>
+	<label index="wizard.employees.info">Nyní řekněte todoyu kdo jsou členové vašeho týmu. Zadejte základní osobní informace - uživatelé si je můžou změnit kdykoliv v jejich profilech.</label>
+	<label index="wizard.employees.help">&amp;nbsp;</label>
+	<label index="wizard.customers.title">Zákazníci</label>
+	<label index="wizard.customers.info">Doufejme, že už máte nějaké zákazníky. Výborně! Zadejte prosím základní informace.</label>
+	<label index="wizard.customers.help">&amp;nbsp;</label>
+	<label index="wizard.project.title">První projekt</label>
+	<label index="wizard.project.info">Konečně, začínáte se svým úplně prvním projektem v todoyu. Gratulujeme!</label>
+	<label index="wizard.project.help">&amp;nbsp;</label>
+	<label index="wizard.finish.title">A je to!</label>
+	<label index="wizard.finish.info">Nyní máte &lt;strong&gt;úspěšně&lt;/strong&gt; zadané všechny informace potřebné pro práci s todoyu.&lt;br /&gt;&lt;br /&gt; Užijte si to!</label>
+	<label index="wizard.finish.help">&amp;nbsp;</label>
+	<label index="wizard.finish.closeWizard">Zavřít průvodce</label>
+	<label index="employee.addCompany">Přidat společnost</label>
+	<label index="employee.addEmployee">Přidat zaměstnance</label>
+	<label index="employee.addPerson">Přiřadit osobu k projektu</label>
+	<label index="extconf.disableWizard">Deaktivovat průvodce</label>
+	<label index="wizardDisabledInfo">Průvodce je nyní zakázán</label>
+</labels>

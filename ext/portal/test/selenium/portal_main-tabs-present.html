@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > main tabs present</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > main tabs present</td></tr>
+</thead><tbody>
+<!------ portal > main tabs presents-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Projects</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Planning</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<!--only portal is active?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemProject a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemProject a.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemPlanning a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemPlanning a.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemContact a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemContact a.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemSearch a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemSearch a.active</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

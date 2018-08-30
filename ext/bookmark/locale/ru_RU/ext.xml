@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Закладки задач</label>
+	<label index="title">Закладки задач</label>
+	<label index="info.nobookmarks">Нет закладок</label>
+	<label index="contextmenu.removebookmark">Закладка -</label>
+	<label index="contextmenu.editbookmarks">Редактировать закладки</label>
+	<label index="contextmenu.addbookmark">Добавить закладку</label>
+	<label index="profile.module">Закладки</label>
+	<label index="profile.module.tasks.tab">Задачи</label>
+	<label index="profile.module.tasks.listing.task">Задача</label>
+	<label index="profile.module.tasks.listing.title">Заголовок</label>
+	<label index="profile.module.tasks.listing.label">Название</label>
+	<label index="bookmark.rename">Переименовать закладку</label>
+	<label index="bookmark.delete.confirm">Удалить закладку?</label>
+	<label index="bookmark.attr.title">Название</label>
+	<label index="bookmark.type.task">Задача</label>
+	<label index="bookmark.saved">Закладка сохранена</label>
+	<label index="bookmark.saved.error">При сохранении закладки произошла ошибка</label>
+</labels>

@@ -1,0 +1,50 @@
+{* ----------------- Role selector ----------------- *}
+<table class="roles">
+	{foreach $roles key role roles}
+		<tr>
+			<td class="name enumColBG{$.foreach.roles.iteration % $amountColors}">
+				<a href="javascript:void(0)" onclick="Todoyu.Ext.sysmanager.RightsEditor.toggleRoleRights({$role.id})">{$role.title}</a>
+			</td>
+			{for gA 1 $.foreach.roles.total-$.foreach.roles.index-1}
+				<td class="enumColBG{$.foreach.roles.iteration % $amountColors}">&nbsp;</td>
+			{/for}
+			{if $.foreach.roles.iteration > 1 }
+				{for gA 1 $.foreach.roles.iteration-1}
+					<td class="enumColBG{$.foreach.roles.iteration-$gA % $amountColors}">&nbsp;</td>
+				{/for}
+			{/if}
+		</tr>
+	{/foreach}
+</table>
+
+{* ----------------- Rights matrix ----------------- *}
+<form id="rightsmatix-form" action="index.php?ext=sysmanager&amp;controller=rights" method="post">
+	{foreach $rights sectionName section}
+		<fieldset>
+		<legend>{$section.label}</legend>
+		<table class="sectionrights"><tbody>
+		{foreach $section.rights right}
+			<tr class="right" id="right-{$sectionName}-{$right.right}">
+				<td class="label">
+					<a href="javascript:void(0)" onclick="Todoyu.Ext.sysmanager.RightsEditor.toggleRight('{$sectionName}:{$right.right}')" title="[{$sectionName}:{$right.right}] {$right.comment}">{$right.label}</a>
+					{if sizeof($right.require) > 0 }{rightLabel $extension $sectionName $right.right}{/if}
+				</td>
+				{foreach reverse($roles) key role roleRights}
+					<td class="enumColBG{$.foreach.roleRights.total-$.foreach.roleRights.index % $amountColors} roleRight">
+						<input type="checkbox" id="{$sectionName}-{$right.right}-{$role.id}" name="rights[{$sectionName}:{$right.right}][{$role.id}]" value="1" {if $activeRights[$right.full][$role.id]}checked="checked"{/if} />
+					</td>
+				{/foreach}
+			</tr>
+		{/foreach}
+		</tbody></table>
+			</fieldset>
+	{/foreach}
+	<input type="hidden" name="extension" value="{$extension}" />
+
+	{if empty($rights)}{contentMessage 'sysmanager.ext.rights.notAvailable'}{/if}
+
+</form>
+
+<script type="text/javascript">
+	Todoyu.Ext.sysmanager.RightsEditor.initMatrix({json_encode($required)});
+</script>

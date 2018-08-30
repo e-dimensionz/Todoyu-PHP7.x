@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">(Any) Unseen Feedback Requests</label>
+	<label index="unseenFeedbackPerson">Person has not seen feedback request</label>
+	<label index="unseenFeedbackRoles">Feedback request unseen by roles</label>
+	<label index="commentFulltext">Comment Full Text</label>
+	<label index="commentWrittenPerson">Comment written by person</label>
+	<label index="commentWrittenRoles">Comment written by roles</label>
+	<label index="commentCreatedate">Comment Creation Date</label>
+	<label index="sorting.commentLastAdd">Date last comment</label>
+	<label index="sorting.commentLastAddPublic">Date last public comment</label>
+	<label index="isSeen.negation.true">Person saw comment</label>
+	<label index="isSeen.negation.false">Person didn't see comment</label>
+	<label index="project.commentMyFeedbackRequest">I requested feedback, person has/not seen comment</label>
+</labels>

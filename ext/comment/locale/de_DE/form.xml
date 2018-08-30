@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extconf.legend.config">Kommentar Konfiguration</label>
+	<label index="fallback.legend.fallback">Kommentar Fallback</label>
+	<label index="fallback.legend.help">Hinweise zur Funktion</label>
+	<label index="fallback.legend.general">Allgemeine Einstellungen</label>
+	<label index="fallback.legend.feedback">Feedback verlangen</label>
+	<label index="fallback.legend.email">Als Email versenden</label>
+</labels>

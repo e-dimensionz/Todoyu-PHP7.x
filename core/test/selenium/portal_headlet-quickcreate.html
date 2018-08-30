@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > headlet: quickcreate INCOMPLETE</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > headlet: quickcreate INCOMPLETE</td></tr>
+</thead><tbody>
+<!------ portal > headlet: quickcreate-->
+<!--headlet icon there?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyuheadletquickcreate-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=ul#todoyuheadletquickcreate-content.content</td>
+	<td></td>
+</tr>
+<!--Open  headlet dropdown with types-->
+<tr>
+	<td>click</td>
+	<td>todoyuheadletquickcreate-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#todoyuheadletquickcreate-content.content</td>
+	<td></td>
+</tr>
+<!--All types there: task, project, event, person, company-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=New Task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=New Project</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=New Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=New Person</td>
+	<td>New Person</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=New Company</td>
+	<td>New Company</td>
+</tr>
+<!--Close the types dropdown-->
+<tr>
+	<td>click</td>
+	<td>todoyuheadletquickcreate-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=ul#todoyuheadletquickcreate-content.content</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

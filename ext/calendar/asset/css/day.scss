@@ -1,0 +1,75 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ---------------
+	Event
+   --------------- */
+div.dayMode div#calendarBody div.event dt.head {
+	height:15px;
+	padding:3px 0;
+	margin-bottom:1px;
+}
+
+
+/* ----------------------
+	Header
+   ---------------------- */
+.day-wk-dayname {
+	font-weight:normal;
+	color:$colorTextGeneral;
+	padding:2px 4px;
+	margin-left:4px;
+	white-space:nowrap;
+	text-align:center;
+}
+
+.day-todaywk-dayname{
+	background-color:$blue07;
+	border: {
+		color:$blue03 $blue08 $blue08 $blue03;
+		style:solid;
+		width:1px;
+	}
+	color:$white;
+	font-weight:bold;
+	margin-left:0;
+	padding:1px 3px;
+	text-align:center;
+	white-space:nowrap;
+}
+
+
+
+/* ----------------------
+	Day view today
+   ---------------------- */
+.dayviewToday {
+	background-color:$colorHighlight03;
+}
+
+
+
+/* ----------------------
+	Event
+   ---------------------- */
+.dayEvents .event {
+	padding-top:1px;
+}
+
+#calendar .dayEvents .event span {
+	display:inline-block;
+}
+
+
+
+/* ----------------------
+	Helper classes
+   ---------------------- */
+.wid4 {
+	width:4px;
+}
+
+.wid40 {
+	width:40px;
+}

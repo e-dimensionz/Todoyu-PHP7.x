@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="num2.name">Africa</label>
+	<label index="num9.name">Oceania</label>
+	<label index="num19.name">Americhe</label>
+	<label index="num142.name">Asia</label>
+	<label index="num150.name">Europa</label>
+	<label index="num30.name">Asia orientale</label>
+	<label index="num35.name">Asia sud-orientale</label>
+	<label index="num62.name">Asia meridionale e centrale</label>
+	<label index="num145.name">Asia occidentale</label>
+	<label index="num39.name">Europa meridionale</label>
+	<label index="num151.name">Europa orientale</label>
+	<label index="num154.name">Europa settentrionale</label>
+	<label index="num155.name">Europa occidentale</label>
+	<label index="num830.name">Isole del Canale</label>
+	<label index="num833.name">Isola di Man</label>
+	<label index="num5.name">America del Sud</label>
+	<label index="num13.name">America centrale</label>
+	<label index="num21.name">America del nord</label>
+	<label index="num29.name">Caraibi</label>
+	<label index="num11.name">Africa occidentale</label>
+	<label index="num14.name">Africa orientale</label>
+	<label index="num15.name">Africa settentrionale</label>
+	<label index="num17.name">Africa centrale</label>
+	<label index="num18.name">Africa meridionale</label>
+	<label index="num53.name">Australia e Nuova Zelanda</label>
+	<label index="num54.name">Melanesia</label>
+	<label index="num57.name">Micronesia</label>
+	<label index="num61.name">Polinesia</label>
+</labels>

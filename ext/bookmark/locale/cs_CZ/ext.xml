@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Záložky</label>
+	<label index="title">Záložky úkolů</label>
+	<label index="info.nobookmarks">Zatím žádné záložky</label>
+	<label index="contextmenu.removebookmark">Odtranit záložku</label>
+	<label index="contextmenu.renamebookmark">Přejmenovat záložku</label>
+	<label index="contextmenu.editbookmarks">Upravit záložky</label>
+	<label index="contextmenu.addbookmark">Přidat záložku</label>
+	<label index="profile.module">Záložky</label>
+	<label index="profile.module.tasks.tab">Úkoly</label>
+	<label index="profile.module.tasks.bookmarksOf">Záložky úkolu z</label>
+	<label index="profile.module.tasks.listing.task">Úkol</label>
+	<label index="profile.module.tasks.listing.title">Název</label>
+	<label index="profile.module.tasks.listing.label">Štítek</label>
+	<label index="bookmark.edit">Upravit záložku</label>
+	<label index="bookmark.rename">Přejmenovat záložku</label>
+	<label index="bookmark.renamePrompt">Nové jméno záložky (prázdné = původní jméno)</label>
+	<label index="bookmark.delete.confirm">Opravdu chcete smazat tuto záložku?</label>
+	<label index="bookmark.removed">Záložka odstraněna</label>
+	<label index="bookmark.renamed">Záložka přejmenována</label>
+	<label index="bookmark.added">Záložka vytvořena</label>
+	<label index="bookmark.attr.title">Štítek</label>
+	<label index="bookmark.type.task">Úkol</label>
+	<label index="bookmark.saved">Záložka byla uložena</label>
+	<label index="bookmark.saved.error">Při ukládání záložky se vyskytla chyba</label>
+</labels>

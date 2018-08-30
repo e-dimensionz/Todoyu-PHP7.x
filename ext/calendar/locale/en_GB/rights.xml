@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General</label>
+	<label index="general.use">Use Calendar Functionality</label>
+	<label index="general.area">Use Calendar Area</label>
+	<label index="event">Appointment</label>
+	<label index="event.seeAll">See All Appointments</label>
+	<label index="event.editAssigned">Edit assigned appointments</label>
+	<label index="event.editAll">Edit all appointments</label>
+	<label index="event.deleteAssigned">Delete assigned appointments</label>
+	<label index="event.deleteAll">Delete all appointments</label>
+	<label index="event.add">Add New Appointment</label>
+	<label index="event.search">Search For Appointments</label>
+	<label index="event.assignOthers">Assign appoinments to all persons</label>
+	<label index="event.deleteInPast">Delete events in the past</label>
+	<label index="event.editInPast">Edit events in the past</label>
+	<label index="mailing">Event email</label>
+	<label index="mailing.sendAsEmail">Send Emails about appointments to selectable receivers</label>
+	<label index="reminders">Appointment Reminders</label>
+	<label index="reminders.popup">Use reminder pop-ups</label>
+	<label index="reminders.email">Use reminder mailing</label>
+</labels>

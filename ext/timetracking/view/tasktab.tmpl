@@ -1,0 +1,10 @@
+{restrict 'timetracking' 'task:track'}
+	<div id="task-{$idTask}-timetrack-control" class="trackingControl tabBlock overflow">
+		{$trackingControl}
+	</div>
+{/restrict}
+
+<div id="task-{$idTask}-timetracks" class="timetracks">
+	{$tracksList}
+</div>
+<div class="clear"><!-- --></div>

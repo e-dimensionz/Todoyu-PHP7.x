@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Overzicht gewerkte uren</label>
+	<label index="pwidget.title">Gewerkte uren vandaag</label>
+	<label index="totalToday">Totaal geregistreerde uren vandaag</label>
+	<label index="showHistory">Urenoverzichten weergeven</label>
+	<label index="goToTask">Naar taak</label>
+</labels>

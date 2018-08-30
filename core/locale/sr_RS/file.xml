@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="files">Фајлови</label>
+	<label index="download">Скидај</label>
+	<label index="upload">Учитавај</label>
+	<label index="size.gb">ГБ</label>
+	<label index="size.mb">МБ</label>
+	<label index="size.kb">КБ</label>
+	<label index="size.b">Б</label>
+	<label index="filename">Име фајл-а</label>
+	<label index="filesize">Величина фајл-а</label>
+	<label index="upload.progressmessage">Додајте фајл</label>
+	<label index="upload.succeeded">Додавање фајла успешно</label>
+	<label index="upload.selectfile">Изабрани фајл за додавање:</label>
+	<label index="upload.error.uploadfailed">Додавање није било успешно.</label>
+	<label index="upload.failed.maxFileSizeExceeded">Додавање није било успешно: Максимално дозвољена величина је прекорачена.</label>
+	<label index="confirm.delete">Избриши изабрани фајл</label>
+	<label index="notify.delete.success">Фајл је избрисан:</label>
+	<label index="notify.delete.error">Фајл није успешно избрисан:</label>
+</labels>

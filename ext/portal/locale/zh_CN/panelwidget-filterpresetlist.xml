@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">过滤器</label>
+	<label index="create">创建过滤器</label>
+	<label index="manage">管理过滤器</label>
+	<label index="amount">数量</label>
+	<label index="error.noFilters">尚未创建过滤器</label>
+	<label index="error.noTypeFiltersets">没有定义过滤器</label>
+</labels>

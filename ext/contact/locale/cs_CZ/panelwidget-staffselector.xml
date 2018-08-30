@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Personál</label>
+	<label index="selection">Aktivní výběr</label>
+	<label index="selection.empty">Nic není vybrané. Použijte hledání pro přidání nových osob a skupin</label>
+	<label index="button.save.newgroup">Uložit výběr jako skupinu</label>
+	<label index="newGroupLabel.prompt">Vložte jméno nové skupiny</label>
+	<label index="newGroupLabel.saved.success">Skupina byla uložena.</label>
+	<label index="newGroupLabel.error.saveEmptyName">Vložte jméno nové skupiny</label>
+	<label index="newGroupLabel.prompt.preset">Nová skupina</label>
+	<label index="icon.additem">Vybrat</label>
+	<label index="icon.removefromselection">Odebrat z výběru</label>
+	<label index="icon.deletegroup">Smazat skupinu</label>
+	<label index="deletegroup.confirm">Opravdu chcete skupinu smazat?</label>
+	<label index="deletegroup.success">Skupina byla úspěšně smazána.</label>
+	<label index="deletegroup.error">Skupinu se nepodařilo smazat.</label>
+</labels>

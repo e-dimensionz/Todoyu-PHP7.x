@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">Erinnerungen</label>
+	<label index="myreminders">Meine Erinnerungen</label>
+	<label index="email">Email</label>
+	<label index="popup">Popup</label>
+	<label index="deactivated">Erinnerung deaktiviert</label>
+	<label index="notify.email.deactivated">Email-Erinnerung deaktiviert.</label>
+	<label index="notify.popup.deactivated">Popup-Erinnerung deaktiviert.</label>
+	<label index="notify.email.timeupdated">Zeitpunkt der Email-Erinnerung geändert</label>
+	<label index="notify.popup.timeupdated">Zeitpunkt der Popup-Erinnerung geändert</label>
+	<label index="beforeDateStart">vor Terminbeginn</label>
+	<label index="atDateStart">Bei Terminbeginn</label>
+	<label index="email.subject">Termin-Erinnerung</label>
+	<label index="email.title">Automatische Termin-Erinnerung</label>
+	<label index="noReminder">Keine Erinnerung</label>
+	<label index="cli.infocomment">Um automatische Termin-Erinnerungen per Email zu versenden, muss ein Cronjob auf Ihrem todoyu Server eingerichtet sein. Anleitung zur Einrichtung des todoyu Cronjobs:</label>
+</labels>

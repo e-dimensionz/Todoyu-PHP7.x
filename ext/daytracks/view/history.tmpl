@@ -1,0 +1,29 @@
+<div id="{$id}">
+	{include file="history-options.tmpl"}
+	{* ------------------- Month info ------------------------ *}
+	<div id="{$id}-trackings" class="bordercolor">
+		<h1 class="monthTotal">{$labelCurrentPeriod} / {formatHours $tracking.total} {Label core.date.time.hours}</h1>
+		{* -------------------- Tracks list ---------------------- *}
+		{$cw=0}
+		{foreach $tracking.dayTracks timestamp daytracks name=track}
+			{if date('W', $timestamp) != $cw}
+				<h1 class="cwTotal">{dateFormat $timestamp calendarweek} / {sumTrackedCW $tracking.dayTracks $timestamp} {Label core.date.time.hours}</h1>
+				{$cw = date('W', $timestamp)}
+			{/if}
+
+			<div class="daytrack daytracksum {if $showDetails}toggled{else}{cycle values="odd,even"}{/if}{if $dwoo.foreach.track.last} last{/if}{if date('n', $timestamp) != $currentMonth} notInCurrentMonth{/if}" >
+				<span class="daytrackDate">{dateFormat $timestamp DshortD2MlongY4}</span>
+				<span class="daytrackHours">{formatHours $daytracks.total} {Label core.date.time.hours}</span>
+			</div>
+			{* ------------------- Track details ------------------- *}
+			{if $showDetails}
+				{include file="history-track-details.tmpl"}
+			{/if}
+			{if $dwoo.foreach.track.last}{else}
+				<div class="divider"></div>
+			{/if}
+		{else}
+			<p>{Label daytracks.ext.history.noTracks}</p>
+		{/foreach}
+	</div>
+</div>

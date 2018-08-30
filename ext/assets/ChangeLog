@@ -1,0 +1,84 @@
+todoyu assets extension changelog
+
+assets 1.3.1 - 2013-12-31
+	* Added: Image assets quickinfo preview
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+	* Bugfix: Better error-handling for previews
+
+assets 1.3.0 - 2013-03-27
+	* Added: Inline adding of assets to project
+	* Added: Listing of assets in project header (new tab)
+	* Added: Separate types in asset list
+	* Added: Show comment assets in tab
+	* Added: Check delete right for comment assets
+	* Added: Check see rights for comment assets
+	* Added: Possibility to add comment assets
+	* Added: Added record selector with dropdown instead of autocompleter
+	* Added: Added parenttype comment for assets
+	* Added: New form field types: recordsAsset, recordsTaskAsset, recordsProjectAsset
+	* Added: TodoyuAssetsAssetManager::getLabel(), ::getMatchingAssets(), ::searchAssets() for the new field types
+	* Added: TodoyuAssetsAsset->getLabel()
+	* Changed: Added link to comment in asset list
+    * Changed: Adapt asset list to new width
+	* Bugfix: fixed icon of asset upload button
+
+assets 1.2.0 - 2012-05-03
+	* Feature: Add assets also during task edit
+	* Feature: No upload form required anymore. Dialog is opened directly on button click
+	* Feature: Check first if download of asset is possible. Show error message if a problem occurs
+	* Added Notification explaining set visibility after toggeling asset public/non-public flag
+	* Changed: Optimized styling to save space
+
+assets 1.1.0 - 2011-06-17
+	* Bugfix: Spelling mistake in rights check when deleting asset file
+	* Feature: Added mime type icon for .txt files, extended range of office mime types
+	* Feature: Added creator attribute column in assets listing
+	* Feature: Added task asset upload to quicktask creation
+	* Feature: Added task asset upload to task creation form
+	* Feature: Cleanup of Rights Management
+	* Changed: Increased filename max length (from 100 to 255 chars)
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
+	* Changed: Changed default ext setting to NOT physically delete asset files (only set deleted-flag in DB)
+	* Changed: Added missing notification after deletion of asset file
+
+assets 1.0.1 to 1.0.5 - 1.0.5 released 2011-01-17
+	* Bugfix: Various wording and spelling fixes
+	* Bugfix: Refresh whole asset tab on delete an asset
+	* Feature: Updated JsDoc comments
+	* Feature: Added italian translation
+	* Feature: Commented upload failure detection. Set 20 sec limit
+	* Feature: Added check for filename length to prevent non-downloadable files (max 50 signs)
+	* Feature: Upload failure detection
+	* Feature: Added asset icon to task icons
+	* Feature: Added hooks documentation
+	* Feature: Added Serbian locales
+	* Feature: Added locked message
+	* Feature: Added japanese translation
+	* Feature: Added czech translation
+	* Feature: Added dutch translation
+	* Feature: Added parts of french translation
+	* Feature: Added parts of russian translation
+	* Feature: Added portuguese translation
+	* Feature: Added directory separator shorthand
+	* Feature: Added max upload size
+	* Feature: noAccess handling in AJAX responses
+	* Changed: Updated year of copyright to 2011
+	* Changed: General cleanups
+	* Changed: Changed locale format
+	* Changed: Rights isAdmin Check changes for easier handling
+	* Changed: Moved styles from global.css to ext.css
+	* Changed: SQL cleanups
+	* Changed: Changed assets folder structure
+	* Changed: Move header sending to sendFile function
+	* Changed: Removed manual requiring of auto-loaded config files
+	* Changed: Logger cleanup
+	* Changed: Unified background colors
+	* Changed: Switched license from GPL to BSD
+	* Changed: Moved the global $CONFIG variable to Todoyu class. Is now a public static member variable
+	* Changed: Asset handling (load all in one merge file)
+	* Changed: Updated rights xml config with new name format
+
+assets 1.0.0 - released 2010-05-10
+	* Changed: Declared state stable

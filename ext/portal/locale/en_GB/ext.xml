@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Portal</label>
+	<label index="page.title">Portal</label>
+	<label index="tab">Portal</label>
+	<label index="tab.selection">My Filter</label>
+	<label index="tasktree.header.date">Date</label>
+	<label index="tasktree.header.customer">Customer</label>
+	<label index="tasktree.header.number">No.</label>
+	<label index="tasktree.header.tasknumber">Number</label>
+	<label index="task.title.deadline">Deadline</label>
+	<label index="task.title.deadline_short">D</label>
+	<label index="task.title.begin">Start</label>
+	<label index="task.title.begin_short">B</label>
+	<label index="task.title.customer">Customer</label>
+	<label index="task.title.jump">Jump</label>
+	<label index="task.title.tasknumber">Task No.</label>
+	<label index="tab.todos">To Do's</label>
+	<label index="tab.feedbacks">Feedback</label>
+	<label index="date.start.short">B</label>
+	<label index="selection.noTasksFound">No tasks found for this filter selection</label>
+	<label index="selection.noProjectsFound">No projects found for this filter selection</label>
+	<label index="subMenuEntry.selection">Portal > Selection</label>
+	<label index="subMenuEntry.todos">Portal > To Do's</label>
+	<label index="subMenuEntry.feedbacks">Portal > Feedback</label>
+	<label index="subMenuEntry.appointments">Portal > Appointments</label>
+	<label index="contextmenu.showinproject">Show In Project</label>
+	<label index="selection.noFiltersetsSelected">No Filter Selected.</label>
+</labels>

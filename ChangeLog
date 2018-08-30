@@ -1,0 +1,4 @@
+ChangeLogs are placed in core and extension folders:
+
+Core: core/ChangeLog
+Extensions: ext/EXTKEY/ChangeLog

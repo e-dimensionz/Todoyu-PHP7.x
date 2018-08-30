@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extconf.legend.config">Configuració del comentari</label>
+	<label index="fallback.legend.fallback">Comment fallback</label>
+	<label index="fallback.legend.help">Com funciona</label>
+	<label index="fallback.legend.general">Característiques generals</label>
+	<label index="fallback.legend.feedback">Request Feedback</label>
+	<label index="fallback.legend.email">Envia email</label>
+</labels>

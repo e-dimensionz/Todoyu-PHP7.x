@@ -1,0 +1,59 @@
+{extends main.tmpl}
+
+{block name="box"}
+	<table width="500" border="0" cellspacing="0" cellpadding="5">
+		<tr>
+			<td width="148">
+				PHP version &gt;= 5.2.5
+			</td>
+			<td width="200">
+				{Label install.installer.servercheck.yourphpversion}: {constant(PHP_VERSION)}
+			</td>
+			<td width="150">
+				<strong>
+				{if $info.phpversion}
+					{Label install.installer.servercheck.yourphpversion.ok}
+				{else}
+					{Label install.installer.servercheck.yourphpversion.error}
+				{/if}
+				</strong>
+			</td>
+			<td>
+				<span class="servercheckicon {if $info.phpversion}ok{else}problem{/if}"></span>
+			</td>
+		</tr>
+		{foreach $info.files file status writable}
+		<tr>
+			<td>
+				{if $.foreach.writable.first}
+					{Label install.installer.servercheck.writableCheck}
+				{else}
+					&nbsp;
+				{/if}
+			</td>
+			<td>
+				<strong class="bullet">&bull;</strong>/{$file}:
+			</td>
+			<td>
+				<strong>
+				{if $status}
+					{Label install.installer.servercheck.writable}
+				{else}
+					{Label install.installer.servercheck.notWritable}
+				{/if}
+				</strong>
+			</td>
+			<td>
+				<span class="servercheckicon {if $status}ok{else}problem{/if}"></span>
+			</td>
+		</tr>
+		{/foreach}
+	</table>
+	<input type="hidden" name="checked" value="1" />
+	{if $info.stop}
+	<script type="text/javascript">
+		document.observe('dom:loaded', TodoyuInstaller.hideButton.bind(Todoyu.Installer));
+	</script>
+	{Button label="LLL:install.installer.servercheck.buttonRecheck" onclick="location.href=location.href"}
+	{/if}
+{/block}

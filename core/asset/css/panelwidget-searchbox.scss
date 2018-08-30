@@ -1,0 +1,25 @@
+#panel {
+	.panelwidgetSearchBox {
+		.content {
+			form {
+				margin-top: 5px;
+				display: inline-block;
+
+				label {
+					float:left;
+					width: 40px;
+					padding-top:2px;
+				}
+				input {
+					width:190px;
+					float:left;
+				}
+				a.clearIcon {
+					background:url('../img/icons.png') no-repeat 2px -358px;
+					margin-left:5px;
+					cursor:pointer;
+				}
+			}
+		}
+	}
+}

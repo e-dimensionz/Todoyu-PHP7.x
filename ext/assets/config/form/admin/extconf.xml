@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">config</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="config">
+			<legend>assets.form.legend.admin.preview</legend>
+			<elements>
+				<field type="text" name="preview_max_width">
+					<label>assets.form.admin.preview.maxWidth</label>
+					<default>600</default>
+					<extraAttributes>onkeyup="Todoyu.Form.assistNumericInput(this,false)"</extraAttributes>
+				</field>
+				<field type="text" name="preview_max_height">
+					<label>assets.form.admin.preview.maxHeight</label>
+					<default>450</default>
+					<extraAttributes>onkeyup="Todoyu.Form.assistNumericInput(this,false)"</extraAttributes>
+				</field>
+				<field type="text" name="preview_quality">
+					<label>assets.form.admin.preview.quality</label>
+					<default>100</default>
+					<extraAttributes>onkeyup="Todoyu.Form.assistNumericInput(this,false)"</extraAttributes>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

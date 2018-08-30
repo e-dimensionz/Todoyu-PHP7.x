@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Општа подешавања</label>
+	<label index="general.extensions">Управа додатка</label>
+	<label index="general.records">Поглед 'сви снимци'</label>
+	<label index="general.rights">Администрација права</label>
+	<label index="extensions">Додаци</label>
+	<label index="extensions.info">Информације додатка</label>
+	<label index="extensions.config">Уреди конфигурацију</label>
+	<label index="extensions.rights">Уреди права</label>
+	<label index="extensions.records">Уреди снимке</label>
+	<label index="extensions.uninstall">Деинсталирај додатке</label>
+	<label index="extensions.install">Инсталирај додатке</label>
+	<label index="extensions.download">Скидај додатак као архиву</label>
+	<label index="extensions.update">Ажурирај додатке</label>
+	<label index="roles">Улоге</label>
+	<label index="roles.edit">Уреди улоге</label>
+	<label index="roles.delete">Избриши улоге</label>
+</labels>

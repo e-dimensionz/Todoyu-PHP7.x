@@ -1,0 +1,19 @@
+<div id="panelwidget-installprogress" class="panelWidget installprogress hasIcon">
+	<h1 id="panelwidget-installprogress-h1" class="defaultCursor">
+		<span id="panelwidget-installprogress-title" class="title">{Label install.installer.panelWidget.title.progress}</span>
+	</h1>
+	<div id="panelwidget-installprogress-content" class="content">
+		<h6>{$title}</h6>
+		<ul>
+		{$done = true}
+		{foreach $steps stepKey stepLabel}
+			<li class="{if $step == $stepKey}current{/if} {if $done}done{/if}">
+				<span class="icon"></span>{$stepLabel}
+			</li>
+			{if $step == $stepKey}
+				{$done = false}
+			{/if}
+		{/foreach}
+		</ul>
+	</div>
+</div>

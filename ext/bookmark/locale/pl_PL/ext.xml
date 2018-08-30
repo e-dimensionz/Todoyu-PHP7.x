@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Zakładki zadań</label>
+	<label index="title">Zakładki zadań</label>
+	<label index="info.nobookmarks">Brak Zakładek</label>
+	<label index="contextmenu.removebookmark">Usuń z Zakładek</label>
+	<label index="contextmenu.editbookmarks">Edytuj Zakładki</label>
+	<label index="contextmenu.addbookmark">Dodaj do Zakładek</label>
+	<label index="profile.module">Zakładki</label>
+	<label index="profile.module.tasks.tab">Zadania</label>
+	<label index="profile.module.tasks.bookmarksOf">Task bookmarks of</label>
+	<label index="profile.module.tasks.listing.task">Zadania</label>
+	<label index="profile.module.tasks.listing.title">Tytuł</label>
+	<label index="profile.module.tasks.listing.label">Etykieta</label>
+	<label index="bookmark.edit">Edytuj Zakłądkę</label>
+	<label index="bookmark.rename">Zmień nazwę Zakładki</label>
+	<label index="bookmark.delete.confirm">Czy napewno usunąć tą zakładkę?</label>
+	<label index="bookmark.attr.title">Etykieta</label>
+	<label index="bookmark.type.task">Zadanie</label>
+	<label index="bookmark.saved">Zakłądka została zapisana</label>
+	<label index="bookmark.saved.error">Wystąpił błąd podczas zapisywania zakładki</label>
+</labels>

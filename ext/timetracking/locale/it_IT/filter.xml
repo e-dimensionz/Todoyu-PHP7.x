@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Tracciamento temporale</label>
+	<label index="timetrackedPerson">La persona ha tracciato il tempo</label>
+	<label index="timetrackedRoles">I ruoli hanno tracciato il tempo</label>
+</labels>

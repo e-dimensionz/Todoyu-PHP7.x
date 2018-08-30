@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Search and create filters</label>
+	<label index="page.title">Search</label>
+	<label index="or">OR</label>
+	<label index="and">AND</label>
+	<label index="search.label">Search All</label>
+	<label index="filterlabel.filterset">Filter Sets</label>
+	<label index="filterset.rename">Rename Filter Set</label>
+	<label index="filterset.delete">Delete Filter Set</label>
+	<label index="filterset.confirm.delete">Really delete filter set?</label>
+	<label index="filterset.confirm.overwrite">Overwrite existing filter set?</label>
+	<label index="filterset.error.saveWrongType">You tried to save the filter set under a wrong type</label>
+	<label index="filterset.error.saveNoConditions">No conditions to save</label>
+	<label index="filterset.error.saveEmptyName">Please enter a name for the filter set</label>
+	<label index="filterset.notify.saved">The filter set has been saved.</label>
+	<label index="negation.default.true">Is Not</label>
+	<label index="negation.default.false">Is</label>
+	<label index="negation.datetime.true">After</label>
+	<label index="negation.datetime.false">Before</label>
+	<label index="negation.datetimeDyn.true">From</label>
+	<label index="negation.datetimeDyn.false">Until</label>
+	<label index="negation.numbercompare.true">smaller than</label>
+	<label index="negation.numbercompare.false">bigger than</label>
+	<label index="newFilterLabel">Enter a name for the new filter</label>
+	<label index="newFilterLabel.preset">New Filter</label>
+	<label index="subMenuEntry.task">Tasks</label>
+	<label index="subMenuEntry.project">Projects</label>
+	<label index="areMatching">%1$d %2$s match your search criteria.</label>
+	<label index="areMatching.overLimit">More than %1$d %2$s match your search criteria. Use more search criteria to narrow-down or use a sorting to view the relevant results.</label>
+	<label index="filterwidget.condtion.remove">Remove Condition</label>
+	<label index="search.noEntryFound">No Results Found</label>
+	<label index="search.noResultsForActiveFilters">No results found for currently selected filters</label>
+	<label index="contextmenu.project.showinproject">Open in project view</label>
+	<label index="headlet.label">Search In todoyu</label>
+	<label index="export.error.saveEmpty">There are no results to be exported.</label>
+	<label index="filtercontrol.add.condition">Add New Condition</label>
+	<label index="filtercontrol.add.sorting">Add New Sorting</label>
+	<label index="sorting.remove">Remove sorting</label>
+	<label index="sorting.direction.asc">Sort ascending</label>
+	<label index="sorting.direction.desc">Sort descending</label>
+	<label index="newSeparatorLabel">Enter a name for the new separator</label>
+	<label index="newSeparatorLabel.preset">New Separator</label>
+</labels>

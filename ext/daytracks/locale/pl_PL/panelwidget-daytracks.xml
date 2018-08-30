@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Karta czasu</label>
+	<label index="pwidget.title">Dzisiejszy zapisany czas</label>
+	<label index="totalToday">Całkowity dzieisjszy zapisany czas</label>
+	<label index="showHistory">Karta czasu</label>
+	<label index="goToTask">Zmień na Zadanie</label>
+</labels>

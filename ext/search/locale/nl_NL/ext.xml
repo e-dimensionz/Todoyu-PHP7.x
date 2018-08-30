@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Filters zoeken en aanmaken</label>
+	<label index="page.title">Zoeken</label>
+	<label index="or">OF</label>
+	<label index="and">EN</label>
+	<label index="search.label">Alle zoeken</label>
+	<label index="filterlabel.filterset">Filtersets</label>
+	<label index="filterset.rename">Filterset hernoemen</label>
+	<label index="filterset.delete">Filterset verwijderen</label>
+	<label index="filterset.confirm.delete">De filterset echt verwijderen?</label>
+	<label index="filterset.confirm.overwrite">Huidige filterset overschrijven?</label>
+	<label index="filterset.error.saveWrongType">U probeerde de filterset onder het verkeerde type op te slaan</label>
+	<label index="filterset.error.saveNoConditions">Geen voorwaarden om op te slaan</label>
+	<label index="filterset.error.saveEmptyName">Voer a.u.b. een naam in voor de filterset</label>
+	<label index="negation.default.true">is niet</label>
+	<label index="negation.default.false">is</label>
+	<label index="negation.datetime.true">van</label>
+	<label index="negation.datetime.false">tot</label>
+	<label index="newFilterLabel">Voer een naam in voor het nieuwe filter</label>
+	<label index="newFilterLabel.preset">Nieuw filter</label>
+	<label index="subMenuEntry.task">Taken</label>
+	<label index="subMenuEntry.project">Projecten</label>
+	<label index="filterwidget.condtion.remove">Voorwaarde verwijderen</label>
+	<label index="search.noEntryFound">Geen resultaten</label>
+	<label index="search.noResultsForActiveFilters">Geen resultaten voor momenteel gekozen filters</label>
+	<label index="contextmenu.project.showinproject">In projectweergave openen</label>
+	<label index="headlet.label">Zoekn in todoyu</label>
+</labels>

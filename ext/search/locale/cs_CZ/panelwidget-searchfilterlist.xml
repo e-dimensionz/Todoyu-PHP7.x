@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Sady filtrů</label>
+	<label index="saveFilterButton">Uložit nový filtr</label>
+	<label index="clearFilterArea">Vyčistit oblast filtru</label>
+	<label index="addSeparator">Přidat oddělovač</label>
+	<label index="notify.orderchanged">Změněná sada filtrů byla uložena.</label>
+</labels>

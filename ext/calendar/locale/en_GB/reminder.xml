@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">Reminders</label>
+	<label index="myreminders">My Reminders</label>
+	<label index="email">Email</label>
+	<label index="popup">Pop-Up</label>
+	<label index="deactivated">Reminder Deactivated</label>
+	<label index="notify.email.deactivated">Reminder Email Deactivated</label>
+	<label index="notify.popup.deactivated">Reminder Pop-Up Deactivated</label>
+	<label index="notify.email.timeupdated">Email reminder schedule has been changed.</label>
+	<label index="notify.popup.timeupdated">Pop-up reminder schedule has been changed.</label>
+	<label index="beforeDateStart">before appointment</label>
+	<label index="atDateStart">When appointment starts</label>
+	<label index="email.subject">Appointment Reminder</label>
+	<label index="email.title">Automatic Appointment Reminder</label>
+	<label index="noReminder">Don't remind me</label>
+	<label index="cli.infocomment">To automatically send event reminders per email, a cronjob must be setup for your todoyu installation. Instructions on how to setup the todoyu cronjob:</label>
+</labels>

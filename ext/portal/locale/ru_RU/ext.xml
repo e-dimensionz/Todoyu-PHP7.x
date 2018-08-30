@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Портал</label>
+	<label index="page.title">Портал</label>
+	<label index="tab">Портал</label>
+	<label index="tab.selection">Мой фильтр</label>
+	<label index="tasktree.header.date">Дата</label>
+	<label index="tasktree.header.customer">Клиент</label>
+	<label index="tasktree.header.number">Номер</label>
+	<label index="tasktree.header.tasknumber">Номер</label>
+	<label index="task.title.deadline">Срок</label>
+	<label index="task.title.deadline_short">!</label>
+	<label index="task.title.begin">Старт</label>
+	<label index="task.title.begin_short">С</label>
+	<label index="task.title.customer">Клиент</label>
+	<label index="task.title.jump">Перейти</label>
+	<label index="task.title.tasknumber">№ задачи.</label>
+	<label index="tab.todos">Сделать</label>
+	<label index="tab.feedbacks">Ответ</label>
+	<label index="date.start.short">Н</label>
+	<label index="selection.noTasksFound">Фильтр не нашёл ни одной задачи</label>
+	<label index="selection.noProjectsFound">Не найдено проектов для этого фильтра</label>
+	<label index="subMenuEntry.selection">Портал &gt; Выбраное</label>
+	<label index="subMenuEntry.todos">Портал &gt; Сделать</label>
+	<label index="subMenuEntry.feedbacks">Портал &gt; Ответы</label>
+	<label index="subMenuEntry.appointments">Портал &gt; Встречи</label>
+	<label index="contextmenu.showinproject">Показать в проекте</label>
+	<label index="selection.noFiltersetsSelected">Наборы фильтров не выбраны!</label>
+</labels>

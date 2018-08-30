@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.task.basics">基本信息</label>
+	<label index="legend.task.attributes">属性</label>
+	<label index="legend.container.basics">基本信息</label>
+	<label index="legend.container.attributes">属性</label>
+	<label index="legend.project.basics">基本信息</label>
+	<label index="legend.project.members">项目成员</label>
+	<label index="legend.quicktask.basics">你的任务基本信息</label>
+	<label index="legend.project.approvalroles">发票审批角色</label>
+	<label index="legend.quicktask.basics">你的任务基本信息</label>
+	<label index="legend.admin.basics">你的任务默认设置</label>
+	<label index="legend.admin.quicktask">快速任务默认行为</label>
+	<label index="legend.admin.fallbacks">对限制权限的人员的默认反馈</label>
+	<label index="legend.admin.projectrole.record.general">项目角色</label>
+	<label index="legend.admin.activity.record.general">工作类型</label>
+	<label index="legend.admin.taskpreset.record.preset">任务Preset</label>
+	<label index="legend.admin.taskpreset.record.general">任务默认配置</label>
+	<label index="legend.admin.taskpreset.record.quicktask">快速任务默认行为</label>
+	<label index="legend.admin.taskpreset.record.fallbacks">对限制权限的人员的默认反馈</label>
+	<label index="extconf.basic">基本配置</label>
+</labels>

@@ -1,0 +1,9 @@
+{if sizeof($tracks) > 0}
+	<ul class="ulList tracksList ulListDotted" id="task-{$idTask}-timetracks-list">
+		{foreach $tracks index track}
+			<li id="task-{$track.id_task}-track-{$track.id}" class="listItem track {cycle values="odd,even"} {if $track.editable}contextmenuTrack edit{/if}">
+				{include file="tasktab-listitem.tmpl"}
+			</li>
+		{/foreach}
+	</ul>
+{/if}

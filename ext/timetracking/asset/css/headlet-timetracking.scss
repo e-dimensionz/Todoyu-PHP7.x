@@ -1,0 +1,189 @@
+@import "../../../../core/config/theme.scss";
+
+
+#todoyutimetrackingheadlettracking {
+
+	a.button {
+		background: url(../img/icons.png) no-repeat 1px -235px;
+
+		&.tracking {
+			background-position:1px -55px;
+		}
+	}
+
+	.content {
+		margin-left: -380px;
+		width:575px;
+		padding:2px;
+		padding-top:3px;
+	}
+
+	/* ----------------------------------------------
+		Active tracking
+	   ---------------------------------------------- */
+	.tracking {
+		> div {
+			display:inline-block;
+			vertical-align: top;
+		}
+
+		.taskDetails {
+			width:270px;
+			overflow:hidden;
+			border-right:1px solid $colorNeutral02;
+			margin-left:3px;
+
+			a {
+				display:inline-block !important;
+				width:100%;
+				padding:0;
+				height:15px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+
+				&:hover {
+					background-color:$colorNeutral01;
+				}
+			}
+		}
+
+		.taskTime {
+			width:260px;
+			margin-left:5px;
+
+			> div {
+				display:inline-block;
+				height:15px;
+			}
+
+			.currentTracking {
+				font-weight:bold;
+			}
+
+			.estimatedWorkload {
+				float:left;
+				margin-left:5px;
+			}
+
+			.tracking {
+				height: 15px;
+			}
+
+			.percent {
+				.number {
+					float:left;
+					margin-right:5px;
+				}
+
+				.bar {
+					width:100px;
+					height:12px;
+					display:block;
+					float:left;
+					border:1px solid $colorNeutral02;
+					background-color:$colorCorporate02;
+
+					.progress {
+						background-color:$colorApprove04;
+						display:inline-block;
+						height:100%;
+					}
+				}
+			}
+		}
+
+		.stop {
+			position:absolute;
+			top:10px;
+			right:4px;
+
+			.icon {
+				background-position:5px 1px;
+			}
+		}
+	}
+
+	/* ----------------------------------------------
+		Inactive tracking
+	   ---------------------------------------------- */
+	.inactive {
+		padding:2px;
+
+		> li {
+			border-left-width:4px;
+			border-left-style:solid;
+			border-bottom-width:1px;
+			border-bottom-style:solid;
+			border-bottom-color:$colorNeutral02;
+			display:block;
+			padding:5px;
+			background-color:$white;
+			position:relative;
+			height:15px;
+
+			> div {
+				display:inline-block;
+
+				height: 18px;
+			}
+
+			.title {
+				cursor:pointer;
+				width:520px;
+
+				> div {
+					display: inline-block;
+					height: 18px;
+					vertical-align: top;
+				}
+
+				.taskNumber {
+					width:60px;
+				}
+
+				.taskTitle {
+					width:400px;
+					
+					.project,
+					.task {
+						display: inline-block;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+
+					.project {
+						width: 43%
+					}
+
+					.task {
+						width: 54%;
+						font-weight: bold;
+						margin-left: 5px;
+					}
+				}
+
+				.taskTime {
+					width:50px;
+				}
+			}
+
+			.trackingButton {
+				position:absolute;
+				right:4px;
+				width:32px;
+
+				button {
+					width: 32px;
+					margin-top:-5px;
+
+					.label {
+						display:none;
+					}
+				}
+			}
+		}
+
+
+	}
+}

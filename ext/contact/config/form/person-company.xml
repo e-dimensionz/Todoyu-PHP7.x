@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Main company data</legend>
+			<elements>
+
+				<field type="textAC" name="id">
+					<label>contact.ext.company</label>
+					<config>
+						<acLabel>TodoyuContactCompanyManager::getLabel</acLabel>
+						<options>
+							<acName>company</acName>
+							<onComplete>Todoyu.Ext.contact.Autocomplete.onCompanyAutocomplete</onComplete>
+							<onSelected>Todoyu.Ext.contact.Person.updateCompanyAddressRecords</onSelected>
+							<referencedFieldName>id-workaddress</referencedFieldName>
+						</options>
+					</config>
+					<required />
+					<wizard name="company" />
+				</field>
+
+				<field type="select" name="id_workaddress">
+					<label>contact.ext.workaddress</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getWorkaddressOptionsPerson</function>
+						<lazyInit />
+					</source>
+				</field>
+
+				<field type="select" name="id_jobtype">
+					<label>contact.ext.jobtype</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getJobTypeOptions</function>
+						<lazyInit />
+					</source>
+				</field>
+
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

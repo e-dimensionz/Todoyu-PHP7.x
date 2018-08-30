@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">ファーストステップ</label>
+	<label index="wizard.start.title">todoyuのファーストステップ</label>
+	<label index="wizard.start.info">このウィザードはtodoyuのファーストステップを通してあなたを案内します。このウィザードはあなたの貴重な時間をほんの&lt;strong&gt;数分&lt;/strong&gt;頂くだけで済みます。そしてその後、インストールを開始することができます。&lt;br /&gt;&lt;br /&gt;「次へ」をクリックして進めてください。</label>
+	<label index="wizard.start.help">&amp;nbsp;</label>
+	<label index="wizard.start.dontUseWizard">このウィザードを使用せず、再びポップアップを表示しない</label>
+	<label index="wizard.start.disableAssistant">アシスタントを無効にする</label>
+	<label index="wizard.start.reactivateInAdmin">管理セクションでこのウィザードを再び有効にすることができます</label>
+	<label index="wizard.jobtypes.title">職種</label>
+	<label index="wizard.jobtypes.info">あなたが会社やプロジェクトで使用する職種を入力してください。これらは、いつでも管理セクションで変更できます。</label>
+	<label index="wizard.jobtypes.help">職種は以下など:&lt;br /&gt;CEO, CFO, マネージャー, チームリーダー, 事務職, 営業</label>
+	<label index="wizard.projectroles.title">プロジェクトロール</label>
+	<label index="wizard.projectroles.info">あなたのプロジェクトでの役割をプロジェクトロールに記入してください。</label>
+	<label index="wizard.projectroles.help">ここに何を入力すべきかのアイデアとして: todoyuチームでは以下のプロジェクトロールを持っています:&lt;br /&gt;プロジェクトマネージャー, 開発者, フロントエンドエンジニア, プロダクトマネージャー, マーケティング責任者, コミュニティマネージャー, トレーナー</label>
+	<label index="wizard.activities.title">活動内容</label>
+	<label index="wizard.activities.info">活動内容ではチームにアサインする仕事の種類を定義します。</label>
+	<label index="wizard.activities.help">活動内容には、コンサルティング, プログラミング, サポート, 社内作業などがあります</label>
+	<label index="wizard.userroles.title">ユーザグループ</label>
+	<label index="wizard.userroles.info">ユーザグループは管理目的で使用します。あとで管理セクションにてユーザグループに権限を与えることができます。</label>
+	<label index="wizard.userroles.help">しばしば、ユーザグループは以前に入力した職種に縛られます。しかし、自由に好きなだけグループを定義することができます。</label>
+	<label index="wizard.company.title">あなたの会社</label>
+	<label index="wizard.company.info">あなたの会社の基本情報を入力してください。これらは連絡先セクションにて自由に変更できます。</label>
+	<label index="wizard.company.help">&amp;nbsp;</label>
+	<label index="wizard.employees.title">従業員</label>
+	<label index="wizard.employees.info">今度は、チームメンバに誰が居るのかをtodoyuに伝えてください。そして個人情報を定義してください (ユーザは自由に個人情報を変更することができます)。</label>
+	<label index="wizard.employees.help">&amp;nbsp;</label>
+	<label index="wizard.customers.title">顧客</label>
+	<label index="wizard.customers.info">うまくいけば、この時点であなたは既に顧客を持っています。素晴らしい！基本情報を入力してください。</label>
+	<label index="wizard.customers.help">&amp;nbsp;</label>
+	<label index="wizard.project.title">最初のプロジェクト</label>
+	<label index="wizard.project.info">最後にtodoyuでの最初のプロジェクトを始めてください。おめでとう！</label>
+	<label index="wizard.project.help">&amp;nbsp;</label>
+	<label index="wizard.finish.title">その通り！</label>
+	<label index="wizard.finish.info">あなたはtodoyuを順調に使うために必要な情報を全て&lt;strong&gt;入力し終えました&lt;/strong&gt;。&lt;br /&gt;&lt;br /&gt;楽しんでください！</label>
+	<label index="wizard.finish.help">&amp;nbsp;</label>
+	<label index="wizard.finish.closeWizard">ウィザードを閉じる</label>
+	<label index="employee.addCompany">企業を追加</label>
+	<label index="employee.addEmployee">従業員の追加</label>
+	<label index="employee.addPerson">プロジェクトに個人を追加する</label>
+	<label index="extconf.disableWizard">ウィザードを表示しない</label>
+	<label index="wizardDisabledInfo">現在、ウィザードは無効です</label>
+</labels>

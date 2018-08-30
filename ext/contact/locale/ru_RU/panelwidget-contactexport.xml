@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Экспорт данных о контакте</label>
+	<label index="export.instruction">Экспортировать контакты в формате CSV, используя критерии поиска.</label>
+	<label index="export.button">Экспортировать</label>
+</labels>

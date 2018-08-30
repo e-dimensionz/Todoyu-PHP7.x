@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Generale</label>
+	<label index="general.use">Usa i segnalibri</label>
+	<label index="task">Segnalibri delle attività</label>
+	<label index="task.add">Aggiunta segnalibri</label>
+	<label index="task.remove">Rimozione segnalibri</label>
+	<label index="panelwidgets">Widget nel pannello</label>
+</labels>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">作業時間の記録</label>
+	<label index="title">作業時間の記録</label>
+	<label index="noTracksYet">まだ記録された作業時間はありません</label>
+	<label index="attr.date_create">日付</label>
+	<label index="attr.date_track">日付</label>
+	<label index="attr.workload_tracked">作業量</label>
+	<label index="attr.workload_chargeable">請求対象</label>
+	<label index="attr.comment">コメント</label>
+	<label index="search.label">作業時間の記録</label>
+	<label index="task.attr.overtimed">タスクの衝突</label>
+	<label index="headlet.label">作業時間の記録</label>
+	<label index="totalTrackedTime">作業時間の合計</label>
+	<label index="tasktab.edit">レコードを編集する</label>
+	<label index="start">作業時間を記録する</label>
+	<label index="stop">作業時間の記録を停止する</label>
+	<label index="currentTask">現在のタスク</label>
+	<label index="showCurrentTaskInProject">プロジェクトでタスクを表示</label>
+	<label index="quicktask.workload_done">既に働いています</label>
+	<label index="estimated_workload">作業見積</label>
+	<label index="jumpToTask">このタスクに移動</label>
+	<label index="jumpToProject">このプロジェクトに移動</label>
+	<label index="extconf.stopOnLogout">ログアウトをクリックした場合は作業時間の記録を停止する</label>
+</labels>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=calendar&amp;controller=event</attribute>
+		<attribute name="name">event</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+		<field name="id_series" />
+	</hiddenFields>
+
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>calendar.form.legend.basics</legend>
+			<elements>
+
+				<field type="text" name="title">
+					<label>core.global.title</label>
+					<required />
+				</field>
+
+				<field type="checkbox" name="is_dayevent">
+					<label>calendar.event.attr.is_dayevent</label>
+					<extraAttributes>onchange="Todoyu.Ext.calendar.Event.Edit.onChangeEventtype(this, 'is_dayevent', 'eventtype');"</extraAttributes>
+				</field>
+
+				<field type="checkbox" name="is_private">
+					<label>calendar.event.attr.is_private</label>
+					<validate>
+						<user msg="calendar.event.error.privateEvent">
+							<function>TodoyuCalendarEventFormValidator::eventIsAssignableToCurrentPersonOnly</function>
+						</user>
+					</validate>
+				</field>
+
+				<field type="selectgrouped" name="eventtype">
+					<label>calendar.event.attr.eventtype</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getEventTypeOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+					<required />
+				</field>
+
+				<field type="datetime" name="date_start">
+					<label>calendar.event.attr.startdate</label>
+					<validate>
+						<dateTimeNotAfter msg="calendar.event.error.starttimeAfterEndtime">
+							<field>date_end</field>
+						</dateTimeNotAfter>
+					</validate>
+					<extraAttributes>onchange="Todoyu.Ext.calendar.Event.updateEnddate('event')"</extraAttributes>
+					<class>datetime</class>
+					<required />
+					<validateLive>
+						<function>
+							Todoyu.Ext.calendar.Event.Edit.validatePersonHoliday
+						</function>
+					</validateLive>
+				</field>
+
+				<field type="datetime" name="date_end">
+					<label>calendar.event.attr.enddate</label>
+					<class>datetime</class>
+					<validate>
+						<user msg="calendar.event.error.starttimeAfterEndtime">
+							<function>TodoyuCalendarEventFormValidator::isSingleDateTypeOrAfterStartDate</function>
+						</user>
+					</validate>
+					<validateLive>
+						<function>
+							Todoyu.Ext.calendar.Event.Edit.validatePersonHoliday
+						</function>
+					</validateLive>
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="participants">
+			<legend>calendar.form.legend.participants</legend>
+			<elements>
+				<field type="recordsStaff" name="persons">
+					<label>calendar.event.attr.assigned_to</label>
+					<validate>
+						<user msg="calendar.event.error.personsOverbooked">
+							<function>TodoyuCalendarEventFormValidator::personsAreBookable</function>
+						</user>
+					</validate>
+					<validateLive>
+						<function>
+							Todoyu.Ext.calendar.Event.Edit.validatePersonHoliday
+						</function>
+					</validateLive>
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="details">
+			<legend>calendar.form.legend.details</legend>
+			<elements>
+
+				<field type="text" name="place">
+					<label>calendar.event.attr.place</label>
+				</field>
+
+				<field type="RTE" name="description">
+					<label>core.global.description</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="email">
+			<legend>calendar.form.legend.notification</legend>
+			<elements>
+
+				<field type="recordsStaff" name="emailreceivers">
+					<label>calendar.event.edit.sendasemail</label>
+					<restrict>
+						<allow ext="calendar" right="mailing:sendAsEmail" />
+					</restrict>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="autoemail">
+			<legend>calendar.form.legend.autonotification</legend>
+			<elements>
+				<field type="comment" name="autonotification_comment">
+					<label>calendar.form.comment.autonotification.label</label>
+					<comment type="function">
+						<function>TodoyuCalendarEventViewHelper::getAutoNotificationComment</function>
+					</comment>
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.calendar.Event.Edit.cancelEdit()</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.calendar.Event.Edit.saveEvent(false)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

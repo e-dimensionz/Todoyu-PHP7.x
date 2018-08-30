@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.export.filter">Konfiguration Ihres Exports</label>
+	<label index="legend.export.timerage">Zeitfenster definieren</label>
+</labels>

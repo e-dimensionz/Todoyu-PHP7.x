@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">検索およびフィルタの作成</label>
+	<label index="page.title">検索</label>
+	<label index="or">OR</label>
+	<label index="and">AND</label>
+	<label index="search.label">全て検索</label>
+	<label index="filterlabel.filterset">フィルタセット</label>
+	<label index="filterset.rename">フィルタセット名の変更</label>
+	<label index="filterset.delete">フィルタセットの削除</label>
+	<label index="filterset.confirm.delete">フィルタセットを削除しますか？</label>
+	<label index="filterset.confirm.overwrite">既存のフィルタセットを上書きしますか？</label>
+	<label index="filterset.error.saveWrongType">間違った形式でフィルタセットを保存しようとしました</label>
+	<label index="filterset.error.saveNoConditions">保存する条件がありません</label>
+	<label index="filterset.error.saveEmptyName">フィルタセットの名前を入力してください</label>
+	<label index="negation.default.true">以下に等しくない</label>
+	<label index="negation.default.false">以下に等しい</label>
+	<label index="negation.datetime.true">自</label>
+	<label index="negation.datetime.false">至</label>
+	<label index="negation.datetimeDyn.true">自</label>
+	<label index="negation.datetimeDyn.false">至</label>
+	<label index="negation.numbercompare.true">次より小さい</label>
+	<label index="negation.numbercompare.false">次より大きい</label>
+	<label index="newFilterLabel">新規フィルタの名前を入力</label>
+	<label index="newFilterLabel.preset">新規フィルタ</label>
+	<label index="subMenuEntry.task">タスク</label>
+	<label index="subMenuEntry.project">プロジェクト</label>
+	<label index="areMatching">%1$d %2$s が検索基準に適合します</label>
+	<label index="areMatching.overLimit">%1$d %2$s 以上が検索基準に一致します。</label>
+	<label index="filterwidget.condtion.remove">条件の削除</label>
+	<label index="search.noEntryFound">検索結果なし</label>
+	<label index="search.noResultsForActiveFilters">現在選択したフィルタの結果はありません</label>
+	<label index="contextmenu.project.showinproject">プロジェクトビューで開く</label>
+	<label index="headlet.label">todoyu で検索</label>
+	<label index="export.error.saveEmpty">エクスポートするための結果はありません</label>
+</labels>

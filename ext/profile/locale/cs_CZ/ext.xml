@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Vlastní nastavení</label>
+	<label index="page.title">Můj profil</label>
+	<label index="headlet.label">Moje nastavení</label>
+	<label index="module.general">Obecné nastavení</label>
+	<label index="general.main.tab">Hlavní</label>
+	<label index="general.main.locale">Jazyk</label>
+	<label index="general.main.saved">Nastavení uloženo</label>
+	<label index="general.main.saved.pleaseWait">todoyu generuje soubory s cache pro vybraný jazyk. Mějte prosím chvilku strpení.</label>
+	<label index="general.password.title">Změnit vlastní heslo</label>
+	<label index="general.password.tab">Heslo</label>
+	<label index="general.password.current">Současné heslo</label>
+	<label index="general.password.current.empty">Pro změnu hesla vložte vaše současné heslo</label>
+	<label index="general.password.current.wrong">Vaše současné heslo je nesprávné</label>
+	<label index="general.password.new1">Nové heslo</label>
+	<label index="general.password.new2">Opakovat heslo</label>
+	<label index="general.password.error">Heslo nelze změnit</label>
+	<label index="general.password.success">Heslo bylo změněno</label>
+	<label index="general.password.notEqual">Nové heslo není stejné</label>
+	<label index="general.main.header">Osobní nastavení</label>
+	<label index="general.password.header">Heslo</label>
+</labels>

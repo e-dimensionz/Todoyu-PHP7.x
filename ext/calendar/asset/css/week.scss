@@ -1,0 +1,161 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ---------------
+	Header
+   --------------- */
+.gridHeader {
+	position:relative;
+	z-index:110;
+
+	.wk-weektop {
+		background-color:$colorCorporate04;
+		font-size:11px;
+		line-height:14px;
+		overflow:hidden;
+		width:100%;
+	}
+}
+
+.weekMode {
+	.dayCol{
+		width:86px;
+
+		&.dayName {
+			font-weight:normal;
+			white-space:nowrap;
+			padding:2px 4px;
+			width:78px;
+			cursor:pointer;
+			text-align:center;
+
+			&.today {
+				background-color:$colorHighlight03;
+				border-color:$colorNeutral06 $colorNeutral01 $colorNeutral01 $colorNeutral06;
+				border-style:solid;
+				border-width:1px;
+				font-weight:bold;
+				padding:1px 3px;
+			}
+
+			&.odd {
+				background-color:$colorCorporate01;
+			}
+		}
+	}
+
+	.dayevent {
+		margin-left:2px;
+		margin-top:1px;
+		overflow:hidden;
+		padding:1px 2px 2px;
+		white-space:nowrap;
+	}
+
+	&.fiveDays .dayCol{
+		width:123px;
+
+		&.dayName {
+			width:112px;
+		}
+	}
+}
+
+
+
+.wk-webcontent-td {
+	font-size:0;
+	padding-left:2px;
+	height:5px;
+}
+
+.standardGrid {
+	position:relative;
+	table-layout:fixed;
+	width:100%;
+}
+
+.st-c {
+	padding:1px 1px 0 2px;
+	vertical-align:top;
+}
+
+.st-s {
+	padding-bottom:2px;
+	cursor:default
+}
+
+.wk-scrolltimedevents {
+	border-bottom:1px solid $colorNeutral02;
+	border-left:1px solid $colorNeutral02;
+	border-right:1px solid $colorNeutral02;
+	border-top:1px solid $colorNeutral06;
+	font-size:11px;
+	line-height:normal;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	padding:0;
+	position:relative;
+}
+
+.tg-timedevents {
+	background-color:$white;
+	table-layout:fixed;
+	width:100%;
+	margin-top: -1px;
+	height:1008px;
+}
+
+.tg-hourmarkerwrapper {
+	position:relative;
+	height:1px;
+	top:1px
+}
+
+.tg-hourmarkers {
+	position:absolute;
+	width:100%;
+}
+
+.tg-dualmarker {
+	border-top:1px solid $colorNeutral02;
+	height:20px;
+	line-height:20px;
+	border-bottom:1px dotted $colorNeutral02;
+	margin-bottom:20px
+}
+
+.dayCol {
+	border-left:3px double $colorNeutral02;
+	overflow:hidden;
+}
+
+.today7,
+.today5 {
+	border:1px double $colorNeutral02;
+	border-width:0 3px 0 1px;
+	overflow:hidden;
+	vertical-align:top;
+	position:relative;
+	background:url(../img/background-week-today.png) repeat left 1px;
+}
+
+.tg-colwrapper {
+	margin-right:12px;
+	position:relative;
+	opacity:1;
+	width:100%;
+	height:1008px;
+	margin-bottom: -1008px;
+	cursor:pointer;
+}
+
+td.weekModeHourHotspotCell {
+	width:83px;
+	height:17px;
+}
+
+td.noEventCell {
+	background:url(../img/background-noevent.png) repeat-x;
+}

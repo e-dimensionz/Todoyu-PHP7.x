@@ -1,0 +1,30 @@
+<table cellspacing="0" cellpadding="0" class="list recordsList typeExtension">
+	<colgroup>
+		<col class="icon" />
+		<col class="recordtype" />
+		<col class="description" />
+		<col class="records" />
+		<col class="action" />
+	</colgroup>
+
+	<tr class="header">
+		<th scope="col" class="icon">&nbsp;</th>
+		<th scope="col" class="recordtype">{Label sysmanager.ext.recordType}</th>
+		<th scope="col" class="description">{Label core.global.description}</th>
+		<th scope="col" class="records">{Label core.global.records}</th>
+		<th scope="col" class="actions last">&nbsp;</th>
+	</tr>
+
+{foreach $types type}
+	<tr class="pointerCursor {cycle values="odd,even"}" onclick="Todoyu.Ext.sysmanager.Records.showTypeRecords('{$extKey}', '{$type.type}')">
+		<td class="icon"></td>
+		<td class="recordtype">{$type.label}</td>
+		<td class="description">{$type.description}</td>
+		<td class="records">{$type.count} {Label core.global.records}</td>
+		<td class="actions">
+			<div class="icon list"></div>
+		</td>
+	</tr>
+{/foreach}
+
+</table>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.system.systemsettings">Ustawienia systemu </label>
+	<label index="legend.system.cli">Wygląd linii poleceń </label>
+	<label index="legend.system.debugging">Debugowanie </label>
+	<label index="legend.rightsmanager.general">Zarządzaj rolami i uprawnieniami </label>
+</labels>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Anhang</label>
+	<label index="legend.inlineAssetUpload">Dateien an diese Aufgabe anhängen</label>
+	<label index="assets.button.delete">Ausgewählte Datei löschen</label>
+	<label index="assets.button.upload">Neue Datei anfügen</label>
+	<label index="legend.admin.preview">Vorschaubilder</label>
+	<label index="admin.preview.maxWidth">Maximal Pixel-Breite</label>
+	<label index="admin.preview.maxHeight">Maximal Pixel-Höhe</label>
+	<label index="admin.preview.quality">Bildqualität in Prozent</label>
+</labels>

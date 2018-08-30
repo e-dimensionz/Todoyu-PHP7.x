@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Mijn filters</label>
+	<label index="create">Filters aanmaken</label>
+	<label index="manage">Filters beheren</label>
+	<label index="amount">Hoeveelheid</label>
+	<label index="error.noFilters">Nog geen filters aangemaakt</label>
+	<label index="error.noTypeFiltersets">Geen filters gedefinieerd</label>
+</labels>

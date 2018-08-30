@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Общие</label>
+	<label index="general.use">Использовать возможности модуля</label>
+	<label index="general.profile">Использовать профиль</label>
+	<label index="general.area">Использовать области контактов</label>
+	<label index="person">Участник</label>
+	<label index="person.seeAllInternalPersons">Показать всех внутренних участников</label>
+	<label index="person.seeAllPersons">Показать всех участников</label>
+	<label index="person.add">Добавить участников</label>
+	<label index="person.editAndDeleteAll">Изменить или удалить участника</label>
+	<label index="person.enableLogin">Создать учётные записи участников</label>
+	<label index="person.seeComment">Показать комментарии участника</label>
+	<label index="person.editComment">Реактировать коментарии участника</label>
+	<label index="company">Компании</label>
+	<label index="company.seeAllCompanies">Показать все компании</label>
+	<label index="company.add">Добавить компании</label>
+	<label index="company.editOwn">Редактировать собственную компанию (Работодатель)</label>
+	<label index="company.editAndDeleteAll">Изменить или удалить компании</label>
+	<label index="company.seeComment">Показать комментарии компании</label>
+	<label index="company.editComment">Редактировать комментарии компании</label>
+	<label index="relation">Связи участника</label>
+	<label index="relation.seeAllContactinfotypes">Показывать все типы</label>
+	<label index="relation.seeHomeAddress">Показывать домашний адрес</label>
+	<label index="relation.seeBusinessAddress">Показывать офисный адрес</label>
+	<label index="relation.seeBillingAddress">Показывать адрес для счетов</label>
+	<label index="panelwidgets">Элементы панели</label>
+	<label index="panelwidgets.staffSelector">Выбор работников</label>
+	<label index="panelwidgets.export">Экспортировать</label>
+</labels>

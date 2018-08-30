@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.person.basics">基本个人信息</label>
+	<label index="legend.person.picture">头像</label>
+	<label index="legend.person.furtherInformation">此人详细信息</label>
+	<label index="legend.person.login">用户账号</label>
+	<label index="legend.company.basics">公司信息</label>
+	<label index="legend.company.logo">公司标志</label>
+	<label index="legend.admin.jobtype.record">公司类型</label>
+	<label index="legend.admin.contactinfotype.record">联系信息类型</label>
+</labels>

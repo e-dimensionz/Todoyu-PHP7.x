@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="project">プロジェクト</label>
+	<label index="task.acknowledged">承認済</label>
+	<label index="task.assignedPerson">人にアサイン</label>
+	<label index="task.assignedRoles">ロールにアサイン</label>
+	<label index="task.ownerPerson">所有者は人</label>
+	<label index="task.ownerRoles">所有者はロール</label>
+	<label index="task.currentPersonIsOwner">私は所有者です</label>
+	<label index="task.creatorPerson">人によって作られた</label>
+	<label index="task.creatorRoles">ロールによって作られた</label>
+	<label index="task.parentTask">親タスク</label>
+	<label index="task.isPublic">パブリック</label>
+	<label index="task.billingType">課金形態</label>
+	<label index="task.title">タイトル</label>
+	<label index="task.fulltext">全文</label>
+	<label index="task.type">タイプ</label>
+	<label index="task.activity">作業形態</label>
+	<label index="task.timemanagement.label">時間管理</label>
+	<label index="task.deadlinedate">締切</label>
+	<label index="task.deadlinedateDyn">締切 (動的)</label>
+	<label index="task.startdate">開始日</label>
+	<label index="task.startdateDyn">開始日 (動的)</label>
+	<label index="task.enddate">終了日</label>
+	<label index="task.enddateDyn">終了日 (動的)</label>
+	<label index="task.editdate">最後の編集</label>
+	<label index="task.editdateDyn">最後の編集 (動的)</label>
+	<label index="task.createdate">作成</label>
+	<label index="task.createdateDyn">作成 (動的)</label>
+	<label index="project.status">プロジェクトの状態</label>
+	<label index="project.fulltext">タイトル 全文</label>
+	<label index="project.company">顧客名</label>
+	<label index="project.projectrole">プロジェクトのロール</label>
+	<label index="project.projectleader">プロジェクト管理者</label>
+	<label index="project.projectsupervisor">プロジェクトの監督</label>
+	<label index="project.timemanagement.label">時間の管理</label>
+	<label index="project.date_start">プロジェクトの開始日</label>
+	<label index="project.date_end">プロジェクトの終了日</label>
+	<label index="project.deadline">プロジェクトの締切</label>
+	<label index="project.createdate">作成日</label>
+	<label index="project.createdateDyn">作成日(動的)</label>
+	<label index="project.editdate">編集日</label>
+	<label index="project.editdateDyn">編集日(動的)</label>
+	<label index="project.taskfilter">タスクフィルターからのタスク</label>
+</labels>

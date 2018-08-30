@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Пожалуйста, выберите</label>
+	<label index="field.isrequired">Обязательное поле</label>
+	<label index="field.hasError">Найдено неверное значение</label>
+	<label index="field.save">Сохранить</label>
+	<label index="field.cancel">Отмена</label>
+	<label index="records.add">Добавить запись</label>
+	<label index="records.remove">Убрать запись</label>
+	<label index="records.edit">Редактировать запись</label>
+	<label index="databaserelation.nolabel">[Новое]</label>
+	<label index="databaserelation.expandAllRecords">Показать все</label>
+	<label index="error.notUnique">Такая запись уже существует</label>
+	<label index="ac.noResults">Автозаполнение: ничего не найдено</label>
+	<label index="is_preferred">Предпочтительно</label>
+	<label index="dateselector.open">Откройте календарь, чтобы выбрать дату</label>
+	<label index="autocompleteInfo">Это поле с автозаполнением. Начните писать, чтобы получить возможные варианты</label>
+	<label index="legend.main">Определения ролей</label>
+</labels>

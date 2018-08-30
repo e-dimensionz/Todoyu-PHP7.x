@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.person.basics">Основная информация [Сделано]</label>
+	<label index="legend.person.picture">Изображение [Сделано]</label>
+	<label index="legend.person.furtherInformation">Дополнительная информация [Сделано]</label>
+	<label index="legend.person.login">Профиль участника [Сделано]</label>
+	<label index="legend.company.basics">Информация о компании [Сделано]</label>
+	<label index="legend.company.logo">Логотип компании [Сделано]</label>
+	<label index="legend.admin.jobtype.record">Тип работы [Сделано]</label>
+	<label index="legend.admin.contactinfotype.record">Тип информации о контакте [Сделано]</label>
+</labels>

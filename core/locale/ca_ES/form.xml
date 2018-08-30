@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Selecciona</label>
+	<label index="field.isrequired">Camp necessari</label>
+	<label index="field.hasError">Dada no vàlida</label>
+	<label index="field.save">Guarda</label>
+	<label index="field.cancel">Cancel·la</label>
+	<label index="records.add">Afegeix un registre</label>
+	<label index="records.remove">Elimina registre</label>
+	<label index="records.edit">Edita registre</label>
+	<label index="databaserelation.nolabel">[Nova entrada]</label>
+	<label index="databaserelation.expandAllRecords">Mostra detalls</label>
+	<label index="error.notUnique">Aquesta informació ja existeix</label>
+	<label index="ac.noResults">Autocompletar: no trobat</label>
+	<label index="is_preferred">Preferit</label>
+	<label index="dateselector.open">Obre el calendari per escollir una data</label>
+	<label index="autocompleteInfo">Aquest camp és autocompletable. Comenceu a escriure per a rebre suggeriments.</label>
+</labels>

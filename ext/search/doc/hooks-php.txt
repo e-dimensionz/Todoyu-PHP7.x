@@ -1,0 +1,19 @@
+Search Extension - PHP Hooks
+============================
+
+
+Event Hooks
+***************************************
+
+#filterset.add
+	New filterset added
+	@param	Integer		$idFilterset
+
+#filterset.update
+	Filterset updated
+	@param	Integer		$idFilterset
+	@param	Array		$data
+
+#filterset.delete
+	Filterset deleted
+	@param	Integer		$idFilterset

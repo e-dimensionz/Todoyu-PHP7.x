@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">地域別の休日</label>
+	<label index="showNoHolidays">休日を非表示にする</label>
+</labels>

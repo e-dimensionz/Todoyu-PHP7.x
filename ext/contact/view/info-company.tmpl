@@ -1,0 +1,100 @@
+<div class="visitingCardContent">
+	<table>
+		<tr class="odd">
+			<td class="label">{Label contact.ext.company.attr.title}:</td>
+			<td width="70%" colspan="3">{htmlencode $title}</td>
+		</tr>
+		{if strlen($shortname) > 0}
+			<tr class="odd">
+				<td class="label">{Label contact.ext.company.attr.shortname}:</td>
+				<td colspan="3">{htmlencode $shortname}</td>
+			</tr>
+		{/if}
+		<tr class="even"><td colspan="4"><br /></td></tr>
+		{if $date_enter != 0}
+			<tr>
+				<td class="label">{Label contact.ext.company.attr.date_enter}:</td>
+				<td colspan="3">{dateFormat $date_enter "date"}</td>
+			</tr>
+		{/if}
+
+		<tr>
+			<td colspan="4">
+				&nbsp;
+			</td>
+		</tr>
+
+		{* Contact infos *}
+		{foreach $contactinfo key contactinfoData contactinfoIterator}
+			<tr>
+				{if $.foreach.contactinfoIterator.first}
+					<td class="label">{Label contact.ext.contactinfo}</td>
+				{else}
+					<td class="label">&nbsp;</td>
+				{/if}
+				<td>
+					{labelContactinfotype $contactinfoData.id_contactinfotype}
+				</td>
+				<td colspan="2">
+				 	{htmlencode $contactinfoData.info}
+				</td>
+			</tr>
+		{/foreach}
+
+		<tr>
+			<td colspan="4">
+				&nbsp;
+			</td>
+		</tr>
+
+		{foreach $address key addressData addressIterator}
+			<tr>
+				{if $.foreach.addressIterator.first}
+					<td class="label">{Label contact.ext.address}</td>
+				{else}
+					<td class="label"></td>
+				{/if}
+				<td colspan="3">
+					{nl2br htmlencode($addressData.street)}<br />
+					{if $addressData.postbox} {Label contact.ext.address.attr.postbox}: {htmlencode $addressData.postbox}<br />{/if}
+					{htmlencode $addressData.zip} {htmlencode $addressData.city}<br />
+					{if $addressData.region}{htmlencode $addressData.region}{/if}
+					{if $addressData.id_country} {countryName $addressData.id_country}<br />{/if}
+					<br />
+					{if $addressData.comment}
+						<p>
+							{htmlencode $addressData.comment}
+						</p>
+					{/if}
+				<td>
+			</tr>
+		{/foreach}
+
+		{if $persons}
+			<tr>
+				<td colspan="4">
+					&nbsp;
+				</td>
+			</tr>
+		{/if}
+
+		{foreach $persons key personData employeeIterator}
+			<tr>
+				{if $.foreach.employeeIterator.first}
+					<td class="label">{Label contact.ext.company.attr.user}</td>
+				{else}
+					<td class="label"></td>
+				{/if}
+				<td>
+					{htmlencode $personData.lastname}</td>
+				<td>
+				 	{htmlencode $personData.firstname}
+				</td>
+				<td>
+					{htmlencode $personData.email}
+				</td>
+			</tr>
+		{/foreach}
+
+	</table>
+</div>

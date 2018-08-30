@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">リマインダー</label>
+	<label index="myreminders">自分のリマインダー</label>
+	<label index="email">メール</label>
+	<label index="popup">ポップアップ</label>
+	<label index="deactivated">リマインダーの無効化</label>
+	<label index="notify.email.deactivated">メールによるリマインダーの無効化</label>
+	<label index="notify.popup.deactivated">ポップアップによるリマインダーの無効化</label>
+	<label index="notify.email.timeupdated">メールによるリマインダーのスケジュールは変更されました</label>
+	<label index="notify.popup.timeupdated">ポップアップによるリマインダーのスケジュールは変更されました</label>
+	<label index="beforeDateStart">前に通知</label>
+	<label index="atDateStart">予定が始まるときに通知</label>
+	<label index="email.subject">予定の通知</label>
+	<label index="email.title">予定の自動通知</label>
+	<label index="noReminder">通知しない</label>
+</labels>

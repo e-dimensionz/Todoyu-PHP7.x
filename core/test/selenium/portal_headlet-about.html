@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > headlet: about INCOMPLETE</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > headlet: about INCOMPLETE</td></tr>
+</thead><tbody>
+<!------ portal > headlet: about-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyuheadletabout-button</td>
+	<td></td>
+</tr>
+<!--open about popup, assert elements' present-->
+<tr>
+	<td>click</td>
+	<td>todoyuheadletabout-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=html body#todoyu-portal.todoyu-portal div#popup-about.dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='popup-about_content']/div[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>© 2006-</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>snowflake productions GmbH, Zurich.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>about-toggle-credits</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=under certain conditions</td>
+	<td>under certain conditions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=todoyu.com</td>
+	<td>todoyu.com</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=community</td>
+	<td>community</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>about-team</td>
+	<td></td>
+</tr>
+<!--Test 3rd party credits info-->
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=div#about-libs.creditsbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button#about-toggle-credits.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>about-toggle-credits</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=div#about-libs.creditsbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id=&quot;about-libs&quot;]/h1</td>
+	<td></td>
+</tr>
+<!--Return to team list display-->
+<tr>
+	<td>click</td>
+	<td>css=button#about-toggle-credits.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=div#about-libs.creditsbox</td>
+	<td></td>
+</tr>
+<!--close popup-->
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#popup-about.dialog div#popup-about_close.dialog_close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#popup-about.dialog div#popup-about_close.dialog_close</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

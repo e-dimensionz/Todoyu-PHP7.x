@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extension">Extensie</label>
+	<label index="key">Extensiesleutel</label>
+	<label index="keyAbbr">Ext-Sleutel</label>
+	<label index="version">Versie/Status</label>
+	<label index="author">Auteur</label>
+	<label index="dependencies">Benodigd</label>
+	<label index="conflicts">Conflicteert met</label>
+	<label index="importExtArchive">Extensie-archief importeren</label>
+	<label index="version">Versie</label>
+	<label index="showInfo">Informatie over extensie weergeven</label>
+	<label index="download">Extensie downloaden</label>
+	<label index="remove">Extensie verwijderen</label>
+	<label index="remove.confirm">Alle extensies (alle bestanden) van server verwijderen?</label>
+	<label index="rights">Rechten</label>
+	<label index="documentation">Documentatie</label>
+	<label index="install">Extensie installeren</label>
+	<label index="install.confirm">Extensie installeren?</label>
+	<label index="install.ok">Extensie installeren is gelukt</label>
+	<label index="install.error">Extensie installeren is niet gelukt</label>
+	<label index="uninstall">Extensie deïnstalleren</label>
+	<label index="uninstall.confirm">Extensie deïnstalleren?</label>
+	<label index="uninstall.ok">Extensie deïnstalleren is gelukt</label>
+	<label index="uninstall.error.general">Extensie deïnstalleren is niet gelukt</label>
+</labels>

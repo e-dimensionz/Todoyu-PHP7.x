@@ -1,0 +1,35 @@
+<h1 class="headerLine searchControls">
+
+	<span class="filters">
+		<select id="filtercontrol-conditions" name="conditions">
+			<option value="none" class="default">{Label search.ext.filtercontrol.add.condition}</option>
+			{foreach $groupedConditionOptions groupLabel groupConditionOptions}
+				<optgroup label="{Label $groupLabel}">
+					{foreach $groupConditionOptions key conditionOption}
+						<option value="{$type}_{$key}">{Label $conditionOption.label}</option>
+					{/foreach}
+				</optgroup>
+			{/foreach}
+		</select>
+	</span>
+
+	<span class="conjunction">
+		{select options=$conjunctionOptions value=$conjunction size=1 noPleaseSelect=true id="filtercontrol-conjunction" name="conjunction"}
+	</span>
+
+	{if sizeof($groupedSortingOptions) > 0}
+		<span class="sorting">
+			<select id="filtercontrol-sorting" name="sorting">
+				<option value="none" class="default">{Label search.ext.filtercontrol.add.sorting}</option>
+				{foreach $groupedSortingOptions groupLabel groupSortingOptions}
+					<optgroup label="{Label $groupLabel}">
+						{foreach $groupSortingOptions sortingOption}
+							<option value="{$sortingOption.value}">{Label $sortingOption.label}</option>
+						{/foreach}
+					</optgroup>
+				{/foreach}
+			</select>
+		</span>
+	{/if}
+
+</h1>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般</label>
+	<label index="general.use">カレンダーの機能を使用</label>
+	<label index="general.area">カレンダー領域を使用</label>
+	<label index="event">イベント</label>
+	<label index="event.seeAll">全てのイベントを表示</label>
+	<label index="event.editAssigned">割り当てられた予定の編集</label>
+	<label index="event.editAll">全予定の編集</label>
+	<label index="event.deleteAssigned">割り当てらてた予定の削除</label>
+	<label index="event.deleteAll">全予定の削除</label>
+	<label index="event.add">新しいイベントの追加</label>
+	<label index="event.search">イベントの検索</label>
+	<label index="event.assignOthers">他人へのイベントのアサイン</label>
+	<label index="mailing">イベントのメール</label>
+	<label index="mailing.sendAsEmail">選択可能な受信者へ予定のメールを送信</label>
+	<label index="reminders">予定のリマインダー</label>
+	<label index="reminders.popup">ポップアップによるリマインダーを使用</label>
+	<label index="reminders.email">メールによるリマインダーを使用</label>
+</labels>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > todo tab - task context menu present</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > todo tab - task context menu present</td></tr>
+</thead><tbody>
+<!------ portal > todo tab - task context menu present?-->
+<!--open todos tab-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id='portal-tab-todo-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p[@id='portal-tab-todo-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--tab activated? (but tabs are there: filter, todo, feedback, events)-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;portal-tab-todo&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//li[@id=&quot;portal-tab-selection&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//li[@id=&quot;portal-tab-feedback&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//li[@id=&quot;portal-tab-appointment&quot;][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;portal-tab-selection&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;portal-tab-feedback&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;portal-tab-appointment&quot;]</td>
+	<td></td>
+</tr>
+<!--open context menu of 1st task-->
+<tr>
+	<td>contextMenu</td>
+	<td>//*[@id=&quot;tasks&quot;]/div[1]/h3[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--assure contextmenu is shown, options there-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=html body ul#contextmenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=html body ul#contextmenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#contextmenu-edit a.taskEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#contextmenu-showinproject.showinproject a.task-showinproject</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#contextmenu-actions a.taskActions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#contextmenu-add a.taskAdd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#contextmenu-status a.taskStatus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#contextmenu-addbookmark a.task-bookmark</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#contextmenu-timetrackstart a.task-timetrackstart</td>
+	<td></td>
+</tr>
+<!--click to close contextmenu, hidden?-->
+<tr>
+	<td>clickAt</td>
+	<td>css=div#main div#panel.panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=html body ul#contextmenu</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

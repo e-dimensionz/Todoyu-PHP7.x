@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Молимо изаберите</label>
+	<label index="field.isrequired">Ово је обавезно поље</label>
+	<label index="field.hasError">Унето није изправно</label>
+	<label index="field.save">Сачувај</label>
+	<label index="field.cancel">Прекини</label>
+	<label index="records.add">Додај унос</label>
+	<label index="records.remove">Избриши унос</label>
+	<label index="records.edit">Уреди унос</label>
+	<label index="records.removeconfirm">Да ли стварно желите да уклоните овај снимак?</label>
+	<label index="databaserelation.nolabel">[Нови унос]</label>
+	<label index="databaserelation.expandAllRecords">Покази детаље</label>
+	<label index="error.notUnique">Овај унос већ постоји</label>
+	<label index="ac.noResults">Аутоматско испуњавање: нема пронађеног резултата</label>
+	<label index="is_preferred">Омиљен</label>
+	<label index="dateselector.open">Отвори селектор датум-а да изаберете датум</label>
+	<label index="autocompleteInfo">Ово је је поље које се аутоматски комплетира. Починте са давањем савета.</label>
+	<label index="legend.main">Дефиниција улоге</label>
+	<label index="daterange.choose">Изаберите временски рок</label>
+	<label index="daterange.monthToDate">Месеци до данас</label>
+	<label index="daterange.yearToDate">Године до данас</label>
+	<label index="daterange.quarterToDate">Кварт-е до данас</label>
+	<label index="daterange.previousMonth">Претходни месец</label>
+	<label index="daterange.previousQuarter">Претходни кварт</label>
+	<label index="daterange.previousYear">Претходна година</label>
+	<label index="daterange.fullTimeRange">Пуни могућни временски рок</label>
+</labels>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Impostazioni generali</label>
+	<label index="general.use">Usa il tracciamento temporale</label>
+	<label index="task">Tracciamento attività</label>
+	<label index="task.track">Traccia il tempo</label>
+	<label index="task.editOwn">Può modificare le registrazioni proprie delle attività</label>
+	<label index="task.editAll">Può modificare tutte le registrazioni delle attività</label>
+	<label index="task.editAllChargeable">Può modificare il tempo fatturabile di ogni registrazione</label>
+</labels>

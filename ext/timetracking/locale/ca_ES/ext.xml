@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Control del temps</label>
+	<label index="title">Control del temps</label>
+	<label index="noTracksYet">No hi ha temps registrat</label>
+	<label index="chargeable">Cobrable</label>
+	<label index="attr.date_create">Data</label>
+	<label index="attr.date_track">Data</label>
+	<label index="attr.workload_tracked">Temps registrat</label>
+	<label index="attr.workload_chargeable">Temps cobrable</label>
+	<label index="attr.comment">Comenteu</label>
+	<label index="search.label">Control del temps</label>
+	<label index="task.attr.overtimed">Tasca sobrecarregada</label>
+	<label index="headlet.label">Control del temps</label>
+	<label index="totalTrackedTime">Total de temps registrat</label>
+	<label index="totalChargeableTime">Total de temps cobrable</label>
+	<label index="tasktab.edit">Premeu aquí per editar aquest registre</label>
+	<label index="start">Comença a registrar el temps</label>
+	<label index="stop">Para el registre de temps</label>
+	<label index="currentTask">Tasca actual</label>
+	<label index="showCurrentTaskInProject">Mostra tasques del projecte</label>
+	<label index="quicktask.workload_done">Temps ja treballat</label>
+	<label index="estimated_workload">estimat</label>
+	<label index="jumpToTask">Premeu aquí per saltar a aquesta tasca</label>
+	<label index="jumpToProject">Premeu aquí per saltar a aquest projecte</label>
+	<label index="extconf.stopOnLogout">Atura el registre del temps quan em desconnecti</label>
+	<label index="extconf.tolerance">Tolerança del temps registrat (en %)</label>
+</labels>

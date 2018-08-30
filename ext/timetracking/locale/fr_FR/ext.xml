@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Suivi du temps</label>
+	<label index="title">Suivi du temps</label>
+	<label index="noTracksYet">Aucun temps suivi pour le moment</label>
+	<label index="attr.date_create">Date</label>
+	<label index="attr.date_track">Date</label>
+	<label index="attr.workload_tracked">Charge de travail</label>
+	<label index="attr.workload_chargeable">Imputable</label>
+	<label index="attr.comment">Commentaire</label>
+	<label index="task.attr.overtimed">Tâche en sur-réservation</label>
+	<label index="totalTrackedTime">Temps total suivi</label>
+	<label index="tasktab.edit">Cliquez ici pour modifier l'enregistrement</label>
+	<label index="start">Démarrer le suivi du temps</label>
+	<label index="stop">Arrêter le suivi du temps</label>
+	<label index="currentTask">Tâche courante</label>
+	<label index="showCurrentTaskInProject">Afficher la tâche dans le projet</label>
+	<label index="quicktask.workload_done">Temps déjà affecté à un travail</label>
+	<label index="extconf.stopOnLogout">Arrêter le suivi du temps si une personne se déconnecte</label>
+	<label index="search.label">Suivi du temps</label>
+	<label index="headlet.label">Suivi du temps</label>
+	<label index="estimated_workload">Charge de travail estimée</label>
+	<label index="jumpToTask">Cliquez ici pour aller à cette tâche</label>
+	<label index="jumpToProject">Cliquez ici pour aller vers ce projet</label>
+</labels>

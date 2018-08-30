@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="toggle.multiselect.title">Alternar Simples/ Multi Modo de Seleção</label>
+	<label index="title">Participante</label>
+	<label index="selectAllStaff">Selecionar todos os participantes</label>
+	<label index="byFunction">Por Função:</label>
+	<label index="noFunction">Nenhuma Função</label>
+</labels>

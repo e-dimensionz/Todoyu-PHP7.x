@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Śledzenie czasu</label>
+	<label index="timetrackedPerson">Osoba ma prześledzony czas</label>
+	<label index="timetrackedRoles">Role mają prześledzony czas</label>
+</labels>

@@ -1,0 +1,16 @@
+Loginpage Extension - PHP Hooks
+===============================
+
+
+Event Hooks
+***************************************
+
+#loginpage.login
+	Login was successful
+	@param	Integer		$idPerson
+
+
+#loginpage.login.failed
+	Login failed
+	@param	String		$username
+	@param	String		$passHash

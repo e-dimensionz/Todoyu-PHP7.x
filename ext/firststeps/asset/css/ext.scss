@@ -1,0 +1,17 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+#firststepswizard-button {
+	box-shadow:2px 2px 5px $colorNeutral06;
+	background-color:$colorAlert00;
+	border:1px solid $black;
+	color:$white;
+	cursor:pointer;
+	font-weight:bold;
+	left:10px;
+	padding:10px;
+	position:fixed;
+	top:10px;
+	z-index:1000;
+}

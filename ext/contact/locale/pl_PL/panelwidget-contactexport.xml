@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Eksportuj Kontakt</label>
+	<label index="export.instruction">Eksportuj kontkty jako plik CSV. Używa powyższych wyników wyszukiwania.</label>
+	<label index="export.button">Eksportuj Kontakt</label>
+</labels>

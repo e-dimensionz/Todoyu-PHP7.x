@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">任务书签</label>
+	<label index="title">任务书签</label>
+	<label index="info.nobookmarks">还没有书签</label>
+	<label index="contextmenu.removebookmark">删除书签</label>
+	<label index="contextmenu.renamebookmark">更改书签标题</label>
+	<label index="contextmenu.editbookmarks">编辑书签</label>
+	<label index="contextmenu.addbookmark">增加书签</label>
+	<label index="profile.module">书签</label>
+	<label index="profile.module.tasks.tab">任务</label>
+	<label index="profile.module.tasks.bookmarksOf">任务书签</label>
+	<label index="profile.module.tasks.listing.task">任务</label>
+	<label index="profile.module.tasks.listing.title">标题</label>
+	<label index="profile.module.tasks.listing.label">标签</label>
+	<label index="bookmark.edit">编辑书签</label>
+	<label index="bookmark.rename">重命名书签</label>
+	<label index="bookmark.renamePrompt">书签标题(不填为原标题)</label>
+	<label index="bookmark.delete.confirm">确认要删除此书签?</label>
+	<label index="bookmark.removed">书签已删除</label>
+	<label index="bookmark.renamed">书签已改名</label>
+	<label index="bookmark.added">书签已添加</label>
+	<label index="bookmark.attr.title">标签</label>
+	<label index="bookmark.type.task">任务</label>
+	<label index="bookmark.saved">书签已经保存</label>
+	<label index="bookmark.saved.error">保存书签时发生错误</label>
+</labels>

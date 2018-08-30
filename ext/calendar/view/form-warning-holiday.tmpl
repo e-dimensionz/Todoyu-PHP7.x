@@ -1,0 +1,10 @@
+{if sizeof($holidays) > 0}
+	<span class="icon"></span>
+	<span class="label">{Label calendar.event.warning.holidayInRange}</span>
+
+	<ul class="holidayList">
+		{foreach $holidays holiday}
+			<li>{dateFormat $holiday.date 'date'}: {$holiday.title}</li>
+		{/foreach}
+	</ul>
+{/if}

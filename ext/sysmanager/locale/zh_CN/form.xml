@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.system.systemsettings">系统设置 </label>
+	<label index="legend.system.cli">命令行接口 </label>
+	<label index="legend.system.debugging">Debugging </label>
+	<label index="legend.rightsmanager.general">管理角色和权限 </label>
+	<label index="legend.password.general">定义密码强度</label>
+	<label index="legend.logo.general">更改标志</label>
+	<label index="legend.repository.general">输入你的 todoyu ID</label>
+</labels>

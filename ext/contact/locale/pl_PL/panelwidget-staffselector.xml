@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Personel</label>
+	<label index="selection">Aktywny wybór</label>
+	<label index="selection.empty">Nic nie zaznaczono. Użysz wyszukiwania aby dodać nowe osoby i grupy</label>
+</labels>

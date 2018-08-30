@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > quicktask - duration picker working?</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > quicktask - duration picker working?</td></tr>
+</thead><tbody>
+<!------ portal > quicktask - duration picker working?-->
+<!--open quicktask popup-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyuprojectheadletquicktask-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>todoyuprojectheadletquicktask-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#quicktask.dialog</td>
+	<td></td>
+</tr>
+<!--duration picker there? time initially at 00:00?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-workload-done</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@onclick=&quot;Todoyu.Ui.showDurationPicker('quicktask-0-field-workload-done')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=input#quicktask-0-field-workload-done.duration</td>
+	<td>00:00</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>00:00</td>
+	<td></td>
+</tr>
+<!--open picker, parts available?-->
+<tr>
+	<td>clickAt</td>
+	<td>//div[@onclick=&quot;Todoyu.Ui.showDurationPicker('quicktask-0-field-workload-done')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#quicktask-0-field-workload-done-durationpicker.dpPicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=div#quicktask-0-field-workload-done-durationpicker.dpPicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='quicktask-0-field-workload-done-durationpicker-hour']/div[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-workload-done-durationpicker-hour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-workload-done-durationpicker-minute</td>
+	<td></td>
+</tr>
+<!--select: 02:00-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;quicktask-0-field-workload-done-durationpicker-hour&quot;]/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=div#quicktask-0-field-workload-done-durationpicker.dpPicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=input#quicktask-0-field-workload-done.duration</td>
+	<td>2:00</td>
+</tr>
+<!--close quicktask popup-->
+<tr>
+	<td>click</td>
+	<td>quicktask_close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+</tbody></table>
+</body>
+</html>

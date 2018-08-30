@@ -1,0 +1,18 @@
+<div id="taskList" class="projectTaskList">
+	<div id="projects">
+		<div id="project-0">
+
+			<div class="noProjectSelected">
+				<p class="message">
+					{Label project.ext.noproject.message.description}
+					{if allowed('project','project:add')}
+						<a href="javascript:void(0)" onclick="Todoyu.Ext.project.openProjectPopup()">{Label project.ext.noproject.message.createproject}</a>
+					{else}
+						{Label project.ext.noproject.message.informcontact}
+					{/if}
+				</p>
+			</div>
+
+		</div>
+	</div>
+</div>

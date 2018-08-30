@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Portale</label>
+	<label index="page.title">Portale</label>
+	<label index="tab">Portale</label>
+	<label index="tab.selection">Filtri personali</label>
+	<label index="tasktree.header.date">Data</label>
+	<label index="tasktree.header.customer">Cliente</label>
+	<label index="tasktree.header.number">N°</label>
+	<label index="tasktree.header.tasknumber">Numero</label>
+	<label index="task.title.deadline">Termine</label>
+	<label index="task.title.deadline_short">T</label>
+	<label index="task.title.begin">Inizio</label>
+	<label index="task.title.begin_short">I</label>
+	<label index="task.title.customer">Cliente</label>
+	<label index="task.title.jump">Salta</label>
+	<label index="task.title.tasknumber">N° attività</label>
+	<label index="tab.todos">Todo</label>
+	<label index="tab.feedbacks">Feedback</label>
+	<label index="date.start.short">I</label>
+	<label index="selection.noTasksFound">Nessuna attività trovato per il filtro selezionato</label>
+	<label index="selection.noProjectsFound">Nessun progetto trovato per il filtro selezionato</label>
+	<label index="subMenuEntry.selection">Portale > Selezione</label>
+	<label index="subMenuEntry.todos">Portal > Todo</label>
+	<label index="subMenuEntry.feedbacks">Portale > Feedback</label>
+	<label index="subMenuEntry.appointments">Portale > Appuntamenti</label>
+	<label index="contextmenu.showinproject">Mostra nel progetto</label>
+	<label index="selection.noFiltersetsSelected">Nessun insieme di filtri selezionato!</label>
+</labels>

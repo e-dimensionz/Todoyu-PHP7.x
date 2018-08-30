@@ -1,0 +1,10 @@
+todoyu selenium testsuite steps: sysmanager extension
+------------------------------------------------
+
+* sysmanager area
+	go to area (use sysmanager headlet)
+	check area elements presents, page title, area sub tabs
+* sysmanager modules panelwidget
+	check presents, all sub options available
+	module extensions list
+		all basic extensions listed?

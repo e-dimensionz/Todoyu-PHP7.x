@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Page de connexion</label>
+	<label index="page.title">Connexion</label>
+	<label index="tab.login">Connexion</label>
+	<label index="tab.help">Aide</label>
+	<label index="tab.blog">Blog</label>
+	<label index="loginbox.title">Bienvenue! Connexion à todoyu</label>
+	<label index="form.field.username">Nom d'utilisateur</label>
+	<label index="form.field.password">Mot de passe</label>
+	<label index="form.field.submit">Connexion</label>
+	<label index="form.remainLogin">Se rappeler de moi sur cet ordinateur</label>
+	<label index="form.loginFailed">Le nom d'utilisateur ou le mot de passe n'est pas correct. Veuillez essayer à nouveau.</label>
+	<label index="form.status.enterLoginData">Entrez votre nom d'utilisateur et votre mot de passe</label>
+	<label index="form.status.verifyingLoginData">Vérification du nom d'utilisateur et du mot de passe</label>
+	<label index="form.status.loginOk">Connexion réussie. Chargement de todoyu</label>
+	<label index="form.status.loginFailed">Échec de la connexion</label>
+	<label index="error.enterUsername">Veuillez entrer votre nom d'utilisateur</label>
+	<label index="error.enterPassword">Veuillez entrer votre mot de passe</label>
+	<label index="headlet.label">Se déconnecter</label>
+</labels>

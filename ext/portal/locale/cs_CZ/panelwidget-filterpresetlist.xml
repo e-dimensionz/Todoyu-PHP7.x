@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Moje filtry</label>
+	<label index="create">Vytvořit filtr</label>
+	<label index="manage">Spravovat filtry</label>
+	<label index="amount">Počet</label>
+	<label index="error.noFilters">Není vytvořen žádný filtr</label>
+	<label index="error.noTypeFiltersets">Není definována žádná skupina filtrů</label>
+</labels>

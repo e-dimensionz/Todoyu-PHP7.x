@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$pagetitle}</title>
+{foreach $metatags metatag}
+	<meta {if $metatag.name}name="{$metatag.name}"{/if} {if $metatag.httpequiv}http-equiv="{$metatag.httpequiv}"{/if} content="{$metatag.content}" />
+{/foreach}
+{foreach $cssFiles cssFile}
+	<link rel="stylesheet" type="text/css" href="{$cssFile.file}" media="{$cssFile.media}" />
+{/foreach}
+{foreach $jsFiles jsFile}
+	<script type="text/javascript" src="{$jsFile.file}"></script>
+{/foreach}
+{foreach $additionalHeaderData headerData}
+	{$headerData}
+{/foreach}
+<!--[if IE 8]>
+	<link rel="stylesheet" media="screen" href="cache/css/core/asset/css/compatibility/ie8.css" />
+<![endif]-->
+
+<!--[if IE 9]>
+	<link rel="stylesheet" media="screen" href="cache/css/core/asset/css/compatibility/ie8.css" />
+<![endif]-->
+
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>

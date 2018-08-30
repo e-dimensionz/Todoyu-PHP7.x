@@ -1,0 +1,13 @@
+Files in the lib/ folder should NOT be modified!
+They may be replaced by an update of a library.
+But sometimes it's necessary:
+
+The following changes have been made:
+
+# lib/php/dwoo/plugins/builtin/functions/truncate.php
+Replaced substr() and strlen() with multibyte versions.
+Added utf-8 as encoding. Supports now truncating of asian (japanese) characters.
+
+# lib/js/prototype.js
+Applied patch for regression in Form.serialize(true/false).
+https://github.com/sstephenson/prototype/pull/66/files (see src/prototype/dom/form.js)

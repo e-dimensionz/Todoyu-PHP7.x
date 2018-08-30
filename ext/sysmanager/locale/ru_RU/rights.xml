@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Общие</label>
+	<label index="general.extensions">Менеджер расширений</label>
+	<label index="general.records">Показывать режим редактирования всех записей</label>
+	<label index="general.rights">Менеджер прав</label>
+	<label index="extensions">Расширения</label>
+	<label index="extensions.info">Информация о расширении</label>
+	<label index="extensions.config">Редактировать конфигурацию</label>
+	<label index="extensions.rights">Редактировать права</label>
+	<label index="extensions.records">Редактировать записи</label>
+	<label index="extensions.uninstall">Удалить расширение</label>
+	<label index="extensions.install">Установить расширение</label>
+	<label index="extensions.download">Загрузить архив с расширением</label>
+	<label index="extensions.update">Обновить расширения</label>
+	<label index="roles">Роли</label>
+	<label index="roles.edit">Редактировать роль</label>
+	<label index="roles.delete">Удалить роль</label>
+</labels>

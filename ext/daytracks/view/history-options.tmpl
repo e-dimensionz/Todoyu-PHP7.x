@@ -1,0 +1,40 @@
+<div class="selectors overflow bordercolor">
+	<form id="{$id}-form" class="floatLeft">
+		<div class="floatLeft fontWeightBold">
+			<label for="{$id}-selector">{label core.date.month}</label>
+		</div>
+		<div style="margin:0 24px 0 4px" class="floatLeft">
+			<select class="select selector" id="{$id}-rangeselector" onchange="Todoyu.Ext.daytracks.History.update()">
+				{foreach $ranges year months}
+					<optgroup label="{$year}">
+						{foreach $months number monthData}
+							<option class="{cycle values="odd,even"}" value="{$year}-{$number}" {if $currentYear==$year && $currentMonth==$number}selected="selected"{/if}>{$monthData.label} {$year}</option>
+						{/foreach}
+					</optgroup>
+				{/foreach}
+			</select>
+		</div>
+		<div class="floatLeft detailsToggle">
+			<input id="showtracksdetails" type="checkbox"{if $showDetails} checked="checked"{/if} onclick="Todoyu.Ext.daytracks.History.toggleDetails()" style="width:20px">
+			<label for="showtracksdetails">{Label daytracks.ext.history.showdetails}</label>
+		</div>
+
+		{if allowed('daytracks', 'daytracks:switchuser')}
+			<div style="margin:0 4px 0 24px" class="floatLeft fontWeightBold">
+				<label for="{$id}-switchuser">{Label contact.ext.person}</label>
+			</div>
+			<div class="floatLeft">
+				<select class="select selector" id="{$id}-switchuserselector" onchange="Todoyu.Ext.daytracks.History.update()">
+					<option value="0">{Label core.form.select.pleaseSelect}</option>
+					{foreach $users optgroup userGroup}
+						<optgroup label="{$optgroup}">
+							{foreach $userGroup user}
+								<option {if $currentUser == $user}selected="selected"{/if} value="{$user}">{name $user}</option>
+							{/foreach}
+						</optgroup>
+					{/foreach}
+				</select>
+			</div>
+		{/if}
+	</form>
+</div>

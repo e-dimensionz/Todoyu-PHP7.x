@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<fieldsets>
+
+		<fieldset name="projectmembers">
+			<legend>Top</legend>
+			<class>top</class>
+			<elements>
+
+				<field type="textAC" name="id">
+					<label>contact.ext.person</label>
+					<config>
+						<acLabel>TodoyuContactPersonManager::getLabel</acLabel>
+						<options>
+							<acName>projectperson</acName>
+							<onComplete>Todoyu.Ext.project.Project.Edit.onPersonAutocomplete</onComplete>
+						</options>
+					</config>
+					<wizard name="person" />
+					<required />
+				</field>
+
+				<field type="select" name="id_role">
+					<label>project.ext.attr.persons.role</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getProjectroleOptions</function>
+					</source>
+					<required />
+				</field>
+
+				<field type="text" name="comment">
+					<label>project.ext.attr.persons.comment</label>
+				</field>
+
+				<field type="checkbox" name="is_public">
+					<label>project.ext.attr.persons.is_public</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Configurações Gerais</label>
+	<label index="timetrackedPerson">Pessoa Possui Registro de Horas</label>
+	<label index="timetrackedRoles">Permissões Posssuem Registro de Horas</label>
+</labels>

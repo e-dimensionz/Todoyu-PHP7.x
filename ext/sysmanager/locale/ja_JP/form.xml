@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.system.systemsettings">システムの設定 [完了]</label>
+	<label index="legend.system.cli">コマンドラインインターフェイス [完了]</label>
+	<label index="legend.system.debugging">デバグ [完了]</label>
+	<label index="legend.rightsmanager.general">ロールと権限の管理 [完了]</label>
+	<label index="legend.password.general">パスワード強度の定義 [完了]</label>
+	<label index="legend.logo.general">ロゴの変更 [完了]</label>
+	<label index="legend.repository.general">todoyu ID の入力 [完了]</label>
+</labels>

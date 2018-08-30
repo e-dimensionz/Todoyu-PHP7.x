@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rights	xmlns="http://www.todoyu.com/schema/rights"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/rights ../../../core/config/rights.xsd">
+
+	<section name="general">
+		<right name="use" />
+	</section>
+
+	<section name="daytracks" require="general:use">
+		<right name="timeExport" />
+		<right name="timeExportAllPerson" require="daytracks:timeExport" />
+		<right name="timeExportAllEmployer" require="daytracks:timeExportAllPerson" />
+		<right name="switchuser" require="daytracks:timeExportAllPerson" />
+	</section>
+
+</rights>

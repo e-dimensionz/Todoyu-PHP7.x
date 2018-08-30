@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>filter there, remove filters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">filter there, remove filters</td></tr>
+</thead><tbody>
+<!--(re)activate task tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.active</td>
+	<td></td>
+</tr>
+<!------ filters there?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[contains(@class,&quot;taskListing&quot;)]/h1/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.saveNewFilterset();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>export-csvexport</td>
+	<td></td>
+</tr>
+<!--use "clear area" button-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Set conjunction: AND-->
+<tr>
+	<td>focus</td>
+	<td>//select[@id=&quot;filtercontrol-conjunction&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id=&quot;filtercontrol-conjunction&quot;]/</td>
+	<td>AND</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Add filter: type = task-->
+<tr>
+	<td>focus</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;]/</td>
+	<td>Type</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[contains(@class,&quot;type&quot;)]/div[@class=&quot;widgetbody&quot;]/select[@class=&quot;select value&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[contains(@class,&quot;type&quot;)]/div[@class=&quot;widgetbody&quot;]/select[@class=&quot;select value&quot;]</td>
+	<td>Task</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--use "clear area" button-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Widget gone?-->
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[contains(@class,&quot;type&quot;)]/div[@class=&quot;widgetbody&quot;]/select[@class=&quot;select value&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

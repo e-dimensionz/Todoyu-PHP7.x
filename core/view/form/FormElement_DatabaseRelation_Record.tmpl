@@ -1,0 +1,14 @@
+<div id="foreignrecord-{$idRecord}-{$fieldname}-{$record._index}" class="databaseRelation {getRecordBooleanColumnsClassnames $record}">
+	<div id="foreignrecord-{$idRecord}-{$fieldname}-{$record._index}-trigger" onclick="Todoyu.Form.toggleRecordForm({$idRecord}, '{$fieldname}', {$record._index})" class="formtrigger">
+		<span class="label {if $error}expanded{/if}" title="{Label core.form.records.edit}">{cropText htmlencode($record._label) 60}</span>
+		<span class="additionalStuff">
+			<a href="javascript:void(0)" id="foreignrecord-{$idRecord}-{$fieldname}-{$record._index}-remove" class="icon remove removeForeignRecord remove-{$fieldname}" onclick="Todoyu.Form.removeRecord({$idRecord}, '{$fieldname}', {$record._index})" title="{Label core.form.records.remove}" alt="{Label form.records.remove}">
+				<span class="hidden">{Label core.form.records.remove}</span>
+			</a>
+		</span>
+	</div>
+	<div id="foreignrecord-{$idRecord}-{$fieldname}-{$record._index}-formhtml" class="databaseRelationFormhtml" {if $error != true}style="display:none"{/if}>
+		{$record._formHTML}
+	</div>
+	<div class="clear"><!-- --></div>
+</div>

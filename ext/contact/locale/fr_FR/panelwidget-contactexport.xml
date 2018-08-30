@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Exportation des contacts</label>
+	<label index="export.instruction">Exporter les contacts sous format CSV. La condition de recherche ci-dessus est utilisé.</label>
+	<label index="export.button">Exporter Contact</label>
+</labels>

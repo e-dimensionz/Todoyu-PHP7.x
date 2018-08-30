@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般設定</label>
+	<label index="general.use">プロフィールの使用</label>
+	<label index="settings">アカウント設定</label>
+	<label index="settings.password">パスワードの変更</label>
+</labels>

@@ -1,0 +1,7 @@
+<ul class="naviList" id="sysmanager-modules">
+{foreach $modules module}
+	<li id="sysmanager-mod-{$module.key}" class="{$module.key} {if $active == $module.key}active{/if} {cycle values="odd,even"}">
+		<a href="javascript:void(0)" onclick="Todoyu.Ext.sysmanager.PanelWidget.SysmanagerModules.module('{$module.key}')">{Label $module.label}</a>
+	</li>
+{/foreach}
+</ul>

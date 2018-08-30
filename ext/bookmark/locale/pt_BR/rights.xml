@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Configuração</label>
+	<label index="general.use">Utilizar Bookmarks</label>
+	<label index="task">Bookmarks de Tarefa</label>
+	<label index="task.add">Bookmark a Tarefa</label>
+	<label index="task.remove">Remover Bookmarks</label>
+	<label index="panelwidgets">Painel de Widgets</label>
+</labels>

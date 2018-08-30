@@ -1,0 +1,70 @@
+/****************************************************************************
+* todoyu is published under the BSD License:
+* http://www.opensource.org/licenses/bsd-license.php
+*
+* Copyright (c) 2012, snowflake productions GmbH, Switzerland
+* All rights reserved.
+*
+* This script is part of the todoyu project.
+* The todoyu project is free software; you can redistribute it and/or modify
+* it under the terms of the BSD License.
+*
+* This script is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the BSD License
+* for more details.
+*
+* This copyright notice MUST APPEAR in all copies of the script.
+*****************************************************************************/
+
+todoyu Requirements
+==================
+	* Web server:						Apache (version 2.0 or greater) is recommended (http://apache.org/).
+	* Middleware:						PHP 5.2.5 (or greater) (http://www.php.net/).
+	* Required PHP extensions:			mbstring, zlib, mcrypt, zip, json, pcre, libxml, SimpleXML, gd
+	* Database:							MYSQL 5.0 or greater (http://www.mysql.com/).
+	* Web server configuration: 		Multibyte (UTF-8) must be supported by the webserver
+	* Recommended web server modules:	mod_rewrite for URL rewriting
+
+	See also http://www.todoyu.com/community/system-requirements/ for detailed information
+
+Instructions to install todoyu
+==============================
+	1. Download and extract todoyu.
+	You can obtain the latest todoyu release from http://sourceforge.net/projects/todoyu/
+	the files are available in .zip format and can be extracted using most compression tools.
+
+	2. Upload the files to your webserver via FTP.
+	Upload the files to the root of your webspace or to a custom sub directory.
+
+	3. Create a MySql database and a respective user with sufficient database privileges
+	(such as the ability to create tables). Take note of the user name, password, database name
+	and hostname as you create the database. You will enter this information during the installation.
+
+	4. File permissions
+	The webserver should have write privileges to all folders and files of todoyu.
+	But especially these elements require write access so todoyu can run:
+		* files/
+		* config/
+		* cache/
+		* log/
+		* install/config
+		* config/db.php
+		* config/extensions.php
+		* config/extconf.php
+		* config/system.php
+		* index.html
+
+	5. Run the install script.
+	To run the todoyu installer, point your browser to the URL of your website where you uploaded todoyu
+	(http://wwww.example.org/ if you uploaded todoyu to the root of your webspace,
+	or http://www.example.org/todoyu/ if you uploaded the files to a sub directory named "todoyu")
+
+	6. Follow the instructions of the installer.
+	Done - after successful installation the installer will forward you to login to your todoyu installation.
+
+Debian install todoyu
+==============================
+        * run in Debian 8
+	1. aptitude install apache2 php5 git mysql-server
+	2. aptitude install php5-mcrypt php5-gd php5-mysql 

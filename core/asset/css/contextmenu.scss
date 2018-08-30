@@ -1,0 +1,71 @@
+@import "../../config/theme.scss";
+
+
+
+#contextmenu {
+	display:none;
+	position:absolute;
+	width:180px;
+	z-index:100000;
+	background-color:$colorNeutral01;
+	box-shadow:2px 2px 7px $colorNeutral06;
+
+	li {
+		border:1px solid $colorNeutral02;
+		margin-bottom: -1px;
+
+		a,
+		span {
+			display:block;
+			padding:4px 10px 4px 29px;
+			line-height:12px;
+			cursor:pointer;
+			text-align:left;
+
+			background: {
+				color:$colorNeutral00;
+				repeat:no-repeat; };
+		}
+
+		a:hover,
+		span:hover {
+			background-color:$colorCorporate03; }
+
+		ul {
+			display:none;
+			position:absolute;
+			z-index:100001;
+			width:156px;
+			box-shadow:2px 2px 7px $colorNeutral06; }
+
+		&.header a {
+			padding:0 5px;
+			background-color:$blue03 !important;
+			color:$white;
+			cursor:default;
+			font: {
+				weight:bold;
+				size:10px; }
+		}
+
+		.disabled {
+			color:$colorNeutral03;
+			cursor: no-drop;
+		}
+	}
+}
+
+
+
+/* -----------------------------------
+	Selected and disabled options
+   ----------------------------------- */
+ul.context-menu li a.selected,
+ul.context-submenu li a.selected {
+	background:url(../../asset/img/icons.png) no-repeat 12px -870px $colorApprove02; }
+
+.context-menu li a.disabled,
+.context-submenu li a.disabled {
+	cursor:default !important;
+	color:$colorNeutral06 !important;
+	background:url(../../asset/img/icons.png) repeat-x 0 -1540px !important; }

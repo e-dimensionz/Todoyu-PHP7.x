@@ -1,0 +1,754 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+#calendar-body .event {
+	position:absolute;
+	overflow:hidden;
+}
+
+#calendarBody .event {
+	border-radius:5px;
+}
+
+.dayMode .event .head,
+.weekMode .event .head {
+	-moz-user-select:none;
+	overflow:hidden;
+	/*position:absolute;*/
+}
+
+.dayMode .event .content,
+.weekMode .event .content {
+	padding:2px;
+}
+
+#calendar .event .head {
+	width:100%;
+}
+
+#calendarBody .event .head {
+	width:936px;
+	height:14px;
+}
+
+#calendarBody .event .head > div {
+	display:block;
+	float:left;
+}
+
+#calendar .event.canEdit .head {
+	cursor:move;
+}
+#calendar .event.noAccess .head,
+#calendar .event.noEdit .head {
+	cursor:no-drop !important;
+}
+
+.dayMode .event dd,
+.weekMode .event dd {
+	font-size:9px;
+	padding:2px;
+}
+
+.monthMode .event dl {
+	margin-bottom:2px;
+}
+
+.dayCol .event {
+	z-index:20;
+}
+
+
+
+/* ------------------------
+	Event
+   ------------------------ */
+div.weekMode div#calendarBody div.event {
+	dt.head {
+		height:15px;
+		padding:3px 0;
+	}
+
+	dd span.desc {
+		display:inline;
+		white-space:normal;
+	}
+}
+
+
+
+.dayevent {
+	margin:0 0 1px;
+	height:16px;
+	padding-top:1px;
+
+	.head {
+		height:16px;
+	}
+}
+
+
+
+.gridHeader .dayevent {
+	position:relative;
+}
+
+#calendar .dayEvents {
+	.dayMode {
+		.dayEvents .event {
+			.head {
+				cursor:default;
+			}
+		}
+	}
+	.event {
+		margin:1px;
+		position:relative;
+
+		.title {
+			display: inline-block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 80%;
+		}
+
+		.date {
+			color:$colorTextGeneral;
+		}
+
+		.head {
+			cursor:default;
+		}
+
+		&.hasAccess .head {
+			cursor: pointer;
+		}
+	}
+}
+
+.event {
+	div div {
+		display:inline-block;
+		vertical-align: top;
+	}
+
+	.head .typeIcon {
+		height:14px;
+		width:16px;
+	}
+
+	.headInner {
+		font: {
+			size:9px;
+			weight:normal;
+		}
+		line-height:1.2;
+		overflow:hidden;
+		padding: {
+			bottom:3px;
+			left:20px;
+			top:3px;
+		}
+		position:relative;
+		white-space:nowrap;
+	}
+
+	.typeIcon {
+		background:url(../img/icons.png) no-repeat;
+		vertical-align:top;
+	}
+
+	&.typeGeneral .typeIcon {
+		background-position:0 -660px;
+	}
+
+	&.typeAway .typeIcon {
+		background-position:0 -690px;
+	}
+
+	&.typeEducation .typeIcon {
+		background-position:0 -720px;
+	}
+
+	&.typeMeeting .typeIcon {
+		background-position:0 -750px;
+	}
+
+	&.typeAwayofficial .typeIcon {
+		background-position:0 -780px;
+	}
+
+	&.typeHomeoffice .typeIcon {
+		background-position:0 -810px;
+	}
+
+	&.typeCompensation .typeIcon {
+		background-position:0 -900px;
+	}
+
+	&.typeMilestone .typeIcon {
+		background-position:0 -930px;
+	}
+
+	&.typeReminder .typeIcon {
+		background-position:0 -960px;
+	}
+
+	&.typeBirthday .typeIcon {
+		background: {
+			image:url(../../../contact/asset/img/icons.png);
+			position:3px -330px;
+		}
+	}
+}
+
+.event > div {
+	padding:2px;
+}
+
+.event .description,
+.event .description * {
+	font-size:9px;
+}
+
+.event.typeVacation .typeIcon,
+.event.typeHoliday .typeIcon {
+	background-position:0 -390px;
+}
+
+.event.typeAway .headInner,
+.event.typeAway .type,
+.dayMode .event .typeAway,
+.monthMode .event .typeAway {
+	background:url(../img/icons.png) no-repeat scroll 1px -690px;
+}
+
+.event.typeBirthday .headInner,
+.event.typeBirthday .type,
+.dayMode .event .typeBirthday,
+.monthMode .event .typeBirthday {
+	background:url(../../../contact/asset/img/icons.png) no-repeat 3px -330px;
+}
+
+.event.typeVacation .headInner,
+.event.typeVacation .type,
+.dayMode .event .typeVacation,
+.monthMode .event .typeVacation {
+	background:url(../img/icons.png) no-repeat scroll 0 -390px;
+}
+
+.event.typeEducation .headInner,
+.event.typeEducation .type,
+.dayMode .event .typeEducation,
+.monthMode .event .typeEducation {
+	background:url(../img/icons.png) no-repeat scroll 0 -720px;
+}
+
+.event.typeMeeting .headInner,
+.event.typeMeeting .type,
+.dayMode .event .typeMeeting,
+.monthMode .event .typeMeeting {
+	background:url(../img/icons.png) no-repeat scroll 0 -751px;
+}
+
+.event.typeAwayofficial .headInner,
+.event.typeAwayofficial .type,
+.dayMode .event .typeAwayofficial,
+.monthMode .event .typeAwayofficial {
+	background:url(../img/icons.png) no-repeat scroll 0 -782px;
+}
+
+.event.typeHomeoffice .headInner,
+.event.typeHomeoffice .type,
+.dayMode .event .typeHomeoffice,
+.monthMode .event .typeHomeoffice {
+	background:url(../img/icons.png) no-repeat scroll 1px -811px;
+}
+
+.event.typeCompensation .headInner,
+.event.typeCompensation .type,
+.dayMode .event .typeCompensation,
+.monthMode .event .typeCompensation {
+	background:url(../img/icons.png) no-repeat scroll 0 -900px;
+}
+.event.typeMilestone .headInner,
+.event.typeMilestone .type,
+.dayMode .event .typeMilestone,
+.monthMode .event .typeMilestone {
+	background:url(../img/icons.png) no-repeat scroll 3px -930px;
+}
+
+.event.typeReminder .headInner,
+.event.typeReminder .type,
+.dayMode .event .typeReminder,
+.monthMode .event .typeReminder {
+	background:url(../img/icons.png) no-repeat scroll 1px -961px;
+}
+
+
+
+/* --------------------------------------------
+	Events in all views (day, week, month)
+   -------------------------------------------- */
+.dayview div.tg-colwrapper div.event dl,
+.weekMode div.tg-colwrapper div.event dl {
+/*	border:1px dotted $white;*/
+}
+
+.private {
+	display:block;
+	position:absolute;
+	top:8px;
+	left:11px;
+	width:6px;
+	height:7px;
+	background:transparent url(../img/icons.png) no-repeat 0 -1140px;
+}
+
+.weekNumber {
+	float:left;
+	color:$colorNeutral06;
+}
+
+
+
+.eventtypeicon {
+	padding-right:16px;
+}
+
+
+
+#quickinfo dt{
+	&.typeGeneralIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -656px;
+	}
+
+	&.typeAwayIcon {
+		background:url(../img/icons.png) no-repeat scroll 4px -688px;
+	}
+
+	&.typeBirthdayIcon {
+		background:url(../../../contact/asset/img/icons.png) no-repeat 4px -328px;
+	}
+
+	&.typeVacationIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -388px;
+	}
+
+	&.typeEducationIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -718px;
+	}
+
+	&.typeMeetingIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -748px;
+	}
+
+	&.typeAwayofficialIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -777px;
+	}
+
+	&.typeHomeofficeIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -807px;
+	}
+
+	&.typeCompensationIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -898px;
+	}
+
+	&.typeMilestoneIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -927px;
+	}
+
+	&.typeReminderIcon {
+		background:url(../img/icons.png) no-repeat scroll 3px -958px;
+	}
+}
+
+
+
+/* ------------------------
+	Portal events list
+   ------------------------ */
+.portalEventsList {
+	h1 {
+		&.headerLine {
+			span {
+				&.taskDate {
+					width:260px;
+				}
+
+				&.eventType {
+					width:110px;
+				}
+			}
+		}
+	}
+
+	h2 {
+		border-bottom:1px solid #ececec;
+		border-top:1px solid #ececec;
+		background-color:#fcfcfc;
+		margin:16px 0 8px 0;
+		padding:16px 0 10px 16px;
+
+		span.eventsGroupTitle {
+
+		}
+	}
+
+	.event .eventDetailView td.label {
+	  background:none;
+	}
+
+	#events {
+		div {
+			&.eventDetails	{
+				background-color:$white;
+			}
+		}
+		.event {
+			h3	{
+				border-left:0;
+			}
+
+			.expanded {
+				border-bottom:1px solid $colorNeutral02;
+
+				h3	{
+					font-weight:bold;
+					background-color:$colorNeutral01;
+				}
+			}
+
+			.label .title {
+				width: 55%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+
+/* ----------------------
+	Holidays in portal list
+   ---------------------- */
+.holidays {
+	background:$colorNeutral05 url(../img/icons.png) no-repeat scroll 0 -390px;
+	padding:0 0 0 15px;
+	margin:0 0 2px 1px;
+	color:$white;
+	overflow:hidden;
+	min-height:17px;
+}
+
+
+
+/* ----------------------
+	Birthdays in portal list
+   ---------------------- */
+#portalListBirthdays {
+	.event {
+		div {
+			display:inline-block;
+			padding:5px 0;
+		}
+		&.odd {
+			background-color:$colorNeutral01;
+		}
+		.type {
+			background-position:0 -325px;
+			height:16px;
+			margin:  {
+				left:10px;
+				right:5px;
+			}
+			width:30px;
+		}
+		.date {
+			width:200px;
+		}
+		.name {
+			width:250px;
+		}
+		.age {
+			width:70px;
+		}
+	}
+
+}
+
+
+/*-------------------------
+	List mode in portal
+  ------------------------- */
+#holidays h3 {
+	background-color:$white;
+	white-space:normal;
+
+	&.holidaysList {
+		padding-left:10px;
+	}
+
+	&.odd {
+		background-color:$colorNeutral01;
+	}
+}
+
+
+
+#events {
+	h3 {
+		background-color:$white;
+		border-bottom:1px solid $colorNeutral02;
+
+		span.icon{
+			&.acknowledge {
+			/*margin-right:10px;*/
+
+				&.not {
+					background:transparent url('../../../../core/asset/img/icons.png') no-repeat 0 -1260px;
+					cursor:pointer;
+
+					&.updated {
+						background:transparent url('../../../../core/asset/img/icons.png') no-repeat 0 -1434px;
+						cursor:pointer;
+					}
+				}
+			}
+		}
+	}
+
+	.details {
+		border-left:1px solid $colorNeutral01;
+		border-right:1px solid $colorNeutral01;
+
+		.label{
+			padding-left:10px;
+		}
+
+		.left {
+			float:left;
+			width:380px;
+		}
+
+		.right {
+			float:right;
+			width:280px;
+
+			dt {
+				float:left;
+				width:100px;
+			}
+
+			dd {
+				float:left;
+				width:180px;
+
+				span {
+					padding-left:13px;
+				}
+			}
+		}
+	}
+
+	.event {
+		.headLabel {
+			padding:0 0 0 20px;
+
+			.icon {
+				padding:0 5px 0 0;
+			}
+		}
+
+		h3 .label {
+			cursor:pointer;
+
+			.date {
+				display:inline-block;
+				width:238px;
+			}
+
+			.eventtype {
+				display:inline-block;
+				width:100px;
+			}
+		}
+	}
+}
+
+
+
+div.eventDetails {
+	dt {
+		clear:both;
+		float:left;
+		line-height:18px;
+		text-align:left;
+	}
+
+	dd {
+		float:right;
+		line-height:18px;
+		width:520px;
+		text-align:left;
+	}
+}
+
+
+
+#events .event h3 .label .eventtype,
+#events .event h3 .label .title {
+	border-left:1px solid $colorNeutral02;
+	padding:0 5px 1px;
+}
+
+
+
+/* -------------------------------------
+	Holidays list
+   ------------------------------------- */
+#holidays {
+	.holidayDate {
+		padding-left:38px;
+		width: 25%;
+
+		&.hasIcon {
+			background:url(../img/icons.png) no-repeat scroll 0 -390px;
+		}
+	}
+
+	.holidaysList span {
+		display:block;
+		float:left;
+	}
+
+	.holidayTitle {
+		padding-left:20px;
+		float:left;
+		width:50%;
+	}
+
+	.holidayWorkinghours {
+		position:relative;
+		width:15%;
+	}
+}
+
+
+
+/* -----------------------------------------
+	Event attendee persons
+   ------------------------------------------ */
+	/* Person has acknowledged the event */
+.eventperson-acknowledged {
+	padding-left:20px;
+	background:transparent url('../../../../core/asset/img/icons.png') no-repeat 0 -1314px;
+}
+	/* Person has not acknowledged the event */
+.eventperson-unacknowledged {
+	padding-left:20px;
+	background:transparent url('../../../../core/asset/img/icons.png') no-repeat 0 -1288px;
+}
+	/* Person has acknowledged event AND received it via email */
+.eventperson-acknowledged-email {
+	padding-left:23px;
+	background:transparent url('../../../../core/asset/img/icons.png') no-repeat 0 -1402px;
+}
+	/* Person has NOT acknowledged event AND received it via email */
+.eventperson-unacknowledged-email {
+	padding-left:23px;
+	background:transparent url('../../../../core/asset/img/icons.png') no-repeat 0 -1368px;
+}
+
+
+
+/* ---------------------------
+	Detail view
+   --------------------------- */
+table.eventDetailView {
+	width:100%;
+
+	span.reminderLabel {
+		font-weight:bold;
+	}
+
+	td {
+		text-align:left;
+		padding:7px 0 7px 0;
+
+		a {
+			text-decoration:underline;
+		}
+
+		&.label {
+			font-weight:bold;
+			width:120px;
+			padding-left:2px;
+		}
+
+		&.description {
+			ol, ul {
+				list-style-position:inside;
+			}
+			ul {
+				list-style-type:disc;
+				li {
+					padding:0 0 0 6px;
+				}
+			}
+		}
+	}
+}
+
+table.eventDetailView tr.odd,
+table.eventDetailView tr.even {
+	border-bottom:1px solid $colorNeutral02;
+}
+
+button.editEvent .icon {
+	background:url(../img/icons.png) no-repeat 4px -27px;
+	width:22px;
+}
+
+
+
+/* ----------------------
+	Edit view
+   ---------------------- */
+#formElement-event-field-date-start {
+	clear:both;
+}
+#event-field-date-start.dayEvent,
+#event-field-date-end.dayEvent {
+	width:65px;
+}
+
+
+/* -------------------------------------------------
+	Mailing popup shown after delete / drag&drop
+   ------------------------------------------------- */
+div.mailing fieldset.autoemail {
+	padding:10px 15px 15px;
+
+	legend {
+		display:block;
+	}
+}
+
+
+#calendar-view {
+	.headerLine {
+		.innerTitle {
+			display: inline-block;
+			max-width: 50%;
+			padding-left: 10px;
+			padding-right: 10px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}

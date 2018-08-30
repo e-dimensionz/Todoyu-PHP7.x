@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.system.systemsettings">Systemeinstellungen</label>
+	<label index="legend.system.cli">Command Line Interface</label>
+	<label index="legend.system.debugging">Debugging</label>
+	<label index="legend.rightsmanager.general">Rollen und Rechte</label>
+	<label index="legend.password.general">Definieren Sie die Passwortstärke</label>
+	<label index="legend.logo.general">Ändern Sie das Logo</label>
+	<label index="legend.repository.general">Geben Sie Ihre ID ein</label>
+</labels>

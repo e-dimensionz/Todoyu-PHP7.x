@@ -1,0 +1,9 @@
+<ul id="profilemodules-list" class="naviList">
+	{foreach $modules module}
+		<li class="{$module.class}{if $module.name == $active} active{/if}">
+			<a href="javascript:void(0)" onclick="Todoyu.Ext.profile.PanelWidget.ProfileModules.onClickModule('{$module.name}')">
+				{Label $module.label}
+			</a>
+		</li>
+	{/foreach}
+</ul>

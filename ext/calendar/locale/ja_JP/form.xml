@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">イベントに関する基本情報 [完了]</label>
+	<label index="legend.details">詳しい情報 [完了]</label>
+	<label index="legend.notification">関係者への通知 [完了]</label>
+	<label index="legend.reminders">この予約に関する自分のリマインダー [完了]</label>
+	<label index="legend.profile.general">カレンダーの一般設定 [完了]</label>
+	<label index="legend.profile.reminder.general">要望に対するリマインダーの設定 [完了]</label>
+	<label index="legend.admin.overbooking">予定が重なった場合に関する設定 [完了]</label>
+	<label index="legend.admin.reminders">リマインダーに関するデフォルト設定 [完了]</label>
+	<label index="legend.admin.automaticEmail">通知に関する設定 [完了]</label>
+	<label index="legend.admin.holidayset.record.general">休日の設定 [完了]</label>
+	<label index="legend.admin.holiday.record.general">休日 [完了]</label>
+</labels>

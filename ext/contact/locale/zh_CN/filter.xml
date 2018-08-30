@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="company.label">公司</label>
+	<label index="person.label">人员</label>
+	<label index="fulltext">富文本</label>
+	<label index="contactinformation">联系信息</label>
+	<label index="person.name">名字(名/ 姓/ 昵称)</label>
+	<label index="person.company">雇主</label>
+	<label index="person.salutation">称呼</label>
+	<label index="person.system_role">用户角色</label>
+	<label index="person.company.isInternal">雇主是公司内人员</label>
+	<label index="person.isActive">允许登陆</label>
+	<label index="company.name">公司名</label>
+	<label index="company.isInternal">内部公司</label>
+	<label index="company.dateEnter">成立日期</label>
+	<label index="company.person">员工</label>
+	<label index="addresses.label">地址</label>
+	<label index="address.country">国家</label>
+	<label index="address.zip">邮编</label>
+	<label index="address.city">城市</label>
+	<label index="address.street">街道</label>
+</labels>

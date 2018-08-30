@@ -1,0 +1,16 @@
+body#todoyu-sysmanager #quickinfo {
+	width:380px;
+}
+body#todoyu-sysmanager #quickinfo dd {
+	width:348px;
+}
+
+
+
+/* -------------------------------------
+	QuickInfo icons for rights infos
+   ------------------------------------- */
+#quickinfo dt.requiredrightIcon,
+#quickinfo dt.requiredsectionIcon {
+	background:url(../img/icons.png) no-repeat 4px -176px;
+}

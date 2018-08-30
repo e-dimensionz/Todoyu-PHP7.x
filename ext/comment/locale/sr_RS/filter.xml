@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">Повратна информација је потражена</label>
+	<label index="unseenFeedbackPerson">Повратна информација потражена од особе</label>
+	<label index="unseenFeedbackRoles">Повратна информација је потражена од улоге</label>
+	<label index="commentFulltext">Коментар цео текст</label>
+	<label index="commentWrittenPerson">Коментар написан</label>
+	<label index="commentWrittenRoles">Коментар уписан од улога</label>
+	<label index="commentCreatedate">Датум постављања коментара</label>
+</labels>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Ogólne</label>
+	<label index="general.use">Użyj Funkcjonalności Zakładki</label>
+	<label index="task">Zadania Zakładek</label>
+	<label index="task.add">Zadanie Zakładki</label>
+	<label index="task.remove">Usuń Zakładki</label>
+	<label index="panelwidgets">Panel Widgetów</label>
+</labels>

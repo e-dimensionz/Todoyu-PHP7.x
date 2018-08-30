@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Els meus filtres</label>
+	<label index="create">Crear filtres</label>
+	<label index="manage">Gestionar els filtres</label>
+	<label index="amount">Quantitat</label>
+	<label index="error.noFilters">No s'ha creat cap filtre</label>
+	<label index="error.noTypeFiltersets">No s'ha definit cap filtre</label>
+</labels>

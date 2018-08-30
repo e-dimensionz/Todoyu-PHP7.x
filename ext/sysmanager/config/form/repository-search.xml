@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=sysmanager&amp;controller=repository</attribute>
+		<attribute name="name">search</attribute>
+	</attributes>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>sysmanager.repository.form</legend>
+			<elements>
+
+				<field type="text" name="query">
+					<label>sysmanager.repository.query</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

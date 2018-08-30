@@ -1,0 +1,52 @@
+.wizardFirststeps ul.autoextend li {
+	padding:10px;
+	text-align:left;
+	padding-left:0;
+}
+
+.wizardFirststeps ul.autoextend li input {
+	width:300px;
+	font-size:12px;
+	padding:2px;
+}
+
+.wizardFirststeps ul.autoextend li span {
+	display:inline-block;
+	margin-bottom: -1px;
+	width:16px;
+	height:16px;
+	background:url(../../../../core/asset/img/icons.png) no-repeat 0 -358px;
+	margin-left:5px;
+	cursor:pointer;
+}
+
+
+.wizardFirststeps ul.list {
+	text-align:left;
+}
+
+.wizardFirststeps ul.list li {
+	padding:5px;
+	margin-bottom:2px;
+}
+
+.wizardFirststeps ul.list li .remove {
+	display:inline-block;
+	float:right;
+	clear:none;
+	width:16px;
+	height:16px;
+	background:url(../../../../core/asset/img/icons.png) no-repeat 0 -358px;
+	cursor:pointer;
+}
+
+
+
+.wizardFirststeps fieldset {
+	padding:0;
+	border:0;
+}
+
+.wizardFirststeps .disableWizard .icon {
+	background:url(../../../../core/asset/img/icons.png) no-repeat 0 -1463px;
+}

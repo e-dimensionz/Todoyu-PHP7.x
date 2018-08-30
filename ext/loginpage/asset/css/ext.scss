@@ -1,0 +1,336 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ----------------------------------------------
+	Extension icon: stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconLoginpage {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconLoginpage .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+
+
+/* -------------------------------
+	Default layout changes
+   ------------------------------- */
+body.todoyu-loginpage {
+	#content h1.headerLine {
+		margin:0;
+	}
+
+	#right {
+		border-radius:10px;
+		top:20px;
+
+		.inner {
+			background-color:$colorCorporate01;
+		}
+	}
+}
+
+
+
+span#password-forget {
+	line-height:23px;
+	padding-right:10px;
+	position:absolute;
+	right:300px;
+	bottom:18px;
+}
+
+#formElement-login-field-forgotpassword-inputbox {
+	width:420px;
+	text-align:right;
+}
+
+#forgotpassword-fieldset-buttons div.fElement {
+	float:left !important;
+}
+
+
+
+/* ---------------------
+	Login form
+   --------------------- */
+#todoyu-loginpage {
+
+	.formLogin {
+		padding:0;
+		background:none;
+
+		a:hover {
+			color:$colorNeutral08;
+		}
+
+		fieldset {
+			border:none;
+			padding:0;
+
+			legend {
+				display:none;
+			}
+
+			&.buttons {
+				text-align:left;
+
+				.fElement .fField {
+					float:none;
+				}
+			}
+
+			&.message {
+				margin:0;
+				border:none;
+			}
+		}
+
+		.fElement {
+			padding:10px;
+
+			input {
+				width:220px;
+				padding:2px;
+				font-size:13px;
+				line-height:16px;
+
+				&.checkbox {
+					top:3px;
+				}
+			}
+
+			.fLabel {
+				width:180px;
+				padding:5px;
+			}
+
+			&.typeCheckbox input {
+				width:auto;
+			}
+
+			&.fieldnameStatus .fField {
+				margin:0 0 0 195px;
+
+				&.notification {
+					margin-left:0;
+				}
+			}
+
+			&.fieldnameSubmit .fField {
+				margin:0;
+			}
+		}
+
+		.notification {
+			width:auto;
+			margin:0;
+			padding:5px 0;
+			float:none;
+			text-align:center;
+			line-height:21px;
+			border:1px solid $white !important;
+			background-color:$colorHighlight03 !important;
+
+			img {
+				position:relative;
+				top:4px;
+				margin-right:5px;
+			}
+
+			.icon {
+				display:inline-block !important;
+				height:18px;
+				margin-bottom: -5px;
+				margin-right:3px;
+				background-image:url(../../../../core/asset/img/icons.png);
+				background-repeat:no-repeat;
+				float:none;
+			}
+
+			&.success {
+				background-color:$colorApprove04 !important;
+				border-color:$colorApprove07;
+
+				.icon {
+					background-position:0 -1918px;
+				}
+			}
+
+			&.failure {
+				background-color:$colorAlert04 !important;
+				border-color:$colorAlert01;
+
+				.icon {
+					background-position:0 -1464px;
+				}
+			}
+		}
+	}
+
+	p.slogan {
+		bottom:0;
+		color:white;
+		font-size:13px;
+		font-weight:bold;
+		height:34px;
+		padding:12px 10px;
+		position:absolute;
+		right:0;
+		text-align:right;
+		text-transform:uppercase;
+	}
+
+	.panelWidget .content {
+		margin-top:0;
+		position:relative;
+	}
+}
+
+#todoyu-loginpage .formLogin .fElement.fieldnameStatus,
+#todoyu-loginpage .formLogin .fElement.fieldnameSubmit {
+	margin:0;
+	float:none;
+	border-top:none;
+}
+
+#todoyu-loginpage .formLogin .fElement.fieldnameStatus .fLabel,
+#todoyu-loginpage .formLogin .fElement.fieldnameSubmit .fLabel {
+	display:none;
+}
+
+#todoyu-loginpage .formLogin div.odd,
+#todoyu-loginpage .formLogin div.even {
+	background-color:$colorCorporate01;
+}
+
+#todoyu-loginpage .formLogin fieldset.buttons,
+#todoyu-loginpage .formLogin fieldset.buttons div.odd,
+#todoyu-loginpage .formLogin fieldset.buttons div.even {
+	background-color:$colorCorporate04 !important;
+}
+
+button{
+	&.buttonLogin {
+		margin-left:195px;
+
+		span.icon {
+			background:url('../img/icons.png') no-repeat 4px -57px;
+			width:24px;
+		}
+	}
+
+	&.sendNewPasswordButton span.icon {
+		background:url('../img/icons.png') no-repeat 4px -86px;
+		width:24px;
+	}
+}
+
+
+
+#todoyu-loginpage #formElement-login-field-status-inputbox,
+#todoyu-loginpage #formElement-forgotpassword-field-status-inputbox {
+	border:1px solid $colorCorporate01;
+	padding-right:40px;
+}
+
+#todoyu-loginpage .formLogin  a,
+#todoyu-loginpage .formLogin  a:hover {
+	text-decoration:underline;
+}
+
+
+
+/* ----------------------------
+ 	Todoyu Info on Login page
+   ---------------------------- */
+#todoyu-info {
+	border:1px solid $colorCorporate04;
+	background-color:$colorCorporate01;
+	clear:both;
+	padding:15px;
+}
+
+
+
+
+
+
+
+/* ------------------------
+	Confirmation page
+   ------------------------ */
+div.passwordResetConfirmationText {
+	padding:5px;
+
+	&.failure {
+		background-color:$colorAlert04 !important;
+		border-color:$colorAlert01;
+	}
+
+	&.successful {
+		background-color:$colorApprove04 !important;
+		border-color:$colorApprove07;
+	}
+}
+
+
+
+/* ----------------------
+	Loginpage
+   ---------------------- */
+#reLoginPopup {
+	text-align:left;
+
+	form.formLogin .notification {
+		width:480px !important;
+	}
+}
+
+#loginform-cookiecheck,
+#loginform-javascriptcheck,
+#reLoginPopup #relogin-popup-message {
+	border:1px $white solid;
+	background:$colorHighlight02 url('../img/alert.png') no-repeat 16px 16px;
+	height:50px;
+	padding:18px 0 5px 70px;
+}
+
+#reLoginPopup form.formLogin fieldset.buttons,
+#reLoginPopup form.formLogin fieldset.buttons div.odd,
+#reLoginPopup form.formLogin fieldset.buttons div.even {
+	background-color:$colorNeutral01 !important;
+}
+
+#reLoginPopup form.formLogin div.odd,
+#reLoginPopup form.formLogin div.even {
+	background-color:$colorNeutral00;
+}
+
+#loginform-cookiecheck,
+#loginform-javascriptcheck {
+	background-color:$colorHighlight02;
+	border:1px $white solid;
+}
+
+#loginform-cookiecheck .fField,
+#formElement-login-field-javascript .fField {
+	float:none;
+	width:75%;
+}
+
+
+
+/* ----------------------
+	Re-login popup
+   ---------------------- */
+div#relogin-popup-form fieldset.loginForm {
+	background-color:$white;
+
+	input {
+		font-size:12px;
+	}
+}

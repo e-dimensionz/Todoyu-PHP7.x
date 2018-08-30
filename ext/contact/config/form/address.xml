@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Main address data</legend>
+			<elements>
+
+				<field type="select" name="id_addresstype">
+					<label>contact.ext.address.attr.addresstype</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getAddressTypeOptions</function>
+					</source>
+					<required />
+				</field>
+
+				<field type="textarea" name="street">
+					<label>contact.ext.address.attr.street</label>
+					<validateLive>
+						<function>
+							Todoyu.Ext.contact.Address.checkForDuplicatedAddresses
+						</function>
+					</validateLive>
+				</field>
+
+				<field type="text" name="postbox">
+					<label>contact.ext.address.attr.postbox</label>
+					<validateLive>
+						<function>
+							Todoyu.Ext.contact.Address.checkForDuplicatedAddresses
+						</function>
+					</validateLive>
+				</field>
+
+				<field type="text" name="zip">
+					<label>contact.ext.address.attr.zip</label>
+					<required />
+					<validateLive>
+						<function>
+							Todoyu.Ext.contact.Address.checkForDuplicatedAddresses
+						</function>
+					</validateLive>
+				</field>
+
+				<field type="text" name="city">
+					<label>contact.ext.address.attr.city</label>
+					<required />
+					<validateLive>
+						<function>
+							Todoyu.Ext.contact.Address.checkForDuplicatedAddresses
+						</function>
+					</validateLive>
+				</field>
+
+				<field type="select" name="id_country">
+					<label>contact.ext.address.attr.country</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getCountryOptions</function>
+					</source>
+					<extraAttributes>onchange="Todoyu.Ext.contact.Address.onChangeCountry(this, 'region', 'id-country');"</extraAttributes>
+				</field>
+
+				<field type="select" name="region">
+					<label>contact.ext.address.attr.region</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getRegionOptions</function>
+						<lazyInit />
+					</source>
+				</field>
+
+				<field type="checkbox" name="is_preferred">
+					<label>core.form.is_preferred</label>
+				</field>
+
+				<field type="textarea" name="comment">
+					<label>contact.ext.address.attr.comment</label>
+				</field>
+
+				<field type="selectgrouped" name="id_timezone">
+					<label>contact.ext.address.attr.timezone</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getTimezoneOptionsGrouped</function>
+					</source>
+				</field>
+
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

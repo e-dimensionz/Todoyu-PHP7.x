@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Филтери</label>
+	<label index="saveFilterButton">Сачувај као нови филтер</label>
+	<label index="clearFilterArea">Изпразни област филтера</label>
+</labels>

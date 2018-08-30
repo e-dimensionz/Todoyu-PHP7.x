@@ -1,0 +1,32 @@
+#head,
+#panel,
+#content-tabs,
+#footer {
+	display:none;
+}
+.tabs li.item,
+#navi-main li.item {
+	display:none;
+}
+
+#header {
+	border:none;
+	height:75px;
+}
+#header,
+#content-body {
+	position:static;
+}
+
+#box {
+	padding-top:0px;
+}
+
+.buttons,
+.button {
+	display:none;
+}
+
+* {
+	text-shadow:none !important;
+}

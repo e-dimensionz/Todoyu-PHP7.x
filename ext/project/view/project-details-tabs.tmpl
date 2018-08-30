@@ -1,0 +1,23 @@
+<div class="menu contextmenuProjectInline" id="menu-{$idProject}">
+	<span class="icon"></span>
+	<span class="label">{Label LLL:project.ext.project.tabs.menu}</span>
+</div>
+
+<script type="text/javascript">
+	Todoyu.Ext.project.ContextMenuProjectInline.attach();
+</script>
+
+<div class="gap">
+
+</div>
+
+<div class="tabs" id="{$idProject}-tabs">
+	{foreach $tabs tab}
+		<div class="projectDetailsTab {$tab.id}ProjectTab tabkey-{$tab.id}{if $activeTab == $tab.id} active{/if}" id="tab-{$tab.id}" onclick="Todoyu.Ext.project.Project.Tab.onSelect({$idProject}, '{$tab.id}');">
+			<span class="icon"></span>
+			<span class="label">{Label $tab.label}</span>
+		</div>
+	{else}
+		no tabs registered
+	{/foreach}
+</div>

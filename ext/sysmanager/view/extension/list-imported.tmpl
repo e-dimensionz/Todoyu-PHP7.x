@@ -1,0 +1,44 @@
+{extends "list-base.tmpl"}
+
+{block name="title"}{Title "LLL:sysmanager.ext.notInstalledExtensions"}{/block}
+
+{block name="contentMessage"}
+	{if sizeof($extensions)>0}
+		{contentMessage label="sysmanager.extension.imported.info" class="importInfo"}
+	{/if}
+{/block}
+
+{block name="edit"}
+	<td class="edit">
+		<a href="javascript:void(0)" onclick="Todoyu.Ext.sysmanager.Extensions.Install.install('{$extKey}')" title="{Label sysmanager.extension.install}" class="install">
+			<span class="hidden">install</span>
+		</a>
+
+		<a href="javascript:void(0)" onclick="Todoyu.Ext.sysmanager.Extensions.remove('{$extKey}')" title="{Label sysmanager.extension.remove}" class="remove">
+			<span class="hidden">remove</span>
+		</a>
+
+		<a href="javascript:void(0)" title="{Label sysmanager.extension.showInfo}"
+			{if extMgr_hasExtInfo($extKey)}
+				onclick="Todoyu.Ext.sysmanager.Extensions.showTab('{$extKey}', 'info')" class="info">
+			{else}
+				class="info disabled">
+			{/if}
+			<span class="hidden">info</span>
+		</a>
+	</td>
+{/block}
+
+{block name="noExtensions"}
+	<div class="contentMessage importInfo">
+		<div class="icon"></div>
+		{Label sysmanager.extension.install.allinstalled}
+	</div>
+{/block}
+
+{block name="buttons"}
+	<div class="installAlternatives">
+		{Button class="ter" label="sysmanager.extension.loadfromter" onclick="Todoyu.Ext.sysmanager.Extensions.showTab('', 'search')"}
+		{Button class="upload" label="sysmanager.extension.importfromarchive" onclick="Todoyu.Ext.sysmanager.Extensions.Import.showImportDialog()"}
+	</div>
+{/block}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=sysmanager&amp;controller=config</attribute>
+		<attribute name="name">systemconfig</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="system">
+			<legend>sysmanager.form.legend.system.systemsettings</legend>
+			<elements>
+
+				<field type="text" name="name">
+					<label>sysmanager.ext.config.tab.systemconfig.name</label>
+					<required />
+				</field>
+
+				<field type="select" name="locale">
+					<label>sysmanager.ext.config.tab.systemconfig.locale</label>
+					<source type="function">
+						<function>TodoyuViewHelper::getAvailableLocaleOptions</function>
+					</source>
+					<noPleaseSelect />
+					<required />
+				</field>
+
+				<field type="text" name="email">
+					<label>sysmanager.ext.config.tab.systemconfig.email</label>
+					<required />
+				</field>
+
+				<field type="select" name="mailer">
+					<label>sysmanager.ext.config.tab.systemconfig.mailer</label>
+					<source type="function">
+						<function>TodoyuSysmanagerSystemConfigViewHelper::getMailerOptions</function>
+					</source>
+					<pleaseSelectLabel>sysmanager.ext.config.mailer.mail</pleaseSelectLabel>
+				</field>
+
+			</elements>
+		</fieldset>
+
+
+
+		<fieldset name="timeanddate">
+			<legend>sysmanager.ext.config.tab.systemconfig.legend.timeAndDate</legend>
+			<elements>
+				<field type="selectgrouped" name="timezone">
+					<label>sysmanager.ext.config.tab.systemconfig.timezone</label>
+					<source type="function">
+						<function>TodoyuSysmanagerSystemConfigViewHelper::getTimezoneOptionsGrouped</function>
+					</source>
+					<required />
+				</field>
+
+				<field type="select" name="firstDayOfWeek">
+					<label>sysmanager.ext.config.tab.systemconfig.firstDayOfWeek</label>
+					<source type="function">
+						<function>TodoyuSysmanagerViewHelper::getFirstDayOfWeekOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+			</elements>
+		</fieldset>
+
+
+
+		<fieldset name="cli">
+			<legend>sysmanager.form.legend.system.cli</legend>
+			<elements>
+
+				<field type="text" name="todoyuURL">
+					<label>sysmanager.ext.config.tab.systemconfig.todoyuURL</label>
+					<required />
+				</field>
+
+			</elements>
+		</fieldset>
+
+
+
+		<fieldset name="debug">
+			<legend>sysmanager.form.legend.system.debugging</legend>
+			<elements>
+
+				<field type="select" name="logLevel">
+					<label>sysmanager.ext.config.tab.systemconfig.logLevel</label>
+					<source type="function">
+						<function>TodoyuSysmanagerSystemConfigViewHelper::getLogLevelOptions</function>
+					</source>
+					<noPleaseSelect />
+				</field>
+
+			</elements>
+		</fieldset>
+
+
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.sysmanager.Config.saveSystemConfig(this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

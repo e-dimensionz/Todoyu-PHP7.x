@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > panelwidget: filters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > panelwidget: filters</td></tr>
+</thead><tbody>
+<!------ calendar > panelwidget: calendar toggling-->
+<!--verfiy all elements to be present-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-eventtypeselector-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-eventtypeselector-toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='1']</td>
+	<td>General</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='2']</td>
+	<td>Absence</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='7']</td>
+	<td>External Work</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='3']</td>
+	<td>Birthday</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='4']</td>
+	<td>Vacation</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='5']</td>
+	<td>Further Education</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='6']</td>
+	<td>Meeting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='8']</td>
+	<td>Home Office</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='11']</td>
+	<td>Compensation</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='12']</td>
+	<td>Milestone</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//option[@value='13']</td>
+	<td>Reminder</td>
+</tr>
+<!--test toggle content, incl. pref-->
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-eventtypeselector.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &gt; 50}</td>
+	<td>true</td>
+</tr>
+<!--collapse eventtypeselector-->
+<tr>
+	<td>click</td>
+	<td>css=div#panelwidget-eventtypeselector.panelWidget h1#panelwidget-eventtypeselector-h1 span#panelwidget-eventtypeselector-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#panelwidget-eventtypeselector.panelWidget h1#panelwidget-eventtypeselector-h1.expand span#panelwidget-eventtypeselector-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-eventtypeselector.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<!--check: eventtype selector collapsed?-->
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &lt; 45}</td>
+	<td>true</td>
+</tr>
+<!--go to project area-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemProject a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTitle</td>
+	<td>varPageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['varPageTitle'].substr(0,&nbsp;&nbsp;storedVars['varPageTitle'].indexOf(&quot;-&quot;) - 1);}</td>
+	<td>Projects</td>
+</tr>
+<!--return to calendar area-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemPlanning a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Calendar - todoyu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-eventtypeselector.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &lt; 45}</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#panelwidget-eventtypeselector.panelWidget h1#panelwidget-eventtypeselector-h1 span#panelwidget-eventtypeselector-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=h1#panelwidget-eventtypeselector-h1.expand span#panelwidget-eventtypeselector-toggle.toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>css=div#panelwidget-eventtypeselector.panelWidget</td>
+	<td>widgetHeight</td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['widgetHeight'] &gt; 50}</td>
+	<td>true</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Общие</label>
+	<label index="general.use">Использовать учёт времени</label>
+	<label index="task">Учёт времени</label>
+	<label index="task.track">Учитывать время</label>
+	<label index="task.editOwn">Может редактировать собственное время в задачах</label>
+	<label index="task.editOwnChargeable">Может редактировать платное время в своих задачах</label>
+	<label index="task.editAll">Может редактировать время всех в задачах</label>
+	<label index="task.editAllChargeable">Может редактировать платное время во всех задачах</label>
+</labels>

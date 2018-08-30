@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Свойства профиля</label>
+	<label index="page.title">Мой профиль</label>
+	<label index="headlet.label">Мои установки</label>
+	<label index="module.general">Общие</label>
+	<label index="general.main.tab">Главное</label>
+	<label index="general.main.locale">Язык</label>
+	<label index="general.main.saved">Установки сохранены</label>
+	<label index="general.main.saved.pleaseWait">todoyu требуется создать кэш-файлы для вашего языка. Пожалуйста, подождите.</label>
+	<label index="general.password.title">Сенить ваш пароль</label>
+	<label index="general.password.tab">Пароль</label>
+	<label index="general.password.current">Текущий пароль</label>
+	<label index="general.password.current.empty">Пожалуйста, введите Ваш прежний пароль</label>
+	<label index="general.password.current.wrong">Прежний пароль введён неверно</label>
+	<label index="general.password.new1">Новый пароль</label>
+	<label index="general.password.new2">Повторить пароль</label>
+	<label index="general.password.error">Не удалось изменить пароль</label>
+	<label index="general.password.success">Пароль изменён</label>
+	<label index="general.password.notEqual">Пароли не совпадают</label>
+	<label index="general.main.header">Личные настройки</label>
+	<label index="general.password.header">Пароль</label>
+</labels>

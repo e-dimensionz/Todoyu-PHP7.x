@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="download">Téléchargement</label>
+	<label index="upload">Téléversement</label>
+	<label index="size.gb">Go</label>
+	<label index="size.mb">Mo</label>
+	<label index="size.kb">K</label>
+	<label index="size.b">B</label>
+	<label index="filename">Nom du fichier</label>
+	<label index="filesize">Taille</label>
+</labels>

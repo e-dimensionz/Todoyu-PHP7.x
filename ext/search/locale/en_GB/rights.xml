@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General Settings</label>
+	<label index="general.use">Use/see search functionality</label>
+	<label index="general.area">Use Search Area</label>
+</labels>

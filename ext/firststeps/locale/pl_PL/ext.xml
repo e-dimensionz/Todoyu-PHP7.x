@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Pierwsze kroki</label>
+	<label index="wizard.start.title">Twoje pierwsze kroki w todoyu</label>
+	<label index="wizard.start.info"><![CDATA[Ten kreator przeprowadzi cię przez pierwsze kroki w todoyu. Całą procedura zajmie tylko <strong>kilka minut</strong> Twojego cennego czasu. Po tym czasie będzie miał gotowy do działania system. <br /><br />Wciśnij "kontunuuj" aby rozpocząć.]]></label>
+	<label index="wizard.start.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.start.dontUseWizard">Nie chcę używać kreatora. Nie pokazuj tego okna więcej.</label>
+	<label index="wizard.start.disableAssistant">Wyłącz asystenta</label>
+	<label index="wizard.start.reactivateInAdmin">Możesz ponownie włączyć ten kreator w sekcji administracyjnej</label>
+	<label index="wizard.jobtypes.title">Rodzaje prac</label>
+	<label index="wizard.jobtypes.info">Podaj rodzaje prac, które zazwyczaj wykonujesz w firmie i projektach. Możesz je w każdej chwili zmienić w sekcji administracyjnej.</label>
+	<label index="wizard.jobtypes.help"><![CDATA[ Rodzaje prac mogą być:<br />CEO, CFO, menadżer, kierownik zespołu, sekretarka, sprzedaż ]]></label>
+	<label index="wizard.projectroles.title">Role projektu</label>
+	<label index="wizard.projectroles.info">Wypełnij role projektu, które pojawiają się zazwyczaj w Twoich projektach.</label>
+	<label index="wizard.projectroles.help"><![CDATA[ Aby podsunąć Ci pomysł co mogłoby być: W projekcie todoyu mamy nastepujące role:<br />menadżer projektu, deweloper, inżynier front-end, menadżer produktu, odpowiedni za marketing, menadżer społecznościowy, szkoleniowiec ]]></label>
+	<label index="wizard.activities.title">Działania</label>
+	<label index="wizard.activities.info">Działania definiują rodzaje prac, które przypisujesz zespołowi.</label>
+	<label index="wizard.activities.help">Działaniami mogą być kostultacje, programowanie, wsparcie ...</label>
+	<label index="wizard.userroles.title">Grupy użytkowników</label>
+	<label index="wizard.userroles.info">Grupy użytkowników są wykorzystywane do celów administracyjnych. Możesz później przypisać uprawnienia do grup w sekcji administracyjnej.</label>
+	<label index="wizard.userroles.help">Dość często grupy użytkowników są przypisane do rodzajów prac, które podałeś wcześniej, jednak od Ciebie zależy ile grup stworzysz i przydzielisz.</label>
+	<label index="wizard.company.title">Twoja firma</label>
+	<label index="wizard.company.info">Podaj podstawowe informacje o Twojej firmie. Możesz je edytować w każdej chwili w sekcji Kontakt.</label>
+	<label index="wizard.company.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.employees.title">Pracownicy</label>
+	<label index="wizard.employees.info">Teraz powiedz todoyu kto jest członkiem twojego zespołu. Zdefiniuj podstawowe informacje osobiste - uzytkownik może je edytować w swoim profilu.</label>
+	<label index="wizard.employees.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.customers.title">Klienci</label>
+	<label index="wizard.customers.info">Mamy nadzieję, że masz na chwilę obecną jakiś klientów. Świetnie! Podaj podstawowe informacje.</label>
+	<label index="wizard.customers.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.project.title">Pierwszy projekt</label>
+	<label index="wizard.project.info">Nareszcie, rozpocznij pracę ze swoim pierwszym projektem w todoyu. Gratulacje!!</label>
+	<label index="wizard.project.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.finish.title">To wszystko!</label>
+	<label index="wizard.finish.info"><![CDATA[Masz teraz <strong>pomyślnie</strong> wprowadzone wszystkie neizbędne informacje aby działać płynnie w todoyu.<br /><br /> Powodzenia!]]></label>
+	<label index="wizard.finish.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.finish.closeWizard">Zamnij kreator</label>
+	<label index="employee.addCompany">Dodaj firmę</label>
+	<label index="employee.addEmployee">Dodaj pracownika</label>
+	<label index="employee.addPerson">Dodaj osobę do projektu</label>
+	<label index="extconf.disableWizard">Wyłącz kreator</label>
+	<label index="wizardDisabledInfo">Kreator jest teraz wyłączony</label>
+</labels>

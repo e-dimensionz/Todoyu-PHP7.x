@@ -1,0 +1,13 @@
+<br />
+{$headerTitle = implode(array(count($birthdayEvents), Label('calendar.event.eventslist.birthdaysWithinTheNextweeks')), ' ')}
+{Header title=$headerTitle}
+<div id="portalListBirthdays">
+	{foreach $birthdayEvents birthday}
+		<div class="event typeBirthday {cycle values="odd,even"}" title="{Label calendar.event.type.birthday} {$birthday.person.firstname} {$birthday.person.lastname} ({$birthday.age} {Label calendar.ext.yearsold})">
+			<div class="type">&nbsp;</div>
+			<div class="date">{dateFormat $birthday.date DlongD2MlongY4}</div>
+			<div class="name">{personLabel idPrefix='birthdayperson' idPerson=$birthday.person.id}</div>
+			<div class="age">{$birthday.age} {Label calendar.ext.yearsold}</div>
+		</div>
+	{/foreach}
+</div>

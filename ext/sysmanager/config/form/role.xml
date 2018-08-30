@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=sysmanager&amp;controller=role</attribute>
+		<attribute name="name">role</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>core.form.legend.main</legend>
+			<elements>
+
+				<field type="text" name="title">
+					<label>core.global.title</label>
+					<required />
+				</field>
+
+				<field type="textarea" name="description">
+					<label>core.global.description</label>
+				</field>
+
+				<field type="checkbox" name="is_active">
+					<label>core.global.attr.is_active</label>
+					<default>1</default>
+				</field>
+
+				<field type="databaseRelation" name="persons">
+					<label>core.global.role.attr.persons</label>
+					<addLabel>contact.ext.person.new</addLabel>
+					<record>
+						<form>ext/sysmanager/config/form/role-person.xml</form>
+						<url>
+							<ext>sysmanager</ext>
+							<controller>role</controller>
+						</url>
+						<label type="function">
+							<function>TodoyuContactViewHelper::getPersonLabel</function>
+							<noLabel>contact.ext.person.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Action</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.sysmanager.Roles.showList()</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.sysmanager.Roles.save(this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

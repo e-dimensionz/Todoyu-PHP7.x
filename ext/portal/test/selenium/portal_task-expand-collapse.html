@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > task expand collapse</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > task expand collapse</td></tr>
+</thead><tbody>
+<!------ portal > task expand & collapse-->
+<!--expand and re-collapse task 33-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-body&quot;]/div[contains(@class,&quot;portalTaskList&quot;)]/div[contains(@class,&quot;task&quot;)]</td>
+	<td></td>
+</tr>
+<!--task 33 has "not seen"-star?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[@id=&quot;task-33-notacknowledged&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//span[@id=&quot;task-33-notacknowledged&quot;]</td>
+	<td></td>
+</tr>
+<!--click "not seen"-star-->
+<tr>
+	<td>click</td>
+	<td>//span[@id=&quot;task-33-notacknowledged&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--task 33 is not expanded?-->
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;task-33&quot;][contains(@class,&quot;expanded&quot;)]</td>
+	<td></td>
+</tr>
+<!--expand it-->
+<tr>
+	<td>click</td>
+	<td>css=div#task-33 h3 span.headLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-33&quot;][contains(@class,&quot;expanded&quot;)]</td>
+	<td></td>
+</tr>
+<!--go to project area & return, check expand-state-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Projects</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-33&quot;][contains(@class,&quot;expanded&quot;)]</td>
+	<td></td>
+</tr>
+<!--re-collapse task 33-->
+<tr>
+	<td>click</td>
+	<td>css=div#task-33 h3 span.headLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div[@id=&quot;task-33&quot;][contains(@class,&quot;expanded&quot;)]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

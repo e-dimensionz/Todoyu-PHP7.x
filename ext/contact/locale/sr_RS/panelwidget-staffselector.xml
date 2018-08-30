@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Особље</label>
+	<label index="selection">Активно изабрато</label>
+	<label index="selection.empty">Ништа није изабрато. Користи претрагу за додавање особа и групе. </label>
+</labels>

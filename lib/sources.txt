@@ -1,0 +1,29 @@
+Modified library files
+======================
+
+We have removed files from the libraries which are not used.
+In the following list, you find the full sources of the libraries we used:
+
+JavaScript
+-------------------------------------------------------------------------
+Highcharts				http://www.highcharts.com/
+JsCalendar				http://www.dynarch.com/projects/calendar/old/
+Prototype				http://www.prototypejs.org/
+Prototype Window		http://prototype-window.xilinus.com/
+Scriptaculous			http://script.aculo.us/
+TableKit				http://www.millstream.com.au/view/code/tablekit/
+TinyMCE					http://tinymce.moxiecode.com/
+md5						http://pajhome.org.uk/crypt/md5/
+sCalJS					http://code.google.com/p/scaljs/
+sha1					http://www.webtoolkit.info/javascript-sha1.html
+
+PHP
+-------------------------------------------------------------------------
+CssMin					http://code.google.com/p/cssmin/
+Dwoo					http://dwoo.org/
+FirePhpCore				http://code.google.com/p/firephp/
+JsMin					http://code.google.com/p/minify/
+Mobile_Detect           https://github.com/serbanghita/Mobile-Detect
+PclZip					http://www.phpconcept.net/pclzip
+PhpMailer Lite			http://phpmailer.worxware.com/index.php?pg=phpmailer
+PHPSass                 https://github.com/richthegeek/phpsass

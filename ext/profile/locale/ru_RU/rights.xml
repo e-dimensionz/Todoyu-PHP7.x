@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Общие</label>
+	<label index="general.use">Использовать профиль</label>
+	<label index="settings">Настройки учётной записи</label>
+	<label index="settings.password">Изменить пароль</label>
+</labels>

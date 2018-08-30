@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Role person data</legend>
+			<elements>
+
+				<field type="select" name="id">
+					<label>contact.ext.person</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getPersonOptions</function>
+						<lazyInit />
+					</source>
+				</field>
+
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">Подсетнике</label>
+	<label index="myreminders">Моје подсетнике</label>
+	<label index="email">Е-Маил</label>
+	<label index="popup">Поп-уп</label>
+	<label index="deactivated">Подсетници су изкључени</label>
+	<label index="notify.email.deactivated">Подсетник е-маил-а је искључен</label>
+	<label index="notify.popup.deactivated">Подсетник поп-уп-а је искључен</label>
+	<label index="notify.email.timeupdated">Распоред е-маил подсетника је измењен</label>
+	<label index="notify.popup.timeupdated">Распоред поп-уп подсетника је измењен</label>
+	<label index="beforeDateStart">Пре термин-а</label>
+	<label index="atDateStart">Кад термин почиње</label>
+	<label index="email.subject">Подсетник термин-а</label>
+	<label index="email.title">Аутоматски подсетник термин-а</label>
+	<label index="noReminder">Немој ме подсећати</label>
+	<label index="cli.infocomment">Аутоматски пошаљи подсетник догађаја путем маил-а, "крон-ђоб" мора бе у подешавања ваше todoyu инсталације. Инструкције како да поднесете todoyu "крон-ђоб":</label>
+</labels>

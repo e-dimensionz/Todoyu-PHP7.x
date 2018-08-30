@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Dagboek van geregistreerde uren</label>
+	<label index="title">Dagboek van geregistreerde uren</label>
+	<label index="history.title">Urenregistratiedagboek</label>
+	<label index="history.total">Totaal geregistreerde uren</label>
+	<label index="history.showdetails">Details tonen</label>
+	<label index="history.noTracks">Geen urenregistratie beschikbaar voor deze periode</label>
+	<label index="totalToday">Totaal geregistreerde uren vandaag</label>
+</labels>

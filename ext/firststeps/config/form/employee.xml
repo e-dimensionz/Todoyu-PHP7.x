@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">data</attribute>
+	</attributes>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Main company data</legend>
+			<elements>
+
+				<field type="select" name="salutation">
+					<label>contact.ext.person.attr.salutation</label>
+					<source type="list">
+						<option>
+							<value>m</value>
+							<label>contact.ext.person.attr.salutation.m</label>
+						</option>
+						<option>
+							<value>w</value>
+							<label>contact.ext.person.attr.salutation.f</label>
+						</option>
+					</source>
+					<noPleaseSelect />
+				</field>
+
+				<field type="text" name="lastname">
+					<label>contact.ext.person.attr.lastname</label>
+					<required />
+				</field>
+
+				<field type="text" name="firstname">
+					<label>contact.ext.person.attr.firstname</label>
+					<required />
+				</field>
+
+				<field type="select" name="id_jobtype">
+					<label>contact.ext.jobtype</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getJobTypeOptions</function>
+						<lazyInit />
+					</source>
+					<required />
+				</field>
+
+				<field type="select" name="id_role">
+					<label>core.global.role</label>
+					<source type="function">
+						<function>TodoyuRoleViewHelper::getRoleOptions</function>
+					</source>
+					<required />
+				</field>
+
+				<field type="text" name="username">
+					<label>contact.ext.person.attr.username</label>
+					<validate>
+						<unique>
+							<table>ext_contact_person</table>
+							<allowEmpty />
+						</unique>
+					</validate>
+				</field>
+
+				<field type="text" name="password">
+					<label>contact.ext.person.attr.password</label>
+					<type>password</type>
+					<validate>
+						<goodPassword>
+							<allowEmpty />
+						</goodPassword>
+					</validate>
+					<textAfterField>contact.ext.person.attr.password.hasPassword</textAfterField>
+				</field>
+
+				<field type="text" name="email">
+					<label>contact.ext.person.attr.email</label>
+					<validate>
+						<email>
+							<allowEmpty />
+						</email>
+						<requiredIfNotEmpty>
+							<fields>username,active</fields>
+						</requiredIfNotEmpty>
+					</validate>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="button">
+			<legend>Main company data</legend>
+			<elements>
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.firststeps.Wizard.addEmployee()</onclick>
+					<text>firststeps.ext.employee.addEmployee</text>
+				</field>
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

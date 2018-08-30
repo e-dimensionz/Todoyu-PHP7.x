@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Erste Schritte</label>
+	<label index="wizard.start.title">Ihre ersten Schritte in todoyu</label>
+	<label index="wizard.start.info">Dieser Assistent führt Sie durch die ersten Schritte in todoyu. Der Prozess nimmt nur &lt;strong&gt;wenige Minuten&lt;/strong&gt; Ihrer Zeit in Anspruch. Nach Abschluss werden Sie eine arbeitsbereite Installation haben. &lt;br /&gt;&lt;br /&gt;Klicken Sie auf "weiter" um zu starten.</label>
+	<label index="wizard.start.help">&amp;nbsp;</label>
+	<label index="wizard.start.dontUseWizard">Ich möchte den Assistenten nicht benutzen. Dieses Fenster nicht mehr anzeigen.</label>
+	<label index="wizard.start.disableAssistant">Assistant deaktivieren</label>
+	<label index="wizard.start.reactivateInAdmin">Kann bei der Extension Konfiguration wieder aktiviert werden.</label>
+	<label index="wizard.jobtypes.title">Stellenbezeichnungen</label>
+	<label index="wizard.jobtypes.info">Bitte geben Sie Ihre Stellenbezeichnungen ein, welche Sie in Ihrer Firma und Projekten verwenden. Sie können diese jederzeit im Administrationbereich ändern.</label>
+	<label index="wizard.jobtypes.help"> Stellenbezeichnungen können sein:&lt;br /&gt;CEO, CFO, Managerin, Team Leiter, Sekretärin, Verkäufer </label>
+	<label index="wizard.projectroles.title">Projektrollen</label>
+	<label index="wizard.projectroles.info">Bitte geben Sie die Projektrollen an, die Sie in Ihren Projekten verwenden möchten.</label>
+	<label index="wizard.projectroles.help"> Um Ihnen eine Idee möglicher Projektrollen zu vermitteln: Im todoyu Team verwenden wir folgende Rollen:&lt;br /&gt;Projektmanager, Entwickler, Frontend Engineer, Produktmanager, Marketingverantwortlicher, Communitymanager, Schulungsleiter </label>
+	<label index="wizard.activities.title">Leistungsart</label>
+	<label index="wizard.activities.info">Leistungsarten definieren Arbeiten, die Sie Ihrem Team zuweisen.</label>
+	<label index="wizard.activities.help">Leistungsarten können sein: Programmierung, Beratung, Support, interne Arbeiten</label>
+	<label index="wizard.userroles.title">Benutzergruppen</label>
+	<label index="wizard.userroles.info">Benutzergruppen werden für die Administration der Benutzerrechte benötigt. Sie können im Administrationsbereich dann die Zugriffsrechte den Benutzergruppen zuweisen</label>
+	<label index="wizard.userroles.help">Oft sind die Benutzergruppen an die Stellenbezeichnungen/Rollen geknüpft, welche Sie vorgängig eingegeben haben. Es ist aber Ihnen überlassen, ob Sie neben den eigentlichen Rollen noch weitere Benutzergruppen definieren möchten.</label>
+	<label index="wizard.company.title">Ihre Firma</label>
+	<label index="wizard.company.info">Bitte geben Sie Firmenname und Adresse ein. Sie können die Angaben jederzeit im Kontakt-Bereich anpassen und ergänzen.</label>
+	<label index="wizard.company.help">&amp;nbsp;</label>
+	<label index="wizard.employees.title">Mitarbeiter</label>
+	<label index="wizard.employees.info">Teilen Sie todoyu nun mit, wer Ihre Mitarbeiter sind. Ihre Mitarbeiter können die Angaben in ihrem Profil selbstständig anpassen.</label>
+	<label index="wizard.employees.help">&amp;nbsp;</label>
+	<label index="wizard.employees.confirmRemove">Mitarbeiter enfernen?</label>
+	<label index="wizard.employees.added">Mitarbeiter wurde zur Liste hinzugefügt</label>
+	<label index="wizard.customers.title">Kunden</label>
+	<label index="wizard.customers.info">Vielleicht haben Sie ja schon Ihren ersten Kunden zu diesem Zeitpunkt? Wunderbar! Bitte geben Sie Firmenname und Adresse ein.</label>
+	<label index="wizard.customers.help">&amp;nbsp;</label>
+	<label index="wizard.customers.confirmRemove">Kunde entfernen?</label>
+	<label index="wizard.project.title">Ihr erstes Projekt</label>
+	<label index="wizard.project.info">Zu guter Letzt starten Sie mit Ihrem ersten Projekt in todoyu. Gratulation!</label>
+	<label index="wizard.project.help">&amp;nbsp;</label>
+	<label index="wizard.project.confirmRemovePerson">Person vom Projekt entfernen?</label>
+	<label index="wizard.finish.title">Fertig!</label>
+	<label index="wizard.finish.info">Sie haben &lt;strong&gt;erfolgreich&lt;/strong&gt; die notwendigen Angaben in todoyu gemacht und können nun mit Ihrer Arbeit loslegen.&lt;br /&gt;&lt;br /&gt; Viel Vergnügen!</label>
+	<label index="wizard.finish.help">&amp;nbsp;</label>
+	<label index="wizard.finish.closeWizard">Assistent beenden</label>
+	<label index="employee.addCompany">Zu Firmen hinzufügen</label>
+	<label index="employee.addEmployee">Zu Mitarbeiter hinzufügen</label>
+	<label index="employee.addPerson">Person dem Projekt hinzufügen</label>
+	<label index="extconf.disableWizard">Assistent deaktivieren</label>
+	<label index="wizardDisabledInfo">Assistent wurde deaktiviert.</label>
+</labels>

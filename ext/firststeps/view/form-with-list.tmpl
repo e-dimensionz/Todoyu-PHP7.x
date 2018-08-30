@@ -1,0 +1,7 @@
+{$form}
+
+<ul class="list">
+	{foreach $items item}
+		<li id="item-{$item.id}">{$item.label}<span class="remove"></span></li>
+	{/foreach}
+</ul>

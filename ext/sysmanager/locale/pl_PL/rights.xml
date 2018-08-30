@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Ogólne ustawienia</label>
+	<label index="general.extensions">Zarządzanie rozszerzeniami</label>
+	<label index="general.records">Show all records edit view</label>
+	<label index="general.rights">Zarządzanie uprawnieniami</label>
+	<label index="extensions">Rozszerzenia</label>
+	<label index="extensions.info">Informacje o rozszerzeniach</label>
+	<label index="extensions.config">Edytuj konfigurację</label>
+	<label index="extensions.rights">Edytuj uprawnienia</label>
+	<label index="extensions.records">Edytuj rekordy</label>
+	<label index="extensions.uninstall">Odinstaluj rozszerzenia</label>
+	<label index="extensions.install">Zainstaluj rozszerzenia</label>
+	<label index="extensions.download">Pobierz rozszerzenia</label>
+	<label index="extensions.update">Aktualizuj rozszerzenia</label>
+	<label index="roles">Role</label>
+	<label index="roles.edit">Edytuj role</label>
+	<label index="roles.delete">Usuń role</label>
+</labels>

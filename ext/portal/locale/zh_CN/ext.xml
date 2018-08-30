@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">首页</label>
+	<label index="page.title">首页</label>
+	<label index="tab">首页</label>
+	<label index="tab.selection">我的过滤器</label>
+	<label index="tasktree.header.date">日期</label>
+	<label index="tasktree.header.customer">客户</label>
+	<label index="tasktree.header.number">No.</label>
+	<label index="tasktree.header.tasknumber">数字</label>
+	<label index="task.title.deadline">截止日期</label>
+	<label index="task.title.deadline_short">D</label>
+	<label index="task.title.begin">开始</label>
+	<label index="task.title.begin_short">B</label>
+	<label index="task.title.customer">客户</label>
+	<label index="task.title.jump">跳</label>
+	<label index="task.title.tasknumber">任务号</label>
+	<label index="tab.todos">待办事项</label>
+	<label index="tab.feedbacks">反馈</label>
+	<label index="date.start.short">B</label>
+	<label index="selection.noTasksFound">在所选的过滤器中没有找到任务</label>
+	<label index="selection.noProjectsFound">在所选的过滤器中没有找到项目</label>
+	<label index="subMenuEntry.selection">首页 > 选择</label>
+	<label index="subMenuEntry.todos">首页 > 待办事项</label>
+	<label index="subMenuEntry.feedbacks">首页 > 反馈</label>
+	<label index="subMenuEntry.appointments">首页 > 委派</label>
+	<label index="contextmenu.showinproject">在项目中显示</label>
+	<label index="selection.noFiltersetsSelected">没有选择过滤器集合!</label>
+</labels>

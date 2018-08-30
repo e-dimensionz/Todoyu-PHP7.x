@@ -1,0 +1,78 @@
+<div id="{$recordType}-{$idRecord}-assets-list" class="tabBlock overflow assetList">
+	<table id="{$recordType}-{$idRecord}-assettable" class="assetTable" width="100%">
+		<thead>
+			<tr class="assets-table-header">
+				<th class="checkbox checkbox"><input type="checkbox" id="{$recordType}-{$idRecord}-assets-checkallbox" title="{Label assets.ext.alt.selectall}"/></th>
+				<th class="mimetype">&nbsp;</th>
+				<th class="filename">{Label core.file.filename}</th>
+				<th class="parent">&nbsp;</th>
+				<th class="person">{Label core.global.id_person_create}</th>
+				<th class="filesize">&nbsp;</th>
+				<th class="uploaddate">&nbsp;</th>
+				<th class="actions">&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody id="{$recordType}-{$idRecord}-assets-tablebody">
+		{foreach $assets type typeAssets}
+			{foreach $typeAssets key asset assetList}
+				{if $.foreach.assetList.first}
+					<tr class="typeHeadline">
+						<td colspan="8">
+							<h4>{Label assets.ext.type.$type}</h4>
+						</td>
+					</tr>
+				{/if}
+
+				<tr id="{$recordType}-asset-{$asset.id}" class="{cycle values="odd,even"} asset">
+					<td class="checkbox">
+						<input type="checkbox" id="{$recordType}-asset-{$asset.id}-checkbox" value="{$asset.id}" />
+					</td>
+					<td class="mimetype mime{strtoupper $asset.file_ext} {if isAssetGDcompatibleImage($asset.id)}quickInfoAsset{/if}" id="asset-{$asset.id}-mime">
+						<span class="icon"></span>
+					</td>
+					<td class="filename {if isAssetGDcompatibleImage($asset.id)}quickInfoAsset{/if}" id="asset-{$asset.id}-filename">
+						<a href="javascript:void(0)" title="{Label assets.ext.alt.download}">
+							{$asset.file_name}
+						</a>
+					</td>
+					<td class="parent">
+						{if $asset.parenttype == constant(ASSET_PARENTTYPE_TASK) && $recordType !== 'task'}
+							{linkTasks taskNumber($asset.id_parent)}
+						{elseif $asset.parenttype == constant(ASSET_PARENTTYPE_COMMENT)}
+							{linkComments 'c$asset.id_parent'}
+						{/if}
+					</td>
+					<td class="person">
+						{name $asset.id_person_create}
+					</td>
+					<td class="filesize">
+						{fileSize $asset.file_size}
+					</td>
+					<td class="uploaddate">
+						<span title="{Label assets.ext.alt.uploadedby} {name $asset.id_person_create}">{dateFormat $asset.date_create datetime}</span>
+					</td>
+					<td class="actions">
+						{if isAssetDeleteAllowed($asset.id)}
+							<a id="{$recordType}-asset-{$asset.id}-icon-delete" href="javascript:void(0)" title="{Label assets.ext.alt.delete}" class="delete asset-icon-delete">
+								<span class="hidden">{Label assets.ext.alt.delete}</span>
+							</a>
+						{/if}
+						<a id="{$recordType}-asset-{$asset.id}-icon-download" href="javascript:void(0)" title="{Label assets.ext.alt.download}" class="download asset-icon-download">
+							<span class="hidden">{Label assets.ext.alt.download}</span>
+						</a>
+
+						{if isInternal()}
+							<a id="{$recordType}-asset-{$asset.id}-icon-public" href="javascript:void(0)" title="{Label assets.ext.alt.changeVisibility}" class="visibility asset-icon-public {if !$asset.is_public}not{/if}">
+								<span class="hidden">{Label assets.ext.alt.changeVisibility}</span>
+							</a>
+						{/if}
+					</td>
+				</tr>
+			{/foreach}
+		{/foreach}
+		</tbody>
+	</table>
+</div>
+<script type="text/javascript">
+	Todoyu.Ext.assets.List.initList({$idRecord}, '{$recordType}');
+</script>

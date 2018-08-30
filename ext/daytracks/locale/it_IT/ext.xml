@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Rapporto del tempo monitorato</label>
+	<label index="title">Rapporto del tempo monitorato</label>
+	<label index="history.title">Rapporto del tempo monitorato</label>
+	<label index="history.total">Tempo totale monitorato</label>
+	<label index="history.showdetails">Mostra dettagli</label>
+	<label index="history.noTracks">Nessun tempo monitorato in questo periodo</label>
+	<label index="totalToday">Tempo monitorato totale per oggi</label>
+	<label index="daysinmonth">Giorni nel mese</label>
+</labels>

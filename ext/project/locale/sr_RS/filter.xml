@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="project">Пројекат</label>
+	<label index="task.acknowledged">Задатак запажен</label>
+	<label index="task.assignedPerson">Додељен особи</label>
+	<label index="task.assignedRoles">Додељен улози</label>
+	<label index="task.ownerPerson">Власник је особа</label>
+	<label index="task.ownerRoles">Власници су улоге</label>
+	<label index="task.currentPersonIsOwner">Ја сам власник</label>
+	<label index="task.creatorPerson">Творац је корисник</label>
+	<label index="task.creatorRoles">Творци су улоге</label>
+	<label index="task.parentTask">Надрепђен задатак</label>
+	<label index="task.isPublic">Је јавни</label>
+	<label index="task.billingType">Врста наплате</label>
+	<label index="task.title">Наслов</label>
+	<label index="task.fulltext">Цео текст</label>
+	<label index="task.type">Тип</label>
+	<label index="task.activity">Врста посла</label>
+	<label index="task.timemanagement.label">Управа времена</label>
+	<label index="task.deadlinedate">Рок</label>
+	<label index="task.deadlinedateDyn">Рок (динамичан)</label>
+	<label index="task.startdate">Почетни датум</label>
+	<label index="task.startdateDyn">Почетни датум (динамичан)</label>
+	<label index="task.enddate">Завршни датум</label>
+	<label index="task.enddateDyn">Завршни датум (динамичан)</label>
+	<label index="task.editdate">Задње уређено</label>
+	<label index="task.editdateDyn">Задње уређено (динамично)</label>
+	<label index="task.createdate">Креирано</label>
+	<label index="task.createdateDyn">Креирано (динамично)</label>
+	<label index="project.id">ИД Пројекта</label>
+	<label index="project.status">Статус пројекта</label>
+	<label index="project.fulltext">Наслов цео текст</label>
+	<label index="project.title">Наслов пројекта</label>
+	<label index="project.company">муштерије</label>
+	<label index="project.projectrole">Улога пројекта</label>
+	<label index="project.projectleader">Лидер пројекта</label>
+	<label index="project.projectsupervisor">Супервизор пројекта</label>
+	<label index="project.timemanagement.label">Управљање временом</label>
+	<label index="project.date_start">Покретни датум пројекта</label>
+	<label index="project.date_end">Завршни датум пројекта</label>
+	<label index="project.deadline">Рок пројекта</label>
+	<label index="project.createdate">Креирано</label>
+	<label index="project.createdateDyn">Креирано (динамично)</label>
+	<label index="project.editdate">Уређено</label>
+	<label index="project.editdateDyn">Уређено (динамично)</label>
+	<label index="project.taskfilter">Задатак из филтера задатка</label>
+</labels>

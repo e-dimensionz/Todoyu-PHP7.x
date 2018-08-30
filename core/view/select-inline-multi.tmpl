@@ -1,0 +1,12 @@
+{extends core/view/select-inline.tmpl}
+
+{block extra}
+
+<ul id="{$htmlID}-itemlist" class="itemList">
+	{foreach $selectedItems item}
+		<li id="{$item.id}">{$item.label}<span class="remove"></span></li>
+	{/foreach}
+</ul>
+<input type="hidden" id="{$htmlID}-value" name="{$fieldname_multi}" value="{$inputValue}" />
+
+{/block}

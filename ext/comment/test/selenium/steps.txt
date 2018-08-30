@@ -1,0 +1,8 @@
+todoyu selenium testsuite steps: comment extension
+--------------------------------------------------
+
+* task comment
+	add via contextmenu (1st task of todo tab in portal)
+	switch comment public
+	edit existing comment
+	delete comment

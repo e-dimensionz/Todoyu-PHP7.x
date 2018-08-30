@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">Richieste di feedback</label>
+	<label index="unseenFeedbackPerson">Richieste di feedback per persona</label>
+	<label index="unseenFeedbackRoles">Richieste di feedback per ruolo</label>
+	<label index="commentFulltext">Testo completo del commento</label>
+	<label index="commentWrittenPerson">Commento scritto per persona</label>
+	<label index="commentWrittenRoles">Commento scritto per ruolo</label>
+</labels>

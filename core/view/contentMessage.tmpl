@@ -1,0 +1,15 @@
+<div class="contentMessage {$class}">
+	<div class="icon"></div>
+	<div class="text">
+		{if $content}
+			{$content}
+		{else}
+			<ul>
+				{foreach $labels label}
+					<li>{Label $label}</li>
+				{/foreach}
+			</ul>
+		{/if}
+	</div>
+	<div class="clear"></div>
+</div>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kastodoyutrunk.srv05.ch1.snowflake.ch/" />
+<title>contact > search types available?</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">contact > search types available?</td></tr>
+</thead><tbody>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[@id=&quot;todoyusearchheadletquicksearch-button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id=&quot;todoyusearchheadletquicksearch-button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--search headlet's types dropdown available? open it-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[@id=&quot;todoyusearchheadletquicksearch-mode-button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id=&quot;todoyusearchheadletquicksearch-mode-button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--must have options: persons, companies-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@class=&quot;searchmodePerson&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@class=&quot;searchmodeCompany&quot;]</td>
+	<td></td>
+</tr>
+<!--close types menu-->
+<tr>
+	<td>click</td>
+	<td>//a[@id=&quot;todoyusearchheadletquicksearch-button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">通用设置</label>
+	<label index="general.use">使用评论功能</label>
+	<label index="general.requestFeedback">请求返回</label>
+	<label index="general.sendEmail">邮件评论</label>
+	<label index="comment">评论</label>
+	<label index="comment.seeAll">查看所有评论(非公开)</label>
+	<label index="comment.editOwn">编辑拥有的评论</label>
+	<label index="comment.editAll">编辑所有的评论</label>
+	<label index="comment.deleteAll">删除所有的评论</label>
+	<label index="comment.deleteOwn">删除拥有的评论</label>
+	<label index="comment.makePublic">公开评论</label>
+	<label index="requestFeedback">各下列人员请求反馈</label>
+	<label index="requestFeedback.task">任务相关人员</label>
+	<label index="requestFeedback.project">项目相关人员</label>
+	<label index="requestFeedback.internal">所有内部人员</label>
+	<label index="sendEmail">通过邮件发送给</label>
+	<label index="sendEmail.task">任务相关人员</label>
+	<label index="sendEmail.project">项目相关人员</label>
+	<label index="sendEmail.internal">所有内部人员</label>
+</labels>

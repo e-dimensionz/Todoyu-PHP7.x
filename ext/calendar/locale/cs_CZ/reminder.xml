@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">Upozornění</label>
+	<label index="myreminders">Mé upozornění</label>
+	<label index="email">E-mail</label>
+	<label index="popup">Pop-Up</label>
+	<label index="deactivated">Upozornění zrušena</label>
+	<label index="notify.email.deactivated">Upozornění e-mailem zrušena</label>
+	<label index="notify.popup.deactivated">Pop-up upozornění zrušena </label>
+	<label index="notify.email.timeupdated">Naplánování e-mailových upozornění byla změněna</label>
+	<label index="notify.popup.timeupdated">Naplánování pop-up upozornění byla změněna</label>
+	<label index="beforeDateStart">před událostí</label>
+	<label index="atDateStart">Když událost začíná</label>
+	<label index="email.subject">Upozornění na událost</label>
+	<label index="email.title">Automatické upozornění na událost</label>
+	<label index="noReminder">Neupozorňuj mě</label>
+	<label index="cli.infocomment">K automatickému zasílání upozornění k událostem musí být nastaven cron. Instrukce jak nastavit cron:</label>
+</labels>

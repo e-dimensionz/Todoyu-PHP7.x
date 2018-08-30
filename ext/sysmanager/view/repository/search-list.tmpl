@@ -1,0 +1,66 @@
+<div class="resultinfo">
+	{if $numResults == 0}
+		{if $query == ''}
+			{Label sysmanager.repository.noNewExtensionsFound}
+		{else}
+			{Label sysmanager.repository.noExtensionsFoundForQuery}: <strong>{htmlencode $query}</strong>
+		{/if}
+	{else}
+		{LabelFormat sysmanager.repository.extensionsFound array($numResults)}: <strong>{htmlencode $query}</strong>
+	{/if}
+</div>
+
+{foreach $extensions extension}
+	<div class="extension" id="repository-search-ext-{$extension.ext_key}">
+
+		<div class="main">
+			<h5>
+				<img src="{$extension.icon}" border="0" />
+				<div class="title">{$extension.title}</div>
+				<div class="author">{Label sysmanager.repository.by} {$extension.author.name}</div>
+
+			</h5>
+			<div class="description">{$extension.description}</div>
+			{if $extension.version.dependencies}
+				<div class="warning dependency">
+					<p>{Label sysmanager.repository.error.unresolvedDependencies}</p>
+					<ul>
+						{foreach $extension.version.dependencies dependency}
+							<li id="{$extension.ext_key}-dependency-{$dependency.ext_key}">{$dependency.title_short} {$dependency.version} ({$dependency.ext_key})</li>
+						{/foreach}
+					</ul>
+				</div>
+			{/if}
+			{if $extension.version.conflicts}
+				<div class="warning conflicts">
+					<p>{Label sysmanager.repository.error.unresolvedConflicts}</p>
+					<ul>
+						{foreach $extension.version.conflicts conflict}
+							<li id="{$extension.ext_key}-conflict-{$conflict.ext_key}">{$conflict.title_short} ({$conflict.ext_key})</li>
+						{/foreach}
+					</ul>
+				</div>
+			{/if}
+		</div>
+
+		<div class="right">
+			{*<div class="rating">{for i 1 $extension.rating}* {/for}</div>*}
+			<div class="version">{Label sysmanager.extension.version}: {$extension.version.version}</div>
+			<div class="state">{Label sysmanager.extension.state}: {ExtensionStatusIcon $extension.version.state}</div>
+			<div class="costs">{if $extension.commercial}{Label sysmanager.repository.extension.costs.commercial}{else}{Label sysmanager.repository.extension.costs.free}{/if}</div>
+			{if ! $extension.commercial}
+				<div class="downloads">{$extension.downloads} {Label sysmanager.repository.extension.downloads}</div>
+			{/if}
+		</div>
+
+		<div class="bottom">
+				{$hasDependencies = sizeof($extension.version.dependencies)}
+				{$hasConflicts = sizeof($extension.version.conflicts)}
+				{$preventInstall = $hasDependencies+$hasConflicts}
+				{Button class="install" label="sysmanager.repository.extension.install" onclick="Todoyu.Ext.sysmanager.Repository.Search.showExtensionInstallDialog('$extension.ext_key')" disabled=$preventInstall }
+				{Button class="info" label="sysmanager.repository.moreInfo" onclick="Todoyu.Ext.sysmanager.Repository.showExtensionInTER('$extension.ter_link')"}
+		</div>
+
+		<div class="clear"></div>
+	</div>
+{/foreach}

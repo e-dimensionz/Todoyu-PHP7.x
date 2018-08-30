@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Учёт времени</label>
+	<label index="timetrackedPerson">Персона учитывала время</label>
+	<label index="timetrackedRoles">Роль учитывала время</label>
+</labels>

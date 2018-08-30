@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Allgemeine Einstellungen</label>
+	<label index="general.use">Benutze Kommentare</label>
+	<label index="general.requestFeedback">Feedback verlangen</label>
+	<label index="general.sendEmail">Kommentare als Email versenden</label>
+	<label index="comment">Kommentar</label>
+	<label index="comment.seeAll">Sieht alle Kommentare</label>
+	<label index="comment.editOwn">Kann eigene Kommentare bearbeiten</label>
+	<label index="comment.editAll">Kann alle Kommentare bearbeiten</label>
+	<label index="comment.deleteAll">Alle Kommentare löschen</label>
+	<label index="comment.deleteOwn">Eigene Kommentare löschen</label>
+	<label index="comment.makePublic">Kommentare öffentlich schalten</label>
+	<label index="requestFeedback">Feedback verlangen von</label>
+	<label index="requestFeedback.task">Personen in der Aufgabe</label>
+	<label index="requestFeedback.project">Personen im Projekt</label>
+	<label index="requestFeedback.internal">Personen der internen Firma</label>
+	<label index="sendEmail">Als Email senden an</label>
+	<label index="sendEmail.task">Personen in der Aufgabe</label>
+	<label index="sendEmail.project">Personen im Projekt</label>
+	<label index="sendEmail.internal">Personen der internen Firma</label>
+	<label index="overrideDummy">Kommentare von Dummy-Usern bearbeiten</label>
+	<label index="overrideDummy.acknowledgeFeedback">Feedback Kommentar als gelesen markieren</label>
+</labels>

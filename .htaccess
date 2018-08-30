@@ -1,0 +1,76 @@
+# set expire headers by file type:
+<IfModule mod_expires.c>
+ExpiresActive on
+ExpiresDefault A60
+ExpiresByType image/gif "access plus 1 week"
+ExpiresByType image/jpeg "access plus 1 week"
+ExpiresByType image/png "access plus 1 week"
+ExpiresByType image/x-icon "access plus 1 week"
+
+ExpiresByType text/css "access plus 1 week"
+
+# NOTE: deactivate the js expiry settings (next to lines) temporary when applying js-changes!
+ExpiresByType text/javascript "access plus 1 week"
+ExpiresByType application/x-javascript "access plus 1 week"
+</IfModule>
+
+# dont add ETag statenent into response of file based documents:
+FileETag none
+
+<IfModule mod_deflate.c>
+# compress text/ html/ xml/ javascript / json output:
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/json
+# Header append Vary Accept-Encoding
+</IfModule>
+
+DirectoryIndex index.html index.php
+
+# Enable mod rewrite
+RewriteEngine on
+
+# Disallow any .svn directory browsing
+RedirectMatch 403 /\\.svn(/|$)
+
+# Disallow any log file viewing from web
+RedirectMatch 403 (.*)\.log$
+
+# Disallow any .phpsh viewing from web
+RedirectMatch 403 (.*)\.phpsh$
+
+# Disallow any file download from web
+RedirectMatch 403 /files/*
+
+# Disallow any backup file download from web
+RedirectMatch 403 /backup/(.*)
+
+# Disallow any log file download from web
+RedirectMatch 403 /log/(.*)
+
+# Disallow file download from cache
+RedirectMatch 403 /cache/language/(.*)
+RedirectMatch 403 /cache/tmpl/(.*)
+
+# Disallow any direct file access (in extensions)
+RedirectMatch 403 /ext/(.*)/config/(.*)
+RedirectMatch 403 /ext/(.*)/controller/(.*)
+RedirectMatch 403 /ext/(.*)/model/(.*)
+RedirectMatch 403 /ext/(.*)/dwoo/(.*)
+RedirectMatch 403 /ext/(.*)/locale/(.*)
+RedirectMatch 403 /ext/(.*)/test/(.*)
+RedirectMatch 403 /ext/(.*)/view/(.*)
+RedirectMatch 403 /ext/(.*)/cli/(.*)
+
+
+# Force php5 (instead 4)
+#AddType application/x-httpd-php5 .php
+
+
+## Problems running todoyu. Comment AddType (with a #) and try one of this alternatives:
+# AddHandler application/x-httpd-php .php
+
+# AddHandler x-mapp-php5 .php
+# AddHandler x-httpd-php5 .php
+# AddHandler php-fastcgi .php
+# AddHandler php-cgi2 .php
+# AddHandler php5-cgi .php
+# AddHandler php-fastcgi5 .php

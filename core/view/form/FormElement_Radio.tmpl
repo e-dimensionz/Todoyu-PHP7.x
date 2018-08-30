@@ -1,0 +1,8 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+	{foreach $options option}
+		<input class="{$inputClass} {$class}" type="radio" name="{$htmlName}" id="{$htmlId}-{$option.value}" value="{htmlencode $option.value}"{if $option.value == $value} checked="checked"{/if}{if $option.disabled} disabled="disabled"{/if} {$extraAttributes} />
+		<label class="{$class}" for="{$htmlId}-{$option.value}">{Label $option.label}</label>
+	{/foreach}
+{/block}

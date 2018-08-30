@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="toggle.multiselect.title">Cambia modalità di selezione singola/multipla</label>
+	<label index="title">Staff</label>
+	<label index="selectAllStaff">Seleziona tutto lo staff</label>
+	<label index="byFunction">Per tipo di lavoro:</label>
+	<label index="noFunction">Nessun tipo di lavoro</label>
+</labels>

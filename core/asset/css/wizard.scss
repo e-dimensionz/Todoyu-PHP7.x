@@ -1,0 +1,109 @@
+@import "../../config/theme.scss";
+
+
+
+.wizard {
+	text-align:left;
+	font-size:12px;
+
+	.navi,
+	.content,
+	.help {
+		float:left;
+		clear:none; }
+
+	.navi {
+		width:190px;
+		background-color:$colorCorporate00;
+
+		ol {
+		margin-left:25px;
+		margin-top:20px;
+		text-align:left;
+
+			li {
+				padding:5px;
+				color:$colorNeutral05;
+
+				&.active {
+					background-color:$white;
+					color:$colorTextGeneral;
+					font-weight:bold; }
+
+				.done {
+					cursor:pointer;
+					color:$colorTextGeneral; }
+			}
+		}
+	}
+
+	.content {
+		padding:20px;
+		width:420px;
+		height:460px;
+		overflow:auto;
+		background-color:$white;
+
+		h1.title {
+			font-size:18px;
+			font-weight:bold;
+			margin-bottom:20px; }
+
+		p.info {
+			margin:10px 0;
+			padding-bottom:10px; }
+	}
+
+	.help {
+		width:209px;
+		margin-top:60px;
+		padding-left:10px; }
+
+	.buttons {
+		float:left;
+		clear:both;
+		width:100%;
+		background-color:$colorCorporate00;
+		padding:10px 0;
+
+		> div {
+			float:left;
+			clear:none;
+			display:inline-block; }
+
+		div.close {
+			width:170px;
+			padding-left:20px;
+			text-align:left;
+
+			button.close .icon {
+				background:url(../img/icons.png) no-repeat 0 -357px; }
+		}
+
+		.main {
+			width:460px;
+
+			button {
+				clear:none;
+
+				.icon {
+					background-repeat:no-repeat;
+					background-image:url(../img/icons.png); }
+			}
+
+			.back {
+				float:left;
+
+				.icon {
+					background-position:0 -1188px; }
+			}
+
+			.next {
+				float:right;
+
+				.icon {
+					background-position:0 -1218px; }
+			}
+		}
+	}
+}

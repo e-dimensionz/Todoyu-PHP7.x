@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Raccourci vers la tâche</label>
+	<label index="title">Raccourci vers la tâche</label>
+	<label index="info.nobookmarks">Aucun raccourcis pour le moment</label>
+	<label index="contextmenu.removebookmark">Raccourcis -</label>
+	<label index="contextmenu.addbookmark">Raccourcis +</label>
+</labels>

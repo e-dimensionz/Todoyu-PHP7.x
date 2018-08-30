@@ -1,0 +1,24 @@
+{extends main.tmpl}
+
+{block name="box"}
+	<table width="500" border="0" cellspacing="0" cellpadding="3" style="margin-top:18px;">
+		<tr>
+			<td width="109">{Label install.installer.dbconnection.server}</td>
+			<td width="379">
+				<input name="server" type="text" id="server" value="{$postData.server|default:'localhost'}" />
+			</td>
+		</tr>
+		<tr>
+			<td><label for="username">{Label install.installer.dbconnection.username}</label></td>
+			<td>
+				<input type="text" name="username" id="username" value="{$postData.username|default:'root'}" />
+			</td>
+		</tr>
+		<tr>
+			<td id="passwordLabel"><label for="password">{Label install.installer.dbconnection.password}</label></td>
+			<td>
+				<input type="password" name="password" id="password" value="{$fields.password}" />
+			</td>
+		</tr>
+	</table>
+{/block}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般</label>
+	<label index="general.use">ブックマークの使用</label>
+	<label index="task">タスクブックマーク</label>
+	<label index="task.add">タスクをブックマークする</label>
+	<label index="task.remove">ブックマークを削除する</label>
+	<label index="panelwidgets">パネルウィジェット</label>
+</labels>

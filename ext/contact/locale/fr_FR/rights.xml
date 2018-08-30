@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Paramètres généraux</label>
+	<label index="general.use">Utiliser les fonctionnalités du module</label>
+	<label index="general.area">Utiliser la section Contacts</label>
+	<label index="person">Personne</label>
+	<label index="person.add">Ajouter des personnes</label>
+	<label index="person.editAndDeleteAll">Modifier et supprimer des personnes</label>
+	<label index="person.enableLogin">Créer des accès de connexion pour des personnes</label>
+	<label index="company">Sociétés</label>
+	<label index="company.add">Ajouter des sociétés</label>
+	<label index="company.editAndDeleteAll">Modifier et supprimer des sociétés</label>
+	<label index="panelwidgets">Panneau de widgets</label>
+	<label index="panelwidgets.staffSelector">Sélecteur d'équipe</label>
+</labels>

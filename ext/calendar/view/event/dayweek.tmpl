@@ -1,0 +1,33 @@
+<div id="event-{$source}-{$id}" class="{$classNames}" style="{$positionStyles}">
+	<div class="head enumColBG{$color.id}">
+		<div class="typeIcon"></div>
+
+		{if $isPrivate}
+			{if $isAssigned}
+				<div class="private"></div>
+			{else}
+				<div class="privateEvent"></div>
+			{/if}
+		{/if}
+
+		<div class="title">
+			{htmlencode $title}
+
+			{if $view == 'day' && count($persons) == 1}
+				<div class="assignedPersons">
+					{$person = current($persons)}
+					({$person.shortname})
+				</div>
+			{/if}
+		</div>
+	</div>
+
+	<div class="content">
+		{if $description && (!$isPrivate || isPersonID($id_person))}
+			<div class="description">
+				{cleanHtml $description}
+			</div>
+		{/if}
+	</div>
+
+</div>

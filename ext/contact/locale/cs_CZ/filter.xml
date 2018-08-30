@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="company.label">Společnosti</label>
+	<label index="person.label">Osoby</label>
+	<label index="fulltext">Plné znění</label>
+	<label index="contactinformation">Kontaktní informace</label>
+	<label index="person.name">Jméno / Přijmení / Přezdívka</label>
+	<label index="person.company">Zaměstnanec</label>
+	<label index="person.salutation">Oslovení</label>
+	<label index="person.system_role">Role uživatele</label>
+	<label index="person.company.isInternal">Interní zaměstnanec</label>
+	<label index="person.isActive">S přihlášením do todoyu</label>
+	<label index="company.name">Jméno společnosti</label>
+	<label index="company.isInternal">Interní společnost</label>
+	<label index="company.dateEnter">Datum založení v todoyu</label>
+	<label index="company.person">Zaměstnanec</label>
+	<label index="addresses.label">Adresy</label>
+	<label index="address.country">Země</label>
+	<label index="address.zip">PSČ</label>
+	<label index="address.city">Město</label>
+	<label index="address.street">Ulice</label>
+</labels>

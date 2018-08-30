@@ -1,0 +1,36 @@
+{extends main.tmpl}
+
+{block name="box"}
+	<div class="">
+		<div class="sqlQuery">
+			<strong>{Label install.installer.importtables.coretables}:</strong><br />
+			<ul>
+			{foreach $coreStructure tableName tableStructure}
+				<li>
+					<strong>{$tableName}:</strong>
+					<ul>
+					{foreach $tableStructure.columns columnName columnStructure}
+						<li>{$columnStructure.field}, {$columnStructure.type}</li>
+					{/foreach}
+					</ul>
+				</li>
+			{/foreach}
+			</ul>
+			<br />
+			<strong>{Label install.installer.importtables.exttables}:</strong><br />
+			<ul>
+			{foreach $extStructure tableName tableStructure}
+				<li>
+					<strong>{$tableName}:</strong>
+					<ul>
+					{foreach $tableStructure.columns columnName columnStructure}
+						<li>{$columnStructure.field}, {$columnStructure.type}</li>
+					{/foreach}
+					</ul>
+				</li>
+				{/foreach}
+			</ul>
+		</div>
+	</div>
+	<input type="hidden" name="import" value="1" />
+{/block}

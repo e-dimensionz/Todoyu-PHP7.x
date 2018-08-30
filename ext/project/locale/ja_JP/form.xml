@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.task.basics">基本情報 [完了]</label>
+	<label index="legend.task.attributes">属性 [完了]</label>
+	<label index="legend.container.basics">基本情報 [完了]</label>
+	<label index="legend.container.attributes">属性 [完了]</label>
+	<label index="legend.project.basics">基本情報 [完了]</label>
+	<label index="legend.project.taskpreset">タスクのプリセット設定 [完了]</label>
+	<label index="legend.project.members">プロジェクトのメンバー [完了]</label>
+	<label index="legend.quicktask.basics">タスクの基本情報 [完了]</label>
+	<label index="legend.project.approvalroles">送り状の承認ロール [完了]</label>
+	<label index="legend.admin.basics">タスクのデフォルト設定 [完了]</label>
+	<label index="legend.admin.quicktask">クイックタスクのデフォルトの動作 [完了]</label>
+	<label index="legend.admin.fallbacks">限られた権限の個人に関する代替デフォルト [完了]</label>
+	<label index="legend.admin.projectrole.record.general">プロジェクトのロール [完了]</label>
+	<label index="legend.admin.activity.record.general">活動タイプ [完了]</label>
+	<label index="legend.admin.taskpreset.record.general">タスクのデフォルト設定 [完了]</label>
+	<label index="legend.admin.taskpreset.record.quicktask">クイックタスクのためのデフォルトの動作 [完了]</label>
+	<label index="legend.admin.taskpreset.record.fallbacks">限られた権限の個人に関する代替デフォルト [完了]</label>
+</labels>

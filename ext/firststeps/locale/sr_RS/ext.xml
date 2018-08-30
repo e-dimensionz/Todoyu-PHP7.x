@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Први кораци</label>
+	<label index="wizard.start.title">Ваши први кораци у todoyu</label>
+	<label index="wizard.start.info">Овај водић води вас кроз прве кораке у todoyu. Цела процедура ће заузети само &lt;strong&gt;a few minutes&lt;/strong&gt; вашег вредног времена. После ће те имати спремну инсталацију за рад. &lt;br /&gt;&lt;br /&gt;Молимо вас стисните "настави" за покрет.</label>
+	<label index="wizard.start.help">&amp;nbsp;</label>
+	<label index="wizard.start.dontUseWizard">Нећу да користим водић. Немој ми више нудити овај поп-уп.</label>
+	<label index="wizard.start.disableAssistant">Онемогући асистент</label>
+	<label index="wizard.start.reactivateInAdmin">Можете да поново омогућите овај водић у админ секцији</label>
+	<label index="wizard.jobtypes.title">Врсте послова</label>
+	<label index="wizard.jobtypes.info">Молимо вас унесите врсте послова које ви обично користите у вашем предузећу и у вашем пројекту. Можете да их измените у свако доба у секцији администрације</label>
+	<label index="wizard.jobtypes.help">Врсте послова могу бити :&lt;br /&gt;CEO, CFO, менаџер, Тим лидер, Секретарица, Трговац </label>
+	<label index="wizard.projectroles.title">Улоге пројект-а</label>
+	<label index="wizard.projectroles.info">Молимо вас унеците улоге пројеке које ви обично користите у вашим пројектима.</label>
+	<label index="wizard.projectroles.help">Да вам дајемо идеју шта би то могло да буде: У тим-у todoyu-а ми имамо следеће улоге: &lt;br /&gt;Пројект менаџер, Девелопер, Фронтенд инжињер, продукт менаџер, одговорни за маркетинг, комунити менаџер, тренер</label>
+	<label index="wizard.activities.title">Активности</label>
+	<label index="wizard.activities.info">Активности дефинишу врсту посла које ви одреџујете за ваш тим.</label>
+	<label index="wizard.activities.help">Активности могу бити консалтација, програмирање, супорт, интерни рад ...</label>
+	<label index="wizard.userroles.title">Групе корисника</label>
+	<label index="wizard.userroles.info">Групе корисника су корисне за административне ствари. Можете да их доделите вашим корисним групама касније у администривном делу.</label>
+	<label index="wizard.userroles.help">Довољно често групе корисника су везани са врстом послова које сте ви унапред унели. Али је на вама да дефинишете колико групе ви желите.</label>
+	<label index="wizard.company.title">Ваше предузеће</label>
+	<label index="wizard.company.info">Молимо вас унесите основне информације за ваше предузеће. Можете то да измените у свако доба у секцији контакта</label>
+	<label index="wizard.company.help">&amp;nbsp;</label>
+	<label index="wizard.employees.title">Радници</label>
+	<label index="wizard.employees.info">Сад рећите todoyu ко су чланови вашег тим-а. Дефинишите основне личне податке - корисници могу да измене своје податке у свако доба.</label>
+	<label index="wizard.employees.help">&amp;nbsp;</label>
+	<label index="wizard.customers.title">Купци</label>
+	<label index="wizard.customers.info">Надамо се да имате веч неколико купаца до сад. Одлично! Молимо вас унесите основне информације.</label>
+	<label index="wizard.customers.help">&amp;nbsp;</label>
+	<label index="wizard.project.title">Први Прјекат</label>
+	<label index="wizard.project.info">Коначно, почините са вашим првим пројектом у "todoyu". Честитамо!</label>
+	<label index="wizard.project.help">&amp;nbsp;</label>
+	<label index="wizard.finish.title">То је то!</label>
+	<label index="wizard.finish.info">Ви сте сада &lt;strong&gt;successfully&lt;/strong&gt; унели све потребне информације за рад са todoyu.&lt;br /&gt;&lt;br /&gt; Enjoy it!</label>
+	<label index="wizard.finish.help">&amp;nbsp;</label>
+	<label index="wizard.finish.closeWizard">Затвори водић</label>
+	<label index="employee.addCompany">Додај предузеће</label>
+	<label index="employee.addEmployee">Додај радника</label>
+	<label index="employee.addPerson">Додај особу пројекту</label>
+	<label index="extconf.disableWizard">Искључите водић</label>
+	<label index="wizardDisabledInfo">Водић је сада искључен</label>
+</labels>

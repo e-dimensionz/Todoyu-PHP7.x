@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+		   elementFormDefault="qualified"
+		   targetNamespace="http://www.todoyu.com/schema/rights"
+		   xmlns="http://www.todoyu.com/schema/rights"
+		   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="rights" type="rightsType"/>
+	<xs:complexType name="rightsType">
+		<xs:sequence>
+			<xs:element type="sectionType" name="section" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="sectionType">
+		<xs:sequence>
+			<xs:element type="rightType" name="right" maxOccurs="unbounded" minOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute type="xs:string" name="name" use="required"/>
+		<xs:attribute type="xs:string" name="require" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="rightType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="name" use="required"/>
+				<xs:attribute type="xs:string" name="require" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+</xs:schema>

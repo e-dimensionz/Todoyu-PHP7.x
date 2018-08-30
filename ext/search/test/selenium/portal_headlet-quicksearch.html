@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > headlet: quicksearch</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > headlet: quicksearch</td></tr>
+</thead><tbody>
+<!------ portal > headlet: quicksearch-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyusearchheadletquicksearch-button</td>
+	<td></td>
+</tr>
+<!--search form with elements available?-->
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=li#todoyusearchheadletquicksearch.headlet ul#todoyusearchheadletquicksearch-content.content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li#todoyusearchheadletquicksearch.headlet a#todoyusearchheadletquicksearch-button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=li#todoyusearchheadletquicksearch.headlet ul#todoyusearchheadletquicksearch-content.content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#todoyusearchheadletquicksearch.headlet ul#todoyusearchheadletquicksearch-content.content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyusearchheadletquicksearch-query</td>
+	<td></td>
+</tr>
+<!--search engines menu available?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyusearchheadletquicksearch-mode-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a#todoyusearchheadletquicksearch-mode-button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#todoyusearchheadletquicksearch-modes ul</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=div#todoyusearchheadletquicksearch-modes ul</td>
+	<td></td>
+</tr>
+<!--all modes present?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Search All</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Find Tasks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Find Projects</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Find Events</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Find Comments</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Find Persons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Find Companies</td>
+	<td></td>
+</tr>
+<!--collapse modes menu-->
+<tr>
+	<td>click</td>
+	<td>css=a#todoyusearchheadletquicksearch-mode-button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--type "demo", assert suggestions list shown-->
+<tr>
+	<td>type</td>
+	<td>css=input#todoyusearchheadletquicksearch-query.query</td>
+	<td>dem</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>css=input#todoyusearchheadletquicksearch-query.query</td>
+	<td>o</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>css=input#todoyusearchheadletquicksearch-query.query</td>
+	<td>o</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul.quicksearch-suggest li ul li a</td>
+	<td></td>
+</tr>
+<!--click first found task to open in project area and return to portal-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#todoyusearchheadletquicksearch-suggest.searchSuggest ul.quicksearch-suggest li ul li a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTitle</td>
+	<td>varPageTitle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertExpression</td>
+	<td>javascript{storedVars['varPageTitle'].substr(0,&nbsp;&nbsp;storedVars['varPageTitle'].indexOf(&quot;-&quot;) - 1);}</td>
+	<td>Projects</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div#header div.inner div#navi-main ul#navi-main-list.navilist li.itemPortal a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Portal - todoyu</td>
+	<td></td>
+</tr>
+<!--quicksearch form still opened?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#todoyusearchheadletquicksearch-form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=#todoyusearchheadletquicksearch-form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#todoyusearchheadletquicksearch-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+</tbody></table>
+</body>
+</html>

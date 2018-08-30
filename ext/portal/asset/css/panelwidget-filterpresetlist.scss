@@ -1,0 +1,27 @@
+#panelwidget-filterpresetlist {
+	button.manageFilters .icon {
+		background:url(../../../search/asset/img/icons.png) no-repeat 3px -476px;
+		width:28px;
+	}
+
+	h2 {
+		font-size:11px;
+		padding:8px 0 2px 0;
+	}
+
+	select {
+		option {
+			cursor:pointer;
+			
+			.separator {
+				margin-top: -1px;
+				cursor:default;
+				background:#d6d9db url(../img/panelwidget-filterpresetlist.png) repeat-x 5px 0 !important;
+				border-top:0 !important;
+				border-bottom:0 !important;
+				text-transform:uppercase;
+			}
+		}
+	}
+
+}

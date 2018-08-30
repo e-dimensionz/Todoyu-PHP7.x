@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Projects</label>
+	<label index="search">Search</label>
+	<label index="list.empty">No projects found (for this filter selection)</label>
+</labels>

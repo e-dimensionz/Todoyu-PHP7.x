@@ -1,0 +1,12 @@
+<ul class="{$listClass} autoextend">
+	{foreach $items item}
+		<li>
+			<input type="text" name="data[{$fieldName}][]" value="{$item}"/>
+			<span class="remove"></span>
+		</li>
+	{/foreach}
+	<li>
+		<input type="text" name="data[{$fieldName}][]" value=""/>
+		<span class="remove" style="display:none"></span>
+	</li>
+</ul>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Extend company address part of form (ext/contact/config/form/company.xml) with holidayset selector -->
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<fieldsets>
+		<fieldset name="addressholidayset">
+			<legend>Holidayset of address</legend>
+			<elements>
+				<field type="select" name="id_holidayset">
+					<label>calendar.ext.holidayset</label>
+					<source type="function">
+						<function>TodoyuCalendarHolidayViewHelper::getHolidaysetOptions</function>
+						<lazyInit />
+					</source>
+				</field>
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

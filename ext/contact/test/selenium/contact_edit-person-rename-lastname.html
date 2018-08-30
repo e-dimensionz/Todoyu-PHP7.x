@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>contact > edit person (change lastname)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">contact > edit person (change lastname)</td></tr>
+</thead><tbody>
+<!------ contact > edit person (change lastname)-->
+<!--ensure persons tab to be active-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id='contact-tab-person-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p[@id='contact-tab-person-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--open edit form: richard wagner-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[@onclick='Todoyu.Ext.contact.Person.edit(17)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@onclick='Todoyu.Ext.contact.Person.edit(17)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--edit form opened, elements there?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#contact-form-content form#person-17-form.fForm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='formElement-person-17-field-salutation-inputbox']/label[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-lastname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-firstname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-shortname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-birthday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='formElement-person-17-field-preview-inputbox']/span/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>add-record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@id='add-record' and @type='button' and @onclick=&quot;Todoyu.Form.addRecord(17, 'person', 'address', 'contact', 'person');this.blur()&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@id='add-record' and @type='button' and @onclick=&quot;Todoyu.Form.addRecord(17, 'person', 'company', 'contact', 'person');this.blur()&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>expand-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-is-active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-17-field-cancel</td>
+	<td></td>
+</tr>
+<!--remove last name, try save (should fail)-->
+<tr>
+	<td>focus</td>
+	<td>person-17-field-lastname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>person-17-field-lastname</td>
+	<td>\46</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>person-17-field-lastname</td>
+	<td>\46</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>person-17-field-lastname</td>
+	<td>\46</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>person-17-field-lastname</td>
+	<td>\46</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>person-17-field-lastname</td>
+	<td>\46</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>person-17-field-lastname</td>
+	<td>\46</td>
+</tr>
+<!--lastname now empty?-->
+<tr>
+	<td>assertValue</td>
+	<td>person-17-field-lastname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>person-17-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>This is a required field</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#formElement-person-17-field-lastname-labelbox.error</td>
+	<td></td>
+</tr>
+<!--enter new lastname for wager, save, check-->
+<tr>
+	<td>type</td>
+	<td>person-17-field-lastname</td>
+	<td>formerlyknownaswagner</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>person-17-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>formerlyknowna</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Bach</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Dietrich</td>
+	<td></td>
+</tr>
+<!--rename him back-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[@onclick='Todoyu.Ext.contact.Person.edit(17)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@onclick='Todoyu.Ext.contact.Person.edit(17)']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>person-17-field-lastname</td>
+	<td>Wagner</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>person-17-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Wagner</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

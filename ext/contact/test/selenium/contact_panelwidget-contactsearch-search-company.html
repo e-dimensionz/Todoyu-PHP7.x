@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>contact > panelwidget: contactsearch - search persons</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">contact > panelwidget: contactsearch - search persons</td></tr>
+</thead><tbody>
+<!------ contact > panelwidget: contactsearch - search for persons-->
+<!--activate companies tab-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id='contact-tab-company-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p[@id='contact-tab-company-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--check some companies to be there-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Tec Holding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ACME</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Eisbergen</td>
+	<td></td>
+</tr>
+<!--search via widget-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>panelwidget-contactsearch-sword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>panelwidget-contactsearch-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>panelwidget-contactsearch-sword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>panelwidget-contactsearch-sword</td>
+	<td>an</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>panelwidget-contactsearch-sword</td>
+	<td>an</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>panelwidget-contactsearch-clear</td>
+	<td></td>
+</tr>
+<!--check some companies to be there and some not-->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Tec Holding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>ACME</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>snowman</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Transmetric</td>
+	<td></td>
+</tr>
+<!--empty search word-->
+<tr>
+	<td>assertVisible</td>
+	<td>panelwidget-contactsearch-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>panelwidget-contactsearch-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>panelwidget-contactsearch-clear</td>
+	<td></td>
+</tr>
+<!--check some companies to be there-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Tec Holding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ACME</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Eisbergen</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

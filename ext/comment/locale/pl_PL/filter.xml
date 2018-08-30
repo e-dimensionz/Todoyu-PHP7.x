@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">Feedback Requests</label>
+	<label index="unseenFeedbackPerson">Person's feedback still due</label>
+	<label index="unseenFeedbackRoles">Due feedback requested by roles</label>
+	<label index="commentFulltext">Comment Full Text</label>
+	<label index="commentWrittenPerson">Comment written by person</label>
+	<label index="commentWrittenRoles">Comment written by roles</label>
+	<label index="commentCreatedate">Comment Creation Date</label>
+</labels>

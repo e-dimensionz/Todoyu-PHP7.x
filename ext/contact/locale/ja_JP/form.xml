@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.person.basics">個人の基本情報 [完了]</label>
+	<label index="legend.person.picture">プロファイル画像 [完了]</label>
+	<label index="legend.person.furtherInformation">個人に関する詳しい情報 [完了]</label>
+	<label index="legend.person.login">ユーザアカウント [完了]</label>
+	<label index="legend.company.basics">主な企業情報 [完了]</label>
+	<label index="legend.company.logo">企業ロゴ [完了]</label>
+	<label index="legend.admin.jobtype.record">職種 [完了]</label>
+	<label index="legend.admin.contactinfotype.record">問い合わせ先の種別 [完了]</label>
+</labels>

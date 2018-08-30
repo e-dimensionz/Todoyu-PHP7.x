@@ -1,0 +1,78 @@
+todoyu timetracking changelog
+
+timetracking 1.3.1 - 2013-12-31
+	* Added: Separate right for Tasks currently being tracked
+	* Added: (Headers of) Tasks currently being tracked by other users are hilighted light-blue
+	* Added: Filter for projects with tasks that are currently begin tracked
+	* Added: Filter for tasks being currently tracked
+	* Added: Filter for overbooked tasks (in percent)
+	* Added: Filter for overbooked tasks (absolute in minutes)
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+	* Bugfix: Fixed quicktask-handling (task_done flag was ignored / wrongly overwritten)
+	* Bugfix: Fixed filter for overbooked tasks. Calculation is now over the summed tracked workload
+	* Bugfix: Fixed wrong check
+	* Bugfix: IsBeingTracked filter crashed if there wasn't no current track
+
+timetracking 1.3.0 - 2013-03-27
+	* Added: Icon for overtime tasks
+	* Added: UnittestRunner
+	* Added: TodoyuTimetrackingTask->isTrackable() and ->hasTrackableStatus()
+	* Added: Make a hook voting before changing the task status on tracking start
+	* Added: Hook timetracking.tracking.toggleStart to allow hooking for tracking start toggle
+	* Changed: Replaced explicit truncating of text with css & css clean-up
+	* Changed: Change overtime rule in task details (added tolerance)
+	* Removed: Maximum boundaries for tolerance
+
+timetracking 1.2.0 - 2012-05-03
+	* Added: Person filter widgets: has tracked time in project, tracked time for customer
+	* Added: Show info about chargeable workload in track in the tracks list
+	* Added: Starting first tracking of task of person in current day immediately stores a 0:00 track, visible for other persons as well (was previously stored not until stopping the tracking)
+	* Changed: Made headlet content wider, allowing unwrapped display up to 6 digits of time percent
+	* Changed: After jumping to task from headlet the headlet popout is now closed
+	* Changed: Show chargeable time in tracking list
+	* Changed: made also status "rejected" and "waiting" trackable
+	* Changed: on starting timetracking, task status is always updated to "in progress"
+
+timetracking 1.1.3 - 2011-12-13
+	* Bugfix: Sub tasks were marked as running too
+	* Added: TimetrackingProject (+Manager)
+	* Added: TimetrackingTaskPreset (+Manager)
+	* Added: ext_timetracking_workload_done to task preset
+	* Changed: Used task type differentiated task tabs registration, incremented project dependency to 1.3.0
+	* Changed: Renamed TodoyuTimetrackingSysmanagerRenderer => TodoyuTimetrackingSysmanagerManager
+	* Changed: Task preset DB rename of start_tracking => ext_timetracking_start_tracking
+
+timetracking 1.1.2 - 2011-11-17
+	* Changed: Timetracking does not add anymore contextmenu items to deleted tasks
+	* Changed: Don't hide open timetracking headlet when tracking is active
+	* Translation: Polish
+
+timetracking 1.1.1 - 2011-09-15
+	* Bugfix: Spelling mistake in rights (track - editOwn, editOwnChargeable)
+	* Added: Hooks: timetracking.start, timetracking.stop
+	* Changed: Timetracking icon (changed from alarm clock to stopwatch)
+	* Changed: Add field for task presets directly to the fieldset quicktaskSpecific
+	* Changed: Adapted registered hooks due rename in project extension
+
+timetracking 1.1.0 - 2011-06-17
+	* Feature: Extended task CSV export with tracked time sum
+	* Feature: Extended task CSV export with chargeable time
+	* Feature: Change status color of task in timetracking headlet on status change
+	* Feature: Rights Cleanup - Fixed missing init methods in controller
+	* Feature: Added rights checks
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
+
+timetracking 1.0.6
+	* Bugfix: Quicktask creation option "start timetracking" was shown to persons w/o timetracking access
+	* Bugfix: Timetracking task filter joins were not separated from where, query used 100% of MySQL resources
+	* Bugfix: Last tracked tasks in timetracking headlet
+	* Bugfix: HTML encoding in timetracking headlet
+	* Bugfix: Malformed mock-up of timetrack comments with long text
+	* Bugfix: Current timetracking was not visible in chrome
+	* Feature: Ext init Cleanup
+	* Feature: Added italian translation
+	* Feature: Merged all tracking request into a single request (much faster now)
+	* Feature: Added indexes to tables to improve SQL performance
+	* Changed: Changed comment field of timetrack to varchar(250)

@@ -1,0 +1,5 @@
+{foreach $personIDs idPerson}
+	{personLabel $idPerson}{if !$dwoo.foreach.default.last}, {/if}
+{else}
+	{Label calendar.form.comment.autonotification.noroles}
+{/foreach}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">First Steps</label>
+	<label index="wizard.start.title">Your first steps in todoyu</label>
+	<label index="wizard.start.info"><![CDATA[This wizard guides you through the first steps in todoyu. The whole procedure will take only <strong>a few minutes</strong> of your valuable time. Afterwards you will have a ready to work installation. <br /><br />Please press the "continue" button to start.]]></label>
+	<label index="wizard.start.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.start.dontUseWizard">I don't want to use the wizard. Don't show this popup again</label>
+	<label index="wizard.start.disableAssistant">Disable Assistant</label>
+	<label index="wizard.start.reactivateInAdmin">You can re-enable this wizard in the admin section</label>
+	<label index="wizard.jobtypes.title">Job Types</label>
+	<label index="wizard.jobtypes.info">Please enter job types you usually use in your company and projects. You can change them any time in the administration section</label>
+	<label index="wizard.jobtypes.help"><![CDATA[ Job types could be:<br />CEO, CFO, manager, team leader, secretary, sales ]]></label>
+	<label index="wizard.projectroles.title">Project Roles</label>
+	<label index="wizard.projectroles.info">Please fill in the project roles you usually have in your project.</label>
+	<label index="wizard.projectroles.help"><![CDATA[ To give you an idea what this could be: In the todoyu team we have the following project roles:<br />project manager, developer, frontend engineer, product manager, marketing responsible, community manager, trainer ]]></label>
+	<label index="wizard.activities.title">Activities</label>
+	<label index="wizard.activities.info">Activities define the kind of work you assign to your team.</label>
+	<label index="wizard.activities.help">Activities can be consulting, programming, support, internal work ...</label>
+	<label index="wizard.userroles.title">User Groups</label>
+	<label index="wizard.userroles.info">The user groups are used for administration purposes.You can assign rights to your user groups in the administration section later </label>
+	<label index="wizard.userroles.help">Quite often the user groups are bound to the job types you previously entered. But it is up to you to define as many groups as you want.</label>
+	<label index="wizard.company.title">Your Company</label>
+	<label index="wizard.company.info">Please enter the basic information of your company. You can change that any times in the contacts section.</label>
+	<label index="wizard.company.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.employees.title">Employees</label>
+	<label index="wizard.employees.info">Now tell todoyu who your team members are. Define the basis personal information - the users can change their data any time in their profile.</label>
+	<label index="wizard.employees.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.employees.confirmRemove">Remove employee</label>
+	<label index="wizard.employees.added">Employee was added to the list</label>
+	<label index="wizard.customers.title">Customers</label>
+	<label index="wizard.customers.info">Hopefully you already have some customers at this point. Great! Please enter the basic information.</label>
+	<label index="wizard.customers.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.customers.confirmRemove">Remove customer?</label>
+	<label index="wizard.project.title">First Project</label>
+	<label index="wizard.project.info">Finally, start with your very first project in todoyu. Congratulations!</label>
+	<label index="wizard.project.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.project.confirmRemovePerson">Remove assigned person from project?</label>
+	<label index="wizard.finish.title">That's it!</label>
+	<label index="wizard.finish.info"><![CDATA[You now have <strong>successfully</strong> entered all the necessary information to work with todoyu smoothly.<br /><br /> Enjoy it!]]></label>
+	<label index="wizard.finish.help"><![CDATA[&nbsp;]]></label>
+	<label index="wizard.finish.closeWizard">Close wizard</label>
+	<label index="employee.addCompany">Add company</label>
+	<label index="employee.addEmployee">Add employee</label>
+	<label index="employee.addPerson">Add person to project</label>
+	<label index="extconf.disableWizard">Deactivate the wizard</label>
+	<label index="wizardDisabledInfo">Wizard is disabled now</label>
+</labels>

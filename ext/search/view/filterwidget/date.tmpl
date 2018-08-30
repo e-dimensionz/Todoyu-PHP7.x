@@ -1,0 +1,9 @@
+{extends "ext/search/view/filterwidget/wrap.tmpl"}
+
+{block name="widgetbody"}
+	<input id="filterwidget-date-{$definitions.widgetID}" type="text" class="input date value" value="{$definitions.value}" onchange="Todoyu.Ext.search.Filter.updateConditionValue( '{$definitions.widgetID}', $F(this))"/>
+	<span id="filterwidget-date-{$definitions.widgetID}-calicon" class="icon calendaricon"></span>
+	<script type="text/javascript">
+		{$jsSetup}
+	</script>
+{/block}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">任务资源</label>
+	<label index="search.label">资源</label>
+	<label index="tab.noAssets">添加首个资源</label>
+	<label index="tab.asset">资源</label>
+	<label index="tab.assets">资源</label>
+	<label index="tab.toggle">资源 开/关</label>
+	<label index="list.header.uploaddate">上传日期</label>
+	<label index="alt.download">下载文件</label>
+	<label index="alt.uploadedby">上传者</label>
+	<label index="alt.delete">删除文件</label>
+	<label index="alt.changeVisibility">变化可见度</label>
+	<label index="alt.selectall">选择所有/清空</label>
+	<label index="upload.selectfile">选择要上传的文件</label>
+	<label index="upload.filename">文件名</label>
+	<label index="upload.new">添加新文件</label>
+	<label index="delete.confirm">确认要删除此文件?</label>
+	<label index="delete.notifiy.success">文件已删除.</label>
+	<label index="togglepublic.notifiy.ispublic">此文件可见, 同时对能看到此任务的客户可见.</label>
+	<label index="togglepublic.notifiy.notpublic">此文件对能看到此任务的客户不可见</label>
+	<label index="download.selection">下载所选</label>
+	<label index="download.normal">选择文件 -> 普通文件下载</label>
+	<label index="download.compressed">选择的文件已经被压缩以整体下载</label>
+	<label index="error.minimumFile">请选择至少一个文件</label>
+	<label index="error.download">无法下载资源</label>
+	<label index="error.access">不允许访问此资源</label>
+	<label index="maxFileSizeExceeded">要上传的文件 '#{filename}' 超过了允许上传文件的最大值 (#{maxFileSize}) </label>
+	<label index="maxLengthFileNameExceeded">要上传的文件 '#{filename}' 的文件名超过了允许的最大文件名长度 (#{maxLengthFileName}) </label>
+	<label index="uploadFailed">上传文件 '#{filename}' 失败</label>
+	<label index="uploadOk">文件已上传</label>
+	<label index="uploadCanceled">上传已取消</label>
+	<label index="locked">任务锁定, 无法增加文件</label>
+	<label index="task.icon">任务存在资源</label>
+	<label index="contextmenu.task.addasset">资源</label>
+</labels>

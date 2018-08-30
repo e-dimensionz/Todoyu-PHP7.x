@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Task assets </label>
+	<label index="assets.button.delete">Usuń Wybrany Asset</label>
+	<label index="assets.button.upload">Upload New Asset</label>
+</labels>

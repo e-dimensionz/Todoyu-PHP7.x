@@ -1,0 +1,125 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+select{
+	&#filtercontrol-conditions {
+		width:320px;
+	}
+	&#filtercontrol-conjunction {
+		margin-left:8px;
+	}
+}
+
+#widget-area {
+	padding:5px 0;
+
+	.filterWidget {
+		float:left;
+		height:auto;
+		margin:0 10px 5px 0;
+		width:32%;
+
+		span{
+			display:block;
+			padding:4px;
+
+			.calendaricon {
+				float:left;
+				padding:0;
+			}
+
+			&.negationButton {
+				background-color:$white;
+				@include border-button;
+				height:12px;
+				padding:0 6px 6px;
+				position:absolute;
+				right:27px;
+				top:2px;
+			}
+		}
+
+		.negation span {
+			cursor:pointer;
+
+			&.false {
+				color:green;
+			}
+
+			&.true {
+				color:red;
+			}
+		}
+
+		.widgetheader {
+			@include gradient-header;
+			border:1px solid $colorNeutral03;
+			border-radius:5px 5px 0 0;
+			padding:1px 0 0 4px;
+			position:relative;
+			width:100%;
+
+			span {
+				display:block;
+				float:left;
+
+				&.widgetClose {
+					position:absolute;
+					right:5px;
+					z-index:1;
+
+					a {
+						background:url(../../../../core/asset/img/icons.png) no-repeat scroll 0 -360px transparent;
+						display:block;
+						height:14px;
+						text-indent: -9999px;
+						width:14px;
+					}
+				}
+
+				&.clear {
+					clear:both;
+					display:block;
+					float:none;
+					padding:0;
+				}
+			}
+
+			.widgetLabel {
+				width:120px;
+				padding-right:0;
+
+				&.staggered {
+					padding-top:22px;
+				}
+			}
+		}
+	}
+
+	.widgetbody {
+		background-color:$colorNeutral02;
+		border-top:none;
+		border:1px solid $colorNeutral03;
+		min-height:25px;
+		margin:0 -6px 0 0;
+		padding:5px;
+
+		select {
+			background-color:$white;
+			width:100%;
+		}
+	}
+
+	input.date {
+		float:left;
+		margin-right:5px;
+		width:85%;
+	}
+}
+
+#widget-area .type .widgetbody,
+#widget-area .status .widgetbody,
+#widget-area .filterSet .widgetbody {
+	min-height:85px;
+}

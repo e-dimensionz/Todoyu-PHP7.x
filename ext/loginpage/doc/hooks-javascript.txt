@@ -1,0 +1,6 @@
+Loginpage Extension - JavaScript Hooks
+======================================
+1. Relogin
+	loginpage.relogin.onreloginresponse
+	@param	{Ajax.response}		response
+	Evoked after relogin response reception.

@@ -1,0 +1,23 @@
+Sysmanager Extension - PHP Hooks
+================================
+
+
+Event Hooks
+***************************************
+
+#sysmanager.extensionInstalled
+	Extension was installed
+	@param	Integer		$idTask
+
+
+#sysmanager.renderRecordsBody.[TYPE]
+	Render record content body for TYPE in sysmanager
+	@param	Integer		$idRecord
+	@param	String		$contentBody
+
+
+#sysmanager.renderExtContent.[EXTKEY]
+	Render extension content body for EXTKEY in sysmanager
+	@param	String		$tab
+	@param	Array		$params
+	@param	String		$content

@@ -1,0 +1,366 @@
+todoyu core changelog
+
+core 2.3.1 - 2013-12-31
+	* Added: Enlarged width of rte - input
+	* Added: Button for scrolling to top, that appears when scrolling down on long pages
+	* Added: Hook for paging of lists
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+	* Changed: Headlet initialisation only if present (fullscreen-support)
+	* Bugfix: Fixed css for error-messages of checkboxes
+	* Bugifx: Fixed styling of quickinfo
+	* Bugfix: Right requirement wasn't parsed correctly if there is only one rights-section
+	* Bugfix: Enable live validation for record selector
+	* Bugfix: Possibility to remove warning-message of live-validator
+	* Bugfix: Fallback for setting timezone to prevent fatal errors
+	* Bugfix: Set PCLZIP temporary folder to cache/temp folder. Caused problems with write-permissions
+	* Bugfix: fixed bug in token-callback-manager
+	* Bugfix: Fixed compatibility inclusion
+
+core 2.3.0 - 2013-03-27
+	* Added: CSS-cropping of list table content
+	* Added: JS Array.prototype.remove - make array items removable
+	* Added: Accept exclamation mark in link parsing
+	* Added: Basic style for warning messages
+	* Added: Possibility to add custom live-validator
+	* Added: Basics for live-validation for form-fields
+	* Added: TodoyuTime::getTimePartsDHMS()
+	* Added: Todoyu.String.replaceAll()
+	* Added: TodoyuHookManager::getHooks can now also get hooks anonymously (w/o name)
+	* Added: Form element time was not available
+	* Added: Todoyu.Form.isFirstInputInForm()
+	* Added: TodoyuFormElement::removeAttribute()
+	* Added: TodoyuFormElement_Select::setPleaseSelectLabel() to override label from php
+	* Added: TodoyuFileManager::getMimeType() to detect the mime type of a file, even if mime_content_type() is not available
+	* Added: TodoyuForm::setActionUrl() as helper for setAction()
+	* Added: TodoyuFormElement_Button functions: setText(), setClass(), setOnClick()
+	* Added: Option $asAttachment for TodoyuFileManager::sendFile() and TodoyuHeader::sendDownloadHeaders() to send also files directly
+	* Added: Try to auto detect the mime type in TodoyuFileManager::sendFile() when not defined
+	* Added: Params config value for FormRecords object which is submitted with the auto completer request. Allows passing options to the search
+	* Added: TodoyuFormManager::addFieldType(). Cleaner replacement for form field type config like Todoyu::$CONFIG['FORM']['TYPES']['text'] = array(...)
+	* Added: TodoyuFormManager::addFieldTypeRecords() as shortcut to TodoyuFormManager::addFieldType() with default records template
+	* Added: $allOr parameter to TodoyuSql::buildLikeQueryPart() which changes the outer conjunction to OR
+	* Added: TodoyuForm takes to $params data and makes it available over ->getParams() and ->getParam()
+	* Added: $limit parameter for TodoyuArray::trimExplode() which is passed directly to explode()
+	* Added: TodoyuBaseObject->isUpdated() to check whether the record was updated at least once
+	* Added: TodoyuRecordManager::updateRecordRaw() which bypasses the cleanup of updateRecord()
+	* Added: TodoyuBaseObject->isFlagSet() as a shortcut to check whether a field has the value 0 or 1 (example: is_active)
+	* Added: Support for SMTP accounts. Send emails over a (shared) SMTP account.
+	* Added: Signature in email from contact person record
+	* Added: TodoyuMailReceiver type 'simple'
+	* Added: TodoyuFormElement_Select->getSelectedValue() which returns the first selected value which is ok if multiple flag is not set
+	* Added: TodoyuViewHelper for general view helpers from core
+	* Added: Todoyu::getSystemLocale() to access system fallback locale directly
+	* Added: TodoyuViewHelper::getAvailableLocaleOptions() and TodoyuViewHelper::geAllLocaleOptions()
+	* Added: TodoyuFormElement_Select->setSourceFunction() to modify source function
+	* Added: TodoyuForm->addOnDisplayJsCallback() to call a JS callback when form is displayed
+	* Added: TodoyuArray::implode() and ::explode()
+	* Added: TodoyuForm->getFieldData() to get a single field value from formdata
+	* Added: TodoyuFormElement_Select->setNoPleaseSelect()
+	* Added: TodoyuArray::prefixKeys()
+	* Added: additional definition in form.xsd
+	* Added: PanelWidgetSearchBox basic classes
+	* Added: Prevent auto focus of first form element with form class noAutoFocus
+	* Added: TodoyuFileManager::includeFile() was wrapper for include()/include_once()
+	* Added: Todoyu.String.getCounter() to extract a counter value from a string
+	* Added: Todoyu.Tabs.updateTabCounter() and .getTabCounter()
+	* Added: Dwoo plugin escapeQuotesForHtmlAttributes which replaces quotes by ASCII codes
+	* Added: TodoyuArray::assureFromSerialized()
+	* Added: TodoyuDebug::getBacktrace()
+	* Added: Todoyu.ListScrollLoader()
+	* Added: class TodoyuTimezoneManager
+	* Added: Set timezone in database for date calculations
+	* Added: Hook based voting - TodoyuHookManager::callHookVoting
+	* Added: TodoyuArray::average()
+	* Added: New cache clear hook for records. Hook is dynamically named after class name: "removeCacheRecord{CLASSNAME}"
+	* Changed: Moved repeatedly used gradients (headers, buttons) into SASS mix-ins
+	* Changed: Removed various CSS background images, replaced by CSS3 gradients and rounded corners
+	* Changed: Encoding of title in header-template is now optional
+	* Changed: Set default error - logging on error instead of debug
+	* Changed: Sticky notification mode: info now stays (was: stays 15s)
+	* Changed: extracted select-group-options from template
+	* Changed: Renamed TodoyuArray::prefix() to prefixValues()
+	* Changed: Removed $parseConstants from TodoyuArray::intExplode(). Was not used and supported. Added $limi parameter as for trimExplode()
+	* Changed: Use JS version instead of php the check for the first input in form
+	* Changed: Update form XSD validation to match know field types only
+	* Changed: Created instances for parsing form xml files to prevent overlapping when multiple forms are parsed parallel
+	* Changed: Group label of selectgrouped is now parsed as label
+	* Changed: Removed unused parameter $preParseValues from form instantiation
+	* Changed: Added $formData as default $params value in form instantiation
+	* Changed: Parse label for grouped select options
+	* Changed: Cleanup radio form element. Removed sql as source type. Support default value
+	* Changed: Clone field objects when added to a fieldset. Allows to add a field multiple times under different names
+	* Changed: Clone fieldsets when added to a form or another fieldset
+	* Changed: Send 404 http status if controller is not found
+	* Changed: TodoyuArray::explode() return the $string if it is already an array
+	* Changed: Added limit parameter for TodoyuDebug::printBacktrace()
+	* Changed: enlarged content width
+	* Changed: context menu refactoring
+	* Changed: Open duration picker closes on body click
+	* Changed: Adapted form.xsd
+	* Changed: Raise php memory limit when a mail is sent with attachments
+	* Changed: Tabs can now be disabled per item (return value false of label method removes the tab)
+	* Changed: Prevent context menu and its submenus to display outside of the screen
+	* Bugfix: Visual optimization of sortable-panel-list handle
+	* Bugfix: Fixed linux-chrome-styling-bug
+	* Bugfix: styling bug in sortable panel list
+	* Bugfix: Fixed and clean-up JSCalendar styling
+	* Bugfix: SearchList-input value clearing disabled text-navigation
+	* Bugfix: Fixed bug in the assistNumericInput method
+	* Bugfix: Changed date-format for calendar week to ISO-8601
+	* Bugfix: Min - form - validator was wrong
+	* Bugfix: Fixed e-mail parsing
+	* Bugfix: Removed boundaries of sub menu entries
+	* Bugfix: Add tab key as class name for content item tabs
+	* Bugfix: Active item tabs are unique
+	* Bugfix: Auto linking found also background image source as link
+	* Bugfix: TodoyuSql::buildInListQueryPart() value when negated and input is empty
+	* Bugfix: Duration Pickers configuration failed
+	* Bugfix: Class for fieldset didn't work properly/clean
+	* Bugfix: isRequired() checks now for available field and for false value
+	* Bugfix: Content tab did not store selected tab correctly
+	* Bugfix: Prevent double linking of email addresses in RTE text
+	* Library: Upgraded PHPsass from version 201203071100 to 201211282000
+	* Library: Upgraded from PHPMailer-lite 5.1 to PHPMailer 5.2.4
+	* Library: Highcharts 2.2.3
+	* Library: tinyMCE 3.5.4.1
+	* Library: Prototype 1.7.1
+
+core 2.2.0 - 2012-05-03
+	* Added: Parity of list items in widgets is refreshed on drop/resort
+	* Added: Balloon info rendering, style and JS
+	* Added: Hooks in TodoyuMail
+	* Added: Empty listing shows "no items" notice
+	* Added: Special chars encoding of CSV exported data
+	* Added: Added core hook of loaded extension type configs: 'loadconfig.extkey.type'
+	* Added: Installer now focuses it's first form field on page load
+	* Added: prototype.js plugin "svginner"
+	* Added: TodoyuTime.getDayTimestampsInRange can now optionally ommit weekend days
+	* Added: Todoyu.Popups (open, openElement, openContent) can now optionally position the popup to a top coordinate
+	* Added: JavaScript Date prototypes: addDays(), subtractDays(), isToday()
+	* Added: JS-Handling for contentItemTabs
+	* Added: Todoyu.Form.assistDurationInput() for onblur-validation of duration input fields
+	* Added: New form hook for data modification immediately before rendering (use TodoyuFormHook::registerRenderForm() for callback registration)
+	* Added: global confirmation dialog for toggling of record-types with exclusive "is_preferred" attribute
+	* Added: new DB query building method: TodoyuSql::buildInArrayQuery()
+	* Added: General content item inline tabs management and rendering to core
+	* Added: "greaterThan" form validator
+	* Added: Methods for fetching right / section and resp. required right from extension rights matrix
+	* Added: TodoyuArray::implodeAssoc()
+	* Added: TodoyuDateRange: setMinLength(), isOverlapping(), isInOneDay(), getOverlappingRange(), getAmountOfDays(), contains(), setRangeLimits()
+	* Added: DialogChoice. Create a popup and creates options to get selected by user
+	* Added: TodoyuArray::assureFromJSON() - Takes a JSON string, tries to decode it as an array and makes sure an array is return (even on invalid JSON)
+	* Added: TodoyuRecordManager::deleteRecords() sets deleted flag for records in a table by where statement
+	* Added: TodoyuTime::getWeekEndDayIndexes() - as in date('w'), depends in first day of week
+	* Added: Call hook core.ac.selected and fire change event on AC element selection
+	* Added: TodoyuDateRange::getLabelWithTime()
+	* Added: Initialize fake console element to prevent errors on console.log() in not supporting browsers
+	* Added: Todoyu.Helper.cloneObject() for deep object copy (alternative to Object.clone())
+	* Added: Javascript form submit helpers (simple file upload)
+	* Added: TodoyuRenderer::renderSelectGrouped(). Extracted from a Dwoo plugin
+	* Added: Dwoo plugin {restrictAdmin}retricted content{/restrictAdmin}
+	* Added: Moved Dwoo plugins from calendar extension to core: {formatDuration}, {formatRange}
+	* Added: date locale format label "dateMshort"
+	* Changed: Removed currencyFormat from core
+	* Changed: Listing renderer requires and renders additionally to columns now also record ID
+	* Changed: Moved static database and query functions to TodoyuSql
+	* Changed: Removing valueless foreign records does not require confirmation anymore
+	* Changed: Better support for SQL statements to update fields. Comma is now allowed in type definition (ex: DECIMAL(5,2))
+	* Changed: Extending item listings (fetching additional items) now also keeps list-function parameters, like search filters
+	* Changed: Inactive roles are listed last instead of first
+	* Changed: Unified method naming - getDateXXX() getPersonXXX() getPersonXXXID()
+	* Changed: Renamed TodoyuFieldset to TodoyuFormFieldset
+	* Changed: Prevent selection of disabled select option
+	* Changed: Todoyu.Time: time means now php timestamp and date means JS date object (for vars and methods)
+	* Changed: Updates of date fields with the popup calendar will now trigger a change event
+	* Changed: Used faster (int) instead of intval() for integer typecasting
+	* Changed: Moved getDayTimestamps(), getDayTimestampsMap() to TodoyuDayRange
+	* Changed: Made TodoyuTime::getWeekStart and getWeekAnd relative to system config of 1st day of week being sunday or monday
+	* Changed: Minimum PHP version is 5.2.5
+	* Changed: Renamed TodoyuDateRange::getDiff() to getDuration(), TodoyuDayRange::getDiffInDays() to getDurationInDays()
+	* Changed: Renamed TodoyuRecordManger::deleteRecords() to deleteRecordsByID()
+	* Changed: ListingRenderer behaviour. Changed Parameter sword to params to be more flexible.
+	* Changed: Rich Text Editor (tinyMCE) uses now advanced mode with some additional edit features
+	* Changed: Renamed config/admin.php to config/sysmanager.php because admin extension was removed
+	* Changed: Renamed Dwoo plugin {Workload} to {formatDuration}
+	* Changed: Renamed TodoyuTime::sec2hours() to formatHours()
+	* Changed: Scroll to error in form when form is initialized with errors
+	* Removed: scal calendar/date picker library
+	* Removed: TodoyuString::replaceOnce()
+	* Removed: TodoyuString::strictHtml2text() is now integrated in html2text() method
+
+core 2.1.4 - 2011-12-13
+	* Bugfix: Hovering multiple quick-info elements subsequently in direct sequence did only show the first info, no following ones
+	* Bugfix: RTE auto focus failed. Added workaround to focus RTE if first field
+	* Bugfix: Area was not set on popup AJAX requests
+	* Changed: Only focus RTE when loaded over AJAX
+	* Changed: TodoyuFormElement::getStorageData() is final now and checks always for noStorage and disabled
+	* Changed: TodoyuString::html2text text handling improved
+	* Changed: Popup calendar dotted border width is now 1px (was 2)
+	* Changed: Labels core.date.title.date_create => core.date.date_create (same for date_update)
+	* Added: Hide context menu on tab change
+	* Added: TodoyuCountry::getIsoNumCurrency()
+	* Added: TodoyuFormElement::getStorageDataInternal() to override storageData properly
+	* Added: TodoyuSql::quoteTablename() (currently alias of quoteFieldName()). Cleanup quoteFieldName()
+	* Added: Support to validate against fields in the parent form
+	* Added: TodoyuFormElement methods replaceFieldValidatorWithValue() and removeValidator()
+	* Added: Log hook calls
+	* Added: Log level LEVEL_CORE which is even deeper than debug and shows internal logs of todoyu core (hooks, connections, etc)
+	* Added: Limit parameter for TodoyuDateRange methods
+	* Added: Basic getters for TodoyuRole
+	* Added: TodoyuArray::groupByField()
+
+core 2.1.3 - 2011-11-17
+	* Bugfix: System URL was set wrong on windows systems
+	* Bugfix: Cropping of tabs didn't work correctly in ie. Due to substr(negativeValue)
+	* Bugfix: Checkbox had problem with default value
+	* Bugfix: ReplyTo & sender of emails were automatically set to the system mail
+	* Bugfix: Simplified textarea auto resize. Works now in all major up-to-date browsers
+	* Bugfix: XML entities were encoded inside of Dwoo tags which caused parse error in template engine
+	* Bugfix: Hiding of notifications of the same type failed when more than 2 dots were in the identifier
+	* Added: Auto-focus RTE of first form field (e.g. comment text)
+	* Added: Cropping for database relation labels in form
+	* Added TodoyuTime::time() to set null values to current time
+	* Added TodoyuDateRange
+	* Added TodoyuArray::createMap()
+	* Added: action dispatcher error output contains now also action controller class name
+	* Added: Wrappers for rename() and copy() in TodoyuFileManager
+	* Added: TodoyuTime:: getYearEnd(), getYearStart()
+	* Added: update() and updateField()
+	* Added: Default link to documentation
+	* Added: Comparison form validators (dateBefore, dateAfter, dateNotAfter, dateTimeNotBefore, dateTimeAfter, equals) can optionally compare against a value
+	* Added: New parameter 'area' for asset file config. If merging is not enabled, you can define one or more areas (string or array) where to load the specific file (no config = all areas)
+	* Added: Paste plugin for tinyMCE
+	* Added: Description for records
+	* Changed: Don't require system locale data to set a locale for translation
+	* Changed: TodoyuDebug handles now debugging status
+	* Changed: Format of duration (hour)
+	* Changed: Duration formatting
+	* Removed: Moved continuous integration files to private extension
+	* Removed: Username list from debug function. Were never used
+	* Removed: Color styles for project (moved to project)
+	* Translation: Added polish translation for core
+	* Translation: Serbian translation for installer
+	* Translation: Polish for core (and all basic extensions)
+	* Library: tinyMCE 3.4.7
+	* Library: Highcharts 2.1.9
+
+core 2.1.2 - 2011-09-15
+	* Bugfix: Tab layout for chrome fixed
+	* Bugfix: labels of dynamic tabs float over bounding box of the tab in chrome (ex: view/edit event)
+	* Bugfix: fixed various button icons positions for Chrome
+	* Bugfix: #123 Text form fields are ignoring defined default values
+	* Bugfix: #185 Deleting an access role in sysmanager caused a fatal error (invalid function call)
+	* Bugfix: #189 Problems with character set conversion when server character sets are not utf-8
+	* Bugfix: Problems with close handling for popups in IE8. Redesigned callback structure
+	* Bugfix: #199 Parsing MySQL date (standard date YYYY-MM-DD) failed. Birthdays were not received correct from form field
+	* Bugfix: Option class name was not used (invalid variable name in template)
+	* Bugfix: Remove event handler attributes from tags in RTE HTML to prevent RSS attacks
+	* Bugfix: Select AC value with return key doesn't clear the hidden value field (previously selected items had got lost)
+	* Changed: TodoyuTime::parseDateString has now a fallback to strtotime() if date was not recognized before
+	* Changed: Made TodoyuLabelManager::$cache private
+	* Changed: Made TodoyuLabelManger::getFallbackLocales private
+	* Changed: Comment out unused database relation input field (relations have their own sub fields)
+	* Changed: Cleanup adding the language file for JSCalendar
+	* Changed: Set default dummy timezone to prevent problems with date() before setting the users timezone
+	* Changed: Allow installation in not empty database (as long as no conflicts with existing tables occurs)
+	* Changed: Simplified TodoyuForm::injectFieldset (by Captain_FLAM)
+	* Changed: Load the override config before init (CaptainFLAM)
+	* Changed: Always return the label (or the key) for a label (never empty)
+	* Changed: Cleanup hook manager. Hooks are now case insensitive and stored internally (Todoyu::$CONFIG['HOOKS'] is deprecated now)
+	* Added: Added doubleEncode parameter for TodoyuString::htmlentities
+	* Added: Translated log levels in core/locale/en_GB/global.xml
+	* Added: Caching for class autoloader
+	* Added: Custom callback on empty result for searchlist panel widget
+	* Added: TodoyuMail::setCurrentUserAsSender() as a shortcut
+	* Added: Confirm removal of sub record in db relation in form
+	* Added: Allow to hook in into the form display event in javascript
+	* Added: Hook core.login on successful login
+	* Added: Hooks core.record.add, core.record.update, core.record.delete
+	* Added: Added getRowCount() method to TodoyuDatabase
+	* Remove: Removed unused function TodoyuArray::convertToUTF8Array
+	* Updated: JSCalendar library updated. Added some extra utf-8 language packages (provided by Captain_FLAM)
+	* Updated: tinyMCE 3.4.4
+
+core 2.1.1 - 2011-07-25
+	* Feature: Added optional event identifier to error/success notifications- notifications of the same event are now closing preceding notes of the same event (if present)
+	* Bugfix: Installer- Fixed icon display bug of installer steps with long labels
+	* Bugfix: open duration picker wasn't hidden when closing parent dialog
+	* Bugfix: Added more tags to the badHtmlTags list to make sure they are escaped and not rendered (ex: embed)
+	* Bugfix: Parsing dates in british english format failed (was interpreted as american)
+	* Bugfix: List of available locales contained default locale twice
+	* Bugfix: Timerange date selector had to high z-index
+	* Bugfix: Detect also links in this format: "mailto:name@domain.com"
+	* Bugfix: Archive manager creates now valid zip archives on windows (valid extraction on linux)
+	* Bugfix: Contextmenu sub menu works now correct on linux firefox 5
+	* Bugfix: Validate empty dates as valid
+	* Changed: Rename Todoyu.Notification.onValueChange to validateDateFormat
+	* Changed: Rename Todoyu.Notification.observeChange to addValidator
+	* Changed: Padding of inline filter forms to prevent layout problems
+	* Changed: Only set curl option CURLOPT_FOLLOWLOCATION when safe mode is not enabled
+	* Changed: Minimum PHP version is 5.2.3 (instead only 5.2.0)
+	* Changed: Updated highcharts library to 2.1.6
+	* Changed: Updated tinyMCE to 3.4.3.2
+	* Changed: <a>-tags are now removed from RTE when saving (autolink function rebuilds them when necessary for output)
+	* Changed: Logger init position. Init before todoyu is initialized to log init errors. Added check if file logger has a problem. Check for resource instead null
+	* Changed: Tabs are now cropped in javascript and use dynamically as much space as available. Removed template label cropping for tabs
+	* Changed: Moved javascript object prototype definitions from core/lib/js/prototype.js to core/asset/js/prototypes.js
+	* Changed: Session key is now the web path. Multiple todoyu instances on the same server have now different session namespaces
+	* Changed: Frequency of a cronjob if given to the job to calculate next expected execution time
+	* Changed: Merged duration wizard icon into general sprite
+	* Added: Array.prototype.sum()
+
+core 2.1.0 - 2011-06-17
+	1. Note: Since release 2.1.0, the todoyu extension repository is enabling us to decouple version updates of the todoyu core and basic extensions from one another.
+	Respectively, the core and extensions changelogs are now maintained separately.
+	2. Upgrade instruction: When upgrading an existing todoyu installation to 2.1.0 please read the instructions in the file __UPGRADE_TODOYU___READ_THIS_FIRST.txt
+	which you'll find in the todoyu root folder.
+
+	* Feature: Added TodoyuMail objects which handles mail sending. Extendable by extensions
+	* Feature: Added auto-growing behavior textareas and RTE areas
+	* Feature: Added authentication with tokens to allow public data access interfacing
+	* Feature: Changed popup behaviour. Multiple popups are handled correct now. Close with escape
+	* Feature: Added method for creation of random named cache folders to TodoyuFileManager
+	* Feature: Extended TodoyuFileManager::getFolderContents with option to retrieve file stats
+	* Feature: Live validation of date/datetime fields
+	* Feature: Added Todoyu::db()->setDeleted() wrapper method
+	* Feature: Added TodoyuBaseObject::getCreatePersonID() and getCreatePerson() shortcut methods
+	* Feature: Added array helper method that merges TodoyuArray::reform() and TodoyuArray::useFieldAsIndex() => TodoyuArray::reformWithFieldAsIndex()
+	* Feature: Added check for items existence before applying hooked callbacks on items (Todoyu.Hooks.exec())
+	* Feature: Added calling of JS hook after quickcreate popup has been opened ('headlet.quickcreate.' + type + '.popupOpened')
+	* Feature: Added Img-function to TodoyuString
+	* Feature: Quickinfos are now deactivatible via JS
+	* Changed: UI: easier deselection of simple / grouped select options - only the first current value option is preselected in case there are multiple identic options
+	* Changed: Every PHP class has extension prefix
+	* Changed: Implemented headlets (JS) as classes, general headlet cleanup
+	* Changed: Renamed DB table system_errorlog to system_log_error
+	* Changed: Moved core classes to core/model
+	* Changed: Moved document classes to core/model/document
+	* Changed: Moved form classes to core/model/form
+	* Changed: Removed TodoyuPanelWidgetIf
+	* Changed: Removed unused DB table system_log
+	* Changed: TodoyuPanelWidget::renderContent() only renders the content, parent class handles full render process
+	* Changed: Added globally used icons (unacknowledged/acknowledged/modified/accepted/emailed) to core
+	* Changed: Added deleteFile method (with success logging) to TodoyuFileManager
+	* Changed: Moved global functions to Todoyu namespace
+	* Changed: Renamed "assets" folder to "asset" (all folders now singular)
+	* Changed: Made allowed tags of RTE more precise to disallow styles that are not supported via RTE options (inserted via paste)
+	* Changed: Installer respects version order of PHP and SQL files
+	* Changed: When last version is unknown during an update, prompt for user input
+	* Changed: Extension archives are created completely in core modules. Valid extraction to all OS
+	* Changed: Support exception handling for PHP 5.2 and 5.3
+	* Changed: Replaced functions of Prototype 1.6 with newer versions for 1.7
+	* Changed: Database connection uses now default sql mode (removed sql_mode=ansi)
+	* Added: Added locale en_US for proper date formatting
+	* Added: Todoyu.Helper.cropText() to crop text in JS
+	* Added: addJsOnloadedFunction has now an autobind parameter
+	* Translation: Updated german, russian and japanese translation updates
+
+core 2.0.8 - beta
+	* Bugfix: Added forgotten button label to "add person" button of role form
+	* Bugfix: Deleted persons were shown in persons list of role
+	* Feature: Added Dwoo plugin: addslashes, escaped installer-written strings inside config file
+	* Feature: Text form fields are trimmed before saving
+	* Bugfix: file downloads fail with internet explorer and https connection
+
+core 0.0.1 to 2.0.7 - core 2.0.7 released on 2011-01-17
+	* See release changelog in root

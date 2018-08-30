@@ -1,0 +1,45 @@
+<div class="panelwidgetContent">
+
+	<ul id="filterset-list" class="sortablePanelList">
+	{foreach $groupedFiltersets groupKey filtersets}
+		<li class="listItem groupTitle groupName{ucfirst $groupKey}">{$filtersets.label}</li>
+		<li class="itemList">
+			<ul id="panelwidget-searchfilterlist-list-{$groupKey}" class="sortable" {if $toggleStatus[$groupKey] == 1}style="display:none"{/if}>
+
+			{foreach $filtersets.filtersets index filterset}
+				<li id="filterset_{$filterset.id}" class="listItem {cycle values='odd,even'} {if $filterset.is_separator == 1}separator{/if} {if in_array($filterset.id, $activeFiltersets)}current{/if}{if $filterset.is_hidden == 1} invisible{/if}">
+					<div id="filterset-{$filterset.id}-handle" class="handle"></div>
+					{if $filterset.is_separator == 0}
+						<a id="filterset-{$filterset.id}-label" class="title" onclick="Todoyu.Ext.search.PanelWidget.SearchFilterList.showFilterset('{$groupKey}', {$filterset.id})" href="javascript:void(0)" title="{htmlencode $filterset.title}">
+							{htmlencode $filterset.title}
+						</a>
+					{else}
+						<span id="filterset-{$filterset.id}-label" title="{htmlencode $filterset.title}" class="title">{htmlencode $filterset.title}</span>
+					{/if}
+					<span class="actions">
+						<a id="filterset-{$filterset.id}-control-rename" onclick="Todoyu.Ext.search.PanelWidget.SearchFilterList.renameFilterset({$filterset.id})" class="rename" title="{Label core.global.rename}" href="javascript:void(0)">
+							{Label core.global.rename}
+						</a>
+						<a id="filterset-{$filterset.id}-control-visibility" onclick="Todoyu.Ext.search.PanelWidget.SearchFilterList.hideFilterset({$filterset.id})" href="javascript:void(0)" class="visibility {if $filterset.is_hidden == 1}invisible{/if}" title="{if $filterset.is_hidden == 0}{Label core.global.hide}{else}{Label core.global.unhide}{/if}">
+							{if $filterset.is_hidden == 0}{Label search.panelwidget-searchfilterlist.hide}{else}{Label core.global.unhide}{/if}
+						</a>
+						{if $filterset.is_separator == 0}
+							<a id="filterset-{$filterset.id}-control-save" onclick="Todoyu.Ext.search.PanelWidget.SearchFilterList.saveFilterset({$filterset.id}, '{$groupKey}')" class="save" title="{Label core.global.save}" href="javascript:void(0)">
+								{Label core.global.save}
+							</a>
+						{/if}
+						<a id="filterset-{$filterset.id}-control-delete" onclick="Todoyu.Ext.search.PanelWidget.SearchFilterList.deleteFilterset({$filterset.id})" class="delete" title="{Label core.global.delete}" href="javascript:void(0)">
+							{Label core.global.delete}
+						</a>
+					</span>
+				</li>
+			{/foreach}
+
+			</ul>
+		</li>
+	{/foreach}
+	</ul>
+
+	{Button label="search.panelwidget-searchfilterlist.addSeparator" class="addseparator" onclick="Todoyu.Ext.search.PanelWidget.SearchFilterList.saveNewSeparator()"}
+
+</div>

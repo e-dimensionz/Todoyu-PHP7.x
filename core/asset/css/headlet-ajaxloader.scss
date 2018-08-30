@@ -1,0 +1,16 @@
+#todoyuheadletajaxloader {
+	width:27px;
+	height:26px;
+
+	.button {
+		background:url(../img/ajax-loader.gif) no-repeat 7px 5px;
+		border:none;
+	}
+
+	li& a {
+		cursor:wait;
+
+		&:hover {
+			background-color:transparent !important; }
+	}
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">请选择</label>
+	<label index="field.isrequired">必填项</label>
+	<label index="field.hasError">输入的值不合法</label>
+	<label index="field.save">保存</label>
+	<label index="field.cancel">取消</label>
+	<label index="records.add">添加记录</label>
+	<label index="records.remove">删除记录</label>
+	<label index="records.edit">编辑记录</label>
+	<label index="records.removeconfirm">确认要删除此记录?</label>
+	<label index="databaserelation.nolabel">[新记录]</label>
+	<label index="databaserelation.expandAllRecords">显示详情</label>
+	<label index="error.notUnique">记录已存在</label>
+	<label index="error.duration.invalidinput">输入的时间不合法, 请纠正.</label>
+	<label index="ac.noResults">自动完成: 没有找到</label>
+	<label index="is_preferred">偏好</label>
+	<label index="confirm.toggle.is_preferred.on">一次只允许一个此类型的记录, 要选择此记录么?</label>
+	<label index="confirm.toggle.is_preferred.off">一次只允许一个此类型的记录, 不选择此记录么?</label>
+	<label index="dateselector.open">打开日期选择器选择日期</label>
+	<label index="autocompleteInfo">自动完成项. 请输入以得到建议</label>
+	<label index="legend.main">角色定义</label>
+	<label index="daterange.choose">选择时间范围</label>
+	<label index="daterange.monthToDate">月到日期</label>
+	<label index="daterange.yearToDate">年到日期</label>
+	<label index="daterange.quarterToDate">季到日期</label>
+	<label index="daterange.previousMonth">上月</label>
+	<label index="daterange.previousQuarter">上季</label>
+	<label index="daterange.previousYear">去年</label>
+	<label index="daterange.fullTimeRange">所有可能的时间范围</label>
+</labels>

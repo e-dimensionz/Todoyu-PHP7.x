@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="num2.name">Африка</label>
+	<label index="num9.name">Океания</label>
+	<label index="num19.name">Америки</label>
+	<label index="num142.name">Азия</label>
+	<label index="num150.name">Европа</label>
+	<label index="num30.name">Восточная Азия</label>
+	<label index="num35.name">Юго-восточная Азия</label>
+	<label index="num62.name">Южная и Центральная Азия</label>
+	<label index="num145.name">Западная Азия</label>
+	<label index="num39.name">Южная Европа</label>
+	<label index="num151.name">Восточная Европа</label>
+	<label index="num154.name">Северная Европа</label>
+	<label index="num155.name">Западная Европа</label>
+	<label index="num830.name">Нормандские острова</label>
+	<label index="num833.name">Остров Мэн</label>
+	<label index="num5.name">Южная Америка</label>
+	<label index="num13.name">Центральная Америка</label>
+	<label index="num21.name">Северная Америка</label>
+	<label index="num29.name">Карибские острова</label>
+	<label index="num11.name">Западная Африка</label>
+	<label index="num14.name">Восточная Африка</label>
+	<label index="num15.name">Северная Африка</label>
+	<label index="num17.name">Центральная Африка</label>
+	<label index="num18.name">Южная Африка</label>
+	<label index="num53.name">Австралия и Новая Зеландия</label>
+	<label index="num54.name">Меланезия</label>
+	<label index="num57.name">Регион Микронезии</label>
+	<label index="num61.name">Полинезия</label>
+</labels>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">A.u.b. kiezen</label>
+	<label index="field.isrequired">Verplicht veld</label>
+	<label index="field.hasError">De waarde is ongeldig</label>
+	<label index="field.save">Opslaan</label>
+	<label index="field.cancel">Annuleren</label>
+	<label index="records.add">Record toevoegen</label>
+	<label index="records.remove">Record verwijderen</label>
+	<label index="records.edit">Record bewerken</label>
+	<label index="databaserelation.nolabel">[Nieuw item]</label>
+	<label index="databaserelation.expandAllRecords">Details tonen</label>
+	<label index="error.notUnique">Dit item bestaat al</label>
+	<label index="ac.noResults">Automatisch aanvullen: niets gevonden</label>
+	<label index="is_preferred">Voorkeur</label>
+	<label index="dateselector.open">Kalender openen om een datum te kiezen</label>
+	<label index="autocompleteInfo">Dit is een veld met automatisch aanvullen. Begin te typen om suggesties te krijgen</label>
+</labels>

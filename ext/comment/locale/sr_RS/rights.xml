@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Општа подешавања</label>
+	<label index="general.use">Употреби коментаре</label>
+	<label index="comment">Коментар</label>
+	<label index="comment.seeAll">Погледај све коментаре (не јавно)</label>
+	<label index="comment.editOwn">Уреди своје коментаре</label>
+	<label index="comment.editAll">Уреди све коментаре</label>
+	<label index="comment.requestFeedback">Захтевај повратне информације</label>
+	<label index="comment.sendAsEmail">Пошаљи коментар путем е-маил-а</label>
+	<label index="comment.deleteAll">Избриши све коментарe</label>
+	<label index="comment.deleteOwn">Избриши своје коментарe</label>
+	<label index="comment.makePublic">Јавни коментар</label>
+</labels>

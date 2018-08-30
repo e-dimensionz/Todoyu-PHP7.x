@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">提醒</label>
+	<label index="myreminders">我的提醒</label>
+	<label index="email">邮件</label>
+	<label index="popup">弹窗</label>
+	<label index="deactivated">禁用提醒</label>
+	<label index="notify.email.deactivated">禁用邮件提醒</label>
+	<label index="notify.popup.deactivated">禁用弹窗提醒</label>
+	<label index="notify.email.timeupdated">邮件提醒调度已更新</label>
+	<label index="notify.popup.timeupdated">弹窗提醒调度已更新</label>
+	<label index="beforeDateStart">提前开始时间</label>
+	<label index="atDateStart">开始时</label>
+	<label index="email.subject">约会提醒</label>
+	<label index="email.title">自动约会提醒</label>
+	<label index="noReminder">不要提醒我</label>
+	<label index="cli.infocomment">为了每个事件发送邮件提醒, 必须在todoyu中设置一个定时任务.如何设置todoyu定时任务::</label>
+</labels>

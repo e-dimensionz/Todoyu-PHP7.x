@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Impostazioni generali</label>
+	<label index="general.use">Usa le funzioni del modulo</label>
+	<label index="general.area">Usa l'area dei contatti</label>
+	<label index="person">Persone</label>
+	<label index="person.add">Aggiunge persone</label>
+	<label index="person.editAndDeleteAll">Modifica ed elimina persone</label>
+	<label index="person.enableLogin">Crea accesso web per le persone</label>
+	<label index="company">Aziende</label>
+	<label index="company.add">Aggiunge aziende</label>
+	<label index="company.editAndDeleteAll">Modifica ed elimina aziende</label>
+	<label index="panelwidgets">Widget del pannello</label>
+	<label index="panelwidgets.staffSelector">Selettore staff</label>
+</labels>

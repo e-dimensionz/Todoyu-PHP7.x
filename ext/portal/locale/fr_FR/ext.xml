@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Tableau de bord</label>
+	<label index="page.title">Tableau de bord</label>
+	<label index="tab">Tableau de bord</label>
+	<label index="tab.selection">Mon filtre</label>
+	<label index="tasktree.header.date">Date</label>
+	<label index="tasktree.header.customer">Client</label>
+	<label index="tasktree.header.number">N°</label>
+	<label index="tasktree.header.tasknumber">Numéro</label>
+	<label index="task.title.deadline">Jalon</label>
+	<label index="task.title.deadline_short">D</label>
+	<label index="task.title.begin">Début</label>
+	<label index="task.title.begin_short">B</label>
+	<label index="task.title.customer">Client</label>
+	<label index="task.title.jump">Aller à</label>
+	<label index="task.title.tasknumber">Tâche No.</label>
+	<label index="tab.todos">Liste de tâches</label>
+	<label index="tab.feedbacks">Suivi</label>
+	<label index="date.start.short">B</label>
+	<label index="selection.noTasksFound">Aucune tâche trouvée pour cette sélection de filtre</label>
+	<label index="selection.noProjectsFound">Aucun projet trouvé pour cette sélection de filtre</label>
+	<label index="subMenuEntry.selection">Tableau de bord > Sélection</label>
+	<label index="subMenuEntry.todos">Tableau de bord > Liste de tâches</label>
+	<label index="subMenuEntry.feedbacks">Tableau de bord > Suivi</label>
+	<label index="subMenuEntry.appointments">Tableau de bord > Rendez-vous</label>
+	<label index="contextmenu.showinproject">Afficher dans le projet</label>
+	<label index="selection.noFiltersetsSelected">Aucun groupe de filtre sélectionné!</label>
+</labels>

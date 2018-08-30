@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Експортирај контакт</label>
+	<label index="export.instruction">Експоритрај контакте као "CSV". Горе наведене кондиције претраге су корисне.</label>
+	<label index="export.button">Експортирај контакте</label>
+</labels>

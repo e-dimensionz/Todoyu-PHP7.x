@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Мои фильтры</label>
+	<label index="create">Создать фильтры</label>
+	<label index="manage">Управление фильтрами</label>
+	<label index="amount">Колличество</label>
+	<label index="error.noFilters">Пока нет фильтров</label>
+	<label index="error.noTypeFiltersets">Нет фильтров</label>
+</labels>

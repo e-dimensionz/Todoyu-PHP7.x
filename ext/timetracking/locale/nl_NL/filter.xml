@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Urenregistratie</label>
+	<label index="timetrackedPerson">Persoon heeft uren geregistreerd</label>
+	<label index="timetrackedRoles">Rollen hebben geregistreerde uren</label>
+</labels>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > 1st todo task - add comment</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > 1st todo task - add comment</td></tr>
+</thead><tbody>
+<!------- portal > add+delete comment to 1st todo task-->
+<!--open todo tab-->
+<tr>
+	<td>click</td>
+	<td>//p[@id='portal-tab-todo-label']/span[2][@class=&quot;labeltext&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--open context menu of 1st task-->
+<tr>
+	<td>contextMenu</td>
+	<td>//*[@id=&quot;tasks&quot;]/div[1]/h3[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=li#contextmenu-add.add a.taskAdd</td>
+	<td></td>
+</tr>
+<!--open add.. submenu, click add-task-->
+<tr>
+	<td>mouseOver</td>
+	<td>css=li#contextmenu-add.add a.taskAdd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-add-submenu.context-submenu li#contextmenu-add-comment.add-comment a.task-add-comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul#contextmenu-add-submenu.context-submenu li#contextmenu-add-comment.add-comment a.task-add-comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--comment tab opened, form available?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//ul[contains(@class,&quot;tabs&quot;)]/li[contains(@class,&quot;tabkey-comment&quot;)][contains(@class,&quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[contains(@class,&quot;tabContent&quot;)]/div[contains(@class,&quot;comment&quot;)]/div[2]/form/fieldset[@class=&quot;buttons&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@type=&quot;hidden&quot;][@name=&quot;comment[is_public]&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[contains(@class,&quot;checkbox&quot;)][@name=&quot;comment[sendasemail]&quot;]</td>
+	<td></td>
+</tr>
+<!--type comment text and save-->
+<tr>
+	<td>selectFrame</td>
+	<td>css=#comment-33-0-field-comment_ifr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>css=#tinymce</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#tinymce</td>
+	<td>O plura ut sumo lavo vindex qualiscumque Castellum fere longinquus An se Super. Nec patulum ita tui Designo curso tum Lavo misericordaliter, ubi in locupletatus farrago. Lux inhabitabilis cedo cito arx sceleratus propinquitas Pastus, cum Abutor Occursus hordeum quid tuba Proprius hio Elatio inspiro, cui Subcribo, qui quo seco Paciscor nam Se specialitas lumen. Os disperdo aut Quercetum domus Hosp.</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=parent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=.formComment button.saveButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=.formComment button.saveButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>O plura ut sumo lavo vindex qualiscumque Castellum fere longinquus An se Super. Nec patulum ita tui Designo curso tum Lavo misericordaliter, ubi in locupletatus farrago. Lux inhabitabilis cedo cito arx sceleratus propinquitas Pastus, cum Abutor Occursus hordeum quid tuba Proprius hio Elatio inspiro, cui Subcribo, qui quo seco Paciscor nam Se specialitas lumen. Os disperdo aut Quercetum domus Hosp.</td>
+	<td></td>
+</tr>
+<!--switch public-->
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=ul#task-33-comments.task-comments li#task-comment-14.isPublic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.comment-options a.public-trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>public-trigger-14</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#task-33-comments.task-comments li#task-comment-14.isPublic</td>
+	<td></td>
+</tr>
+<!--edit comment-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Edit Comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit Comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>css=#comment-33-0-field-comment_ifr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>css=#tinymce</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#tinymce</td>
+	<td>this comment has been changed!</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=parent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--save comment, ensure it's changed-->
+<tr>
+	<td>click</td>
+	<td>css=.formComment button.saveButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>this comment has been changed</td>
+	<td></td>
+</tr>
+<!--delete comment-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Edit Comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Delete Comment</td>
+	<td>Delete Comment</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Comment</td>
+	<td>Delete Comment</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>this comment has been changed</td>
+	<td></td>
+</tr>
+<!--collapse the task again-->
+<tr>
+	<td>click</td>
+	<td>//*[@id=&quot;tasks&quot;]/div[1]/h3[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+</tbody></table>
+</body>
+</html>

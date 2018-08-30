@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Export kontaktů</label>
+	<label index="export.instruction">Exportuje kontakty do CSV. Jsou použity výše uvedené vyhledávací podmínky.</label>
+	<label index="export.button">Export kontaktů</label>
+</labels>

@@ -1,0 +1,5 @@
+<div id="task-{$task.id}" class="task {$task.class} bcStatus{$task.status} {if $isExpanded}expanded{/if}">
+	{include file="task-header.tmpl"}
+	{$details}
+	{$subtasks}
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.person.basics">Informations basiques personnels</label>
+	<label index="legend.person.picture">Photo de la personne</label>
+	<label index="legend.person.furtherInformation">Autres informations de la personne</label>
+	<label index="legend.person.login">Compte utilisateur</label>
+	<label index="legend.company.basics">Informations principales sur la société</label>
+	<label index="legend.company.logo">Logo de la société</label>
+	<label index="legend.admin.jobtype.record">Type du travail</label>
+	<label index="legend.admin.contactinfotype.record">Type d'information du contact</label>
+</labels>

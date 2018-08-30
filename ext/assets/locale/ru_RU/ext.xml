@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Активы задач</label>
+	<label index="search.label">Активы</label>
+	<label index="tab.noAssets">Добавить первый актив</label>
+	<label index="tab.asset">Актив</label>
+	<label index="tab.assets">Активы</label>
+	<label index="tab.toggle">Вкл/выкл активы</label>
+	<label index="list.header.uploaddate">Дата загрузки</label>
+	<label index="alt.download">Скачать файл</label>
+	<label index="alt.uploadedby">Закачал</label>
+	<label index="alt.delete">Удалить файл</label>
+	<label index="alt.changeVisibility">Сделать публичным</label>
+	<label index="alt.selectall">Выберите всё/ничего</label>
+	<label index="upload.selectfile">Выберить файл для загрузки</label>
+	<label index="upload.filename">Имя файла</label>
+	<label index="upload.new">Добавить новый файл</label>
+	<label index="delete.confirm">Вы правда хотите удалить файл?</label>
+	<label index="delete.notifiy.success">Файл удалён.</label>
+	<label index="download.selection">Удалить обновление</label>
+	<label index="download.normal">Вывыбрали только один файл -&gt; нормальная загрузка файла</label>
+	<label index="download.compressed">Выбраные файлы будут архивированы для загрузки</label>
+	<label index="error.minimumFile">Пожалуйста, выберите хотя бы один файл</label>
+	<label index="maxFileSizeExceeded">Размер файла '#{filename}' превышает максимально допустимый для загрузки (#{maxFileSize} Б)</label>
+	<label index="maxLengthFileNameExceeded">Файл '#{filename}' больше, чем максимально разрешенный размер (#{maxLengthFileName}) для загрузки</label>
+	<label index="uploadFailed">Загрузка файла '#{filename}' не удалась</label>
+	<label index="uploadOk">Файл загружен</label>
+	<label index="locked">Эта задача заблокирована. Вы не можете добавить файлы</label>
+	<label index="task.icon">У задачи есть активы</label>
+</labels>

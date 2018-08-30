@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="files">Файлы</label>
+	<label index="download">Скачать</label>
+	<label index="upload">Закачать</label>
+	<label index="size.gb">Гб</label>
+	<label index="size.mb">Мб</label>
+	<label index="size.kb">Кб</label>
+	<label index="size.b">Б</label>
+	<label index="filename">Имя файла</label>
+	<label index="filesize">Размер файла</label>
+	<label index="upload.progressmessage">Загружаем файлы</label>
+	<label index="upload.succeeded">Файл успешно загружен</label>
+	<label index="upload.selectfile">Выберите файл для загрузки:</label>
+	<label index="upload.error.uploadfailed">Загрузка не удалась.</label>
+	<label index="upload.failed.maxFileSizeExceeded">Загрузка не удалась: превышен максимальный размер файла.</label>
+	<label index="confirm.delete">Удалить выбранный файл</label>
+	<label index="notify.delete.success">Файл удалён:</label>
+	<label index="notify.delete.error">Не удалось удалить файл:</label>
+</labels>

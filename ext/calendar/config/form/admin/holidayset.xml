@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>calendar.form.legend.admin.holidayset.record.general</legend>
+			<elements>
+
+				<field type="text" name="title">
+					<label>calendar.ext.holidayset.attr.name</label>
+					<required />
+				</field>
+
+				<field type="textarea" name="description">
+					<label>core.global.description</label>
+				</field>
+
+				<field type="databaseRelation" name="holidays">
+					<label>calendar.ext.holidayset.attr.holiday</label>
+					<addLabel>calendar.ext.holidayset.attr.holiday.new</addLabel>
+					<record>
+						<form>ext/calendar/config/form/admin/holidayset-holiday.xml</form>
+						<url>
+							<ext>calendar</ext>
+							<controller>records</controller>
+						</url>
+						<label type="field">
+							<field>title</field>
+							<noLabel>calendar.ext.holidayset.attr.holiday.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

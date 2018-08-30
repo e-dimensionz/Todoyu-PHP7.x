@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kastodoyutrunk.srv05.ch1.snowflake.ch/" />
+<title>sysmanager > content tabs present?</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">sysmanager > content tabs present?</td></tr>
+</thead><tbody>
+<!----- Sysmanager > content tabs present?-->
+<!--Open extensions module-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;panelwidget-sysmanagermodules&quot;]/div[contains(@class,&quot;content&quot;)]/div/ul[@id=&quot;sysmanager-modules&quot;]/li[@id=&quot;sysmanager-mod-extensions&quot;]/a</td>
+	<td>Extensions</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Check content tabs presents (Extensions, Install, Browse Market, Update)-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]/li[@id=&quot;extension-tab-installed&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]/li[@id=&quot;extension-tab-update&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]/li[@id=&quot;extension-tab-search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]/li[@id=&quot;extension-tab-imported&quot;]</td>
+	<td></td>
+</tr>
+<!--Check title tags of content tabs-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]/li[@id=&quot;extension-tab-installed&quot;][@title=&quot;Extensions&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]/li[@id=&quot;extension-tab-update&quot;][@title=&quot;Update&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]/li[@id=&quot;extension-tab-search&quot;][@title=&quot;Browse Market&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;content-tabs&quot;]/ul[@id=&quot;extension-tabs&quot;][contains(@class,&quot;tabs&quot;)][contains(@class,&quot;sysmanager&quot;)]/li[@id=&quot;extension-tab-imported&quot;][@title=&quot;Install&quot;]</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

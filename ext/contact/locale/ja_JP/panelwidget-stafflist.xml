@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">スタッフ</label>
+	<label index="search">検索</label>
+	<label index="list.empty">(このフィルタで選択した)対象は見つかりません</label>
+</labels>

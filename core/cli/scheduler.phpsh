@@ -1,0 +1,42 @@
+<?php
+/****************************************************************************
+* todoyu is published under the BSD License:
+* http://www.opensource.org/licenses/bsd-license.php
+*
+* Copyright (c) 2012, snowflake productions GmbH, Switzerland
+* All rights reserved.
+*
+* This script is part of the todoyu project.
+* The todoyu project is free software; you can redistribute it and/or modify
+* it under the terms of the BSD License.
+*
+* This script is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the BSD License
+* for more details.
+*
+* This copyright notice MUST APPEAR in all copies of the script.
+*****************************************************************************/
+
+require_once(realpath(dirname(__FILE__) . '/../inc/global.php'));
+require_once(PATH_CORE . '/inc/init.php');
+
+	// Initialize CLI run
+TodoyuCli::init();
+
+	// Load all boot.php files of the installed extensions
+TodoyuExtensions::loadAllBoot();
+
+	// Load all init.php files of the installed extensions
+TodoyuExtensions::initExtensions();
+
+	// Prevent HTTP request
+TodoyuCli::assertShell();
+
+	// Set time limit to 1 minute
+set_time_limit(60);
+
+	// Run scheduler
+TodoyuScheduler::run();
+
+?>

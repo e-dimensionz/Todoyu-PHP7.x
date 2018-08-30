@@ -1,0 +1,22 @@
+
+Panel widget: Project tree
+==========================
+
+
+
+
+
+
+Available $config parameters:
+-----------------------------
+NAME							|	TYPE			|	Explanation
+
+
+
+
+
+Methods to get/ change settings:
+--------------------------------
+
+
+

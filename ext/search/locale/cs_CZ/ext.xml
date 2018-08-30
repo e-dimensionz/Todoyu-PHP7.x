@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Hledání nebo vytváření nových filtrů</label>
+	<label index="page.title">Vyhledávání</label>
+	<label index="or">NEBO</label>
+	<label index="and">A</label>
+	<label index="search.label">Prohledat vše</label>
+	<label index="filterlabel.filterset">Sady filtrů</label>
+	<label index="filterset.rename">Přejmenuj sadu filtrů</label>
+	<label index="filterset.delete">Odstraň sadu filtrů</label>
+	<label index="filterset.confirm.delete">Opravdu chcete odstranit tuto sadu filtrů?</label>
+	<label index="filterset.confirm.overwrite">Chcete přepsat existující sadu filtrů?</label>
+	<label index="filterset.error.saveWrongType">Pokoušíte se uložit sadu filtrů nesprávného typu</label>
+	<label index="filterset.error.saveNoConditions">Žádné podmínky k uložení</label>
+	<label index="filterset.error.saveEmptyName">Zadejte název sady filtrů</label>
+	<label index="filterset.notify.saved">Filtr byl uložen.</label>
+	<label index="negation.default.true">Není</label>
+	<label index="negation.default.false">Je</label>
+	<label index="negation.datetime.true">Od</label>
+	<label index="negation.datetime.false">Do</label>
+	<label index="negation.datetimeDyn.true">Od</label>
+	<label index="negation.datetimeDyn.false">Až do</label>
+	<label index="negation.numbercompare.true">menší než</label>
+	<label index="negation.numbercompare.false">větší než</label>
+	<label index="newFilterLabel">Zadejte název filtru</label>
+	<label index="newFilterLabel.preset">Nový filtr</label>
+	<label index="subMenuEntry.task">Úkoly</label>
+	<label index="subMenuEntry.project">Projekty</label>
+	<label index="areMatching">%1$d %2$s výsledků odpovídá vašim kritériím vyhledávání.</label>
+	<label index="areMatching.overLimit">Více než %1$d %2$s výsledků odpovídá vaším kritériím vyhledávání. Použijte více kritérií pro vyhledávání nebo použijte třídění pro zobrazení relevantních výsledků.</label>
+	<label index="filterwidget.condtion.remove">Odstranit podmínku</label>
+	<label index="search.noEntryFound">Nebyly nalezeny žádné záznamy</label>
+	<label index="search.noResultsForActiveFilters">Nebyly nalezeny žádné záznamy pro zvolené filtry</label>
+	<label index="contextmenu.project.showinproject">Otevřít v projektovém náhledu</label>
+	<label index="headlet.label">Vyhledat v todoyu</label>
+	<label index="export.error.saveEmpty">Žádné výsledky vyhledávání pro export.</label>
+	<label index="filtercontrol.add.condition">Přidat novou podmínku</label>
+	<label index="filtercontrol.add.sorting">Přidat nové třídění</label>
+	<label index="sorting.remove">Odstranit třídění</label>
+	<label index="sorting.direction.asc">Řadit vzestupně</label>
+	<label index="sorting.direction.desc">Řadit sestupně</label>
+	<label index="newSeparatorLabel">Vložte název nového oddělovače</label>
+	<label index="newSeparatorLabel.preset">Nový oddělovač</label>
+</labels>

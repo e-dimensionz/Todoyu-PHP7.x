@@ -1,0 +1,8 @@
+<span {if $track.editable}class="link" onclick="Todoyu.Ext.timetracking.Task.editTrack({$idTask}, {$track.id})"{/if}>
+	<span class="icon"></span>
+	<span class="date">{dateFormat $track.date_track D2M2Y2}</span>
+	<span class="trackedTime{if $track.workload_chargeable} hasChargeableTime{/if}">{HourMinSec $track.workload_tracked}</span>
+	<span class="chargeableTime">{if $track.workload_chargeable}{HourMinSec $track.workload_chargeable}{else}&nbsp;{/if}</span>
+	<span class="name">{personLabel idPrefix="track_personowner" idRecord="$track.id" idPerson=$track.id_person_create}</span>
+	<span class="comment">{htmlencode $track.comment}</span>
+</span>

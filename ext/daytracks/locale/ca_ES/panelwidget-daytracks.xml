@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Taula d'hores</label>
+	<label index="pwidget.title">Temps enregistrat avui</label>
+	<label index="totalToday">Temps total enregistrat avui</label>
+	<label index="totalToday.noTracks">No s'ha enregistrat temps encara</label>
+	<label index="showHistory">Taules d'hores</label>
+	<label index="goToTask">Canvia a tasca</label>
+</labels>

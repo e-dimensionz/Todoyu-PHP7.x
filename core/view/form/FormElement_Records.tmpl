@@ -1,0 +1,34 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+
+	{** Search field **}
+	<input type="text" id="{$htmlId}-search" value="" class="search textAC {$inputClass} {$class}"  {$extraAttributes} />
+
+	{** Result list **}
+	<ul id="{$htmlId}-results" class="results"></ul>
+
+	{** Selection list **}
+	<ul id="{$htmlId}-selection" class="selection">
+		{foreach $records record}
+			<li id="{$htmlId}-selection-{$record.id}" class="type{ucfirst $record.className}">
+				<span class="icon recordIcon"></span>
+				<span class="label">{htmlencode $record.label}</span>
+				<span class="icon remove"></span>
+			</li>
+		{/foreach}
+	</ul>
+
+	{** Hidden selection storage **}
+	<select name="{$htmlName}" id="{$htmlId}-storage" multiple="multiple" style="display:none">
+		{foreach $value item}
+			<option value="{$item}" selected="selected"></option>
+		{/foreach}
+	</select>
+
+	{** Init js **}
+	<script type="text/javascript">
+		Todoyu.Ui.initFormRecords('{$type}', '{$htmlId}', {$jsonOptions});
+	</script>
+
+{/block}

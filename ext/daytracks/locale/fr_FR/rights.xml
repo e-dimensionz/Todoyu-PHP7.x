@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Général</label>
+	<label index="general.use">Utiliser les feuilles de temps</label>
+	<label index="panelwidgets">Panneau de widgets</label>
+	<label index="daytracks">Widget de feuille de temps</label>
+	<label index="daytracks.showHistory">Voir les feuilles de temps</label>
+</labels>

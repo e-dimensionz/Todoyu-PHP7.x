@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Ustaiwienia ogólne</label>
+	<label index="general.use">Użyj śledzenia czasu</label>
+	<label index="task">Śledzenie zadania</label>
+	<label index="task.track">Śledź czas</label>
+	<label index="task.editOwn">Może edytować zapis czasu swoich zapisów</label>
+	<label index="task.editOwnChargeable">Can edit chargeable time of own tracks</label>
+	<label index="task.editAll">Może edytować zapis czasu wszystkich użytkowników</label>
+	<label index="task.editAllChargeable">Can edit chargeable time of all users</label>
+</labels>

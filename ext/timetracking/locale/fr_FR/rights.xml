@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Paramètres généraux</label>
+	<label index="general.use">Utiliser le suivi du temps</label>
+	<label index="task">Suivi du temps</label>
+	<label index="task.track">Ajouter des feuilles de temps</label>
+	<label index="task.editOwn">Peut modifier ses propres enregistrements sur une tâche</label>
+	<label index="task.editAll">Peut modifier tous les enregistrements d'une tâche</label>
+</labels>

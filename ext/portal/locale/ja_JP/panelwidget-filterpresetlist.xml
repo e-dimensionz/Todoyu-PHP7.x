@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">マイフィルタ</label>
+	<label index="create">フィルタの作成</label>
+	<label index="manage">フィルタの管理</label>
+	<label index="amount">量</label>
+	<label index="error.noFilters">まだフィルタは作成されていません</label>
+	<label index="error.noTypeFiltersets">フィルタは定義されていません</label>
+</labels>

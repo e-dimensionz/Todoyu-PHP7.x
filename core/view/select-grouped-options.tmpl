@@ -1,0 +1,22 @@
+{if !$multiple && !$noPleaseSelect}
+		<option value="0">{if $pleaseSelectLabel}{Label $pleaseSelectLabel}{else}{Label core.form.select.pleaseSelect}{/if}</option>
+		<option value="0" disabled="disabled">---------------------------</option>
+{/if}
+{foreach $options label group}
+	{if $label != "none"}
+		<optgroup label="{Label $label}">
+	{/if}
+	{foreach $group option}
+		{$isSelected = false}
+		{if in_array($option.value, $value) && !$option.disabled}
+			{$isSelected = true}
+			{$value	= unsetArrayValue($value, $option.value)}
+		{/if}
+		<option value="{htmlencode $option.value}" {if $option.class}class="{$option.class}"{/if} {if $isSelected} selected="selected"{/if} {if $option.disabled}disabled="disabled"{/if}>
+			{Label $option.label}
+		</option>
+	{/foreach}
+	{if $label != "none"}
+		</optgroup>
+	{/if}
+{/foreach}

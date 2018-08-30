@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="D2M2">%d.%m.</label>
+	<label index="DlongD2Mlong">%A, %d. %B</label>
+	<label index="D2M2Y2">%d.%m.%y</label>
+	<label index="D2M2Y4">%d.%m.%Y</label>
+	<label index="D2MshortY4">%d. %b %Y</label>
+	<label index="D2MshortY2">%d. %b %y</label>
+	<label index="D2Mshort">%d. %b</label>
+	<label index="DshortDMlong">%a %e. %B</label>
+	<label index="DshortDMshort">%a %e. %b</label>
+	<label index="DMshort">%e. %b</label>
+	<label index="D2MshortTime">%d. %b %H:%M</label>
+	<label index="dShort">%a</label>
+	<label index="DshortD2M2">%a %d.%m.</label>
+	<label index="DshortD">%a %e.</label>
+	<label index="D2MlongY4">%d. %B %Y</label>
+	<label index="Mlong">%B</label>
+	<label index="MlongD2">%d. %B</label>
+	<label index="MlongY4">%B %Y</label>
+	<label index="DshortD2MshortY2">%a, %d. %b %y</label>
+	<label index="DshortD2MlongY4">%a, %d. %B %Y</label>
+	<label index="DlongD2MlongY4">%A, %d. %B %Y</label>
+	<label index="DlongDMlongY4">%A, %e. %B %Y</label>
+	<label index="calendarweek">KW %V</label>
+	<label index="date">%d.%m.%Y</label>
+	<label index="dateMshort">%e. %b</label>
+	<label index="time">%H:%M</label>
+	<label index="timesec">%H:%M:%S</label>
+	<label index="datetime">%d.%m.%Y %H:%M</label>
+	<label index="dShortDatetime">%a %d.%m.%Y %H:%M</label>
+	<label index="day">%d.</label>
+</labels>

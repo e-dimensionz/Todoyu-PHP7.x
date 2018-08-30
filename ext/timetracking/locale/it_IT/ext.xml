@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Tracciamento temporale</label>
+	<label index="title">Tracciamento temporale</label>
+	<label index="noTracksYet">Nessun tracciamento temporale</label>
+	<label index="attr.date_create">Data</label>
+	<label index="attr.date_track">Data</label>
+	<label index="attr.workload_tracked">Carico di lavoro</label>
+	<label index="attr.workload_chargeable">Fatturabile</label>
+	<label index="attr.comment">Commento</label>
+	<label index="search.label">Tracciamento temporale</label>
+	<label index="task.attr.overtimed">Durata eccessiva attività</label>
+	<label index="headlet.label">Tracciamento temporale</label>
+	<label index="totalTrackedTime">Tempo totale tracciato</label>
+	<label index="tasktab.edit">Cliccare qui per modificare questo record</label>
+	<label index="start">Avvia il tracciamento temporale</label>
+	<label index="stop">Arresta il tracciamento temporale</label>
+	<label index="currentTask">Attività corrente</label>
+	<label index="showCurrentTaskInProject">Mostra attività nel progetto</label>
+	<label index="quicktask.workload_done">Durata lavoro già fatto</label>
+	<label index="estimated_workload">Carico di lavoro stimato</label>
+	<label index="jumpToTask">Fare clic qui per visualizzare questa attività</label>
+	<label index="jumpToProject">Fare clic qui per visualizzare questo progetto</label>
+	<label index="extconf.stopOnLogout">Arresta il tracciamento temporale quando si termina la sessione</label>
+</labels>

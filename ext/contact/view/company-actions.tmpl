@@ -1,0 +1,18 @@
+{* --------------- Details *}
+<span title="{Label contact.ext.company.details}" class="icon info" onclick="Todoyu.Ext.contact.Company.show({$id})"></span>
+
+{if constant('AREA') === constant('EXTID_CONTACT')}
+	{* --------------- Edit *}
+	{if isCompanyEditAllowed($id)}
+		<span title="{Label contact.ext.company.edit}" class="icon edit" onclick="Todoyu.Ext.contact.Company.edit({$id})"></span>
+	{else}
+		<span title="{Label contact.ext.company.edit}" class="icon edit disabled"></span>
+	{/if}
+
+	{* --------------- Delete *}
+	{if isCompanyDeleteAllowed($id)}
+		<span title="{Label contact.ext.company.delete}" class="icon delete" onclick="Todoyu.Ext.contact.Company.remove({$id})"></span>
+	{else}
+		<span title="{Label contact.ext.company.delete} - {Label contact.ext.company.delete.hasProjects}" class="icon delete disabled"></span>
+	{/if}
+{/if}

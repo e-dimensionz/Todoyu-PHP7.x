@@ -1,0 +1,98 @@
+<div class="repositoryUpdates">
+
+	{***************** Core Update *********************}
+
+	{if $updates.core}
+		{$coreUpdate = $updates.core}
+		<div class="coreUpdate">
+			{Title "sysmanager.repository.core.newUpdateAvailable"}
+			<table class="coreUpdateInfos">
+				<tr>
+					<th>{Label sysmanager.repository.update.newversion}</th>
+					<td>{$coreUpdate.version}</td>
+				</tr>
+				<tr>
+					<th>{Label sysmanager.repository.update.yourversion}</th>
+					<td>{constant(TODOYU_VERSION)}</td>
+				</tr>
+				<tr>
+					<th>{Label sysmanager.repository.update.releasedate}</th>
+					<td>{dateFormat $coreUpdate.date_update date}</td>
+				</tr>
+			</table>
+			<div class="installButtons">
+				{* Button class="info" label="sysmanager.repository.extension.moreDetails" *}
+				{Button class="update" label="sysmanager.repository.core.installUpdate" onclick="Todoyu.Ext.sysmanager.Repository.Update.showCoreUpdateDialog()"}
+			</div>
+			<div class="clear"></div>
+		</div>
+	{/if}
+
+
+	{***************** Extension Updates *********************}
+
+	<div class="extensionUpdates extListing">
+		{Title "sysmanager.repository.extension.extensionUpdates"}
+
+		{foreach $updates.extensions extUpdate}
+			<div class="extension" id="repository-update-ext-{$extUpdate.ext_key}">
+
+				<div class="main">
+					<h5>
+						<img src="{$extUpdate.icon}" border="0" />
+						<div class="title">{$extUpdate.title} {$extUpdate.version.version}</div>
+						<div class="author">{Label sysmanager.repository.by} {$extUpdate.author.name}</div>
+					</h5>
+					<div class="description">{$extUpdate.version.version_information}</div>
+
+					{if $extUpdate.version.dependencies}
+						<div class="warning dependency">
+							<p>{Label sysmanager.error.unresolvedDependencies}</p>
+							<ul>
+								{foreach $extUpdate.version.dependencies dependency}
+									<li id="{$extUpdate.ext_key}-dependency-{$dependency.ext_key}">{$dependency.title_short} {$dependency.version} ({$dependency.ext_key})</li>
+								{/foreach}
+							</ul>
+						</div>
+					{/if}
+					{if $extUpdate.version.conflicts}
+						<div class="warning conflicts">
+							<p>{Label sysmanager.error.unresolvedConflicts}</p>
+							<ul>
+								{foreach $extUpdate.version.conflicts conflict}
+									<li id="{$extUpdate.ext_key}-conflict-{$conflict.ext_key}">{$conflict.title_short} ({$conflict.ext_key})</li>
+								{/foreach}
+							</ul>
+						</div>
+					{/if}
+
+				</div>
+
+				<div class="right">
+					<div class="installed">{Label sysmanager.repository.extension.installed}: {$extUpdate.installed}</div>
+					<div class="version">{Label sysmanager.repository.update.newversion} {$extUpdate.version.version}</div>
+					<div class="state">{Label sysmanager.extension.state}: {ExtensionStatusIcon $extension.version.state}</div>
+					<div class="date">{Label sysmanager.repository.update.releasedate}: {dateFormat $extUpdate.version.date_update date}</div>
+				</div>
+
+				<div class="bottom">
+					{$hasDependencies = sizeof($extUpdate.version.dependencies)}
+					{$hasConflicts = sizeof($extUpdate.version.conflicts)}
+					{$preventInstall = $hasDependencies+$hasConflicts}
+					{Button disabled=$preventInstall class="update" label="sysmanager.repository.extension.update" onclick="Todoyu.Ext.sysmanager.Repository.Update.showExtensionUpdateDialog('$extUpdate.ext_key')"}
+					{Button label="sysmanager.repository.moreInfo" class="info" onclick="Todoyu.Ext.sysmanager.Repository.showExtensionInTER('$extUpdate.ter_link')"}
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		{else}
+			<p>{Label sysmanager.repository.update.noupdatesavailable}</p>
+		{/foreach}
+
+		<div class="clear"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+Todoyu.Ext.sysmanager.Repository.Update.init();
+</script>

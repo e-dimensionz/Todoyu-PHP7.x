@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=project&amp;controller=project</attribute>
+		<attribute name="name">project</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="basic">
+			<elements>
+
+				<field type="text" name="title">
+					<label>core.global.title</label>
+					<validate>
+						<isNotEmpty msg="project.ext.form.validation.title" />
+					</validate>
+					<required />
+				</field>
+
+				<field type="RTE" name="description">
+					<label>core.global.description</label>
+					<required />
+				</field>
+
+				<field type="select" name="status">
+					<label>core.global.status</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getProjectStatusOptions</function>
+					</source>
+					<noPleaseSelect />
+				</field>
+
+				<field type="date" name="date_start">
+					<label>project.ext.attr.date_start</label>
+					<validate>
+						<dateNotAfter>
+							<field>date_end</field>
+						</dateNotAfter>
+					</validate>
+					<required />
+				</field>
+
+				<field type="date" name="date_end">
+					<label>project.ext.attr.date_end</label>
+					<validate>
+						<dateAfter>
+							<field>date_start</field>
+							<allowEmpty />
+						</dateAfter>
+					</validate>
+				</field>
+
+				<field type="date" name="date_deadline">
+					<label>project.ext.attr.date_deadline</label>
+					<validate>
+						<dateAfter>
+							<field>date_start</field>
+							<allowEmpty />
+						</dateAfter>
+					</validate>
+				</field>
+
+				<field type="textAC" name="id_company">
+					<restrict>
+						<allow ext="contact" right="general:use" />
+					</restrict>
+					<label>project.ext.attr.company</label>
+					<config>
+						<acLabel>TodoyuContactCompanyManager::getLabel</acLabel>
+						<options>
+							<acName>activecompany</acName>
+							<onComplete>Todoyu.Ext.project.Project.Edit.onCompanyAutocomplete</onComplete>
+						</options>
+					</config>
+					<required label="LLL:project.ext.form.validation.company" />
+					<wizard name="company" />
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="data">
+			<elements>
+
+
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="presets">
+			<legend>project.form.legend.project.preset</legend>
+			<class>presets</class>
+			<elements>
+				<field type="select" name="id_taskpreset">
+					<label>project.ext.attr.taskpreset</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getTaskPresetOptions</function>
+					</source>
+					<noPleaseSelect />
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="persons">
+			<restrict>
+				<allow ext="contact" right="general:use" />
+			</restrict>
+			<legend>project.form.legend.project.members</legend>
+			<class>persons</class>
+			<elements>
+				<field type="databaseRelation" name="persons">
+					<label>project.ext.attr.persons</label>
+					<addLabel>project.ext.attr.persons.new</addLabel>
+					<record>
+						<form>ext/project/config/form/project-person.xml</form>
+						<url>
+							<ext>project</ext>
+							<controller>project</controller>
+						</url>
+						<label type="function">
+							<function>TodoyuProjectProjectViewHelper::getProjectPersonLabel</function>
+							<noLabel>project.ext.attr.persons.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.project.Project.Edit.cancel(#id#)</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.project.Project.Edit.save(this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

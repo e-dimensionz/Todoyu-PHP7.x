@@ -1,0 +1,32 @@
+<div id="event-{$source}-{$id}" class="{$classNames}" style="width:{$width}px">
+	<div class="head">
+		<div class="typeIcon"></div>
+
+		{if $isPrivate}
+			{if isPersonID($id_person)}
+				<div class="private"></div>
+			{else}
+				<div class="privateEvent"></div>
+			{/if}
+		{/if}
+
+		{if $view === 'day' && $persons}
+			<div class="assignedPersons">
+				{foreach $persons person}
+					{$person.shortname}
+					{if !$dwoo.foreach.default.last},{/if}
+				{/foreach}:
+			</div>
+		{/if}
+
+		<div class="title">
+			{htmlencode $title}
+		</div>
+
+		{if date('ymd', $date_start) !== date('ymd', $date_end)}
+			<div class="date">
+				({dateFormat $date_start D2Mshort} - {dateFormat $date_end D2Mshort})
+			</div>
+		{/if}
+	</div>
+</div>

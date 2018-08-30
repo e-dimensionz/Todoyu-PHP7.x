@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.person.basics">Základní osobní informace</label>
+	<label index="legend.person.picture">Profilový obrázek</label>
+	<label index="legend.person.furtherInformation">Další informace o osobě</label>
+	<label index="legend.person.login">Uživatelský účet</label>
+	<label index="legend.company.basics">Hlavní údaje o společnosti</label>
+	<label index="legend.company.logo">Logo společnosti</label>
+	<label index="legend.admin.jobtype.record">Typ práce</label>
+	<label index="legend.admin.contactinfotype.record">Typ kontaktních informací</label>
+</labels>

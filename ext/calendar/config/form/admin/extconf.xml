@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">config</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="config">
+			<legend>calendar.form.legend.admin.overbooking</legend>
+			<elements>
+				<field type="checkbox" name="allowoverbooking">
+					<label>calendar.ext.extconf.allowoverbooking.label</label>
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="eventsreminder">
+			<legend>calendar.form.legend.admin.reminders</legend>
+			<elements>
+				<field type="checkbox" name="is_reminderemail_active">
+					<label>calendar.ext.extconf.reminder.reminderemail_active.label</label>
+				</field>
+
+				<field type="comment" name="todoyuid_comment">
+					<comment type="function">
+						<function>TodoyuCalendarViewHelper::getCLIinfolinkComment</function>
+					</comment>
+				</field>
+
+				<field type="select" name="reminderemail_advancetime">
+					<label>calendar.ext.extconf.reminder.email.advancetime.label</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getReminderTimeOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+
+				<field type="checkbox" name="is_reminderpopup_active">
+					<label>calendar.ext.extconf.reminder.reminderpopup_active.label</label>
+				</field>
+
+				<field type="select" name="reminderpopup_advancetime">
+					<label>calendar.ext.extconf.reminder.popup.advancetime.label</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getReminderTimeOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+
+				<field type="checkbox" name="audioreminder_active">
+					<label>calendar.ext.extconf.reminder.audio.active.label</label>
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="eventsmailing">
+			<legend>calendar.form.legend.admin.automaticEmail</legend>
+			<elements>
+			<field type="select" name="autosendeventmail">
+					<label>calendar.ext.extconf.autosendeventmail.label</label>
+					<source type="function">
+						<function>TodoyuRoleViewHelper::getRoleOptions</function>
+						<lazyInit />
+					</source>
+					<multiple />
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

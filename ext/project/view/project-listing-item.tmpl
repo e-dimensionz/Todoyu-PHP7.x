@@ -1,0 +1,18 @@
+<div id="project-{$project.id}" class="project{if $isExpanded} expanded{/if}">
+	<h3 id="project-{$project.id}-header" class="projectheader contextmenuproject" onclick="Todoyu.Ext.project.Project.toggleDetails({$project.id})">
+		<span class="headLabel bcStatus{$project.status}"><!-- //--></span>
+		<span class="projectName">
+			{htmlencode $project.fulltitle}
+		</span>
+		<span class="projectNumber">
+			{$project.id}
+		</span>
+	</h3>
+
+{if isAllowedSeeProjectDetails($project.id)}
+	<div id="project-{$project.id}-details" class="projectDetails" {if ! $details} style="display:none"{/if}>
+		{$details}
+	</div>
+{/if}
+
+</div>

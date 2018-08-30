@@ -1,0 +1,73 @@
+{if $noPaging || $page == 1 }
+	<div class="paging-container" id="paging-{$config.name}">
+{/if}
+
+{if !empty($rows)}
+	<table class="list {$config.name}Listing withMouseHover" id="paging-{$config.name}-table-{$page}" >
+		{*-------------- column definitions used to control width of table columns ---------------*}
+		<colgroup>
+			{foreach $config.columns colName label}
+				<col class="{$colName}" />
+			{/foreach}
+		</colgroup>
+
+	{*-------------- Column titles ---------------*}
+		<thead>
+			<tr class="headerLine">
+				{foreach $config.columns colName label}
+					<th scope="col" class="{$colName} {if $dwoo.foreach.default.last}last{/if}">{Label $label}&nbsp;</th>
+				{/foreach}
+			</tr>
+		</thead>
+
+	{*-------------- Rows ---------------*}
+		<tbody>
+		{foreach $rows row}
+			<tr class="{cycle values="odd,even"}" id="{$config.name}-listingrow-{$row.id}">
+				{foreach $config.columns colName label}
+					{$fieldClass = cat($colName Class)}
+					{if is_array($row.columns[$colName])}
+						{$colContent= $row.columns[$colName].content}
+						{$className	= $row.columns[$colName].classname}
+						{$spanID	= $row.columns[$colName].spanID}
+						{$onClick	= $row.columns[$colName].onClick}
+					{else}
+						{$colContent= $row.columns[$colName]}
+						{$className	= ''}
+						{$spanID	= ''}
+						{$onClick	= ''}
+					{/if}
+					<td class="{$colName} {$row[$fieldClass]}">
+						<span {if $spanID}id="{$spanID}"{/if} class="{$colName} {$className}" {if $colContent && $colName!='actions'}title="{htmlencode $colContent}"{/if} {if $onClick}onclick="{$onClick}"{/if}>
+							{if $colName == 'actions'}
+								{cleanHtml $colContent}
+							{else}
+								{htmlencode $colContent}
+							{/if}
+						</span>
+					</td>
+				{/foreach}
+			</tr>
+		{/foreach}
+
+		</tbody>
+	</table>
+{else}
+	{contentMessage core.global.listing.noItems}
+{/if}
+
+	{*-------------- Listing show more entries option ---------------*}
+
+{if !$noPaging && $page < $pages}
+	<div id="extendlisting">
+		<a onclick='Todoyu.Listing.more("{$name}", {$page}, {$listingParams})'>{Label core.global.showMore}</a>
+	</div>
+
+	<script type="text/javascript">
+	Todoyu.Listing.init('{$config.name}', '{$config.update}', {$config.size}, {$offset}, {$total});
+	</script>
+{/if}
+
+{if $noPaging || $page == 1}
+	</div> {* Close pading container *}
+{/if}

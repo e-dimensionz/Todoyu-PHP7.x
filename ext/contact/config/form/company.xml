@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=contact&amp;controller=company</attribute>
+		<attribute name="name">company</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+		<field name="image_id" />
+	</hiddenFields>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>contact.form.legend.company.basics</legend>
+			<elements>
+
+				<field type="text" name="title">
+					<label>contact.ext.company.attr.title</label>
+					<required />
+					<validateLive>
+						<function>
+							Todoyu.Ext.contact.Company.checkDuplicatedEntries
+						</function>
+					</validateLive>
+				</field>
+
+				<field type="text" name="shortname">
+					<label>contact.ext.company.attr.shortname</label>
+				</field>
+
+				<field type="date" name="date_enter">
+					<label>contact.ext.company.attr.date_enter</label>
+				</field>
+
+				<field type="checkbox" name="is_notactive">
+					<label>contact.ext.company.attr.is_notactive</label>
+				</field>
+
+				<field type="checkbox" name="is_internal">
+					<label>contact.ext.company.attr.is_internal</label>
+				</field>
+
+				<field type="select" name="locale_correspondence">
+					<label>contact.ext.locale_correspondence</label>
+					<source type="function">
+						<function>TodoyuViewHelper::getAllLocaleOptions</function>
+					</source>
+				</field>
+
+				<field type="databaseRelation" name="contactinfo">
+					<label>contact.ext.contactinfo</label>
+					<addLabel>contact.ext.contactinfo.new</addLabel>
+					<record>
+						<form>ext/contact/config/form/contactinfo.xml</form>
+						<url>
+							<ext>contact</ext>
+							<controller>company</controller>
+						</url>
+						<label type="function">
+							<function>TodoyuContactViewHelper::getContactinfoLabel</function>
+							<noLabel>contact.ext.contactinfo.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+				<field type="databaseRelation" name="address">
+					<label>contact.ext.address</label>
+					<addLabel>contact.ext.address.new</addLabel>
+					<record>
+						<form>ext/contact/config/form/address.xml</form>
+						<url>
+							<ext>contact</ext>
+							<controller>company</controller>
+						</url>
+						<label type="function">
+							<function>TodoyuContactViewHelper::getAddressLabel</function>
+							<noLabel>contact.ext.address.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+				<field type="databaseRelation" name="person">
+					<label>contact.ext.company.attr.person</label>
+					<addLabel>contact.ext.person.new</addLabel>
+					<record>
+						<form>ext/contact/config/form/company-person.xml</form>
+						<url>
+							<ext>contact</ext>
+							<controller>company</controller>
+						</url>
+						<label type="function">
+							<function>TodoyuContactViewHelper::getEmployeeLabel</function>
+							<noLabel>contact.ext.company.attr.person.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+				<field type="textarea" name="comment">
+					<label>contact.ext.company.attr.comment</label>
+					<rows>5</rows>
+					<restrict>
+						<allow ext="contact" right="company:editComment" />
+					</restrict>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="image">
+			<legend>contact.form.legend.company.logo</legend>
+			<elements>
+
+				<field type="comment" name="preview">
+					<comment type="function">
+						<function>TodoyuContactCompanyManager::getPreviewImageForm</function>
+					</comment>
+				</field>
+				<field type="button" name="upload">
+					<text>contact.ext.company.attr.image.upload</text>
+					<class>uploadContactImage</class>
+					<onclick>Todoyu.Ext.contact.Upload.showUploadForm(this.form, 'company')</onclick>
+				</field>
+				<field type="button" name="remove">
+					<text>contact.ext.company.removeLogo</text>
+					<class>removeContactImage</class>
+					<onclick>Todoyu.Ext.contact.Upload.removeImage(this.form, 'company')</onclick>
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.contact.Company.closeForm(this.form)</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.contact.Company.save(this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

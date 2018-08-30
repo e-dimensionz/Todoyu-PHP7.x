@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<fieldsets>
+
+		<fieldset name="warning-fieldset-buttons">
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Popups.closeLast(); Todoyu.Ext.calendar.refresh()</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Popups.closeLast(); Todoyu.Ext.calendar.DragDrop.saveDroppingConfirmed();</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

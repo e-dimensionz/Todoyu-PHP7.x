@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > tab - my filter</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > tab - my filter</td></tr>
+</thead><tbody>
+<!------ portal > tab - my filter-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id='portal-tab-selection-label']/span[2][@class=&quot;labeltext&quot;]</td>
+	<td></td>
+</tr>
+<!--activate my-filter tab-->
+<tr>
+	<td>click</td>
+	<td>//p[@id='portal-tab-selection-label']/span[2][@class=&quot;labeltext&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;portal-tab-selection&quot;][contains(@class, &quot;active&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class=&quot;portalTaskList taskListing&quot;]</td>
+	<td></td>
+</tr>
+<!--return  to todo tab-->
+<tr>
+	<td>click</td>
+	<td>//p[@id='portal-tab-todo-label']/span[2][@class=&quot;labeltext&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,412 @@
+@import "../../../core/config/theme.scss";
+
+#contentBox {
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	background-color:#fff;
+	border-radius:10px;
+	float:left;
+	top:20px;
+	width:680px !important;
+}
+
+p.installMessage {
+	background:$colorCorporate00 url(../img/icons.png) 0 1000px no-repeat;
+	border:2px solid $white;
+	color:#000;
+	font-weight:bold;
+	margin:0 12px 12px 12px;
+	padding:10px 10px 10px 40px;
+
+	&.success {
+		background-position:10px -20px;
+		border-color:	$colorApprove07;
+		color:			$colorApprove07;
+	}
+
+	&.error {
+		background-position:10px 10px;
+		border-color:	$colorAlert00;
+		color:			$colorAlert00;
+	}
+}
+
+#footer {
+	background-color:$colorCorporate01;
+	border:1px solid $colorCorporate04;
+	clear:both;
+	margin:20px 8px 10px 8px;
+	padding:15px;
+	width:auto !important;
+}
+
+.sqlQuery {
+	background-color:$colorNotice03;
+	border:1px dotted $colorNotice00;
+	height:380px;
+	margin:12px 0;
+	overflow-x:scroll;
+	padding:5px;
+	width:600px;
+
+	& ul li {
+		margin-left:20px;
+	}
+}
+
+.blockcontent span.title {
+	background-color:$colorCorporate01;
+	border:1px solid $colorCorporate00;
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:12px;
+	padding:8px 0 8px 12px;
+}
+
+
+select#database option.disabled {
+	color:$colorNeutral03;
+}
+
+
+
+/* -----------------------------------
+	Panel: steps of installation
+   ----------------------------------- */
+#panelwidget-installprogress {
+
+	& h1 span.title {
+		padding-left:10px;
+	}
+
+	& h6 {
+		font-size:14px;
+		font-weight:bold;
+		margin-bottom:10px;
+	}
+
+	& ul li {
+		color:$colorNeutral03;
+		font-size:12px;
+		padding:8px 8px 8px 20px;
+
+		&.done {
+			color:$black;
+
+			& .icon {
+				background:url(../img/icons.png) no-repeat 0 -29px;
+				display:block;
+				height:16px;
+				left:0;
+				position:absolute;
+				width:16px;
+			}
+		}
+
+		&.current {
+			color:$colorAlert02;
+			font-weight:bold;
+		}
+	}
+}
+
+table.dbstruct {
+
+	td {
+		border-left:1px solid $colorNotice00;
+		padding:5px;
+
+		&.table {
+			font-weight:bold;
+		}
+	}
+
+	th {
+		background-color:$colorNotice00;
+		border-bottom:2px dashed $black;
+		padding:5px;
+		text-align:left;
+
+		&.table,
+		&.column {
+			width:200px;
+		}
+
+		&.type {
+			width:150px;
+		}
+	}
+}
+
+p.section {
+	font-size:14px;
+	font-weight:bold;
+	margin:10px;
+}
+
+/* -----------------------------------
+	Form elements
+   ----------------------------------- */
+input#name,
+input#email,
+select#language,
+select#locale,
+select#timezone,
+select#database,
+input#database_new,
+input#database_manual {
+	width:250px;
+}
+
+input#email.adminaccount {
+	width:99%;
+}
+
+/* ---------------------------------
+	General content boxes, styles
+   --------------------------------- */
+#box {
+	padding:1px 2px 0 3px;
+}
+
+.content {
+	margin:8px;
+	padding:1px;
+
+	& .boxContent {
+		background-color:$colorCorporate02;
+		padding-top:12px;
+
+		& form {
+			padding:0 12px;
+		}
+
+		& .blockcontent {
+			padding-bottom:10px;
+		}
+
+		& .installMessage {
+			margin:0 0 10px 0;
+		}
+	}
+}
+
+/* -----------------------
+	Text
+   ----------------------- */
+.error {
+	color:$colorAlert00;
+}
+
+.textError{
+	background-color:$colorAlert04;
+	border-color:$colorAlert00 !important;
+	margin:0 0 8px 12px;
+	padding:8px 0 8px 12px;
+}
+
+.textInfo{
+	background-color:$colorNotice03;
+	border-color:$colorNotice00;
+}
+
+.textSuccess{
+	background-color:$colorApprove04;
+	border-color:$colorApprove08;
+	margin:0 0 8px 12px;
+	padding:8px 0 8px 12px;
+}
+
+.bullet {
+	font-size:16px;
+	padding-right:8px;
+}
+
+.redLabel {
+	color:$colorAlert00;
+}
+
+
+
+/* -----------------------
+	Panel
+   ----------------------- */
+#licence,
+#panelx {
+	background-color:$white;
+	clear:both;
+	float:left;
+	margin:0 10px 0 0;
+	padding:0;
+	position:relative;
+	top:20px;
+	width:270px;
+
+	& .panelFooter {
+		background:$colorCorporate03 url('../img/panel-footer.png') no-repeat 0 0;
+		height:51px;
+		margin-top: -2px;
+	}
+}
+
+/* ----------------------------
+ 	Todoyu Panelwidget Slogan
+   ---------------------------- */
+.panelWidget .content {
+	position:relative;
+}
+
+.panelWidget p.slogan {
+	bottom:0;
+	color:white;
+	font-size:13px !important;
+	font-weight:bold;
+	height:34px;
+	padding:12px 10px;
+	position:absolute;
+	right:0;
+	text-align:right;
+	text-transform:uppercase;
+}
+
+
+
+/* --------------------------
+	License agreement
+   --------------------------- */
+#licenseagreement {
+	background-color:$colorCorporate00;
+	padding:20px 0 28px 24px;
+
+	& h2 {
+		font-size:11px;
+		font-weight:normal;
+		letter-spacing:1px;
+		text-transform:uppercase;
+	}
+}
+
+.enduserlicense {
+	background-color:$white;
+	border:1px solid $colorNeutral02;
+	height:270px;
+	margin:8px 0 28px 0;
+	overflow-y:scroll;
+	padding:4px;
+	width:580px;
+
+	& pre {
+		font-family:monospace;
+		font-size:12px !important;
+	}
+}
+
+ul.thirdPartyLibs {
+	background-color:$white;
+	border:1px solid $colorNeutral02;
+	margin:8px 0 26px 0;
+	padding:4px 0 6px 20px;
+	width:520px;
+
+	& li {
+		list-style-type:disc;
+		padding:2px;
+	}
+}
+
+/* ------------------------------------------
+	Installation Locale Selection
+   ------------------------------------------ */
+ul.installationLocales {
+	margin-top:20px;
+
+	& li {
+		-khtml-border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		background-color:$colorNeutral00;
+		margin:0 0 6px 0;
+		padding:6px 0 6px 18px;
+		width:60%;
+
+		&:hover {
+			background-color:$white;
+			cursor:pointer;
+			font-weight:bold;
+		}
+
+		& a {
+			color:$colorNeutral08;
+			font-size:14px;
+		}
+	}
+}
+
+/* --------------------------
+	Headers, footers
+   --------------------------- */
+h1.headerLine {
+	@include gradient-header;
+	border: {
+		bottom:1px solid $white;
+		radius:5px 5px 0 0;
+		top:1px solid $colorNeutral02;
+	}
+
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	height:25px;
+	position:relative;
+	text-align:left;
+}
+
+h1 span.title {
+	float:left;
+	font-size:10px;
+	letter-spacing:0.3px;
+	line-height:25px;
+	margin:0 0 0 10px;
+}
+
+/* ---------------------------------------
+	Hyperlinks, buttons, labels, etc.
+   --------------------------------------- */
+a, a:link {
+	color:$colorNeutral08;
+}
+
+label {
+	cursor:pointer;
+}
+
+
+
+/* ----------------------------
+	Icons, decorations
+   ---------------------------- */
+.servercheckicon {
+	background:transparent url('../img/icons.png') no-repeat 0 0;
+	display:block;
+	height:16px;
+	width:16px;
+
+	&.ok {
+		background-position:0 -28px;
+	}
+}
+
+.toggler {
+	background:transparent url('../img/icons.png') no-repeat 4px -56px;
+	height:16px;
+	padding:0 0 0 16px;
+
+	&.expanded {
+		background:transparent url('../img/icons.png') no-repeat 4px -85px;
+	}
+}
+
+td {
+	padding:4px 0 8px 0;
+}

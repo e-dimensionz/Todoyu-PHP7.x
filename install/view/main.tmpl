@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>todoyu Installer - {Label $title}</title>
+	<link rel="shortcut icon" href="../favicon.ico" />
+	{foreach $assets.css cssHref}
+		<link href="{$cssHref}" rel="stylesheet" type="text/css" />
+	{/foreach}
+	{foreach $assets.js jsSrc}
+		<script type="text/javascript" src="{$jsSrc}"></script>
+	{/foreach}
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="pragma" content="no-cache" />
+</head>
+	<body>
+		<div id="box">
+			<div id="panel">
+				{* ------------ Panel -------------- *}
+				<div class="panelHeader"><!-- panel header --></div>
+
+				{$progress}
+
+				<div class="panelWidget">
+					<h1 class="defaultCursor"><span class="title">todoyu</span></h1>
+					<img src="asset/img/banner.jpg">
+					<p class="slogan">
+					{Label install.installer.slogan.line1} &ndash;<br />
+					{Label install.installer.slogan.line2}
+					</p>
+				</div>
+				<div class="panelFooter"><!-- panel footer --></div>
+			</div>
+			{* ------------------- Panel end ------------- *}
+
+			<div id="contentBox">
+				<div class="content">
+						<h1 class="headerLine">
+							<span class="title">Todoyu Installer - {Label $title}</span>
+						</h1>
+					<div class="boxContent">
+
+						{if $result.text || $text}
+							<p class="installMessage {$result.textClass|default:$textClass}">{$result.text|default:$text}</p>
+						{/if}
+
+						<form method="post" action="index.php" style="padding-left:12px;" >
+							{* ------------ Content ---------------------- *}
+							<div class="blockcontent">{block name="box"}{/block}</div>
+							{* ----------- Submit: goto next step -------- *}
+
+							{if $stop != true && $button != false }
+								{Button label=$button type="submit" id="next" class=$buttonClass}
+							{/if}
+						</form>
+						<br />
+					</div>
+				</div>
+				{* ------------------- Footer ----------------- *}
+				<div id="footer">
+					<p>
+						<strong>todoyu.</strong> Copyright &copy; 2006-{date('Y')} snowflake productions GmbH, Switzerland<br />
+						Extensions are copyright of their respective owners. Go to <a href="http://www.todoyu.com" target="_blank">todoyu.com</a> for details. todoyu comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it under certain conditions.<br />
+						Obstructing the appearance of this notice is prohibited by law.<br />
+						Installed version: {constant(TODOYU_VERSION)} ({constant(TODOYU_UPDATE)})
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript">
+	TodoyuInstaller.focusFirstFormField($$('form')[0]);
+</script>
+</html>

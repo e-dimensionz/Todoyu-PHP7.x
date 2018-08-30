@@ -1,0 +1,5 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+<input type="{$type}" name="{$htmlName}" id="{$htmlId}" value="{htmlencode $valueTemplate}" class="{$inputClass} {$class}" {if $disabled}disabled="disabled"{/if} {$extraAttributes} /> <div class="durationPickerIcon icon" onclick='Todoyu.Ui.showDurationPicker("{$htmlId}", {$jsConfig})'></div>
+{/block}

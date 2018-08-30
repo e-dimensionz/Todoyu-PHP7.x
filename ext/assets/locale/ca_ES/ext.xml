@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Documents de la tasca</label>
+	<label index="search.label">Documents</label>
+	<label index="tab.noAssets">Afegeix el primer document</label>
+	<label index="tab.asset">Document</label>
+	<label index="tab.assets">Documents</label>
+	<label index="tab.toggle">Documents On/Off</label>
+	<label index="list.header.uploaddate">Puja data</label>
+	<label index="alt.download">Descarrega l'arxiu</label>
+	<label index="alt.uploadedby">Pujat per</label>
+	<label index="alt.delete">Elimina l'arxiu</label>
+	<label index="alt.changeVisibility">Canvia la visibilitat</label>
+	<label index="alt.selectall">Selecciona tot/cap</label>
+	<label index="upload.selectfile">Selecciona un arxiu per a pujar</label>
+	<label index="upload.filename">Nom de l'arxiu</label>
+	<label index="upload.new">Afegeix un nou arxiu</label>
+	<label index="delete.confirm">Realment voleu eliminar aquest arxiu?</label>
+	<label index="delete.notifiy.success">S'ha eliminat l'arxiu.</label>
+	<label index="togglepublic.notifiy.ispublic">L'arxiu és visible a tots els que poden veure aquesta tasca.</label>
+	<label index="togglepublic.notifiy.notpublic">L'arxiu no és visible per a tots els que poden veure aquesta tasca.</label>
+	<label index="download.selection">Descarrega la selecció</label>
+	<label index="download.normal">Només heu seleccionat un arxiu -> descàrrega normal de l'arxiu</label>
+	<label index="download.compressed">Els arxius seleccionats s'han empaquetat en un arxiu per descarregar</label>
+	<label index="error.minimumFile">Selecciona almenys un arxiu</label>
+	<label index="error.download">La descàrrega de l'arxiu no és possible</label>
+	<label index="error.access">No es pot accedir a aquest arxiu</label>
+	<label index="maxFileSizeExceeded">L'arxiu '#{filename}' ha excedit la mida màxima persmesa (#{maxFileSize}) per se pujat</label>
+	<label index="maxLengthFileNameExceeded">L'arxiu '#{filename}' ha excedit la llargada màxima (#{maxLengthFileName}) del nom per ser pujat</label>
+	<label index="uploadFailed">La càrrega de l'arxiu '#{filename}' ha fallat</label>
+	<label index="uploadOk">S'ha pujat l'arxiu.</label>
+	<label index="uploadCanceled">La càrrega ha estat cancelada</label>
+	<label index="locked">La tasca està bloquejada. No podeu afegir arxius.</label>
+	<label index="task.icon">La tasca té arxius</label>
+	<label index="contextmenu.task.addasset">Arxiu</label>
+	<label index="type.task">Arxius de la tasca</label>
+	<label index="type.comment">Arxius del comentari</label>
+	<label index="type.project">Arxius del projecte</label>
+</labels>

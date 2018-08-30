@@ -1,0 +1,212 @@
+@import "../../../../core/config/theme.scss";
+
+
+/* ----------------------------
+	Tabs
+   ---------------------------- */
+#records-tabs {
+	.icon {
+		background-image:url(../img/icons.png);
+		background-repeat: no-repeat;
+	}
+	.all .icon {
+		background-position:0 -625px;
+	}
+	.extTypes .icon {
+		background-position:0 5px;
+	}
+	.typeRecords .icon {
+		background-position:0 -775px;
+	}
+	.openRecord .icon {
+		background-position:0 -325px;
+	}
+}
+
+
+/* ----------------------------
+	Tables
+   ---------------------------- */
+.recordsList {
+	width: 918px;
+	border: 0;
+
+	.actions {
+		.icon {
+			cursor: pointer;
+			margin-right: 5px;
+		}
+	}
+}
+
+
+
+/* ----------------------------
+	Types of all extensions
+   ---------------------------- */
+.recordsList.typeAll {
+	.recordtype {
+		width: 29.847%;
+	}
+	
+	td.icon {
+		background:url(../img/icons.png) no-repeat 10px -777px;
+	}
+
+	td.exticon {
+		text-overflow: clip;
+	}
+
+	col.exticon {
+		width: 35px;
+	}
+
+	.actions {
+		width: 54px;
+
+		.list {
+			background:url(../img/icons.png) no-repeat 0 -630px;
+		}
+	}
+}
+
+
+/* ----------------------------
+	Types of one extension
+   ---------------------------- */
+.recordsList.typeExtension {
+	td.icon {
+		background:url(../img/icons.png) no-repeat 10px -777px;
+	}
+
+	.actions {
+		width: 30px;
+		
+		.list {
+			background:url(../img/icons.png) no-repeat 0 -630px;
+		}
+	}
+}
+
+.recordsList.typeRecords {
+	td.icon {
+		background:url(../img/icons.png) no-repeat 10px -327px;
+	}
+	.actions {
+		width: 50px;
+
+		.edit {
+			background:url(../img/icons.png) no-repeat 0 -360px;
+		}
+		.delete {
+			background:url(../img/icons.png) no-repeat 0 -420px;
+		}
+	}
+}
+
+
+
+/* ----------------------------
+	Records listing
+   ---------------------------- */
+.recordTypeInfo {
+	margin:10px 0;
+
+	.add {
+		float:right;
+
+		button .icon {
+			background:url(../img/icons.png) no-repeat 0 -388px;
+		}
+	}
+	td.icon {
+		width:15px;
+	}
+	td.label {
+		width:505px;
+	}
+	td.actions {
+		width:50px;
+	}
+	td.icon {
+		background:url(../img/icons.png) no-repeat 3px -325px;
+	}
+	.isActive0 td.icon {
+		background:url(../img/icons.png) no-repeat 3px -936px;
+	}
+	.isPreferred1 td.icon {
+		background:url(../img/icons.png) no-repeat 3px -964px;
+	}
+	.actions {
+		.edit {
+			background:url(../img/icons.png) no-repeat 0 -358px;
+		}
+		.delete {
+			background:url(../img/icons.png) no-repeat 0 -418px;
+		}
+	}
+}
+
+
+
+#record-type-list li,
+#record-list li {
+	padding:5px 10px;
+	position:relative;
+	border-bottom:1px dotted $colorNeutral05;
+}
+
+#record-type-list li {
+	padding-left:30px;
+	background:url(../img/icons.png) no-repeat 5px -627px;
+}
+
+#record-list {
+	li {
+		span.additionalInformations {
+			position:absolute;
+			right:400px;
+		}
+		span.delete {
+			cursor:pointer;
+			height:16px;
+			position:absolute;
+			right:5px;
+			top:4px;
+			width:16px;
+			background:transparent url(../img/icons.png) no-repeat 0 -420px;
+		}
+		span.edit {
+			cursor:pointer;
+			height:16px;
+			position:absolute;
+			right:30px;
+			top:4px;
+			width:16px;
+			background:transparent url(../img/icons.png) no-repeat 0 -360px;
+		}
+	}
+}
+
+
+
+#list {
+	.headerLine {
+		.createNew	{
+			padding-left:20px;
+			background:transparent url(../img/icons.png) no-repeat 0 -384px;
+			cursor:pointer;
+			position:absolute;
+			right:10px;
+		}
+		.back {
+			padding-left:20px;
+			background:transparent url(../img/icons.png) no-repeat 0 -440px;
+			cursor:pointer;
+		}
+	}
+	form fieldset {
+		float:left;
+		width:100%;
+	}
+}

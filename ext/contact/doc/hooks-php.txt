@@ -1,0 +1,65 @@
+Contact Extension - PHP Hooks
+=============================
+
+
+
+Event Hooks
+***************************************
+
+#contact.company.add
+	Company was added
+	@param	Integer		$idCompany
+
+
+#contact.company.update
+	Company was updated
+	@param	Integer		$idCompany
+	@param	Array		$data
+
+
+#contact.company.delete
+	Company was deleted
+	@param	Integer		$idCompany
+
+
+#contact.person.add
+	Person was added
+	@param	Integer		$idPerson
+
+
+#contact.person.delete
+	Person was deleted
+	@param	Integer		$idPerson
+
+
+#contact.person.update
+	Person was updated
+	@param	Integer		$idPerson
+	@param	Array		$data
+
+
+#contact.person.renderDetail
+	Person detail is rendered. Add additional content to the data array. Will be attached at the end
+	@param	Integer	idPerson
+
+
+#contact.company.renderDetail
+	Company detail is rendered. Add additional content to the data array. Will be attached at the end
+	@param	Integer	idCompany
+
+
+
+Data modification
+***************************************
+
+#contact.personCSVExportParseData
+	Modify parsed export data before writing to output file
+	@param	Array				$exportData
+	@param	TodoyuContactPerson	$person
+	@return	Array
+
+#contact.companyCSVExportParseData
+	Modify parsed export data before writing to output file
+	@param	Array					$exportData
+	@param	TodoyuContactCompany	$person
+	@return	Array

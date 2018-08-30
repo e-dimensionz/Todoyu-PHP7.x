@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.system.systemsettings">Настройки системы [Сделано]</label>
+	<label index="legend.system.cli">Командная строка [Сделано]</label>
+	<label index="legend.system.debugging">Отладка [Сделано]</label>
+	<label index="legend.rightsmanager.general">Управлять ролями и правами [Сделано]</label>
+	<label index="legend.password.general">Указать стойкость пароля [Сделано]</label>
+	<label index="legend.logo.general">Изменить логотип [Сделано]</label>
+	<label index="legend.repository.general">Введите ваш идентификатор todoyu [Сделано]</label>
+</labels>

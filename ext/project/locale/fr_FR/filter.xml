@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="project">Projet</label>
+	<label index="task.acknowledged">Reconnu</label>
+	<label index="task.assignedPerson">Assigné à la personne</label>
+	<label index="task.assignedRoles">Assigné aux rôles</label>
+	<label index="task.ownerPerson">Le responsable est la personne</label>
+	<label index="task.ownerRoles">Le responsable est affecté aux rôles</label>
+	<label index="task.currentPersonIsOwner">Je suis le responsable</label>
+	<label index="task.creatorPerson">Crée par la personne</label>
+	<label index="task.creatorRoles">Créé par les rôles</label>
+	<label index="task.parentTask">Tâche parente</label>
+	<label index="task.isPublic">Est public</label>
+	<label index="task.billingType">Type de facturation</label>
+	<label index="task.title">Titre</label>
+	<label index="task.fulltext">Plein texte</label>
+	<label index="task.type">Type</label>
+	<label index="task.activity">Type de travail</label>
+	<label index="task.timemanagement.label">Gestion du temps</label>
+	<label index="task.deadlinedate">Jalon</label>
+	<label index="task.deadlinedateDyn">Jalon (dynamique)</label>
+	<label index="task.startdate">Date de début</label>
+	<label index="task.startdateDyn">Date de début (dynamique)</label>
+	<label index="task.enddate">Date de fin</label>
+	<label index="task.enddateDyn">Date de fin (dynamique)</label>
+	<label index="task.editdate">Dernière modification</label>
+	<label index="task.editdateDyn">Dernière modification (dynamique)</label>
+	<label index="task.createdate">Créé</label>
+	<label index="task.createdateDyn">Créé (dynamique)</label>
+	<label index="project.fulltext">Titre plein texte</label>
+	<label index="project.company">Client</label>
+	<label index="project.projectrole">Rôle dans le projet</label>
+	<label index="project.projectleader">Chef de projet</label>
+	<label index="project.projectsupervisor">Superviseur du projet</label>
+</labels>

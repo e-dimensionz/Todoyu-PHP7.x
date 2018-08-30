@@ -1,0 +1,28 @@
+Bookmarks Extension - PHP Hooks
+===============================
+
+Event Hooks
+***************************************
+
+#bookmark.bookmark.add
+	Added new bookmark
+	@param	Integer		$idBookmark
+	@param	Integer		$type
+	@param	Integer		$idItem
+
+
+#bookmark.bookmark.delete
+	Deleted a bookmark
+	@param	Integer		$idBookmark
+
+
+#bookmark.bookmark.update
+	Update a bookmark
+	@param	Integer		$idBookmark
+	@param	Array		$data
+
+
+#bookmark.bookmark.rename
+	Bookmark was renamed (new label)
+	@param	Integer		$idBookmark
+	@param	String		$newLabel

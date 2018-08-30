@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">作業時間の記録</label>
+	<label index="title">作業時間の記録</label>
+	<label index="history.title">記録した作業時間</label>
+	<label index="history.total">作業時間の合計</label>
+	<label index="history.showdetails">詳細を表示</label>
+	<label index="history.noTracks">この期間の有効な作業時間はありません</label>
+	<label index="totalToday">本日の作業時間の合計</label>
+	<label index="daysinmonth">月の日数</label>
+	<label index="export.title">エクスポート</label>
+	<label index="export.popup.title">タイムシートをエクスポート</label>
+	<label index="export.popup.date_end">終了日</label>
+	<label index="export.popup.error.allFieldsEmpty">全てのフィールドが空です</label>
+</labels>

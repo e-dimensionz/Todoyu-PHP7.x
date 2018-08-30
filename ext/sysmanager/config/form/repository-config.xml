@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=sysmanager&amp;controller=config</attribute>
+		<attribute name="name">repository</attribute>
+	</attributes>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>sysmanager.form.legend.repository.general</legend>
+			<elements>
+
+				<field type="text" name="todoyuid">
+					<label>sysmanager.ext.config.tab.repository.todoyuid</label>
+				</field>
+
+				<field type="comment" name="todoyuid_comment">
+					<comment></comment>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.sysmanager.Config.saveRepositoryConfig(this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

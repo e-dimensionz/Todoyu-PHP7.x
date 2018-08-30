@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Groupes de filtre</label>
+	<label index="saveFilterButton">Enregistrer comme nouveau filtre</label>
+	<label index="clearFilterArea">Vider la zone de filtre</label>
+</labels>

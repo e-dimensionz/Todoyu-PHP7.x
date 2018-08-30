@@ -1,0 +1,28 @@
+<li>
+<form action="?ext=search" method="get" name="search" id="{$name}-form" onsubmit="return false" class="searchModeAll">
+	<input type="hidden" name="mode" value="all" id="{$name}-mode" />
+
+	<input name="query" class="query" id="{$name}-query" type="text" autocomplete="off" value="{$query}" />
+
+	<a id="{$name}-mode-button" class="button mode">&nbsp;</a>
+
+	<div style="clear:both"><!-- --></div>
+
+	{if $searchModes}
+		<div id="{$name}-modes" style="display:none">
+			<ul>
+				{foreach $searchModes searchMode}
+					<li class="searchmode{ucfirst($searchMode.type)}">
+						<a href="javascript:void(0)">
+							{Label $searchMode.labelMode}
+						</a>
+					</li>
+				{/foreach}
+			</ul>
+		</div>
+	{/if}
+
+	<div id="{$name}-suggest" class="searchSuggest" style="display:none"></div>
+
+</form>
+</li>

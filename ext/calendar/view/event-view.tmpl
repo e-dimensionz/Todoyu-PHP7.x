@@ -1,0 +1,16 @@
+{* ------------ Event single view inside a dedicated tab  ------------ *}
+{Header title=EventFullLabel($event.id) encode=false}
+
+{include file="event-view-details.tmpl"}
+<table class="eventDetailView">
+	<tr>
+		<td colspan="2">
+			<fieldset class="buttons">
+			{if isAllowedEditEvent($event.id)}
+				{Button label="calendar.event.edit" class="button editButton editEvent" onclick="Todoyu.Ext.calendar.Event.View.edit($event.id)"}
+			{/if}
+				{Button label="core.global.close" class="button cancelButton cancel" onclick="Todoyu.Ext.calendar.Event.View.cancelView()"}
+			</fieldset>
+		</td>
+	</tr>
+</table>

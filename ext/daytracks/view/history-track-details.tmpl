@@ -1,0 +1,22 @@
+<div class="details">
+	{foreach $daytracks.tracks index track name=daytrack}
+		{if $track.is_task_deleted == 0}
+			<a href="javascript:void(0)" {if $track.seeTask}onclick="Todoyu.Ext.project.goToTaskInProject({$track.task.id})"{/if}>
+		{/if}
+			<div class="daytrackdetail bcStatus{$track.task.status} {if $dwoo.foreach.daytrack.last}last {/if}{cycle values="odd,even"}{if $track.is_task_deleted == 1} deleted{/if}">
+				<span class="task">
+					<span class="tasknumber right">{$track.task.id_project}.{$track.task.tasknumber}</span>
+					<span class="tasktitle">{htmlencode $track.task.title}</span>
+				</span>
+				<span class="time">
+					{formatHours $track.workload_tracked}&nbsp;{Label core.date.time.hours}
+				</span>
+			</div>
+		{if $track.is_task_deleted == 0}
+			</a>
+		{/if}
+		{if $dwoo.foreach.daytrack.last}{else}
+			<div class="divider"></div>
+		{/if}
+	{/foreach}
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">你的事件的基本信息 </label>
+	<label index="legend.participants">参与者</label>
+	<label index="legend.details">详细信息 </label>
+	<label index="legend.notification">通知参与者 </label>
+	<label index="legend.autonotification">接收自动通知邮件的参与者</label>
+	<label index="legend.reminders">事件提醒 </label>
+	<label index="legend.profile.appearance">出席</label>
+	<label index="legend.profile.general">通用日历设置 </label>
+	<label index="legend.profile.reminder.general">按需要定时你的定时器 </label>
+	<label index="legend.admin.appearance">出席</label>
+	<label index="legend.admin.overbooking">配置超额预定行为 </label>
+	<label index="legend.admin.reminders">提醒的默认设置 </label>
+	<label index="legend.admin.automaticEmail">配置通知行为</label>
+	<label index="legend.admin.holidayset.record.general">假日集 </label>
+	<label index="legend.admin.holiday.record.general">假日</label>
+	<label index="comment.autonotification.label">给下列人发邮件:</label>
+	<label index="comment.autonotification.noroles">没有参加者属于有自动通知的角色.</label>
+	<label index="legend.series">重复事件</label>
+</labels>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Preferències personals</label>
+	<label index="page.title">El meu perfil</label>
+	<label index="headlet.label">Les meves preferències</label>
+	<label index="module.general">Preferències generals</label>
+	<label index="general.main.tab">Principal</label>
+	<label index="general.main.locale">Idioma</label>
+	<label index="general.main.saved">Preferències guardades</label>
+	<label index="general.main.saved.pleaseWait">todoyu ha de generar arxius catxé per la vostra selecció d'idioma. Espereu un moment.</label>
+	<label index="general.password.title">Canviar la contrasenya</label>
+	<label index="general.password.tab">Contrasenya</label>
+	<label index="general.password.current">Contrasenya actual</label>
+	<label index="general.password.current.empty">Introduïu la contrasenya antiga per canviar-la</label>
+	<label index="general.password.current.wrong">La contrasenya antiga és incorrecte</label>
+	<label index="general.password.new1">Contrasenya nova</label>
+	<label index="general.password.new2">Repeteixi la contrasenya</label>
+	<label index="general.password.error">No es pot canviar la contrasenya</label>
+	<label index="general.password.success">Contrasenya canviada</label>
+	<label index="general.password.notEqual">La nova contrasenya no coincideix</label>
+	<label index="general.main.header">Configuració personal</label>
+	<label index="general.password.header">Contrasenya</label>
+</labels>

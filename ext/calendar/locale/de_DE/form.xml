@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Termin</label>
+	<label index="legend.participants">Teilnehmer</label>
+	<label index="legend.details">Weitere Informationen</label>
+	<label index="legend.notification">Teilnehmer benachrichtigen</label>
+	<label index="legend.autonotification">Automatisch per Email benachrichtige Teilnehmer</label>
+	<label index="legend.reminders">Meine Erinnerungen für diesen Termin</label>
+	<label index="legend.profile.appearance">Darstellung</label>
+	<label index="legend.profile.general">Allgemeine Einstellungen</label>
+	<label index="legend.profile.reminder.general">Persönliche Einstellungen für Erinnerungen</label>
+	<label index="legend.admin.appearance">Darstellung</label>
+	<label index="legend.admin.overbooking">Verhalten bei Überbuchung</label>
+	<label index="legend.admin.reminders">Standard Einstellungen bei Erinnerungen</label>
+	<label index="legend.admin.automaticEmail">Einstellungen für Benachrichtigungen</label>
+	<label index="legend.admin.holidayset.record.general">Feiertage Set</label>
+	<label index="legend.admin.holiday.record.general">Feiertag</label>
+	<label index="comment.autonotification.label">Emails senden an:</label>
+	<label index="comment.autonotification.noroles">Kein Termin-Teilnehmer ist in einer Rolle zur automatischen Benachrichtigung.</label>
+	<label index="legend.series">Serientermin</label>
+</labels>

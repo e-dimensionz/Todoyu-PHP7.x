@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Diário de Horas Trabalhadas</label>
+	<label index="title">Diário das Suas Horas Trabalhadas</label>
+	<label index="history.title">Diário de Horas Trabalhadas</label>
+	<label index="history.total">Total de Horas Trabalhadas</label>
+	<label index="history.toggledetails.open">Ver Detalhes</label>
+	<label index="history.toggledetails.close">Fechar Detalhes</label>
+	<label index="history.noTracks">No Trabalhadas disponíveis para este período</label>
+	<label index="totalToday">Total de Horas de Hoje</label>
+</labels>

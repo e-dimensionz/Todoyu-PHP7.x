@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Общая информация о событии [Сделано]</label>
+	<label index="legend.details">Дополнительная информация [Сделано]</label>
+	<label index="legend.notification">Сообщить участникам [Сделано]</label>
+	<label index="legend.reminders">Мои напоминания об этом событии [Сделано]</label>
+	<label index="legend.profile.general">Общие настройки календаря [Сделано]</label>
+	<label index="legend.profile.reminder.general">Настроить напоминания для ваших целей [Сделано]</label>
+	<label index="legend.admin.overbooking">Настроить поведение переработки [Сделано]</label>
+	<label index="legend.admin.reminders">Начальные установки для напоминаний [Сделано]</label>
+	<label index="legend.admin.automaticEmail">Настроить поведение напоминаний [Сделано]</label>
+	<label index="legend.admin.holidayset.record.general">Праздники [Сделано]</label>
+	<label index="legend.admin.holiday.record.general">Праздник [Сделано]</label>
+</labels>

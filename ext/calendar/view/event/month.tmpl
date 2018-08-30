@@ -1,0 +1,33 @@
+<div id="event-{$source}-{$id}" class="{$classNames}">
+	<div class="head enumColBG{$color.id}">
+		<div class="typeIcon"></div>
+
+		{if $isPrivate}
+			{if $isCurrentPersonAssigned}
+				<div class="private"></div>
+			{else}
+				<div class="privateEvent"></div>
+			{/if}
+		{/if}
+
+		<div class="title">
+			{htmlencode $title}
+		</div>
+	</div>
+
+
+{*
+	<dl>
+		<dt class="head">
+			<span class="headInner">
+			{if $isPrivate}
+				{$firstAssignedPersonId = key($persons)}
+				<span class="private {if isPersonID($firstAssignedPersonId)}allowed{/if}" id="event-{$id}-private"></span>
+			{/if}
+			{htmlencode(truncate($title, 16, '...', true))}
+			</span>
+		</dt>
+	</dl>
+*}
+
+</div>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kastodoyutrunk.srv05.ch1.snowflake.ch/" />
+<title>portal > headlet: quicktask + cancel</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > headlet: quicktask + cancel</td></tr>
+</thead><tbody>
+<!------ portal > headlet: quicktask cancel-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyuprojectheadletquicktask-button</td>
+	<td></td>
+</tr>
+<!--open quicktask creation popup-->
+<tr>
+	<td>click</td>
+	<td>todoyuprojectheadletquicktask-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--assert form elements present-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-id-project-fulltext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-id-activity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-workload-done</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-start-tracking</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-task-done</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>quicktask-0-field-cancel</td>
+	<td></td>
+</tr>
+<!--closing via cancel button-->
+<tr>
+	<td>click</td>
+	<td>css=button#quicktask-0-field-cancel.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>quicktask-0-field-id-project-fulltext</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

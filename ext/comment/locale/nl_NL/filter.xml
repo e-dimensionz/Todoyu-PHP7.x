@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">Terugkoppelingverzoeken</label>
+	<label index="unseenFeedbackPerson">Terugkoppelingverzoeken per persoon</label>
+	<label index="unseenFeedbackRoles">Terugkoppelingverzoeken per rol</label>
+	<label index="commentFulltext">Opmerking full-text</label>
+	<label index="commentWrittenPerson">Opmerking geschreven per persoon</label>
+	<label index="commentWrittenRoles">Opmerking geschreven per rol</label>
+</labels>

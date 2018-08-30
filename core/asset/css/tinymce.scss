@@ -1,0 +1,26 @@
+* {
+	font-size:11px;
+	font-family:Arial,Verdana,Helvetica,sans-serif;
+}
+
+#tinymce {
+	margin-left:3px;
+}
+
+ul,
+ol {
+	list-style-position:outside;
+}
+ul {
+	margin:0;
+	padding:0 0 5px 14px;
+}
+
+ul li,
+ol li {
+	padding-left:5px;
+}
+ol {
+	margin:0 0 0 5px;
+	padding:0 0 5px 14px;
+}

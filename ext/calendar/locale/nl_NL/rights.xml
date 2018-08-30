@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Algemeen</label>
+	<label index="general.use">Kalenderfunctionaliteit gebruiken</label>
+	<label index="general.area">Kalendergebied gebruiken</label>
+	<label index="event">Agenda-item</label>
+	<label index="event.seeAll">Alle items tonen</label>
+	<label index="event.editAndDeleteAssigned">Toegewezen (of door deze persoon aangemaakte) agenda-items bewerken en verwijderen</label>
+	<label index="event.editAndDeleteAll">Alle agenda-items bewerken en verwijderen</label>
+	<label index="event.add">Nieuw agenda-item toevoegen</label>
+	<label index="event.search">Agenda-items zoeken</label>
+	<label index="event.assignOthers">Agenda-items aan andere personen toewijzen</label>
+</labels>

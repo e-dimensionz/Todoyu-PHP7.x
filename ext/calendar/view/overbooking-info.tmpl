@@ -1,0 +1,14 @@
+{Label calendar.event.error.personsOverbooked}<br />
+<ul class="invalidItems">
+	{foreach $overbooked overbookedInfo}
+		<li>
+			{personLabel $overbookedInfo.person}
+			<ul>
+				{foreach $overbookedInfo.events event}
+					<li>{dateFormat $event.date_start D2M2Y2}, {dateFormat $event.date_start time} - {if date('Ymd', $event.date_start)!==date('Ymd', $event.date_end)}{dateFormat $event.date_end D2M2Y2}, {/if}{dateFormat $event.date_end time}: {$event.title}</li>
+				{/foreach}
+			</ul>
+		</li>
+
+	{/foreach}
+</ul>

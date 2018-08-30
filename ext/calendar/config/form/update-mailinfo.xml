@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=calendar&amp;controller=event</attribute>
+		<attribute name="name">event</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+		<field name="id_event" />
+	</hiddenFields>
+
+	<fieldsets>
+
+		<fieldset name="email">
+			<elements>
+				<field type="selectgrouped" name="emailreceivers">
+					<label>comment.ext.edit.sentEmailTo</label>
+					<source type="function">
+						<function>TodoyuCalendarEventViewHelper::getEmailReceiverGroupedOptions</function>
+						<lazyInit />
+					</source>
+					<size>8</size>
+					<multiple />
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="autoemail">
+			<legend>calendar.form.legend.autonotification</legend>
+			<elements>
+				<field type="comment" name="autonotification_comment">
+					<comment type="function">
+						<function>TodoyuCalendarEventViewHelper::getAutoNotificationComment</function>
+					</comment>
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="button" name="cancel">
+					<text>calendar.event.edit.canceloptinalmailing</text>
+					<class>buttonCancel cancel</class>
+					<hasIcon />
+					<onclick>Todoyu.Ext.calendar.Event.Mail.popupNoMail()</onclick>
+				</field>
+
+				<field type="button" name="sendAsEmail">
+					<text>calendar.event.mail.popup.button.sendAsEmail</text>
+					<class>sendemail</class>
+					<onclick>Todoyu.Ext.calendar.Event.Mail.popupMail()</onclick>
+					<hasIcon />
+				</field>
+
+				<field type="button" name="dontaskagain">
+					<text>calendar.event.mail.popup.button.dontaskagain</text>
+					<class>exclamation</class>
+					<onclick>Todoyu.Ext.calendar.Event.Mail.popupDisable()</onclick>
+					<hasIcon />
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">时间跟踪</label>
+	<label index="timetrackedPerson">有跟踪时间的人</label>
+	<label index="timetrackedRoles">有跟踪时间的角色</label>
+	<label index="person.trackedinproject">本项目相关的跟踪时间</label>
+	<label index="person.trackedforcustomer">本项目客户的跟踪时间</label>
+</labels>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Obecné nastavení</label>
+	<label index="general.use">Použít modul kontaktů</label>
+	<label index="general.profile">Použít profil</label>
+	<label index="general.area">Použít plochu kontaktů</label>
+	<label index="person">Osoba</label>
+	<label index="person.seeAllInternalPersons">Zobrazit všechny interní osoby</label>
+	<label index="person.seeAllPersons">Zobrazit všechny osoby</label>
+	<label index="person.add">Přidat osoby</label>
+	<label index="person.editAndDeleteAll">Upravit nebo smazat všechny osoby</label>
+	<label index="person.enableLogin">Vytvořit účet pro přihlášení</label>
+	<label index="person.seeComment">Zobrazit osobní komentáře</label>
+	<label index="person.editComment">Upravit osobní komentáře</label>
+	<label index="company">Společnosti</label>
+	<label index="company.seeAllCompanies">Zobrazit všechny společnosti</label>
+	<label index="company.add">Přidat společnosti</label>
+	<label index="company.editOwn">Upravit vlastní společnost (zaměstnanec)</label>
+	<label index="company.editAndDeleteAll">Upravit nebo smazat všechny společnosti</label>
+	<label index="company.seeComment">Zobrazit komentáře společností</label>
+	<label index="company.editComment">Upravit komentáře společností</label>
+	<label index="relation">Kontakty</label>
+	<label index="relation.seeAllContactinfotypes">Zobrazit všechny kontaktní informace</label>
+	<label index="relation.seeHomeAddress">Zobrazit domácí adresy</label>
+	<label index="relation.seeBusinessAddress">Zobrazit pracovní adresy</label>
+	<label index="relation.seeBillingAddress">Zobrazit fakturační adresy</label>
+	<label index="panelwidgets">Panel widgetů</label>
+	<label index="panelwidgets.staffSelector">Výběr personálu</label>
+	<label index="panelwidgets.export">Export</label>
+</labels>

@@ -1,0 +1,18 @@
+<div id="project-{$idProject}-data" class="data infoBoxOuter overflow">
+	<div id="project-{$idProject}-tabcontainer">
+		<div class="projectDetailRight">
+			<div class="projectDetailLeft">
+				<div class="projectDetailsTabs">
+					{include file="project-details-tabs.tmpl"}
+				</div>
+
+				<div class="projectDetailsContent overflow" id="project-{$idProject}-tabcontent">
+					<div id="project-{$idProject}-tabcontent-{$activeTab}" class="tab projectDetails{ucfirst $activeTab}">
+						{$content}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="project-{$idProject}-ajaxloader" class="ajaxLoader" style="display:none">{Label core.global.load}</div>
+	</div>
+</div>

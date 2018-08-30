@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Bijlagen van taak</label>
+	<label index="tab.noAssets">Eerste bijlage toevoegen</label>
+	<label index="tab.asset">Bijlage</label>
+	<label index="tab.assets">Bijlagen</label>
+	<label index="tab.toggle">Bijlagen aan/uit</label>
+	<label index="list.header.uploaddate">Datum uploaden</label>
+	<label index="alt.download">Bestand downloaden</label>
+	<label index="alt.uploadedby">Geüpload door</label>
+	<label index="alt.delete">Bestand verwijderen</label>
+	<label index="alt.changeVisibility">Zichtbaarheid in wijzigen</label>
+	<label index="alt.selectall">Alles/niets selecteren</label>
+	<label index="upload.selectfile">Een bestand kiezen om te uploaden</label>
+	<label index="upload.filename">Bestandsnaam</label>
+	<label index="upload.new">Nieuw bestand toevoegen</label>
+	<label index="delete.confirm">Weet u zeker dat u dit bestand wilt verwijderen?</label>
+	<label index="download.selection">Selectie downloaden</label>
+	<label index="download.normal">Slechts één bestand geselecteerd -> normale download</label>
+	<label index="download.compressed">De geselecteerde bestanden zijn in een archief ingepakt om te downloaden</label>
+	<label index="error.minimumFile">Selecteer a.u.b. minstens één bestand</label>
+	<label index="maxFileSizeExceeded">Het bestand '#{filename}' is groter dan de maximaal toegestane bestandsgrootte (#{maxFileSize}) om te uploaden</label>
+	<label index="uploadFailed">Het uploaden van het bestand '#{filename}' is mislukt</label>
+	<label index="uploadOk">Het bestand is geüpload</label>
+</labels>

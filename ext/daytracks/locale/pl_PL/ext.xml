@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Dziennik śledzenia czasu</label>
+	<label index="title">Dziennik prześledzonego czasu</label>
+	<label index="history.title">Historia śledzenia czasu</label>
+	<label index="history.total">Całkowity prześledzony czas</label>
+	<label index="history.showdetails">Pokaż szczegóły</label>
+	<label index="history.noTracks">Brak dostępnych zapisów czasu w tym okresie</label>
+	<label index="totalToday">Całkowity dzisiejszy zapis czasu</label>
+	<label index="daysinmonth">Dni w miesiącu</label>
+	<label index="export.title">Export</label>
+	<label index="export.popup.title">Export Karty czasu</label>
+	<label index="export.popup.date_end">Data zakończenia</label>
+	<label index="export.popup.error.allFieldsEmpty">Wszystkie pola są puste</label>
+</labels>

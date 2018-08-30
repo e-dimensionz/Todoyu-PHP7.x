@@ -1,0 +1,10 @@
+{Header title="sysmanager.extension.install.ok"}
+
+{contentMessage label="sysmanager.extension.install.ok.info"}
+
+<div id="installed-action">
+	{Button class="extensionInfo" label="sysmanager.extension.showInfo" onclick="Todoyu.Ext.sysmanager.Extensions.showTab('$ext', 'info')"}
+{if extMgr_hasConfig($extKey)}
+	{Button class="extensionConfig" label="sysmanager.extension.configure" onclick="Todoyu.Ext.sysmanager.Extensions.showTab('$ext', 'config')"}
+{/if}
+</div>

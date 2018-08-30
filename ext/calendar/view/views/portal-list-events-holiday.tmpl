@@ -1,0 +1,17 @@
+<br />
+{Header title=implode(array(count($holidayEvents), Label('calendar.event.eventslist.holidaysWithinTheNextweeks')), ' ')}
+<div id="holidays">
+	{foreach $holidayEvents holiday name=holidays}
+		{$label = $holiday.title}
+		{if $holiday.description}
+			{$label .= cat(': ' $holiday.description)}
+		{/if}
+		<h3 class="holidaysList {if $dwoo.foreach.holidays.last}last{/if} {cycle values="odd,even"}">
+			<span class="first holidayDate hasIcon">{dateFormat $holiday.date DlongD2MlongY4}</span>
+			<span class="holidayTitle" title="{htmlencode $label}">
+				{htmlencode $label}
+			</span>
+			<span class="holidayWorkinghours">{Label calendar.ext.holiday.attr.workingtime}: {$holiday.workingtime / 3600}{Label core.date.hrs}</span>
+		</h3>
+	{/foreach}
+</div>

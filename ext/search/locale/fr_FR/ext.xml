@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Rechercher et créer des filtres</label>
+	<label index="page.title">Recherche</label>
+	<label index="or">OU</label>
+	<label index="and">ET</label>
+	<label index="search.label">Rechercher tout</label>
+	<label index="filterlabel.filterset">Groupes de filtre</label>
+	<label index="filterset.rename">Renommer le groupe de filtre</label>
+	<label index="filterset.delete">Supprimer le groupe de filtre</label>
+	<label index="filterset.confirm.delete">Voulez-vous vraiment supprimer ce groupe de filtre?</label>
+	<label index="filterset.confirm.overwrite">Remplacer le groupe de filtre existant?</label>
+	<label index="filterset.error.saveWrongType">Vous avez tenté d'enregistrer un groupe de filtres sous un type incorrect</label>
+	<label index="filterset.error.saveNoConditions">Aucune condition à enregistrer</label>
+	<label index="filterset.error.saveEmptyName">Veuillez entrer un nom pour le groupe de filtre</label>
+	<label index="negation.default.true">N'est pas</label>
+	<label index="negation.default.false">Est</label>
+	<label index="negation.datetime.true">De</label>
+	<label index="negation.datetime.false">à</label>
+	<label index="newFilterLabel">Entrez un nom pour le nouveau filtre</label>
+	<label index="newFilterLabel.preset">Nouveau filtre</label>
+	<label index="subMenuEntry.task">Tâches</label>
+	<label index="subMenuEntry.project">Projets</label>
+	<label index="filterwidget.condtion.remove">Retirer la condition</label>
+	<label index="search.noEntryFound">Aucun résultat trouvé</label>
+	<label index="search.noResultsForActiveFilters">Aucun résultat trouvé avec les filtres actuellement sélectionnés</label>
+	<label index="contextmenu.project.showinproject">Ouvrir dans la section projet</label>
+	<label index="headlet.label">Rechercher dans todoyu</label>
+</labels>

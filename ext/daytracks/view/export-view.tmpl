@@ -1,0 +1,27 @@
+{if !$noData}
+	<div style="overflow:scroll; width:1028px; height:700px">
+		<table class="daytracks-export-view">
+			<tr>
+				{foreach $columnHeaders columnHeader}
+					<td style="font-weight:bold; padding:5px 10px; white-space:nowrap">
+						{unwrap $columnHeader '"'}
+					</td>
+				{/foreach}
+			</tr>
+
+			{foreach $dataRows dataRow}
+				<tr class="{cycle values="odd,even"}">
+					{foreach $dataRow dataColumn}
+						<td>
+							{unwrap $dataColumn '"'}
+						</td>
+					{/foreach}
+				</tr>
+			{/foreach}
+		</table>
+	</div>
+{else}
+	<center>
+		<h1>{Label daytracks.ext.export.noData}</h1>
+	</center>
+{/if}

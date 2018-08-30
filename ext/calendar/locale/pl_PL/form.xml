@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Podstawowe informacje o twoim wydarzeniu </label>
+	<label index="legend.details">Więcej informacji </label>
+	<label index="legend.notification">Powiadom uczestników </label>
+	<label index="legend.reminders">Moje przypomnienie dotyczące tego spotkania </label>
+	<label index="legend.profile.general">Ogólne ustawienia kalendarza </label>
+	<label index="legend.profile.reminder.general">Konfiguruj przypomnienie wg swoich potrzeb </label>
+	<label index="legend.admin.overbooking">Konfiguruj zachowania overbooking </label>
+	<label index="legend.admin.reminders">Standardowe ustawienia dla przypomnień </label>
+	<label index="legend.admin.automaticEmail">Koniguruj zachowania podczas powiadomień </label>
+	<label index="legend.admin.holidayset.record.general">Ustaw dzień wolny </label>
+	<label index="legend.admin.holiday.record.general">Dzień wolny </label>
+</labels>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kastodoyutrunk.srv05.ch1.snowflake.ch/" />
+<title>calendar > panelwidget: staffselect search+select "wagner"</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">calendar > panelwidget: staffselect search+select "wagner"</td></tr>
+</thead><tbody>
+<!--Type "wagner" into search field-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@id=&quot;staffselector-field-search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>//input[@id=&quot;staffselector-field-search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id=&quot;staffselector-field-search&quot;]</td>
+	<td>wagn</td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>//input[@id=&quot;staffselector-field-search&quot;]</td>
+	<td>er</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--"Richard Wagner" suggestion appeared-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;panelwidget-staffselector-item-p17&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//li[@id=&quot;panelwidget-staffselector-item-p17&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Wagner Richard</td>
+	<td></td>
+</tr>
+<!--Add him-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;panelwidget-staffselector-item-p17&quot;]/a/span[@class=&quot;add&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id=&quot;panelwidget-staffselector-item-p17&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Remove him-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;panelwidget-staffselector-item-p17&quot;]/a/span[@class=&quot;remove&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id=&quot;panelwidget-staffselector-item-p17&quot;]/a/span[@class=&quot;remove&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;panelwidget-staffselector-item-p17&quot;]/a/span[@class=&quot;add&quot;]</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

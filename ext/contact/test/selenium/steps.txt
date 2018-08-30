@@ -1,0 +1,17 @@
+todoyu selenium testsuite steps: contact extension
+--------------------------------------------------
+
+* contact area
+	use main tab, go to area, main tab activated, page title set?
+	contact sub tabs accessible? (persons, companies)
+	edit person
+		check form, save with empty required lastname, change lastname, save
+* contactsearch panelwidget
+	elements present
+	toggle expand/collapse incl. pref
+	in person tab: search for persons 
+	in company tab: search for companies
+	use empty search-word option
+* contactexport panelwidget
+	elements present
+	toggle expand/collapse incl. pref

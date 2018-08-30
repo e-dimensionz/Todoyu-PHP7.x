@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+
+	<fieldsets>
+
+		<fieldset name="preset">
+			<legend>project.form.legend.admin.taskpreset.record.preset</legend>
+
+			<elements>
+				<field type="text" name="title">
+					<label>project.ext.taskpreset.title</label>
+					<required />
+				</field>
+			</elements>
+
+		</fieldset>
+
+		<fieldset name="main">
+			<legend>project.form.legend.admin.taskpreset.record.general</legend>
+			<elements>
+
+				<field type="text" name="tasktitle">
+					<label>core.global.title</label>
+				</field>
+
+				<field type="RTE" name="description">
+					<label>core.global.description</label>
+				</field>
+
+				<field type="select" name="date_start">
+					<label>project.task.date_start</label>
+					<source type="function">
+						<function>TodoyuProjectExtConfViewHelper::getDateOffsetOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="date_end">
+					<label>project.task.date_end</label>
+					<source type="function">
+						<function>TodoyuProjectExtConfViewHelper::getDateOffsetOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="date_deadline">
+					<label>project.task.date_deadline</label>
+					<source type="function">
+						<function>TodoyuProjectExtConfViewHelper::getDateOffsetOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="status">
+					<label>project.task.attr.status</label>
+					<source type="function">
+						<function>TodoyuProjectExtConfViewHelper::getDefaultValueStatusOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="id_activity">
+					<label>project.task.attr.activity</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getExtConfActivities</function>
+					</source>
+				</field>
+
+				<field type="duration" name="estimated_workload">
+					<label>project.task.attr.estimated_workload</label>
+				</field>
+
+				<field type="checkbox" name="is_public">
+					<label>project.task.attr.is_public.public</label>
+				</field>
+
+				<field type="select" name="id_person_assigned">
+					<label>project.task.attr.person_assigned</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getInternalPersonOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="id_person_owner">
+					<label>project.task.attr.person_owner</label>
+					<source type="function">
+						<function>TodoyuProjectViewHelper::getPresetOwnerOptions</function>
+					</source>
+					<noPleaseSelect />
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="quicktaskSpecific">
+			<legend>project.form.legend.admin.taskpreset.record.quicktask</legend>
+			<class> </class>
+			<elements>
+
+				<field type="text" name="quicktask_duration_days">
+					<label>project.ext.taskpreset.quicktask_duration_days</label>
+					<extraAttributes>onkeyup="Todoyu.Form.assistNumericInput(this,true)"</extraAttributes>
+					<default>1</default>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="taskDefaultsForExternals">
+			<legend>project.form.legend.admin.taskpreset.record.fallbacks</legend>
+			<class> </class>
+			<elements>
+
+				<field type="select" name="id_person_assigned_fallback">
+					<label>project.ext.taskpreset.person_assigned_fallback</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getInternalPersonOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="id_role_assigned_fallback">
+					<label>project.ext.taskpreset.role_assigned_fallback</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getExtConfProjectRoles</function>
+					</source>
+				</field>
+
+				<field type="select" name="id_person_owner_fallback">
+					<label>project.ext.taskpreset.person_owner_fallback</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getInternalPersonOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="id_role_owner_fallback">
+					<label>project.ext.taskpreset.role_owner_fallback</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getExtConfProjectRoles</function>
+					</source>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

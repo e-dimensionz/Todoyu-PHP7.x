@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>portal > task: contextmenu</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">portal > task: contextmenu</td></tr>
+</thead><tbody>
+<!------ portal > task: contextmenu-->
+<!--open task 33 contextmenu > status > click "open"-->
+<tr>
+	<td>contextMenu</td>
+	<td>//div[contains(@class,&quot;task&quot;)]/h3[contains(@class,&quot;contextmenutask&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu</td>
+	<td></td>
+</tr>
+<!--assert all options to be present-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu li#contextmenu-showinproject.showinproject a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu li#contextmenu-edit.edit a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu li#contextmenu-actions.actions a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu li#contextmenu-add.add a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu li#contextmenu-status.status a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu li#contextmenu-addbookmark.addbookmark a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ul#contextmenu li#contextmenu-timetrackstart.timetrackstart a.taskContextMenu</td>
+	<td></td>
+</tr>
+<!--sub menu: task...-->
+<tr>
+	<td>mouseOver</td>
+	<td>css=ul#contextmenu li#contextmenu-actions.actions a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=#contextmenu-actions-submenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu li#contextmenu-actions.actions ul#contextmenu-actions-submenu.context-submenu li#contextmenu-copy.copy a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu li#contextmenu-actions.actions ul#contextmenu-actions-submenu.context-submenu li#contextmenu-cut.cut a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu li#contextmenu-actions.actions ul#contextmenu-actions-submenu.context-submenu li#contextmenu-delete.delete a</td>
+	<td></td>
+</tr>
+<!--sub menu: add new...-->
+<tr>
+	<td>mouseOver</td>
+	<td>css=ul#contextmenu li#contextmenu-add.add a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-add-submenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-add-submenu.context-submenu li#contextmenu-add-comment.add-comment a.task-add-comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-add-submenu.context-submenu li#contextmenu-add-asset.add-asset a.task-add-asset</td>
+	<td></td>
+</tr>
+<!--sub menu: change status-->
+<tr>
+	<td>mouseOver</td>
+	<td>css=ul#contextmenu li#contextmenu-status.status a.taskContextMenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=#contextmenu-status-submenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-planning.status-planning</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-open.status-open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-progress.status-progress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-waiting.status-waiting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-rejected.status-rejected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-confirm.status-confirm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-done.status-done</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-accepted.status-accepted</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=ul#contextmenu-status-submenu.context-submenu li#contextmenu-status-cleared.status-cleared</td>
+	<td></td>
+</tr>
+<!--close contextmenu-->
+<tr>
+	<td>click</td>
+	<td>css=div#contentBox div#main div#panel.panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#task-33 h3 span.headLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#task-33.expanded h3#task-33-header.contextmenutask</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-33&quot;][contains(@class,&quot;expanded&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=#contextmenu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=#contextmenu-status-submenu</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

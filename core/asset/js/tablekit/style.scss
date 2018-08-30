@@ -1,0 +1,21 @@
+@import "../../config/theme.scss";
+
+
+
+.sortcol {
+	cursor: pointer;
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.sortasc {
+	background-color:$colorCorporate02;
+	background-image:url(../../../../lib/js/tablekit/up.gif);
+}
+.sortdesc {
+	background-color:$colorCorporate01;
+	background-image:url(../../../../lib/js/tablekit/down.gif);
+}
+.nosort {
+	cursor: default;
+}

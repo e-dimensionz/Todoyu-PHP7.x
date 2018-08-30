@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Первые шаги</label>
+	<label index="wizard.start.title">Ваши первые шаги в todoyu</label>
+	<label index="wizard.start.info">Этот мастер проведёт вас через первые шаги в todoyu. Весь процесс занимает всего &lt;strong&gt;несколько минут&lt;/strong&gt; вашего времени. После окончания у вас будет готовая к работе система. &lt;br /&gt;&lt;br /&gt;Пожалуйста, нажмите кнопку "Продолжить" для начала.</label>
+	<label index="wizard.start.help">&amp;nbsp;</label>
+	<label index="wizard.start.dontUseWizard">Я не очу использовать этот Мастер. Не показывайте мне его больше</label>
+	<label index="wizard.start.disableAssistant">Запретить помощника</label>
+	<label index="wizard.start.reactivateInAdmin">Вы можете разрешить этот Мастер в настройках администрирования</label>
+	<label index="wizard.jobtypes.title">Типы работ</label>
+	<label index="wizard.jobtypes.info">Пожалуйста, введите типы работ, которые вы обычно используете в компании и её проектах. Вы можете их изменить в любой момент в административных настройках</label>
+	<label index="wizard.jobtypes.help">Примеры типов работ:&lt;br /&gt;CEO, CFO, менеджер, руководитель команды, секретарь, продавцы</label>
+	<label index="wizard.projectroles.title">Роли проекта</label>
+	<label index="wizard.projectroles.info">Пожалуйста, введите роли, которые вы используете в проектах.</label>
+	<label index="wizard.projectroles.help">Примеры: в команде todoyu есть такие роли:&lt;br /&gt;менеджер проекта, разработчик, Frontend-разработчик, менеджер продукта, директор по маркетингу, директор по связям с сообществом, тренер</label>
+	<label index="wizard.activities.title">Типы работ</label>
+	<label index="wizard.activities.info">Типы работ определяют какую работу вы назначаете командам.</label>
+	<label index="wizard.activities.help">Примеры типов работ: консалтинг, программирование, поддержка, внутренние работы ...</label>
+	<label index="wizard.userroles.title">Группы пользователей</label>
+	<label index="wizard.userroles.info">Группы юзеров используются для административных целей. Вы сможете назначить права группам позже через административный интерфейс</label>
+	<label index="wizard.userroles.help">Часто группы связаны с типами работ, которые вы ввели раньше. Но вы можете создать столько групп, сколько вам нужно.</label>
+	<label index="wizard.company.title">Ваша компания</label>
+	<label index="wizard.company.info">Пожалуйста, введите основную информацию о вашей компании. Эту информацию можно изменить в секции контактов.</label>
+	<label index="wizard.company.help">&amp;nbsp;</label>
+	<label index="wizard.employees.title">Сотрудники</label>
+	<label index="wizard.employees.info">Введите в todoyu информацию о членах команды. Введите основную информацию (участники смогут изменить свою информацию в любой момент в своём профиле).</label>
+	<label index="wizard.employees.help">&amp;nbsp;</label>
+	<label index="wizard.customers.title">Клиенты</label>
+	<label index="wizard.customers.info">Возможно, у вас уже есть клиенты. Введите информацию о них.</label>
+	<label index="wizard.customers.help">&amp;nbsp;</label>
+	<label index="wizard.project.title">Первый проект</label>
+	<label index="wizard.project.info">Всё! Теперь вы можете начать ваш первый проект в todoyu. Поздравляем!</label>
+	<label index="wizard.project.help">&amp;nbsp;</label>
+	<label index="wizard.finish.title">Готово!</label>
+	<label index="wizard.finish.info">Вы &lt;strong&gt;успешно&lt;/strong&gt; ввели всю необходимую информацию для работы todoyu.&lt;br /&gt;&lt;br /&gt; За работу!</label>
+	<label index="wizard.finish.help">&amp;nbsp;</label>
+	<label index="wizard.finish.closeWizard">Закрыть Мастер</label>
+	<label index="employee.addCompany">Добавить компанию</label>
+	<label index="employee.addEmployee">Добавить работника</label>
+	<label index="employee.addPerson">Добавить человека в проект</label>
+	<label index="extconf.disableWizard">Не показывать мастер</label>
+	<label index="wizardDisabledInfo">Мастер отключён</label>
+</labels>

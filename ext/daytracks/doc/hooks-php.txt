@@ -1,0 +1,21 @@
+Daytracks Extension - PHP Hooks
+===============================
+
+
+
+1.	Event Hooks		Evoked via TodoyuHookManager::callHook($ext, $name, Array $params)
+---------------
+	none yet.
+
+
+
+2. Event Data Modification
+--------------------------
+	tracksHistory
+	Evoked before rendering the time tracks journal.
+
+
+
+3. Form Hooks (Build Form, Load Data, Save Data)
+------------------------------------------------
+	@see	all forms in ext/daytracks/config/form

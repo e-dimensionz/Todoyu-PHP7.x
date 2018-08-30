@@ -1,0 +1,12 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"} 
+<ul class="iconSelector {$htmlName}Selector" id="{$htmlId}-selector" style="background-color:#e3eace; width: {$config.width*36}px" >
+{for iconIndex 0 $config.amountIcons-1}
+		<li id="{$htmlId}-listItem-{$iconIndex}" {if $valueTemplate == $iconIndex}class="selected"{/if}>
+			<span onclick="Todoyu.Form.setIconSelectorValue({$iconIndex}, '{$htmlId}');" class="selectorIcon {$config.classNamePrefix}IconSelectorIcon iconBackground{$iconIndex}" /> 
+		</li>
+{/for}
+</ul>
+<input type="hidden" name="{$htmlName}" id="{$htmlId}" value="{$valueTemplate}">
+{/block}

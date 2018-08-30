@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>{Label core.global.noAccess.pageTitle}</title>
+<link type="text/css" rel="stylesheet" media="all" href="cache/css/core/asset/css/base.css" />
+<link type="text/css" rel="stylesheet" media="all" href="cache/css/core/asset/css/layout.css" />
+<link type="text/css" rel="stylesheet" media="all" href="cache/css/core/asset/css/content.css" />
+<link type="text/css" rel="stylesheet" media="all" href="cache/css/core/asset/css/tab.css" />
+<style type="text/css">
+#box {
+	width:680px;
+	padding-top:10px;
+}
+#contentBox {
+	width:680px !important;
+	width:680px;
+	padding:0;
+}
+.message {
+	float:left;
+	clear:both;
+	padding:10px;
+	margin-top:-10px;
+}
+
+.message p {
+	margin-bottom:10px;
+}
+
+.message td {
+	padding:5px 0;
+}
+
+.message a {
+	font-weight:bold;
+	color:#990000;
+	text-decoration:underline;
+}
+
+#right {
+	border-radius: 10px 10px 10px 10px;
+}
+</style>
+</head>
+<body>
+
+<div id="box">
+	<div id="contentBox">
+		<div id="main">
+			<div class="content bclFF" id="right">
+				<div id="content">
+					<div class="message">
+						<h2><strong>{Label core.global.noAccess.pageTitle}</strong></h2>
+						<p>{Label core.global.noAccess.errorMessage}</p>
+						<p><a href="javascript:history.back()">{Label core.global.noAccess.goBackToLastPage}</a></p>
+						<p>{Label core.global.noAccess.contactAdmin}</p>
+						<table width="500" border="0" cellspacing="0" cellpadding="5">
+							<tr>
+								<td width="120"><strong>{Label core.global.noAccess.requestURL}:</strong></td>
+								<td width="360">{htmlencode $requestURL}</td>
+							</tr>
+							<tr>
+								<td><strong>{Label core.global.noAccess.missingRight}:</strong></td>
+								<td>{$extKey} / {$right}</td>
+							</tr>
+							<tr>
+							<td><strong>TIME</strong></td>
+								<td>{date('r')}</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- /inner -->
+			</div>
+			<div class="clear">
+				<!-- -->
+			</div>
+		</div>
+		<div class="clear">
+			<!-- -->
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

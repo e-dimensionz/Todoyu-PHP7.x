@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">SVP, sélectionner</label>
+	<label index="field.isrequired">Ce champ est obligatoire</label>
+	<label index="field.hasError">La valeur saisie est invalide</label>
+	<label index="field.save">Sauvegarder</label>
+	<label index="field.cancel">Annuler</label>
+	<label index="records.add">Ajouter un enregistrement</label>
+	<label index="records.remove">Enlever un enregistrement</label>
+	<label index="records.edit">Éditer un enregistrement</label>
+	<label index="databaserelation.nolabel">[Nouvelle entrée]</label>
+	<label index="databaserelation.expandAllRecords">Montrer les détails</label>
+	<label index="error.notUnique">Cette entrée existe déjà</label>
+	<label index="ac.noResults">Saisie semi-automatique: Aucun résultat</label>
+	<label index="is_preferred">Suggéré</label>
+	<label index="dateselector.open">Utiliser le sélecteur de date</label>
+	<label index="autocompleteInfo">Ce champ supporte la saisie semi-automatique. Écrire pour voir apparaître des suggestions</label>
+</labels>

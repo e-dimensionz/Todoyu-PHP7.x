@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Geral</label>
+	<label index="general.use">Utilizar Gestão de Horas</label>
+	<label index="panelwidgets">Painel Widgets</label>
+	<label index="daytracks">Painel Widget "Horas Trabalhadas de Hoje"</label>
+	<label index="daytracks.showHistory">Exibir o Histórico de Horas Trabalhadas</label>
+</labels>

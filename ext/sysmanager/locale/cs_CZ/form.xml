@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.system.systemsettings">Nastavení systému </label>
+	<label index="legend.system.cli">Příkazový řádek </label>
+	<label index="legend.system.debugging">Debugging </label>
+	<label index="legend.rightsmanager.general">Nastavte své práva a role </label>
+	<label index="legend.password.general">Nastavte sílu hesla</label>
+	<label index="legend.logo.general">Změnte logo</label>
+	<label index="legend.repository.general">Vložte svoje todoyu ID</label>
+</labels>

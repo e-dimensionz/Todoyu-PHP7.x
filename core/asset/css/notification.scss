@@ -1,0 +1,111 @@
+@import "../../config/theme.scss";
+
+
+
+#notifications {
+	position:fixed;
+	z-index:5000;
+	width:100%;
+	left:0px;
+	top:0px;
+
+	div {
+		&.notes {
+			width:100%;
+			margin:0 auto; }
+
+		&.note {
+			width:100%;
+			padding:15px;
+			font-weight:bold;
+			background-color:$white;
+			opacity:.95;
+			box-shadow:2px 2px 7px $colorNeutral06;
+
+			td {
+				&.icon {
+					width:100px; }
+
+				&.message {
+					font-size:14px;
+					color: $colorNeutral09;
+					text-align:left; }
+
+				&.icon {
+					background:url(../img/icons.png) no-repeat; }
+			}
+		}
+
+		&.success td.icon {
+			background-position:0 -1920px; }
+
+		&.error td.icon {
+			background-position:0 -660px; }
+
+		&.info td.icon {
+			background-position:0 -630px; }
+	}
+}
+
+
+
+/* -------------------
+	Icons
+   ------------------- */
+.iconNotifySmall {
+	background: {
+		image:url(../img/icons.png);
+		repeat: no-repeat;
+	}
+
+	&.warn {
+		background-position:0 -658px;
+	}
+}
+
+.iconNotifyLarge {
+	background: {
+		image:url(../img/icons-large.png);
+		repeat:no-repeat; }
+
+	&.info {
+		background-position:0 -119px;
+	 }
+	&.warn {
+		background-position:0 -75px;
+	  }
+	&.reminder {
+		background-position:0 -274px;
+	}
+}
+
+.dialog .notification {
+	padding:7px;
+
+	h1 {
+		.label {
+	 		font-size:18px;
+			font-weight:bold;
+			margin-left:20px;
+			white-space:normal;
+			float:none;
+		}
+	}
+}
+
+div.warningMessage {
+	background-color:$colorNotice03;
+	box-shadow:2px 2px 7px $colorNotice00;
+	border:1px solid $colorNotice02;
+	padding:7px;
+
+	& .icon {
+		background: url(../../../../core/asset/img/icons.png) no-repeat 3px -629px;
+	}
+
+	& .label {
+		display: block;
+		margin-left: 32px;
+		vertical-align: middle;
+	}
+}

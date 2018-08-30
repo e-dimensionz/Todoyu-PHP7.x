@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">タスクブックマーク</label>
+	<label index="title">タスクブックマーク</label>
+	<label index="info.nobookmarks">ブックマークはまだありません</label>
+	<label index="contextmenu.removebookmark">ブックマーク -</label>
+	<label index="contextmenu.editbookmarks">ブックマークの編集</label>
+	<label index="contextmenu.addbookmark">ブックマーク +</label>
+	<label index="profile.module">ブックマーク</label>
+	<label index="profile.module.tasks.tab">タスク</label>
+	<label index="profile.module.tasks.bookmarksOf">右記のタスクブックマーク</label>
+	<label index="profile.module.tasks.listing.task">タスク</label>
+	<label index="profile.module.tasks.listing.title">タイトル</label>
+	<label index="profile.module.tasks.listing.label">ラベル</label>
+	<label index="bookmark.rename">ブックマークのリネーム</label>
+	<label index="bookmark.delete.confirm">このブックマークを削除しますか？</label>
+	<label index="bookmark.attr.title">ラベル</label>
+	<label index="bookmark.type.task">タスク</label>
+	<label index="bookmark.saved">ブックマークは保存されました</label>
+	<label index="bookmark.saved.error">ブックマークを保存している最中にエラーがありました</label>
+</labels>

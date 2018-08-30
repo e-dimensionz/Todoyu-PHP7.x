@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Obecné nastavení</label>
+	<label index="general.use">Používat komentáře</label>
+	<label index="general.requestFeedback">Vyžadovat odpověď</label>
+	<label index="general.sendEmail">Odeslat komentář e-mailem</label>
+	<label index="comment">Komentář</label>
+	<label index="comment.seeAll">Prohlížet všechny komentáře (neveřejné)</label>
+	<label index="comment.editOwn">Upravovat vlastní komentáře</label>
+	<label index="comment.editAll">Upravovat všechny komentáře</label>
+	<label index="comment.deleteAll">Odstraňovat všechny komentáře</label>
+	<label index="comment.deleteOwn">Odstraňovat vlastní komentáře</label>
+	<label index="comment.makePublic">Označovat komentář jako veřejný</label>
+	<label index="requestFeedback">Vyžadovat odpověď od</label>
+	<label index="requestFeedback.task">Uživatelů se vztahem k úkolu</label>
+	<label index="requestFeedback.project">Uživatelů se vztahem k projektu</label>
+	<label index="requestFeedback.internal">Všech interních osob</label>
+	<label index="sendEmail">Odeslat komentář e-mailem</label>
+	<label index="sendEmail.task">Uživatelům se vztahem k úkolu</label>
+	<label index="sendEmail.project">Uživatelům se vztahem k projektu</label>
+	<label index="sendEmail.internal">Všem intermím osobám</label>
+</labels>

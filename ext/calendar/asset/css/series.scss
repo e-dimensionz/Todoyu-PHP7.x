@@ -1,0 +1,33 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+#formElement-event-field-seriesinfo {
+	background-color:$colorHighlight04;
+	margin-bottom:20px;
+	box-shadow:2px 2px 7px $colorNeutral06;
+	padding:10px;
+
+	.fField span {
+		font-size:12px;
+	}
+}
+
+#formElement-event-field-seriesoverbooking-inputbox,
+#formElement-event-field-serieslabel-inputbox {
+	width:470px;
+}
+
+#formElement-event-field-seriesoverbooking-inputbox {
+	line-height:150%;
+}
+
+
+/* ---------------
+	Quick create
+   --------------- */
+
+#quickcreate #formElement-event-field-seriesoverbooking-inputbox,
+#quickcreate #formElement-event-field-serieslabel-inputbox {
+	width:410px;
+}

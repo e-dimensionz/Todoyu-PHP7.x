@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Paramètres personnels</label>
+	<label index="page.title">Mon profil</label>
+	<label index="headlet.label">Mes paramètres</label>
+	<label index="module.general">Paramètres généraux</label>
+	<label index="general.main.tab">Général</label>
+	<label index="general.main.locale">Langue</label>
+	<label index="general.main.saved">Paramètres enregistrés</label>
+	<label index="general.main.saved.pleaseWait">todoyu doit regénérer les fichiers de cache pour votre sélection de langue. Veuillez patienter quelques instants.</label>
+	<label index="general.main.personalConfigOf">Configuration personnelle de</label>
+	<label index="general.password.title">Changer mon mot de passe</label>
+	<label index="general.password.tab">Mot de passe</label>
+	<label index="general.password.current">Mot de passe actuel</label>
+	<label index="general.password.current.empty">Veuillez entrez votre ancien mot de passe pour le modifier</label>
+	<label index="general.password.current.wrong">L'ancien mot de passe que vous avez entré est incorrect</label>
+	<label index="general.password.new1">Nouveau mot de passe</label>
+	<label index="general.password.new2">Répéter le mot de passe</label>
+	<label index="general.password.error">Impossible de changer le mot de passe</label>
+	<label index="general.password.success">Changement du mot de passe effectué</label>
+	<label index="general.password.notEqual">Les nouveaux mots de passe ne correspondent pas</label>
+	<label index="general.password.header">Mot de passe</label>
+</labels>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://todoyuselenium.srv05.ch1.snowflake.ch/" />
+<title>sysmanager > extensions > browse download and install dev ext</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">sysmanager > extensions > browse download and install dev ext</td></tr>
+</thead><tbody>
+<!--sysmanager > extensions > browse download and install dev extension-->
+<!--go to extensions module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--change into "browse market" tab-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-search&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id=&quot;extension-tab-search&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Browse extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Search in todoyu extension repository</td>
+	<td></td>
+</tr>
+<!--Enter search word-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;formElement-search-field-query-inputbox&quot;]/input[@id=&quot;search-field-query&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>//div[@id=&quot;formElement-search-field-query-inputbox&quot;]/input[@id=&quot;search-field-query&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>//div[@id=&quot;formElement-search-field-query-inputbox&quot;]/input[@id=&quot;search-field-query&quot;]</td>
+	<td>d</td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>//div[@id=&quot;formElement-search-field-query-inputbox&quot;]/input[@id=&quot;search-field-query&quot;]</td>
+	<td>ev</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Found in market?-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Developer Tools</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>helping developers and administrators in their daily work with toodoyu</td>
+	<td></td>
+</tr>
+<!--DEV-extension Buttons there? (more information, install extension)-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;repository-search-ext-dev&quot;]/div/button[contains(@class,&quot;info&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;repository-search-ext-dev&quot;]/div/button[contains(@class,&quot;install&quot;)]</td>
+	<td></td>
+</tr>
+<!--Check install extension-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;repository-search-ext-dev&quot;]/div/button[contains(@class,&quot;install&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--popup with install dialog opened?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;installDialog&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;installDialog_content&quot;]/div/div[@class=&quot;buttons&quot;]/button[@class=&quot;button install&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;installDialog_content&quot;]/div/div[@class=&quot;buttons&quot;]/button[@class=&quot;button cancel&quot;]</td>
+	<td></td>
+</tr>
+<!--cancellation possible?-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;installDialog_content&quot;]/div/div[@class=&quot;buttons&quot;]/button[@class=&quot;button cancel&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>//div[@id=&quot;installDialog&quot;]</td>
+	<td></td>
+</tr>
+<!--Reopen popup-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;repository-search-ext-dev&quot;]/div/button[contains(@class,&quot;install&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Install-->
+<tr>
+	<td>click</td>
+	<td>//div[@id=&quot;installDialog_content&quot;]/div/div[@class=&quot;buttons&quot;]/button[@class=&quot;button install&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Check: ext installed, Extension info shown?-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Developer (dev)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id=&quot;extension-tab-installed-label&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id=&quot;extension-tab-dev_info-label&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id=&quot;extension-tab-dev_config-label&quot;]/</td>
+	<td></td>
+</tr>
+<!--go to extensions module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Dev Extension listed as installed?-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Development Extension</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Característiques generals</label>
+	<label index="general.use">Utilitzar la funcionalitat del perfil</label>
+	<label index="settings">Preferències de la conta</label>
+	<label index="settings.password">Canviar la contrasenya</label>
+</labels>

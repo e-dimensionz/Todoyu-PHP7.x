@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">搜索</label>
+	<label index="showAll.label">显示所有</label>
+	<label index="clearSword">清空输入</label>
+</labels>

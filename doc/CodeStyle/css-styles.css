@@ -1,0 +1,41 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+}
+
+	/* A style comment */
+.task .running .headLabel {
+	font-weight:bold;
+}
+
+	/* IDs:lowercase, separated by minus. Classnames:camelCase */
+#task-container .taskLabel {
+	color:#000;
+}
+
+
+
+/* -----------------------------------------------------
+	Section separator (blank lines:before:3
+   ----------------------------------------------------- */
+.project .title {
+	float:left;
+	clear:none;
+}
+
+		/* Indent definitions of child elements */
+	.project .title .label {
+		color:#999;
+	}
+
+	.project .title .tasknumber {
+		color:#333;
+	}
+
+	/* Same styles for multiple selectors */
+.task .title span,
+.project .title span,
+.event .title div {
+	font-size:16px;
+}

@@ -1,0 +1,235 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+#calendar-title {
+	margin-left:8px;
+	-moz-user-select:none;
+}
+
+
+
+/* ----------------------------------------------
+	Extension icon:stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconCalendar {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconCalendar .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+
+
+/* --------------------------------------------
+	Main menu: Sub menu entries in planning
+   -------------------------------------------- */
+#navi-main-list-planning li.itemCalendarDay a,
+#navi-main-list-planning li.itemCalendarWeek a,
+#navi-main-list-planning li.itemCalendarMonth a {
+	background: {
+		image:url(../img/icons.png) !important;
+		repeat:no-repeat;
+	}
+}
+
+#navi-main-list-planning li{
+	&.itemCalendarDay a {
+		background-position:6px -205px;
+	}
+
+	&.itemCalendarWeek a {
+		background-position:6px -235px;
+	}
+
+	&.itemCalendarMonth a {
+		background-position:6px -265px;
+	}
+}
+
+
+
+/* --------------------------
+	Sub menu in portal
+   -------------------------- */
+#navi-main-list-portal li.itemAppointment a {
+	background: {
+		image:url(../img/icons.png) !important;
+		repeat:no-repeat;
+		position:6px 5px;
+	}
+}
+
+
+
+/* ----------------------------------------
+	Quick create wizard pop-up styling
+   ---------------------------------------- */
+#quickcreate.dialog.event div#quickcreate_top.dialog_title {
+	padding:0 0 0 22px;
+	background:url(../img/icons.png) no-repeat 0 0;
+}
+
+
+
+/* --------------------------------
+	Create mode option in headlet
+   -------------------------------- */
+#todoyuheadletquickcreate li.itemCalendarEvent a {
+	background:url(../img/icons.png) no-repeat 5px -296px;
+}
+
+
+
+/* ------------------------------
+	Search mode option in headlet
+   ------------------------------ */
+#todoyusearchheadletquicksearch-modes li.searchmodeEvent a {
+	background:url(../img/icons.png) no-repeat 3px 3px !important;
+}
+#todoyusearchheadletquicksearch form.searchmodeEvent a.mode {
+	background:url(../img/icons.png) no-repeat 2px -1226px !important;
+}
+
+
+
+/* --------------------------
+ 	Portal tab appointment
+   --------------------------*/
+#portal-tab-appointment span.icon {
+	background:url(../img/icons.png) no-repeat 0 5px;
+}
+
+span.holiday {
+	display:inline-block;
+	width:13px;
+	height:13px;
+	margin-bottom: -2px;
+	background:url(../img/icons.png) no-repeat -1px -390px;
+	cursor:pointer;
+}
+
+.dayMode span.holiday {
+	background-color:$colorCorporate04;
+	height:16px;
+	margin:0 0 2px 1px;
+	padding-left:16px;
+	padding-top:1px;
+	width:598px;
+}
+
+form.createevent label, form.createeventMidcol label{
+	display:block;
+	float:left;
+	width:150px;
+}
+
+form .warningMessage ul.holidayList {
+	margin: 5px 0 0 32px;
+}
+
+
+
+/* ------------------------------------------------------------------
+	Events with / without multiple person assignments inside calendar
+   ------------------------------------------------------------------ */
+.enumColBGFademultiOrNone,
+.enumColBGmultiOrNone,
+.enumColBgFgmultiOrNone {
+	color:$colorTextGeneral !important;
+	background-color:$colorCorporate02 !important;
+	border-color:$colorCorporate04 !important;
+}
+
+.enumColBGmultiOrNone {
+	background-color:$colorCorporate04 !important;
+}
+
+
+
+/* --------------------------------------------------------------------
+	Date navigational buttons (center on today, go forward / backward)
+   -------------------------------------------------------------------- */
+.dateNavi {
+	@include gradient-button;
+	@include border-button;
+	height:15px;
+	padding:2px 5px;
+	position:absolute;
+	right:10px;
+	top:2px;
+
+	.icon {
+		background:url(../img/icons.png) no-repeat 0 0;
+		cursor:pointer;
+		height:15px;
+		margin:0;
+		min-width:28px;
+		width:28px;
+	}
+
+	.goToday {
+		border:1px solid $colorNeutral04;
+		border-width:0 1px;
+		background-position:7px -150px;
+	}
+
+	.goBackward {
+		background-position:4px -120px;
+	}
+
+	.goForward {
+		background-position:7px -180px;
+	}
+
+
+	.toggleDayView {
+		border-left:1px solid $colorNeutral04;
+		background-position:8px -60px;
+	}
+
+	.toggleWeekend {
+		border-left:1px solid $colorNeutral04;
+		background-position:8px -91px;
+	}
+}
+
+
+
+/* -------------------
+	Popups
+   ------------------- */
+.dialog .notification {
+	fieldset {
+		padding:8px 15px 15px;
+	}
+
+	.fLabel {
+		width:110px;
+	}
+
+	.fField {
+		width:280px;
+	}
+
+	&.reminder {
+		.eventDetails {
+			margin:16px 0 0 0;
+		}
+
+		.eventDetailView td {
+			padding:4px;
+		}
+	}
+}
+
+
+
+/* -------------------
+	Reminder
+   ------------------- */
+button.rescheduleReminderButton span.icon {
+	background:url(../img/icons.png) no-repeat 2px -1200px;
+	padding-left:6px;
+}

@@ -1,0 +1,25 @@
+<ul class="quicksearch-suggest">
+
+{foreach $ type resultType}
+	<li>
+		<span class="type type{ucfirst($type)}">{htmlencode $resultType.label}</span>
+		<ul>
+		{foreach $resultType.results result}
+			<li>
+				<a href="javascript:void(0)" onclick="{$result.onclick}" title="{htmlencode $result.title}">
+					<span class="title">{$result.labelTitle}</span>
+					<span class="info">{$result.labelInfo}</span>
+				</a>
+			</li>
+		{else}
+			<li>
+				<a href="javascript:void(0)" title="{Label LLL:search.ext.search.noEntryFound}">
+					<span class="title"></span>
+					<span class="info">{Label LLL:search.ext.search.noEntryFound}</span>
+				</a>
+			</li>
+		{/foreach}
+		</ul>
+	</li>
+{/foreach}
+</ul>

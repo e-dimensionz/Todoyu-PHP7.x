@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般の設定</label>
+	<label index="general.use">モジュールの機能を使用</label>
+	<label index="general.profile">プロフィールを使用</label>
+	<label index="general.area">連絡先エリアを使用</label>
+	<label index="person">個人情報</label>
+	<label index="person.seeAllInternalPersons">全ての内部の個人情報を表示</label>
+	<label index="person.seeAllPersons">全ての個人情報を表示</label>
+	<label index="person.add">個人情報の追加</label>
+	<label index="person.editAndDeleteAll">個人情報の編集と削除</label>
+	<label index="person.enableLogin">個人情報のログインアカウントを作成</label>
+	<label index="person.seeComment">個人情報のコメントを表示</label>
+	<label index="person.editComment">個人情報のコメントを編集</label>
+	<label index="company">企業情報</label>
+	<label index="company.seeAllCompanies">全ての企業情報を表示</label>
+	<label index="company.add">企業情報の追加</label>
+	<label index="company.editOwn">自社の情報(雇用者)の編集</label>
+	<label index="company.editAndDeleteAll">企業情報の編集と削除</label>
+	<label index="company.seeComment">企業情報のコメントを表示</label>
+	<label index="company.editComment">企業情報のコメントを編集</label>
+	<label index="relation">つながり</label>
+	<label index="relation.seeAllContactinfotypes">全ての連絡先のタイプを表示</label>
+	<label index="relation.seeHomeAddress">自宅の住所を表示</label>
+	<label index="relation.seeBusinessAddress">事業所の住所を表示</label>
+	<label index="relation.seeBillingAddress">請求先の住所を表示</label>
+	<label index="panelwidgets">パネルウィジェット</label>
+	<label index="panelwidgets.staffSelector">スタッフ選択</label>
+	<label index="panelwidgets.export">エクスポート</label>
+</labels>

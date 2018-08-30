@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- Event inline reminder setup fieldset, for reminder scheduling of creator -->
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<fieldsets>
+
+		<fieldset name="reminders">
+			<legend>calendar.form.legend.reminders</legend>
+			<elements>
+
+				<field type="select" name="reminder_email">
+					<label>calendar.event.attr.reminder_email</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getReminderTimeOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+
+				<field type="select" name="reminder_popup">
+					<label>calendar.event.attr.reminder_popup</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getReminderTimeOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

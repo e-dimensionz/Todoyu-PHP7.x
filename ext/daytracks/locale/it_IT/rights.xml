@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Generale</label>
+	<label index="general.use">Usa le scale temporali</label>
+	<label index="panelwidgets">Widget del pannello</label>
+	<label index="daytracks">Widget scala temporale del pannello</label>
+	<label index="daytracks.showHistory">Vedi la scala temporale</label>
+</labels>

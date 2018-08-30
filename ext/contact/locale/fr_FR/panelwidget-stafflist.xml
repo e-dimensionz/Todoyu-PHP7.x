@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Personnel</label>
+	<label index="search">Recherche</label>
+	<label index="list.empty">Aucune personne trouvée (pour cette sélection de filtre)</label>
+</labels>

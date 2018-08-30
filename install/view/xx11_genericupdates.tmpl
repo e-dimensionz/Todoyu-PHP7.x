@@ -1,0 +1,20 @@
+{extends main.tmpl}
+
+{block name="box"}
+	<span class="title">{Label install.installer.title.doneGenericChanges}</span>
+	<div class="{$textclass}">
+		<div class="sqlQuery">
+			<ul>
+			{foreach $diffs dbTable columns}
+				<li>
+					<strong>{$dbTable}:</strong>
+				{foreach $columns.columns columnName columnProps}
+						<pre>{$columnProps.query}</pre>
+				{/foreach}
+				</li>
+			{/foreach}
+			</ul>
+			{if count($diffs) == 0}{Label install.installer.affirm.dbIsUptodate}{/if}
+		</div>
+	</div>
+{/block}

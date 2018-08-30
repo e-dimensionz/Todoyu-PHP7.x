@@ -1,0 +1,89 @@
+{math equation="e - s" e=$event.date_end s=$event.date_start assign=duration}{math equation="d / 3600" d=$duration assign=duration}
+
+<table style="padding-left: 10px;" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="label">{Label core.global.title}:</td>
+		<td>{htmlencode $event.title}</td>
+	</tr>
+
+	<tr>
+		<td class="label">{Label calendar.event.attr.timespan}:</td>
+		<td>{formatRange $event.date_start $event.date_end} {if $event.date_end-$event.date_start}({formatDuration $event.date_end-$event.date_start}){/if}</td>
+	</tr>
+
+	{if $event.place}
+		<tr>
+			<td class="label">{Label calendar.event.attr.place}:</td>
+			<td>{$event.place}</td>
+		</tr>
+	{/if}
+
+	<tr>
+		<td><br /></td>
+		<td></td>
+	</tr>
+
+	{if $personWrite}
+		<tr>
+			<td class="label">{Label calendar.event.mail.event.from}:</td>
+			<td>{$personWrite.firstname} {$personWrite.lastname}{if $hideEmails != true} <{$personWrite.email}>{/if}</td>
+		</tr>
+
+		{if $personWrite.id !== $personSend.id}
+			<tr>
+				<td class="label">{Label calendar.event.mail.sentBy}:</td>
+				<td>{$personSend.firstname} {$personSend.lastname}
+					{if !$hideEmails && $personSend.email}<{$personSend.email}>{/if}
+				</td>
+			</tr>
+		{/if}
+	{/if}
+
+	{if $event.description}
+		<tr>
+			<td class="label">{Label core.global.description}:	</td>
+			<td>{nl2br(html2text($event.description))}</td>
+		</tr>
+	{/if}
+
+	<tr>
+		<td>
+			<br />
+			<br />
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="label">
+			{Label calendar.event.attr.attendees}:
+		</td>
+		<td>
+			{foreach $attendees personData}
+				{$personData.firstname} {$personData.lastname}<br />
+			{/foreach}
+		</td>
+	</tr>
+
+	{if $event.series}
+		<tr>
+			<td class="label">
+				{Label calendar.series.series}:
+			</td>
+			<td>
+				{$event.series.label}
+			</td>
+		</tr>
+	{/if}
+
+	{if $options.series && $options.operation === 'delete'}
+		<tr>
+			<td class="label">
+				{Label calendar.series.note}:
+			</td>
+			<td>
+				{Label calendar.series.note.seriesDelete}
+			</td>
+		</tr>
+	{/if}
+
+</table>

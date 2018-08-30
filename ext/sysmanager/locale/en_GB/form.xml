@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.system.systemsettings">System Seetings</label>
+	<label index="legend.system.cli">Command Line Interface</label>
+	<label index="legend.system.debugging">Debugging</label>
+	<label index="legend.rightsmanager.general">Manage your roles and rights</label>
+	<label index="legend.password.general">Define the password strength</label>
+	<label index="legend.logo.general">Change Logo</label>
+	<label index="legend.repository.general">Enter your todoyu ID</label>
+</labels>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Task Bookmarks</label>
+	<label index="title">Task Bookmarks</label>
+	<label index="info.nobookmarks">No Bookmarks Yet</label>
+	<label index="contextmenu.removebookmark">Remove From Bookmarks</label>
+	<label index="contextmenu.renamebookmark">Change bookmark label</label>
+	<label index="contextmenu.editbookmarks">Edit Bookmarks</label>
+	<label index="contextmenu.addbookmark">Add To Bookmarks</label>
+	<label index="profile.module">Bookmarks</label>
+	<label index="profile.module.tasks.tab">Tasks</label>
+	<label index="profile.module.tasks.bookmarksOf">Task bookmarks of</label>
+	<label index="profile.module.tasks.listing.task">Task</label>
+	<label index="profile.module.tasks.listing.title">Title</label>
+	<label index="profile.module.tasks.listing.label">Label</label>
+	<label index="bookmark.edit">Edit Bookmark</label>
+	<label index="bookmark.rename">Rename Bookmark</label>
+	<label index="bookmark.renamePrompt">New bookmark label (empty = original label)</label>
+	<label index="bookmark.delete.confirm">Really delete this bookmark?</label>
+	<label index="bookmark.removed">Bookmark removed</label>
+	<label index="bookmark.renamed">Bookmark renamed</label>
+	<label index="bookmark.added">Bookmark created</label>
+	<label index="bookmark.attr.title">Label</label>
+	<label index="bookmark.type.task">Task</label>
+	<label index="bookmark.saved">The bookmark has been saved.</label>
+	<label index="bookmark.saved.error">There has been an error while saving the bookmark.</label>
+</labels>

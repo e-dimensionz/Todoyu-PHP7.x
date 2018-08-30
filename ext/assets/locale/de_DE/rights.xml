@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Allgemeine Einstellungen</label>
+	<label index="general.use">Dateianhänge benutzen</label>
+	<label index="asset">Dateien</label>
+	<label index="asset.seeAll">Zeige Alle Dateien</label>
+	<label index="asset.delete">Dateien löschen</label>
+</labels>

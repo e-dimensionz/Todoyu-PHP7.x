@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">任务资源</label>
+	<label index="legend.inlineAssetUpload">此任务相关的文件</label>
+	<label index="assets.button.delete">删除选择的资源</label>
+	<label index="assets.button.upload">上传新资源</label>
+</labels>

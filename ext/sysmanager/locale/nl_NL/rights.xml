@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Algemene instellingen</label>
+	<label index="general.extensions">Extensiebeheer</label>
+	<label index="general.records">Alle records voor bewerken weergeven</label>
+	<label index="general.rights">Rechtenbeheer</label>
+	<label index="general.roles">Rollenbeheer</label>
+	<label index="extensions">Extensies</label>
+	<label index="extensions.info">Extensie-informatie</label>
+	<label index="extensions.config">Configuratie bewerken</label>
+	<label index="extensions.rights">Rechten bewerken</label>
+	<label index="extensions.records">Records bewerken</label>
+	<label index="extensions.uninstall">Extensies deïnstalleren</label>
+	<label index="extensions.install">Extensies installeren</label>
+	<label index="extensions.download">Extensie-archief downloaden</label>
+	<label index="extensions.update">Extensies bijwerken</label>
+	<label index="roles">Rollen</label>
+	<label index="roles.edit">Rol bewerken</label>
+	<label index="roles.delete">Rol verwijderen</label>
+</labels>

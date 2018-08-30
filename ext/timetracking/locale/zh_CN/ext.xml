@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">时间跟踪</label>
+	<label index="title">时间跟踪</label>
+	<label index="noTracksYet">没有在跟踪时间</label>
+	<label index="chargeable">需支付</label>
+	<label index="attr.date_create">日期</label>
+	<label index="attr.date_track">日期</label>
+	<label index="attr.workload_tracked">跟踪的时间</label>
+	<label index="attr.workload_chargeable">可支付的时间</label>
+	<label index="attr.comment">评论</label>
+	<label index="search.label">时间跟踪</label>
+	<label index="task.attr.overtimed">时间预览</label>
+	<label index="headlet.label">时间跟踪</label>
+	<label index="totalTrackedTime">总跟踪时间</label>
+	<label index="totalChargeableTime">总需支付时间</label>
+	<label index="tasktab.edit">点击编辑此记录</label>
+	<label index="start">开始跟踪时间</label>
+	<label index="stop">停止跟踪时间</label>
+	<label index="currentTask">现在的任务</label>
+	<label index="showCurrentTaskInProject">显示项目任务</label>
+	<label index="quicktask.workload_done">已花费时间</label>
+	<label index="estimated_workload">预计工作量</label>
+	<label index="jumpToTask">点击跳到此任务</label>
+	<label index="jumpToProject">点击跳到此项目</label>
+	<label index="extconf.stopOnLogout">退出时停止时间跟踪</label>
+</labels>

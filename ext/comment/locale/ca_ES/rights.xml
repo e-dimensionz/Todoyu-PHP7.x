@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General Settings</label>
+	<label index="general.use">Use Comments Functionality</label>
+	<label index="general.requestFeedback">Request Feedback</label>
+	<label index="general.sendEmail">Send Comment By Email</label>
+	<label index="comment">Comment</label>
+	<label index="comment.seeAll">See All Comments (not public)</label>
+	<label index="comment.editOwn">Edit Own Comments</label>
+	<label index="comment.editAll">Edit All Comments</label>
+	<label index="comment.deleteAll">Delete All Comments</label>
+	<label index="comment.deleteOwn">Delete Own Comments</label>
+	<label index="comment.makePublic">Make Comment Public</label>
+	<label index="requestFeedback">Request Feedback From</label>
+	<label index="requestFeedback.task">Task Persons</label>
+	<label index="requestFeedback.project">Project Persons</label>
+	<label index="requestFeedback.internal">All internal persons</label>
+	<label index="sendEmail">Send As Email To</label>
+	<label index="sendEmail.task">Task Persons</label>
+	<label index="sendEmail.project">Project Persons</label>
+	<label index="sendEmail.internal">All internal persons</label>
+	<label index="overrideDummy">Act on comments of dummy user</label>
+	<label index="overrideDummy.acknowledgeFeedback">Mark feedback comment as read</label>
+</labels>

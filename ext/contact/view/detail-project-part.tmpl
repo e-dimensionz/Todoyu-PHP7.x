@@ -1,0 +1,17 @@
+{if count($projects) > 0}
+	<div class="infoBox projectPart">
+		<h4>{Label $header}</h4>
+		<div class="content overflow">
+			<table class="list projectList">
+				{foreach array_reverse($projects) project}
+					<tr class="{cycle values="odd,even"}">
+						<td class="bgStatus{$project.status}"></td>
+						<td>
+							<a href="index.php?ext=project&amp;project={$project.id}">#{$project.id} - {$project.title}</a>
+						</td>
+					</tr>
+				{/foreach}
+			</table>
+		</div>
+	</div>
+{/if}

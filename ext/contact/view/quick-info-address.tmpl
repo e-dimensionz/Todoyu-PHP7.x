@@ -1,0 +1,27 @@
+{if isAddressTypeSeeAllowed('company', $id, $address.id_addresstype)}
+	<div class="infoBox addressPart">
+		<h4>{addressType $address.id_addresstype}</h4>
+		<div class="content overflow address">
+			{if strlen($address.street) > 0}
+				{nl2br $address.street}<br />
+			{/if}
+
+			{if strlen($address.postbox)>0}
+				{Label contact.ext.address.attr.postbox}: {htmlencode wordwrap($address.postbox 30 cut=true)}<br />
+			{/if}
+
+			{if strlen($address.zip)>0 || strlen($address.city)>0}
+				{$address.zip} {$address.city}<br/>
+			{/if}
+			{countryName $address.id_country}
+
+
+
+			{if strlen($address.comment) > 0}
+				<br />
+				<br />
+				{nl2br $address.comment}
+			{/if}
+		</div>
+	</div>
+{/if}

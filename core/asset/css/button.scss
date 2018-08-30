@@ -1,0 +1,95 @@
+@import "../../config/theme.scss";
+
+
+
+/* ---------------------------
+	Basic button styles
+   ---------------------------*/
+button {
+	color:$colorTextGeneral;
+	cursor:pointer;
+	padding:0px;
+	@include gradient-button;
+	@include border-button;
+
+	&[disabled] {
+		opacity:0.6;
+		cursor:no-drop;
+		cursor:not-allowed; }
+
+	span {
+		display:block;
+		float:left;
+		clear:none;
+		margin:0px;
+		padding:0px;
+		line-height:20px;
+		height:20px;
+		border-width:0px;
+
+		&.icon {
+			background-repeat:no-repeat;
+			margin:0 2px 0 2px; }
+
+		&.label {
+			margin-right:5px;
+			white-space:nowrap;}
+	}
+
+	/* ---------------------------
+		Often used button icons
+	   ---------------------------*/
+	&.edit .icon {
+		background:url(../img/icons.png) no-repeat 0 -746px; }
+
+	&.save .icon {
+		background:url(../img/icons.png) no-repeat 4px -208px;
+		width:23px; }
+
+	&.cancel .icon {
+		background:url(../img/icons.png) no-repeat 5px -357px;
+		width:21px; }
+
+	&.delete .icon {
+		background:url(../img/icons.png) no-repeat 4px -328px; }
+
+	&.expandAll .icon {
+		background:url(../img/icons.png) no-repeat 7px -598px;
+		width:27px; }
+
+	&.saveanddownload .icon {
+		background:url(../img/icons.png) no-repeat 5px -838px;
+		width:22px; }
+
+	&.upload .icon, {
+		background:url(../img/icons.png) no-repeat 5px -1692px;
+		width:24px; }
+
+	&.sendemail .icon {
+		background:url(../img/icons.png) no-repeat 6px -1156px;
+		width:20px; }
+
+	&.exclamation .icon {
+		background:url(../img/icons.png) no-repeat 4px -387px;
+		width:21px; }
+
+	&.generate .icon {
+		background:url(../img/icons.png) no-repeat 4px -1628px;
+		width:22px; }
+
+	&.exportCsv .icon {
+		background:url(../img/icons.png) 7px -1598px no-repeat;
+		width:28px; }
+
+	&.clear .icon	{
+		background:url(../img/icons.png) no-repeat 5px -357px;
+		width:21px; }
+
+	&.order .icon {
+		background:url(../img/icons.png) no-repeat 7px -477px;
+		width:25px; }
+
+	&.order.desc .icon {
+		background:url(../img/icons.png) no-repeat 7px -508px;
+		width:25px; }
+}

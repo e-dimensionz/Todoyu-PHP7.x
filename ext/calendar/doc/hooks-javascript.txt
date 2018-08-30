@@ -1,0 +1,17 @@
+Calendar Extension - JavaScript Hooks
+=====================================
+1. Event
+	calendar.event.saved
+	@param	{Number} idEvent
+	Evoked after event saved. (DB record updated, project elements updated in DOM)
+
+	calendar.event.editType
+	@param	{Number} idProject
+	Evoked when event type has been changed.
+
+
+
+2. Quick-Event
+	calendar.quickevent.saved
+	@param	{Number} idEvent
+	Evoked after event saved. (DB record updated, event elements updated in DOM)

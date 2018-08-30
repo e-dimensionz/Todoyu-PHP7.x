@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">员工</label>
+	<label index="selection">激活所选</label>
+	<label index="selection.empty">没有选择. 使用搜索添加新的人员和分组</label>
+	<label index="button.save.newgroup">将选择荐存为分组</label>
+	<label index="newGroupLabel.prompt">输入新分组的名称</label>
+	<label index="newGroupLabel.saved.success">分组已保存.</label>
+	<label index="newGroupLabel.error.saveEmptyName">保存分组失败</label>
+	<label index="newGroupLabel.prompt.preset">新分组</label>
+	<label index="icon.additem">选择</label>
+	<label index="icon.removefromselection">取消选择</label>
+	<label index="icon.deletegroup">删除分组</label>
+	<label index="deletegroup.confirm">确认删除分组?</label>
+	<label index="deletegroup.success">分组已删除.</label>
+	<label index="deletegroup.error">删除分组失败.</label>
+</labels>

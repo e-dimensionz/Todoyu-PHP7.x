@@ -1,0 +1,274 @@
+todoyu contact extension changelog
+
+contact 1.3.1 - 2013-12-31
+	* Fixed: contact image removal Button is only displayed if there is one (not a dummy)
+	* Added: TodoyuContactPersonManager::getPersonByEmail($email)
+	* Added: New person attribute: title
+	* Added: Person label in auto-completion suggestion contains company shortname
+	* Added: Quick info for contact information on company.
+	* Added: Hook to render contact information in person/company details
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+	* Changed: Display changes of address
+	* Changed: Company-listing columns
+	* Changed: Dependency to core 2.3.1
+	* Changed: Improved listing of companies and persons
+
+contact 1.3.0 - 2013-03-27
+	* Require: Core 2.3.0
+	* Feature: Outgoing mail account (including SMTP) in person account data
+	* Feature: Added person record selector according to staff selector
+	* Added: css-cropping of list table content
+	* Added: new line to br for company-addresses in detail - view
+	* Added: Live-form-validation for duplicated address-records (person + company)
+	* Added: Live-form-validation for duplicated contactinformation (person + company)
+	* Added: Live-form-validation for duplicated person (first + lastname)
+	* Added: Live-form-validation for duplicated company titles
+	* Added: List of assigned projects in company and person detail-view
+	* Added: New field ext_contact_person.is_dummy to mark dummy users (placeholders, e.g. rooms)
+	* Added: New field ext_contact_company.is_notactive to disable companies
+	* Added: TodoyuContactPerson->hasRight($ext, $right)
+	* Added: UTC offset info in timezone options' labels
+	* Added: $ignoreIDs parameter to TodoyuContactPersonManager::searchPerson()
+	* Added: TodoyuContactPersonManager::getMatchingStaffPersons() and ::getMatchingPersons()
+	* Added: Email person record selector
+	* Added: TodoyuContactPersonManager::addCompanyLink()
+	* Added: Mail signature per user for all mails
+	* Added: Correspondence locale for company and person. Allows other extension to localize content based on central configuration
+	* Added: TodoyuContactPerson->getLocaleCorrespondence(), TodoyuContactCompany->getLocaleCorrespondence()
+	* Added: TodoyuContactPerson->getMailReceiver()
+	* Changed: Show dummy image if it is not allowed to see the person
+	* Changed: Adapted warning-message to new global style
+	* Changed: Cleanup profile - Reused general person form instead of an additional form version for the same fields
+	* Changed: Cleanup TodoyuContactPersonManager::searchPerson() - Removed searchInFields parameter, $searchWords parameter is now an array
+	* Changed: Removed TodoyuContactCompanyManager::searchCompanyIDs() because it was never used
+	* Changed: Removed TodoyuContactPersonManager::getList() because it was never used
+	* Changed: Use PanelWidgetSearchBox from core 2.2.1 as base for search box
+	* Changed: Address field street is optional
+	* Bugfix: Fixed Problem with Person search
+	* Bugfix: label fix
+	* Bugfix: Added Avatar (smaller scaled contact-image)
+	* Bugfix: Icon clean-up
+	* Bugfix: Person edit form in profile handling
+	* Bugfix: Permission check on person in employee list of a company
+	* Bugfix: Linking from project list in person and company was wrong
+	* Bugfix: Fixed memory problems with export by disabling unnecessary caching
+	* Bugfix: Position of delete group icon
+
+
+contact 1.2.0 - 2012-05-03
+	* Feature: Staff selector panelwidget can store/reload person selection as a group of itself
+	* Feature: Added search tabs and filters for company and person records
+	* Added: Contact infos of employees in company CSV export
+	* Added: New Company entering date is preset with current date
+	* Added: Persons list paging
+	* Added: TodoyuContactPersonManager::isAllowed to check whether some person has some right
+	* Added: Disabled person items in staffselector can be selected on [Enter] when highlighted
+	* Added: American english person salutations
+	* Changed: Closing person/company detail view reloads respective contacts list in contacts area, area content in other areas
+	* Changed: Person and company listing can be displayed also outside of contact area, editing actions are only available in contact area
+	* Changed: Adapted changes to core-change from r8715
+	* Changed: TodoyuContactCompany::getAddresses() return now a list of address objects
+	* Changed: TodoyuContactPerson::getCompanies() return now a list of company objects
+	* Changed: StaffSelector panelwidget return the selected items and the selected persons as json on the save request (given as parameter in panel widget event)
+	* Changed: Use normal taskdata hook to add contact task attributes (instead of taskdataattributes hook which will get removed)
+
+contact 1.1.4 - 2011-12-13
+	* Bugfix: Population of region field in contact for IE
+	* Bugfix: Fixed physically deletion of records.
+	* Changed: Changed street to textarea.
+	* Changed: Renamed contact panelwidget search pref. ("searchword" => "panelwidgetcontactsearch-searchword")
+
+contact 1.1.3 - 2011-11-17
+	* Bugfix: Image upload caused JS error in quick create popup
+	* Bugfix: Apply search filter to initial load of company listing
+	* Bugfix: Fixed rights in wizard
+	* Bugfix: Fixed Problem with deleted contact information. (Were still displayed in Person - Listing)
+	* Bugfix: formatted file size for error message
+	* Changed: Clean-up panel widgets
+	* Changed: Deeplink shows detail instead of edit form
+	* Translation: Polish
+
+contact 1.1.2 - 2011-09-15
+	* Bugfix: default salutation label failure if none stored
+	* Bugfix: #187 Surplus point in rights path for comments field in company form
+	* Bugfix: JS error when person has not the right to edit accounts of users
+	* Added: dedicated icon for users with todoyu account in contact listing
+	* Added: person shortname in user information section of person details
+	* Added: Missing label for contact.ext.noJobDefined
+	* Added: Missing save hook in TodoyuContactCompanyManager::saveCompany
+	* Added: Hooks: company.add, company.update, company.delete, person.add, person.update, person.delete
+	* Changed: Changed exticon (looked almost identical to profile)
+	* Changed: Hooks: person.renderDetail, company.renderDetail
+	* Changed: #207 Check access rights for contact infos in quick info for person
+	* Changed: #204 Removed unused methods from TodoyuContactContactInfoType
+	* Changed: Highlight already selected items when result of staff selector is empty
+	* Changed: ext_contact_contactinfo.id_contactinfotype is now a smallint instead of tinytext
+
+contact 1.1.1 - 2011-07-25
+	* Bugfix: #178 TodoyuContactPersonRights::getAllowedToBeSeenPersonsWhereClause() created an invalid where statement
+
+contact 1.1.0 - 2011-06-17
+	* Bugfix: If no user locale is set, english was selected as first element, but system locale could be different
+	* Bugfix: company deletion right check- companies that have projects assigned are NOT allowed to be deleted
+	* Bugfix: Added missing ID labels for company & person
+	* Bugfix: Birthdays in years before 1970 were not listed in birthdays list in appointment tab in portal
+	* Bugfix: Mailing options of internal users did not list email-addresses
+	* Bugfix: Person label with email showed braces also around non-existing emails
+	* Bugfix: Locale preferences problems in contact
+	* Bugfix: Removed display of email in person quickinfo when not available
+	* Bugfix: Added rights check in controller to avoid direct url access
+	* Bugfix: Fixed birthday in person quickinfo and detail view to be formatted by date format of locale
+	* Feature: Added salutation and company to person search
+	* Feature: Added comment to person quickinfo
+	* Feature: Added person ID plugin (dwoo)
+	* Feature: Set default salutation to m (male) for new person records
+	* Feature: Implementation / documentation of contact export hooks
+	* Feature: Export for contacts
+	* Feature: Improved staff selector - Autocompleter, disable. Much smaller now
+	* Feature: Added general person header stub (analog to e.g. project header)
+	* Feature: Added stafflist panelwidget
+	* Feature: Added create - wizard for companies - auto - completer (person + project)
+	* Feature: More rights for the whole module
+	* Feature: Added personal data form to profile
+	* Feature: Added comment field for person and company
+	* Feature: Better detail-view for person and company
+	* Feature: Profile images for person and company
+	* Feature: Cleanup (topical order and readability) of extension config (init.php) file
+	* Feature: Readability of ext init file
+	* Changed: Moved timezone directly to address form
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
+	* Changed: Adapted contact ext controller parameter naming to be consistent with changed general sub items navigation (was named "type" instead of "tab")
+	* Changed: Used new TodoyuTabManager
+	* Changed: DB rename ext_contact_person.active => is_active
+	* Changed: Moved templates of contact panelwidgets into sub folder /view/panelwidgets/
+
+contact 1.0.7
+	* Bugfix: Show preferred email in person list item (from contact info type when no todoyu account given)
+	* Bugfix: Auto-generated person shortname can (not any longer) contain whitespace
+	* Bugfix: Added deleted clause for quickinfo preferred phone number
+	* Bugfix: Username is pre filled in the password forgot form if set in the login form
+	* Feature: Added (empty still) locale files for spanish (columbia) locales to come of extensions
+	* Translation: Italian
+
+contact 1.0.0 to 1.0.6 - 1.0.6 released 2011-01-17
+	* Bugfix: Missing labels for contactinfo
+	* Bugfix: Search-word is not saved for company
+	* Bugfix: Added missing encoding to quickinfo details
+	* Bugfix: If ID of a person is zero, fullname is an empty string
+	* Bugfix: Right in company edit form
+	* Bugfix: Birthdays of current day are not visible
+	* Bugfix: Admin and internal checks
+	* Bugfix: Fixed birthday selection and order in portal. Limited to 8 weeks.
+	* Bugfix: Added check to prevent loading deleted addresses
+	* Bugfix: Fixed project search (headlet & autocompleter). Customers are now involved (1473.306 & 1473.247)
+	* Bugfix: Remove birthday from quickinfo when unknown
+	* Bugfix: Made sure birthday field is not set to default
+	* Feature: Extended company search with access rights restriction
+	* Feature: Extended person search with access rights restriction
+	* Feature: Added rights models for person and company
+	* Feature: Added contact right: see all internal persons
+	* Feature: Added contact right: see all persons
+	* Feature: Added contact right: see all companies
+	* Feature: Added indexes to tables to improve SQL performance
+	* Feature: Added getUsername() to person
+	* Feature: Added country, and address template data loader functions
+	* Feature: Removed not used JS and CSS loaders
+	* Feature: Added access right setting and check for assigning of roles to persons
+	* Feature: Linked person name in quickinfo popup to person data in contact area
+	* Feature: Email link of person quickinfo added onclick to also send person name with email
+	* Feature: Added task search filter: project customer company
+	* Feature: Sort Jobtypes by label
+	* Feature: Full-name in Person template data
+	* Feature: Added hooks documentation
+	* Feature: Added method for getting address label to address manager
+	* Changed: Incremented year in copyright notice to 2011
+	* Changed: Made contact area right available to non-internal usergroups
+	* Changed: Record email is only required for person if active and username is available
+	* Changed: Removed right of changing person roles from any non-admin person
+	* Changed: Added missing context record ID (project) in project persons quick info mockup
+	* Changed: Reduced address parts comma separation to available parts
+	* Changed: Moved company function to own data source class (instead in person)
+	* Changed: Removed manual requiring of auto-loaded config files
+	* Translation: Russian
+	* Translation: Serbian
+	* Translation: Japanese
+	* Translation: Czech
+	* Translation: Dutch
+
+contact 0.0.1 to 1.0.0 - 1.0.0 released on 2010-05-10
+	* Bugfix: Fixed JS bug in person wizard (onEdit wasn't called)
+	* Bugfix: Staffselector IE styling fix
+	* Bugfix: Wrong camelCasing: JobType? => Jobtype
+	* Bugfix: Gender bugfix
+	* Bugfix: Fixed bug in person where deleted contactinfos were shown
+	* Bugfix: Refresh bug when creating persons
+	* Bugfix: Person form salutation label
+	* Bugfix: Rendering bug of too long person names in events display / quickinfo
+	* Bugfix: Company selection / autocomplete / update in quickcreate of person
+	* Bugfix: Person form: email was always required (now: only when username given)
+	* Bugfix: Staffselector did not filter
+	* Bugfix: Contact info manager, rights labels cleanup
+	* Bugfix: Double instruction options in contacts selectors
+	* Bugfix: Layout fixes
+	* Bugfix: Contacts selectors (added selector instruction, error messages when presets missing)
+	* Bugfix: Fixed bug in work location selector
+	* Bugfix: Added missing company label
+	* Bugfix: Paging and listing
+	* Bugfix: Person record creation/editing bug (forgotten renaming of customer to company)
+	* Bugfix: Re-added info pop-up for persons in contact-module
+	* Bugfix: Fixed country label bug
+	* Bugfix: Fixed edit user tool tip in contact
+	* Bugfix: Localizing inside title rendering of contact info types foreign records
+	* Bugfix: JS fixes in contacts search widget
+	* Bugfix: Contact JS fixes
+	* Bugfix: Label rendering fixes in staffselector widget
+	* Bugfix: Htmlencode for company list
+	* Bugfix: MM-rel fixes
+	* Bugfix: DB getIndexArray()
+	* Bugfix: Search user, Ui scroll fix
+	* Bugfix: JS bug in visual toggle of contacts search 'show all' option
+	* Bugfix: Loading bugfix
+	* Feature: Added TodoyuProjectProjectManager::getRolesPersonsIDs to get all persons of given roles with their roles
+	* Feature: Added keeping of search values on edit / delete / change tab in contact
+	* Feature: Check of rights to person / company quick creation
+	* Feature: Rights for contact > person create, person edit + delete and company create, company edit + delete
+	* Feature: Refresh of contacts list after company / person quick create
+	* Feature: More rights
+	* Feature: Added company quick creation
+	* Feature: "Person" as primary quick creation type of contact area
+	* Feature: Added contact types quick creation engine
+	* Feature: Added categorization (email / phone / other) to dynamic quickinfotypes
+	* Feature: User quickinfo
+	* Feature: Added quick search for person, company
+	* Feature: Dynamic contact info types editable
+	* Feature: Added create - person wizard for autocompleter
+	* Feature: Added info pop-up for companies in contact-module
+	* Feature: Unused contact functions removed
+	* Feature: Contact layout improvements
+	* Feature: Added collapsed / expand status saving for all panelwidgets
+	* Feature: Added icon for search sub tab
+	* Feature: Added icons to sub menu items
+	* Feature: Tooltips in contact records (person, company) and user admin
+	* Feature: JS cleanup and commenting
+	* Feature: IndexLetters as Dwoo Plugin
+	* Feature: Alphabetical index
+	* Feature: Cleanup, usability fix in autocompleter
+	* Changed: Changed TodoyuProjectProjectManager::getRolePersonID to getRolePersonIDs, adapted usages
+	* Changed: Removed comma from personLabel 'lastname name' instead of 'lastname, name'
+	* Changed: Adapted quickinfo registration (is a core controller now with callbacks for types)
+	* Changed: EXTKEY constants + usage in renderer
+	* Changed: Changed the region autocompleter with a selection box
+	* Changed: Renamed user to person
+	* Changed: Removed quick contact panelwidget
+	* Changed: Staffselector widget to keep selector rendering standards
+	* Changed: Removed paging from contacts, implemented progressive browsing instead
+	* Changed: Changed list size in contact to 30
+	* Changed: Renamed customer to company
+	* Changed: Form save buttons cleanup
+	* Changed: Moved page config to config\page.php which is loaded only on page rendering
+	* Changed: Cleanup of libs, templates, forms
+	* Changed: Renamed cmd to action
+	* Changed: Records editing cleanup
+	* Translation: Portuguese

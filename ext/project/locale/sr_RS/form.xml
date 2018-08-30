@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.task.basics">Основне информације</label>
+	<label index="legend.task.attributes">Атрибути</label>
+	<label index="legend.container.basics">Основне информације</label>
+	<label index="legend.container.attributes">Атрибути</label>
+	<label index="legend.project.basics">Основне информације</label>
+	<label index="legend.project.taskpreset">Пресет конфигурације задатка</label>
+	<label index="legend.project.members">Чланови пројекта</label>
+	<label index="legend.quicktask.basics">Основне информације задатка</label>
+	<label index="legend.project.approvalroles">Улога одобрења рачуна</label>
+	<label index="legend.admin.basics">Дефаулт подешавања ваших задатка</label>
+	<label index="legend.admin.quicktask">Дефаулт понашање за брзе задатке</label>
+	<label index="legend.admin.fallbacks">"Фалбак" дефаултс за особе са ограниченим правима</label>
+	<label index="legend.admin.projectrole.record.general">Улоге пројекта</label>
+	<label index="legend.admin.activity.record.general">Тип активности</label>
+	<label index="legend.admin.taskpreset.record.general">Дефаулт подешавања за задатке</label>
+	<label index="legend.admin.taskpreset.record.quicktask">Дефаулт понашање за брзе задатке</label>
+	<label index="legend.admin.taskpreset.record.fallbacks">"Фалбак" дефаултс за особе са ограниченим правима</label>
+</labels>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="files">Dateien</label>
+	<label index="download">Herunterladen</label>
+	<label index="upload">Hochladen</label>
+	<label index="size.gb">GB</label>
+	<label index="size.mb">MB</label>
+	<label index="size.kb">KB</label>
+	<label index="size.b">B</label>
+	<label index="filename">Dateiname</label>
+	<label index="filesize">Dateigrösse</label>
+	<label index="upload.progressmessage">Lade Datei hoch</label>
+	<label index="upload.succeeded">Datei erfolgreich hochgeladen</label>
+	<label index="upload.selectfile">Datei zum Hochladen wählen:</label>
+	<label index="upload.error.uploadfailed">Hochladen fehlgeschlagen.</label>
+	<label index="upload.failed.maxFileSizeExceeded">Hochladen fehlgeschlagen: Erlaubte maximale Dateigrösse überschritten.</label>
+	<label index="confirm.delete">Datei wirklich löschen?</label>
+	<label index="notify.delete.success">Datei wurde gelöscht:</label>
+	<label index="notify.delete.error">Datei löschen fehlgeschlagen:</label>
+	<label index="error.notFround">Datei nicht gefunden</label>
+	<label index="error.notReadable">Datei nicht lesbar</label>
+	<label index="error.notInDownloadPath">Datei nicht in einem der erlaubten Download-Ordner</label>
+</labels>

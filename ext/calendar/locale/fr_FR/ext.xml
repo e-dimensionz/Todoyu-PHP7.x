@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Calendrier</label>
+	<label index="page.title">Calendrier</label>
+	<label index="maintab.label">Planification</label>
+	<label index="subMenuEntries.prefix">Calendrier</label>
+	<label index="subMenuEntry.day">Jour</label>
+	<label index="subMenuEntry.week">Semaine</label>
+	<label index="subMenuEntry.month">Mois</label>
+	<label index="search.label">Activité</label>
+	<label index="search.mode.label">Rechercher des activités</label>
+	<label index="extconf.allowoverbooking.label">Permettre les surréservation?</label>
+	<label index="portal.tab.appointments">Rendez-vous</label>
+	<label index="portal.tab.appointments">Rendez-vous</label>
+	<label index="quicknav.backward.title">Retour</label>
+	<label index="quicknav.forward.title">Avancer</label>
+	<label index="quicknav.today.title">Aller à aujourd'hui</label>
+	<label index="dayview.workingtime">Afficher les heures de travail (08h-18h)</label>
+	<label index="dayview.fullday">Afficher toutes les heures du jour (00h-24h)</label>
+	<label index="holidayset.attr.name">Nom</label>
+	<label index="holidayset.attr.holiday">Congé</label>
+	<label index="holidayset.attr.holiday.new">Nouveau congé</label>
+	<label index="holiday.attr.workingtime">Heures de travail</label>
+	<label index="holiday.attr.holidayset">Holidayset</label>
+	<label index="holiday.attr.holidayset.new">New Holidayset</label>
+	<label index="holidayset">Holidayset</label>
+	<label index="holiday">Congé</label>
+	<label index="yearsold">Years Old</label>
+	<label index="records.holidayset">Holidayset</label>
+	<label index="workingtime">Durée du jour de travail</label>
+	<label index="currentweek">Cette semaine</label>
+	<label index="furtherevents">Further Events</label>
+	<label index="today">Aujourd'hui</label>
+	<label index="owner">Propriétaire</label>
+	<label index="profile.module">Calendrier</label>
+	<label index="profile.module.main.tab">Général</label>
+</labels>

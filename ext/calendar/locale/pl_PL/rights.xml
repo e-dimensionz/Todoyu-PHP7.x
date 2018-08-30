@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Ogólne</label>
+	<label index="general.use">Użyj funkcjonalności kalendarza</label>
+	<label index="general.area">Użyj obszaru kalendarza</label>
+	<label index="event">Spotkanie</label>
+	<label index="event.seeAll">Zobacz wszystkie spotkania</label>
+	<label index="event.editAssigned">Edytuj przypisane spotkania</label>
+	<label index="event.editAll">dytuj wszystkie spotkania</label>
+	<label index="event.deleteAssigned">Usuń przypisane spotkania</label>
+	<label index="event.deleteAll">Usuń wszystkie spotkania</label>
+	<label index="event.add">Dodaj nowe spotkanie</label>
+	<label index="event.search">Szukaj spotkania</label>
+	<label index="event.assignOthers">Przypisz spotkanie wszystkim</label>
+	<label index="mailing">Wydarzeniowy email</label>
+	<label index="mailing.sendAsEmail">Wyślij e-mail o spotkaniu wybranym osobom</label>
+	<label index="reminders">Przypomnienia o spotkaniu</label>
+	<label index="reminders.popup">Użyj przyponienia pop-ups</label>
+	<label index="reminders.email">Użyj przyponienia e-mail</label>
+</labels>

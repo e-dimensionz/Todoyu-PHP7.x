@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Поиск и создание фильтров</label>
+	<label index="page.title">Поиск</label>
+	<label index="or">ИЛИ</label>
+	<label index="and">И</label>
+	<label index="search.label">Искать все</label>
+	<label index="filterlabel.filterset">Наборы фильтров</label>
+	<label index="filterset.rename">Переименовать набор фильтров</label>
+	<label index="filterset.delete">Удалить набор фильтров</label>
+	<label index="filterset.confirm.delete">На самом деле удалить набор фильтров?</label>
+	<label index="filterset.confirm.overwrite">Переписать существующий набор фильтров?</label>
+	<label index="filterset.error.saveWrongType">Вы пытаетесь сохранить набор фильтров с неправильным типом</label>
+	<label index="filterset.error.saveNoConditions">Нет условий для сохранения</label>
+	<label index="filterset.error.saveEmptyName">Пожалуйста, введите название для набора фильтров</label>
+	<label index="negation.default.true">Нет</label>
+	<label index="negation.default.false">Да</label>
+	<label index="negation.datetime.true">С</label>
+	<label index="negation.datetime.false">До</label>
+	<label index="negation.datetimeDyn.true">С</label>
+	<label index="negation.datetimeDyn.false">До</label>
+	<label index="negation.numbercompare.true">меньше, чем</label>
+	<label index="negation.numbercompare.false">больше, чем</label>
+	<label index="newFilterLabel">Введите название для нового фильтра</label>
+	<label index="newFilterLabel.preset">Новый фильтр</label>
+	<label index="subMenuEntry.task">Задачи</label>
+	<label index="subMenuEntry.project">Проекты</label>
+	<label index="areMatching">%e %s подходят по критериям поиска</label>
+	<label index="areMatching.overLimit">Больше, чем %e %s подходят по критериям поиска. Используйте больше критериев, чтобы уменьшить количество результатов или сортировку, чтобы получить более подходящие результаты.</label>
+	<label index="filterwidget.condtion.remove">Удалить условие</label>
+	<label index="search.noEntryFound">Результатов нет</label>
+	<label index="search.noResultsForActiveFilters">Для выбраных фильтров ничего не найдено</label>
+	<label index="contextmenu.project.showinproject">Открыть в проекте</label>
+	<label index="headlet.label">Искать в todoyu</label>
+	<label index="export.error.saveEmpty">Нечего экспортировать.</label>
+</labels>

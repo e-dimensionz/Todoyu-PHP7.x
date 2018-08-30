@@ -1,0 +1,78 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* -----------------
+	Calendar widget
+   ----------------- */
+#panelwidget-calendar {
+	border:none;
+	z-index:100;
+}
+
+#scalupdate {
+	display:none;
+}
+
+#panelwidget-event-content {
+	padding:6px 0 6px 5px;
+}
+
+#panelwidget-calendar-content .calheader,
+#panelwidget-calendar-content .calcontrol {
+	font-weight:normal !important;
+	text-transform:uppercase;
+}
+
+
+/* --------------------------
+	jscalendar adaptions
+   -------------------------- */
+#panelwidget-calendar-jscalendar {
+	tfoot {
+		display:none;
+	}
+
+	div.calendar {
+		box-shadow:none;
+
+		tr.headrow td.button.hilite {
+			cursor:pointer;
+			/*background:#316ac5;*/
+		}
+	}
+
+	.calendar {
+		thead .day.name {
+			padding:2px;
+			cursor:default;
+		}
+
+		.day {
+			border-bottom:1px solid $colorNeutral02;
+			border-right:1px solid $colorNeutral02;
+			text-align:center;
+			padding:4px 7px;
+			cursor:pointer;
+		}
+
+		.wn {
+			cursor:default;
+		}
+	}
+}
+
+#panelwidget-calendar-jscalendar td.hillite,
+#panelwidget-calendar-jscalendar div.calendar tr td.day.hilite,
+#panelwidget-calendar-jscalendar div.calendar tr td.button.hilite div {
+	/*background:#316ac5;*/
+	/*color:$white;*/
+	text-shadow:none;
+	cursor:pointer;
+}
+
+#panelwidget-calendar-jscalendar div.calendar,
+#panelwidget-calendar-jscalendar div.calendar table {
+	background-image:none;
+	background-color:$white;
+}

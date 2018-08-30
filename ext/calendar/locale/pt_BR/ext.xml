@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Calendário</label>
+	<label index="page.title">Calendário</label>
+	<label index="maintab.label">Planejamento</label>
+	<label index="subMenuEntries.prefix">Calendário</label>
+	<label index="subMenuEntry.day">Dia</label>
+	<label index="subMenuEntry.week">Semana</label>
+	<label index="subMenuEntry.month">Mês</label>
+	<label index="workingtime">Horas trabalhadas</label>
+	<label index="search.label">Eventos</label>
+	<label index="search.mode.label">Procurar Eventos</label>
+	<label index="portal.tab.appointments">Compromissos</label>
+	<label index="portal.tab.appointments">Compromissos</label>
+	<label index="quicknav.backward.title">Anterior</label>
+	<label index="quicknav.forward.title">Próximo</label>
+	<label index="quicknav.today.title">Ir para hoje</label>
+	<label index="dayview.workingtime">Mostrar Horas Trabalhadas (08h-18h)</label>
+	<label index="dayview.fullday">Mostrar Horas de Dias Cheios (00h-24h)</label>
+	<label index="holidayset">Feriado</label>
+	<label index="records.holidayset">Feriado</label>
+	<label index="holidayset.attr.name">Nome</label>
+	<label index="holidayset.attr.holiday">Feriado</label>
+	<label index="holidayset.attr.holiday.new">Novo Feriado</label>
+	<label index="holiday">Feriado</label>
+	<label index="holiday.attr.workingtime">Horas Trabalhadas</label>
+	<label index="holiday.attr.holidayset">Feriados</label>
+	<label index="holiday.attr.holidayset.new">Novo Feriado</label>
+	<label index="yearsold">Anos de idade</label>
+	<label index="owner">Proprietário</label>
+	<label index="today">Hoje</label>
+	<label index="extconf.allowoverbooking.label">Permitir Overbooking?</label>
+	<label index="profile.module">Calendário</label>
+	<label index="profile.module.main.tab">Principal</label>
+</labels>

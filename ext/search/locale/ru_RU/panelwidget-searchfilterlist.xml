@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Наборы фильтров</label>
+	<label index="saveFilterButton">Сохранить как новый фильтр</label>
+	<label index="clearFilterArea">Очистить область фильтров</label>
+</labels>

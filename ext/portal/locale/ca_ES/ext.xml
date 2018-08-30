@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Portal</label>
+	<label index="page.title">Portal</label>
+	<label index="tab">Portal</label>
+	<label index="tab.selection">Els meus preferits</label>
+	<label index="tasktree.header.date">Data</label>
+	<label index="tasktree.header.customer">Client</label>
+	<label index="tasktree.header.number">Núm.</label>
+	<label index="tasktree.header.tasknumber">Número</label>
+	<label index="task.title.deadline">Data d'entrega</label>
+	<label index="task.title.deadline_short">E</label>
+	<label index="task.title.begin">Inici</label>
+	<label index="task.title.begin_short">I</label>
+	<label index="task.title.customer">Client</label>
+	<label index="task.title.jump">Salta</label>
+	<label index="task.title.tasknumber">Tasca núm.</label>
+	<label index="tab.todos">Coses a fer</label>
+	<label index="tab.feedbacks">Comentaris</label>
+	<label index="date.start.short">I</label>
+	<label index="selection.noTasksFound">No s'han trobat tasques per aquest filtre</label>
+	<label index="selection.noProjectsFound">No s'han trobat projectes per aquest filtre</label>
+	<label index="subMenuEntry.selection">Portal > Selecció</label>
+	<label index="subMenuEntry.todos">Portal > Coses a fer</label>
+	<label index="subMenuEntry.feedbacks">Portal > Comentaris</label>
+	<label index="subMenuEntry.appointments">Portal > Cites</label>
+	<label index="contextmenu.showinproject">Mostra en el projecte</label>
+	<label index="selection.noFiltersetsSelected">Cap filtre seleccionat.</label>
+</labels>

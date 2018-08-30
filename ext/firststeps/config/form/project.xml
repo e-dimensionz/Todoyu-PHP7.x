@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">data</attribute>
+	</attributes>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Main project data</legend>
+			<elements>
+
+				<field type="text" name="title">
+					<label>core.global.title</label>
+					<validate>
+						<isNotEmpty msg="project.ext.form.validation.title" />
+					</validate>
+					<required />
+				</field>
+
+				<field type="RTE" name="description">
+					<label>core.global.description</label>
+					<required />
+				</field>
+
+				<field type="textAC" name="id_company">
+					<label>project.ext.attr.company</label>
+					<config>
+						<acLabel>TodoyuContactCompanyManager::getLabel</acLabel>
+						<options>
+							<acName>company</acName>
+							<onComplete>Todoyu.Ext.project.Project.Edit.onCompanyAutocomplete</onComplete>
+						</options>
+					</config>
+					<required label="LLL:project.ext.form.validation.company" />
+				</field>
+
+				<field type="date" name="date_start">
+					<label>project.ext.attr.date_start</label>
+					<validate>
+						<dateNotAfter>
+							<field>date_end</field>
+						</dateNotAfter>
+					</validate>
+					<required />
+				</field>
+
+				<field type="date" name="date_end">
+					<label>project.ext.attr.date_end</label>
+					<validate>
+						<dateAfter>
+							<field>date_start</field>
+							<allowEmpty />
+						</dateAfter>
+					</validate>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="persons">
+			<legend>Main project data</legend>
+			<elements>
+
+				<field type="select" name="id_person">
+					<label>contact.ext.company.attr.person</label>
+					<source type="function">
+						<function>TodoyuFirstStepsViewHelper::getPersonOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="id_role">
+					<label>project.ext.attr.persons.role</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getProjectroleOptions</function>
+					</source>
+				</field>
+
+				<field type="saveButton" name="addperson">
+					<onclick>Todoyu.Ext.firststeps.Wizard.addPerson()</onclick>
+					<text>firststeps.ext.employee.addPerson</text>
+				</field>
+
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

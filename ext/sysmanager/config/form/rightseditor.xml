@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=sysmanager&amp;controller=rights</attribute>
+		<attribute name="name">rightseditor</attribute>
+	</attributes>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>sysmanager.form.legend.rightsmanager.general</legend>
+			<elements>
+
+				<field type="select" name="roles">
+					<label>sysmanager.ext.rights.form.roles</label>
+					<source type="function">
+						<function>TodoyuRoleViewHelper::getRoleOptions</function>
+					</source>
+					<multiple />
+					<size>7</size>
+				</field>
+
+				<field type="select" name="extension">
+					<label>sysmanager.ext.rights.form.extension</label>
+					<source type="function">
+						<function>TodoyuSysmanagerViewHelper::getExtensionOptions</function>
+					</source>
+					<noPleaseSelect />
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

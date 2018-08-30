@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Diari del temps registrat</label>
+	<label index="title">Diari del temps registrat</label>
+	<label index="history.title">Diari del temps registrat</label>
+	<label index="history.total">Temps registrat total</label>
+	<label index="history.showdetails">Mostra detalls</label>
+	<label index="history.noTracks">No hi ha temps registrat per aquest període</label>
+	<label index="totalToday">Total de temps enregistrat avui</label>
+	<label index="daysinmonth">Dies al mes</label>
+	<label index="export.title">Exportar</label>
+	<label index="export.company">Client</label>
+	<label index="export.popup.title">Exportar taula del temps</label>
+	<label index="export.popup.date_end">Data final</label>
+	<label index="export.popup.error.allFieldsEmpty">Tots els camps estan buits</label>
+</labels>

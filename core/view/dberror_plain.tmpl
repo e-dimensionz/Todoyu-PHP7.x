@@ -1,0 +1,21 @@
+
+Database Error!
+===============
+
+Error Message:		{$message}
+
+Error Code:		{$code}
+
+Error Position:		{$file} : {$line}
+
+Failed Query:		{$query}
+
+Backtrace:
+
+{foreach $trace step implode="\n"}
+{$step.file} : {$step.line}
+	{$step.class}{$step.type}{$step.function}()
+{foreach $step.args nr argument }
+	[{$nr}] {$argument}
+{/foreach}
+{/foreach} 

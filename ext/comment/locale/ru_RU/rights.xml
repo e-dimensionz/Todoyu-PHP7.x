@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Общие</label>
+	<label index="general.use">Использовать комментарии</label>
+	<label index="comment">Комментарий</label>
+	<label index="comment.seeAll">Показать все комментарии (не публичные)</label>
+	<label index="comment.editOwn">Редактировать собственные комментарии</label>
+	<label index="comment.editAll">Редактировать все комментарии</label>
+	<label index="comment.requestFeedback">Запросить ответ</label>
+	<label index="comment.sendAsEmail">Отправить комментарий по e-mail</label>
+	<label index="comment.deleteAll">Удалить все комментарии</label>
+	<label index="comment.deleteOwn">Удалить собственные комментарии</label>
+	<label index="comment.makePublic">Сделать комментарий публичным</label>
+</labels>

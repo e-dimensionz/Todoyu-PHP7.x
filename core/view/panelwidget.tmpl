@@ -1,0 +1,9 @@
+<div class="panelWidget {$class}" id="panelwidget-{$id}">
+	<h1 id="panelwidget-{$id}-h1" {if $collapsed}class="expand"{/if} onclick="Todoyu.PanelWidget.toggle('{$id}')" title="{Label core.global.panelwidget.toggle}">
+		<span class="title" id="panelwidget-{$id}-title">{$title}</span>
+		<span class="toggle {if $collapsed}expand{/if}" id="panelwidget-{$id}-toggle"></span>
+	</h1>
+	<div class="content" id="panelwidget-{$id}-content" {if $collapsed}style="display:none"{/if}>
+		<div>{$content}</div>
+	</div>
+</div>

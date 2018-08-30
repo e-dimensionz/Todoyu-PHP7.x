@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rights	xmlns="http://www.todoyu.com/schema/rights"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/rights ../../../core/config/rights.xsd">
+	<section name="general">
+		<right name="use" />
+		<right name="profile" require="general:use" />
+		<right name="area" require="general:use" />
+	</section>
+
+	<section name="person" require="general:use">
+		<right name="seeAllInternalPersons" />
+		<right name="seeAllPersons" />
+		<right name="add" require="general:area" />
+		<right name="editAndDeleteAll" require="general:area" />
+		<right name="enableLogin" require="person:editAndDeleteAll" />
+		<right name="seeComment" require="general:area" />
+		<right name="editComment" require="person:seeComment" />
+	</section>
+
+	<section name="company" require="general:use">
+		<right name="seeAllCompanies" />
+		<right name="add" require="general:area" />
+		<right name="editOwn" require="general:area" />
+		<right name="editAndDeleteAll" require="general:area" />
+		<right name="seeComment" require="general:area" />
+		<right name="editComment" require="company:seeComment" />
+	</section>
+
+	<section name="relation" require="general:area">
+		<right name="seeAllContactinfotypes" />
+		<right name="seeHomeAddress" />
+		<right name="seeBusinessAddress" />
+		<right name="seeBillingAddress" />
+	</section>
+
+	<section name="panelwidgets" require="general:use">
+		<right name="staffSelector" />
+		<right name="export" require="general:area" />
+	</section>
+</rights>

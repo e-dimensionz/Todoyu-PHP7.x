@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=contact&amp;controller=person</attribute>
+		<attribute name="name">person</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+		<field name="image_id" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>contact.form.legend.person.basics</legend>
+			<elements>
+
+				<field type="radio" name="salutation">
+					<label>contact.ext.person.attr.salutation</label>
+					<source type="list">
+						<option>
+							<value>m</value>
+							<label>contact.ext.person.attr.salutation.m</label>
+						</option>
+						<option>
+							<value>w</value>
+							<label>contact.ext.person.attr.salutation.f</label>
+						</option>
+					</source>
+				</field>
+
+				<field type="text" name="title">
+					<label>contact.ext.person.attr.title</label>
+				</field>
+
+				<field type="text" name="lastname">
+					<label>contact.ext.person.attr.lastname</label>
+					<required />
+					<validateLive>
+						<function>
+							Todoyu.Ext.contact.Person.checkDuplicatedEntries
+						</function>
+					</validateLive>
+				</field>
+
+				<field type="text" name="firstname">
+					<label>contact.ext.person.attr.firstname</label>
+					<required />
+					<validateLive>
+						<function>
+							Todoyu.Ext.contact.Person.checkDuplicatedEntries
+						</function>
+					</validateLive>
+				</field>
+
+				<field type="text" name="shortname">
+					<label>contact.ext.person.attr.shortname</label>
+				</field>
+
+				<field type="checkbox" name="is_dummy">
+					<label>contact.ext.person.attr.is_dummy</label>
+				</field>
+
+				<field type="date" name="birthday">
+					<label>contact.ext.person.attr.birthday</label>
+					<storeAsDate />
+				</field>
+
+				<field type="select" name="locale_correspondence">
+					<label>contact.ext.locale_correspondence</label>
+					<source type="function">
+						<function>TodoyuViewHelper::getAllLocaleOptions</function>
+					</source>
+				</field>
+
+				<field type="textarea" name="comment">
+					<label>contact.ext.person.attr.comment</label>
+					<rows>5</rows>
+					<restrict>
+						<allow ext="contact" right="person:editComment" />
+					</restrict>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="image">
+			<legend>contact.form.legend.person.picture</legend>
+			<elements>
+
+				<field type="comment" name="preview">
+					<comment type="function">
+						<function>TodoyuContactPersonManager::getPreviewImageForm</function>
+					</comment>
+				</field>
+				<field type="button" name="upload">
+					<text>contact.ext.person.attr.image.upload</text>
+					<class>uploadContactImage</class>
+					<onclick>Todoyu.Ext.contact.Upload.showUploadForm(this.form, 'person')</onclick>
+				</field>
+				<field type="button" name="remove">
+					<text>contact.ext.contactimage.upload.remove</text>
+					<class>removeContactImage</class>
+					<onclick>Todoyu.Ext.contact.Upload.removeImage(this.form, 'person')</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="relations">
+			<legend>contact.form.legend.person.furtherInformation</legend>
+			<elements>
+
+				<field type="databaseRelation" name="contactinfo">
+					<label>contact.ext.contactinfo</label>
+					<addLabel>contact.ext.contactinfo.new</addLabel>
+					<record>
+						<form>ext/contact/config/form/contactinfo.xml</form>
+						<url>
+							<ext>contact</ext>
+							<controller>person</controller>
+						</url>
+						<label type="function">
+							<function>TodoyuContactViewHelper::getContactinfoLabel</function>
+							<noLabel>contact.ext.contactinfo.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+				<field type="databaseRelation" name="address">
+					<label>contact.ext.address</label>
+					<addLabel>contact.ext.address.new</addLabel>
+					<record>
+						<form>ext/contact/config/form/address.xml</form>
+						<url>
+							<ext>contact</ext>
+							<controller>person</controller>
+						</url>
+						<label type="function">
+							<function>TodoyuContactViewHelper::getAddressLabel</function>
+							<noLabel>contact.ext.address.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+				<field type="databaseRelation" name="company">
+					<label>contact.ext.person.attr.company</label>
+					<addLabel>contact.ext.company.new</addLabel>
+					<record>
+						<form>ext/contact/config/form/person-company.xml</form>
+						<url>
+							<ext>contact</ext>
+							<controller>person</controller>
+						</url>
+						<label type="function">
+							<function>TodoyuContactViewHelper::getCompanyLabel</function>
+							<noLabel>contact.ext.person.attr.company.new</noLabel>
+						</label>
+					</record>
+				</field>
+
+			</elements>
+		</fieldset>
+
+
+
+		<fieldset name="account">
+			<legend>contact.form.legend.person.login</legend>
+			<restrict>
+				<allow ext="contact" right="person:enableLogin" />
+			</restrict>
+			<elements>
+
+				<field type="checkbox" name="is_active">
+					<label>contact.ext.person.attr.is_active</label>
+				</field>
+
+				<fieldset name="loginfields">
+					<elements>
+
+						<field type="text" name="username">
+							<label>contact.ext.person.attr.username</label>
+							<validate>
+								<unique>
+									<allow>
+										<fieldEquals>
+											<field>is_active</field>
+												<value>0</value>
+											</fieldEquals>
+									</allow>
+									<table>ext_contact_person</table>
+								</unique>
+							</validate>
+							<required>
+								<noCheck />
+							</required>
+						</field>
+
+						<field type="text" name="password">
+							<label>contact.ext.person.attr.password</label>
+							<type>password</type>
+							<validate>
+								<goodPassword>
+									<allowEmpty />
+								</goodPassword>
+							</validate>
+							<required>
+								<noCheck />
+							</required>
+							<textAfterField>contact.ext.person.attr.password.hasPassword</textAfterField>
+						</field>
+
+						<field type="text" name="email">
+							<label>contact.ext.person.attr.email</label>
+							<validate>
+								<email>
+									<allow>
+										<fieldEquals>
+											<field>is_active</field>
+											<value>0</value>
+										</fieldEquals>
+									</allow>
+								</email>
+								<requiredIfNotEmpty>
+									<fields>username,is_active</fields>
+								</requiredIfNotEmpty>
+							</validate>
+							<required>
+								<noCheck />
+							</required>
+						</field>
+
+						<field type="checkbox" name="is_admin">
+							<label>contact.ext.person.attr.is_admin</label>
+							<restrictAdmin />
+						</field>
+
+						<field type="databaseRelation" name="role">
+							<label>core.global.roles</label>
+							<addLabel>core.global.role.new</addLabel>
+							<record>
+								<form>ext/contact/config/form/person-role.xml</form>
+								<url>
+									<ext>contact</ext>
+									<controller>person</controller>
+								</url>
+								<label type="field">
+									<field>title</field>
+									<noLabel>contact.ext.person.attr.role.new</noLabel>
+								</label>
+							</record>
+							<validate>
+								<requiredIfNotEmpty>
+									<fields>username,is_active</fields>
+									<except>is_admin</except>
+								</requiredIfNotEmpty>
+							</validate>
+							<!--<required />-->
+						</field>
+
+						<fieldset name="mail">
+							<legend>Email</legend>
+							<elements>
+
+								<field type="select" name="id_smtpaccount">
+									<label>contact.ext.person.attr.id_smtpaccount</label>
+									<source type="function">
+										<function>TodoyuContactViewHelper::getSmtpAccountOptions</function>
+										<lazyInit />
+									</source>
+									<pleaseSelectLabel>contact.ext.person.attr.id_smtpaccount.option.useAccountEmail</pleaseSelectLabel>
+									<restrictAdmin />
+								</field>
+
+								<field type="textarea" name="mail_signature">
+									<label>contact.ext.person.attr.mail_signature</label>
+								</field>
+
+							</elements>
+						</fieldset>
+
+					</elements>
+				</fieldset>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.contact.Person.closeForm(this.form)</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.contact.Person.save(this.form)</onclick>
+				</field>
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

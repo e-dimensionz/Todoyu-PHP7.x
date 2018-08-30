@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rights	xmlns="http://www.todoyu.com/schema/rights"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/rights ../../../core/config/rights.xsd">
+
+	<section name="general">
+		<right name="use" />
+		<right name="extensions" require="general:use" />
+		<right name="records" require="general:use" />
+	</section>
+
+	<section name="extensions" require="general:extensions">
+		<right name="config" />
+		<right name="download" />
+		<right name="modify" require="extensions:download" />
+	</section>
+
+</rights>

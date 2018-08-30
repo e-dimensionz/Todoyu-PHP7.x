@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Подешавања корисника</label>
+	<label index="page.title">Mој налог</label>
+	<label index="headlet.label">Моја подешавања</label>
+	<label index="module.general">Општа подешавања</label>
+	<label index="general.main.tab">Општи</label>
+	<label index="general.main.locale">Језик</label>
+	<label index="general.main.saved">Подешавања су сачувана</label>
+	<label index="general.main.saved.pleaseWait">todoyu управо генерише кеш фајлофе за изабрани језик. Опустите се за тренутак.</label>
+	<label index="general.main.personalConfigOf">Лична подешавања од</label>
+	<label index="general.password.title">Промени своју лозинку</label>
+	<label index="general.password.tab">Лозинка</label>
+	<label index="general.password.current">Тренутна лозинка</label>
+	<label index="general.password.current.empty">Морате да унесете стару лозинку, да би сте поставили нову</label>
+	<label index="general.password.current.wrong">Стара лозинка није тачна</label>
+	<label index="general.password.new1">Нова лозинка</label>
+	<label index="general.password.new2">Понови лозинку</label>
+	<label index="general.password.error">Промена лозинке није успела</label>
+	<label index="general.password.success">Лозинке је промењена</label>
+	<label index="general.password.notEqual">Лозинке нису исте</label>
+	<label index="general.password.header">Лозинка</label>
+</labels>

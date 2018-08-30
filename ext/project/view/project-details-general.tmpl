@@ -1,0 +1,30 @@
+
+<div class="infoBox properties">
+	<h4>{Label project.ext.properties}</h4>
+	<div class="content overflow">
+		<table class="list propertiesListing">
+			{foreach $properties info}
+			<tr class="{cycle values="odd,even"}">
+				<th class="label">{Label $info.label}</th>
+				<td>
+					{if allowed('contact', 'general:area') && $info.__key == 'company' && isCompanySeeAllowed($id_company)}<a href="index.php?ext=contact&amp;tab=company&amp;id={$id_company}">{/if}
+					{$info.value}
+					{if allowed('contact', 'general:area') && $info.__key == 'company' && isCompanySeeAllowed($id_company)}</a>{/if}
+				</td>
+			</tr>
+			{/foreach}
+		</table>
+	</div>
+</div>
+
+<div class="infoBox">
+	<h4>{Label project.ext.attr.persons}</h4>
+	<div class="content overflow">{$assignedPersons}</div>
+</div>
+
+<div class="infoBox description">
+	<h4>{Label core.global.description}</h4>
+	<div class="content overflow">{substituteLinkableElements(cleanHtml($description))}</div>
+</div>
+
+

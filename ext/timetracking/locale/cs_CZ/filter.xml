@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Sledování času</label>
+	<label index="timetrackedPerson">Zaznamenaný čas osoby</label>
+	<label index="timetrackedRoles">Zaznamenaný čas role</label>
+	<label index="person.trackedinproject">Zaznamenaný čas v projektu</label>
+	<label index="person.trackedforcustomer">Zaznamenaný čas v projektu pro zákazníka</label>
+</labels>

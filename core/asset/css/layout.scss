@@ -1,0 +1,382 @@
+@import "../../config/theme.scss";
+
+
+
+body {
+	background-color:$colorCorporate02; }
+
+#header {
+	position:fixed;
+	z-index:200;
+	text-align:center;
+	width:100%;
+	left:0px;
+	border-bottom:2px solid $colorCorporate02;
+
+	.inner {
+ 		height:100px;
+ 		text-align:left;
+ 		background-color:$white; }
+}
+
+#box {
+	position:relative;
+	width:1234px;
+	padding-top:100px;
+	margin:0 auto;
+	text-align:left; }
+
+#contentBox {
+	position:relative;
+	width:1229px !important;
+	width:1234px;
+	min-height:415px;
+	height:auto !important;
+	height:415px;
+	padding:1px 2px 0 3px; }
+
+#contentBoxTop {
+	position:absolute;
+	height:85px;
+	width:1234px;
+	margin: -1px -2px 0 -3px; }
+
+#main {
+	position:relative;
+	clear:both;
+	padding:0 0 80px 0; }
+
+#notification {
+	margin:0 0 0 18px;
+	padding:6px 8px 12px 8px;
+	background-color:$colorCorporate00;
+	border:1px solid $colorNeutral05; }
+
+
+
+/* ----------------------
+	Content column
+   ----------------------*/
+#right {
+	border-radius:0 10px 10px 10px;
+	float:left;
+	position:relative;
+	top:46px;
+	width:936px; }
+
+*+html #right .inner {
+	height:1%;
+	padding-top:8px; }
+
+#right span.lt,
+#right span.rt,
+#right span.lb,
+#right span.rb {
+	display:block;
+	position:absolute;
+	width:13px;
+	height:13px;
+}
+
+#right span {
+	&.lt {
+		display:none; }
+
+	&.rt {
+		top:0px;
+		right:0px;
+		background-position:100% 0; }
+
+	&.lb {
+		bottom:0px;
+		left:0px;
+		background-position:0 100%; }
+
+	&.rb {
+		bottom:0px;
+		right:0px;
+		background-position:100% 100%; }
+}
+
+#todoyu-loginpage #right span.lt {
+	display:block; }
+
+#content {
+	padding:1px;
+	margin:8px; }
+
+#content-body {
+	position:relative;
+	top: -28px;
+	margin-bottom: -28px; }
+
+
+
+/* --------------
+	Footer
+   --------------*/
+#footer {
+	display:block;
+	clear:both;
+	position:relative;
+	width:100%;
+	height:70px;
+	text-align:left;
+	margin-top:100px;
+	padding-top:20px;
+
+	.inner {
+		width:1206px;
+		margin:0 auto; }
+}
+
+#footer-info {
+	float:left;
+	width:528px; }
+
+#footer-logo {
+	float:left;
+	width:140px;
+	text-align:center; }
+
+#footer-address {
+	float:right;
+	width:528px;
+	text-align:right; }
+
+#footer-line {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:5px;
+	background: #122a4c; /* Old browsers */
+	background: -moz-linear-gradient(left, #122a4c 0%, #3db8bf 50%, #7bc75b 75%, #afd027 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#122a4c), color-stop(21%,#7bc75b), color-stop(50%,#3db8bf), color-stop(75%,#7bc75b), color-stop(100%,#afd027)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #122a4c 0%,#3db8bf 50%,#7bc75b 75%,#afd027 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #122a4c 0%,#3db8bf 50%,#7bc75b 75%,#afd027 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #122a4c 0%,#3db8bf 50%,#7bc75b 75%,#afd027 100%); /* IE10+ */
+	background: linear-gradient(to right, #122a4c 0%,#3db8bf 50%,#7bc75b 75%,#afd027 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#122a4c', endColorstr='#afd027',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+/* -----------------
+	Panel
+   ----------------- */
+.panelWidget * {
+	font-size:11px; }
+
+.panelWidget {
+	position:relative;
+	padding-bottom:3px;
+
+	h1 {
+		height:26px;
+		@include gradient-header;
+		border: {
+			radius:5px 5px 0 0;
+			top:1px solid $colorNeutral02;
+			bottom:1px solid $white;
+		}
+
+		margin:0px;
+		padding:0px;
+		cursor:pointer;
+		position:relative;
+		z-index:10;
+		overflow:hidden;
+
+		&.expand {
+			background-position:0 0; /* allowedOpen close */ }
+
+		&.deniedOpenClosed {
+			background-position:0 -120px; /* deniedOpen close */ }
+
+		&.deniedOpen {
+			background-position:0 -180px; /* deniedOpen open */}
+
+		span {
+			display:block;
+
+			&.title {
+				float:left;
+				clear:none;
+				margin:0px;
+				padding:0 0 0 8px;
+				line-height:26px;
+				width:205px;
+				overflow:hidden;
+				font-size:11px;	 }
+
+			&.toggle {
+				float:right;
+				clear:none;
+				width:22px;
+				height:26px;
+				background:url(../img/ico-toggle.png) no-repeat 6px 50%; }
+
+			&.expand {
+			 	background:url(../img/ico-toggle.png) no-repeat -24px 50%; }
+		}
+	}
+
+	.content select {
+		border:0 none;
+
+		option {
+			padding:2px;
+			border-bottom:1px solid $colorNeutral02;
+			color:$colorNeutral08;
+
+			.odd {
+				background-color:$colorNeutral01; }
+		}
+
+		&.filter option {
+			color:$colorNeutral08;
+
+			.selected {
+				background-color:$colorCorporate05;
+				color:$colorTextGeneral; }
+		}
+	}
+}
+
+*+html .panelWidget div.content {
+	height:1%; /* IE7 */ }
+
+
+
+/* -------------------------------
+	Styles & status
+   ------------------------------- */
+div.toggled {
+	background-color:$colorCorporate05;
+	font-weight:bold; }
+
+.noIcon {
+	padding:0 !important;
+	background-image:none !important; }
+
+.hasIcon {
+	padding-left:20px; }
+
+span.exticon {
+	background-repeat:no-repeat;
+	padding:0 18px 16px 0;
+	margin:0 2px 0 2px; }
+
+.iconEdit {
+	background:url(../img/icons.png) no-repeat 3px -776px; }
+
+
+
+/* ---------------------
+	Toggle select
+   --------------------- */
+input.toggleSelect {
+	display:none; }
+
+label.toggleSelect {
+	padding:0 22px 18px 0;
+	cursor:pointer;
+
+	&.collapse {
+		background:url(../img/toggle.png) no-repeat 0 -150px; }
+
+	&.expand {
+		background:url(../img/toggle.png) no-repeat 0 -182px; }
+}
+
+
+
+/* ---------------
+	default width for span width display block
+   --------------- */
+.dateWithTime {
+	width:98px; }
+
+
+
+/* ---------------
+	Colors
+   --------------- */
+/* Layout */
+.bclFF {
+	background-color:$white; }
+
+.bcl00 {
+	background-color:$colorTextGeneral; }
+
+.bcl01 {
+	background-color:$colorCorporate01; }
+
+.bcl02 {
+	background-color:$colorCorporate02; }
+
+.bcl03 {
+	background-color:$colorCorporate02; }
+
+.bcl04 {
+	background-color:$colorCorporate05; }
+
+.bcl05 {
+	background-color:$colorApprove05; }
+
+.bcl06 {
+	background-color:$colorApprove04; }
+
+.bcl07 {
+	background-color:$colorHighlight01; }
+
+.bcl08 {
+	background-color:$colorApprove03; }
+
+.bcl09 {
+	background-color:$colorApprove06; }
+
+.bcl10 {
+	background-color:$blue00; }
+
+.bcl11 {
+	background-color:$blue04; }
+
+.bcl12 {
+	background-color:$blue02; }
+
+
+
+/* Gray */
+.bcgFF {
+	background-color:$white; }
+
+.bcg00 {
+	background-color:$black; }
+
+.bcg01 {
+	background-color:$colorNeutral02; }
+
+.bcg02 {
+	background-color:$colorNeutral03; }
+
+.bcg03 {
+	background-color:$colorNeutral02; }
+
+.bcg04 {
+	background-color:$colorCorporate01; }
+
+.bcg05 {
+	background-color:$colorNeutral01;
+}
+
+.bcg06 {
+	background-color:$colorNeutral07; }
+
+.bcg07 {
+	background-color:$colorNeutral04; }
+
+.bcg09 {
+	background-color:$colorNeutral06; }

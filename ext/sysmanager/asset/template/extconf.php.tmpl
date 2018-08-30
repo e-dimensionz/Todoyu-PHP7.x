@@ -1,0 +1,15 @@
+
+
+{include "core/view/copyright_notice.tmpl"}
+
+	// ****************************************************************************
+	// ATTENTION - TODOYU MANAGED FILE
+	// THIS FILE IS AUTOMATICALLY UPDATED BY TODOYU
+	//
+	// EVERYTHING EXCEPT THE 'extConf' KEYS WILL BE REMOVED ON NEXT CONFIG UPDATE
+	// ****************************************************************************
+
+	// Extension config
+{foreach $extConf extKey confString}
+Todoyu::$CONFIG['EXT']['{$extKey}']['extConf'] = unserialize(stripslashes('{$confString}'));
+{/foreach}

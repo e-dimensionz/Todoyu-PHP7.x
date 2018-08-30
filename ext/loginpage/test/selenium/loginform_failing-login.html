@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>loginpage > failing login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">loginpage > failing login</td></tr>
+</thead><tbody>
+<!------ loginpage > failing login-->
+<!--enter wrong credentials and try login-->
+<tr>
+	<td>type</td>
+	<td>css=input#login-field-username.text</td>
+	<td>userthatdoesnotexist</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input#login-field-password.text</td>
+	<td>xxx</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login-field-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>formElement-login-field-status-inputbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Login Failed</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

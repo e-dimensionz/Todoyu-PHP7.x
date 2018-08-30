@@ -1,0 +1,2 @@
+Timetracking Extension - JavaScript Hooks
+=========================================

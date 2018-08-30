@@ -1,0 +1,7 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+<select name="{$htmlName}" id="{$htmlId}" class="{$inputClass} {$class}" size="{$size}" {if $multiple}multiple="multiple"{/if} {if $disabled}disabled="disabled"{/if} {if $onchange}onchange="{$onchange}"{/if} {$extraAttributes}>
+	{include "core/view/form/FormElement_Select_Options.tmpl"}
+</select>
+{/block}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Ricerca e crea filtri</label>
+	<label index="page.title">Cerca</label>
+	<label index="or">O</label>
+	<label index="and">E</label>
+	<label index="search.label">Cerca tutto</label>
+	<label index="filterlabel.filterset">Insiemi di filtri</label>
+	<label index="filterset.rename">Rinomima insieme di filtri</label>
+	<label index="filterset.delete">Elimina insieme di filtri</label>
+	<label index="filterset.confirm.delete">Si è certi di voler eliminare l'insieme di filtri?</label>
+	<label index="filterset.confirm.overwrite">Sovrascrivere l'insieme di filtri esistente?</label>
+	<label index="filterset.error.saveWrongType">Si è cercato di salvare l'insieme di filtri sotto un tipo errato</label>
+	<label index="filterset.error.saveNoConditions">Nessuna condizione da salvara</label>
+	<label index="filterset.error.saveEmptyName">Inserire il nome dell'insieme di filtri</label>
+	<label index="negation.default.true">non è</label>
+	<label index="negation.default.false">è</label>
+	<label index="negation.datetime.true">dal</label>
+	<label index="negation.datetime.false">al</label>
+	<label index="negation.numbercompare.true">minore di</label>
+	<label index="negation.numbercompare.false">maggiore di</label>
+	<label index="newFilterLabel">Inserire il nome del nuovo filtro</label>
+	<label index="newFilterLabel.preset">Nuovo filtro</label>
+	<label index="subMenuEntry.task">Attività</label>
+	<label index="subMenuEntry.project">Progetti</label>
+	<label index="filterwidget.condtion.remove">Rimuovi condizione</label>
+	<label index="search.noEntryFound">Nessun risultato trovato</label>
+	<label index="search.noResultsForActiveFilters">Nessun risultato trovato per i filtri attualmente selezionati</label>
+	<label index="contextmenu.project.showinproject">Apri nella vista progetto</label>
+	<label index="headlet.label">Cerca in todoyu</label>
+</labels>

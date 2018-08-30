@@ -1,0 +1,57 @@
+<div id="{$id}-quicksearch" class="taskQuickSearch">
+	<form id="bookark-task-quicksearch-form" class="fForm" onsubmit="return false">
+		<div class="fElement typeText fieldnameSearch odd">
+			<div class="fElement fLabel">
+				<label for="bookmark-task-quicksearch">{Label LLL:project.task.number}</label>
+			</div>
+			<div class="fField">
+				<input type="text" id="bookmark-task-quicksearch" />
+			</div>
+		</div>
+	</form>
+
+	<script type="text/javascript">
+		Todoyu.Ext.bookmark.PanelWidget.TaskBookmarks.initQuickSearch();
+	</script>
+</div>
+
+<div id="{$id}-list" class="bookmarks">
+	{if $bookmarks}
+		<ul id="{$id}-listitems" class="contextmenutaskbookmarks withMouseHover sortable">
+		{foreach $bookmarks taskBookmark}
+			<li id="{$id}-task-{$taskBookmark.id}" class="{cycle values="even,odd"} listItem sortable bcStatus{$taskBookmark.status} {if $taskBookmark.isRunning}running{/if}" title="{if taskBookmark.type === constant('TASK_TYPE_TASK')}{Label project.task.task}{else}{Label project.task.type.container}{/if} {$taskBookmark.id_project}.{$taskBookmark.tasknumber} - {htmlencode $taskBookmark.title}">
+				{if $taskBookmark.isTrackable || $taskBookmark.isRunning}
+					<a id="{$id}-task-{$taskBookmark.id}-btn" class="icon timetracking {$taskBookmark.btnClass}" href="javascript:void(0)" onclick="Todoyu.Ext.bookmark.PanelWidget.TaskBookmarks.{$taskBookmark.jsFunction}({$taskBookmark.id});this.onclick=''" title="{if $taskBookmark.id == $runningTask}{Label timetracking.ext.stop}{else}{Label timetracking.ext.start}{/if}"><!-- button --></a>
+				{/if}
+				<span class="info">
+					<div class="handle" id="bookmark-{$taskBookmark.id}-handle"></div>
+					<div class="bcStatus{$taskBookmark.status}{if $taskBookmark.type == constant('TASK_TYPE_CONTAINER')} container{/if} taskItem">
+
+						<div class="title" onclick="Todoyu.Ext.project.goToTaskInProject({$taskBookmark.id}, {$taskBookmark.id_project})" title="{$taskBookmark.id_project}.{$taskBookmark.tasknumber} - {htmlencode $taskBookmark.title}">
+							{if $taskBookmark.bookmarktitle}
+								{htmlencode($taskBookmark.bookmarktitle)}
+							{else}
+								{$taskBookmark.id_project}.{$taskBookmark.tasknumber} - {htmlencode($taskBookmark.title)}
+							{/if}
+						</div>
+
+						<div class="project" onclick="Todoyu.Ext.project.goToTaskInProject({$taskBookmark.id}, {$taskBookmark.id_project})">
+							{htmlencode $taskBookmark.projecttitle}
+						</div>
+
+						<div class="currentLabel" style="display:none">
+							{if $taskBookmark.bookmarktitle}
+								{htmlencode $taskBookmark.bookmarktitle}
+							{else}
+								{$taskBookmark.id_project}.{$taskBookmark.tasknumber} - {htmlencode $taskBookmark.title}
+							{/if}
+						</div>
+					</div>
+				</span>
+			</li>
+		{/foreach}
+		</ul>
+	{else}
+		<div class="notification">{Label bookmark.ext.info.nobookmarks}</div>
+	{/if}
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General</label>
+	<label index="general.use">Utiliser les raccourcis</label>
+	<label index="task">Raccourci vers la tâche</label>
+	<label index="task.add">Crer un raccourcis de tâche</label>
+	<label index="task.remove">Effacer les raccourcis</label>
+	<label index="panelwidgets">Panneau de Widgets</label>
+</labels>

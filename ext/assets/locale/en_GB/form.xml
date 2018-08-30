@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Task assets</label>
+	<label index="legend.inlineAssetUpload">Attach files to this task</label>
+	<label index="assets.button.delete">Delete Selected Asset</label>
+	<label index="assets.button.upload">Upload New Asset</label>
+	<label index="legend.admin.preview">Preview Images</label>
+	<label index="admin.preview.maxWidth">Maximum Pixel Width</label>
+	<label index="admin.preview.maxHeight">Maximum Pixel Height</label>
+	<label index="admin.preview.quality">Image quality in percent</label>
+</labels>

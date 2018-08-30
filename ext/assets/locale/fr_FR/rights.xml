@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Configuration générale</label>
+	<label index="general.use">Utiliser les documents</label>
+	<label index="asset">Documents</label>
+	<label index="asset.seeAll">Voir TOUT les documents</label>
+	<label index="asset.delete">Effacer un document</label>
+</labels>

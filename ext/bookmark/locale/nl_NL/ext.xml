@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Taak-favorieten</label>
+	<label index="title">Taak-favorieten</label>
+	<label index="info.nobookmarks">Nog geen favorieten</label>
+	<label index="contextmenu.removebookmark">Favoriet -</label>
+	<label index="contextmenu.addbookmark">Favoriet +</label>
+</labels>

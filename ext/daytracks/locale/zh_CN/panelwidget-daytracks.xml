@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">时间表</label>
+	<label index="pwidget.title">今追踪的时间</label>
+	<label index="totalToday">今天总追踪时间</label>
+	<label index="totalToday.noTracks">还没有跟踪时间</label>
+	<label index="showHistory">时间表</label>
+	<label index="goToTask">跳到任务</label>
+</labels>

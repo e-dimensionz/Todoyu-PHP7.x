@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">追踪的时间日志</label>
+	<label index="title">追踪的时间日志</label>
+	<label index="history.title">时间跟踪日志</label>
+	<label index="history.total">总跟踪时间</label>
+	<label index="history.showdetails">显示详情</label>
+	<label index="history.noTracks">现在无追踪时间可用</label>
+	<label index="totalToday">今天总跟踪时间</label>
+	<label index="daysinmonth">日期</label>
+	<label index="export.title">导出</label>
+	<label index="export.company">客户</label>
+	<label index="export.popup.title">导出时间表</label>
+	<label index="export.popup.date_end">结束日期</label>
+	<label index="export.popup.error.allFieldsEmpty">所有的域为空</label>
+</labels>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Projectes</label>
+	<label index="selection">Selecció activa</label>
+	<label index="selection.empty">Res seleccionat. Utilitzeu la cerca per afegir nous projectes i grups.</label>
+	<label index="button.save.newgroup">Guarda la selecció com a grup</label>
+	<label index="newGroupLabel.prompt">Introdueix un nom per al nou grup</label>
+	<label index="newGroupLabel.saved.success">El grup s'ha guardat.</label>
+	<label index="newGroupLabel.error.saveEmptyName">Introdueix un nom per al nou grup</label>
+	<label index="newGroupLabel.prompt.preset">Grup nou</label>
+	<label index="icon.additem">Selecciona</label>
+	<label index="icon.removefromselection">Deselecciona</label>
+	<label index="icon.deletegroup">Esborra grup</label>
+	<label index="deletegroup.confirm">Realment voleu eliminar el grup?</label>
+	<label index="deletegroup.success">El grup s'ha eliminat.</label>
+	<label index="deletegroup.error">No s'ha pogut eliminar el grup.</label>
+</labels>

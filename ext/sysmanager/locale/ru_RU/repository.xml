@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="form">Искать в репозитории расширений todoyu</label>
+	<label index="query">Искать по ключевому слову</label>
+	<label index="extension.moreDetails">Ещё</label>
+	<label index="extension.installUpdate">Установить обновление</label>
+	<label index="core.installUpdate">Установить обновления системы</label>
+	<label index="extension.moreDetails">Ещё</label>
+	<label index="extension.installUpdate">Установить обновление</label>
+	<label index="core.installUpdate">Установить обновление системы</label>
+	<label index="error.downloadNoArchiveForExtVersion">Архив обновления для этой версии отсутствует</label>
+	<label index="error.downloadNoArchiveForCoreVersion">Архив обновления для этой версии отсутствует</label>
+	<label index="error.downloadNoFileAccess">Вам не разрешено загружать этот файл</label>
+	<label index="error.registerTodoyuIdMissing">Отсутствует todoyuID. Пожалуйста, введите ID в конфигурации системы</label>
+	<label index="error.registerExtensionMissing">Расширение не было отправлено для регистрации</label>
+	<label index="error.registerDomainMissing">todoyu не смог определить ваш домен для регистрации</label>
+	<label index="error.registerExtNotFound">Вы попытались зарегистрировать расширение, которое не доступно в репозитории</label>
+	<label index="error.registerNoUserForTodoyuId">Ваш todoyuID не соответствует пользователю с todoyu.com</label>
+	<label index="error.registerNoFreeLicensesAvailable">У вас нет бесплатных лицензий на это расширение. Пожалуйста, купите лицензию в магазине</label>
+</labels>

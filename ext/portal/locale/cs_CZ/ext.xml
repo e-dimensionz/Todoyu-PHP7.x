@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Portál</label>
+	<label index="page.title">Portál</label>
+	<label index="tab">Portál</label>
+	<label index="tab.selection">Můj filtr</label>
+	<label index="tasktree.header.date">Datum</label>
+	<label index="tasktree.header.customer">Zákazník</label>
+	<label index="tasktree.header.number">Č.</label>
+	<label index="tasktree.header.tasknumber">Číslo</label>
+	<label index="task.title.deadline">Termín</label>
+	<label index="task.title.deadline_short">T</label>
+	<label index="task.title.begin">Začátek</label>
+	<label index="task.title.begin_short">Z</label>
+	<label index="task.title.customer">Zákazník</label>
+	<label index="task.title.jump">Skok</label>
+	<label index="task.title.tasknumber">Číslo úkolu</label>
+	<label index="tab.todos">To Do's</label>
+	<label index="tab.feedbacks">Odpovědi</label>
+	<label index="date.start.short">Z</label>
+	<label index="selection.noTasksFound">Pro váš filtr nebyly nalezeny žádné úkoly</label>
+	<label index="selection.noProjectsFound">Pro váš filtr nebyly nalezeny žádné projekty</label>
+	<label index="subMenuEntry.selection">Portál &gt; Výběr</label>
+	<label index="subMenuEntry.todos">Portál &gt; To Do's</label>
+	<label index="subMenuEntry.feedbacks">Portál &gt; Odpovědi</label>
+	<label index="subMenuEntry.appointments">Portál &gt; Schůzky</label>
+	<label index="contextmenu.showinproject">Zobrazit v projektu</label>
+	<label index="selection.noFiltersetsSelected">Není vybrána žádná skupina filtrů</label>
+</labels>

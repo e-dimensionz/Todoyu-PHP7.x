@@ -1,0 +1,18 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+
+<div class="foreignRecordsActionControl">
+	{Button label=$addLabel alt="form.records.add" class="addForeignRecord" id="add-record" onclick="Todoyu.Form.addRecord($idRecord, '$formname', '$fieldname', '$record.url.ext', '$record.url.controller')"}
+	{if sizeof($records)}
+		{Button label="core.form.databaserelation.expandAllRecords" alt="core.form.databaserelation.expandAllRecords" class="expandAll" id="expand-all" onclick="Todoyu.Form.toggleForeignRecords(['$fieldname'])"}
+	{/if}
+	<input type="hidden" name="{$formname}[{$fieldname}]" value="0" />
+</div>
+<div id="foreignrecords-{$idRecord}-{$fieldname}" class="foreignRecords" >
+	{foreach $records index record}
+		{include "core/view/form/FormElement_DatabaseRelation_Record.tmpl"}
+	{/foreach}
+</div>
+
+{/block}

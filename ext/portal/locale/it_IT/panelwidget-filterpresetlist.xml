@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Filtri personali</label>
+	<label index="create">Crea filtri</label>
+	<label index="manage">Gestisci filtri</label>
+	<label index="amount">Ammontare</label>
+	<label index="error.noFilters">Non è stato creato ancora alcun filtro</label>
+	<label index="error.noTypeFiltersets">Nessun filtro definito</label>
+</labels>

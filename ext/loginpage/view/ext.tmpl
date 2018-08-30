@@ -1,0 +1,14 @@
+{extends "core/view/base.tmpl"}
+
+{block "panel"}
+	{$panelWidgets}
+{/block}
+
+{block "contentBody"}
+	{Header "LLL:loginpage.ext.loginbox.title" "noPadLeft"}
+	{$loginForm}
+
+	{$extendedContent}
+
+	{include file="ext/loginpage/view/todoyuinfo.tmpl"}
+{/block}

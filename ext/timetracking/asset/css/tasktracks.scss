@@ -1,0 +1,79 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* -------------------------
+	Task time tracks
+   ------------------------- */
+.task .timetracks {
+	padding-top:5px;
+	background:$white;
+}
+
+.task .timetracks .tracksList {
+	margin:0;
+	padding:0;
+	border-top:1px solid $colorNeutral02;
+}
+
+.task .timetracks .tracksList .track {
+	padding:2px;
+}
+
+.task .timetracks .tracksList .track span.link {
+	cursor:pointer;
+}
+
+.task .timetracks .tracksList .track span {
+	display:inline-block;
+}
+
+.task .timetracks .tracksList .track span.icon {
+	margin-right:5px;
+}
+
+.task .timetracks .tracksList .track.edit:hover > .link > span.icon {
+	background:url(../../../../core/asset/img/icons.png) no-repeat 3px -776px;
+}
+
+.task .timetracks .tracksList .track span.date {
+	width:45px;
+	margin-right:8px;
+}
+
+.task .timetracks .tracksList .track span.trackedTime {
+	width:45px;
+	margin-right:4px;
+}
+.task .timetracks .tracksList .track span.trackedTime.hasChargeableTime {
+	color:$colorNeutral06;
+}
+.task .timetracks .tracksList .track span.chargeableTime {
+	width:45px;
+	margin-right:10px;
+}
+
+.task .timetracks .tracksList .track span.name {
+	width:130px;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+.task .timetracks .tracksList .track span.comment {
+	width:280px;
+}
+
+
+/* --------------------
+	Track Form
+   -------------------- */
+.task .tabContent .formTimetrack {
+	background:$white;
+	padding:5px 5px 10px 5px;
+}
+.task .tabContent .formTimetrack legend {
+	display:none;
+}
+.task .tabContent .formTimetrack .main {
+	padding:10px 0;
+}

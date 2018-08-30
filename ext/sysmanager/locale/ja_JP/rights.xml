@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般設定</label>
+	<label index="general.extensions">拡張機能の管理者</label>
+	<label index="general.records">全レコードの編集画面を表示</label>
+	<label index="general.rights">権限管理者</label>
+	<label index="extensions">拡張機能</label>
+	<label index="extensions.info">拡張機能の情報</label>
+	<label index="extensions.config">設定の編集</label>
+	<label index="extensions.rights">権限の編集</label>
+	<label index="extensions.records">レコードの編集</label>
+	<label index="extensions.uninstall">拡張機能のアンインストール</label>
+	<label index="extensions.install">拡張機能のインストール</label>
+	<label index="extensions.download">拡張機能のアーカイブをダウンロード</label>
+	<label index="extensions.update">拡張機能のアップデート</label>
+	<label index="roles">ロール</label>
+	<label index="roles.edit">ロールの編集</label>
+	<label index="roles.delete">ロールの削除</label>
+</labels>

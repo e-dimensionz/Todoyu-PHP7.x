@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="company.label">Firmen</label>
+	<label index="person.label">Personen</label>
+	<label index="fulltext">Volltext</label>
+	<label index="contactinformation">Kontakt-Information</label>
+	<label index="person.name">Name (Vor- / Nach- / Kurz-)</label>
+	<label index="person.company">Arbeitgeber</label>
+	<label index="person.salutation">Anrede</label>
+	<label index="person.system_role">Benutzerrolle</label>
+	<label index="person.company.isInternal">Angestellt in interner Firma</label>
+	<label index="person.isActive">todoyu-login ist aktiviert</label>
+	<label index="company.name">Firmenname</label>
+	<label index="company.isInternal">Ist Interne Firma</label>
+	<label index="company.dateEnter">Eintrittsdatum</label>
+	<label index="company.person">Angestellte(r)</label>
+	<label index="addresses.label">Addressen</label>
+	<label index="address.country">Land</label>
+	<label index="address.zip">Postleitzahl</label>
+	<label index="address.city">Stadt</label>
+	<label index="address.street">Strasse</label>
+</labels>

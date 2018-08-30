@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Пројекти</label>
+	<label index="search">Претрага</label>
+	<label index="list.empty">Ниједан погодан пројекат није пронађен (филтрирано)</label>
+</labels>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Configurações Pessoais</label>
+	<label index="page.title">Meu Perfil</label>
+	<label index="headlet.label">Minhas Configurações</label>
+	<label index="module.general">Configuração</label>
+	<label index="general.main.tab">Principal</label>
+	<label index="general.main.locale">Linguagem</label>
+	<label index="general.main.saved">Configurações salvas</label>
+	<label index="general.password.tab">Senha</label>
+	<label index="general.password.current">Senha Atual</label>
+	<label index="general.password.current.empty">Digite sua senha atual para alterar</label>
+	<label index="general.password.current.wrong">A senha digitada não confere</label>
+	<label index="general.password.new1">Nova Senha</label>
+	<label index="general.password.new2">Confirme a senha</label>
+	<label index="general.password.error">Não foi possível alterar a senha</label>
+	<label index="general.password.success">Senha alterada</label>
+	<label index="general.password.notEqual">A nova senha não confere</label>
+	<label index="general.password.header">Senha</label>
+</labels>

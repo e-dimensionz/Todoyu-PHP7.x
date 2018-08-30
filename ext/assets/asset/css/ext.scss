@@ -1,0 +1,113 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ----------------------------------------------
+	Extension icon: stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconAssets {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconAssets .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+
+
+/* ----------------------------------------------
+	Asset form elements
+   ---------------------------------------------- */
+.assetsButtons {
+	padding:10px;
+    
+	button {
+		&.upload .icon,
+
+		&.downloadSelection .icon {
+			background:url(../../../../core/asset/img/icons.png) no-repeat 5px -237px;
+			width:22px;
+		}
+	}
+}
+
+button {
+	&.buttonDeleteAsset .icon {
+		background:url(../../../../core/asset/img/icons.png) no-repeat 3px -357px;
+	}
+
+	&.buttonUploadAsset .icon {
+		width:24px;
+		background:url(../../../../core/asset/img/icons.png) no-repeat 5px -1692px;
+	}
+}
+
+.directUploadForm {
+	left: -200px;
+
+	input[type=file] {
+		cursor:pointer;
+		font-size:18px;
+	}
+}
+
+form.directUploadBox,
+div.directUploadBox .fField {
+	opacity:0.0;	//0.001;
+	overflow:hidden;
+	position:absolute;
+	width:340px;
+	z-index:50;
+}
+
+.directUploadBox {
+	input.upload {
+		cursor: pointer;
+		background: url(../../../../core/asset/img/icons.png) no-repeat 5px -1692px;;
+	}
+}
+
+.uploadProgress {
+	display:inline-block;
+	margin-left:50px;
+
+	.cancelUpload {
+		background:url(../../../../core/asset/img/icons.png) no-repeat 0 -360px;
+		cursor:pointer;
+	}
+}
+
+
+
+/* --------------------------
+ 	Field types
+   --------------------------*/
+.fElement {
+	&.typeRecords {
+		&.recordsAsset,
+		&.recordsTaskAsset,
+		&.recordsProjectAsset {
+			.recordIcon {
+				background:url(../img/icons.png) no-repeat 3px -28px;
+			}
+		}
+	}
+
+	.directUploadBox {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+}
+
+/* --------------------------
+ 	Field types
+   --------------------------*/
+.project {
+
+	.projectDetailsTab {
+
+		&.assetsProjectTab .icon {
+			background:url(../../../project/asset/img/projectheader.png) no-repeat 0px -60px;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=comment&amp;controller=comment</attribute>
+		<attribute name="name">comment</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+		<field name="id_task" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="main">
+			<class>main</class>
+			<elements>
+
+				<field type="RTE" name="comment">
+					<label>comment.ext.edit.comment</label>
+					<required />
+				</field>
+
+				<field type="selectgrouped" name="feedback">
+					<label>comment.ext.edit.feedback</label>
+					<source type="function">
+						<function>TodoyuCommentViewHelper::getFeedbackPersonsGroupedOptions</function>
+						<lazyInit />
+					</source>
+					<fieldClass>selectgrouped</fieldClass>
+					<size>7</size>
+					<multiple />
+					<restrict>
+						<allow ext="comment" right="general:requestFeedback" />
+					</restrict>
+				</field>
+
+				<field type="checkbox" name="is_public">
+					<label>comment.ext.edit.is_public</label>
+					<restrict>
+						<allow ext="comment" right="comment:makePublic" />
+					</restrict>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="email">
+			<elements>
+
+				<field type="upload" name="file">
+					<onchange>Todoyu.Ext.comment.Edit.uploadFileInline(this)</onchange>
+					<class>directUploadBox</class>
+					<noStorage />
+				</field>
+
+				<field type="button" name="upload">
+					<text>assets.form.assets.button.upload</text>
+					<class>buttonUploadAsset</class>
+					<hasIcon />
+					<noStorage />
+				</field>
+
+				<field type="recordsSelectAsset" name="assets">
+					<label>comment.ext.edit.assets</label>
+					<source type="function">
+						<optionFunction>TodoyuCommentAssetManager::getCommentAssetOptions</optionFunction>
+						<recordFunction>TodoyuCommentAssetManager::getCommentAssetRecords</recordFunction>
+						<lazyInit />
+					</source>
+				</field>
+
+				<field type="recordsMailReceivers" name="email_receivers">
+					<label>comment.ext.edit.email_receivers</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.comment.Edit.cancel(#id_task#, #id#)</onclick>
+					<disable />
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.comment.Edit.save(this.form)</onclick>
+					<disable />
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">Recordatoris</label>
+	<label index="myreminders">Els meus recordatoris</label>
+	<label index="email">Correu</label>
+	<label index="popup">Finestra emergent</label>
+	<label index="deactivated">Recordatoris desactivats</label>
+	<label index="notify.email.deactivated">Recordatori per correu desactivat</label>
+	<label index="notify.popup.deactivated">Recordatori per finestra emergent desactivat</label>
+	<label index="notify.email.timeupdated">El recordatori per correu programat s'ha modificat.</label>
+	<label index="notify.popup.timeupdated">El recordatori per finestra emergent programat s'ha modificat.</label>
+	<label index="beforeDateStart">abans de la cita</label>
+	<label index="atDateStart">Quan la cita comença</label>
+	<label index="email.subject">Recodatori de la cita</label>
+	<label index="email.title">Recordatori automàtic de la cita</label>
+	<label index="noReminder">No m'ho recordis</label>
+	<label index="cli.infocomment">Per enviar automàticament els recordatoris per correu, s'ha d'establir un cronjob a la vostra instal·lació de todoyu. Aquí en teniu les instruccions:</label>
+</labels>

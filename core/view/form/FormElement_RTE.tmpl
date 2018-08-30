@@ -1,0 +1,8 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+<textarea name="{$htmlName}" id="{$htmlId}" cols="{$cols}" rows="{$rows}" class="{$inputClass} {$class}">{htmlencode(cleanHtml($valueTemplate), true)}</textarea>
+<script type="text/javascript">
+{$rteJs}
+</script>
+{/block}

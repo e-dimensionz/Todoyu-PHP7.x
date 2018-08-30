@@ -1,0 +1,179 @@
+todoyu project extension changelog
+
+project 1.5.1 - 2013-12-31
+	* Bugfix: Enlarged width of quicktask-create-dialog to match other dialogs
+	* Bugfix: Filter sorting for end-date with fallback for deadline
+	* Bugfix: Label fix
+	* Bugfix: Added fallback for date_end to date_deadline for dynamic time filter
+	* Changed: Improved task properties readability
+	* Changed: Add form data and parameters to task form loading hook. Allows other extension better to hook in
+	* Changed: Add type parameter to task form edit hook
+	* Changed: Removed task-search over key-combination. Caused to much trouble
+	* Added: Functionality for task-quick-search
+	* Added: Hook on task init
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+
+project 1.5.0 - 2013-03-27
+	* Added: Permission check for task-fields in export
+	* Added: JS-Hook for cancelled project-forms
+	* Added: Dwoo-Plugin for task-number
+	* Added: New filter-widget for company search: project from filterset with negations
+	* Added: Test Runner for extension
+	* Added: Re-Added icon for exceeded deadline/end-date. With Tolerance factor in extconf
+	* Added: New autocompleter for companies in project form
+	* Added: Amount of Projetcs in the menu drop-down is now a config
+	* Added: Project selector panel widget
+	* Added: Template fields to task listing header. titlePrefix + titlePostfix
+	* Added: Negation for task and project title search filter
+	* Added: New panelwidget projectSelector - allows finding project via title fulltext and customer name, handles virtual project groups
+	* Changed: Set current time in date-preset
+	* Changed: Always prefer internal deadline in task listing headers
+	* Changed: Replaced fixed task-title cropping with css-text-overflow behaviour
+	* Changed: Project and parent task IDs are given as parameters for the task create form hook
+	* Changed: Text-cropping over css
+	* Changed: Allow multiple words for task title search filter (separated by whitespace)
+	* Bugfix: TaskFilterSet filter for project could have caused slow query
+	* Bugfix: Date exceeding wasn't correct
+	* Bugfix: Performance problems with sub-queries
+	* Bugfix: Initialize project-status filter only if allowed
+	* Bugfix: Fixed task-link-parsing
+	* Bugfix: set id to 0 on new project for correct marker parsing
+
+project 1.4.0 - 2012-07-11
+	* Bugfix: Check for create-right on status done in quicktask
+	* Bugfix: Replace project-details on edit
+	* Bugfix: Fixed JS-Error on task deletion
+	* Bugfix: Decode html-entities in title - tag
+	* Added: New panelwidget - projectselector
+	* Added: Animation when project tabs are loaded from server
+	* Added: Context menu on button
+	* Added: Project tabs
+	* Added: Callback parameter for Task.refresh()
+	* Added: Autocompleter for tasks
+	* Added: TodoyuProjectProject->isPersonAssigned()
+	* Added: TodoyuProjectTaskManager::getLabel() and TodoyuProjectTask->getLabel()
+	* Changed: Width adaption
+	* Changed: Removed Hook projectDetailsDynamicElements
+	* Changed: Changed ext.css to ext.scss
+	* Changed: Moved TodoyuProjectTaskViewHelper::autocompleteProjectTasks() to TodoyuProjectTaskManager
+	* Changed: Moved TodoyuProjectTaskRenderer::getEditTaskForm() to TodoyuProjectTaskManager
+	* Changed: Fixed calling order of saveData, setDefaultValuesForNotAllowedFields, addTask, updateTask and hooks task.update, task.add
+
+project 1.3.0 - 2012-05-03
+	* Added: Company filter widget: project title fulltext
+	* Added: Person filter widget: assigned in project
+	* Added: Visualization of task-presets toggle ability
+	* Added: Added toggling for taskpresets in projectheader (default closed)
+	* Added: Input validation of estimated duration field of task
+	* Added: New task/container status "waiting"
+	* Added: Getter for all fields (description, owner)
+	* Added: TodoyuProjectTaskManager::getRootlineTasks() which return a list of task objects from the rootline
+	* Added: Projectroles and activity support isDeletable flag in records manager
+	* Added: Hooks for task.create and task.edit
+	* Changed: Task presets do not override already filled-out fields when changing the project
+	* Changed: Filter date end falls back to date deadline if not set
+	* Changed: Clarified sub tasks copy confirmation dialog
+	* Changed: Replaced title tag of task deadline/date_end in task header (was labeled wrong in german) by title of span, e.g. 2012.1.1. - 2012.12.31.
+	* Changed: Reworked specific task inline-tabs handling to use core's generic content item tabs handling instead
+	* Changed: Made task tabs differently configurable per task type (task / container)
+	* Changed: Replaced hardcoded check for task tabs to be rendered by evaluation of registered tabs configurations
+	* Changed: Require core 2.2 (new html2text)
+	* Changed: JS-Handling for taskTabs moved to core
+	* Changed: Rename date functions according to task (getStartDate() => getDateStart())
+	* Changed: Rename TodoyuProjectProject::getRange() to getRangeDates()
+	* Changed: Rename TodoyuProjectTaskManager::getTaskRootline() to getRootlineTaskIDs()
+	* Changed: Rename TodoyuProjectTaskManager::getRoolineTasks() getRootlineTasksData()
+	* Changed: Extended config of dynamic dates in task preset. Select days or working days
+
+project 1.2.0 - 2011-12-13
+	* Feature: Drag & drop tasks in project
+	* Feature: Complete refactoring of task presets. All task fields are available now. Better integration of other extensions
+	* Feature: New filter for child tasks
+	* Bugfix: Last opened projects weren't added as sub menu
+	* Bugfix: Changed physically deletion of records
+	* Bugfix: Toggle trigger left over in parent w/o children after cancelling creation of only sub task
+	* Bugfix: Next task number query was cached. Batch creation of task produced same task number for while batch
+	* Bugfix: is_public flag was for internal users always overwritten with preset, even if non was selected => no preset=not public
+	* Bugfix: Project deeplink to not open project caused problems, because list of open projects was already cached (without new project in it)
+	* Bugfix: Refresh of task header get project instead of listing task header
+	* Bugfix: Long text in task description did not break in chrome
+	* Bugfix: Quicktask headlet did not work outside of the project area (rights problem)
+	* Changed: Detect all task numbers in text and only link them if the belong to an existing task
+	* Changed: Allow task clone for locked tasks
+	* Changed: Allow cutting locked tasks, but only allow pasting in same project
+	* Added: JavaScript Object for task preset record handling
+	* Added: Added support for filter result sorting of search 1.2 (task and project)
+	* Removed: Removed global task presets from project extconf
+	* Removed: Special labels for default values in task preset (now the normal labels are used)
+
+project 1.1.3 - 2011-11-17
+	* Bugfix: Add status class to generated wrapping container for task edit
+	* Bugfix: Deep-link with preselected tab works now for sub tasks too
+	* Bugfix: Presets in quick - add - task
+	* Bugfix: Prevent task from double - open
+	* Bugfix: Fixed duration picker in extconf and presets
+	* Bugfix: Fixed rights label
+	* Bugfix: Company link loaded inside of project instead in contact area
+	* Added: When asking for task/container removal confirmation the affected task +sub tasks are highlighted
+	* Added: Information when pasting is not allowed
+	* Added: Project filter: "Project ID"
+	* Added: Linked customer company property of project details with contact company view
+	* Added: Color styles for task and project (from core)
+	* Changed: Project does not add anymore contextmenu items to deleted tasks
+	* Changed: ext_project_project.description and ext_project_taskpreset.description are now mediumtext not text
+	* Changed: Panel-widget clean-up
+	* Changed: Namespace of filter-widget
+	* Changed: Cleanup of task header HTML code (no conflicting event handlers anymore)
+	* Translation: Polish
+
+project 1.1.2 - 2011-09-15
+	* Bugfix: JS error on cut+paste (sub)task (ticket #215)
+	* Bugfix: Clone task fails (ticket #214)
+	* Bugfix: Task fulltext filter negation fails
+	* Bugfix: TodoyuProjectTaskManager::getTasksInTimeSpanWhereClause() checks now for date_deadline
+	* Bugfix: Escape status field properly for query
+	* Bugfix: Fixed rights check for activity type in quicktask
+	* Bugfix: Use preset config also for activity type (task for one if no preset is set)
+	* Changed: Moved filterset optgroup to top of filter options
+	* Changed: Estimated time of tasks not visible for non-internal persons anymore
+	* Changed: Check for task status edit right before showing the option to cut a task
+	* Changed: Removed unused form field rights check in admin forms
+
+project 1.1.1 - 2011-07-25
+	* Bugfix: Prevented multi-occuring of identical task elements within same page (removed sub tasks expand-trigger from lost tasks)
+	* Bugfix: Pasting task into project(header) w/o lost tasks did not display the inserted item
+	* Bugfix: Prevent linking of task numbers when the numbers are not isolated (with whitespace or tag). Number inside an url like string are ignored now
+	* Changed: Order projectroles by title instead of ID
+	* Changed: Use full title for tab labels because they are now cropped in JS
+	* Changed: Adapted timetrack list items style in headlet to global task style
+	* Changed: Interpolated links are now created as full links instead of JS calls. Allows opening in new tab
+
+project 1.1.0 - 2011-06-17
+	* Bugfix: Locked task can only be moved in their own project, not in another project
+	* Bugfix: Task exports with full task number, check for parent task. Label fix
+	* Bugfix: Fixed right TodoyuProjectTaskRights::isSeeAllowed (include public flag)
+	* Bugfix: Fixed context menu for task cutting (changed right to the same as copy)
+	* Feature: Added task asset upload to quicktask creation
+	* Feature: Added date and status fields to container
+	* Changed: Renamed worktype to activity
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
+	* Changed: Regrouped the rights of the extension to improve usability
+	* Changed: Removed task / project ID from quicksearch suggestions list
+	* Changed: Added task expanded style
+	* Changed: moved globally used icons (unacknowledged/acknowledged) to core
+	* Changed: Assigned_to.. filters - if there's an assignment condition given, type cant be container
+
+project 1.0.8
+	* Bugfix: Dynamic labels in task/container were not localized to any other than default language
+	* Bugfix: Newly created tasks that are assigned to the creator person were not set acknowledged initially
+	* Bugfix: Container header could contain non-existing date_end instead of date_deadline
+	* Bugfix: Dependencies of project rights
+	* Feature: Regrouped the rights of the extension to improve usability
+	* Added: Negation of fulltext task filter
+	* Changed: Unified displayed date in normal and listing task template
+	* Changed: Container ist never locked
+	* Changed: Task preset description field to RTE
+
+project 1.0.4 - 2011-03-29

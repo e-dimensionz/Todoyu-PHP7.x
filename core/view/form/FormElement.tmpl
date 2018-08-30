@@ -1,0 +1,36 @@
+<div id="formElement-{$htmlId}" class="fElement {$containerClass} {$class} {if $odd}odd{else}even{/if} {if $error}error{/if} {if $wizard}hasWizard{/if}" {if $style}style="{$style}"{/if}>
+	<div id="formElement-{$htmlId}-labelbox" class="fLabel {if $required}required{/if} {if $error}error{/if}">
+		<label for="{$htmlId}" id="{$htmlId}-label">{Label $label}</label>
+		{if $required}<span class="required">*</span>{/if}
+	</div>
+	<div id="formElement-{$htmlId}-inputbox" class="fField{if $wizard !== false} hasWizard{/if}">
+
+		{if $textBeforeField}
+			<span class="textBeforeField">{$textBeforeField}</span>
+		{/if}
+
+		{block name="field"}
+			This part should be replaced by your field template
+		{/block}
+
+		{if $textAfterField}
+			<span class="textAfterField">{$textAfterField}</span>
+		{/if}
+
+		{if $wizard !== false}
+			{* <span title="{Label $wizard.title}" class="wizardIcon {$wizard.htmlClass}" onclick="Todoyu.Form.openWizard('{$wizard.idRecord}', '{$htmlId}', '{$wizard.ext}', '{$wizard.controller}', '{$wizard.action}', '{$wizard.height}', '{$wizard.width}', '{Label $wizard.title}');"></span> *}
+			<span title="{Label $wizard.title}" class="wizardIcon createWizard{ucfirst($wizard.name)}" onclick='Todoyu.Form.openCreateWizard("{$htmlId}", {json_encode($wizard.jsParams)})'></span>
+			<div class="clear"></div>
+		{/if}
+
+		{if $validateLive }
+			{$validateLive}
+		{/if}
+
+		{if $error && $errorMessage}
+			<div class="errorMessage">{Label $errorMessage plain=true}</div>
+		{/if}
+		<div class="clear"><!-- --></div>
+	</div>
+	<div class="fClear"><!-- --></div>
+</div>

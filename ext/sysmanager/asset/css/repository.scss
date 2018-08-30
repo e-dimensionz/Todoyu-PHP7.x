@@ -1,0 +1,303 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* -----------------------
+	Extension Listing
+   -----------------------*/
+.extListing .extension {
+	border-bottom:1px solid $colorNeutral03;
+	display:inline-block;
+	margin-bottom:20px;
+	margin-left: 20px;
+	padding-bottom:10px;
+	position:relative;
+	width: 870px;
+
+	h5 {
+		border-bottom:none;
+		margin-bottom:10px;
+		padding-left:0;
+
+		div {
+			width:100%;
+		}
+
+		img {
+			left:0;
+			position:absolute;
+			top:8px;
+		}
+
+		.author {
+			margin-left:10px;
+		}
+
+		.title {
+			font-size:20px;
+		}
+	}
+
+	.bottom {
+		width:100%;
+		clear:both;
+		margin-top:5px;
+
+		button {
+			float:right;
+			margin:0 10px;
+		}
+	}
+
+	.warning {
+		background-color:$colorNeutral00;
+		border:2px dashed $colorAlert00;
+		margin-top:10px;
+		padding:5px;
+
+		ul {
+			list-style-position:inside;
+			list-style-type:square;
+
+			li {
+				color:$colorAlert00;
+				cursor:pointer;
+			}
+		}
+	}
+
+	.main {
+		margin-left:30px;
+		margin-right:50px;
+		width:560px;
+	}
+
+	.right {
+		width:200px;
+		padding-left:10px;
+
+		div {
+			padding:5px;
+			border-bottom:1px solid $colorNeutral03;
+		}
+	}
+
+	> div {
+		float:left;
+		clear:none;
+	}
+}
+
+.coreUpdate .installButtons button .icon,
+.extListing .extension .bottom button .icon {
+	background-image:url(../img/icons.png);
+}
+
+.coreUpdate .installButtons button.info .icon,
+.extListing .extension .bottom button.info .icon {
+	background-position:5px -748px;
+	width:22px;
+}
+
+.coreUpdate .installButtons button.update .icon,
+.extListing .extension .bottom button.update .icon {
+	background-position:0 -28px;
+}
+
+.extListing .extension .bottom button.install .icon {
+	background-position:5px -28px;
+	width:22px;
+}
+
+
+
+/* -----------------------
+	Search
+   -----------------------*/
+.extensionSearch .control {
+	margin-bottom:10px;
+}
+
+.resultinfo {
+	background-color:$colorNeutral01;
+	margin-bottom:10px;
+	padding:10px;
+
+	&.error {
+		.message {
+			font-family:$fontFamilyCode;
+			font-size:14px;
+			margin-bottom:5px;
+		}
+
+		.title {
+			color:red;
+			font-size:16px;
+			font-weight:bold;
+			margin-bottom:5px;
+		}
+	}
+}
+
+
+
+/* -----------------------
+	Updates
+   -----------------------*/
+
+/* Core update */
+.repositoryUpdates .coreUpdate {
+	padding:12px 12px 24px 12px;
+	margin:6px 0 20px 0;
+	background-color:$colorHighlight03;
+
+	.installButtons {
+		float:right;
+	}
+
+	.coreUpdateInfos {
+		float:left;
+
+		th {
+			width:100px;
+		}
+	}
+}
+
+.repositoryUpdates .coreUpdate .coreUpdateInfos td,
+.repositoryUpdates .coreUpdate .coreUpdateInfos th {
+	padding:3px;
+}
+
+
+
+/* -----------------------
+	Dialog
+   -----------------------*/
+.repositoryDialog {
+	padding:10px;
+
+	h1 {
+		font-size:18px;
+		font-weight:bold;
+		margin-bottom:20px;
+		text-align:left;
+	}
+
+	.buttons {
+		clear:both;
+		margin-top:20px;
+		padding-top:10px;
+	}
+
+	.col {
+		clear:none;
+		float:left;
+	}
+
+	&.coreDialog button.install .icon {
+		background:url(../img/icons.png) no-repeat 0 -28px;
+	}
+
+	.info {
+		margin-top:5px;
+		padding:5px;
+	}
+
+	&.extensionDialog {
+		.extInstall {
+			.acceptlicense {
+				text-align:left;
+				font-weight:bold;
+
+				input {
+					width:20px;
+				}
+			}
+
+			.license {
+				background-color:$white;
+				font-family:$fontFamilyCode;
+				font-size:12px;
+				height:200px;
+				margin-bottom:10px;
+				margin-top:10px;
+				overflow:auto;
+				padding:10px;
+				text-align:left;
+			}
+
+			.licenseinfo {
+				background-color:$colorCorporate02;
+				text-align:left;
+
+				&.buyextension {
+					background-color:transparent;
+
+					a{
+						background:url(../img/icons.png) no-repeat 0 -718px;
+						font-size:16px;
+						font-weight:bold;
+						padding-left:20px;
+						text-decoration:underline;
+
+						&:hover{
+							color:$colorNeutral08;
+						}
+					}
+				}
+
+				&.noLicense {
+					background-color:$colorAlert00;
+					color:$white;
+					text-align:left;
+				}
+			}
+
+			.warningMajorUpdate {
+				background-color:$colorAlert00;
+				color:$white;
+			}
+		}
+
+		button.install .icon {
+			background:url(../img/icons.png) no-repeat 0 -28px;
+		}
+	}
+
+	.versionDetails {
+		margin-left:20px;
+		width:240px;
+
+		td {
+			width:130px;
+		}
+
+		th {
+			width:80px;
+		}
+	}
+
+	.versionInformation {
+		padding:10px;
+		text-align:left;
+		width:300px;
+
+		ul {
+			list-style:square inside;
+		}
+
+		.subtitle {
+			display:block;
+			font-weight:bold;
+			margin-bottom:5px;
+		}
+	}
+}
+
+.repositoryDialog .versionDetails table td,
+.repositoryDialog .versionDetails table th {
+	padding:3px;
+	border-bottom:1px solid $colorNeutral03;
+	text-align:left;
+}

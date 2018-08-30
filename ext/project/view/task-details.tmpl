@@ -1,0 +1,8 @@
+<div id="task-{$idTask}-details" class="details bcStatus{$task.status}">
+	<div id="task-{$idTask}-data" class="data overflow">
+		{$taskData}
+	</div>
+{if $tabs} {* ----- Only render tab container if tabs are rendered ----- *}
+	{$tabs}
+{/if}
+</div>

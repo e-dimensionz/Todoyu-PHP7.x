@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=assets&amp;controller=projectEdit</attribute>
+		<attribute name="name">asset</attribute>
+		<attribute name="enctype">multipart/form-data</attribute>
+		<attribute name="id_project">0</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="MAX_FILE_SIZE" value="50000000" noWrap="true" noStorage="true" />
+	</hiddenFields>
+	<fieldsets>
+		<fieldset name="assets">
+			<legend>assets.form.legend.inlineAssetUpload</legend>
+			<class>inlineAssetUpload directUpload</class>
+			<elements>
+
+				<field type="select" name="assetlist">
+					<label>core.file.files</label>
+					<source type="function">
+						<function>TodoyuAssetsTaskAssetViewHelper::getTaskAssetsFilesOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+
+				<field type="upload" name="file">
+					<onchange>Todoyu.Ext.assets.RecordEdit.uploadFileInline(this, 'project')</onchange>
+					<class>directUploadBox</class>
+				</field>
+
+				<field type="button" name="upload">
+					<text>assets.form.assets.button.upload</text>
+					<class>buttonUploadAsset</class>
+					<hasIcon />
+				</field>
+
+				<field type="button" name="delete">
+					<text>assets.form.assets.button.delete</text>
+					<class>buttonDeleteAsset</class>
+					<hasIcon />
+					<onclick>Todoyu.Ext.assets.RecordEdit.removeSelectedTempAsset(#id#, 'project')</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

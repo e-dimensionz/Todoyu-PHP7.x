@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Segnalibri delle attività</label>
+	<label index="title">Segnalibri delle attività</label>
+	<label index="info.nobookmarks">Nessun segnalibro è stato ancora definito</label>
+	<label index="contextmenu.removebookmark">Rimuovi dai segnalibri</label>
+	<label index="contextmenu.addbookmark">Aggiungi ai segnalibri</label>
+</labels>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kastodoyutrunk.srv05.ch1.snowflake.ch/" />
+<title>search > search for - tasks of willi in progress</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">search > search for - tasks of willi in progress</td></tr>
+</thead><tbody>
+<!----- search > create + save as new filter-->
+<!--(re)activate search-task tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.active</td>
+	<td></td>
+</tr>
+<!--use "clear area" button-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Set conjunction: AND-->
+<tr>
+	<td>focus</td>
+	<td>//select[@id=&quot;filtercontrol-conjunction&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id=&quot;filtercontrol-conjunction&quot;]/</td>
+	<td>AND</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Add filter: type = task-->
+<tr>
+	<td>focus</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;]/</td>
+	<td>Type</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[contains(@class,&quot;type&quot;)]/div[@class=&quot;widgetbody&quot;]/select[@class=&quot;select value&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[contains(@class,&quot;type&quot;)]/div[@class=&quot;widgetbody&quot;]/select[@class=&quot;select value&quot;]</td>
+	<td>Task</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Add filter: assigned to person => worker willi-->
+<tr>
+	<td>focus</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;]/</td>
+	<td>Assigned To Person</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>//div[contains(@class,&quot;assignedPerson&quot;)]/div[@class=&quot;widgetbody&quot;]/input[contains(@class,&quot;textAC&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>//div[contains(@class,&quot;assignedPerson&quot;)]/div[@class=&quot;widgetbody&quot;]/input[contains(@class,&quot;textAC&quot;)]</td>
+	<td>W</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>//div[contains(@class,&quot;assignedPerson&quot;)]/div[@class=&quot;widgetbody&quot;]/input[contains(@class,&quot;textAC&quot;)]</td>
+	<td>o</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>//div[contains(@class,&quot;assignedPerson&quot;)]/div[@class=&quot;widgetbody&quot;]/input[contains(@class,&quot;textAC&quot;)]</td>
+	<td>r</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>//div[contains(@class,&quot;assignedPerson&quot;)]/div[@class=&quot;widgetbody&quot;]/input[contains(@class,&quot;textAC&quot;)]</td>
+	<td>k</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>//div[contains(@class,&quot;assignedPerson&quot;)]/div[@class=&quot;widgetbody&quot;]/input[contains(@class,&quot;textAC&quot;)]</td>
+	<td>e</td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>//div[contains(@class,&quot;assignedPerson&quot;)]/div[@class=&quot;widgetbody&quot;]/input[contains(@class,&quot;textAC&quot;)]</td>
+	<td>r</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//div[contains(@class,&quot;assignedPerson&quot;)]/div[@class=&quot;widgetbody&quot;]/input[contains(@class,&quot;textAC&quot;)]</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Add filter: status => in progress-->
+<tr>
+	<td>focus</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;]/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;]/</td>
+	<td>Status</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>//div[contains(@class,&quot;status&quot;)]/div[@class=&quot;widgetbody&quot;]/select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[contains(@class,&quot;status&quot;)]/div[@class=&quot;widgetbody&quot;]/select</td>
+	<td>In Progress</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Check for tasks to be found-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-148&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-134&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-135&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id=&quot;task-136&quot;]</td>
+	<td></td>
+</tr>
+<!--use "clear area" button-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button' and @onclick='Todoyu.Ext.search.PanelWidget.SearchFilterList.clearFilterArea();this.blur()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://todoyuselenium.srv05.ch1.snowflake.ch/" />
+<title>sysmanager > extensions > deinstall dev ext</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">sysmanager > extensions > deinstall dev ext</td></tr>
+</thead><tbody>
+<!--go to extensions module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--click deinstall link-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//table[contains(@class,&quot;extlist&quot;)]/tbody/tr[contains(@class,&quot;dev&quot;)]/td[@class=&quot;edit&quot;]//a[@class=&quot;uninstall&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[contains(@class,&quot;extlist&quot;)]/tbody/tr[contains(@class,&quot;dev&quot;)]/td[@class=&quot;edit&quot;]//a[@class=&quot;uninstall&quot;]</td>
+	<td></td>
+</tr>
+<!--Check deinstallation succeeded-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Extension was uninstalled successfully</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@title=&quot;Download Extension&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@title=&quot;Delete extension from server&quot;]</td>
+	<td></td>
+</tr>
+<!--click delete from server link-->
+<tr>
+	<td>click</td>
+	<td>//button[@title=&quot;Delete extension from server&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--go to extensions module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Obecné nastavení</label>
+	<label index="general.use">Používat výkazy práce</label>
+	<label index="panelwidgets">Panel widgetů</label>
+	<label index="daytracks">Panel widgetů výkaz práce</label>
+	<label index="daytracks.timeExport">Exportovat časový výkaz</label>
+	<label index="daytracks.timeExportAllPerson">Exportovat časový výkaz všech osob</label>
+	<label index="daytracks.timeExportAllEmployer">Exportovat časový výkaz všech zaměstnanců</label>
+</labels>

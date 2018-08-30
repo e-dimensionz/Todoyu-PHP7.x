@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Учёт времени</label>
+	<label index="title">Учёт времени</label>
+	<label index="noTracksYet">Пока учтённого времени нет</label>
+	<label index="attr.date_create">Дата</label>
+	<label index="attr.date_track">Дата</label>
+	<label index="attr.workload_tracked">Загрузка</label>
+	<label index="attr.workload_chargeable">Оплачивается</label>
+	<label index="attr.comment">Комментарий</label>
+	<label index="search.label">Учёт времени</label>
+	<label index="task.attr.overtimed">Задача перегружена</label>
+	<label index="headlet.label">Учёт времени</label>
+	<label index="totalTrackedTime">Всего учтено времени</label>
+	<label index="tasktab.edit">Нажмите тут для редактирования</label>
+	<label index="start">Начать учёт времени</label>
+	<label index="stop">Остановить учёт времени</label>
+	<label index="currentTask">Текущая задача</label>
+	<label index="showCurrentTaskInProject">Показать задачу в проекте</label>
+	<label index="quicktask.workload_done">Уже учтено</label>
+	<label index="estimated_workload">План. загрузка</label>
+	<label index="jumpToTask">Нажмите тут, чтобы перейти к этой задаче</label>
+	<label index="jumpToProject">Нажмите тут, чтобы перейти к этому проекту</label>
+	<label index="extconf.stopOnLogout">Останавливать учёт времени при выходе из системы</label>
+</labels>

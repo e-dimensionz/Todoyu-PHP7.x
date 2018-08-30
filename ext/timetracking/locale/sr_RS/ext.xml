@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Забељежавање времена</label>
+	<label index="title">Забељежавање времена</label>
+	<label index="noTracksYet">Још нема забељеженог времена</label>
+	<label index="attr.date_create">Датум</label>
+	<label index="attr.date_track">Датум</label>
+	<label index="attr.workload_tracked">Посла</label>
+	<label index="attr.workload_chargeable">Наплатљиво</label>
+	<label index="attr.comment">Коментар</label>
+	<label index="search.label">Забељежавање времена</label>
+	<label index="task.attr.overtimed">Време прекорачено</label>
+	<label index="headlet.label">Забељежавање времена</label>
+	<label index="totalTrackedTime">Тотално забељежено време</label>
+	<label index="tasktab.edit">Кликни овде да би изменуо забељежено</label>
+	<label index="start">Покрени забељежавање времена</label>
+	<label index="stop">Заустави забељежавање времена</label>
+	<label index="currentTask">Актуелни задатак</label>
+	<label index="showCurrentTaskInProject">Покаши задатак у пројекту</label>
+	<label index="quicktask.workload_done">Вец обављено време</label>
+	<label index="estimated_workload">Процењен посо</label>
+	<label index="jumpToTask">Кликни овде да би пребацио на овај задатак</label>
+	<label index="jumpToProject">Кликни овде да би пребацио на овај пројекат</label>
+	<label index="extconf.stopOnLogout">Заустави забељежавање времена пре одјављивања</label>
+	<label index="taskpreset.start_tracking">Покрени забељеживање време брзог задатка?</label>
+</labels>

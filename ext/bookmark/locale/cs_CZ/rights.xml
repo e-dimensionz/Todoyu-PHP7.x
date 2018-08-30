@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Obecné</label>
+	<label index="general.use">Používat záložky</label>
+	<label index="task">Záložky úkolů</label>
+	<label index="task.add">Přidávat záložky</label>
+	<label index="task.remove">Odstranit záložku</label>
+	<label index="panelwidgets">Panel widgetů</label>
+</labels>

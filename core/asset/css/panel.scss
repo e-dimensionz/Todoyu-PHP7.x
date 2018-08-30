@@ -1,0 +1,68 @@
+@import "../../config/theme.scss";
+
+
+
+#panel {
+	background-color:$white;
+	border-radius:10px 10px 0 0;
+	clear:both;
+	float:left;
+	margin:0 10px 0 0;
+	padding:0px;
+	position:relative;
+	top:20px;
+	width:270px;
+
+	div.panelFooter {
+		position:absolute;
+		z-index:1;
+		width:100%;
+		height:51px;
+		margin-top: -3px;
+		background:url(../img/panel-footer.png) no-repeat 0 0; }
+
+	div.panelWidget {
+		padding:7px;
+		border-bottom:3px solid $colorCorporate02;
+
+		.notification {
+			text-align:left;
+			padding:5px 0 5px 7px; }
+
+		ul.naviList li {
+			line-height:18px;
+			padding:3px 0 3px 5px;
+			border-bottom:1px solid $colorNeutral02;
+
+			&.active {
+				background-color:$colorCorporate02; }
+
+			a {
+				width:100%;
+				display:inline-block;
+				padding-left:25px; }
+		}
+
+		h2 {
+			padding-left:2px; }
+	}
+
+	select {
+		padding:0px; }
+
+	.fForm {
+		padding:0px;
+		background:none; }
+
+	fieldset {
+		margin:0px;
+		padding:0px;
+		border:none;
+		background:none; }
+
+	legend {
+		display:none; }
+
+	.fField {
+		float:right; }
+}

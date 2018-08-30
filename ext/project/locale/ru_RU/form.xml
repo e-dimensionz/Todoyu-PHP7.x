@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.task.basics">Основная информация [Сделано]</label>
+	<label index="legend.task.attributes">Атрибуты [Сделано]</label>
+	<label index="legend.container.basics">Основная информация [Сделано]</label>
+	<label index="legend.container.attributes">Атрибуты [Сделано]</label>
+	<label index="legend.project.basics">Основная информация [Сделано]</label>
+	<label index="legend.project.taskpreset">Стандартная конфигурация задач [Сделано]</label>
+	<label index="legend.project.members">Участники проекта [Сделано]</label>
+	<label index="legend.quicktask.basics">Основная информация о вашей задаче [Сделано]</label>
+	<label index="legend.project.approvalroles">Роли одобрения счетов [Сделано]</label>
+	<label index="legend.admin.basics">Установки по умолчанию для задач [Сделано]</label>
+	<label index="legend.admin.quicktask">Стандартное поведение быстрых задач [Сделано]</label>
+	<label index="legend.admin.fallbacks">Стандартное поведение для работников с ограниченными правами [Сделано]</label>
+	<label index="legend.admin.projectrole.record.general">Роли проекта [Сделано]</label>
+	<label index="legend.admin.activity.record.general">Тип работы [Сделано]</label>
+	<label index="legend.admin.taskpreset.record.general">Стандартные настройки задач [Сделано]</label>
+	<label index="legend.admin.taskpreset.record.quicktask">Стандартное поведение быстрых задач [Сделано]</label>
+	<label index="legend.admin.taskpreset.record.fallbacks">Стандартное поведение для работников с ограниченными правами [Сделано]</label>
+</labels>

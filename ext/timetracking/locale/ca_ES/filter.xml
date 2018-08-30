@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Control del temps</label>
+	<label index="timetrackedPerson">La persona té temps registrat</label>
+	<label index="timetrackedRoles">Els rols tenen temps registrat</label>
+	<label index="person.trackedinproject">Temps registrat en el projecte</label>
+	<label index="person.trackedforcustomer">Temps registrat en el projecte del client</label>
+</labels>

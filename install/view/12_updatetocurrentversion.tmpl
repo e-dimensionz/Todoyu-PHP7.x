@@ -1,0 +1,106 @@
+{extends main.tmpl}
+
+{block name="box"}
+{if $noUpdates !== true}
+	<div class="sqlQuery">
+
+		<p>{Label install.installer.updatetocurrentversion.updates}</p>
+
+		{if sizeof($diff.missingTables) > 0}
+			<p class="section">{Label install.installer.updatetocurrentversion.newTables}</p>
+			<table class="dbstruct">
+				<tr>
+					<th class="table">Table</th>
+					<th class="column">Column</th>
+					<th class="type">type</th>
+				</tr>
+				{foreach $diff.missingTables table}
+					{foreach $table.columns index column tables}
+					<tr>
+						<td class="table">
+							{if $dwoo.foreach.tables.first}
+								{$table.table}
+							{else}
+								&nbsp;
+							{/if}
+						</td>
+						<td class="field">{$column.field}</td>
+						<td class="type">{$column.type}</td>
+					</tr>
+					{/foreach}
+				{/foreach}
+			</table>
+		{/if}
+
+		{if sizeof($diff.missingColumns) > 0}
+			<p class="section">{Label install.installer.updatetocurrentversion.newColumns}</p>
+			<table class="dbstruct">
+				<tr>
+					<th class="table">Table</th>
+					<th class="column">Column</th>
+					<th class="type">type</th>
+				</tr>
+				{foreach $diff.missingColumns tableName columns}
+					{foreach $columns columnName column tables}
+					<tr>
+						<td class="table">
+							{$tableName}
+						</td>
+						<td class="field">{$column.field}</td>
+						<td class="type">{$column.type}</td>
+					</tr>
+					{/foreach}
+				{/foreach}
+			</table>
+		{/if}
+
+		{if sizeof($diff.changedColumns) > 0}
+			<p class="section">{Label install.installer.updatetocurrentversion.changedColumns}</p>
+			<table class="dbstruct">
+				<tr>
+					<th class="table">Table</th>
+					<th class="column">Column</th>
+					<th class="type">type</th>
+				</tr>
+				{foreach $diff.changedColumns tableName columns}
+					{foreach $columns columnName column}
+					<tr>
+						<td class="table">
+							{$tableName}
+						</td>
+						<td class="field">{$column.field}</td>
+						<td class="type">{$column.type}</td>
+					</tr>
+					{/foreach}
+				{/foreach}
+			</table>
+		{/if}
+
+		{if sizeof($diff.missingKeys) > 0}
+			<p class="section">{Label install.installer.updatetocurrentversion.missingKeys}</p>
+			<table class="dbstruct">
+				<tr>
+					<th class="table">Table</th>
+					<th class="column">Name</th>
+					<th class="type">type</th>
+					<th class="fields">fields</th>
+				</tr>
+				{foreach $diff.missingKeys tableName keys}
+					{foreach $keys key}
+					<tr>
+						<td class="table">
+							{$tableName}
+						</td>
+						<td class="field">{$key.name}</td>
+						<td class="type">{$key.type}</td>
+						<td class="fields">{implode(',', $key.fields)}</td>
+					</tr>
+					{/foreach}
+				{/foreach}
+			</table>
+		{/if}
+
+	</div>
+{/if}
+	<input type="hidden" name="update" value="1" />
+{/block}

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Główne ustawienia</label>
+	<label index="general.use">Użyj funkcji modułu</label>
+	<label index="general.profile">Użyj profilu</label>
+	<label index="general.area">Nowy obszar kontaktu</label>
+	<label index="person">Osoba</label>
+	<label index="person.seeAllInternalPersons">Pokaż wszystkie wewnętrzne osoby</label>
+	<label index="person.seeAllPersons">Pokaż wszystkie osoby</label>
+	<label index="person.add">Dodaj osoby</label>
+	<label index="person.editAndDeleteAll">Edytuj i usuń wszystkie osoby</label>
+	<label index="person.enableLogin">Utwórz konto logowania</label>
+	<label index="person.seeComment">Zobacz komentarze osoby</label>
+	<label index="person.editComment">Edytuj komentarze osoby</label>
+	<label index="company">Firmy</label>
+	<label index="company.seeAllCompanies">Zobacz wszystkie firmy</label>
+	<label index="company.add">Dodaj firmy</label>
+	<label index="company.editOwn">Edytuj własną firmę (Pracodawca)</label>
+	<label index="company.editAndDeleteAll">Edytuj i usuń wszystkie firmy</label>
+	<label index="company.seeComment">Zobacz komentarze firmy</label>
+	<label index="company.editComment">EditEdytuj komentarze firmy</label>
+	<label index="relation">Relacje kontaktu</label>
+	<label index="relation.seeAllContactinfotypes">Zobacz wszystkie typy informacji kontaktu</label>
+	<label index="relation.seeHomeAddress">Zobacz adres domowy</label>
+	<label index="relation.seeBusinessAddress">Zobacz adres firmowy</label>
+	<label index="relation.seeBillingAddress">Zobac adres do faktury</label>
+	<label index="panelwidgets">Panel Widgetów</label>
+	<label index="panelwidgets.staffSelector">Wybór personelu</label>
+	<label index="panelwidgets.export">Export</label>
+</labels>

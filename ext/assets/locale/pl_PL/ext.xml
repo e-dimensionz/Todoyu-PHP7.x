@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Zadania Assets</label>
+	<label index="search.label">Assets</label>
+	<label index="tab.noAssets">Dodaj pierwszy Asset</label>
+	<label index="tab.asset">Asset</label>
+	<label index="tab.assets">Assets</label>
+	<label index="tab.toggle">Assets On/Off</label>
+	<label index="list.header.uploaddate">Prześlij datę</label>
+	<label index="alt.download">Pobierz Plik</label>
+	<label index="alt.uploadedby">Przesłane przez</label>
+	<label index="alt.delete">Usuń Plik</label>
+	<label index="alt.changeVisibility">Zmień widoczność</label>
+	<label index="alt.selectall">Wybierz Wszystko/Nic</label>
+	<label index="upload.selectfile">Wybierz plik do przesłania</label>
+	<label index="upload.filename">Nazwa pliku</label>
+	<label index="upload.new">Dodaj nowy plik</label>
+	<label index="delete.confirm">Czy napewno chcesz usunąć ten plik?</label>
+	<label index="delete.notifiy.success">Plik został usunięty.</label>
+	<label index="download.selection">Pobierz zaznaczenie</label>
+	<label index="download.normal">Wybrałeś tylko jeden plik -> normalne pobieranie pliku</label>
+	<label index="download.compressed">Wybrane pliki zostały spakowane do pobrania</label>
+	<label index="error.minimumFile">Proszę wybrać przynajmniej jeden plik</label>
+	<label index="maxFileSizeExceeded">Plik '#{filename}' przekroczył maksymalny dozwolony rozmiar (#{maxFileSize})</label>
+	<label index="maxLengthFileNameExceeded">Plik '#{filename}' przekroczył dopuszczalną długość (#{maxLengthFileName}) nazwy</label>
+	<label index="uploadFailed">Przesyłanie pliku '#{filename}' nie powiodło się</label>
+	<label index="uploadOk">Plik został przesłany</label>
+	<label index="locked">Ten wątek jest zamknięty. Nie możesz dodawać plików.</label>
+	<label index="task.icon">Task has assets</label>
+</labels>

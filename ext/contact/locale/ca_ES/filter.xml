@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="company.label">Empreses</label>
+	<label index="person.label">Persones</label>
+	<label index="fulltext">Text complert</label>
+	<label index="contactinformation">Informació de contacte</label>
+	<label index="person.name">Nom (nom / cognom / sobrenom)</label>
+	<label index="person.company">Empresa</label>
+	<label index="person.salutation">Salutació</label>
+	<label index="person.system_role">Rol de l'usuari</label>
+	<label index="person.company.isInternal">Empresa interna</label>
+	<label index="person.isActive">Inici de cessió a Gestió activat</label>
+	<label index="company.name">Nom de l'empresa</label>
+	<label index="company.isInternal">Empresa interna</label>
+	<label index="company.dateEnter">Data d'entrada</label>
+	<label index="company.person">Treballador</label>
+	<label index="addresses.label">Adreces</label>
+	<label index="address.country">País</label>
+	<label index="address.zip">Codi postal</label>
+	<label index="address.city">Ciutat</label>
+	<label index="address.street">Carrer</label>
+</labels>

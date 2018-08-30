@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">config</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="config">
+			<legend>project.ext.extconf.taskPreset</legend>
+			<elements>
+
+				<field type="select" name="fallbacktaskpreset">
+					<label>project.ext.extconf.fallbackTaskPreset</label>
+					<source type="function">
+						<function>TodoyuProjectViewHelper::getFallbackTaskPresetOptions</function>
+					</source>
+				</field>
+
+				<field type="comment" name="fallbackinfo">
+					<comment>project.ext.extconf.fallbackInfo</comment>
+				</field>
+
+				<field type="text" name="maxOpenProjects">
+					<label>project.ext.extconf.maxOpenProjects</label>
+					<validate>
+						<isNotZero />
+					</validate>
+					<default>3</default>
+				</field>
+
+				<field type="text" name="toleranceEnddate">
+					<label>project.ext.extconf.toleranceEnddate</label>
+				</field>
+
+				<field type="text" name="toleranceDeadline">
+					<label>project.ext.extconf.toleranceDeadline</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

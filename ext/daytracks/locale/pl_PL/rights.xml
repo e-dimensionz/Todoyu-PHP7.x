@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Ogólne</label>
+	<label index="general.use">Użyj funkcjonalności KArty czasu</label>
+	<label index="panelwidgets">Panel Widgetów</label>
+	<label index="daytracks">Panel Karty czasu</label>
+	<label index="daytracks.timeExport">Eksportuj Kartę czasu</label>
+	<label index="daytracks.timeExportAllPerson">Eksportuj kartę czasu dla wszystkich osób</label>
+	<label index="daytracks.timeExportAllEmployer">Eksportuj kartę czasu dla wszystkich pracodawców</label>
+</labels>

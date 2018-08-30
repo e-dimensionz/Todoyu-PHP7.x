@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">連絡先のエクスポート</label>
+	<label index="export.instruction">連絡先をCSVでエクスポート (上記の検索条件が適用されます)</label>
+	<label index="export.button">連絡先をエクスポート</label>
+</labels>

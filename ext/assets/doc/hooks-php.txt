@@ -1,0 +1,28 @@
+Assets Extension - PHP Hooks
+============================
+
+
+Event Hooks
+***************************************
+
+#assets.asset.add
+	Asset was uploaded and a record was added
+	@param	Integer		$idAsset
+
+
+#assets.asset.download
+	An asset will be downloaded downloaded
+	@param	Integer		$idAsset
+
+
+#assets.asset.delete
+	An asset was deleted
+	@param	Integer		$idAsset
+
+
+#assets.asset.download.zip
+	Multiple assets will be downloaded as zip archive
+	@param	Integer		$idTask
+	@param	Array		$assetIDs
+	@param	String		$pathZipFile
+	@param	String		$filename

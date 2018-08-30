@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.person.basics">Главне ифнромације особе</label>
+	<label index="legend.person.picture">Слике профил-а</label>
+	<label index="legend.person.furtherInformation">Даље информације о вашој особи</label>
+	<label index="legend.person.login">Налог корисника</label>
+	<label index="legend.company.basics">Главне информације предузећа</label>
+	<label index="legend.company.logo">Слика предузећа</label>
+	<label index="legend.admin.jobtype.record">Врста посла</label>
+	<label index="legend.admin.contactinfotype.record">Врста информације контакта</label>
+</labels>

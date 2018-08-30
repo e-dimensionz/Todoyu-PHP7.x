@@ -1,0 +1,42 @@
+<div class="timerange" id="{$id}">
+	<div class="limits">
+		<div class="limit min">{dateFormat $range.start date}</div>
+		<div class="limit max">{dateFormat $range.end date}</div>
+		<div class="clear"></div>
+	</div>
+	<div class="bar">
+		<div class="track trackStart"></div><div class="track slider" id="{$id}-slider">
+			<div class="handle handleStart" id="{$id}-handle-start"></div>
+			<div class="handle handleEnd" id="{$id}-handle-end"></div>
+			<div class="span" id="{$id}-span"></div>
+		</div><div class="track trackEnd"></div>
+	</div>
+	<div class="dates">
+		<div class="start">
+			<input type="text" id="{$id}-start" name="{$name}[start]" />
+			<div class="icon link calendaricon" id="{$id}-start-calicon" title="{Label core.form.dateselector.open}"></div>
+		</div>
+		<div class="ranges">
+			<span class="chooseRange">{Label core.form.daterange.choose}</span>
+			<ul>
+				<li class="monthToDate">{Label core.form.daterange.monthToDate}</li>
+				<li class="quarterToDate">{Label core.form.daterange.quarterToDate}</li>
+				<li class="yearToDate">{Label core.form.daterange.yearToDate}</li>
+				<li class="previousMonth">{Label core.form.daterange.previousMonth}</li>
+				<li class="previousQuarter">{Label core.form.daterange.previousQuarter}</li>
+				<li class="previousYear">{Label core.form.daterange.previousYear}</li>
+				<li class="fullTimeRange">{Label core.form.daterange.fullTimeRange}</li>
+			</ul>
+			<span class="rgt"></span>
+		</div>
+		<div class="end">
+			<input type="text" id="{$id}-end" name="{$name}[end]" />
+			<div class="icon link calendaricon" id="{$id}-end-calicon" title="{Label core.form.dateselector.open}"></div>
+		</div>
+	</div>
+	<input type="text" id="{$id}-focus" style="opacity:0;visibility:hidden;width:1px;height:1px" />
+</div>
+
+<script type="text/javascript">
+Todoyu.R['dateFormat'] = '{Label core.dateformat.date}';
+</script>

@@ -1,0 +1,93 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ----------------------------------------------
+	List
+   ---------------------------------------------- */
+.assetList {
+	.assets-table-header {
+		background-color: $colorCorporate02;
+	}
+
+	.checkbox {
+		width:30px;
+	}
+
+	.mimetype {
+		width:30px;
+	}
+
+	.filename {
+		width:300px
+	}
+
+	.person {
+		width:120px;
+	}
+
+	.filesize {
+		width:50px;
+		text-align: right;
+	}
+
+	.uploaddate {
+		width:90px;
+	}
+
+	.parent {
+
+		a:hover {
+			background-color: $colorLinkHover;
+		}
+
+	}
+
+	.actions {
+		text-align: right;
+
+		a {
+			width:22px;
+			height:16px;
+			display:block;
+			float:right;
+			clear:none;
+
+			&.asset-icon-download {
+				background:url(../../../../core/asset/img/icons.png) no-repeat 0 -840px;
+			}
+
+			&.asset-icon-delete {
+				background:url(../../../../core/asset/img/icons.png) no-repeat 0 -330px;
+			}
+
+			&.asset-icon-public {
+				background:url(../../../../core/asset/img/icons.png) no-repeat 0 -1081px;
+
+				&.not {
+					opacity: 0.3;
+				}
+			}
+		}
+	}
+
+	th {
+		padding:5px 0 5px 0;
+		text-transform:uppercase;
+	}
+
+	td {
+		padding:3px 6px 3px 0;
+	}
+
+	tr {
+		/* Background colors of the rows in the list */
+		th {
+
+		}
+
+		&.selected td {
+			background-color:$colorCorporate02;
+		}
+	}
+}

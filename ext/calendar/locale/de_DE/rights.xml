@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Allgemein</label>
+	<label index="general.use">Kalender-Funktionalitäten verwenden</label>
+	<label index="general.area">Kalender-Bereich verwenden</label>
+	<label index="event">Termin</label>
+	<label index="event.seeAll">Alle Termine sehen</label>
+	<label index="event.editAssigned">Zugewiesenen editieren</label>
+	<label index="event.editAll">Alle Termine editieren</label>
+	<label index="event.deleteAssigned">Zugewiesenen löschen</label>
+	<label index="event.deleteAll">Alle Termine löschen</label>
+	<label index="event.add">Neuen Termin Erstellen</label>
+	<label index="event.search">Nach Terminen suchen</label>
+	<label index="event.assignOthers">Termine anderen Benutzern zuweisen</label>
+	<label index="event.deleteInPast">Termine in der Vergangenheit löschen</label>
+	<label index="event.editInPast">Termine in der Vergangenheit bearbeiten</label>
+	<label index="mailing">Termin E-Mail</label>
+	<label index="mailing.sendAsEmail">Email zu Terminen an wählbare Empfänger senden</label>
+	<label index="reminders">Termin-Erinnerungen</label>
+	<label index="reminders.popup">Popup-Erinnerungen bestellen</label>
+	<label index="reminders.email">Erinnerungs-Mailing abonnieren</label>
+</labels>

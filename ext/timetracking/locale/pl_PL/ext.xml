@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Śledzenie czasu</label>
+	<label index="title">Śledzenie czasu</label>
+	<label index="noTracksYet">Nie ma zapisanych śladów czasu</label>
+	<label index="attr.date_create">Data</label>
+	<label index="attr.date_track">Data</label>
+	<label index="attr.workload_tracked">Prześledzony czas</label>
+	<label index="attr.workload_chargeable">Należny czas</label>
+	<label index="attr.comment">Komentarz</label>
+	<label index="search.label">Śledzenie czasu</label>
+	<label index="task.attr.overtimed">Zadanie zawyżone</label>
+	<label index="headlet.label">Śledzenie czasu</label>
+	<label index="totalTrackedTime">Całkowity prześledzonyc czas</label>
+	<label index="tasktab.edit">Kliknij tu, aby edytować ten zapis</label>
+	<label index="start">Rozpocznij śledzenie czasu</label>
+	<label index="stop">Zakończ śledzenie czasu</label>
+	<label index="currentTask">Bieżące zadanie</label>
+	<label index="showCurrentTaskInProject">Pokaż zadanie w projekcie</label>
+	<label index="quicktask.workload_done">Czas przepracowany</label>
+	<label index="estimated_workload">Szac. obciążenie</label>
+	<label index="jumpToTask">Kliknij tu, aby przejść do tego zadania</label>
+	<label index="jumpToProject">Kliknij tu, aby przejść do tego projektu</label>
+	<label index="extconf.stopOnLogout">Zakończ zapis czasu po wylogowaniu</label>
+</labels>

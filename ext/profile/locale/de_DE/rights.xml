@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Allgemeine Einstellungen</label>
+	<label index="general.use">Profil verwenden</label>
+	<label index="settings">Benutzerkonto-Einstellungen</label>
+	<label index="settings.password">Passwort ändern</label>
+</labels>

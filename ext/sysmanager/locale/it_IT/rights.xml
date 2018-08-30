@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Impostazioni generali</label>
+	<label index="general.extensions">Gestore estensioni</label>
+	<label index="general.records">Mostra tutti i record nella visualizzazione di modifica</label>
+	<label index="general.rights">Gestore diritti</label>
+	<label index="general.roles">Gestore ruoli</label>
+	<label index="extensions">Estensioni</label>
+	<label index="extensions.info">Info estensione</label>
+	<label index="extensions.config">Modifica configurazione</label>
+	<label index="extensions.rights">Midifica permessi</label>
+	<label index="extensions.records">Modifica record</label>
+	<label index="extensions.uninstall">Rimuove estensioni</label>
+	<label index="extensions.install">Installa estensioni</label>
+	<label index="extensions.download">Scarica archivio estensione</label>
+	<label index="extensions.update">Aggiorna estensioni</label>
+	<label index="roles">Ruoli</label>
+	<label index="roles.edit">Ruolo modifica</label>
+	<label index="roles.delete">Ruolo eliminazione</label>
+</labels>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Impostazioni personali</label>
+	<label index="page.title">Profilo personale</label>
+	<label index="headlet.label">Impostazioni personali</label>
+	<label index="module.general">Impostazioni generali</label>
+	<label index="general.main.tab">Principale</label>
+	<label index="general.main.locale">Lingua</label>
+	<label index="general.main.saved">Impostazioni salvate</label>
+	<label index="general.main.saved.pleaseWait">todoyu deve generare i file della cache per la lingua selezionata. Attendere un attimo.</label>
+	<label index="general.main.personalConfigOf">Configurazione personale di</label>
+	<label index="general.password.title">Cambia la propria password</label>
+	<label index="general.password.tab">Password</label>
+	<label index="general.password.current">Password attuale</label>
+	<label index="general.password.current.empty">Inserire la password precedente per modificarla</label>
+	<label index="general.password.current.wrong">La password precedente inserita non è corretta</label>
+	<label index="general.password.new1">Nuova password</label>
+	<label index="general.password.new2">Ripeti password</label>
+	<label index="general.password.error">Impossibile cambiare la password</label>
+	<label index="general.password.success">Password modificata</label>
+	<label index="general.password.notEqual">Le due password inserite non coincidono.</label>
+	<label index="general.password.header">Password</label>
+</labels>

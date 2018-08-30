@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=loginpage&amp;controller=ext&amp;action=login</attribute>
+		<attribute name="name">login</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="passhash" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="message">
+			<legend>Info messages</legend>
+			<class>message</class>
+			<elements>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="inputs">
+			<legend>Login dialog</legend>
+			<class>loginForm</class>
+			<elements>
+
+				<field type="comment" name="javascript">
+					<comment type="function">
+						<function>TodoyuLoginpageRenderer::renderJavascriptAndCookieCheck</function>
+					</comment>
+				</field>
+
+				<field type="comment" name="status">
+					<comment>loginpage.ext.form.status.enterLoginData</comment>
+				</field>
+
+				<field type="text" name="username">
+					<label>loginpage.ext.form.field.username</label>
+					<validate>
+						<isNotEmpty />
+					</validate>
+					<required />
+				</field>
+
+				<field type="text" name="password">
+					<label>loginpage.ext.form.field.password</label>
+					<type>password</type>
+					<required />
+				</field>
+
+				<field type="checkbox" name="loginremain">
+					<label>loginpage.ext.form.remainLogin</label>
+				</field>
+
+				<field type="button" name="submit">
+					<text>loginpage.ext.form.field.submit</text>
+					<type>submit</type>
+					<class>buttonLogin</class>
+					<hasIcon />
+				</field>
+
+				<field type="comment" name="forgotpassword">
+					<comment type="function">
+						<function>TodoyuLoginpageRenderer::renderForgotPasswordLink</function>
+					</comment>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

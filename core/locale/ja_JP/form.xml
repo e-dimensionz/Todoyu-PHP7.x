@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">選択してください</label>
+	<label index="field.isrequired">これは必須項目です</label>
+	<label index="field.hasError">入力した値は有効な値ではありません</label>
+	<label index="field.save">保存</label>
+	<label index="field.cancel">キャンセル</label>
+	<label index="records.add">レコードの追加</label>
+	<label index="records.remove">レコードの削除</label>
+	<label index="records.edit">レコードの編集</label>
+	<label index="databaserelation.nolabel">[新規エントリ]</label>
+	<label index="databaserelation.expandAllRecords">詳細を表示</label>
+	<label index="error.notUnique">このエントリはすでに存在します</label>
+	<label index="ac.noResults">オートコンプリート: 結果が見つかりません</label>
+	<label index="is_preferred">推奨候補</label>
+	<label index="dateselector.open">日付選択を開いて日付を選んでください</label>
+	<label index="autocompleteInfo">これはオートコンプリートのフィールドです。入力して候補を得てください</label>
+	<label index="legend.main">ロールの定義</label>
+</labels>

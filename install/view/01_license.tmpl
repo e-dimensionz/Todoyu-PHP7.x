@@ -1,0 +1,14 @@
+{extends main.tmpl}
+
+{block name="box"}
+	<div id="licenseagreement">
+
+		<h2>{Label install.installer.license.eula}</h2>
+		<div class="enduserlicense">
+			<pre>{includeEscaped "LICENSE.txt"}</pre>
+		</div>
+
+	</div>
+
+	<input type="hidden" name="install" value="1" />
+{/block}

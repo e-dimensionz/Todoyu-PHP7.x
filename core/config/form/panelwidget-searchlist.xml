@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldsets>
+		<fieldset name="filters">
+			<elements>
+
+				<field type="text" name="search">
+					<label>project.panelwidget-projectlist.search</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

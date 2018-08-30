@@ -1,0 +1,38 @@
+<div class="repositoryDialog coreDialog">
+	<h1>Core Update: {$update.title}</h1>
+
+	<div class="col versionInformation">
+		<span class="subtitle">{Label sysmanager.repository.update.versionInformation}</span>
+		{if $update.description}
+			{$update.description}
+		{else}
+			{Label sysmanger.repository.error.noVersionInformation}
+		{/if}
+	</div>
+
+	<div class="col versionDetails">
+		<table>
+			<tr>
+				<th>{Label sysmanager.repository.extension.installed}</th>
+				<td>{constant(TODOYU_VERSION)}</td>
+			</tr>
+			<tr>
+				<th>{Label sysmanager.repository.update.newversion}</th>
+				<td>{$update.version}</td>
+			</tr>
+			<tr>
+				<th>{Label core.global.status}</th>
+				<td>{ExtensionStatusIcon $update.state}</td>
+			</tr>
+			<tr>
+				<th>{Label sysmanager.repository.update.releasedate}</th>
+				<td>{dateFormat $update.date_update date}</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="buttons">
+		{Button label="sysmanager.repository.core.installUpdate" class="install" onclick="Todoyu.Ext.sysmanager.Repository.Update.installCoreUpdate()"}
+		{Button label="sysmanager.repository.core.cancelUpdate" class="cancel" onclick="Todoyu.Ext.sysmanager.Repository.closeDialog()"}
+	</div>
+</div>

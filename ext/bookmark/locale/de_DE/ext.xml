@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Aufgaben-Favoriten</label>
+	<label index="title">Aufgaben Favoriten</label>
+	<label index="info.nobookmarks">Sie haben noch keine Favoriten</label>
+	<label index="contextmenu.removebookmark">Aus Favoriten entfernen</label>
+	<label index="contextmenu.renamebookmark">Favorit umbenennen</label>
+	<label index="contextmenu.editbookmarks">Favoriten Editieren</label>
+	<label index="contextmenu.addbookmark">Zu Favoriten hinzufügen</label>
+	<label index="profile.module">Favoriten</label>
+	<label index="profile.module.tasks.tab">Aufgaben</label>
+	<label index="profile.module.tasks.bookmarksOf">Aufgaben-Favoriten von</label>
+	<label index="profile.module.tasks.listing.task">Aufgabe</label>
+	<label index="profile.module.tasks.listing.title">Titel</label>
+	<label index="profile.module.tasks.listing.label">Bezeichnung</label>
+	<label index="bookmark.edit">Favorit bearbeiten</label>
+	<label index="bookmark.rename">Favorit umbenennen</label>
+	<label index="bookmark.renamePrompt">Neuer Favoriten Text (leer = original Text)</label>
+	<label index="bookmark.delete.confirm">Favorit wirklich entfernen?</label>
+	<label index="bookmark.removed">Favorit wurde entfernt</label>
+	<label index="bookmark.renamed">Favorit umbenannt</label>
+	<label index="bookmark.added">Favorit wurde erstellt</label>
+	<label index="bookmark.attr.title">Bezeichnung</label>
+	<label index="bookmark.type.task">Aufgabe</label>
+	<label index="bookmark.saved">Der Favorit wurde gespeichert.</label>
+	<label index="bookmark.saved.error">Beim Speichen des Favoriten ist ein Fehler aufgetreten.</label>
+</labels>

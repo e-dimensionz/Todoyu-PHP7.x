@@ -1,0 +1,67 @@
+@import "../../../../core/config/theme.scss";
+
+#panelwidget-searchfilterlist {
+	div.panelwidgetContent {
+		margin-top:0;
+	}
+
+	.listItem {
+
+		&.separator {
+			margin-top: -1px;
+			background:	$colorNeutral03;
+			border-bottom: 0px;
+
+
+			.title {
+				padding-left:20px;
+				text-transform:uppercase;
+			}
+		}
+
+		.title {
+			display: inline-block;
+			width: 50%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		.actions a {
+			background: transparent url(../../../../core/asset/img/icons.png) no-repeat scroll !important;
+
+			&.save {
+				background-position: 5px -209px !important;
+			}
+
+			&.delete {
+				background-position: 4px -330px !important;
+			}
+
+			&.visibility {
+				background-position: 4px -1079px !important;
+			}
+
+			&.rename {
+				background-position:  5px -149px !important;
+			}
+
+			&.invisible {
+				opacity:0.3;
+			}
+		}
+	}
+
+
+	button {
+		margin-top:10px;
+
+		&.addseparator .icon{
+			background:transparent url('../../../../core/asset/img/icons.png') no-repeat 3px -27px;
+		}
+	}
+}
+
+#panelwidget-searchfilterlistsearchFilterButton {
+	padding:5px;
+}

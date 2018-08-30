@@ -1,0 +1,91 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ------------------------
+	Panelwidget icon
+	----------------------- */
+
+#panelwidget-daytracks ul li {
+	min-height:32px;
+}
+
+* html #panelwidget-daytracks  ul li {height:32px;}
+
+
+
+/* ---------------------------------------------
+	Panelwidget status - border colors global
+   --------------------------------------------- */
+#panelwidget-daytracks ul li span.taskItem {
+	display:block;
+	border-left-width:4px;
+	border-left-style:solid;
+}
+
+#panelwidget-daytracks ul li.deleted span.taskItem * {
+	color:$colorNeutral06;
+}
+
+#panelwidget-daytracks ul li a.info {
+	display:block;
+	padding:5px 25px 5px 9px; /* icon space */
+}
+
+#panelwidget-daytracks ul li .info .time {
+	letter-spacing:1px;
+	margin-right:3px;
+	padding-bottom:3px;
+}
+
+#panelwidget-daytracks ul li .info .tasknumber {
+	width:50px;
+	clear:none;
+}
+
+#panelwidget-daytracks ul li .info .company-project {
+	display:inline-block;
+	overflow:hidden;
+	width:100%;
+}
+#panelwidget-daytracks ul li .info .company-project span {
+	color:$colorNeutral06;
+	width:500px;
+	display:inline-block;
+}
+
+#panelwidget-daytracks ul li .info .task {
+	display:block;
+}
+
+#panelwidget-daytracks ul li.running .info .time,
+#panelwidget-daytracks ul li.running .info .task,
+#panelwidget-daytracks ul li.running .info .tasknumber {
+	font-weight:bold;
+}
+#panelwidget-daytracks ul li .info .customer-project {
+	display:block;
+}
+
+#panelwidget-daytracks ul li a.icon {
+	display:block;
+	float:right;
+	clear:none;
+	width:22px !important;
+	height:22px;
+	background:url(../../../timetracking/asset/img/icons.png) no-repeat 0 -26px;
+}
+
+	#panelwidget-daytracks ul li a.running {
+		background-position:0 4px !important;
+	}
+
+#panelwidget-daytracks .history,
+#panelwidget-daytracks .timeexport {
+	display:inline;
+}
+
+#panelwidget-daytracks button.trackHistory .icon {
+	background:url(../img/icons.png) no-repeat 5px -87px;
+	width:25px;
+}

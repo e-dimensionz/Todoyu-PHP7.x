@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般</label>
+	<label index="general.use">タイムシートの使用</label>
+	<label index="panelwidgets">パネル部分</label>
+	<label index="daytracks">パネル部分のタイムシート</label>
+	<label index="daytracks.timeExport">タイムシートのエクスポート</label>
+	<label index="daytracks.timeExportAllPerson">全員のタイムシートをエクスポート</label>
+	<label index="daytracks.timeExportAllEmployer">全雇用者のタイムシートをエクスポート</label>
+</labels>

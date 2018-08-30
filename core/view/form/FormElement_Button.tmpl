@@ -1,0 +1,12 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+
+<button class="button {$inputClass} {$class}" type="{$type|default:button}" id="{$htmlId}" {if $disabled}disabled="disabled"{/if} {if $onclick}onclick="{$onclick}{if $disable};this.onclick=''{/if};this.blur()"{/if} title="{if $title}{Label $title}{else}{Label $text}{/if}">
+	{if ! $noIcon}
+		<span class="icon"></span>
+	{/if}
+	<span class="label">{Label $text}</span>
+</button>
+
+{/block}

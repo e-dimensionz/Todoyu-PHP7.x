@@ -1,0 +1,145 @@
+@import "../../config/theme.scss";
+
+
+
+.timerange {
+	padding-top:2px;
+
+	.bar {
+		padding:10px 0;
+		position:relative;
+
+		.slider {
+			background:url(../img/timerange.png) repeat-x 0 -32px;
+			position:relative;
+			width:472px;
+
+			.handle {
+				background:url(../img/timerange-handle.png) center center no-repeat;
+				cursor:ew-resize;
+				cursor:move;
+				height:20px;
+				margin-top: -17px;
+				position:absolute;
+				width:20px;
+				z-index:10;	}
+
+			.handleStart {
+				margin-left: -4px; }
+
+			.handleEnd {
+				margin-left: -5px; }
+		}
+
+		.track {
+			height:3px;
+			display:inline-block;
+			cursor:pointer; }
+
+		.trackStart {
+			background:url(../img/timerange.png) no-repeat 0 -49px;
+			width:4px; }
+
+		.trackEnd {
+			background:url(../img/timerange.png) no-repeat 0 -17px;
+			width:4px; }
+
+		.span {
+			background-color:$black;
+			cursor:default;
+			height:3px;
+			margin-left:5px;
+			position:relative;
+			z-index:9; }
+	}
+
+	.limits {
+		display:block;
+		font-size:10px;
+
+		> div {
+			clear:none;
+			height:16px;
+			width:60px; }
+
+		.limit {
+			&.min {
+				float:left;
+				text-align:left; }
+
+			&.max {
+				float:right;
+				text-align:right; }
+		}
+	}
+
+	.dates {
+		margin:3px 0;
+		position:relative;
+
+		.start,
+		.ranges {
+			clear:none;
+			float:left; }
+
+		.start {
+			width:100px; }
+
+		.end {
+			clear:none;
+			float:right;
+			width:81px; }
+
+		input {
+			width:60px; }
+
+		.ranges {
+			@include gradient-button;
+			@include border-button;
+			cursor:pointer;
+			left:50%;
+			line-height:20px;
+			margin: -2px 0 0 -75px;
+			padding:0 5px;
+			position:absolute;
+			right:50%;
+			text-align:center;
+			top:0px;
+			white-space:nowrap;
+			width:185px;
+			z-index:5;
+
+			&:hover {
+				margin: -7px -15px -10px -80px;
+				padding:5px 10px 10px 10px;
+				box-shadow:2px 2px 7px $colorNeutral06;
+				border-radius:5px;
+				background-color:$white;
+				background-image:none;
+
+				span.chooseRange {
+					font-weight:bold; }
+
+				ul {
+					display:block; }
+			}
+
+			ul {
+				color:$colorNeutral07;
+				display:none;
+				padding:0px;
+				text-align:left;
+				z-index:9999; /* always in front */
+
+				li {
+					border-bottom:1px solid $colorNeutral02;
+					cursor:pointer;
+					line-height:18px;
+
+					&:hover {
+						background-color:$colorNeutral01; }
+				}
+			}
+		}
+	}
+}

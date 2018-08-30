@@ -1,0 +1,9 @@
+{if empty($multiple) && !$noPleaseSelect && $size==1}
+	<option value="0">{if $pleaseSelectLabel}{Label $pleaseSelectLabel}{else}{Label core.form.select.pleaseSelect}{/if}</option>
+	{if sizeof($options)}
+	<option value="0" disabled="disabled">---------------------------</option>
+	{/if}
+{/if}
+{foreach $options option}
+	<option value="{htmlencode $option.value}" class="{$option.class} {cycle values="odd,even"}" {if in_array($option.value, $value) && !$option.disabled} selected="selected"{/if}{if $option.disabled} disabled="disabled"{/if}>{htmlencode(Label($option.label))}</option>
+{/foreach}

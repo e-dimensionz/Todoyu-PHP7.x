@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">quicktask</attribute>
+		<attribute name="action">index.php?ext=project&amp;controller=quicktask</attribute>
+	</attributes>
+
+	<hiddenFields>
+		<field name="action" noWrap="true" value="save" />
+	</hiddenFields>
+
+	<fieldsets>
+		<fieldset name="main">
+			<legend>project.form.legend.quicktask.basics</legend>
+			<elements>
+
+				<field type="text" name="title">
+					<label>core.global.title</label>
+					<required />
+				</field>
+
+				<field type="text" name="id_project">
+					<comment>this field will be replaced</comment>
+				</field>
+
+				<field type="RTE" name="description">
+					<label>core.global.description</label>
+				</field>
+
+				<field type="select" name="id_activity">
+					<label>project.task.attr.activity</label>
+					<source type="function">
+						<function>TodoyuProjectTaskViewHelper::getTaskActivityOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+					<validate>
+						<isNotZero msg="project.task.attr.id_activity.error" />
+					</validate>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editActivity" />
+					</restrict>
+					<required />
+				</field>
+
+				<field type="checkbox" name="task_done">
+					<label>project.task.taskDone</label>
+					<restrict>
+						<allow ext="project" right="addtask:done:create" />
+					</restrict>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.project.QuickTask.closePopup()</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.project.QuickTask.save(this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

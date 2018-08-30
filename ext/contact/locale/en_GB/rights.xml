@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General Settings</label>
+	<label index="general.use">Use Module Functionality</label>
+	<label index="general.profile">Use Profile</label>
+	<label index="general.area">Use Contacts Area</label>
+	<label index="person">Person</label>
+	<label index="person.seeAllInternalPersons">See All Internal Persons</label>
+	<label index="person.seeAllPersons">See All Persons</label>
+	<label index="person.add">Add Persons</label>
+	<label index="person.editAndDeleteAll">Edit and delete all persons</label>
+	<label index="person.enableLogin">Create Login Account</label>
+	<label index="person.seeComment">See Person Comments</label>
+	<label index="person.editComment">Edit Person Comments</label>
+	<label index="company">Companies</label>
+	<label index="company.seeAllCompanies">See All Companies</label>
+	<label index="company.add">Add Companies</label>
+	<label index="company.editOwn">Edit Own Company (Employer)</label>
+	<label index="company.editAndDeleteAll">Edit And Delete All Companies</label>
+	<label index="company.seeComment">See Company Comments</label>
+	<label index="company.editComment">Edit Company Comments</label>
+	<label index="relation">Contact Relations</label>
+	<label index="relation.seeAllContactinfotypes">See All Contact Information Types</label>
+	<label index="relation.seeHomeAddress">See Home Address</label>
+	<label index="relation.seeBusinessAddress">See Business Address</label>
+	<label index="relation.seeBillingAddress">See Billing Address</label>
+	<label index="panelwidgets">Panel Widgets</label>
+	<label index="panelwidgets.staffSelector">Staff Selector</label>
+	<label index="panelwidgets.export">Export</label>
+</labels>

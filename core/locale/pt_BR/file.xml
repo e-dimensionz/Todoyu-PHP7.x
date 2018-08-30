@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="download">Download</label>
+	<label index="upload">Upload</label>
+	<label index="size.gb">GB</label>
+	<label index="size.mb">MB</label>
+	<label index="size.kb">KB</label>
+	<label index="size.b">B</label>
+	<label index="filename">File Name</label>
+	<label index="filesize">File Size</label>
+</labels>

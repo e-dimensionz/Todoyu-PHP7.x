@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Претрага и филтери</label>
+	<label index="page.title">Претрага</label>
+	<label index="or">ИЛИ</label>
+	<label index="and">И</label>
+	<label index="search.label">Претражи све</label>
+	<label index="filterlabel.filterset">Филтер</label>
+	<label index="filterset.rename">Преимењуј филтер</label>
+	<label index="filterset.delete">Избриши филтер</label>
+	<label index="filterset.confirm.delete">Стварно избрисати филтер?</label>
+	<label index="filterset.confirm.overwrite">Постојећи филтер преписати?</label>
+	<label index="filterset.error.saveWrongType">Молимо изаберите тачну врсту филтера</label>
+	<label index="filterset.error.saveNoConditions">Не постоје услови за сачување</label>
+	<label index="filterset.error.saveEmptyName">Молимо унесите наслов за филтер</label>
+	<label index="negation.default.true">није</label>
+	<label index="negation.default.false">је</label>
+	<label index="negation.datetime.true">после</label>
+	<label index="negation.datetime.false">пре</label>
+	<label index="negation.datetimeDyn.true">Од</label>
+	<label index="negation.datetimeDyn.false">До</label>
+	<label index="negation.numbercompare.true">Манје од</label>
+	<label index="negation.numbercompare.false">Више од</label>
+	<label index="newFilterLabel">Молимо унесите наслов за филтер</label>
+	<label index="newFilterLabel.preset">Нови филтер</label>
+	<label index="subMenuEntry.task">Задаци</label>
+	<label index="subMenuEntry.project">Пројекти</label>
+	<label index="areMatching">%1$d %2$s одговарају вашим критеријама претраге.</label>
+	<label index="areMatching.overLimit">Више од %1$d %2$s одговарају вашим критеријама претраге. Користите овај филтер у портал прегледу да би све одговарајуће евиденције.</label>
+	<label index="filterwidget.condtion.remove">Уклони услов</label>
+	<label index="search.noEntryFound">Ништа није нађено</label>
+	<label index="search.noResultsForActiveFilters">Нема нађених резултата за овај филтер</label>
+	<label index="contextmenu.project.showinproject">Отвори поглед пројект-а</label>
+	<label index="headlet.label">Претражи todoyu</label>
+	<label index="export.error.saveEmpty">Нема резултата за експорт.</label>
+</labels>

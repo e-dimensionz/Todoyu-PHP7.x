@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=profile&amp;controller=general</attribute>
+		<attribute name="name">general</attribute>
+		<attribute name="onsubmit">return false</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="left">
+			<legend>profile.form.legend.basics</legend>
+			<class>left</class>
+			<elements>
+
+				<field type="select" name="locale">
+					<label>profile.ext.general.main.locale</label>
+					<source type="function">
+						<function>TodoyuViewHelper::getAvailableLocaleOptions</function>
+					</source>
+					<noPleaseSelect />
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.profile.General.saveMain(this.form)</onclick>
+				</field>
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

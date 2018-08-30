@@ -1,0 +1,8 @@
+todoyu selenium testsuite steps: bookmark extension
+---------------------------------------------------
+
+* add/delete bookmark
+	add via task context menu (portal > 1st task in todo tab), delete via context menu of item in widget
+* bookmarks panelwidget:
+	check presents
+	test toggle incl. pref.

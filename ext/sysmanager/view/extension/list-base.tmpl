@@ -1,0 +1,73 @@
+{$tabs}
+
+{block name="title"}
+	This part is replaced by the title block
+{/block}
+
+{block name="contentMessage"}
+	This part is replaced by the contentMessage block
+{/block}
+
+{if sizeof($extensions)>0}
+	<table class="list extlist">
+		<colgroup>
+			<col class="icon" />
+			<col class="extkey" />
+			<col class="title" />
+			<col class="edit" />
+			<col class="version" />
+			<col class="state" />
+			<col class="download" />
+			<col class="doc" />
+		</colgroup>
+
+		{include file="list-header.tmpl"}
+		{foreach $extensions extKey extInfo}
+			{if $extInfo}
+				{$extTitle = cat($extKey '.ext.ext.title')}
+			{else}
+				{$extTitle = 'sysmanager.extension.missing'}
+			{/if}
+			{$extTitle = Label($extTitle)}
+			<tr class="{cycle values="odd,even"} {$extKey}{if !$extInfo} missing{/if}">
+				<td class="icon"><a href="javascript:void(0)" onclick="Todoyu.Ext.sysmanager.Extensions.showTab('{$extKey}', 'info')">{extIcon $extKey}</a></td>
+				<td class="extkey" title="{$extKey}"><div class="overflow">{$extKey}</div></td>
+				<td class="title"><div class="overflow">{htmlencode $extTitle}</div></td>
+
+				{block name="edit"}
+					This part is replaced by the edit block
+				{/block}
+
+				<td class="version">{$extInfo.version}</td>
+				<td class="state">
+					{if $extInfo}
+						{ExtensionStatusIcon $extInfo.state}
+					{/if}
+				</td>
+				{restrict 'sysmanager' 'extensions:download'}
+					<td class="download">
+						{if $extInfo}
+						<a title="{Label sysmanager.extension.download}" class="icon download" href="javascript:void(0)" onclick="Todoyu.Ext.sysmanager.Extensions.download('{$extKey}')">
+							<span class="hidden">{Label core.file.download}</span>
+						</a>
+						{/if}
+					</td>
+				{/restrict}
+				<td class="doc">
+					{if $extInfo}
+					<a title="{Label sysmanager.extension.documentation}" class="icon doc" href="{$extInfo.urlDocumentation}" target="_blank">
+						<span class="hidden">{Label sysmanager.extension.documentation}</span>
+					</a>
+					{/if}
+				</td>
+			</tr>
+		{/foreach}
+
+	</table>
+{else}
+	{block name="noExtensions"}
+		This block is replaced if there are no extensions to be listed
+	{/block}
+{/if}
+
+{block name="buttons"}{/block}

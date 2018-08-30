@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Select project</legend>
+			<elements>
+
+				<field type="textAC" name="id_project_ac">
+					<label>project.ext.project</label>
+					<config>
+						<acLabel>TodoyuProjectProjectViewHelper::getQuicktaskAutocompleteLabel</acLabel>
+						<options>
+							<acName>taskaddableproject</acName>
+							<onSelected>Todoyu.Ext.project.Task.Edit.onProjectAcSelected</onSelected>
+						</options>
+					</config>
+					<required />
+				</field>
+
+				<field type="select" name="id_project_select">
+					<label>project.ext.project</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getAvailableProjectOptions</function>
+					</source>
+					<extraAttributes>onchange="Todoyu.Ext.project.Task.Edit.onProjectSelectSelected(this)"</extraAttributes>
+					<noPleaseSelect />
+					<required />
+				</field>
+
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

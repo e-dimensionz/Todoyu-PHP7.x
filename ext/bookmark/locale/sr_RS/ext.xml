@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Означени задаци</label>
+	<label index="title">Означени задаци</label>
+	<label index="info.nobookmarks">Досад не постоје означени задаци</label>
+	<label index="contextmenu.removebookmark">Уклони из означених задатка</label>
+	<label index="contextmenu.editbookmarks">Измени ознаku</label>
+	<label index="contextmenu.addbookmark">Додај у означене задатке</label>
+	<label index="profile.module">Ознаke</label>
+	<label index="profile.module.tasks.tab">Задатак</label>
+	<label index="profile.module.tasks.bookmarksOf">Означене задатке од</label>
+	<label index="profile.module.tasks.listing.task">Задатак</label>
+	<label index="profile.module.tasks.listing.title">Назив</label>
+	<label index="profile.module.tasks.listing.label">Лабел</label>
+	<label index="bookmark.edit">Измени означено</label>
+	<label index="bookmark.rename">Измени ознаку</label>
+	<label index="bookmark.delete.confirm">Стварно желите да избришете ову ознаку?</label>
+	<label index="bookmark.attr.title">Лабел</label>
+	<label index="bookmark.type.task">Задатак</label>
+	<label index="bookmark.saved">Ознака је сачувана</label>
+	<label index="bookmark.saved.error">Настала је грешка у току сачувања ознаке.</label>
+</labels>

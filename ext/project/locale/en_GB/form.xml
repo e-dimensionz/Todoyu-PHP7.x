@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.task.basics">Basic Information</label>
+	<label index="legend.task.attributes">Attributes</label>
+	<label index="legend.container.basics">Basic Information</label>
+	<label index="legend.container.attributes">Attributes</label>
+	<label index="legend.project.basics">Basic Information</label>
+	<label index="legend.project.preset">Preset configuration</label>
+	<label index="legend.project.members">Members of the project</label>
+	<label index="legend.quicktask.basics">Basic Information</label>
+	<label index="legend.project.approvalroles">Invoice Approval Roles</label>
+	<label index="legend.quicktask.basics">Basic information about your task</label>
+	<label index="legend.admin.basics">Default settings of your tasks</label>
+	<label index="legend.admin.quicktask">Default behaviour for quicktasks</label>
+	<label index="legend.admin.fallbacks">Fallback defaults for persons with limited rights</label>
+	<label index="legend.admin.projectrole.record.general">Project Role</label>
+	<label index="legend.admin.activity.record.general">Activity Type</label>
+	<label index="legend.admin.taskpreset.record.preset">Task Preset</label>
+	<label index="legend.admin.taskpreset.record.general">Default settings of tasks</label>
+	<label index="legend.admin.taskpreset.record.quicktask">Default behaviour for quicktasks</label>
+	<label index="legend.admin.taskpreset.record.fallbacks">Fallback defaults for persons with limited rights</label>
+	<label index="extconf.basic">Basic settings</label>
+</labels>

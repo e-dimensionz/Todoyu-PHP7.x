@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Informació bàsica de l'esdeveniment</label>
+	<label index="legend.participants">Participants</label>
+	<label index="legend.details">Further Informació</label>
+	<label index="legend.notification">Notifica als participants</label>
+	<label index="legend.autonotification">Els participants reben una notificació automàtica per correu</label>
+	<label index="legend.reminders">Els meus recordatoris per aquesta cita</label>
+	<label index="legend.profile.appearance">Apariància</label>
+	<label index="legend.profile.general">Paràmetres generals del calendari</label>
+	<label index="legend.profile.reminder.general">Configuri els recordatoris a les seves necessitats</label>
+	<label index="legend.admin.appearance">Apariència</label>
+	<label index="legend.admin.overbooking">Configura el comportament per l'excès de reserves/label>
+	<label index="legend.admin.reminders">Configuració general dels recordatoris</label>
+	<label index="legend.admin.automaticEmail">Configura el comportament de les notificacions</label>
+	<label index="legend.admin.holidayset.record.general">Grup de vacances</label>
+	<label index="legend.admin.holiday.record.general">Vacances</label>
+	<label index="comment.autonotification.label">Envia correus a:</label>
+	<label index="comment.autonotification.noroles">Cap participant té un rol preestablert per l'autonotificació.</label>
+	<label index="legend.series">Sèries d'esdeveniments</label>
+</labels>

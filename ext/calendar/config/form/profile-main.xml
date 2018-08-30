@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=calendar&amp;controller=profile</attribute>
+		<attribute name="name">general</attribute>
+		<attribute name="onsubmit">return false</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="appearance">
+			<legend>calendar.form.legend.profile.appearance</legend>
+			<class>appearance</class>
+			<elements>
+				<field type="select" name="range_start">
+					<label>calendar.ext.profile.range.start</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getHourRangeStartOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+				<field type="select" name="range_end">
+					<label>calendar.ext.profile.range.end</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getHourRangeEndOptions</function>
+						<lazyInit />
+					</source>
+					<validate>
+						<greaterThan msg="calendar.ext.profile.range.error">
+							<field>range_start</field>
+						</greaterThan>
+					</validate>
+					<noPleaseSelect />
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="general">
+			<legend>calendar.form.legend.profile.general</legend>
+			<class>main</class>
+			<elements>
+				<field type="checkbox" name="is_mailpopupdeactivated">
+					<label>calendar.ext.profile.disableMailingQuestionAfterDraganddrop</label>
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.calendar.Profile.saveMain(this.form)</onclick>
+				</field>
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

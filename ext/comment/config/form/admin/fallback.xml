@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+
+	<fieldsets>
+
+		<fieldset name="fallback">
+			<legend>comment.form.fallback.legend.fallback</legend>
+
+			<elements>
+				<field type="text" name="title">
+					<label>comment.ext.fallback.title</label>
+					<required />
+				</field>
+			</elements>
+
+		</fieldset>
+
+		<fieldset name="help">
+			<legend>comment.form.fallback.legend.help</legend>
+			<elements>
+
+				<field type="comment" name="helptext">
+					<comment>comment.ext.fallback.helptext</comment>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="general">
+			<legend>comment.form.fallback.legend.general</legend>
+			<elements>
+
+				<field type="checkbox" name="is_public">
+					<label>comment.ext.fallback.is_public</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="feedback">
+			<legend>comment.form.fallback.legend.feedback</legend>
+			<elements>
+
+				<field type="select" name="id_person_feedback">
+					<label>comment.ext.fallback.id_person_feedback</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getInternalPersonOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="taskperson_feedback">
+					<label>comment.ext.fallback.taskperson_feedback</label>
+					<source type="function">
+						<function>TodoyuCommentViewHelper::getFallbackTaskPersonOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="id_role_feedback">
+					<label>comment.ext.fallback.id_role_feedback</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getExtConfProjectRoles</function>
+					</source>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="email">
+			<legend>comment.form.fallback.legend.email</legend>
+			<elements>
+
+				<field type="select" name="id_person_email">
+					<label>comment.ext.fallback.id_person_email</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getInternalPersonOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="taskperson_email">
+					<label>comment.ext.fallback.taskperson_email</label>
+					<source type="function">
+						<function>TodoyuCommentViewHelper::getFallbackTaskPersonOptions</function>
+					</source>
+				</field>
+
+				<field type="select" name="id_role_email">
+					<label>comment.ext.fallback.id_role_email</label>
+					<source type="function">
+						<function>TodoyuProjectProjectViewHelper::getExtConfProjectRoles</function>
+					</source>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

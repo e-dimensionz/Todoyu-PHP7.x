@@ -1,0 +1,71 @@
+<div class="portalEventsList">
+	{template eventsHeader}
+		<h1 class="headerLine">
+			<span class="first taskDate">{Label core.date.time}</span>
+			<span class="eventType">{Label calendar.event.tree.header.eventtype}</span>
+			<span class="eventTitle">{Label calendar.event.tree.header.title}</span>
+			<span class="rgt"><!-- --></span>
+		</h1>
+	{/template}
+
+	{eventsHeader}
+
+	<div class="events" id="events">{* ----- The actual list of events ----- *}
+		{$todayStart = TodoyuTime::getStartOfDay(time())}
+		{$todayEnd = TodoyuTime::getDayEnd(time())}
+		{$thisWeekStart = TodoyuTime::getWeekStart(time())}
+		{$thisWeekEnd = TodoyuTime::getWeekEnd(time())}
+		{$eventsCounter = 0}
+		{$weekTitleShown = false}
+		{$futureTitleShown = false}
+
+		{foreach $staticEvents event}
+			{if $event.date_start >= $todayStart && $event.date_start <= $todayEnd}
+				{if $eventsCounter == 0}
+					<h2><span class="eventsGroupTitle">{Label core.date.today}</span></h2>
+				{/if}
+			{else}
+				{if $weekTitleShown == false && $event.date_start >= $thisWeekStart && $event.date_start <= $thisWeekEnd}
+					{$weekTitleShown = true}
+					<h2><span class="eventsGroupTitle">{Label calendar.ext.currentweek} ({dateFormat time() calendarweek})</span></h2>
+				{else}
+					{if $futureTitleShown == false && $event.date_start > $thisWeekEnd}
+						{$futureTitleShown = true}
+						{$eventsCounter = 0}
+						<h2><span class="eventsGroupTitle">{Label calendar.ext.furtherevents}</span></h2>
+					{/if}
+				{/if}
+			{/if}
+
+			{* ------- Event entry ------- *}
+			<div id="event-{$event.source}-{$event.id}" class="event {cycle values="odd,even"} source{ucfirst $event.source} type{ucfirst $event.type} contextmenuEventPortal {if $event.id_series > 0}series{$event.id_series}{/if}">
+				<h3 id="event-{$event.id}-header" name="event-{$event.id}">
+					<span class="icon typeIcon" title="{Label calendar.event.attr.eventtype}: {EventTypeLabel $event.type}"> </span>
+					<span id="acknowledge-{$event.id}" class="icon acknowledge {if !$event.isAcknowledged}not{/if}{if $event.isUpdated} updated{/if}" {if !$event.isAcknowledged}onclick="Todoyu.Ext.calendar.EventPortal.acknowledgeEvent({$event.id})"{/if}> </span>
+					<span class="label" onclick="Todoyu.Ext.calendar.EventPortal.toggleDetails({$event.id})">
+						<span class="date">{formatRange $event.date_start $event.date_end} {if $event.date_end-$event.date_start}({formatDuration $event.date_end-$event.date_start}){/if}</span>
+						<span class="eventtype">{EventTypeLabel $event.eventtype}</span>
+						<span class="title">{htmlencode $event.title}</span>
+					</span>
+					<div class="clear"><!-- --></div>
+				</h3>
+
+				{$event.details}
+			</div>
+			{$eventsCounter = $eventsCounter+1}
+			{* ------- End: event entry ------- *}
+		{else}
+			{contentMessage 'calendar.event.error.noAppointmentsFound'}
+		{/foreach}
+	</div>
+
+{if $holidayEvents}{include file="portal-list-events-holiday.tmpl"}{/if}
+
+{if $birthdayEvents}{include file="portal-list-events-birthday.tmpl"}{/if}
+
+</div>
+
+<script type="text/javascript">
+	Todoyu.Ext.calendar.ContextMenuEventPortal.attach();
+	Todoyu.Ext.calendar.installQuickInfos();
+</script>

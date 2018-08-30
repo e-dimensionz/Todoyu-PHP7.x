@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Общие установки</label>
+	<label index="general.use">Использовать активы</label>
+	<label index="asset">Активы</label>
+	<label index="asset.seeAll">Показать все активы</label>
+	<label index="asset.delete">Удалить актив</label>
+</labels>

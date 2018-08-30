@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Výkaz práce</label>
+	<label index="pwidget.title">Dnešní zaznamenaný čas</label>
+	<label index="totalToday">Dnešní zaznamenaný čas</label>
+	<label index="totalToday.noTracks">Žádný zaznamenaný čas</label>
+	<label index="showHistory">Zobrazit výkazy práce</label>
+	<label index="goToTask">Přejít na úkol</label>
+</labels>

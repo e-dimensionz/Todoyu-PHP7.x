@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Task Assets</label>
+	<label index="search.label">Assets</label>
+	<label index="tab.noAssets">Add First Asset</label>
+	<label index="tab.asset">Asset</label>
+	<label index="tab.assets">Assets</label>
+	<label index="tab.toggle">Assets On/Off</label>
+	<label index="list.header.uploaddate">Upload Date</label>
+	<label index="alt.download">Download File</label>
+	<label index="alt.uploadedby">Uploaded By</label>
+	<label index="alt.delete">Delete File</label>
+	<label index="alt.changeVisibility">Change visibility</label>
+	<label index="alt.selectall">Select All/None</label>
+	<label index="upload.selectfile">Select a file to upload</label>
+	<label index="upload.filename">Filename</label>
+	<label index="upload.new">Add New File</label>
+	<label index="delete.confirm">Do you really want to delete this file?</label>
+	<label index="delete.notifiy.success">The file has been deleted.</label>
+	<label index="togglepublic.notifiy.ispublic">The file is now visible also for customers that can see the task.</label>
+	<label index="togglepublic.notifiy.notpublic">The file is now not visible for customers that can see the task.</label>
+	<label index="download.selection">Download Selection</label>
+	<label index="download.normal">You only selected one file -> normal file download</label>
+	<label index="download.compressed">The selected files have been packed into an archive for download</label>
+	<label index="error.minimumFile">Please select at least one file</label>
+	<label index="error.download">Download of asset is not possible</label>
+	<label index="error.access">No access to this asset</label>
+	<label index="maxFileSizeExceeded">The file '#{filename}' has exceeded the maximum allowed filesize (#{maxFileSize}) to upload</label>
+	<label index="maxLengthFileNameExceeded">The file '#{filename}' has exceeded the maximum allowed length (#{maxLengthFileName}) of its name to upload</label>
+	<label index="uploadFailed">The upload of the file '#{filename}' has failed</label>
+	<label index="uploadOk">The file has been uploaded.</label>
+	<label index="uploadCanceled">The upload has been canceled</label>
+	<label index="locked">This task is locked. You can't add files.</label>
+	<label index="task.icon">Task has assets</label>
+	<label index="contextmenu.task.addasset">Asset</label>
+	<label index="type.task">Task Assets</label>
+	<label index="type.comment">Comment Assets</label>
+	<label index="type.project">Project Assets</label>
+	<label index="preview.notpossible">The preview is not possible!</label>
+</labels>

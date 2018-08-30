@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">通用设置</label>
+	<label index="general.use">使用时间跟踪</label>
+	<label index="task">时间跟踪</label>
+	<label index="task.track">时间跟踪</label>
+	<label index="task.editOwn">可编辑自己的跟踪时间</label>
+	<label index="task.editOwnChargeable">可编辑自己的可支付跟踪时间</label>
+	<label index="task.editAll">可编辑所有用户的跟踪时间</label>
+	<label index="task.editAllChargeable">可编辑所有用户的可支持跟踪时间</label>
+</labels>

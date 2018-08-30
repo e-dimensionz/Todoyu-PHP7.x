@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Bitte wählen</label>
+	<label index="field.isrequired">Dieses Feld muss ausgefüllt werden</label>
+	<label index="field.hasError">Diese Eingabe ist ungültig</label>
+	<label index="field.save">Speichern</label>
+	<label index="field.cancel">Abbrechen</label>
+	<label index="records.add">Datensatz anfügen</label>
+	<label index="records.remove">Datensatz entfernen</label>
+	<label index="records.edit">Datensatz bearbeiten</label>
+	<label index="records.removeconfirm">Sind Sie sicher, dass Sie diesen Datensatz entfernen wollen?</label>
+	<label index="databaserelation.nolabel">[Neuer Eintrag]</label>
+	<label index="databaserelation.expandAllRecords">Details anzeigen</label>
+	<label index="error.notUnique">Dieser Eintrag existiert bereits</label>
+	<label index="error.duration.invalidinput">Dauer in ungültig, bitte korrigieren.</label>
+	<label index="ac.noResults">Autovervollständigung: Keine Resultate gefunden</label>
+	<label index="is_preferred">Bevorzugt</label>
+	<label index="confirm.toggle.is_preferred.on">Nur ein Datensatz dieses Typs kann jeweils als bevorzugt gewählt werden. Diesen Datensatz wirklich als bevorzugt anwählen?</label>
+	<label index="confirm.toggle.is_preferred.off">Nur ein Datensatz dieses Typs kann jeweils als bevorzugt gewählt werden. Diesen Datensatz wirklich nicht mehr als bevorzugen?</label>
+	<label index="dateselector.open">Öffne Kalender um ein Datum auszuwählen</label>
+	<label index="autocompleteInfo">Dieses Feld wird automatisch vervollständigt. Fangen Sie an zu schreiben um die Vorschläge zu sehen</label>
+	<label index="legend.main">Rollendefinition</label>
+	<label index="daterange.choose">Wählen Sie einen Zeitabschnitt</label>
+	<label index="daterange.monthToDate">Aktueller Monat</label>
+	<label index="daterange.yearToDate">Aktuelles Jahr</label>
+	<label index="daterange.quarterToDate">Aktuelles Quartal</label>
+	<label index="daterange.previousMonth">Vorangehender Monat</label>
+	<label index="daterange.previousQuarter">Vorangehendes Quartal</label>
+	<label index="daterange.previousYear">Vorangehendes Jahr</label>
+	<label index="daterange.fullTimeRange">Gesamte mögliche Zeitspanne</label>
+</labels>

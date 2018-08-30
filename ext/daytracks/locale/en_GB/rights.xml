@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General</label>
+	<label index="general.use">Use Time Sheet Functionality</label>
+	<label index="panelwidgets">Panel Widgets</label>
+	<label index="daytracks">Panel widget time sheet</label>
+	<label index="daytracks.timeExport">Export Time Sheet</label>
+	<label index="daytracks.timeExportAllPerson">Export time sheet of all persons</label>
+	<label index="daytracks.timeExportAllEmployer">Export time sheet of all employers</label>
+	<label index="daytracks.switchuser">Can see time sheet of other persons</label>
+</labels>

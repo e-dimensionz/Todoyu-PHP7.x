@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Zeiterfassung</label>
+	<label index="title">Zeiterfassung</label>
+	<label index="noTracksYet">Noch keine Zeiterfassungen.</label>
+	<label index="chargeable">Verrechenbar</label>
+	<label index="attr.date_create">Datum</label>
+	<label index="attr.date_track">Datum</label>
+	<label index="attr.workload_tracked">Arbeitsaufwand</label>
+	<label index="attr.workload_chargeable">Verrechenbarer Arbeitsaufwand</label>
+	<label index="attr.comment">Kommentar</label>
+	<label index="search.label">Zeiterfassung</label>
+	<label index="task.attr.overtimed">Aufgabezeit überschritten</label>
+	<label index="headlet.label">Zeiterfassung</label>
+	<label index="totalTrackedTime">Total erfasste Zeit</label>
+	<label index="totalChargeableTime">Total verrechenbare Zeit</label>
+	<label index="tasktab.edit">Klicken Sie hier um diesen Eintrag zu bearbeiten</label>
+	<label index="start">Zeiterfassung starten</label>
+	<label index="stop">Zeiterfassung stoppen</label>
+	<label index="currentTask">Aktuelle Aufgabe</label>
+	<label index="showCurrentTaskInProject">Aufgabe im Projekt anzeigen</label>
+	<label index="quicktask.workload_done">Schon gearbeitete Zeit</label>
+	<label index="estimated_workload">geschätzt</label>
+	<label index="jumpToTask">Klicken Sie hier um zu diesem Task zu wechseln</label>
+	<label index="jumpToProject">Klicken Sie hier um zu diesem Projekt zu wechseln</label>
+	<label index="extconf.stopOnLogout">Laufende Zeiterfassung bei Log-Out stoppen</label>
+	<label index="extconf.tolerance">Toleranz für Zeitüberschreitung (in %)</label>
+</labels>

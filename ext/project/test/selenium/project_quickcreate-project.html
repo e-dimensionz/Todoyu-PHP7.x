@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>project > quickcreate project</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">project > quickcreate project</td></tr>
+</thead><tbody>
+<!------- project > quickcreate project-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>todoyuheadletquickcreate-button</td>
+	<td></td>
+</tr>
+<!--open headlet content-->
+<tr>
+	<td>click</td>
+	<td>todoyuheadletquickcreate-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--content menu visible (new task, project, event, person, company)-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=li#todoyuheadletquickcreate.headlet ul#todoyuheadletquickcreate-content.content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=a.todoyuheadletquickcreate-item-project-task</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=a.todoyuheadletquickcreate-item-project-project</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=a.todoyuheadletquickcreate-item-calendar-event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=a.todoyuheadletquickcreate-item-contact-person</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=a.todoyuheadletquickcreate-item-contact-company</td>
+	<td></td>
+</tr>
+<!--click create project-->
+<tr>
+	<td>click</td>
+	<td>css=a.todoyuheadletquickcreate-item-project-project</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--popup shown, form ok?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=html body#todoyu-project.todoyu-project div#quickcreate.dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-status</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-date-start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-date-end</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-date-deadline</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-id-company-fulltext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-id-taskpreset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>add-record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>project-0-field-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Please enter a project title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>This is a required field</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>A customer is required for a project</td>
+	<td></td>
+</tr>
+<!--can be closed via cancel button?-->
+<tr>
+	<td>click</td>
+	<td>project-0-field-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=html body#todoyu-project.todoyu-project div#quickcreate.dialog</td>
+	<td></td>
+</tr>
+<!--open popup again, close with close-button (X)-->
+<tr>
+	<td>click</td>
+	<td>todoyuheadletquickcreate-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.todoyuheadletquickcreate-item-project-project</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#quickcreate.dialog div#quickcreate_close.dialog_close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=html body#todoyu-project.todoyu-project div#quickcreate.dialog</td>
+	<td></td>
+</tr>
+<!--open popup again, try saving empty (should fail)-->
+<tr>
+	<td>click</td>
+	<td>todoyuheadletquickcreate-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.todoyuheadletquickcreate-item-project-project</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>project-0-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Please enter a project title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>This is a required field</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>A customer is required for a project</td>
+	<td></td>
+</tr>
+<!--fill out some required textual fields: title, description, save again-->
+<tr>
+	<td>type</td>
+	<td>project-0-field-title</td>
+	<td>new project for testing</td>
+</tr>
+<!--comment via tinyMce-->
+<tr>
+	<td>selectFrame</td>
+	<td>css=#project-0-field-description_ifr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>//html/body[@id=&quot;tinymce&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>//html/body[@id=&quot;tinymce&quot;]</td>
+	<td>And here some wonderfull description...</td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>project-0-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--Title and description validate now?-->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Please enter a project title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>This is a required field</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>A customer is required for a project</td>
+	<td></td>
+</tr>
+<!--enter time dates textually-->
+<tr>
+	<td>type</td>
+	<td>project-0-field-date-start</td>
+	<td>01/01/2016</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>project-0-field-date-end</td>
+	<td>02/02/2016</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>project-0-field-date-deadline</td>
+	<td>02/02/2016</td>
+</tr>
+<!--use customer AC-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>project-0-field-id-company-fulltext</td>
+	<td>e</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>project-0-field-id-company-fulltext</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>project-0-field-id-company-fulltext</td>
+	<td>s</td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>project-0-field-id-company-fulltext</td>
+	<td>b</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>project-0-field-id-company-fulltext</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>--------------------------------------</td>
+	<td></td>
+</tr>
+<!--form should be filled ok, try saving-->
+<tr>
+	<td>click</td>
+	<td>project-0-field-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[@id=&quot;project-15-titlelabel&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>new project for testing</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

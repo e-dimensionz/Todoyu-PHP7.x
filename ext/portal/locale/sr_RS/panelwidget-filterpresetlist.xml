@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Моји филтери</label>
+	<label index="create">Намести Филтер</label>
+	<label index="manage">Обрађуј филтере</label>
+	<label index="amount">Количина</label>
+	<label index="error.noFilters">Нема ниједног намештеног филтера досад</label>
+	<label index="error.noTypeFiltersets">Нема дефинисаног филтера</label>
+</labels>

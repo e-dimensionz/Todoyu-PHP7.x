@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General Settings</label>
+	<label index="general.use">Use Time Tracking</label>
+	<label index="task">Task Tracking</label>
+	<label index="task.track">Track Time</label>
+	<label index="task.editOwn">Can edit tracked time of own tracks</label>
+	<label index="task.editOwnChargeable">Can edit chargeable time of own tracks</label>
+	<label index="task.editAll">Can edit tracked time of all users</label>
+	<label index="task.editAllChargeable">Can edit chargeable time of all users</label>
+	<label index="task.seeCurrentTracking">Can see current tracking</label>
+</labels>

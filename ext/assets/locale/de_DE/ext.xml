@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Aufgaben-Anhänge</label>
+	<label index="search.label">Anhänge</label>
+	<label index="tab.noAssets">Anhang anfügen</label>
+	<label index="tab.asset">Anhang</label>
+	<label index="tab.assets">Anhänge</label>
+	<label index="tab.toggle">Anhänge an/aus</label>
+	<label index="list.header.uploaddate">Upload-Datum</label>
+	<label index="alt.download">Datei herunterladen</label>
+	<label index="alt.uploadedby">Aktualisiert von</label>
+	<label index="alt.delete">Datei löschen</label>
+	<label index="alt.changeVisibility">Sichtbarkeit ändern</label>
+	<label index="alt.selectall">alle/keinen auswählen</label>
+	<label index="upload.selectfile">Datei für Upload auswählen</label>
+	<label index="upload.filename">Dateiname</label>
+	<label index="upload.new">Neue Datei anfügen</label>
+	<label index="delete.confirm">Wollen Sie diese Datei wirklich löschen?</label>
+	<label index="togglepublic.notifiy.ispublic">Die Datei ist nun für Kunden welche die Aufgabe sehen dürfen, sichtbar.</label>
+	<label index="togglepublic.notifiy.notpublic">Die Datei ist nun für Kunden welche die Aufgabe sehen dürfen, nicht sichtbar.</label>
+	<label index="delete.notifiy.success">Die Datei wurde gelöscht.</label>
+	<label index="download.selection">Auswahl herunterladen</label>
+	<label index="download.normal">Sie haben nur eine Datei gewählt. Normaler Dateidownload</label>
+	<label index="download.compressed">Die gewählten Dateien werden für den Download gepackt</label>
+	<label index="error.minimumFile">Bitte wählen Sie mindestens eine Datei</label>
+	<label index="error.download">Herunterladen der Datei ist nicht möglich</label>
+	<label index="error.access">Kein Berechtigung für diese Datei</label>
+	<label index="maxFileSizeExceeded">Die Datei '#{filename}' hat die maximal zulässige Grösse für Uploads (#{maxFileSize}) überschritten</label>
+	<label index="maxLengthFileNameExceeded">Der Name der Datei '#{filename}' ist zu lang (max. #{maxLengthFileName} Zeichen)</label>
+	<label index="uploadFailed">Das Hochladen der Datei '#{filename}' ist fehlgeschlagen</label>
+	<label index="uploadOk">Die Datei wurde erfolgreich hochgeladen.</label>
+	<label index="uploadCanceled">Das Hochladen wurde abgebrochen</label>
+	<label index="locked">Die Aufgabe ist gesperrt. Es können keine Dateien angefügt werden</label>
+	<label index="task.icon">Aufgabe hat Dateianhänge</label>
+	<label index="contextmenu.task.addasset">Dateianhang</label>
+	<label index="type.task">Aufgaben-Anhänge</label>
+	<label index="type.comment">Kommentar-Anhänge</label>
+	<label index="type.project">Projekt-Anhänge</label>
+	<label index="preview.notpossible">Die Anzeige der Vorschau ist nicht möglich!</label>
+</labels>

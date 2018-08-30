@@ -1,0 +1,75 @@
+@import "../../config/theme.scss";
+
+
+
+#content-tabs {
+	position:relative;
+	top: -35px;
+	left: -9px;
+	width:920px;
+	height:26px;
+
+	li {
+		p.label span.labeltext {
+			color:$colorNeutral08; }
+
+		&.active p.label span.labeltext,
+		p.label:hover span.labeltext {
+			color:$colorTextGeneral; }
+	}
+}
+
+#content .tabs {
+	z-index:2;
+	height:26px;
+	width:100%;
+	position:relative;
+	display:table;
+	margin:0px;
+	padding:0px;
+
+	li {
+		float:left;
+		margin-right:3px;
+		cursor:pointer;
+		border: {
+			radius:5px 5px 0 0;
+			top:1px solid $colorNeutral02;
+			bottom:1px solid $white; }
+		box-shadow:0 -1px -1px $colorCorporate04 inset;
+
+		p {
+			display:block;
+			width:auto !important;
+			width:1px;
+			height:auto !important;
+			height:1px;
+			line-height:26px;
+			padding:0 10px;
+
+			text-transform:uppercase;
+			letter-spacing:1px;
+			white-space:nowrap;
+
+			.icon {
+				display:block;
+				float:left;
+				position:relative;
+				margin-left: -5px;
+				height:26px;
+				width:20px;
+				background-repeat:no-repeat; }
+
+			.labeltext {
+				font: {
+					size:11px;
+					weight:bold; }
+			}
+		}
+
+		&:hover,
+		&.active {
+			background-color:$white;
+			box-shadow:none; }
+	}
+}

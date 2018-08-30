@@ -1,0 +1,50 @@
+Comment Extension - PHP Hooks
+=============================
+
+Event Hooks
+***************************************
+
+#comment.comment.save
+	Comment was saved (added or updated)
+	@param	Integer		$idComment
+
+
+#comment.comment.add
+	Comment was added
+	@param	Integer		$idComment
+
+
+#comment.comment.update
+	Comment was updated
+	@param	Integer		$idComment
+	@param	Array		$data
+
+
+#comment.comment.delete
+	Comment was deleted
+	@param	Integer		$idComment
+
+
+#comment.feedback.add
+	A feedback request was added
+	@param	Integer		$idFeedback
+	@param	Integer		$idComment
+	@param	Integer		$idFeedbackPerson
+
+
+#comment.feedback.seen
+	The feedback (comment) was marked as seen
+	@param	Integer		$idComment
+	@param	Integer		$idPerson
+
+
+#comment.task.seen
+	The task was marked as seen (all comments/feedbacks are seen)
+	@param	Integer		$idTask
+	@param	Integer		$idPerson
+
+
+#comment.comment.email
+	The comment was sent by email
+	@param	Integer		$idComment
+	@param	Integer		$idPerson

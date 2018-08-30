@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">個人の設定</label>
+	<label index="page.title">自分のプロフィール</label>
+	<label index="headlet.label">自分の設定</label>
+	<label index="module.general">一般の設定</label>
+	<label index="general.main.tab">メイン</label>
+	<label index="general.main.locale">言語</label>
+	<label index="general.main.saved">設定を保存しました</label>
+	<label index="general.main.saved.pleaseWait">todoyuは選択された言語のためのキャッシュファイルを生成します。ちょっと気を楽にしてお待ちください。</label>
+	<label index="general.password.title">自分のパスワード変更</label>
+	<label index="general.password.tab">パスワード</label>
+	<label index="general.password.current">現在のパスワード</label>
+	<label index="general.password.current.empty">以前のパスワードを入力して、変更してください</label>
+	<label index="general.password.current.wrong">入力した以前のパスワードは正しくありません</label>
+	<label index="general.password.new1">新しいパスワード</label>
+	<label index="general.password.new2">確認用に再入力</label>
+	<label index="general.password.error">パスワードを変更できません</label>
+	<label index="general.password.success">パスワードを変更しました</label>
+	<label index="general.password.notEqual">新しいパスワードは一致しません</label>
+	<label index="general.main.header">個人の設定</label>
+	<label index="general.password.header">パスワード</label>
+</labels>

@@ -1,0 +1,20 @@
+<div class="projectlist" id="projectlist">
+
+{* ---------- Header with column titles ---------- *}
+	<h1 class="headerLine">
+		<span class="first fulltitle">{Label portal.ext.tasktree.header.customer} - {Label project.ext.project}</span>
+		<span class="projectNumber">{Label portal.ext.tasktree.header.tasknumber}</span>
+	</h1>
+
+{* ---------- The actual list of tasks ---------- *}
+	<div class="projects">
+		{foreach $projects projectHTML}
+			{$projectHTML}
+		{else}
+			{contentMessage 'portal.ext.selection.noProjectsFound'}
+		{/foreach}
+	</div>
+</div>
+<script type="text/javascript">
+{$javascript}
+</script>

@@ -1,0 +1,37 @@
+<h3 id="task-{$task.id}-header" class="contextmenutask bcStatus{$task.status} taskHeader">
+	<span class="statusColor bcStatus{$task.status}"></span>
+
+	<span class="dndHandle {if $task.isDraggable}draggable{/if}"></span>
+	<span id="task-{$task.id}-subtasks-trigger" onclick="Todoyu.Ext.project.TaskTree.toggleSubTasks({$task.id})" class="subtaskTrigger {if $hasSubtasks}expandable{/if} {if $areSubtasksVisible}expanded{/if}"></span>
+	<span class="headLabel" title="{htmlencode $task.fulltitle}" onclick="Todoyu.Ext.project.Task.toggleDetails({$task.id})">
+		<span class="taskDate date" title="{dateFormat $task.date_start D2M2Y2} - {if $task.type === constant('TASK_TYPE_TASK') && $task.date_end > 0}{dateFormat $task.date_end D2M2Y2}{else}{dateFormat $task.date_deadline D2M2Y2}{/if}">
+			{if !$task.is_container && $task.date_end > 0}
+				{dateFormat $task.date_end D2M2Y2}
+			{else}
+				{dateFormat $task.date_deadline D2M2Y2}
+			{/if}
+			&nbsp;
+		</span>
+		<span class="projectName" title="{if $task.is_container}{Label project.task.container}{else}{Label project.task.task}{/if}: {htmlencode $task.title}">
+			{htmlencode($task.title)}
+		</span>
+	</span>
+
+	<span class="taskHeadExtras">
+		{foreach $taskHeaderExtras headerExtra}
+			<span id="task-{$task.id}-headerextra-{$headerExtra.key}" class="{$headerExtra.key}" {if $headerExtra.title}title="{htmlencode $headerExtra.title}"{/if}>
+				{$headerExtra.content}
+			</span>
+		{/foreach}
+	</span>
+
+	<span class="taskNumber" title="ID: {$task.id}">
+		<span class="taskNumberProject">{$task.id_project}</span>.<span class="taskNumberTask">{$task.tasknumber}</span>
+	</span>
+
+	<span class="taskIcons{if !empty($taskIcons) && sizeof($taskIcons) > 4} taskIconsOverflow{/if}">
+		{foreach $taskIcons taskIcon}
+			<span id="{$taskIcon.id}" class="{$taskIcon.class}" title="{Label $taskIcon.label}" {if $taskIcon.onclick}onclick="{$taskIcon.onclick}"{/if}></span>
+		{/foreach}
+	</span>
+</h3>

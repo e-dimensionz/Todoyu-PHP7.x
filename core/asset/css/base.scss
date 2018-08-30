@@ -1,0 +1,205 @@
+@import "../../config/theme.scss";
+
+
+
+* {
+	color:$colorTextGeneral;
+	font: {
+		size:$fontSizeMain;
+		family:$fontFamilyMain;
+	}
+	margin:0;
+	padding:0;
+	outline:0;
+	background-repeat:no-repeat; }
+
+html, body {
+	height:100%;
+	text-align:center; }
+
+
+
+/* --------------------------
+	HTML Tags
+   -------------------------- */
+img { border:0px; }
+
+a {
+	text-decoration:none;
+
+	&:focus {
+		outline:none; }
+}
+
+caption {
+	display:none; }
+
+table {
+	border: {
+		collapse:separate;
+		spacing:0px; }
+
+	&.fixedTable {
+		table-layout:fixed; }
+
+	&.autoWidthTable {
+		width:auto; }
+}
+
+th {
+	text-align:left;
+	vertical-align:top; }
+
+td {
+	vertical-align:top; }
+
+ul {
+	list-style:none; }
+
+ol {
+	list-style-position:outside;
+	padding: {
+		left:5px;
+		bottom:5px; }
+}
+
+p {
+	line-height:15px;
+	padding-bottom:5px; }
+
+
+
+/* ------------------------------
+	Heading
+   ------------------------------ */
+h1 {
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+
+	span {
+		float:left; }
+}
+
+h1, h1 * {
+	font: {
+		size:11px;
+		weight:normal;
+	}
+	text-transform:uppercase;
+	white-space:nowrap;
+	letter-spacing:0.1em; }
+
+h3 {
+	height:12px;
+	padding:5px 0 7px 12px;
+	background-color:$colorNeutral02;
+	font-weight:normal;
+	white-space:nowrap; }
+
+h4 {
+	height:12px;
+	padding:5px 0 7px 12px;
+	background-color:$white;
+	border-bottom:1px solid $colorNeutral01;
+	font-weight:normal;
+	text-transform:uppercase;
+	white-space:nowrap; }
+
+h5 {
+	font-size:18px;
+	margin:5px 0;
+	padding-left:5px; }
+
+
+
+/* -------------------------------
+	Shortcuts
+   ------------------------------- */
+.positionRelative {
+	position:relative; }
+
+.clear {
+	clear:both; }
+
+.clearNone {
+	clear:none; }
+
+.floatLeft {
+	float:left; }
+
+.floatRight {
+	float:right;
+	padding-right:1px; }
+
+.centered {
+	text-align:center; }
+
+.clearfix {
+	overflow:hidden;
+
+	* html & {
+		overflow:visible;
+		height:1%; }
+}
+
+.overflow {
+	overflow:hidden;
+	height:auto;
+	height:100%;
+	/* IE7 needs this sometimes */
+	min-height:100%; }
+
+.overflowHidden {
+	overflow:hidden; }
+
+.marginNone {
+	margin:0 !important; }
+
+.backgroundNone {
+	background:none !important; }
+
+.backgroundColorTransparent {
+	background-color:transparent; }
+
+.borderNone {
+	border:none; }
+
+.fontWeightNormal {
+	font-weight:normal; }
+
+.fontWeightBold {
+	font-weight:bold; }
+
+.textTransformUppercase {
+	text-transform:uppercase; }
+
+.displayInline {
+	display:inline; }
+
+.displayBlock {
+	display:block; }
+
+.displayNone,
+.hidden,
+.hide {
+	display:none; }
+
+.error,
+.red {
+	color:$colorAlert01!important; }
+
+.pointerCursor {
+	cursor:pointer; }
+
+.defaultCursor {
+	cursor:default!important; }
+
+.textIndent {
+	text-indent: -9999px; }
+
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section {
+	display:block;
+}

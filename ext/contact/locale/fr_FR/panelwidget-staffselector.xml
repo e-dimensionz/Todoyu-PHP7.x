@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="toggle.multiselect.title">Basculer en mode simple ou multi sélection</label>
+	<label index="title">Équipe</label>
+	<label index="selectAllStaff">Sélectionner toute l'équipe</label>
+	<label index="byFunction">Par type de job:</label>
+	<label index="noFunction">Aucun type de job</label>
+</labels>

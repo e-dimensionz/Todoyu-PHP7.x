@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Активы задачи [Сделано]</label>
+	<label index="assets.button.delete">Удалить выбранный актив</label>
+	<label index="assets.button.upload">Добавить актив</label>
+</labels>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.system.systemsettings">Подешавања система</label>
+	<label index="legend.system.cli">Интерфејс за команд лајн</label>
+	<label index="legend.system.debugging">Дебугинг</label>
+	<label index="legend.rightsmanager.general">Управљајте вашим улогама и правима</label>
+	<label index="legend.password.general">Дефиниши снагу лозинке</label>
+	<label index="legend.logo.general">Измени слику</label>
+	<label index="legend.repository.general">Унесите вашу todoyu ИД</label>
+</labels>

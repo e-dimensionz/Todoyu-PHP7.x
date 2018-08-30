@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extension">Estensione</label>
+	<label index="key">Chiave estensione</label>
+	<label index="keyAbbr">Chiave-Est</label>
+	<label index="version">Versione/Stato</label>
+	<label index="author">Autore</label>
+	<label index="dependencies">Dipende da</label>
+	<label index="conflicts">In conflitto con</label>
+	<label index="importExtArchive">Importa archivio estensione</label>
+	<label index="version">Versione</label>
+	<label index="showInfo">Mostra informazioni sull'estensione</label>
+	<label index="download">Scarica estensione</label>
+	<label index="remove">Rimuovi estensione</label>
+	<label index="remove.confirm">Rimuovere l'estensione (tutti i file) dal server?</label>
+	<label index="rights">Permessi</label>
+	<label index="documentation">Documentazione</label>
+	<label index="install">Installa estensione</label>
+	<label index="install.confirm">Installare l'estensione?</label>
+	<label index="install.ok">L'estensione è stata installata</label>
+	<label index="install.error">L'installazione dell'estensione è fallita</label>
+	<label index="uninstall">Rimuovi l'estensione</label>
+	<label index="uninstall.confirm">Rimuovere l'estensione?</label>
+	<label index="uninstall.ok">L'estensione è stata rimossa</label>
+	<label index="uninstall.error.general">La rimozione dell'estensione è fallita</label>
+</labels>

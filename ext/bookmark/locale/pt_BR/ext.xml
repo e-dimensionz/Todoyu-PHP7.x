@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Bookmarks da Tarefa</label>
+	<label index="title">Bookmarks da Tarefa</label>
+	<label index="info.nobookmarks">Nenhum Bookmarks</label>
+	<label index="contextmenu.removebookmark">Remover dos Bookmark</label>
+	<label index="contextmenu.addbookmark">Adicionar aos Favoritos</label>
+</labels>

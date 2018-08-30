@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="person.attr.salutation.m">Mr.</label>
+	<label index="person.attr.salutation.f">Ms.</label>
+	<label index="person.attr.salutation.w">Ms.</label>
+</labels>

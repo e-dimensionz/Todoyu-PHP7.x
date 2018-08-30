@@ -1,0 +1,47 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ------------------------------------------------------------
+	Check library dependencies panel widget
+   ------------------------------------------------------------ */
+div #panelwidget-loginnews h1 span.title {
+	background:url('../img/panelwidget-loginnews.png') no-repeat 4px -28px;
+	margin:0;
+	padding:0 0 12px 24px;
+}
+
+#panelwidget-loginnews #news-local {
+	background-color:$colorNeutral01;
+	min-height:200px;
+}
+
+#panelwidget-loginnews #loginnews-iframe {
+	width:256px;
+	border:0;
+	overflow:hidden;
+}
+
+#panelwidget-loginnews #news-live {
+	margin:0;
+	padding:10px 5px;
+	background:$colorNeutral01;
+}
+
+#panelwidget-loginnews #news-live p {
+	margin:0;
+	padding:0;
+}
+
+#panelwidget-loginnews #news-live a{
+	text-decoration:none;
+	color:$blue04;
+}
+
+#panelwidget-loginnews #news-live a strong {
+	color:$blue04;
+}
+
+#panelwidget-loginnews #news-live a:hover{
+	color:$colorNeutral08;
+}

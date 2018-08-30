@@ -1,0 +1,25 @@
+<li>
+	<ul class="inactive">
+		{foreach $tasks task}
+			<li id="{$name}-task-{$task.id}" class="bcStatus{$task.status}">
+				<div class="title" onclick="Todoyu.Ext.timetracking.Task.goToTask({$task.id_project}, {$task.id}, true)">
+					<div class="taskNumber" title="{Label portal.ext.tasktree.header.tasknumber}: {$task.id_project}.{$task.tasknumber}">
+						{$task.id_project}.{$task.tasknumber}
+					</div>
+					<div class="taskTitle" title="{Label project.ext.project}: {htmlencode $task.projecttitle} (ID: {$task.id_project}) / {Label project.task.task}: {htmlencode $task.title}">
+						<span class="project">{htmlencode $task.projecttitle}</span>
+						<span class="task">{htmlencode $task.title}</span>
+					</div>
+					<div class="taskTime" title="{Label timetracking.ext.totalTrackedTime}">
+						{HourMinSec $task.trackedtime}
+					</div>
+				</div>
+				{if $task.isTrackable}
+					<div class="trackingButton">
+						{Button onclick="Todoyu.Headlets.getHeadlet('todoyutimetrackingheadlettracking').startTask($task.id)" class="startTracking" label="LLL:timetracking.ext.start" disable=true}
+					</div>
+				{/if}
+			</li>
+		{/foreach}
+	</ul>
+</li>

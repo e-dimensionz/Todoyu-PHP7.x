@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kastodoyutrunk.srv05.ch1.snowflake.ch/" />
+<title>profile > panelwidget: modules > My Personal Data</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">profile > panelwidget: modules > My Personal Data</td></tr>
+</thead><tbody>
+<!--check module: "personal data"-->
+<tr>
+	<td>click</td>
+	<td>link=My Personal Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id='contact-tab-contact-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@id=&quot;person-1-field-salutation-m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@id=&quot;person-1-field-salutation-w&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-1-field-lastname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-1-field-firstname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-1-field-shortname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-1-field-birthday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-1-field-comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-1-field-upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>add-record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@id='add-record' and @type='button' and @onclick=&quot;Todoyu.Form.addRecord(1, 'person', 'address', 'contact', 'person');this.blur()&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>expand-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>person-1-field-save</td>
+	<td></td>
+</tr>
+<!--remove values of required fields and try saving-->
+<tr>
+	<td>type</td>
+	<td>css=input#person-1-field-email.text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input#person-1-field-lastname.text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input#person-1-field-firstname.text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button#person-1-field-save.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--Saving failed?-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>Saving Person Failed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>The value entered is not valid</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#formElement-person-1-field-email.error</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#formElement-person-1-field-lastname.error</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#formElement-person-1-field-firstname.error</td>
+	<td></td>
+</tr>
+<!--reopen module "general settings"-->
+<tr>
+	<td>click</td>
+	<td>link=General Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

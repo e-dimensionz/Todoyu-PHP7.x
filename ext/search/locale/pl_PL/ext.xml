@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Wyszukaj i utwórz filtr</label>
+	<label index="page.title">Szukaj</label>
+	<label index="or">ALBO</label>
+	<label index="and">I</label>
+	<label index="search.label">Wyszukaj wszystko</label>
+	<label index="filterlabel.filterset">Zestaw filtrów</label>
+	<label index="filterset.rename">Zmień nazwę zestawu filtrów</label>
+	<label index="filterset.delete">Usuń zestaw filtrów</label>
+	<label index="filterset.confirm.delete">Czy napewno usunąć zestaw filtrów?</label>
+	<label index="filterset.confirm.overwrite">Zastąpić istniejący zestaw filtrów?</label>
+	<label index="filterset.error.saveWrongType">Próbujesz zapisać zestaw filtrów pod złym typem</label>
+	<label index="filterset.error.saveNoConditions">Nie podano żadnych warunków do zapisania</label>
+	<label index="filterset.error.saveEmptyName">Podaj nazwę dla tego zestawu filtrów</label>
+	<label index="negation.default.true">Nie jest</label>
+	<label index="negation.default.false">Jest</label>
+	<label index="negation.datetime.true">Za</label>
+	<label index="negation.datetime.false">Przed</label>
+	<label index="negation.datetimeDyn.true">Z</label>
+	<label index="negation.datetimeDyn.false">Aż</label>
+	<label index="negation.numbercompare.true">mniejszy niż</label>
+	<label index="negation.numbercompare.false">większy niż</label>
+	<label index="newFilterLabel">Podaj nazwę dla nowego filtra</label>
+	<label index="newFilterLabel.preset">Nowy filtr</label>
+	<label index="subMenuEntry.task">Zadania</label>
+	<label index="subMenuEntry.project">Projekty</label>
+	<label index="areMatching">%1$d %2$s pasują do kryteriów wyszukiwania.</label>
+	<label index="areMatching.overLimit">Więcej niż %1$d %2$s pasuje do kryteriów wyszukiwania.</label>
+	<label index="filterwidget.condtion.remove">Usuń warunek</label>
+	<label index="search.noEntryFound">Nie znaleziono wyników</label>
+	<label index="search.noResultsForActiveFilters">Nie znaleziono wyników dla aktualnie wybranych filtrów</label>
+	<label index="contextmenu.project.showinproject">Otwóz w oknie projektu</label>
+	<label index="headlet.label">Szukaj w todoyu</label>
+	<label index="export.error.saveEmpty">Nie ma żadnych wyników do wyeksportowania.</label>
+</labels>

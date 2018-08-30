@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Projekte</label>
+	<label index="selection">Aktuelle Auswahl</label>
+	<label index="selection.empty">Nichts ausgewählt. Nutzen Sie die Suche um Projekte und Gruppen hinzuzufügen</label>
+	<label index="button.save.newgroup">Auswahl als Gruppe speichern</label>
+	<label index="newGroupLabel.prompt">Bitte einen Gruppen-Namen angeben</label>
+	<label index="newGroupLabel.saved.success">Gruppe wurde gespeichert.</label>
+	<label index="newGroupLabel.error.saveEmptyName">Bitte einen Gruppen-Namen angeben</label>
+	<label index="newGroupLabel.prompt.preset">Neue Gruppe</label>
+	<label index="icon.additem">Anwählen</label>
+	<label index="icon.removefromselection">Von Auswahl entfernen</label>
+	<label index="icon.deletegroup">Gruppe löschen</label>
+	<label index="deletegroup.confirm">Gruppe wirklich löschen?</label>
+	<label index="deletegroup.success">Die Gruppe wurde gelöscht.</label>
+	<label index="deletegroup.error">Die Löschung der Gruppe schlug fehl.</label>
+</labels>

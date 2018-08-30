@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>contact.form.legend.admin.contactinfotype.record</legend>
+			<elements>
+
+				<field type="select" name="category">
+					<label>contact.ext.record.contactinfotype.attr.category</label>
+					<source type="function">
+						<function>TodoyuContactViewHelper::getContactInfoTypeCategoryOptions</function>
+					</source>
+					<required />
+				</field>
+
+				<field type="text" name="title">
+					<label>core.global.title</label>
+					<required />
+				</field>
+
+				<field type="text" name="key">
+					<label>contact.ext.record.contactinfotype.attr.key</label>
+					<required />
+				</field>
+
+				<field type="checkbox" name="is_public">
+					<label>contact.ext.record.contactinfotype.attr.is_public</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

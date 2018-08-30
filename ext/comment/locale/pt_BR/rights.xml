@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Adminitração</label>
+	<label index="general.use">Utilizar Notas</label>
+	<label index="comment">Nota</label>
+	<label index="comment.seeAll">Ver Todas as Notas (Privadas)</label>
+	<label index="comment.editOwn">Editar Minhas Notas</label>
+	<label index="comment.editAll">Editar Todas as Notas</label>
+	<label index="comment.requestFeedback">Requisitar Feedback</label>
+	<label index="comment.deleteAll">Apagar Todas as Notas</label>
+	<label index="comment.deleteOwn">Apagar Minhas Notas</label>
+	<label index="comment.sendAsEmail">Enviar Nota por Email</label>
+	<label index="comment.makePublic">Tornar Nota Pública</label>
+</labels>

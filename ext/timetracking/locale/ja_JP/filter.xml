@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">作業時間の記録</label>
+	<label index="timetrackedPerson">個人の作業時間の記録</label>
+	<label index="timetrackedRoles">ロールの作業時間の記録</label>
+</labels>

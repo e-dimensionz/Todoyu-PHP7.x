@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Zestaw filtrów</label>
+	<label index="saveFilterButton">Zapisz jako nowy filtr</label>
+	<label index="clearFilterArea">Wyszyć obszar filtra</label>
+</labels>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="files">ファイル</label>
+	<label index="download">ダウンロード</label>
+	<label index="upload">アップロード</label>
+	<label index="size.gb">GB</label>
+	<label index="size.mb">MB</label>
+	<label index="size.kb">KB</label>
+	<label index="size.b">B</label>
+	<label index="filename">ファイル名</label>
+	<label index="filesize">ファイルサイズ</label>
+	<label index="upload.progressmessage">ファイルをアップロード中</label>
+	<label index="upload.succeeded">ファイルのアップロードが成功しました</label>
+	<label index="upload.selectfile">アップロードするファイルを選択</label>
+	<label index="upload.error.uploadfailed">アップロードが失敗しました</label>
+	<label index="upload.failed.maxFileSizeExceeded">アップロードの失敗： アップロード可能なファイルサイズを超えました</label>
+	<label index="confirm.delete">選択したファイルの削除</label>
+	<label index="notify.delete.success">ファイルは削除されました：</label>
+	<label index="notify.delete.error">ファイルの削除が失敗しました：</label>
+</labels>

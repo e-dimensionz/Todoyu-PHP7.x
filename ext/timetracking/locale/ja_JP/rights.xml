@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">一般設定</label>
+	<label index="general.use">作業時間の記録を使用</label>
+	<label index="task">タスクの記録</label>
+	<label index="task.track">作業時間の記録</label>
+	<label index="task.editOwn">所有するタスク上の記録を編集できる</label>
+	<label index="task.editOwnChargeable">所有するタスクの請求時間を編集できます</label>
+	<label index="task.editAll">全タスク上の記録を編集できる</label>
+	<label index="task.editAllChargeable">全てのユーザの請求時間を編集できます</label>
+</labels>

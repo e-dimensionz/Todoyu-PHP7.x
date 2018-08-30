@@ -1,0 +1,59 @@
+<div class="mainGrid">
+	<div id="gridContainer" class="dayMode">
+		{if $dayEvents}
+			<div class="gridHeader" id="gridHeader">
+				{* ------------------------------------ Top container ------------------------------- *}
+				<table class="wk-weektop"><tbody>
+					<tr>
+						<td class="timeSpacer"></td>
+						<td class="dayEvents">
+							{foreach $dayEvents dayEventHtml}
+								{$dayEventHtml}
+							{/foreach}
+						</td>
+					</tr>
+				</tbody></table>
+			</div>
+		{/if}
+		{* ---------------------------------------- Hours of day -------------------------------- *}
+		<div id="calendarBody" class="wk-scrolltimedevents {if $showFullDay}full{/if} contextmenucalendarbody">
+			<table class="tg-timedevents" id="tgTable"><tbody>
+				<tr>
+					<td class="wid40"></td>
+					<td>
+						<div class="tg-hourmarkerwrapper">
+							<div class="tg-hourmarkers">
+							{for markercounter 0 23}
+								<div class="tg-dualmarker"></div>
+							{/for}
+							</div>
+						</div>
+					</td>
+				</tr><tr>
+					{* ---------------- Textual hour (00:00 to 23:00) -------------------------- *}
+					<td class="colHours">
+						{$hourTimestamp = $timestamp}
+						{for hour 0 23}
+							<div class="hour" id="createEventAt-{$hourTimestamp}">
+								{if $hour < 10}0{/if}{$hour}:00
+							</div>
+							{$hourTimestamp += 3600}
+						{/for}
+					</td>
+					<td class="dayCol dayview{if date('d.m.y', $timestamp) == date('d.m.y', time())}Today{/if}">
+						{* ------------ Hour contents (events and related info-tooltips) -------- *}
+						<div id="tgCol0" class="tg-colwrapper">
+						{foreach $events event}
+							{$event}
+						{/foreach}
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	Todoyu.Ext.calendar.setTitle('{$title}');
+</script>

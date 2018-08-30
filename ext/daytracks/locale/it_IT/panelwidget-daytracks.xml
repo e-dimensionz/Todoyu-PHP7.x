@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Scala temporale</label>
+	<label index="pwidget.title">Scala temporale orierna</label>
+	<label index="totalToday">Totale tempo monitorato di oggi</label>
+	<label index="showHistory">Mostra le scale temporali</label>
+	<label index="goToTask">Passa all'attività</label>
+</labels>

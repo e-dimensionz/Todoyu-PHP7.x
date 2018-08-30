@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">タスク資源</label>
+	<label index="search.label">資源</label>
+	<label index="tab.noAssets">最初の資源を追加</label>
+	<label index="tab.asset">資源</label>
+	<label index="tab.assets">資源</label>
+	<label index="tab.toggle">資源 オン/オフ</label>
+	<label index="list.header.uploaddate">アップロードした日付</label>
+	<label index="alt.download">ファイルのダウンロード</label>
+	<label index="alt.uploadedby">Uploaded By</label>
+	<label index="alt.delete">ファイルの削除</label>
+	<label index="alt.changeVisibility">可視性を Public に変更</label>
+	<label index="alt.selectall">Select All/None</label>
+	<label index="upload.selectfile">アップロードするファイルを選択</label>
+	<label index="upload.filename">ファイル名</label>
+	<label index="upload.new">新しいファイルを追加</label>
+	<label index="delete.confirm">本当にこのファイルを削除してよろしいでしょうか？</label>
+	<label index="delete.notifiy.success">ファイルは削除されました</label>
+	<label index="download.selection">選択したファイルをダウンロード</label>
+	<label index="download.normal">1 つのファイルしか選択していません -&gt; 通常のダウンロード</label>
+	<label index="download.compressed">選択したファイルはダウンロードするアーカイブに格納されました</label>
+	<label index="error.minimumFile">少なくとも 1 つのファイルを選択してください</label>
+	<label index="maxFileSizeExceeded">ファイル '#{filename}' はアップロード可能なファイルサイズ (#{maxFileSize} バイト) を越えていました</label>
+	<label index="maxLengthFileNameExceeded">ファイル '#{filename}' はアップロード可能な最大文字長 (#{maxLengthFileName} バイト) を超えていました</label>
+	<label index="uploadFailed">ファイル '#{filename}' のアップロードが失敗しました</label>
+	<label index="uploadOk">ファイルはアップロードされました</label>
+	<label index="locked">このタスクはロックされているため、ファイルを追加できません</label>
+	<label index="task.icon">タスクは資源を持っています</label>
+</labels>

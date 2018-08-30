@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">过滤器集</label>
+	<label index="saveFilterButton">保存为新过滤器</label>
+	<label index="clearFilterArea">清除过滤区域</label>
+	<label index="addSeparator">新建分割线</label>
+	<label index="addSeparator">添加分割线</label>
+	<label index="notify.orderchanged">更改的过滤集顺序已保存.</label>
+</labels>

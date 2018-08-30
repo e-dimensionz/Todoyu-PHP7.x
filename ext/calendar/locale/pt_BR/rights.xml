@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Configuração</label>
+	<label index="general.use">Utilizar Funcionalidades de Calendário</label>
+	<label index="general.area">Utilizar Área de Calendário</label>
+	<label index="event">Evento</label>
+	<label index="event.seeAll">Mostrar todos os eventos</label>
+	<label index="event.editAndDeleteAssigned">Editar e apagar eventos atribuídos (ou criados por este usuário)</label>
+	<label index="event.editAndDeleteAll">Editar e apagar todos os eventos</label>
+	<label index="event.add">Adicionar novo evento</label>
+	<label index="event.search">Localizar eventos</label>
+	<label index="event.assignOthers">Atribuir eventos a outro usuário</label>
+</labels>

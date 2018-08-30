@@ -1,0 +1,43 @@
+<div class="contentdaytrackspwidget">
+	<ul class="contextmenudaytrackspwidget ulListDotted withMouseHover">
+		{foreach $tasks key task daytracks}
+			<li id="daytracks-track-{$task.id}" class="{cycle values="odd,even"} listItem status-{taskStatusKey $task.status} bcStatus{$task.status}{if $task.id == $current} running{/if}{if $task.isDeleted} deleted{/if}" title="{taskStatusLabel $task.status}">
+				<span class="taskItem bcStatus{$task.status}">
+
+				{if $task.isTrackable || $task.id == $current}
+					<a id="daytracks-track-{$task.id}-button" class="icon start {if $task.id == $current}running{/if}" href="javascript:void(0)" onclick="Todoyu.Ext.daytracks.PanelWidget.Daytracks.toggleTimetracking({$task.id});this.onclick=''" title="{if $task.id == $current}{Label timetracking.ext.stop}{else}{Label timetracking.ext.start}{/if}"><!-- button --></a>
+				{/if}
+
+				<a id="daytracks-track-{$task.id}-info" class="info" title="{if $task.isDeleted}{Label project.task.deletedTasks}{else}{$task.id_project}.{$task.tasknumber} - {htmlencode $task.title}{/if}" href="javascript:void(0)" {if $task.seeTask && ! $task.isDeleted}onclick="Todoyu.Ext.daytracks.PanelWidget.Daytracks.goToTask({$task.id_project}, {$task.id})"{/if}>
+					<span class="time" id="daytracks-track-{$task.id}-time">{HourMinSec $task.time}</span>
+					<span class="task">{$task.id_project}.{$task.tasknumber} - {htmlencode(truncate($task.title,30,''))}</span>
+					<span class="company-project"><span class="overflow">{htmlencode $task.company} - {htmlencode $task.project}</span></span>
+				</a>
+				</span>
+			</li>
+		{/foreach}
+	</ul>
+
+	<div id="daytracks-daytotal" class="notification" {if !$total && !$tracking}style="display:none"{/if}>
+		<span>{Label daytracks.panelwidget-daytracks.totalToday}:</span>
+		<span id="daytracks-daytotal-time">{HourMinSec $total}</span>
+		<span class="totalTasks">({$.foreach.daytracks.total} {Label project.task.tasks})</span>
+	</div>
+
+	{if !$total && !$tracking}
+		<div id="daytracks-daytotal-notracks" class="notification">
+			<span>{Label daytracks.panelwidget-daytracks.totalToday.noTracks}</span>
+		</div>
+	{/if}
+
+	<div class="history">
+		{Button label="daytracks.panelwidget-daytracks.showHistory" class="trackHistory" onclick="Todoyu.Ext.daytracks.PanelWidget.Daytracks.showHistory()"}
+	</div>
+
+	{restrict 'daytracks' 'daytracks:timeExport'}
+		<div class="timeexport">
+			{Button label="daytracks.ext.export.title" class="exportCsv" onclick="Todoyu.Ext.daytracks.Export.openExportPopup()" title="LLL:daytracks.ext.export.popup.title"}
+		</div>
+	{/restrict}
+
+</div>

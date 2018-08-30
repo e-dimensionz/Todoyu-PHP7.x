@@ -1,0 +1,41 @@
+@import "../../config/theme.scss";
+
+
+
+#dialogchoice {
+	.wrapper {
+		padding:10px; }
+
+	.description {
+		margin-bottom:10px;
+		border-bottom:1px solid $colorNeutral03; }
+
+	.choice {
+		background-color:$white;
+		border-radius:5px;
+		border:1px solid $white;
+		margin-bottom:5px;
+		padding:8px;
+
+		button {
+			width:150px;
+
+			.label {
+				margin:0;
+				width:100%;
+				text-align:center; }
+		}
+
+		div {
+			display:inline-block; }
+
+		.boxButton {
+			width:170px; }
+
+		.boxLabel {
+			width:280px;
+			height:20px;
+			vertical-align:bottom;
+		}
+	}
+}

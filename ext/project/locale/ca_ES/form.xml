@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.task.basics">Informació bàsica</label>
+	<label index="legend.task.attributes">Atributs</label>
+	<label index="legend.container.basics">Informació bàsica</label>
+	<label index="legend.container.attributes">Atributs</label>
+	<label index="legend.project.basics">Informació bàsica</label>
+	<label index="legend.project.preset">Configuració preestablerta</label>
+	<label index="legend.project.members">Membres del projecte</label>
+	<label index="legend.quicktask.basics">Informació bàsica</label>
+	<label index="legend.project.approvalroles">Rols d'aprovació de factures</label>
+	<label index="legend.quicktask.basics">Informació bàsica sobre la teva tasca</label>
+	<label index="legend.admin.basics">Paràmetres preestablerts de la teva tasca</label>
+	<label index="legend.admin.quicktask">Comportament preestablert per tàsques ràpides</label>
+	<label index="legend.admin.fallbacks">Recursos preestablerts per persones amb drets limitats</label>
+	<label index="legend.admin.projectrole.record.general">Rol del projecte</label>
+	<label index="legend.admin.activity.record.general">Tipus d'activitat</label>
+	<label index="legend.admin.taskpreset.record.preset">Tasca preestablerta</label>
+	<label index="legend.admin.taskpreset.record.general">Paràmetre preestablerts de les tasques</label>
+	<label index="legend.admin.taskpreset.record.quicktask">Comportament preestablert per tàsques ràpides</label>
+	<label index="legend.admin.taskpreset.record.fallbacks">Recursos preestablerts per persones amb drets limitats</label>
+	<label index="extconf.basic">Paràmetres bàsiques</label>
+</labels>

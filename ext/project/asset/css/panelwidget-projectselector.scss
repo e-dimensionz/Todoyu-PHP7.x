@@ -1,0 +1,140 @@
+@import "../../../project/config/theme.scss";
+
+
+
+/* -----------------------------------
+	Project selector
+   ----------------------------------- */
+#panelwidget-projectselector {
+	h5 {
+		margin-bottom:2px;
+	}
+
+	li{
+		border-left:5px solid $white;
+		padding-left:2px;
+
+		a {
+			width:250px;
+		}
+
+		&.group a {
+			background:url(../../../sysmanager/asset/img/icons.png) no-repeat 2px -210px;
+		}
+
+		&.project a {
+			background:url(../img/icons.png) no-repeat 2px -354px;
+		}
+
+		&.virtualgroup a {
+			background:url(../img/panelwidget-projectselector.png) no-repeat 2px 0;
+		}
+	}
+
+	.selection li a span.deletegroup {
+		margin-right:58px !important;
+	}
+}
+
+
+
+#panelwidget-projectselector li {
+	border-left:3px solid #fff;
+
+	&.hot a {
+		font-weight:bold;
+	}
+
+	&.status {
+		&Planning {
+			border-left:3px solid $colorStatusPlanning;
+		}
+		&Open {
+			border-left:3px solid $colorStatusOpen;
+		}
+		&Progress {
+			border-left:3px solid $colorStatusProgress;
+		}
+		&Confirm {
+			border-left:3px solid $colorStatusConfirm;
+		}
+		&Done {
+			border-left:3px solid $colorStatusDone;
+		}
+		&Accepted {
+			border-left:3px solid $colorStatusAccepted;
+		}
+		&Rejected {
+			border-left:3px solid $colorStatusRejected;
+		}
+		&Cleared {
+			border-left:3px solid $colorStatusCleared;
+		}
+		&Warranty {
+			border-left:3px solid $colorStatusWarranty;
+		}
+		&Waiting {
+			border-left:3px solid $colorStatusWaiting;
+		}
+	}
+}
+
+
+
+#panelwidget-projectselector-selection {
+	display:inline-block;
+	margin-top:3px;
+	padding:5px;
+	width:95%;
+
+	li {
+		a {
+			width:1000px;
+		}
+
+		a span {
+			background-image:url(../../../../core/asset/img/icons.png);
+			background-repeat:no-repeat;
+			display:inline-block;
+			position:absolute;
+			float:right;
+			height:16px;
+			margin-right:40px;
+			width:16px;
+
+			&.add {
+				background-position:2px -28px;
+			}
+
+			&.deletegroup {
+				background-image:url(../img/panelwidget-projectselector.png);
+				background-position:2px -32px;
+				margin-right:2px !important;
+			}
+
+			&.remove {
+				background-position:2px -358px;
+				position:absolute;
+				right: -30px;
+			}
+		}
+
+		&.disabled {
+			opacity:.50;
+
+			&:hover {
+				opacity:1;
+			}
+		}
+
+		.virtualgroup a span{
+			&.add {
+				background-position:2px -28px;
+			}
+
+			&.remove {
+				margin-right: -34px;
+			}
+		}
+	}
+}

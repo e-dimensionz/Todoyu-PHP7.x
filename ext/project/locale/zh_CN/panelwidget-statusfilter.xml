@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title.task">任务状态过滤器</label>
+	<label index="title.project">项目状态过滤器</label>
+</labels>

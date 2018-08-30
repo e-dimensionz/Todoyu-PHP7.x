@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=project&amp;controller=task</attribute>
+		<attribute name="name">task</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+		<field name="id_project" />
+		<field name="type" />
+	</hiddenFields>
+	<fieldsets>
+
+		<fieldset name="basic">
+			<elements>
+
+				<field type="text" name="title">
+					<label>core.global.title</label>
+					<validate>
+						<isNotEmpty msg="project.task.error.title" />
+					</validate>
+					<required />
+				</field>
+
+				<field type="RTE" name="description">
+					<label>core.global.description</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="details">
+			<elements>
+
+				<field type="datetime" name="date_start">
+					<label>project.task.date_start</label>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editDateStart" />
+					</restrict>
+					<required />
+				</field>
+
+				<field type="datetime" name="date_end">
+					<label>project.task.date_end</label>
+					<validate>
+						<dateNotBefore>
+							<field>date_start</field>
+							<allowEmpty />
+						</dateNotBefore>
+					</validate>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editDateEnd" />
+					</restrict>
+				</field>
+
+				<field type="datetime" name="date_deadline">
+					<label>project.task.date_deadline</label>
+					<validate>
+						<dateNotBefore msg="project.ext.form.validation.dateAfterStart">
+							<field>date_start</field>
+							<allowEmpty />
+						</dateNotBefore>
+						<dateNotBefore msg="project.ext.form.validation.dateAfterEnd">
+							<field>date_end</field>
+							<allowEmpty />
+						</dateNotBefore>
+					</validate>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editDeadline" />
+					</restrict>
+					<required />
+				</field>
+
+				<field type="select" name="status">
+					<label>project.task.attr.status</label>
+					<source type="function">
+						<function>TodoyuProjectTaskViewHelper::getTaskStatusOptions</function>
+						<lazyInit />
+					</source>
+					<noPleaseSelect />
+				</field>
+
+ 				<field type="selectgrouped" name="id_person_assigned">
+					<label>project.task.attr.person_assigned</label>
+					<source type="function">
+						<function>TodoyuProjectTaskViewHelper::getPersonAssignedGroupedOptions</function>
+						<lazyInit />
+					</source>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editPersonAssigned" />
+					</restrict>
+					<required />
+				</field>
+
+				<field type="selectgrouped" name="id_person_owner">
+					<label>project.task.attr.person_owner</label>
+					<source type="function">
+						<function>TodoyuProjectTaskViewHelper::getTaskOwnerOptions</function>
+						<lazyInit />
+					</source>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editPersonOwner" />
+					</restrict>
+					<required />
+				</field>
+
+				<field type="textAC" name="id_parenttask">
+					<label>project.task.attr.id_parenttask</label>
+					<config>
+						<acLabel>TodoyuProjectTaskManager::getAutocompleteLabel</acLabel>
+						<options>
+							<acName>projecttask</acName>
+							<onComplete>Todoyu.Ext.project.Task.Edit.onParenttaskAutocomplete</onComplete>
+						</options>
+					</config>
+				</field>
+
+				<field type="select" name="id_activity">
+					<label>project.task.attr.activity</label>
+					<source type="function">
+						<function>TodoyuProjectTaskViewHelper::getTaskActivityOptions</function>
+						<lazyInit />
+					</source>
+					<validate>
+						<isNotZero msg="project.task.attr.id_activity.error" />
+					</validate>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editActivity" />
+					</restrict>
+					<required />
+				</field>
+
+				<field type="duration" name="estimated_workload">
+					<label>project.task.attr.estimated_workload</label>
+					<extraAttributes>onblur="Todoyu.Form.assistDurationInput(this)"</extraAttributes>
+					<validate>
+						<isNotZerotime msg="project.task.attr.is_estimatedworkload_public.error" />
+					</validate>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editEstimatedWorkload" />
+					</restrict>
+					<required />
+				</field>
+
+				<field type="checkbox" name="is_public">
+					<label>project.task.attr.is_public.public</label>
+					<restrict>
+						<allow ext="project" right="edittaskdetail:editIsPublic" />
+					</restrict>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.project.Task.Edit.cancel(#id#)</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.project.Task.Edit.save(this.form)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

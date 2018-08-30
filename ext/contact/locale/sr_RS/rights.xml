@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Општа подешавања</label>
+	<label index="general.use">Употреби функције контакта</label>
+	<label index="general.profile">Користи профил</label>
+	<label index="general.area">Употреби област функције</label>
+	<label index="person">Особа</label>
+	<label index="person.seeAllInternalPersons">Погледај све интерне особе</label>
+	<label index="person.seeAllPersons">Погледај све особе</label>
+	<label index="person.add">Додај особу</label>
+	<label index="person.editAndDeleteAll">Уреди и избриши особе</label>
+	<label index="person.enableLogin">Креирај улаз за особе</label>
+	<label index="person.seeComment">Погледај коментаре особа</label>
+	<label index="person.editComment">Измени коментаре особа</label>
+	<label index="company">Предузећа</label>
+	<label index="company.seeAllCompanies">Види сва предузећа</label>
+	<label index="company.add">Додај предузећа</label>
+	<label index="company.editOwn">Измени своје предузеће (Раднике)</label>
+	<label index="company.editAndDeleteAll">Уреди и избриши предузеца</label>
+	<label index="company.seeComment">Погледај коментаре предузећа</label>
+	<label index="company.editComment">Измени коментаре предузећа</label>
+	<label index="relation">Односи контакта</label>
+	<label index="relation.seeAllContactinfotypes">Види све врсте информација контакта</label>
+	<label index="relation.seeHomeAddress">Види кућну адресу</label>
+	<label index="relation.seeBusinessAddress">Види адрецу предузећа</label>
+	<label index="relation.seeBillingAddress">Види адрецу за рачун</label>
+	<label index="panelwidgets">Панел уидгетс</label>
+	<label index="panelwidgets.staffSelector">Селектор особља</label>
+	<label index="panelwidgets.export">Експортирај</label>
+</labels>

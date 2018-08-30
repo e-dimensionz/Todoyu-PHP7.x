@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Проекты</label>
+	<label index="search">Поиск</label>
+	<label index="list.empty">Проекты не найдены (для этого набора фильтров)</label>
+</labels>

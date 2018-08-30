@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">config</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="dummy" noStorage="true" />
+	</hiddenFields>
+
+	<fieldsets>
+		<fieldset name="config">
+			<legend>timetracking.form.legend.admin.basics</legend>
+			<elements>
+				<field type="checkbox" name="stopOnLogout">
+					<label>timetracking.ext.extconf.stopOnLogout</label>
+				</field>
+
+				<field type="text" name="tolerance">
+					<label>timetracking.ext.extconf.tolerance</label>
+					<validate>
+						<isDecimal />
+						<min>0</min>
+					</validate>
+				</field>
+			</elements>
+
+		</fieldset>
+	</fieldsets>
+</form>

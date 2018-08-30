@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Tasques destacades</label>
+	<label index="title">Tasques destacades</label>
+	<label index="info.nobookmarks">No hi ha cap marcador</label>
+	<label index="contextmenu.removebookmark">Elimina el marcador</label>
+	<label index="contextmenu.renamebookmark">Canvia l'etiqueta del marcador</label>
+	<label index="contextmenu.editbookmarks">Edita marcadors</label>
+	<label index="contextmenu.addbookmark">Afegeix als marcadors</label>
+	<label index="profile.module">Marcadors</label>
+	<label index="profile.module.tasks.tab">Tasques</label>
+	<label index="profile.module.tasks.bookmarksOf">Tasques detacades de</label>
+	<label index="profile.module.tasks.listing.task">Tasques</label>
+	<label index="profile.module.tasks.listing.title">Títol</label>
+	<label index="profile.module.tasks.listing.label">Etiqueta</label>
+	<label index="bookmark.edit">Edita marcador</label>
+	<label index="bookmark.rename">Canvia el nom del marcador</label>
+	<label index="bookmark.renamePrompt">Nova etiqueta (buit = etiqueta original)</label>
+	<label index="bookmark.delete.confirm">Realment voleu eliminar aquesta etiqueta?</label>
+	<label index="bookmark.removed">Marcador eliminat</label>
+	<label index="bookmark.renamed">Marcador reanomenat</label>
+	<label index="bookmark.added">Marcador creat</label>
+	<label index="bookmark.attr.title">Etiqueta</label>
+	<label index="bookmark.type.task">Tasca</label>
+	<label index="bookmark.saved">S'ha guardat el marcador.</label>
+	<label index="bookmark.saved.error">Hi ha hagut un error mentre es guardava el marcador.</label>
+</labels>

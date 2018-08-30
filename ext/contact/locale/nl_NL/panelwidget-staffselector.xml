@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="toggle.multiselect.title">Wisselen tussen enkele en meervoudige keuzemogelijkheid</label>
+	<label index="title">Medewerkers</label>
+	<label index="selectAllStaff">Alle medewerkers selecteren</label>
+	<label index="byFunction">Op type baan:</label>
+	<label index="noFunction">Geen baantype</label>
+</labels>

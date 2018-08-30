@@ -1,0 +1,17 @@
+div#ganttDiv table tbody tr td div div div {
+	font-weight:normal !important;
+	color:#000 !important;
+}
+
+.taskNameItem{
+	color:#000 !important;
+}
+
+
+/* Fix: .lt was overriding tab styles. Limit it to gantt */
+.lt {
+	padding:0;
+}
+.ganttDiv .lt {
+	padding:0 0 0 14px;
+}

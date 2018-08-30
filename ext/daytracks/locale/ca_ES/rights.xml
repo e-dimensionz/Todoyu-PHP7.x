@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General</label>
+	<label index="general.use">Utilitzar la funcionalitat taula del temps</label>
+	<label index="panelwidgets">Panells</label>
+	<label index="daytracks">Panell taula del temps</label>
+	<label index="daytracks.timeExport">Exportar taula del temps</label>
+	<label index="daytracks.timeExportAllPerson">Exportar taula del temps de totes les persones</label>
+	<label index="daytracks.timeExportAllEmployer">Exportar taula del temps de tots els clients</label>
+</labels>

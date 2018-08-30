@@ -1,0 +1,6 @@
+Search Extension - JavaScript Hooks
+===================================
+1. Results
+	search.results.updated
+	@param	{Number} idInvoice
+	Evoked after the search area has been updated (tab, widgets and results).

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="D2M2">%m/%d</label>
+	<label index="DlongD2Mlong">%m/%d (%A)</label>
+	<label index="D2M2Y2">%y/%m/%d</label>
+	<label index="D2M2Y4">%Y/%m/%d</label>
+	<label index="D2MshortY4">%y年%m月%d日</label>
+	<label index="D2MshortY2">%Y年%m月%d日</label>
+	<label index="D2Mshort">%m月%d日</label>
+	<label index="D2MshortTime">%m月%d日 %H:%M</label>
+	<label index="dShort">%a</label>
+	<label index="DshortD2M2">%m月%d日 (%a)</label>
+	<label index="D2MlongY4">%Y年%m月%d日</label>
+	<label index="MlongD2">%m月%d日</label>
+	<label index="Mlong">%m月</label>
+	<label index="MlongY4">%Y年%m月</label>
+	<label index="DshortD2MshortY2">%y年%m月%d日 (%a)</label>
+	<label index="DshortD2MlongY4">%Y年%m月%d日 (%a)</label>
+	<label index="DlongD2MlongY4">%Y年%m月%d日 (%A)</label>
+	<label index="calendarweek">%V 週目</label>
+	<label index="date">%Y/%m/%d</label>
+	<label index="time">%H:%M</label>
+	<label index="timesec">%H:%M:%S</label>
+	<label index="datetime">%y/%m/%d %H:%M</label>
+	<label index="dShortDatetime">%a %y/%m/%d %H:%M</label>
+	<label index="day">%d</label>
+</labels>

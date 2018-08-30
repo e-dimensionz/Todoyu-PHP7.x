@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Selezionare</label>
+	<label index="field.isrequired">Questo è un campo richiesto</label>
+	<label index="field.hasError">Il valore inserito non è corretto</label>
+	<label index="field.save">Salva</label>
+	<label index="field.cancel">Annulla</label>
+	<label index="records.add">Aggiungi record</label>
+	<label index="records.remove">Rimuovi record</label>
+	<label index="records.edit">Modifica record</label>
+	<label index="databaserelation.nolabel">[Nuovo elemento]</label>
+	<label index="databaserelation.expandAllRecords">Mostra dettagli</label>
+	<label index="error.notUnique">Questo elemento esiste già</label>
+	<label index="ac.noResults">Autocompletamento: nessun risultato</label>
+	<label index="is_preferred">Preferito</label>
+	<label index="dateselector.open">Apre il calendario per selezionare una data</label>
+	<label index="autocompleteInfo">Questo è un campo con autocompletamento: iniziare a scrivere per ricevere suggerimenti</label>
+</labels>

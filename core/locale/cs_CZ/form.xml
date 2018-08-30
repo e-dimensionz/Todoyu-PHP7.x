@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Vyberte</label>
+	<label index="field.isrequired">Toto je povinné pole</label>
+	<label index="field.hasError">Zadaná hodnota je neplatná</label>
+	<label index="field.save">Uložit</label>
+	<label index="field.cancel">Storno</label>
+	<label index="records.add">Přidat záznam</label>
+	<label index="records.remove">Odstranit záznam</label>
+	<label index="records.edit">Upravit záznam</label>
+	<label index="records.removeconfirm">Opravdu chcete odstranit tento záznam?</label>
+	<label index="databaserelation.nolabel">[Nová položka]</label>
+	<label index="databaserelation.expandAllRecords">Zobrazit</label>
+	<label index="error.notUnique">Tento záznam již existuje</label>
+	<label index="error.duration.invalidinput">Chybná vstupní délka, prosím opravte.</label>
+	<label index="ac.noResults">Autodoplňování: nenalezeno</label>
+	<label index="is_preferred">Upřednostnit</label>
+	<label index="confirm.toggle.is_preferred.on">Pouze jeden záznam tohoto typu může být upřednostňován. Opravdu chcete vybrat tento záznam jako přednostní?</label>
+	<label index="confirm.toggle.is_preferred.off">Pouze jeden záznam tohoto typu může být upřednostňován. Opravdu chcete zrušit tento záznam jako přednostní?</label>
+	<label index="dateselector.open">Otevřte kalendář a zvolte datum</label>
+	<label index="autocompleteInfo">Začněte psát a text se automaticky doplní</label>
+	<label index="legend.main">Definice rolí</label>
+	<label index="daterange.choose">Vyberte časový rozsah</label>
+	<label index="daterange.monthToDate">Měsíc k datu</label>
+	<label index="daterange.yearToDate">Rok k datu</label>
+	<label index="daterange.quarterToDate">Kvartál k datu</label>
+	<label index="daterange.previousMonth">Předchozí měsíc</label>
+	<label index="daterange.previousQuarter">Předchozí kvartál</label>
+	<label index="daterange.previousYear">Předchozí rok</label>
+	<label index="daterange.fullTimeRange">Veškerý časový rozsah</label>
+</labels>

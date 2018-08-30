@@ -1,0 +1,105 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+a.eventContextMenu {
+	background:url(../img/contextmenu.png) no-repeat;
+
+	&.eventAdd {
+		background-position:5px -298px!important;
+	}
+
+	&.eventEdit {
+		background-position:5px 4px;
+	}
+
+	&.eventEditSeries {
+		background-position:5px 4px;
+	}
+
+	&.eventShow {
+		background-position:5px -120px;
+	}
+
+	&.eventShowInCalendar {
+		background-position:5px -28px;
+	}
+
+	&.eventRemove {
+		background-position:5px -57px;
+	}
+
+	&.eventRemoveSeries {
+		background-position:5px -57px;
+	}
+}
+
+a.eventContextMenu.eventAdd,
+a.eventContextMenu.showInCalendarDay,
+a.eventContextMenu.showInCalendarWeek,
+a.eventContextMenu.showInCalendarMonth {
+	background:url(../img/icons.png) no-repeat;
+}
+
+
+
+/* ---------------------------------------
+	Show in calendar views
+   --------------------------------------- */
+a.eventContextMenu {
+	&.showInCalendarDay {
+		background-position:6px -205px;
+	}
+
+	&.showInCalendarWeek {
+		background-position:6px -235px;
+	}
+
+	&.showInCalendarMonth {
+		background-position:6px -265px;
+	}
+
+	/* ---------------------------------------
+		Reminder options (email and popup)
+	   --------------------------------------- */
+	&.eventReminderEmail {
+		background-position:5px -148px;
+	}
+
+	&.eventReminderPopup {
+		background-position:5px -180px;
+	}
+}
+
+
+
+.context-submenu li a.eventContextMenu {
+	&.selected {
+		background: {
+			image:none;
+			color:$colorCorporate03 !important;
+		}
+	}
+
+	&.disabled.selected {
+		cursor:default !important;
+		color:$colorNeutral06 !important;
+		background:url(../../../../core/asset/img/icons.png) repeat-x 0 -1570px !important;
+		background-color:$colorCorporate03 !important;
+	}
+}
+
+.context-submenu .reminderTimeNone,
+.context-submenu .reminderTime0,
+.context-submenu .reminderTime5m,
+.context-submenu .reminderTime15m,
+.context-submenu .reminderTime30m,
+.context-submenu .reminderTime1h,
+.context-submenu .reminderTime2h,
+.context-submenu .reminderTime12h,
+.context-submenu .reminderTime1d,
+.context-submenu .reminderTime2d,
+.context-submenu .reminderTime1w {
+	background-color:$white;
+	background-image:none;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Personál</label>
+	<label index="search">Hledat</label>
+	<label index="list.empty">Žádná osoba nebyla nalezena (při nastavení tohoto filtru)</label>
+</labels>

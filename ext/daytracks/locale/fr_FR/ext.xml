@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Journal de suivi du temps</label>
+	<label index="title">Journal de suivi du temps</label>
+	<label index="history.title">Journal de suivi du temps</label>
+	<label index="history.total">Temps total suivi</label>
+	<label index="history.toggledetails.open">Afficher les détails</label>
+	<label index="history.toggledetails.close">Masquer les détails</label>
+	<label index="history.noTracks">Aucun temps suivi n'est disponible pour cette période</label>
+	<label index="totalToday">Temps total suivi pour aujourd'hui</label>
+</labels>

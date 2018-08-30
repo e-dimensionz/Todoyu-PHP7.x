@@ -1,0 +1,8 @@
+todoyu selenium testsuite steps: daytracks extension
+----------------------------------------------------
+
+* daytracks panelwidget: 
+	check presents
+	test toggling incl. pref
+	open time sheet popup + check details toggling
+	check opening daytrack export popup

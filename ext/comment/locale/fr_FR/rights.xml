@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Configuration générale</label>
+	<label index="general.use">Utiliser les commentaires</label>
+	<label index="comment">commentaire</label>
+	<label index="comment.seeAll">Afficher TOUT les commentaires (non public)</label>
+	<label index="comment.editOwn">Modifier VOS commentaires</label>
+	<label index="comment.editAll">Modifier TOUS les commentaires</label>
+	<label index="comment.requestFeedback">Demander un suivi</label>
+	<label index="comment.deleteAll">Effacer TOUT les commentaires</label>
+	<label index="comment.deleteOwn">Effacer VOS commentaires</label>
+	<label index="comment.sendAsEmail">Transmettre le commentaire par courriel</label>
+	<label index="comment.makePublic">Rendre public ce commentaire</label>
+</labels>

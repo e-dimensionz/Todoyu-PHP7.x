@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">SMTP account</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+	</hiddenFields>
+
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>sysmanager.ext.record.smtpaccount.legend</legend>
+			<elements>
+				<field type="text" name="host">
+					<label>sysmanager.ext.record.smtpaccount.attr.host</label>
+					<required />
+				</field>
+
+				<field type="text" name="port">
+					<label>sysmanager.ext.record.smtpaccount.attr.port</label>
+					<default>587</default>
+					<extraAttributes>onkeyup="Todoyu.Form.assistNumericInput(this,true)"</extraAttributes>
+					<required />
+				</field>
+
+				<field type="checkbox" name="authentication">
+					<label>sysmanager.ext.record.smtpaccount.attr.authentication</label>
+					<default>1</default>
+				</field>
+
+				<field type="text" name="username">
+					<label>sysmanager.ext.record.smtpaccount.attr.username</label>
+					<validate>
+						<requiredIfNotEmpty>
+							<fields>authentication</fields>
+						</requiredIfNotEmpty>
+					</validate>
+				</field>
+
+				<field type="text" name="password">
+					<label>sysmanager.ext.record.smtpaccount.attr.password</label>
+					<type>password</type>
+					<!--<validate>-->
+						<!--<requiredIfNotEmpty>-->
+							<!--<fields>authentication</fields>-->
+						<!--</requiredIfNotEmpty>-->
+					<!--</validate>-->
+				</field>
+
+				<field type="text" name="forcename">
+					<label>sysmanager.ext.record.smtpaccount.attr.name</label>
+				</field>
+
+				<field type="textarea" name="comment">
+					<label>sysmanager.ext.record.smtpaccount.attr.comment</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

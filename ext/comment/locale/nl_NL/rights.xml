@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Algemene instellingen</label>
+	<label index="general.use">Gebruik opmerkingen</label>
+	<label index="comment">Opmerking</label>
+	<label index="comment.seeAll">Alle opmerkingen bekijken (niet openbaar)</label>
+	<label index="comment.editOwn">Eigen opmerkingen bewerken</label>
+	<label index="comment.editAll">Alle opmerkingen bewerken</label>
+	<label index="comment.requestFeedback">Terugkoppeling vragen</label>
+	<label index="comment.deleteAll">Alle opmerkingen verwijderen</label>
+	<label index="comment.deleteOwn">Eigen opmerkingen verwijderen</label>
+	<label index="comment.sendAsEmail">Opmerking versturen per e-mail</label>
+	<label index="comment.makePublic">Opmerking openbaar maken</label>
+</labels>

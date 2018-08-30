@@ -1,0 +1,48 @@
+/* -------------------
+	Status icons
+   ------------------ */
+#panelwidget-projectstatusfilter-list option {
+	background-image:url(../img/projectstatus.png);
+	height:18px;
+	padding-left:26px !important;
+}
+
+#panelwidget-projectstatusfilter-list option.statusPlanning {
+	background-position:4px 3px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusOpen {
+	background-position:4px -27px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusProgress {
+	background-position:4px -57px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusConfirm {
+	background-position:4px -87px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusDone {
+	background-position:4px -113px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusAccepted {
+	background-position:4px -117px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusRejected {
+	background-position:4px -147px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusCleared {
+	background-position:4px -174px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusWarranty {
+	background-position:4px -233px;
+}
+
+#panelwidget-projectstatusfilter-list option.statusAccepted {
+	background-position:4px -267px;
+}

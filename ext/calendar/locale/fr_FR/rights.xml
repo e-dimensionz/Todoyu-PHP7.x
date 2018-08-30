@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Général</label>
+	<label index="general.use">Utiliser les fonctionnalités de calendrier</label>
+	<label index="general.area">Utiliser la section calendrier</label>
+	<label index="event">Activité</label>
+	<label index="event.seeAll">Voir toutes les activités</label>
+	<label index="event.editAndDeleteAssigned">Modifier et effacer les activités assignées ou crées par cet individu?</label>
+	<label index="event.editAndDeleteAll">EModifier et effacer toutes les activités</label>
+	<label index="event.add">Ajouter une activité</label>
+	<label index="event.search">Rechercher des activités</label>
+	<label index="event.assignOthers">Assigner les activités à un autre individu</label>
+</labels>

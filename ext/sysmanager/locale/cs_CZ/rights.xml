@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Obecné nastavení</label>
+	<label index="general.use">Používat správce systému</label>
+	<label index="general.extensions">Správce rozšíření</label>
+	<label index="general.records">Upravovat záznamy</label>
+	<label index="general.config">Nastavení systému</label>
+	<label index="extensions">Rozšíření</label>
+	<label index="extensions.config">Upravit nastavení</label>
+	<label index="extensions.download">Stáhnout archív s rozšířením</label>
+	<label index="extensions.modify">Instalovat / odinstalovávat / aktualizovat</label>
+</labels>

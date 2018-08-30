@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="num2.name">Afrika</label>
+	<label index="num9.name">Oceanie</label>
+	<label index="num19.name">Amerika</label>
+	<label index="num142.name">Asie</label>
+	<label index="num150.name">Evropa</label>
+	<label index="num30.name">Východní Asie</label>
+	<label index="num35.name">Jihovýchodní Asie</label>
+	<label index="num62.name">Jižní a střední Asie</label>
+	<label index="num145.name">Západní Asie</label>
+	<label index="num39.name">Jižní Evropa</label>
+	<label index="num151.name">Východní Evropa</label>
+	<label index="num154.name">Severní Evropa</label>
+	<label index="num155.name">Západní Evropa</label>
+	<label index="num830.name">Channel Islands</label>
+	<label index="num833.name">Isle of Man</label>
+	<label index="num5.name">Jižní Amerika</label>
+	<label index="num13.name">Střední Amerika</label>
+	<label index="num21.name">Severní Amerika</label>
+	<label index="num29.name">Karibik</label>
+	<label index="num11.name">Západní Afrika</label>
+	<label index="num14.name">Východní Afrika</label>
+	<label index="num15.name">Severní Afrika</label>
+	<label index="num17.name">Střední Afrika</label>
+	<label index="num18.name">Jižní Afrika</label>
+	<label index="num53.name">Austrálie a Nový Zéland</label>
+	<label index="num54.name">Melanésie</label>
+	<label index="num57.name">Mikronésie</label>
+	<label index="num61.name">Polynésie</label>
+</labels>

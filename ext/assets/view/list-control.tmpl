@@ -1,0 +1,24 @@
+<div class="tabBlock overflow assetsButtons" id="{$recordType}-{$idRecord}-assets-commands">
+
+	{* Hidden upload form over the button *}
+	<form name="asset" id="{$recordType}-{$idRecord}-asset-form" class="directUploadForm directUpload directUploadBox" method="post" enctype="multipart/form-data" action="index.php?ext=assets&amp;controller=upload">
+		<input type="hidden"	name="MAX_FILE_SIZlist.tmplE"	value="50000000" />
+		<input type="hidden"	name="asset[id_record]"	value="{$idRecord}" />
+		<input type="hidden"	name="asset[recordType]" value="{$recordType}" />
+		<input type="file"		name="asset[file]"		id="{$recordType}-{$idRecord}-asset-file"		onchange="Todoyu.Ext.assets.Upload.onChange({$idRecord}, '{$recordType}')" />
+	</form>
+
+	{* Buttons *}
+	{Button id="$recordType-$idRecord-asset-button-upload" label="assets.ext.upload.new" class="upload"}
+	{Button id="$recordType-$idRecord-asset-button-downloadselection" label="assets.ext.download.selection" class="downloadSelection" onclick="Todoyu.Ext.assets.downloadSelection($idRecord, '$recordType')" disabled=true}
+
+	{* Progress bar *}
+	<div id="{$recordType}-{$idRecord}-asset-progress" class="uploadProgress" style="display: none">
+		<span class="icon cancelUpload" onclick="Todoyu.Ext.assets.Upload.cancelUpload({$idRecord}, '{$recordType}')"></span>
+		<img src="core/asset/img/progress.gif" alt="Upload" width="128" height="15" />
+	</div>
+
+</div>
+<script type="text/javascript">
+Todoyu.Ext.assets.List.initControl.bind(Todoyu.Ext.assets.List, {$idRecord}, '{$recordType}').defer();
+</script>

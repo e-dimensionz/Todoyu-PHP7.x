@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedbackPerson">Feedback Requisitado</label>
+	<label index="unseenFeedbackRoles">Feedback Requisitado Pelos Integrantes</label>
+	<label index="commentFulltext">Nota</label>
+	<label index="commentWrittenPerson">Nota do Usuário</label>
+	<label index="commentWrittenRoles">Nota dos Integrantes</label>
+</labels>

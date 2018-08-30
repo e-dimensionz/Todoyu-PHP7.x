@@ -1,0 +1,6 @@
+Sysmanager Extension - JavaScript Hooks
+=======================================
+1. Role
+	sysmanager.role.saved
+	@param	{Number} idRole
+	Evoked after role saved. (DB record updated, elements updated in DOM)

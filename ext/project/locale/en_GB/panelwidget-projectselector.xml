@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Projects</label>
+	<label index="selection">Active selection</label>
+	<label index="selection.empty">Nothing selected. Use search to add new projects and groups.</label>
+	<label index="button.save.newgroup">Save selection as group</label>
+	<label index="newGroupLabel.prompt">Enter a name for the new group</label>
+	<label index="newGroupLabel.saved.success">Group has been saved.</label>
+	<label index="newGroupLabel.error.saveEmptyName">Enter a name for the new group</label>
+	<label index="newGroupLabel.prompt.preset">New Group</label>
+	<label index="icon.additem">Select</label>
+	<label index="icon.removefromselection">Remove From Selection</label>
+	<label index="icon.deletegroup">Delete Group</label>
+	<label index="deletegroup.confirm">Really delete the group?</label>
+	<label index="deletegroup.success">Group has been deleted.</label>
+	<label index="deletegroup.error">Deleting group failed.</label>
+</labels>

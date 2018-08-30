@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">フィルタセット</label>
+	<label index="saveFilterButton">新規フィルタとして保存</label>
+	<label index="clearFilterArea">フィルタエリアのクリア</label>
+</labels>

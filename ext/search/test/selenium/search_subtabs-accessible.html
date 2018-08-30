@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>search > sub tabs accessible- tasks, projects</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">search > sub tabs accessible- tasks, projects</td></tr>
+</thead><tbody>
+<!------ search > sub tabs accessible: tasks, projects?-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id='search-tab-task-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Tasks</td>
+	<td>Tasks</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[@id='search-tab-project-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Projects</td>
+	<td>Projects</td>
+</tr>
+<!--open tasks tab, tasks tab active?-->
+<tr>
+	<td>clickAt</td>
+	<td>//p[@id='search-tab-task-label']/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.active</td>
+	<td></td>
+</tr>
+<!--activate projects tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.active</td>
+	<td></td>
+</tr>
+<!--(re)activate task tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.active</td>
+	<td></td>
+</tr>
+<!--activate persons tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-person.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-person.active</td>
+	<td></td>
+</tr>
+<!--activate companies tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-company.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-company.active</td>
+	<td></td>
+</tr>
+<!--(re)activate task tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.active</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="project">Projeto</label>
+	<label index="task.acknowledged">Aceito</label>
+	<label index="task.assignedPerson">Associado A</label>
+	<label index="task.assignedRoles">Associado a um Perfil</label>
+	<label index="task.ownerPerson">Proprietário é Usuário</label>
+	<label index="task.ownerRoles">Proprietário é um Perfil</label>
+	<label index="task.currentPersonIsOwner">Sou Proprietário</label>
+	<label index="task.creatorPerson">Criado por Usuário</label>
+	<label index="task.creatorRoles">Criado por Perfil</label>
+	<label index="task.parentTask">Tarefa Pai</label>
+	<label index="task.isPublic">É Público</label>
+	<label index="task.billingType">Tipo de Cobrança</label>
+	<label index="task.title">Título</label>
+	<label index="task.fulltext">Texto</label>
+	<label index="task.type">Tipo</label>
+	<label index="task.activity">Tipo de Serviço</label>
+	<label index="task.timemanagement.label">Gestão de Horas</label>
+	<label index="task.deadlinedate">Prazo Final</label>
+	<label index="task.deadlinedateDyn">Prazo Final (Dynamic)</label>
+	<label index="task.startdate">Data de Início</label>
+	<label index="task.startdateDyn">Data de Início (Dynamic)</label>
+	<label index="task.enddate">Data de Término</label>
+	<label index="task.enddateDyn">Data de Término (Dynamic)</label>
+	<label index="task.editdate">Alterado Em</label>
+	<label index="task.editdateDyn">Alterado Em (Dynamic)</label>
+	<label index="task.createdate">Criado</label>
+	<label index="task.createdateDyn">Criado (Dynamic)</label>
+	<label index="project.fulltext">Título</label>
+	<label index="project.company">Cliente</label>
+	<label index="project.projectrole">Grupo do Projeto</label>
+	<label index="project.projectleader">Gerente de Projeto</label>
+	<label index="project.projectsupervisor">Supervisor de Projeto</label>
+</labels>

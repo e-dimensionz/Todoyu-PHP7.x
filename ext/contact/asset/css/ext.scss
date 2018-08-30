@@ -1,0 +1,518 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* ----------------------------------------------
+	Extension icon:  stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconContact {
+	background: url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconContact .title {
+	background: url('../img/exticon.png') no-repeat 0 5px;
+}
+
+.quickInfoPerson {
+	cursor: help;
+}
+
+
+
+/* --------------------------
+	Sub menu
+   -------------------------- */
+#navi-main-list-contact {
+	li {
+		&.item {
+			a {
+				background-image: url(../img/icons.png) !important;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&.itemContactPerson {
+			a {
+				background-position: 6px 6px;
+			}
+		}
+
+		&.itemContactCompany a {
+			background-position: 6px -146px;
+		}
+	}
+}
+
+span {
+	&.wizardIcon{
+		&.createWizardPerson	{
+			background: url(../img/icons.png) no-repeat 0 -90px;
+		}
+		&.createWizardCompany	{
+			background: url(../img/icons.png) no-repeat 0 -240px;
+		}
+	}
+}
+
+
+
+/* -----------------------------------
+	Create mode options in headlet
+   ----------------------------------- */
+#todoyuheadletquickcreate {
+	li.itemContactCompany a {
+		background: url(../img/icons.png) no-repeat 5px -238px;
+	}
+	li.itemContactPerson a {
+		background: url(../img/icons.png) no-repeat 5px -88px;
+	}
+}
+
+
+/* ------------------------------------
+	Quick create wizard popUp styling
+   ------------------------------------ */
+#quickcreate.dialog{
+	&.person {
+		div#quickcreate_top.dialog_title {
+			padding:0 0 0 22px;
+			background:url(../img/icons.png) no-repeat 0 -91px;
+		}
+	}
+	&.company {
+		div#quickcreate_top.dialog_title {
+			padding:0 0 0 22px;
+			background:url(../img/icons.png) no-repeat 0 -241px;
+		}
+	}
+}
+
+
+
+/* -----------------
+	Search
+   ----------------- */
+#todoyusearchheadletquicksearch {
+	li.searchmodeCompany a {
+		background:url(../img/icons.png) no-repeat 3px -148px !important;
+	}
+
+	form {
+		searchmodePerson a.mode {
+			background:url(../img/icons.png) no-repeat 3px -504px !important;
+		}
+
+		searchmodeCompany a.mode {
+			background:url(../img/icons.png) no-repeat 3px -534px !important;
+		}
+	}
+}
+
+#todoyusearchheadletquicksearch-modes {
+	li.searchmodePerson a {
+		background:url(../img/icons.png) no-repeat 3px 3px !important;
+	}
+}
+
+#search-results td {
+	cursor:default;
+}
+
+
+
+	/* Company search */
+#search-tab-company span.icon {
+	background:url(../img/icons.png) transparent 0 -146px;
+}
+
+#navi-main-list-search li.itemSearchCompany a {
+	background:transparent url(../img/icons.png) 4px -146px no-repeat !important;
+}
+
+
+
+	/* Person search */
+#search-tab-person span.icon {
+	background:url(../img/icons.png) transparent 0 4px;
+}
+
+#navi-main-list-search li.itemSearchPerson a {
+	background:transparent url(../img/icons.png) 4px 4px no-repeat !important;
+}
+
+#navi-main-list-search li.itemSearchPerson a:hover,
+#navi-main-list-search li.itemSearchCompany a:hover {
+	background-color:$colorCorporate00 !important;
+}
+
+
+/* ----------------------------
+	Contact listing general
+   ---------------------------- */
+#paging-person table tbody tr,
+#paging-company table tbody tr {
+	cursor:pointer;
+}
+
+	/* Column configs */
+#contact-details {
+	.actions {
+		button {
+			margin:0 5px;
+		}
+		.icon {
+			background:url(../img/icons.png) no-repeat;
+			cursor:pointer;
+			margin-right:5px;
+		}
+		.backToList {
+			.icon {
+				background:url(../../../../core/asset/img/icons.png) no-repeat 3px -1890px;
+			}
+		}
+		.buttonPersonDelete .icon {
+			background:url(../../../../core/asset/img/icons.png) no-repeat 6px -328px;
+			width:22px;
+		}
+		.buttonCompanyEdit .icon {
+			background:url(../../../../core/asset/img/icons.png) no-repeat 6px -747px;
+			width:22px;
+		}
+		.buttonPersonEdit .icon {
+			background:url(../../../../core/asset/img/icons.png) no-repeat 6px -747px;
+			width:22px;
+		}
+		.buttonCompanyDelete .icon {
+			background:url(../../../../core/asset/img/icons.png) no-repeat 6px -328px;
+			width:22px;
+		}
+	}
+}
+
+
+/* -------------------------
+	Tabs
+   -------------------------*/
+#contact-tabs {
+	.tabkey-person .icon {
+		background:url(../img/icons.png) no-repeat 0 6px;
+	}
+	.tabkey-company .icon {
+		background:url(../img/icons.png) no-repeat 0 -146px;
+	}
+}
+
+
+
+/* -------------------------
+	Person list
+   ------------------------- */
+
+div#search-results {
+	p#person-listing-message-emptylist,
+	p#company-listing-message-emptylist {
+		display:none;
+	}
+}
+
+
+/* ---------------------
+	Visiting card
+   -------------------- */
+.visitingCardContent {
+	padding:12px 12px 18px 12px !important;
+
+	table tr td {
+		padding:2px 2px 2px 8px !important;
+		text-align:left;
+
+		&.label {
+			letter-spacing:0.3px;
+			padding-right:18px;
+		}
+	}
+}
+
+#search-tab-contact span.icon {
+	background:url(../img/icons.png) no-repeat 0 6px;
+}
+
+
+
+/* -------------------
+	Person and Company Listing
+   ------------------- */
+.personListing,
+.companyListing {
+	col.icon {
+		width: 30px;
+	}
+	
+	span.icon {
+		background:{
+			image:url(../img/icons.png);
+			position:2px 2px;
+			repeat:no-repeat;
+		}
+	}
+
+	td.actions {
+		span {
+			&.actions {
+				float:right;
+			}
+
+			&.edit {
+				background:url(../../../../core/asset/img/icons.png) no-repeat 5px -749px;
+			}
+
+			.delete {
+				background:url(../../../../core/asset/img/icons.png) no-repeat 5px -330px;
+			}
+
+			&.icon {
+				cursor:pointer;
+				display:inline-block;
+				width:25px;
+			}
+
+			&.info {
+				background-position:5px -356px;
+			}
+		}
+	}
+
+	td.login {
+		span.icon {
+			background-position:2px -568px;
+		}
+	}
+}
+
+.companyListing {
+	span.icon {
+		background-position:2px -149px;
+
+		&.notactive {
+			background-position: 2px -599px;
+		}
+	}
+	
+	col {
+		&.title {
+			width: 41%;
+		}
+
+		&.email {
+			width: 15%;
+
+			span {
+				cursor: help;
+			}
+		}
+		&.phone {
+			width: 15%;
+
+			span {
+				cursor: help;
+			}
+		}
+		&.address {
+			width: 15%;
+
+			span {
+				cursor: help;
+			}
+		}
+	}
+
+	td {
+		&.address span {
+			background: url(../img/icons.png) no-repeat 20px -630px;
+			width: 100%;
+			height: 15px;
+			display: block;
+		}
+	}
+
+
+}
+
+.personListing {
+	col {
+		&.firstname {
+			width: 12%;
+		}
+
+		&.lastname {
+			width: 12%;
+		}
+
+		&.company {
+			width: 23%;
+		}
+
+		&.phone {
+			width: 15%;
+
+			span {
+				cursor: help;
+			}
+		}
+
+		&.email {
+			width: 20%;
+
+			span {
+				cursor: help;
+			}
+		}
+	}
+}
+
+
+/* -------------------
+	Person Details
+   ------------------- */
+#contact-details {
+	div {
+		.actions {
+			float:right;
+			padding-top:5px;
+		}
+
+		.clear {
+			clear:both;
+			width:100%;
+		}
+
+		&.image img {
+			border:1px solid $colorNeutral02;
+			margin-top:3px;
+		}
+	}
+
+	h1 {
+		white-space:normal;
+	}
+	h3 {
+		margin-bottom:5px;
+	}
+
+	.content a {
+		text-decoration:underline !important;
+	}
+
+	.left {
+		float:left;
+		margin-right:13px;
+		padding:0 0 6px 0;
+	}
+
+	.projectPart {
+		li {
+			padding: 4px 0;
+		}
+
+		table.list {
+			td {
+				border-top: 1px solid $colorNeutral01;
+				padding: 5px;
+			}
+
+			td:first-child {
+				width: 1px;
+			}
+
+			td:last-child {
+				border-left: 1px solid $colorNeutral03;
+			}
+
+		}
+	}
+}
+
+button {
+	&.uploadContactImage .icon {
+		background:url(../img/icons.png) no-repeat 6px -448px;
+		width:25px;
+	}
+
+	&.removeContactImage .icon {
+		background:url(../img/icons.png) no-repeat 6px -478px;
+		width:25px;
+	}
+}
+
+
+
+/* -------------------
+	Person Profile
+   ------------------- */
+#panelwidget-profilemodules li.contact {
+	background:url(../img/exticon.png) no-repeat 5px 3px;
+}
+
+#contact-tabs .tabkey-contact .icon {
+	background:url(../img/icons.png) no-repeat 0 6px;
+}
+
+
+
+/* -----------------------------
+	Records form elements
+   ---------------------------- */
+.fElement.typeRecords .typeContactperson .recordIcon,
+.fElement.typeRecords .typeStaff .recordIcon,
+.fElement.typeRecords .typeContactinfo .recordIcon,
+.fElement.typeRecords .typePerson .recordIcon,
+.fElement.typeRecords .typeEmailPerson .recordIcon {
+	background:url(../img/icons.png) no-repeat 2px 2px;
+}
+
+.fElement.fieldnameStreet,
+.fElement.fieldnameContactinfo {
+	.warningMessage {
+		width: 92%;
+	}
+}
+
+div.warningMessage {
+	ul.duplicatedList {
+		margin: 5px 0 0 32px;
+	}
+}
+
+
+
+/* ----------------------
+	Company Details
+   ---------------------- */
+#contact-details.company .employeePart {
+	table.personListing {
+		tr {
+			&.headerLine {
+				border-radius:0;
+
+				th {
+					background-image:none;
+					background:$colorNeutral01;
+					border:none;
+				}
+			}
+			&.odd {
+				background-color:transparent;
+			}
+
+			td {
+				border-top:1px solid $colorNeutral01;
+			}
+
+			th.jobtype,
+			td.jobtype {
+				border-left:1px solid $colorNeutral02;
+				padding:5px;
+			}
+		}
+	}
+}

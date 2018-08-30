@@ -1,0 +1,36 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+
+	{** Search field **}
+	<select id="{$htmlId}-search" class="{$inputClass} {$class}" size="{$size}" {if $elementMultiple}multiple="multiple"{/if} {if $disabled}disabled="disabled"{/if} {if $onchange}onchange="{$onchange}"{/if} {$extraAttributes}>
+		{include "core/view/select-grouped-options.tmpl" multiple=$multipleElements}
+	</select>
+
+	{** Result list **}
+	<ul id="{$htmlId}-results" class="results"></ul>
+
+	{** Selection list **}
+	<ul id="{$htmlId}-selection" class="selection">
+		{foreach $records record}
+			<li id="{$htmlId}-selection-{$record.id}" class="{$record.class}">
+				<span class="icon recordIcon"></span>
+				<span class="label">{htmlencode $record.label}</span>
+				<span class="icon remove"></span>
+			</li>
+		{/foreach}
+	</ul>
+
+	{** Hidden selection storage **}
+	<select name="{$htmlName}" id="{$htmlId}-storage" multiple="multiple" style="display:none">
+		{foreach $value item}
+			<option value="{$item}" selected="selected"></option>
+		{/foreach}
+	</select>
+
+	{** Init js **}
+	<script type="text/javascript">
+		Todoyu.R['recordselectasset-{$htmlId}'] = new Todoyu.Ext.assets.RecordSelectAsset('{$type}', '{$htmlId}', {$jsonOptions});
+	</script>
+
+{/block}

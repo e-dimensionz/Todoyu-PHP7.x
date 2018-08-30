@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Радно време данас</label>
+	<label index="pwidget.title">Радно време данас</label>
+	<label index="totalToday">Укупно данас</label>
+	<label index="showHistory">Покажи историју радног времена</label>
+	<label index="goToTask">Иди до задатка</label>
+</labels>

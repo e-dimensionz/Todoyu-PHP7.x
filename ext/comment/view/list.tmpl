@@ -1,0 +1,28 @@
+	{* Commands at top *}
+<div class="tabBlock overflow commentButtons" id="task-{$idTask}-comment-commands-top">
+	{if isAddInTaskAllowed($idTask)}
+		{Button label="comment.ext.button.addComment" class="addComment" onclick="Todoyu.Ext.comment.add($idTask)"}
+	{/if}
+	{if sizeof($comments) > 1}
+		{Button label="comment.ext.button.reverseOrder" class="order {if $desc}desc{/if}" onclick="Todoyu.Ext.comment.List.toggleSorting($idTask)"}
+	{/if}
+</div>
+
+	{* List of comments *}
+{if sizeof($comments) > 0}
+	<section class="commentList {if $desc}desc{else}asc{/if}" id="task-{$idTask}-comments">
+	{foreach $comments commentHTML}
+		{$commentHTML}
+	{/foreach}
+	</section>
+{/if}
+
+	{* Commands at bottom *}
+<div class="tabBlock overflow commentButtons" id="task-{$idTask}-comment-commands-bottom">
+	{if isAddInTaskAllowed($idTask)}
+		{Button label="comment.ext.button.addComment" class="addComment" onclick="Todoyu.Ext.comment.add($idTask)"}
+	{/if}
+	{if sizeof($comments) > 1}
+		{Button label="comment.ext.button.reverseOrder" class="order {if $desc}desc{/if}" onclick="Todoyu.Ext.comment.List.toggleSorting($idTask)"}
+	{/if}
+</div>

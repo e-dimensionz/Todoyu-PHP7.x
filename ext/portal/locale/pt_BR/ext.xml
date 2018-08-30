@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Portal</label>
+	<label index="page.title">Portal</label>
+	<label index="tab">Portal</label>
+	<label index="tab.selection">Meu Filtro</label>
+	<label index="tasktree.header.date">Data</label>
+	<label index="tasktree.header.customer">Cliente</label>
+	<label index="tasktree.header.number">No.</label>
+	<label index="tasktree.header.tasknumber">Número</label>
+	<label index="task.title.deadline">Prazo Final</label>
+	<label index="task.title.deadline_short">PF</label>
+	<label index="task.title.begin">Início</label>
+	<label index="task.title.begin_short">I</label>
+	<label index="task.title.customer">Cliente</label>
+	<label index="task.title.jump">Ir Para</label>
+	<label index="task.title.tasknumber">Tarefa No.</label>
+	<label index="tab.todos">A Fazer</label>
+	<label index="tab.feedbacks">Feedbacks</label>
+	<label index="date.start.short">I</label>
+	<label index="selection.noTasksFound">Nenhuma Tarefa Encontrada</label>
+	<label index="selection.noProjectsFound">Nenhum Projeto Encontrado</label>
+	<label index="subMenuEntry.selection">Portal > Seleção</label>
+	<label index="subMenuEntry.todos">Portal > A Fazer</label>
+	<label index="subMenuEntry.feedbacks">Portal > Feedbacks</label>
+	<label index="subMenuEntry.appointments">Portal > Compromissos</label>
+	<label index="contextmenu.showinproject">Exibir em Projetos</label>
+	<label index="selection.noFiltersetsSelected">Nenhum Filtro Selecionado!</label>
+</labels>

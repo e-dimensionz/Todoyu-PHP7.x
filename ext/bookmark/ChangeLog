@@ -1,0 +1,82 @@
+todoyu bookmark extension changelog
+
+bookmark 1.2.3 - 2013-12-31
+	* Added: Task-quick-search in bookmark-panel-widget
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+
+bookmark 1.2.2 - 2013-03-27
+	* Changed: Adaption to core 2.3
+
+bookmark 1.2.1 - 2012-07-30
+	* Changed: Text-cropping over css and css clean-up
+	* Bugfix: Fixed hidden dependency handling
+
+bookmark 1.2.0 - 2012-05-03
+	* Adapted to core 2.2
+	* Feature: Rename bookmarks with contextmenu
+
+bookmark 1.1.3 - 2011-12-13
+	* Bugfix: Fixed wrong Bookmark IDs in profile
+
+bookmark 1.1.2 - 2011-11-17
+	* Changed: Bookmark does not add anymore contextmenu items to deleted tasks
+	* Translation: Polish
+
+bookmark 1.1.1 - 2011-09-15
+	* Added: Hooks: bookmark.add, bookmark.delete, bookmark.update
+
+bookmark 1.1.0 - 2011-06-17
+	* Changed: Rights cleanup
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
+	* Changed: Cleanup of Rights Management
+
+bookmark 1.0.7 - 2011-06-17
+	* Bugfix: Deleted tasks were still listed in bookmarks widget
+	* Feature: Added placeholders for to-be spanish locale files
+
+bookmark 1.0.1 to 1.0.6 - 1.0.6 released 2011-01-17
+	* Bugfix: Removed left-over debug output
+	* Bugfix: Fixed problem with extension dependency in bookmark
+	* Bugfix: Fixed bookmark task number (was task id)
+	* Bugfix: Fixed bookmark items sorting, saved order
+	* Bugfix: Fixed content menu icons of bookmarks
+	* Bugfix: JS initialization order
+	* Bugfix: Task bookmarks of deleted projects are not listed anymore
+	* Feature: Optimized panelwidget styling
+	* Feature: Added italian translation
+	* Feature: Added htmlencode() for dynamic labels
+	* Feature: Added access check to bookmarks administration in profile module
+	* Feature: Disable links for bookmarks and daytracks on click (prevent multi click)
+	* Feature: Harmonized look of daytracks and bookmarks
+	* Feature: Merged all tracking request into a single request (much faster now)
+	* Feature: Added hooks documentation
+	* Feature: Added support for linked task number in text (project, task, comment)
+	* Feature: Made containers bookmarkable, added label variation by type (task/container)
+	* Feature: Editable bookmark labels
+	* Feature: Highlighted running tasks in bookmarks panelwidget
+	* Feature: Bookmarks sortable via drag and drop, added prefs
+	* Feature: Added hooks documentation
+	* Feature: Added Serbian locales
+	* Feature: Moved styles from global.css to ext.css
+	* Feature: Added japanese translation
+	* Feature: Added czech translation
+	* Feature: Added dutch translation
+	* Feature: Added parts of french translation
+	* Feature: Added EXTKEY constant
+	* Feature: Added portuguese translation
+	* Feature: Added Rights
+	* Feature: Added new version of role manager and rights editor
+	* Changed: Incremented year in copyright notice to 2011
+	* Changed: Added code comments, unified ambiguous JsDoc comments
+	* Changed: Renamed tab function
+	* Changed: Removed manual requiring of auto-loaded config files
+	* Changed: Fixed headlet icons positioning
+	* Changed: Switched license from GPL to BSD
+	* Changed: Moved the global $CONFIG variable to Todoyu class. Is now a public static member variable
+	* Changed: Asset handling (load all in one merge file)
+	* Changed: Moved page config to own config/page.php which is loaded only on page rendering
+
+bookmark 1.0.0 - released 2010-10-05
+	* Changed: Declared state stable

@@ -1,0 +1,48 @@
+#panelwidget-eventtypeselector-list option {
+	background:url(../img/icons.png) no-repeat scroll;
+	padding:3px 0 3px 20px;
+
+	.eventtype_general {
+		background-position:1px -658px;
+	}
+
+	&.eventtype_away {
+		background-position:1px -688px;
+	}
+
+	&.eventtype_awayofficial {
+		background-position:1px -779px;
+	}
+
+	&.eventtype_birthday {
+		background-position:1px -628px;
+	}
+
+	&.eventtype_vacation {
+		background-position:1px -387px;
+	}
+
+	&.eventtype_education {
+		background-position:1px -718px;
+	}
+
+	&.eventtype_meeting {
+		background-position:1px -748px;
+	}
+
+	&.eventtype_homeoffice {
+		background-position:1px -808px;
+	}
+
+	&.eventtype_compensation {
+		background-position:1px -898px;
+	}
+
+	&.eventtype_milestone {
+		background-position:1px -928px;
+	}
+
+	&.eventtype_reminder {
+		background-position:0 -959px;
+	}
+}

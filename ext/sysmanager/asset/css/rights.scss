@@ -1,0 +1,115 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+#panelwidget-sysmanagermodules li.rights a {
+	background:url(../img/icons.png) no-repeat 1px -240px;
+}
+
+
+
+/* -------------------
+	Tabs
+   ------------------- */
+#rights-tabs li span.icon {
+	background:url(../img/icons.png) no-repeat;
+}
+#rights-tabs li.rights span.icon {
+	background-position:0 -295px;
+}
+#rights-tabs li.roles span.icon {
+	background-position:0 -205px;
+}
+
+
+
+.saveButtonBox {
+	text-align:right;
+}
+#rightseditor-form {
+	margin-bottom:10px;
+}
+
+
+/* --------------------
+	Rights Matrix
+   --------------------*/
+#rightsmatrix {
+	margin:10px 0;
+}
+
+#rightsmatrix td {
+	vertical-align:middle;
+}
+
+	/* Roles */
+#rightsmatrix .roles {
+	margin-left:1px;
+}
+
+#rightsmatrix .roles .name {
+	width:250px;
+	font-weight:bold;
+	text-align:left;
+}
+
+#rightsmatrix .roles td {
+	padding:2px 5px;
+	width:20px;
+	text-align:center;
+}
+
+	/* Rights */
+#rightsmatix-form {
+	max-height:500px;
+	padding-top:10px;
+	border-top:2px $colorNeutral04 solid;
+	border-bottom:2px $colorNeutral04 solid;
+	overflow:scroll;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+#rightsmatix-form fieldset {
+	border:1px solid $colorNeutral05;
+	padding:0 10px 10px;
+	margin-bottom:10px;
+	margin-right: 10px;
+}
+
+#rightsmatix-form fieldset legend {
+	display:inline;
+	font-weight:bold;
+	font-size:13px;
+	padding:0 5px;
+}
+
+#rightsmatix-form td.label {
+	width:250px;
+	/*font-weight:bold;*/
+	text-align:left;
+	border-bottom:1px dashed $colorNeutral02;
+}
+
+#rightsmatix-form td.label a {
+	display:inline-block;
+	width:90%;
+}
+
+#rightsmatix-form td.roleRight {
+	width:20px;
+	text-align:center;
+	padding:6px 5px;
+}
+
+#rightsmatix-form td.roleRight input {
+	cursor:pointer;
+}
+
+#rightsmatix-form span.require {
+	display:inline-block;
+	width:15px;
+	height:14px;
+	background:url(../img/icons.png) no-repeat 1px -175px;
+	cursor:help;
+}

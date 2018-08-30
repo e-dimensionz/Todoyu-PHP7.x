@@ -1,0 +1,116 @@
+Project Extension - JavaScript Hooks
+====================================
+1. Project
+	project.taskTree.activeProjectDisplayed
+	@param	{Number} idProject
+	Evoked after project has been loaded and display in project area/ project tab toggled.
+
+	project.project.detailsToggled
+	@param	{Number} idProject
+	Evoked after project details display has been toggled.
+
+	project.project.formLoaded
+	@param	{Number} idProject
+	Evoked after project (creation / editing) form loaded and displayed.
+
+	project.project.preSaveProject
+	@param	{Number} idProject
+	Evoked (after save button clicked) before submission of project form for saving.
+
+	project.project.created
+	@param	{Number} idProject
+	Evoked after new project has been created. (DB record created, DOM updated)
+
+	project.project.loaded
+	@param	{Number} idProject
+	Evoked after project loaded. (elements updated in DOM)
+
+	project.project.saved
+	@param	{Number} idProject
+	Evoked after project saved. (DB record updated, project elements updated in DOM)
+
+	project.project.edit.cancelled
+	@param	{Number} idProject
+	Evoked after project cancelled
+
+	project.project.removed
+	@param	{Number} idProject
+	Evoked after project has been deleted. (DB record deleted, project elements removed from DOM)
+
+
+2. Task
+	project.task.detailsToggled
+	@param	{Number} idProject
+	Evoked after task details display has been toggled.
+
+	project.task.subtaskAdded
+	@param	{Number} idContainer
+	Evoked after new sub task has been added.
+
+	project.task.containerAdded
+	@param	{Number} idContainer
+	Evoked after new container has been added.
+
+	project.task.subContainerAdded
+	@param	{Number} idContainer
+	Evoked after new sub container has been added.
+
+	project.task.formLoaded
+	@param	{Number} idTask
+	Evoked when opening task for editing.
+
+	project.task.saved
+	@param	{Number} idTask
+	Evoked after task has been saved. (DB record updated, DOM updated)
+
+	project.task.cloned
+	@param	{Number} idSourceTask
+	@param	{Number} idTask
+	Evoked after task has been cloned.
+
+	project.task.removed
+	@param	{Number} idTask
+	Evoked after task has been deleted.
+
+	project.task.edit.cancelled
+	@param	{Number} idTask
+	Evoked after task edit or create has been deleted.
+
+	project.task.statusUpdated
+	@param	{Number} idTask
+	@param	{Number} status
+	Evoked after task status has been updated.
+
+	project.task.taskInit
+	@param	{Number} idTask
+	Evoked after task has been initialized
+
+	project.taskTab.onLoaded
+	@param	{Number} idTask
+	@param	{Number} status
+	Evoked after task tab (and content) has been loaded/updated.
+
+
+
+2.2. quickTask
+	project.quickTask.formLoaded
+	@param	{Ajax.Response} response
+	Evoked after opening quick task creation form.
+
+	project.quickTask.saved
+	@param	{Number} 		idTask
+	@param	{Number} 		idProject
+	@param	{Ajax.Response} response
+	Evoked after quicktask has been saved and quick creation popUp closed.
+
+	project.quickTask.closePopup
+	Evoked when quicktask creation popup is being closed
+
+
+
+3.		Panelwidgets
+3.1.	Panelwidget ProjectList
+
+	panelwidget.projectlist.onProjectClick
+	@param	{Integer} 		idProject
+	Evoked after project in projects list has been clicked.

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">data</attribute>
+	</attributes>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Main company data</legend>
+			<elements>
+
+				<field type="text" name="title">
+					<label>contact.ext.company.attr.title</label>
+					<required />
+				</field>
+
+				<field type="text" name="street">
+					<label>contact.ext.address.attr.street</label>
+					<required />
+				</field>
+
+				<field type="text" name="zip">
+					<label>contact.ext.address.attr.zip</label>
+					<required />
+				</field>
+
+				<field type="text" name="city">
+					<label>contact.ext.address.attr.city</label>
+					<required />
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="button">
+			<legend>Main company data</legend>
+			<elements>
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.firststeps.Wizard.addEmployee()</onclick>
+					<text>firststeps.ext.employee.addCompany</text>
+				</field>
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

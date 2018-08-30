@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=calendar&amp;controller=reminder</attribute>
+		<attribute name="name">reminder</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+		<field name="id_event" />
+	</hiddenFields>
+
+	<fieldsets>
+		<fieldset name="main">
+			<class>reminderschedule</class>
+			<elements>
+				<field type="select" name="date_remindpopup">
+					<label>calendar.ext.reminder.remindagain</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getRemindAgainOptions</function>
+					</source>
+					<noPleaseSelect />
+				</field>
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<class>buttons</class>
+			<elements>
+				<field type="cancelButton" name="dismiss">
+					<text>core.global.dismiss</text>
+					<onclick>Todoyu.Ext.calendar.Reminder.Popup.deactivate(#id_event#, true)</onclick>
+				</field>
+
+				<field type="button" name="ok">
+					<text>calendar.ext.reminder.button.remindlater</text>
+					<class>rescheduleReminderButton</class>
+					<onclick>Todoyu.Ext.calendar.Reminder.Popup.rescheduleReminderTime(this.form)</onclick>
+					<hasIcon />
+				</field>
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

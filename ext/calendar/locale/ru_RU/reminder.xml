@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="reminders">Напоминания</label>
+	<label index="myreminders">Мои напоминания</label>
+	<label index="email">Электронная почта</label>
+	<label index="popup">Всплывающее окно</label>
+	<label index="deactivated">Напоминание не активно</label>
+	<label index="notify.email.deactivated">Напоминание по почте неактивно</label>
+	<label index="notify.popup.deactivated">Напоминание в всплывающем окне не активно</label>
+	<label index="notify.email.timeupdated">Изменено расписание напоминния по электронной почте</label>
+	<label index="notify.popup.timeupdated">Изменено расписания напоминания в всплывающем окне</label>
+	<label index="beforeDateStart">перед событием</label>
+	<label index="atDateStart">Когда событие начинается</label>
+	<label index="email.subject">Гапоминание о событии</label>
+	<label index="email.title">Автоматическое напоминание о событии</label>
+	<label index="noReminder">Не напоминать</label>
+</labels>

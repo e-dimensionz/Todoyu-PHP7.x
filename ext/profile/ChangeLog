@@ -1,0 +1,33 @@
+todoyu profile extension changelog
+
+profile 1.3.1 - 2013-12-31
+	* Added: Catalan language. Credits to Carles Baiges Camprubí LaCol (www.lacol.org)
+
+profile 1.3.0 - 2013-03-27
+	* Require: todoyu 2.3.0
+	* Changed: Press CTRL when click in the profile headlet to open it in a new window/tab
+
+profile 1.2.0 - 2012-05-03
+	* Adapted to core 2.2
+
+profile 1.1.2 - 2011-11-17
+	* Translation: Polish
+
+profile 1.1.1 - 2011-09-15
+	* Minor cleanups
+	* Added: Notification identifier for saved password in profile
+
+profile 1.1.0 - 2011-06-17
+	* Feature: Added module form legends, cleanup and equalization of module content views
+	* Feature: Added highlighting of active module option in profile modules panelwidget
+	* Feature: Added JS for profile modules panelwidget
+	* Changed: Requires core 2.1
+	* Changed: Structure for 2.1
+	* Changed: All classes are prefixed with extension name
+
+profile 1.0.6 - 2011-01-17
+ 	* Feature: Added placeholders for to-be spanish locale files
+
+profile 1.0.1 to 1.0.4 - 1.0.4 released 2011-01-17
+
+profile 1.0.0 - released 2010-05-10

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="num2.name">非洲</label>
+	<label index="num9.name">大洋洲</label>
+	<label index="num19.name">美洲</label>
+	<label index="num142.name">亚洲</label>
+	<label index="num150.name">欧洲</label>
+	<label index="num30.name">东亚</label>
+	<label index="num35.name">东南亚</label>
+	<label index="num62.name">中南亚</label>
+	<label index="num145.name">西亚</label>
+	<label index="num39.name">南欧</label>
+	<label index="num151.name">东欧</label>
+	<label index="num154.name">北欧</label>
+	<label index="num155.name">西欧</label>
+	<label index="num830.name">海峡群岛</label>
+	<label index="num833.name">马恩岛</label>
+	<label index="num5.name">南美洲</label>
+	<label index="num13.name">中美洲</label>
+	<label index="num21.name">北美</label>
+	<label index="num29.name">加勒比海</label>
+	<label index="num11.name">西非</label>
+	<label index="num14.name">东非</label>
+	<label index="num15.name">北非</label>
+	<label index="num17.name">中非</label>
+	<label index="num18.name">南非</label>
+	<label index="num53.name">澳大利亚和新西兰</label>
+	<label index="num54.name">美拉尼西亚</label>
+	<label index="num57.name">密克罗尼西亚地区</label>
+	<label index="num61.name">波利尼西亚</label>
+</labels>

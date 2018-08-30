@@ -1,0 +1,17 @@
+<table class="list fixedTable personListing assignedPersons">
+	<tr class="listItem listItemHeader">
+		<th class="name">{Label contact.ext.person}</th>
+		<th class="company">{Label contact.ext.company}</th>
+		<th class="role">{Label project.ext.attr.persons.role}</th>
+	</tr>
+	{foreach $persons person}
+	<tr class="listItem {cycle values="odd,even"} person">
+		<td class="name">
+			<span class="icon"></span>
+			{personLabel idPrefix="project_assigned" idRecord=$person.id_project idPerson=$person.id class="name"}
+		</td>
+		<td class="company">{$person.company[0].title}&nbsp;</td>
+		<td class="role">{Label $person.rolelabel}</td>
+	</tr>
+	{/foreach}	
+</table>

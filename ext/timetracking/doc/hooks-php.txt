@@ -1,0 +1,13 @@
+Timetracking Extension - PHP Hooks
+==================================
+
+Event Hooks
+***************************************
+
+#timetracking.tracking.start
+	Timetracking was started for a task
+	@param	Integer		$idTask
+
+#timeracking.tracking.stop
+	Timetracking was stopped
+	@param	Integer		$idTask

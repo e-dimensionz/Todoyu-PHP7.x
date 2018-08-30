@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Calendario</label>
+	<label index="page.title">Calendario</label>
+	<label index="maintab.label">Pianificazione</label>
+	<label index="subMenuEntries.prefix">Calendario</label>
+	<label index="subMenuEntry.day">Giorno</label>
+	<label index="subMenuEntry.week">Settimana</label>
+	<label index="subMenuEntry.month">Mese</label>
+	<label index="search.label">Eventi</label>
+	<label index="search.mode.label">Trova eventi</label>
+	<label index="portal.tab.appointments">Appointments</label>
+	<label index="portal.tab.appointments">Appointments</label>
+	<label index="quicknav.backward.title">Back</label>
+	<label index="quicknav.forward.title">Forward</label>
+	<label index="quicknav.today.title">Jump to current day</label>
+	<label index="dayview.workingtime">Show working hours only (08h-18h)</label>
+	<label index="dayview.fullday">Show hours of full day (00h-24h)</label>
+	<label index="holidayset">Holiday Set</label>
+	<label index="records.holidayset">Holiday Set</label>
+	<label index="holidayset.attr.name">Name</label>
+	<label index="holidayset.attr.holiday">Holiday</label>
+	<label index="holidayset.attr.holiday.new">New Holiday</label>
+	<label index="holiday">Holiday</label>
+	<label index="holiday.attr.workingtime">Working Hours</label>
+	<label index="holiday.attr.holidayset">Holiday Set</label>
+	<label index="holiday.attr.holidayset.new">New Holiday Set</label>
+	<label index="yearsold">Years Old</label>
+	<label index="workingtime">Working Hours</label>
+	<label index="currentweek">Questa Settimana</label>
+	<label index="furtherevents">Further Events</label>
+	<label index="owner">Owner</label>
+	<label index="today">Today</label>
+	<label index="calendartitle.dateformat.day">%A, %B %e %Y (CW %V)</label>
+	<label index="calendartitle.dateformat.week.spanstwomonths.part1">CW %V: %B %e - </label><!-- timestamp: first displayed day, start and end of week are in different months -->
+	<label index="calendartitle.dateformat.week.spanstwomonths.part2">%B %e %Y</label><!-- timestamp: last displayed day, start and end of week are in different months -->
+	<label index="calendartitle.dateformat.week.samemonth.part1">CW %V: %B %e - </label><!-- timestamp: first displayed day, start and end of week are in same months -->
+	<label index="calendartitle.dateformat.week.samemonth.part2">%e %Y</label><!-- timestamp: last displayed day, start and end of week are in same months -->
+	<label index="calendartitle.dateformat.month.part1">%B %Y </label><!-- timestamp: beginning of shown month -->
+	<label index="calendartitle.dateformat.month.part2">(CW %V-</label><!-- timestamp: first displayed day -->
+	<label index="calendartitle.dateformat.month.part3">%V)</label><!-- timestamp: last displayed day -->
+	<label index="profile.module">Calendario</label>
+	<label index="profile.module.main.tab">Principale</label>
+</labels>

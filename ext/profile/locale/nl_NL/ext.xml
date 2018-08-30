@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Persoonlijke instellingen</label>
+	<label index="page.title">Mijn profiel</label>
+	<label index="headlet.label">Mijn instellingen</label>
+	<label index="module.general">Algemene instellingen</label>
+	<label index="general.main.tab">Algemeen</label>
+	<label index="general.main.locale">Taal</label>
+	<label index="general.main.saved">Instellingen opgeslagen</label>
+	<label index="general.password.tab">Wachtwoord</label>
+	<label index="general.password.current">Huidig wachtwoord</label>
+	<label index="general.password.current.empty">Voer a.u.b. uw oude wachtwoord in om het te wijzigen</label>
+	<label index="general.password.current.wrong">Het oude wachtwoord dat u heeft ingevoerd is incorrect</label>
+	<label index="general.password.new1">Nieuw wachtwoord</label>
+	<label index="general.password.new2">Wachtwoord herhalen</label>
+	<label index="general.password.error">Wachtwoord can niet gewijzigd worden</label>
+	<label index="general.password.success">Wachtwoord is gewijzigd</label>
+	<label index="general.password.notEqual">De nieuwe wachtwoorden zijn niet identiek</label>
+	<label index="general.password.header">Wachtwoord</label>
+</labels>

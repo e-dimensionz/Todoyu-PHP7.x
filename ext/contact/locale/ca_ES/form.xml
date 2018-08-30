@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.person.basics">Informació bàsica de la persona</label>
+	<label index="legend.person.picture">Imatge de perfil</label>
+	<label index="legend.person.furtherInformation">Més informació</label>
+	<label index="legend.person.login">Conta d'usuari</label>
+	<label index="legend.company.basics">Informació bàsica de l'empresa</label>
+	<label index="legend.company.logo">Logo de l'empresa</label>
+	<label index="legend.admin.jobtype.record">Tipus de feina</label>
+	<label index="legend.admin.contactinfotype.record">Tipus d'informació de contacte</label>
+	<label index="warning.duplicatedEntries">La següent informació està duplicada:</label>
+</labels>

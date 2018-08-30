@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=sysmanager&amp;controller=extensions</attribute>
+		<attribute name="name">importExtension</attribute>
+		<attribute name="enctype">multipart/form-data</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="MAX_FILE_SIZE" value="5000000" noWrap="true" noStorage="true" />
+		<field name="action" noWrap="true" value="upload" />
+	</hiddenFields>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Left form column</legend>
+			<class>main</class>
+			<elements>
+
+				<field type="upload" name="file">
+					<label>sysmanager.extension.upload.selectfile</label>
+				</field>
+
+				<field type="comment" name="archivehint">
+					<comment>sysmanager.extension.upload.archivehint</comment>
+				</field>
+
+				<field type="checkbox" name="override">
+					<label>sysmanager.extension.upload.override</label>
+				</field>
+
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="button" name="upload">
+					<type>submit</type>
+					<text>sysmanager.extension.upload.button</text>
+					<class>uploadExtension</class>
+					<onclick>Todoyu.Ext.sysmanager.Extensions.Import.startUpload()</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

@@ -1,0 +1,29 @@
+<h3 id="task-{$task.id}-header" class="contextmenutask bcStatus{$task.status}">
+	<span class="statusColor bcStatus{$task.status}"></span>
+	<span class="headLabel" title="{htmlencode $task.fulltitle}" onclick="Todoyu.Ext.project.Task.toggleDetails({$task.id})">
+
+		<span class="taskDate date" title="{dateFormat $task.date_start D2M2Y2} - {if $task.type === constant('TASK_TYPE_TASK') && $task.date_end > 0}{dateFormat $task.date_end D2M2Y2}{else}{dateFormat $task.date_deadline D2M2Y2}{/if}">
+			{if !$task.is_container && $task.date_end > 0}
+				{dateFormat $task.date_end D2M2Y2}
+			{else}
+				{dateFormat $task.date_deadline D2M2Y2}
+			{/if}
+			&nbsp;
+		</span>
+		<span class="customer">
+			{if $task.company.shortname}{htmlencode $task.company.shortname}{else}{htmlencode $task.company.title}{/if}&nbsp;
+		</span>
+		<span class="projectName" title="{Label project.ext.project}: {htmlencode $task.project.title} (ID: {$task.project.id}) / {Label project.task.task}: {htmlencode $task.title}">
+			{$titlePrefix}{htmlencode($task.project.title)} - {htmlencode($task.title)}{$titlePostfix}
+		</span>
+	</span>
+
+	<span class="taskNumber">
+		<span class="taskNumberProject">{$task.id_project}.</span><span class="taskNumberTask">{$task.tasknumber}</span>
+	</span>
+	<span class="taskIcons{if sizeof($taskIcons) > 4} taskIconsOverflow{/if}">
+		{foreach $taskIcons taskIcon}
+			<span id="{$taskIcon.id}" class="{$taskIcon.class}" title="{Label $taskIcon.label}" {if $taskIcon.onclick}onclick="{$taskIcon.onclick}"{/if}></span>
+		{/foreach}
+	</span>
+</h3>

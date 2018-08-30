@@ -1,0 +1,198 @@
+Project Extension - PHP Hooks
+=============================
+
+Event Hooks
+***************************************
+
+#project.quickcreatetask
+	Form for a new task in create popup is displayed
+	@param	Integer		$idProject
+
+
+#project.quicktask
+	Form for a new quick task in create popup is displayed
+	@param	Integer		$idProject
+
+
+#project.quicktask.saved
+	Quicktask was saved
+	@param	Integer		$idTask
+	@param	Integer		$idProject
+	@param	Array		$storageData
+
+
+#project.project.add
+	Project was added
+	@param	Integer		$idProject
+
+
+#project.project.update
+	Project was updated
+	@param	Integer		$idProject
+	@param	Array		$data
+
+
+#project.project.changeStatus
+	Project status changed
+	@param	Integer		$idProject
+	@param	Integer		$newStatus
+
+
+#project.project.delete
+	Project was deleted
+	@param	Integer		$idProject
+
+
+#project.projectpresetdata
+	Collect preset data attributes (labels and value)
+	@todo	Refactor
+	@param	Integer		$idProject
+	@return	Array
+
+
+#project.task.create.render
+	Before rendering the form to create a new task
+
+
+#project.projects.render
+	Before projects are rendered for listings
+
+
+#project.task.create
+	Request for a new task. Render empty task form
+	@param	Integer		$idParentTask
+	@param	Integer		$idProject
+	@param	Integer		$type
+
+
+#project.task.update
+	Task updated
+	@param	Integer		$idTask
+	@param	Array		$data
+
+
+#project.task.add
+	Task added
+	@param	Integer		$idTask
+
+
+#project.task.delete
+	Task deleted
+	@param	Integer		$idTask
+
+
+#project.task.copy
+	Task copied
+	@param	Integer		$idTaskOld
+	@param	Integer		$idTaskNew
+
+
+#project.task.lock
+	Task locked
+	@param	Integer		$idTask
+
+
+#project.task.unlock
+	Task unlocked
+	@param	Integer		$idTask
+
+
+#project.task.edit
+	Edit a task
+	@param	Integer		$idTask
+
+
+
+
+Data modification
+***************************************
+
+#projectCSVExportParseData
+	Modify project data for CSV export
+	@param	Array					$exportData
+	@param	TodoyouProjectProject	$project
+	@return	Array
+
+#taskCSVExportParseData
+	Modify task data for CSV export
+	@param	Array				$exportData
+	@param	TodoyuProjectTask	$project
+	@return	Array
+
+#project.properties
+	Collect project detail properties
+	@param	Array		$properties
+	@param	Integer		$idProject
+
+#project.defaultData
+	Collect project default data
+	@param	Array
+	@return	Array
+
+
+#project.dataBeforeRender
+	Modify data before project details are rendered
+	@param	Array		$data
+	@param	Integer		$idProject
+	@return	Array
+
+#task.dataBeforeRendering
+	Modify data before task details are rendered
+	@param	Array		$data
+	@param	Integer		$idTask
+	@param	String		$callingMethod
+
+#onTaskStatusChanged
+	Modify task data on status change
+	@param	Array		$data
+	@param	Integer		$idTask
+
+#taskdata
+	Collect task data for rendering
+	@param	Array		$data
+	@param	Integer		$idTask
+
+#taskinfo
+	Collect task infos for rendering
+	@param	Array		$data
+	@param	Integer		$idTask
+	@param	Integer		$infoLevel
+
+#taskIcons
+	Collect task icons
+	@param	Array		$data
+	@param	Integer		$idTask
+
+#taskHeaderExtras
+	Collect task header extras
+	@param	Array		$data
+	@param	Integer		$idTask
+
+#task.defaultData
+	Collect task default data
+	@param	Array		$data
+	@param	Integer		$type
+	@param	Integer		$idProject
+	@param	Integer		$idParentTask
+
+#task.defaultsForNotAllowedFields
+	Set default values for missing fields because the user was not allowed to populate them
+	@param	Array		$data
+	@param	Array		$originalData
+
+#task.modifyFormfieldsForContainer
+	@todo	Refactor/Remove
+	@param	TodoyuForm	$form
+	@param	Integer		$idTask
+
+#taskcopydata
+	Modify data before task is copied
+	@param	Array		$data
+	@param	Integer		$idTask
+	@param	Integer		$idParent
+	@param	Boolean		$withSubtasks
+	@param	Integer		$idProject
+
+#task.statusInfos
+	Modify available status infos
+	@param	Array	$data

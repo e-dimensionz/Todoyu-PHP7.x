@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Časový deník</label>
+	<label index="title">Deník zaznamenaného času</label>
+	<label index="history.title">Časový deník</label>
+	<label index="history.total">Celkový zaznamenaný čas</label>
+	<label index="history.showdetails">Zobraz detaily</label>
+	<label index="history.noTracks">Žádný čas nebyl zaznamenán pro zvolené časové období</label>
+	<label index="totalToday">Celkový zaznamenaný čas dnes</label>
+	<label index="daysinmonth">Dny v měsíci</label>
+	<label index="export.title">Export</label>
+	<label index="export.company">Zákazník</label>
+	<label index="export.popup.title">Export časového výkazu</label>
+	<label index="export.popup.date_end">Konečné datum</label>
+	<label index="export.popup.error.allFieldsEmpty">Všechna pole jsou prázdná</label>
+</labels>

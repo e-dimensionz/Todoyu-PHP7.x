@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Documents de la tasca</label>
+	<label index="legend.inlineAssetUpload">Documents adjunts a aquesta tasca</label>
+	<label index="assets.button.delete">Elimina el document seleccionatt</label>
+	<label index="assets.button.upload">Puja un nou document</label>
+</labels>

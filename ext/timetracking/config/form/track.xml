@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="action">index.php?ext=timetracking&amp;controller=tasktab</attribute>
+		<attribute name="name">timetrack</attribute>
+	</attributes>
+	<hiddenFields>
+		<field name="id" />
+		<field name="id_task" />
+	</hiddenFields>
+	<fieldsets>
+		<fieldset name="main">
+			<legend>Edit timetracking record</legend>
+			<class>main</class>
+			<elements>
+
+				<field type="date" name="date_track">
+					<label>timetracking.ext.attr.date_track</label>
+				</field>
+
+				<field type="duration" name="workload_tracked">
+					<label>timetracking.ext.attr.workload_tracked</label>
+				</field>
+
+				<field type="duration" name="workload_chargeable">
+					<label>timetracking.ext.attr.workload_chargeable</label>
+				</field>
+
+				<field type="text" name="comment">
+					<label>timetracking.ext.attr.comment</label>
+				</field>
+
+			</elements>
+		</fieldset>
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.timetracking.Task.cancelTrackEditing(#id_task#, #id#)</onclick>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.timetracking.Task.saveTrack(#id_task#, #id#)</onclick>
+				</field>
+
+			</elements>
+		</fieldset>
+	</fieldsets>
+</form>

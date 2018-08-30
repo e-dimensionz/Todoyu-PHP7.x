@@ -1,0 +1,28 @@
+#panelwidget-sysmanagermodules li.config a {
+	background:url(../img/icons.png) no-repeat 1px -570px;
+}
+
+
+
+/* -------------------
+	Tabs
+   ------------------- */
+#config-tabs span.icon {
+	background:url(../img/icons.png) no-repeat;
+}
+
+#config-tabs li.logo span.icon {
+	background-position:0 -595px;
+}
+
+#config-tabs li.systemconfig span.icon {
+	background-position:0 -565px;
+}
+
+#config-tabs li.passwordstrength span.icon {
+	background-position:0 -805px;
+}
+
+#config-tabs li.repository span.icon {
+	background-position:0 -836px;
+}

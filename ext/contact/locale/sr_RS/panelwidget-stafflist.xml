@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Особље</label>
+	<label index="search">Претрага</label>
+	<label index="list.empty">Ниједна особа није пронађена(са изабраним филтерима)</label>
+</labels>

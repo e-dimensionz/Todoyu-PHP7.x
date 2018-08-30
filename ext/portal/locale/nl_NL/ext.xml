@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Portal</label>
+	<label index="page.title">Portal</label>
+	<label index="tab">Portal</label>
+	<label index="tab.selection">Mijn filter</label>
+	<label index="tasktree.header.date">Datum</label>
+	<label index="tasktree.header.customer">Klant</label>
+	<label index="tasktree.header.number">Nr.</label>
+	<label index="tasktree.header.tasknumber">Nummer</label>
+	<label index="task.title.deadline">Deadline</label>
+	<label index="task.title.deadline_short">D</label>
+	<label index="task.title.begin">Start</label>
+	<label index="task.title.begin_short">S</label>
+	<label index="task.title.customer">Klant</label>
+	<label index="task.title.jump">Ga</label>
+	<label index="task.title.tasknumber">Taaknr.</label>
+	<label index="tab.todos">Te Doen</label>
+	<label index="tab.feedbacks">Terugkoppeling</label>
+	<label index="date.start.short">B</label>
+	<label index="selection.noTasksFound">Geen taken gevonden voor deze filterselectie</label>
+	<label index="selection.noProjectsFound">Geen projecten gevonden voor deze filterselectie</label>
+	<label index="subMenuEntry.selection">Portal > Selectie</label>
+	<label index="subMenuEntry.todos">Portal > Te Doen</label>
+	<label index="subMenuEntry.feedbacks">Portal > Terugkoppeling</label>
+	<label index="subMenuEntry.appointments">Portal > Afspraken</label>
+	<label index="contextmenu.showinproject">Weergeven in projecten</label>
+	<label index="selection.noFiltersetsSelected">Geen filtersets geselecteerd!</label>
+</labels>

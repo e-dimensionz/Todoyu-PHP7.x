@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extension">Extensão</label>
+	<label index="key">Chave de Extensão</label>
+	<label index="keyAbbr">Ext-Key</label>
+	<label index="version">Versão / State</label>
+	<label index="author">Autor</label>
+	<label index="dependencies">Dependente De</label>
+	<label index="conflicts">Em Conflito Com</label>
+	<label index="importExtArchive">Importar Arquivo de Extensão</label>
+	<label index="version">Versão</label>
+	<label index="showInfo">Exibir Informações da Extensão</label>
+	<label index="download">Download de Extensão</label>
+	<label index="rights">Permissões</label>
+	<label index="documentation">Documentação</label>
+	<label index="install">Instalar Extensão</label>
+	<label index="install.confirm">Instalar Extensão?</label>
+	<label index="install.ok">A Extensão Foi Instalada Com Sucesso</label>
+	<label index="install.error">A Instalação da Extensão Falhou</label>
+	<label index="uninstall">Desinstalar Extensão</label>
+	<label index="uninstall.confirm">Desinstalar Extensão?</label>
+	<label index="uninstall.ok">A Extensão Foi Desinstalada Com Sucesso</label>
+	<label index="uninstall.error.general">A Extensão Não Foi Desinstalada</label>
+</labels>

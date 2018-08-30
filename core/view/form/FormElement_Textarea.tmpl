@@ -1,0 +1,8 @@
+{extends "core/view/form/FormElement.tmpl"}
+
+{block name="field"}
+{$numTextRows = sizeof(explode("\n", $valueTemplate))}
+{$autoRows = max($rows, $numTextRows)}
+{$autoRows += 1}
+<textarea name="{$htmlName}" id="{$htmlId}" {if $readonly}readonly="readonly"{/if} {if $onclick}onclick="{$onclick}"{/if} onkeyup="Todoyu.Form.autoResizeTextArea('{$htmlId}')" cols="{$cols}" rows="{$autoRows}" class="{$inputClass} {$class}" {if $style}style="{$style}"{/if}>{cleanHtml $valueTemplate}</textarea>
+{/block}

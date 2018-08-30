@@ -1,0 +1,26 @@
+<div id="navi-main">
+	<ul id="navi-main-list" class="navilist">
+{foreach $navigation entry name=navimain}
+		<li class="item level1 item{ucfirst $entry.key} bcl01{if $entry.active} active bcl02{/if}{if $entry.submenu} hasSub{/if}{if $dwoo.foreach.navimain.first} first{/if}{if $dwoo.foreach.navimain.last} last{/if}">
+			<a href="{$entry.href}"{if $entry.target !== null} target="{$entry.target}"{/if} title="{$entry.desc}"{if $entry.active} class="active"{/if}>{$entry.label}</a>
+			{if $entry.submenu}
+			<ul id="navi-main-list-{$entry.key}" class="navilist">
+				{foreach $entry.submenu sub name=navimainsub}
+					<li class="item item{ucfirst $sub.key}{if $sub.active} active{/if}{if $dwoo.foreach.navimainsub.first} first{/if} bcl02">
+						<a href="{$sub.href}" title="{if $sub.desc}{htmlencode $sub.desc}{else}{htmlencode $sub.label}{/if}" {if $sub.active}class="active"{/if}>{htmlencode(cropText($sub.label,29,false))}</a>
+					</li>
+				{/foreach}
+				<li class="item last bcl02"> </li>
+			</ul>
+			{/if}
+		</li>
+{/foreach}
+	</ul>
+</div>
+
+<div id="to-top" style="display:none" onclick="Todoyu.Ui.scrollToTop()">
+	<h1>
+		<span class="label">Top</span>
+		<span class="arrow"></span>
+	</h1>
+</div>

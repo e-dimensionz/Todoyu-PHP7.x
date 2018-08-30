@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Главне информације вашег догађаја</label>
+	<label index="legend.details">Даље информације</label>
+	<label index="legend.notification">Обавешти учеснике</label>
+	<label index="legend.reminders">Моје подсетнике за овај термин</label>
+	<label index="legend.profile.general">Главна подешавања календар-а</label>
+	<label index="legend.profile.reminder.general">Уредите ваше подсетнике по вашим захтевима</label>
+	<label index="legend.admin.overbooking">Уреди понашање у случају пребукирања.</label>
+	<label index="legend.admin.reminders">Унапред постављена подешавања за подсетнике</label>
+	<label index="legend.admin.automaticEmail">Уреди понашање обавештења</label>
+	<label index="legend.admin.holidayset.record.general">Састав празника</label>
+	<label index="legend.admin.holiday.record.general">Празник</label>
+</labels>

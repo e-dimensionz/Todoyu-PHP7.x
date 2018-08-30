@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">プロジェクト</label>
+	<label index="search">検索</label>
+	<label index="list.empty">(選択されたフィルタには) プロジェクトはありません</label>
+</labels>

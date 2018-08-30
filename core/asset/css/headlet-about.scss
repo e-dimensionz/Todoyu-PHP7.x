@@ -1,0 +1,142 @@
+@import "../../config/theme.scss";
+
+
+
+/* -----------------------
+	About headlet
+   ----------------------- */
+#todoyuheadletabout .button {
+	background:url(../img/headlet-icons.png) no-repeat 1px -24px;
+}
+
+
+
+/* -------------------------
+	About popup window
+   ------------------------- */
+#popup-about {
+	&_content {
+		background-color:$white; }
+
+	.version {
+		position:relative;
+		right: -250px;
+		top: -36px;
+		z-index:50000;
+		width:200px;
+		text-align:right !important;
+		background:transparent !important; }
+
+	.left {
+		float:left; }
+
+	.right {
+		float:left;
+		clear:right; }
+
+	.logo {
+		height:120px;
+		background:url(../img/logo2.png) no-repeat 40% 0; }
+
+	p.info {
+		text-align:left;
+		padding:0 8px 0 8px;
+		margin:0 0 12px 0;
+
+		p {
+			margin:12px 0 12px 0; }
+	}
+
+	a {
+   		text-decoration:underline; }
+
+	.thanks {
+		text-align:left !important;
+		padding:0 0 0 8px;
+		margin:24px 0 6px 0; }
+
+	.creditsbox {
+		border:1px solid $colorNeutral02;
+		height:150px;
+		clear:left;
+		margin:0 0 0 6px;
+		width:536px;
+		padding:5px;
+		position:relative; }
+
+	.names {
+		overflow:hidden;
+
+		ul {
+			padding-top:50px;
+
+			li {
+				padding:9px;
+
+				&.coder {
+					letter-spacing:2px;
+					text-transform:uppercase; }
+			}
+		}
+	}
+
+	#ee-img {
+		position:absolute;
+		left:57px;
+		top:38px;
+		width:400px;
+		height:200px;
+		background:url(../img/ggeretsae.gif) no-repeat 0 0;
+	}
+}
+
+
+
+/* ------------------------------------------------
+	Toggle button (team / 3rd party credits)
+   ------------------------------------------------ */
+button#about-toggle-credits {
+	float:right;
+	margin: -8px 12px 2px 0;
+
+	span.icon {
+		width:2px !important;
+		visibility:hidden; }
+}
+
+
+
+/* -----------------------------------
+	Third party libraries credits
+   ----------------------------------- */
+#about-libs {
+	overflow-y:scroll;
+	text-align:left;
+}
+
+.creditsbox {
+	h1 {
+		padding:0 0 10px 0; }
+
+	p.product {
+		padding:8px 0 4px 0; }
+}
+
+
+
+/* -----------------------
+	Scrolling Names
+   ----------------------- */
+ul#scrollingnames li div {
+	&.left {
+		width:220px;
+		text-align:right !important;
+		float:left; }
+
+	&.right {
+		padding:0 0 0 7px;
+		width:150px;
+		text-align:left !important;
+		float:left;
+		clear:right; }
+}

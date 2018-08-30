@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Портал</label>
+	<label index="page.title">Портал</label>
+	<label index="tab">Портал</label>
+	<label index="tab.selection">Моји филтери</label>
+	<label index="tasktree.header.date">Датум</label>
+	<label index="tasktree.header.customer">Купац</label>
+	<label index="tasktree.header.number">Бр.</label>
+	<label index="tasktree.header.tasknumber">Број</label>
+	<label index="task.title.deadline">Крајњи рок</label>
+	<label index="task.title.deadline_short">Кр</label>
+	<label index="task.title.begin">Почни</label>
+	<label index="task.title.begin_short">П</label>
+	<label index="task.title.customer">Купац</label>
+	<label index="task.title.jump">Цкочи</label>
+	<label index="task.title.tasknumber">Број задатка</label>
+	<label index="tab.todos">Задаци</label>
+	<label index="tab.feedbacks">Повратне информације</label>
+	<label index="date.start.short">П</label>
+	<label index="selection.noTasksFound">Не постоји задатак у овом избору филтера</label>
+	<label index="selection.noProjectsFound">Нема пројектa за траженu филтер селекцију</label>
+	<label index="subMenuEntry.selection">Портал &gt; Избор</label>
+	<label index="subMenuEntry.todos">Портал &gt; Задаци</label>
+	<label index="subMenuEntry.feedbacks">Портал &gt; Повратне информације</label>
+	<label index="subMenuEntry.appointments">Портал &gt; Термини</label>
+	<label index="contextmenu.showinproject">Покажи у пројекту</label>
+	<label index="selection.noFiltersetsSelected">Није изабран ниједан филтер!</label>
+</labels>

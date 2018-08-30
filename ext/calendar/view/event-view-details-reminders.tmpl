@@ -1,0 +1,10 @@
+{if isAllowedEventReminderPopup($event.id)}
+	<div>
+		<strong>{Label calendar.reminder.email}:</strong>	{$event.reminders.mail}
+	</div>
+{/if}
+{if isAllowedEventReminderPopup($event.id)}
+	<div>
+		<strong>{Label calendar.reminder.popup}:</strong> {$event.reminders.popup}
+	</div>
+{/if}

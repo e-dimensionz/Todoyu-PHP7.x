@@ -1,0 +1,127 @@
+//  @see core/doc/theme.html for todoyu corporate identity color-table
+
+	// Background color
+$colorBackground:#e3eace;
+
+	// Fonts
+	// Main fonts
+$fontFamilyMain:Arial, Verdana, Helvetica, sans-serif;
+$fontSizeMain:11px;
+
+	// Fonts used for source code
+$fontFamilyCode:Courier,monospace;
+
+
+	//  Corporate color, todoyu CI: shades of olive-green
+$colorCorporate00:#f6f8f0;
+$colorCorporate01:#edf1e0;
+$colorCorporate02:#e3eace;		// Main background color
+$colorCorporate03:#e1e5d8;		// Context Menu hover
+$colorCorporate04:#d0d6be;
+$colorCorporate05:#adb989;
+$colorCorporate06:#969C85;		// Dark-olive, used for overlay
+
+	// Basic colors
+$white:#ffffff;
+$black:#000000;
+$colorTextGeneral:#010101;
+
+	// Link colors
+$colorLinkHover:#dddddd;
+
+	// Grey tones for general interface elements (backgrounds, headers, forms, etc)
+$colorNeutral00:#f8f8f8;
+$colorNeutral01:#eeeeee;
+$colorNeutral02:#dddddd;
+$colorNeutral03:#cccccc;
+$colorNeutral04:#bbbbbb;
+$colorNeutral05:#aaaaaa;
+$colorNeutral06:#999999; // Most prominent grey
+$colorNeutral07:#666666;
+$colorNeutral08:#444444;
+$colorNeutral09:#222222;
+
+	// Highlightning, todoyu CI: yellow
+$colorHighlight01:#e9eda1;
+$colorHighlight02:#f1f3be;
+$colorHighlight03:#ffffe0;
+$colorHighlight04:#ffffbb;
+$colorHighlight05:#f6f6c8;
+
+	// Notice, todoyu CI: yellow/orange
+$colorNotice00:#ffac00;	//rename to colorNoticeBoxshadow
+$colorNotice01:#ffdd99;	//rename to colorNoticeBorder, change color to current colorNotice02
+$colorNotice02:#ff8000;	//rename to colorNoticeText
+$colorNotice03:#ffecc5;	//rename to colorNoticeBackground
+
+	// Positive marking, todoyu CI: green
+$colorApprove01:#b0d026;
+$colorApprove02:#c9dbd4;
+$colorApprove03:#c8d215;
+$colorApprove04:#c8ddbe;
+$colorApprove05:#9dc08e;
+$colorApprove06:#779124;
+$colorApprove07:#008000;
+$colorApprove08:#70ae6a;
+
+	// Alert marking, todoyu CI: red
+$colorAlert00:#ff0000;
+$colorAlert01:#a84747;
+$colorAlert02:#991010;
+$colorAlert03:#ffa07a;
+$colorAlert04:#f6e0e0;
+
+	// todoyu CI: blue
+$blue00:#b9eefc;	// change_color($colorNeutral00, $blue:99);
+$blue01:#ccd6e2;	// change_color($colorNeutral01, $blue:99);
+$blue02:#50c5b5;	// change_color($colorNeutral02, $blue:99);
+$blue03:#4f8ab4;
+$blue04:#24a5c3;
+$blue05:#316ac5;
+$blue06:#0065a6;
+$blue07:#88aacc;
+$blue08:#aaccee;
+
+
+
+	// Mix-ins: repeatedly used elements and attributes
+
+	// Gradient for headers
+@mixin gradient-header {
+	background:#ececec; /* Old browsers */
+	background: -moz-linear-gradient(top, #ececec 0%, #cecece 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ececec), color-stop(100%,#cecece)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ececec 0%,#cecece 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ececec 0%,#cecece 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ececec 0%,#cecece 100%); /* IE10+ */
+	background:linear-gradient(to bottom, #ececec 0%,#cecece 100%); /* W3C */
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#cecece',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin gradient-header-highlight {
+	background:#f0f0f0; /* Old browsers */
+	background: -moz-linear-gradient(top, #f1f1f1 0%, #d3d3d3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#d3d3d3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f1f1f1 0%,#d3d3d3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f1f1f1 0%,#d3d3d3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f1f1f1 0%,#d3d3d3 100%); /* IE10+ */
+	background:linear-gradient(to bottom, #f1f1f1 0%,#d3d3d3 100%); /* W3C */
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#d3d3d3',GradientType=0 ); /* IE6-9 */
+}
+
+	// Gradient for buttons
+@mixin gradient-button {
+	background:#ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e0e0e0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e0e0e0 100%); /* IE10+ */
+	background:linear-gradient(to bottom, #ffffff 0%,#e0e0e0 100%); /* W3C */
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin border-button {
+	border-radius:13px;
+	border:1px solid $colorNeutral04;
+}

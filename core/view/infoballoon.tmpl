@@ -1,0 +1,14 @@
+{if empty($id)}{$id=md5($label)}{/if}
+<em class="infoBalloonAnchor" onmouseover="Todoyu.Ui.showInfoBalloon('{$id}');" onmouseout="Todoyu.Ui.hideInfoBalloon('{$id}');">
+	{Label $label}
+</em>
+<span class="infoBalloon" id="info-balloon-{$id}" style="display:none">
+	<p{if $balloonWidth!==0} style="width:{$balloonWidth}px" {/if}>
+		{if empty($content)}
+			{Label $label}
+		{else}
+			{$content}
+		{/if}
+	</p>
+	<span class="pointer"></span>
+</span>

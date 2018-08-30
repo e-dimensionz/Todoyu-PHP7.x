@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Cerca i crea filtres</label>
+	<label index="page.title">Cerca</label>
+	<label index="or">O</label>
+	<label index="and">I</label>
+	<label index="search.label">Cerca tot</label>
+	<label index="filterlabel.filterset">Grups de filtres</label>
+	<label index="filterset.rename">Renanomena el grup de filtres</label>
+	<label index="filterset.delete">Elimina el grup de filtres</label>
+	<label index="filterset.confirm.delete">Realment voleu eliminar el grup de filtres?</label>
+	<label index="filterset.confirm.overwrite">Voleu sobreescriure el grup de filtres existent?</label>
+	<label index="filterset.error.saveWrongType">Heu intentat guardar el grup de filtres en un arxiu incorrecte</label>
+	<label index="filterset.error.saveNoConditions">No hi ha condicions per guardar</label>
+	<label index="filterset.error.saveEmptyName">Introduïu un nom al grup de filtres</label>
+	<label index="filterset.notify.saved">El grup de filtres s'ha guardat.</label>
+	<label index="negation.default.true">No és</label>
+	<label index="negation.default.false">És</label>
+	<label index="negation.datetime.true">Després</label>
+	<label index="negation.datetime.false">Abans</label>
+	<label index="negation.datetimeDyn.true">Des de</label>
+	<label index="negation.datetimeDyn.false">Fins a</label>
+	<label index="negation.numbercompare.true">més petit que</label>
+	<label index="negation.numbercompare.false">més gran que</label>
+	<label index="newFilterLabel">Introduïu un nom per al nou filtre</label>
+	<label index="newFilterLabel.preset">Nou filtre</label>
+	<label index="subMenuEntry.task">Tasques</label>
+	<label index="subMenuEntry.project">Projectes</label>
+	<label index="areMatching">%1$d %2$s coincideixen amb els vostres criteris de cerca.</label>
+	<label index="areMatching.overLimit">més de %1$d %2$s coincideixen amb els vostres criteris de cerca. Utilitzeu més criteris per reudir els resultats o una vista per veure els resultats destacats.</label>
+	<label index="filterwidget.condtion.remove">Elima condició</label>
+	<label index="search.noEntryFound">No s'han trobat resultats</label>
+	<label index="search.noResultsForActiveFilters">No s'han trobat resultats fer als filtres seleccionats</label>
+	<label index="contextmenu.project.showinproject">Obrir en la vista de projecte</label>
+	<label index="headlet.label">Cerca a Gestió</label>
+	<label index="export.error.saveEmpty">No hi ha resultats per a ser exportats.</label>
+	<label index="filtercontrol.add.condition">Afegeix nova condició</label>
+	<label index="filtercontrol.add.sorting">Afegeix nova classificació</label>
+	<label index="sorting.remove">Elimina la classificació</label>
+	<label index="sorting.direction.asc">Ordena de forma ascendent</label>
+	<label index="sorting.direction.desc">Ordena de forma descendent</label>
+	<label index="newSeparatorLabel">Introdueixi un nom per al nou separador</label>
+	<label index="newSeparatorLabel.preset">Nou separador</label>
+</labels>

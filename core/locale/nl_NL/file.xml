@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="download">Downloaden</label>
+	<label index="upload">Uploaden</label>
+	<label index="size.gb">GB</label>
+	<label index="size.mb">MB</label>
+	<label index="size.kb">KB</label>
+	<label index="size.b">B</label>
+	<label index="filename">Bestandsnaam</label>
+	<label index="filesize">Bestandsgrootte</label>
+</labels>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extension">Расширение</label>
+	<label index="key">Ключ расширения</label>
+	<label index="keyAbbr">Ключ</label>
+	<label index="version">Версия</label>
+	<label index="author">Автор</label>
+	<label index="dependencies">Зависит от</label>
+	<label index="conflicts">Конликтует с</label>
+	<label index="importExtArchive">Импортировать архив расширения</label>
+	<label index="showInfo">Показать информацию о расширении</label>
+	<label index="configure">Сконфигурировать расширение</label>
+	<label index="download">Скачать расширение</label>
+	<label index="remove">Удалить расширение</label>
+	<label index="remove.confirm">Удалить все файлы расширения с сервера?</label>
+	<label index="rights">Поава</label>
+	<label index="documentation">Документация</label>
+	<label index="showInstalledList">Показать список установленных расширений</label>
+	<label index="install">Установить расширение</label>
+	<label index="install.confirm">Установить расширение?</label>
+	<label index="install.ok">Расширение было установлено успешно</label>
+	<label index="installed.notify">Расширение было успешно установлено:</label>
+	<label index="install.error">Установка расширения не удалась</label>
+	<label index="install.error.notify.dependencies">Расширение установить не удалось - отсутствуют необходимые расширения:</label>
+	<label index="install.error.missing">Требуемое расширение не установлено</label>
+	<label index="install.error.lowVersion">Требуемое расширение установлено, но его версия слишком мала</label>
+	<label index="install.error.conflicts">Расширение конфликтует с уже установленными расширениями</label>
+	<label index="install.error.core">Требуется более новая версия todoyu</label>
+	<label index="uninstall">Удалить расширение</label>
+	<label index="uninstall.confirm">Удалить расширение?</label>
+	<label index="uninstall.ok">Расширение было успешно удалено</label>
+	<label index="uninstall.error.general">Не удалось удалить расширение</label>
+	<label index="notify.remove.error">Не удалось удалить расширение</label>
+	<label index="notify.remove.success">Расширение было успешно удалено с сервера</label>
+	<label index="upload.selectfile">Выбрать архив с расширением (zip)</label>
+	<label index="upload.override">Переписать существующее расширение (файлы)</label>
+	<label index="upload.title">Загрузить новое расширение</label>
+	<label index="upload.button">Загрузить расширение</label>
+	<label index="upload.noArchiveSelected">Пожалуйста, выберите архив с расширением для загрузки</label>
+	<label index="upload.ok">Расширение успешно загружено</label>
+	<label index="upload.error">Не удалось загрузить расширение</label>
+	<label index="upload.archivehint">Архив с расширением todoyu должен правильно называться: todoyuExt_EXTNAME_VERSION.zip. Например: todoyuExt_project_1.1.0.zip</label>
+</labels>

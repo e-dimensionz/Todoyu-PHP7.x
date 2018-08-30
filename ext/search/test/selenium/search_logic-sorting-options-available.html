@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kastodoyutrunk.srv05.ch1.snowflake.ch/" />
+<title>search > logic, sorting options available</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">search > logic, sorting options available</td></tr>
+</thead><tbody>
+<!------ search_logic-sorting-options-available.html-->
+<!--(re)activate task tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.active</td>
+	<td></td>
+</tr>
+<!--Check options presents-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-conditions&quot;][@name=&quot;conditions&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-conjunction&quot;][@name=&quot;conjunction&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-sorting&quot;][@name=&quot;sorting&quot;]</td>
+	<td></td>
+</tr>
+<!--Check conjunction sub-options available-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-conjunction&quot;][@name=&quot;conjunction&quot;]/option[@value=&quot;AND&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-conjunction&quot;][@name=&quot;conjunction&quot;]/option[@value=&quot;OR&quot;]</td>
+	<td></td>
+</tr>
+<!--Check task sorting options available-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-sorting&quot;][@name=&quot;sorting&quot;]/optgroup[@label=&quot;Task&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-sorting&quot;][@name=&quot;sorting&quot;]/optgroup[@label=&quot;Comments&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-sorting&quot;][@name=&quot;sorting&quot;]/optgroup[@label=&quot;Task&quot;]/option[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-sorting&quot;][@name=&quot;sorting&quot;]/optgroup[@label=&quot;Comments&quot;]/option[2]</td>
+	<td></td>
+</tr>
+<!--(re)activate project tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.active</td>
+	<td></td>
+</tr>
+<!--Check project sorting options available-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-sorting&quot;][@name=&quot;sorting&quot;]/optgroup[@label=&quot;Projects&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@id=&quot;filtercontrol-sorting&quot;][@name=&quot;sorting&quot;]/optgroup[@label=&quot;Projects&quot;]/option[5]</td>
+	<td></td>
+</tr>
+<!--(re)activate task tab-->
+<tr>
+	<td>click</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-task.active</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div#content-tabs ul#search-tabs.tabs li#search-tab-project.active</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Inlogpagina</label>
+	<label index="page.title">Inloggen</label>
+	<label index="tab.login">Inloggen</label>
+	<label index="tab.help">Help</label>
+	<label index="tab.blog">Blog</label>
+	<label index="loginbox.title">Welkom! Login op todoyu</label>
+	<label index="form.field.username">Gebruikernaam</label>
+	<label index="form.field.password">Wachtwoord</label>
+	<label index="form.field.submit">Inloggen</label>
+	<label index="form.remainLogin">Herinner mij op deze computer</label>
+	<label index="form.loginFailed">De gebruikersnaam of het wachtwoord is onjuist. Probeer het nogmaals.</label>
+	<label index="form.status.enterLoginData">Voer gebruikersnaam en wachtwoord in</label>
+	<label index="form.status.verifyingLoginData">Bezig met controleren gebruikersnaam en wachtwoord</label>
+	<label index="form.status.loginOk">Inloggen geslaagd</label>
+	<label index="form.status.loginFailed">Inloggen mislukt</label>
+	<label index="error.enterUsername">Voer a.u.b. uw gebruikersnaam in</label>
+	<label index="error.enterPassword">Voer a.u.b. uw wachtwoord in</label>
+	<label index="headlet.label">Uitloggen</label>
+</labels>

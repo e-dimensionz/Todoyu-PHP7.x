@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="optgroup">Zeiterfassung</label>
+	<label index="timetrackedPerson">Person hat Zeit erfasst</label>
+	<label index="timetrackedRoles">Rollen haben Zeit erfasst</label>
+	<label index="person.trackedinproject">Hat Zeit in Projekt erfasst</label>
+	<label index="person.trackedforcustomer">Hat Zeit in Projekt von Firma erfasst</label>
+	<label index="overbookedAbsolute">Überbuchte Aufgaben, absolut in Minuten</label>
+	<label index="overbookedPercent">Überbuchte Aufgaben, Prozent (Minimum)</label>
+	<label index="isBeingTracked">Aktuell wird Zeit erfasst</label> 
+</labels>

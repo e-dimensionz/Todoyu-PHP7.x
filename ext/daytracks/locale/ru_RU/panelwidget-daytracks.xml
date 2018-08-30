@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Табель</label>
+	<label index="pwidget.title">Время, потраченое сегодня</label>
+	<label index="totalToday">Всего потрачено сегодня</label>
+	<label index="showHistory">Показать табель</label>
+	<label index="goToTask">Переключиться на задачу</label>
+</labels>

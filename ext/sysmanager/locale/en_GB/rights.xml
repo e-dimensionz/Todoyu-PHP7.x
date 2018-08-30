@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">General Settings</label>
+	<label index="general.use">Use Sysmanager</label>
+	<label index="general.extensions">Extension Manager</label>
+	<label index="general.records">Edit Records</label>
+	<label index="general.config">System Config</label>
+	<label index="extensions">Extensions</label>
+	<label index="extensions.config">Configure Extensions</label>
+	<label index="extensions.download">Download extension as archive</label>
+	<label index="extensions.modify">Install / Uninstall / Update</label>
+</labels>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Paramètres généraux</label>
+	<label index="general.extensions">Gestion des extensions</label>
+	<label index="general.records">Afficher/modifier/voir tous les enregistrements</label>
+	<label index="general.rights">Gestion des permissions</label>
+	<label index="general.roles">Gestion des rôles</label>
+	<label index="extensions">Extensions</label>
+	<label index="extensions.info">Informations de l'extension</label>
+	<label index="extensions.config">Modifier la configuration</label>
+	<label index="extensions.rights">Modifier les permissions</label>
+	<label index="extensions.records">Modifier les enregistrements</label>
+	<label index="extensions.uninstall">Désinstaller des extensions</label>
+	<label index="extensions.install">Installer des extensions</label>
+	<label index="extensions.download">Télécharger l'archive d'une extension</label>
+	<label index="extensions.update">Mettre à jour les extensions</label>
+	<label index="roles">Rôles</label>
+	<label index="roles.edit">Modifier un rôle</label>
+	<label index="roles.delete">Supprimer un rôle</label>
+</labels>

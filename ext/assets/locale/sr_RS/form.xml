@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Додаци задатка</label>
+	<label index="assets.button.delete">Избриши изабрате додатке</label>
+	<label index="assets.button.upload">Уплоадуј нове додатке</label>
+</labels>

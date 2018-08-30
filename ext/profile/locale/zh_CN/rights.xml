@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">普通设置</label>
+	<label index="general.use">使用信息功能</label>
+	<label index="settings">账号设置</label>
+	<label index="settings.password">更改密码</label>
+</labels>

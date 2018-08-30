@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">搜索和创建过滤器</label>
+	<label index="page.title">搜索</label>
+	<label index="or">OR</label>
+	<label index="and">AND</label>
+	<label index="search.label">搜索所有</label>
+	<label index="filterlabel.filterset">过滤器集</label>
+	<label index="filterset.rename">过滤器集改名</label>
+	<label index="filterset.delete">删除过滤器集</label>
+	<label index="filterset.confirm.delete">确认删除过滤器集?</label>
+	<label index="filterset.confirm.overwrite">覆盖存在的过滤器集?</label>
+	<label index="filterset.error.saveWrongType">你在保存一个错误类型的过滤器集</label>
+	<label index="filterset.error.saveNoConditions">没有条件</label>
+	<label index="filterset.error.saveEmptyName">请输入过滤器集的名字</label>
+	<label index="filterset.notify.saved">过滤器尚未保存.</label>
+	<label index="negation.default.true">否</label>
+	<label index="negation.default.false">是</label>
+	<label index="negation.datetime.true">后</label>
+	<label index="negation.datetime.false">前</label>
+	<label index="negation.datetimeDyn.true">从</label>
+	<label index="negation.datetimeDyn.false">直到</label>
+	<label index="negation.numbercompare.true">小于</label>
+	<label index="negation.numbercompare.false">大于</label>
+	<label index="newFilterLabel">请为新过滤器起个名字</label>
+	<label index="newFilterLabel.preset">新过滤器</label>
+	<label index="subMenuEntry.task">任务</label>
+	<label index="subMenuEntry.project">项目</label>
+	<label index="areMatching">%1$d %2$s 符合你的搜索条件.</label>
+	<label index="areMatching.overLimit">多于 %1$d %2$s 结果符合你的条件. 使用更多精确的搜索条件减少结果, 或使用排序查看相应的结果.</label>
+	<label index="filterwidget.condtion.remove">删除条件</label>
+	<label index="search.noEntryFound">没有找到到结果</label>
+	<label index="search.noResultsForActiveFilters">当前选择的过滤器中无结果</label>
+	<label index="contextmenu.project.showinproject">在项目窗口中打开</label>
+	<label index="headlet.label">在 todoyu 中搜索</label>
+	<label index="export.error.saveEmpty">没有需要导出的结果.</label>
+	<label index="filtercontrol.add.condition">添加条件</label>
+	<label index="filtercontrol.add.sorting">添加排序</label>
+	<label index="sorting.remove">删除排序</label>
+	<label index="sorting.direction.asc">升序</label>
+	<label index="sorting.direction.desc">降序</label>
+	<label index="newSeparatorLabel">为分割线起个名字</label>
+	<label index="newSeparatorLabel.preset">新分割线</label>
+</labels>

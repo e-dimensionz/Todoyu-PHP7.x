@@ -1,0 +1,4 @@
+<button type="{$type|default:button}" {if $id}id="{$id}"{/if} class="button {$class}" onclick="{$onclick}{if $disable};this.disabled='disabled'{/if};this.blur()" title="{if $title}{Label $title}{else}{Label $label}{/if}" {if $disabled}disabled="disabled"{/if}{if $style} style="{$style}"{/if}>
+	<span class="icon"></span>
+	{if $label}<span class="label">{Label $label}</span>{/if}
+</button>

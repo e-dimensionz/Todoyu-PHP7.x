@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">export</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>daytracks.form.legend.export.filter</legend>
+			<class>left noneFloatingInput</class>
+			<elements>
+
+				<field type="textAC" name="employee">
+					<label>contact.ext.person</label>
+					<config>
+						<acLabel>TodoyuContactPersonManager::getLabel</acLabel>
+						<options>
+							<acName>person</acName>
+							<onSelected>Todoyu.Ext.daytracks.Export.MultiAc.onPersonSelected</onSelected>
+						</options>
+					</config>
+				</field>
+
+				<field type="comment" name="employees">
+				</field>
+
+				<field type="textAC" name="employerAC">
+					<label>contact.ext.person.attr.company</label>
+					<config>
+						<acLabel>TodoyuContactCompanyManager::getLabel</acLabel>
+						<options>
+							<acName>company</acName>
+							<onSelected>Todoyu.Ext.daytracks.Export.MultiAc.onEmployerSelected</onSelected>
+						</options>
+					</config>
+				</field>
+
+				<field type="select" name="employerSelect">
+					<label>contact.ext.person.attr.company</label>
+					<source type="function">
+						<function>TodoyuDaytracksExportManager::getEmployersOptions</function>
+						<lazyInit />
+					</source>
+					<extraAttributes>
+						onchange="Todoyu.Ext.daytracks.Export.MultiAc.onEmployerSelectedSelect();"
+					</extraAttributes>
+				</field>
+
+				<field type="comment" name="employers">
+				</field>
+
+				<field type="textAC" name="project">
+					<label>project.ext.project</label>
+					<config>
+						<acLabel>TodoyuProjectProjectManager::getLabel</acLabel>
+						<options>
+							<acName>project</acName>
+							<onSelected>Todoyu.Ext.daytracks.Export.MultiAc.onProjectSelected</onSelected>
+						</options>
+					</config>
+				</field>
+
+				<field type="comment" name="projects">
+				</field>
+
+				<field type="textAC" name="company">
+					<label>daytracks.ext.export.company</label>
+					<config>
+						<acLabel>TodoyuContactCompanyManager::getLabel</acLabel>
+						<options>
+							<acName>company</acName>
+							<onSelected>Todoyu.Ext.daytracks.Export.MultiAc.onCompanySelected</onSelected>
+						</options>
+					</config>
+				</field>
+
+				<field type="comment" name="companies">
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="date">
+			<legend>daytracks.form.legend.export.filter</legend>
+			<elements>
+
+				<field type="date" name="date_start">
+					<label>project.ext.attr.date_start</label>
+				</field>
+
+				<field type="date" name="date_end">
+					<label>project.ext.attr.date_end</label>
+				</field>
+
+			</elements>
+		</fieldset>
+
+		<fieldset name="buttons">
+			<legend>Actions</legend>
+			<class>buttons</class>
+			<elements>
+
+				<field type="cancelButton" name="cancel">
+					<onclick>Todoyu.Ext.daytracks.Export.closePopup()</onclick>
+					<text>core.global.close</text>
+				</field>
+
+				<field type="saveButton" name="save">
+					<onclick>Todoyu.Ext.daytracks.Export.download(this.form)</onclick>
+					<text>core.file.download</text>
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

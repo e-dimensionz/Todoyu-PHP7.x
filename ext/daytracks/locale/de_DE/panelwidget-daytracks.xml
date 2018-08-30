@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Arbeitszeit heute</label>
+	<label index="pwidget.title">Arbeitszeit heute</label>
+	<label index="totalToday">Total heute</label>
+	<label index="totalToday.noTracks">Heute noch keine Zeit erfasst</label>
+	<label index="showHistory">Stundenblatt</label>
+	<label index="goToTask">Gehe zu Aufgabe</label>
+</labels>

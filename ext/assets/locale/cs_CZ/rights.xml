@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Obecné nastavení</label>
+	<label index="general.use">Používat přílohy</label>
+	<label index="asset">Přílohy</label>
+	<label index="asset.seeAll">Zobrazovat všechny přílohy</label>
+	<label index="asset.delete">Mazat přílohy</label>
+</labels>

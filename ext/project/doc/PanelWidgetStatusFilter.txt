@@ -1,0 +1,22 @@
+
+Panel widget: Status filter
+===========================
+
+
+
+
+
+
+Available $config parameters:
+-----------------------------
+NAME							|	TYPE			|	Explanation
+
+
+
+
+
+Methods to get/ change settings:
+--------------------------------
+
+
+

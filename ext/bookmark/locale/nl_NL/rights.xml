@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Algemeen</label>
+	<label index="general.use">Favorieten gebruiken</label>
+	<label index="task">Taak-favorieten</label>
+	<label index="task.add">Taak toevoegen aan favorieten</label>
+	<label index="task.remove">Favorieten verwijderen</label>
+	<label index="panelwidgets">Stuurelementen</label>
+</labels>

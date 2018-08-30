@@ -1,0 +1,9 @@
+<div id="head">
+	<ul id="headlets">
+		{foreach $headlets headlet}
+			<li id="{$headlet.name}" class="headlet {$headlet.type} {$headlet.class}" title="{$headlet.label}">
+				{$headlet.content}
+			</li>
+		{/foreach}
+	</ul>
+</div>

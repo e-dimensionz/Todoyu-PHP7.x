@@ -1,0 +1,52 @@
+<div class="logo"></div>
+<div class="version">todoyu {constant(TODOYU_VERSION)}</div>
+
+<p class="info">
+	&copy; 2006-{date('Y')} snowflake productions GmbH, Zurich.<br />
+	todoyu comes with absolutely no warranty.<br />
+	This is free software, and you are welcome to redistribute it <a href="http://www.todoyu.com/index.php?id=bsdlicense" target="_blank">under certain conditions</a>.
+	<br /><br />
+	Extensions are copyright of their respective owners. Please visit <a href="http://www.todoyu.com" target="_blank">todoyu.com</a> for details.
+	<br />
+	Obstructing the appearance of this notice is prohibited by law.
+	<br /><br />
+	We thank the <a href="http://www.todoyu.com/index.php?id=contributors" target="_blank">community</a> for contributing to this project.
+</p>
+
+<p class="info">
+	<br /><span id="about-credits-dedication">Special thanks go to:</span>
+
+<button onclick="Todoyu.Headlets.getHeadlet('todoyuheadletabout').toggleCredits()" id="about-toggle-credits" type="button" class="button">
+	<span class="icon"></span>
+	<span class="label">Third party products credits</span>
+</button>
+</p>
+
+<div class="clear"><!-- --></div>
+
+<div id="about-team" class="creditsbox names">
+		<ul id="scrollingnames">
+		{foreach $names lastname firstname}
+			<li><div class="left">{$firstname}</div> <div class="right">{$lastname}</div></li>
+		{/foreach}
+			<li></li>
+			<li>and last but not least the whole snowflake team</li>
+		</ul>
+	</div>
+</div>
+<div id="about-libs" class="creditsbox" style="display:none;">
+	<p>
+		<h1>todoyu contains the following third party open source software:</h1>
+	</p>
+
+{foreach $thirdpartycredits product credits}
+	<p class="product">
+		<h2><a href="{$credits.url}" target="_blank">{$credits.title}</a></h2>
+		<p>
+			Coypright: &copy; {$credits.copyright}<br />
+			Software License Agreement: {if ! empty($credits.licenseUrl)}<a href="{$credits.licenseUrl}" taget="_blank">{/if}{$credits.license}{if ! empty($credits.licenseUrl)}</a>{/if}
+		</p>
+	</p>
+{/foreach}
+
+</div>

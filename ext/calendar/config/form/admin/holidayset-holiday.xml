@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form	xmlns="http://www.todoyu.com/schema/form"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/form ../../../../../core/config/form.xsd">
+	<attributes>
+		<attribute name="name">holiday</attribute>
+		<attribute name="action">index.php?ext=sysmanager&amp;controller=records</attribute>
+		<attribute name="onsubmit">Todoyu.Ext.sysmanager.Extensions.Records.saveRecord(this); return false;</attribute>
+	</attributes>
+	<fieldsets>
+
+		<fieldset name="main">
+			<legend>holiday of holidayset</legend>
+			<elements>
+
+				<field type="select" name="id">
+					<label>calendar.ext.holidayset.attr.holiday</label>
+					<source type="function">
+						<function>TodoyuCalendarViewHelper::getHolidayOptions</function>
+					</source>
+					<required />
+				</field>
+
+			</elements>
+		</fieldset>
+
+	</fieldsets>
+</form>

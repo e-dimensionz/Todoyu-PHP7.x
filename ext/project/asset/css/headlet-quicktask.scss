@@ -1,0 +1,24 @@
+#todoyuprojectheadletquicktask {
+
+}
+
+#todoyuprojectheadletquicktask .button {
+	background:url(../img/icons.png) no-repeat 1px -115px;
+}
+
+
+#todoyuprojectheadletquicktask .button div.icon {
+	height:100%;
+	width:100%;
+	background:url(../img/icons.png) no-repeat 2px -505px;
+}
+
+
+
+/* ------------------------
+	Wizard popUp styling
+   ------------------------ */
+#quicktask.dialog #quicktask_top.dialog.title {
+	padding:0 0 0 32px;
+	background:url(../img/icons.png) no-repeat 0 -510px;
+}

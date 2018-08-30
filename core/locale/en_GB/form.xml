@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Please Select</label>
+	<label index="field.isrequired">This is a required field</label>
+	<label index="field.hasError">The value entered is not valid</label>
+	<label index="field.save">Save</label>
+	<label index="field.cancel">Cancel</label>
+	<label index="records.add">Add Record</label>
+	<label index="records.remove">Remove Record</label>
+	<label index="records.edit">Edit Record</label>
+	<label index="records.removeconfirm">Do you really want to remove this Record ?</label>
+	<label index="databaserelation.nolabel">[New Entry]</label>
+	<label index="databaserelation.expandAllRecords">Show Details</label>
+	<label index="error.notUnique">This entry already exists</label>
+	<label index="error.duration.invalidinput">Invalid duration input, please correct.</label>
+	<label index="ac.noResults">Autocomplete: no results found</label>
+	<label index="is_preferred">Preferred</label>
+	<label index="confirm.toggle.is_preferred.on">Only one record of this type can be preferred at a time. Really select this record to be preferred?</label>
+	<label index="confirm.toggle.is_preferred.off">Only one record of this type can be preferred at a time. Really deselect this record from being preferred?</label>
+	<label index="dateselector.open">Open date selector to pick a date</label>
+	<label index="autocompleteInfo">This is an autocomplete field. Start typing to get suggestions</label>
+	<label index="legend.main">Role Definition</label>
+	<label index="daterange.choose">Choose A Time Range</label>
+	<label index="daterange.monthToDate">Month To Date</label>
+	<label index="daterange.yearToDate">Year To Date</label>
+	<label index="daterange.quarterToDate">Quarter To Date</label>
+	<label index="daterange.previousMonth">Previous Month</label>
+	<label index="daterange.previousQuarter">Previous Quarter</label>
+	<label index="daterange.previousYear">Previous Year</label>
+	<label index="daterange.fullTimeRange">Full Possible Time Range</label>
+</labels>

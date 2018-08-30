@@ -1,0 +1,15 @@
+todoyu selenium testsuite steps: loginpage extension
+----------------------------------------------------
+
+* login page area:
+	presents: main tabs, footer, loginform elements
+* loginnews panelwidget:
+	elements presents
+	test toggle expand/collapse
+* loginpage panelwidget:
+	elements presents
+	test toggle expand/collapse
+* login form: 
+	login failure
+	login to portal
+* logout headlet: logout

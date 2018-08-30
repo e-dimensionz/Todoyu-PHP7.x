@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Grup de filtres</label>
+	<label index="saveFilterButton">Guarda com a nou filtre</label>
+	<label index="clearFilterArea">Neteja l'àrea de filtres</label>
+	<label index="addSeparator">Afegeix separador</label>
+	<label index="addSeparator">Afegeix separador</label>
+	<label index="notify.orderchanged">S'ha guardat el canvi de l'ordre dels grups de filtres.</label>
+</labels>

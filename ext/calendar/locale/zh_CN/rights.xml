@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">通用</label>
+	<label index="general.use">使用日历功能</label>
+	<label index="general.area">使用日历区域</label>
+	<label index="event">约会</label>
+	<label index="event.seeAll">查看所有约会</label>
+	<label index="event.editAssigned">编辑分配的约会</label>
+	<label index="event.editAll">编辑所有约会</label>
+	<label index="event.deleteAssigned">删除分析的约会</label>
+	<label index="event.deleteAll">删除所有约会</label>
+	<label index="event.add">增加新的约会</label>
+	<label index="event.search">查找约会</label>
+	<label index="event.assignOthers">分配约会给所有的人</label>
+	<label index="mailing">约会邮件</label>
+	<label index="mailing.sendAsEmail">发送约会邮件给所选择的接收人</label>
+	<label index="reminders">约会提醒</label>
+	<label index="reminders.popup">使用弹窗提醒</label>
+	<label index="reminders.email">使用邮件提醒</label>
+</labels>

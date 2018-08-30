@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rights	xmlns="http://www.todoyu.com/schema/rights"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.todoyu.com/schema/rights ../../../core/config/rights.xsd">
+
+	<section name="general">
+		<right name="use" />
+		<right name="area" require="general:use" />
+	</section>
+
+	<section name="event" require="general:area">
+		<right name="seeAll" />
+		<right name="add" />
+		<right name="editAssigned" />
+		<right name="deleteAssigned" />
+		<right name="editAll" require="event:seeAll,event:editAssigned" />
+		<right name="deleteAll" require="event:seeAll,event:editAssigned" />
+		<right name="editInPast" require="event:editAssigned" />
+		<right name="deleteInPast" require="event:deleteAssigned" />
+	</section>
+
+	<section name="mailing" require="event:add">
+		<right name="sendAsEmail" />
+	</section>
+
+	<section name="reminders" require="general:use">
+		<right name="popup" />
+		<right name="email" />
+	</section>
+
+</rights>

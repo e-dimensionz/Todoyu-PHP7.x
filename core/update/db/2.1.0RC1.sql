@@ -1,0 +1,1 @@
+UPDATE `ext_project_task` SET `status` = 2 WHERE `type` = 2 AND `status` = 0;

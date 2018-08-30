@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">通用</label>
+	<label index="general.use">使用书签功能</label>
+	<label index="task">任务书签</label>
+	<label index="task.add">任务书签</label>
+	<label index="task.remove">删除书签</label>
+	<label index="panelwidgets">面板小工具</label>
+</labels>

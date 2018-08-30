@@ -1,0 +1,323 @@
+@import "../../../../core/config/theme.scss";
+
+
+
+/* --------------
+	Header
+   -------------- */
+#projects h1.headerLine {
+	cursor:pointer;
+}
+
+h1.headerLine span.projectIcons {
+	float:right;
+	margin-top:4px;
+}
+
+
+
+/* ----------------
+	Task tree
+   ---------------- */
+
+	/* lost tasks */
+.tasks .lostTasks {
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+.tasks .lostTasks .subtaskTrigger {
+	background:none !important;
+	height:1px;
+}
+
+.tasks .lostTasks h2 {
+	background-color:$colorNeutral01;
+	font: {
+		size:11px;
+		weight:normal;
+	}
+	letter-spacing:0.1em;
+	margin-bottom:1px;
+	padding:5px 5px 5px 20px;
+	text-transform:uppercase;
+}
+
+
+
+/* --------------
+	Project
+   -------------- */
+.statusPlanning .data .content {
+	background-color:$white;
+}
+
+	/* Details */
+.project .projectstatus {
+	position:absolute;
+	top:0;
+	height:27px;
+	border-left-width:8px;
+	border-left-style:solid;
+}
+
+	.project .description a {
+		text-decoration:underline;
+	}
+
+
+	/* Assigned persons */
+	.project table.assignedPersons th.name {
+		width:200px;
+	}
+	.project table.assignedPersons th.company {
+		width:240px;
+	}
+	.project table.assignedPersons th.role {
+		width:154px;
+	}
+
+
+.formProject fieldset.basic {
+	padding-top:15px;
+}
+
+
+
+/* ------------------------------------
+	Project search modifications
+   ------------------------------------ */
+#todoyu-search .project .additionalStuff {
+	display:none;
+}
+
+
+
+/* ------------------------------------
+	Asset form
+   ------------------------------------ */
+.assetForm .fForm {
+	padding:0;
+	background:none;
+}
+.assetForm .fForm fieldset {
+	margin-bottom:0;
+}
+.assetForm .fForm fieldset legend {
+	border-color:$colorCorporate02;
+}
+
+
+
+/* ----------------------
+	Project Tabs
+   ---------------------- */
+#content .projectTabs .tabs {
+	top:0;
+	left:0;
+	width:auto;
+	margin:0 10px;
+}
+
+.project .projectTabs {
+	margin-top:10px;
+}
+
+.project .projectTabs .tabs li {
+	background-color:$colorCorporate01 !important;
+}
+
+.project .projectTabs .tabs li:hover,
+.project .projectTabs .tabs li.active {
+	background-color:$colorCorporate02 !important;
+}
+
+/* project tabs content */
+.project .tabContent {
+	background-color:$colorCorporate02;
+}
+
+.project .tabContent .tab {
+
+}
+
+.project .tabContent .tabBlock {
+	position:relative;
+	background:$white;
+}
+.project .tabContent .tab {
+	padding:5px;
+	background:$white;
+}
+
+
+/* ----------------------
+	Project Details
+   ---------------------- */
+$projectDetailBorder: 1px solid $colorNeutral03;
+
+.project {
+	.projectDetails {
+		position: relative;
+		margin-bottom: 30px;
+		padding-bottom: 10px;
+
+		.infoBox {
+			border: $projectDetailBorder;
+			margin: 5px;
+
+			h4 {
+				border-bottom: $projectDetailBorder;
+			}
+
+			.content {
+				padding: 0;
+			}
+
+			&.description .content {
+				padding: 3px 3px 3px 12px;
+			}
+
+		}
+
+		.projectDetailLeft {
+			background-color:$white;
+			float:left;
+			margin-top: -1px;
+			position:relative;
+			right:816px;
+			top:1px;
+		}
+
+		.projectDetailRight {
+			float:left;
+			position:relative;
+			overflow:hidden;
+			background-color:$colorNeutral01;
+		}
+
+		.ajaxLoader {
+			position:absolute;
+			width:200px;
+			height:25px;
+			top:150px;
+			left:400px;
+			font-size:25px;
+			animation:pulse 1s  ease-in-out infinite;
+		}
+	}
+
+	.infoBoxOuter {
+		background-color:$white;
+		height:100%;
+		padding:0;
+	}
+
+	.projectDetailsContent {
+		display:block;
+		float:left;
+		left:816px;
+		max-width:812px;
+		padding:3px;
+		position:relative;
+		width:812px;
+	}
+
+	.projectDetailsTabs {
+		float:left;
+		height:100%;
+		left:818px;
+		position:relative;
+		width:100px;
+
+		.gap {
+			border-radius:0 3px 3px 0;
+			height:30px;
+		}
+
+		.icon {
+			float:none;
+			height:32px;
+			margin-left:6px;
+			width:32px;
+		}
+
+		.menu {
+			background-color:$colorNeutral01;
+			border-radius:0 0 0 3px;
+			box-shadow: -1px 4px 10px -10px $black;
+			cursor:pointer;
+			height:50px;
+			left:1px;
+			margin-left: -1px;
+			position:relative;
+
+			.icon {
+				background:url(../img/projectheader.png) no-repeat -7px -186px;
+			}
+
+			.label {
+				padding-left:6px;
+			}
+		}
+
+		.tabs {
+
+			.projectDetailsTab {
+				background-color:$white;
+				border-radius:3px 0 0 3px;
+				border-width:1px 0 1px 1px;
+				border:$projectDetailBorder;
+				box-shadow: -11px 0 22px -17px $black inset;
+				cursor:pointer;
+				height:42px;
+				margin:3px 0;
+				padding:4px 0;
+
+				&.active {
+					background-color:$colorNeutral01;
+					border:none;
+					box-shadow: -1px 4px 10px -10px $black;
+					height:44px;
+					left:1px;
+					margin-left: -1px;
+					position:relative;
+				}
+
+				.label {
+					padding-left:6px;
+				}
+
+			}
+		}
+
+		.generalProjectTab .icon {
+			background:url(../img/projectheader.png) no-repeat -7px -124px;
+		}
+
+		.preferencesProjectTab .icon {
+			background:url(../img/projectheader.png) no-repeat 0px 0px;
+		}
+	}
+}
+
+@keyframes pulse {
+	from {opacity: 0;}
+	to {opacity: 0.50;}
+}
+@-moz-keyframes pulse {
+	from {opacity: 0;}
+	to {opacity: 0.50;}
+}
+@-webkit-keyframes pulse {
+	from {opacity: 0;}
+	to {opacity: 0.50;}
+}
+@-ms-keyframes pulse {
+	from {opacity: 0;}
+	to {opacity: 0.50;}
+}
+@-o-keyframes pulse {
+	from {opacity: 0;}
+	to {opacity: 0.50;}
+}

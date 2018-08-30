@@ -1,0 +1,15 @@
+<div class="hover">
+	<div class="button"></div>
+	<div class="info">
+		<ul>
+			<li class="project">PROJECT</li>
+			<li class="task"><a href="javascript:void(0)" onclick="Todoyu.Ext.timetracking.Headlet.Timetracking.goToTask({$idProject}, {$idTask})">{$taskNumber} - {htmlencode truncate($labelTitle 30 break=true)}</a></li>
+			<li class="task">
+				<span id="{$id}-time-tracked">{HourMinSec $tracked}</span> +
+				<span id="{$id}-time-tracking">{HourMinSec $tracking}</span>
+				<span id="{$id}-time-percent">{if $showPercent}(<span id="{$id}-time-percent-value">{$percent}</span>%){/if}</span>
+			</li>
+			<li class="stop">{Button id="timetracking-stop-current-task" label="core.global.stop" class="stopTracking" onclick="Todoyu.Ext.timetracking.Headlet.Timetracking.stopTask($idTask)"}</li>
+		</ul>
+	</div>
+</div>

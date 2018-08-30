@@ -1,0 +1,55 @@
+{extends main.tmpl}
+
+{block name="box"}
+		<table width="500" border="0" cellspacing="0" cellpadding="3">
+			<tr>
+				<td width="180">
+					<label id="labelCompany" for="company">{Label install.installer.adminaccount.companyname}*</label>
+				</td>
+				<td>
+					<input onkeyup="TodoyuInstaller.validateAdminAccountData()" name="company" id="company" value="{htmlencode $postData.company}" />
+				 </td>
+			</tr>
+			<tr>
+				<td>
+					<label id="labelFirstname" for="firstname">{Label install.installer.adminaccount.adminfirstname}*</label>
+				</td>
+				<td><input onkeyup="TodoyuInstaller.validateAdminAccountData()" name="firstname" id="firstname" value="{htmlencode $postData.firstname}" /></td>
+			</tr>
+			<tr>
+				<td>
+					<label id="labelLastname" onkeyup="TodoyuInstaller.validateAdminAccountData()" for="lastname">{Label install.installer.adminaccount.adminlastname}*</label>
+				</td><td>
+					<input name="lastname" id="lastname" value="{htmlencode $postData.lastname}" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label id="labelEmail" onkeyup="TodoyuInstaller.validateAdminAccountData()" for="email">{Label install.installer.adminaccount.email}*</label>
+				</td><td>
+					<input name="email" id="email" class="adminaccount" value="{htmlencode $email|default:$postData.company}" />
+					<br /><br /><br />
+				</td>
+			</tr>
+
+
+
+			<tr>
+				<td>{Label install.installer.adminaccount.username}</td>
+				<td>admin</td>
+			</tr><tr>
+				<td>
+					<label id="labelPassword" for="password">{Label install.installer.adminaccount.password}&nbsp;*</label>
+				</td><td>
+					<input onkeyup="TodoyuInstaller.validateAdminAccountData()" type="password" name="password" id="password" value="" />
+				</td>
+			</tr><tr>
+				<td>
+					<label id="labelPasswordConfirm" for="password_confirm">{Label install.installer.adminaccount.repeatPassword}&nbsp;*</label>
+				</td><td>
+					<input type="password" name="password_confirm" value="" id="password_confirm" onkeyup="TodoyuInstaller.validateAdminAccountData()" />
+					({Label install.installer.adminaccount.passwordHint})
+				</td>
+			</tr>
+		</table>
+{/block}

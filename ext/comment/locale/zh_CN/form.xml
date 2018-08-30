@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="extconf.legend.config">评论配置</label>
+	<label index="fallback.legend.fallback">评论反馈</label>
+	<label index="fallback.legend.help">反馈动作方式</label>
+	<label index="fallback.legend.general">普通设置</label>
+	<label index="fallback.legend.feedback">请求反馈</label>
+	<label index="fallback.legend.email">发送 email</label>
+</labels>

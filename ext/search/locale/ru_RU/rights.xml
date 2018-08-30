@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Общие</label>
+	<label index="general.use">Использовать/показывать поиск</label>
+	<label index="general.area">Использовать область поиска</label>
+</labels>

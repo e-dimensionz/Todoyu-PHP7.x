@@ -1,0 +1,22 @@
+
+Panel widget: Quicktask wizard
+============================
+
+
+
+
+
+
+Available $config parameters:
+-----------------------------
+NAME							|	TYPE			|	Explanation
+
+
+
+
+
+Methods to get/ change settings:
+--------------------------------
+
+
+

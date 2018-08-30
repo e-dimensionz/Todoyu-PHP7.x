@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="label1">Label One</label>
+	<label index="label.two">Label 222222</label>
+	<label index="label.format">Label with %s</label>
+</labels>

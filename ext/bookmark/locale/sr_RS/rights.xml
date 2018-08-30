@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Општи</label>
+	<label index="general.use">Употребите ознаке</label>
+	<label index="task">Ознаке задатка</label>
+	<label index="task.add">Означи задатак</label>
+	<label index="task.remove">Уклони ознаку</label>
+	<label index="panelwidgets">Гаџети панел</label>
+</labels>

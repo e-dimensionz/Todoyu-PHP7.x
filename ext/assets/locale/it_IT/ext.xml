@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Allegati alle attività</label>
+	<label index="search.label">Allegati</label>
+	<label index="tab.noAssets">Aggiungi primo allegato</label>
+	<label index="tab.asset">Allegato</label>
+	<label index="tab.assets">Allegati</label>
+	<label index="tab.toggle">Allegati sì/no</label>
+	<label index="list.header.uploaddate">Data caricamento</label>
+	<label index="alt.download">Scarica file</label>
+	<label index="alt.uploadedby">Caricato da</label>
+	<label index="alt.delete">Elimina file</label>
+	<label index="alt.changeVisibility">Cambia visibilità</label>
+	<label index="alt.selectall">Seleziona tutto/nulla</label>
+	<label index="upload.selectfile">Selezionare un file da caricare</label>
+	<label index="upload.filename">Nome file</label>
+	<label index="upload.new">Aggiungi nuovo file</label>
+	<label index="delete.confirm">Si desidera davvero eliminare questo file?</label>
+	<label index="download.selection">Scarica selezione</label>
+	<label index="download.normal">Solo un file selezionato -> scaricamento normale del file</label>
+	<label index="download.compressed">I file selezionati sono stati inseriti un un archivio da scaricare</label>
+	<label index="error.minimumFile">Selezionare almeno un file</label>
+	<label index="maxFileSizeExceeded">Il file '#{filename}' supera le dimensioni massime permesse (#{maxFileSize}) per il caricamento</label>
+	<label index="maxLengthFileNameExceeded">Il nome del file '#{filename}' è più lungo del massimo consentito (#{maxLengthFileName})</label>
+	<label index="uploadFailed">Il caricamento del file '#{filename}' è fallito</label>
+	<label index="uploadOk">Il file è stato caricato</label>
+	<label index="locked">Questa attività è bloccato. Non è possibile allegarvi file</label>
+	<label index="task.icon">L'attività ha allegati</label>
+</labels>

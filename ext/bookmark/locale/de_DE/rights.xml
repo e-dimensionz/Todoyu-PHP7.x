@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Allgemein</label>
+	<label index="general.use">Favoriten verwenden</label>
+	<label index="task">Aufgaben Favoriten</label>
+	<label index="task.add">Favorit zu Aufgabe erstellen</label>
+	<label index="task.remove">Aufgaben-Favorit entfernen</label>
+	<label index="panelwidgets">Steuerelemente</label>
+</labels>

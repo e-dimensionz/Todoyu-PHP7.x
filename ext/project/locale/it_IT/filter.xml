@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="project">Progetto</label>
+	<label index="task.acknowledged">Presa visione</label>
+	<label index="task.assignedPerson">Assegnato a persona</label>
+	<label index="task.assignedRoles">Assegnato a ruolo</label>
+	<label index="task.ownerPerson">Persona proprietaria</label>
+	<label index="task.ownerRoles">Ruoli proprietari</label>
+	<label index="task.currentPersonIsOwner">Io sono il proprietario</label>
+	<label index="task.creatorPerson">Creato da persona</label>
+	<label index="task.creatorRoles">Creato da ruoli</label>
+	<label index="task.parentTask">Attività padre</label>
+	<label index="task.isPublic">Pubblica</label>
+	<label index="task.billingType">Tipo fatturazione</label>
+	<label index="task.title">Titolo</label>
+	<label index="task.fulltext">Testo completo</label>
+	<label index="task.type">Tipo</label>
+	<label index="task.activity">Tipo di attività</label>
+	<label index="task.timemanagement.label">Gestione temporale</label>
+	<label index="task.deadlinedate">Termime</label>
+	<label index="task.deadlinedateDyn">Termime (dinamico)</label>
+	<label index="task.startdate">Data inizio</label>
+	<label index="task.startdateDyn">Data inizio (dinamica)</label>
+	<label index="task.enddate">Data fine</label>
+	<label index="task.enddateDyn">Data fine (dinamica)</label>
+	<label index="task.editdate">Ultima modifica</label>
+	<label index="task.editdateDyn">Ultima modifica (dinamica)</label>
+	<label index="task.createdate">Data creazione</label>
+	<label index="task.createdateDyn">Data creazione (dinamica)</label>
+	<label index="project.fulltext">Testo completo</label>
+	<label index="project.company">Cliente</label>
+	<label index="project.projectrole">Ruolo progetto</label>
+	<label index="project.projectleader">Responsabile di progetto</label>
+	<label index="project.projectsupervisor">Supervisore progetto</label>
+	<label index="project.timemanagement.label">Gestione temporale</label>
+	<label index="project.date_start">Data inizio progetto</label>
+	<label index="project.date_end">Data fine progetto</label>
+	<label index="project.deadline">Data scadenza progetto</label>
+	<label index="project.createdate">Data creazione</label>
+	<label index="project.createdateDyn">Data creazione (dinamica)</label>
+	<label index="project.editdate">Ultima modifica</label>
+	<label index="project.editdateDyn">Ultima modifica (dinamica)</label>
+</labels>

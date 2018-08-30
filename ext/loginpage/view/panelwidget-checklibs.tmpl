@@ -1,0 +1,14 @@
+{Header "LLL:panelwidget-checklibs.depencywarning"}
+
+<div class="libsList">
+	{Label panelwidget-checklibs.missinglibs}<br /><br />
+	{Label panelwidget-checklibs.downloadandinstallinstructions}
+{foreach $missingLibs libName libData}
+	<ul>
+		<li>{$libName}<br />
+			<a class="link" href="{$libData.downloadURL}" target="_blank">{$libData.downloadURL}</a><br />
+			{$libData.instruction}
+		</li>
+	</ul>
+{/foreach}
+</div>

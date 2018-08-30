@@ -1,0 +1,71 @@
+@import "../../config/theme.scss";
+
+
+
+.sortablePanelList {
+	padding-top:5px;
+	display:block;
+
+	li.groupTitle {
+		font: {
+			size:11px;
+			weight:bold; }
+
+		border-bottom:1px solid $colorNeutral02;
+		cursor:pointer;
+		padding-bottom:2px; }
+
+	.itemList {
+		padding:0px;
+		border:none;
+
+		.listItem {
+			padding:5px 0 6px 0; }
+	}
+
+	.listItem {
+		clear:both;
+		display:block;
+		position:relative;
+		padding:5px 0 6px 5px;
+		height:auto !important;
+		height:1px;
+		border-bottom:1px solid $colorNeutral02;
+
+		.odd {
+			background-color:$colorNeutral01; }
+
+		&.current {
+			background-color:$colorCorporate02; }
+
+		a.title {
+			margin-left:20px; }
+
+		.actions {
+			position:absolute;
+			right:2px;
+			top:4px;
+
+			a {
+				float:left;
+				width:1px;
+				height:16px;
+				padding:1px 12px;
+				text-indent: -9999px; }
+		}
+	}
+
+	.handle {
+		background:transparent url(../img/icons.png) no-repeat scroll 0 -963px;
+		width:10px;
+		float:left;
+		cursor:move;
+		position:absolute;
+		top:0px;
+		margin-right:5px;
+		height: 100%;
+
+		&.hover {
+			background:transparent url(../img/icons.png) no-repeat scroll 0 -1022px; }
+	}
+}

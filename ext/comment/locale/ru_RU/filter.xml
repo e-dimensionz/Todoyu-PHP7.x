@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">Запросы на ответ</label>
+	<label index="unseenFeedbackPerson">Ответ запрошен</label>
+	<label index="unseenFeedbackRoles">Запросы на ответ по ролям</label>
+	<label index="commentFulltext">Полный текст комментария</label>
+	<label index="commentWrittenPerson">Коментарии, написаные участником</label>
+	<label index="commentWrittenRoles">Кментарии, написаные ролями</label>
+</labels>

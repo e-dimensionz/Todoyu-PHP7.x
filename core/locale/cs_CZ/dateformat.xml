@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="D2M2">%m/%d</label>
+	<label index="DlongD2Mlong">%A, %d/%B</label>
+	<label index="D2M2Y2">%d/%m/%y</label>
+	<label index="D2M2Y4">%d/%m/%Y</label>
+	<label index="D2MshortY4">%b %d %y</label>
+	<label index="D2MshortY2">%b %d %Y</label>
+	<label index="D2Mshort">%b %d</label>
+	<label index="DshortDMlong">%a %e %B</label>
+	<label index="DshortDMshort">%a %e %b</label>
+	<label index="DMshort">%e %b</label>
+	<label index="D2MshortTime">%b %d %H:%M</label>
+	<label index="dShort">%a</label>
+	<label index="DshortD2M2">%a %d %m</label>
+	<label index="DshortD">%a %e</label>
+	<label index="D2MlongY4">%B %d %Y</label>
+	<label index="Mlong">%B</label>
+	<label index="MlongD2">%B %d</label>
+	<label index="MlongY4">%B %Y</label>
+	<label index="DshortD2MshortY2">%a, %b %d %y</label>
+	<label index="DshortD2MlongY4">%a, %B %d %Y</label>
+	<label index="DlongD2MlongY4">%A, %B %d %Y</label>
+	<label index="DlongDMlongY4">%A, %B %e %Y</label>
+	<label index="calendarweek">CW %V</label>
+	<label index="date">%d/%m/%Y</label>
+	<label index="dateMshort">%e. %b</label>
+	<label index="time">%H:%M</label>
+	<label index="timesec">%H:%M:%S</label>
+	<label index="datetime">%d/%m/%y %H:%M</label>
+	<label index="dShortDatetime">%a %d/%m/%y %H:%M</label>
+	<label index="day">%d</label>
+</labels>

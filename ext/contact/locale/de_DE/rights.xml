@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Allgemeine Einstellungen</label>
+	<label index="general.use">Kontakt-Funktionalitäten benutzen</label>
+	<label index="general.profile">Profil benutzen</label>
+	<label index="general.area">Kontakt Bereich benutzen</label>
+	<label index="person">Personen</label>
+	<label index="person.seeAllInternalPersons">Alle internen Personen sehen</label>
+	<label index="person.seeAllPersons">Alle Personen sehen</label>
+	<label index="person.add">Personen erstellen</label>
+	<label index="person.editAndDeleteAll">Alle Personen bearbeiten und löschen</label>
+	<label index="person.enableLogin">Logins für Personen erstellen</label>
+	<label index="person.seeComment">Kommentar zu Personen sehen</label>
+	<label index="person.editComment">Kommentar zu Personen bearbeiten</label>
+	<label index="company">Firmen</label>
+	<label index="company.seeAllCompanies">Alle Firmen sehen</label>
+	<label index="company.add">Firmen erstellen</label>
+	<label index="company.editOwn">Eigene Firma (Arbeitgeber) bearbeiten</label>
+	<label index="company.editAndDeleteAll">Alle Firmen editieren und löschen</label>
+	<label index="company.seeComment">Kommentar zu Firma sehen</label>
+	<label index="company.editComment">Kommentar zu Firma bearbeiten</label>
+	<label index="relation">Kontakt Daten</label>
+	<label index="relation.seeAllContactinfotypes">Alle Kontaktinformationstypen sehen</label>
+	<label index="relation.seeHomeAddress">Heimadresse sehen</label>
+	<label index="relation.seeBusinessAddress">Geschäftsadresse sehen</label>
+	<label index="relation.seeBillingAddress">Rechnungsadresse sehen</label>
+	<label index="panelwidgets">Steuerelemente</label>
+	<label index="panelwidgets.staffSelector">Mitarbeiterwähler</label>
+	<label index="panelwidgets.export">Export</label>
+</labels>

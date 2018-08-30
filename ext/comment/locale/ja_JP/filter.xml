@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="unseenFeedback">要求されたフィードバック</label>
+	<label index="unseenFeedbackPerson">個人が要求したフィードバック</label>
+	<label index="unseenFeedbackRoles">ロールが要求したフィードバック</label>
+	<label index="commentFulltext">コメント全文</label>
+	<label index="commentWrittenPerson">個人が書いたコメント</label>
+	<label index="commentWrittenRoles">ロールが書いたコメント</label>
+</labels>

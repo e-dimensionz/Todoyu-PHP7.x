@@ -1,0 +1,23 @@
+todoyu firststeps changelog
+
+firststeps 1.1.2 - 2013-03-27
+	* Changed: Adapted to core 2.3
+
+firststeps 1.1.1 - 2012-07-30
+	* Bugfix: Empty address array could cause an error
+
+firststeps 1.1.0 - 2012-05-03
+	* Changed: Adapted to core 2.2
+
+firststeps 1.0.1 - 2011-11-17
+	* Translation: Polish
+
+firststeps 1.0.0 - 2011-06-17
+	* Bugfix: Removed empty option in person list
+	* Changed: Set status to stable
+	* Changed: Added to basic extensions
+	* Added: Russian and japanese translation
+
+firststeps 0.1.0 - initial release 2011-06-01
+	* first prototype ready.
+	* styling missing

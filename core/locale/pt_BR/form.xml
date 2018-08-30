@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="select.pleaseSelect">Favor Selecionar</label>
+	<label index="field.isrequired">Campo necessário</label>
+	<label index="field.hasError">Dado inválido</label>
+	<label index="field.save">Salvar</label>
+	<label index="field.cancel">Cancelar</label>
+	<label index="records.add">Adicionar Registro</label>
+	<label index="records.remove">Remover Registro</label>
+	<label index="records.edit">Editar Registro</label>
+	<label index="databaserelation.nolabel">[Nova entrada]</label>
+	<label index="databaserelation.expandAllRecords">Mostrar Detalhes</label>
+	<label index="error.notUnique">Dado já existe</label>
+	<label index="ac.noResults">Autocompleter: Nada encontrado</label>
+	<label index="is_preferred">Preferido</label>
+	<label index="dateselector.open">Selecione uma data</label>
+	<label index="autocompleteInfo">Campo automático. Inicie a digitação para sugestões</label>
+</labels>

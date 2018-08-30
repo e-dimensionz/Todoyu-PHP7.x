@@ -1,0 +1,2 @@
+Highcharts JS is licensed for use within the todoyu product only.
+For use outside todoyu, see www.higcharts.com/license.

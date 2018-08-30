@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Општа подешавања</label>
+	<label index="general.use">Употребљавање забељеживање времена</label>
+	<label index="task">Забељеживање времена задатка</label>
+	<label index="task.track">Обељежи време</label>
+	<label index="task.editOwn">Може СОПСТВЕНО ЗАБЕЉЕЖЕНО време уредити</label>
+	<label index="task.editOwnChargeable">Можете уредити време које ће бити наплаћено вашег забељеженог времена</label>
+	<label index="task.editAll">Можете СВА ВРЕМЕНА уредити</label>
+	<label index="task.editAllChargeable">Можете уредити време које ће бити наплаћено забељеженог времена свих корисника</label>
+</labels>

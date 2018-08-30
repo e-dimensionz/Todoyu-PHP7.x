@@ -1,0 +1,22 @@
+
+Panel widget: Calendar
+============================
+
+Panel widget to select a year.
+
+
+
+
+Available $config parameters:
+-----------------------------
+NAME							|	TYPE			|	Explanation
+
+
+
+
+
+Methods to get/ change settings:
+--------------------------------
+
+
+

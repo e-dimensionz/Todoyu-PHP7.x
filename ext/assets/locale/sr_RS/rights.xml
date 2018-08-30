@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Oпшта подешавања</label>
+	<label index="general.use">Употреби фајл додатак</label>
+	<label index="asset">Фајлови</label>
+	<label index="asset.seeAll">Покажи СВЕ фајлове</label>
+	<label index="asset.delete">Избриши фајлове</label>
+</labels>

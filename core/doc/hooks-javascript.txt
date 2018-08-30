@@ -1,0 +1,15 @@
+Core JavaScript Hooks
+===================================================
+
+Event Hooks
+***************************************
+
+#core.contextmenu
+	Context menu was displayed
+	@param	String		$type
+	@param	String		$elementKey
+	@param	Number		$left
+	@param	Number		$top
+
+
+panelwidget + widget + toggled

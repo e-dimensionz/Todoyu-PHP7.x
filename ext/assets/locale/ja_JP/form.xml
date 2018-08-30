@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">タスク資源 [完了]</label>
+	<label index="assets.button.delete">選択した資源を削除</label>
+	<label index="assets.button.upload">新しい資源のアップロード</label>
+</labels>

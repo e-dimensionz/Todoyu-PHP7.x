@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kastodoyutrunk.srv05.ch1.snowflake.ch/" />
+<title>sysmanager > all basic extensions infos available?</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">sysmanager > all basic extensions infos available?</td></tr>
+</thead><tbody>
+<!------ Sysmanager > extensions > options generally present?-->
+<!--ensure extensions list to be active-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--ensure info per extension-->
+<!--1. assets info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;assets&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-assets_info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Task Assets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Extension Key</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>assets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Version / State</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>stable</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Task Assets Listing, Upload, Download</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Author</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Depends On</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Conflicts With</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--2. bookmark info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;bookmark&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-bookmark_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--3. calendar info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;calendar&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-calendar_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--4. comment info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;comment&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-comment_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--5. contact info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;contact&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-contact_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--6. daytracks info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;daytracks&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-daytracks_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--7. loginpage info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;loginpage&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-loginpage_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--8. portal info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;portal&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-portal_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--9. profile info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;profile&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-profile_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--10. project info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;project&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;][contains(@onclick,&quot;showTab('project'&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-project_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--11. search info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;search&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-search_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<!--12. timetracking info available?-->
+<tr>
+	<td>click</td>
+	<td>//tr[contains(@class,&quot;timetracking&quot;)]/td[contains(@class,&quot;edit&quot;)]/a[@class=&quot;info&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@id=&quot;extension-tab-timetracking_info&quot;]</td>
+	<td></td>
+</tr>
+<!--close by returning to ext. module-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Extensions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>100</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().Ajax.activeRequestCount == 0</td>
+	<td>10000</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

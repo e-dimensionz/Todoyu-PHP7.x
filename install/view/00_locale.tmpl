@@ -1,0 +1,14 @@
+{extends main.tmpl}
+
+{block name="box"}
+	<ul class="installationLocales">
+	{foreach $locales locale}
+		<li onclick="TodoyuInstaller.selectLocale('{$locale.key}')">
+			<a href="#" class="{if $locale.key==$userLocale}emphasized"{/if}">
+				{$locale.label} ({$locale.key})
+			</a>
+		</li>
+	{/foreach}
+	</ul>
+	<input type="hidden" id="locale" name="locale" value="{$userLocale}" />
+{/block}

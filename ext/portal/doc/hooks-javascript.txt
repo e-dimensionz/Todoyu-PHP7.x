@@ -1,0 +1,7 @@
+Portal Extension - JavaScript Hooks
+===================================
+
+1. Tab
+	portal.tab.showed
+	@param	{String} tabKey
+	Evoked after portal tab (and content) has been displayed/changed

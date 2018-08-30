@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Základní informace o události </label>
+	<label index="legend.participants">Účastníci</label>
+	<label index="legend.details">Další informace </label>
+	<label index="legend.notification">Informovat účastníky </label>
+	<label index="legend.autonotification">Ǔčastníci automaticky dostanou e-mail s oznámením</label>
+	<label index="legend.reminders">Mé připomínky </label>
+	<label index="legend.profile.appearance">Vzhled</label>
+	<label index="legend.profile.general">Hlavní nastavení kalendáře </label>
+	<label index="legend.profile.reminder.general">Nastavení upozornění </label>
+	<label index="legend.admin.appearance">Vzhled</label>
+	<label index="legend.admin.overbooking">Nastav chování pro změnu rezervace </label>
+	<label index="legend.admin.reminders">Standardní nastavení připomínek </label>
+	<label index="legend.admin.automaticEmail">Nastav chování pro poznámky </label>
+	<label index="legend.admin.holidayset.record.general">Sada svátků </label>
+	<label index="legend.admin.holiday.record.general">Svátek </label>
+	<label index="comment.autonotification.label">Pošli e-mail:</label>
+	<label index="comment.autonotification.noroles">Žádný z účastníků nemá přiřazenou roli s automatickými oznámeními.</label>
+	<label index="legend.series">Opakující se události</label>
+</labels>

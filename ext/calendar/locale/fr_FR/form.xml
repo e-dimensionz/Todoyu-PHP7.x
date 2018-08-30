@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="legend.basics">Informations basique sur votre événement</label>
+	<label index="legend.details">D'autres informations</label>
+	<label index="legend.notification">Notifier les participants</label>
+	<label index="legend.reminders">Mes rappels pour ce rendez-vous</label>
+	<label index="legend.profile.general">Les paramètres généraux du calendrier</label>
+	<label index="legend.profile.reminder.general">Configurez vos rappels selon vos besoins</label>
+	<label index="legend.admin.overbooking">Configurer la conduite des surréservations</label>
+	<label index="legend.admin.reminders">Les paramètres par défaut des rappels</label>
+	<label index="legend.admin.automaticEmail">Configurer la notification</label>
+	<label index="legend.admin.holidayset.record.general">Ensemble des congés</label>
+	<label index="legend.admin.holiday.record.general">Congé</label>
+</labels>

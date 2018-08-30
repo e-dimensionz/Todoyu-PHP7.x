@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="general">Општа подешавања</label>
+	<label index="general.use">Употреби налог</label>
+	<label index="settings">Подешавања корисничког налога</label>
+	<label index="settings.password">Промени лозинку</label>
+</labels>

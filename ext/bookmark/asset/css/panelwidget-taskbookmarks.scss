@@ -1,0 +1,92 @@
+@import "../../../../core/config/theme.scss";
+
+#panelwidget-taskbookmarks {
+
+	div.bookmarks ul li {
+		min-height:32px;
+		padding:0;
+		border-bottom:1px solid $colorNeutral02;
+		margin-bottom:2px;
+		z-index:1;
+
+		&.running {
+			.taskItem .title {
+				font-weight:bold;
+			}
+
+			a {
+				background-position:0 8px !important;
+			}
+		}
+
+		a.timetracking {
+			display:block;
+			float:right;
+			clear:none;
+			width:22px;
+			height:26px;
+			position:relative;
+			z-index:101;
+			background:url(../../../timetracking/asset/img/icons.png) no-repeat 0 -22px;
+		}
+	}
+
+	.taskItem {
+		border-left-width:4px;
+		border-left-style:solid;
+		padding:5px 5px 5px 9px;
+		margin: -2px 0 0 0;
+		position:relative;
+		z-index:100;
+		overflow:hidden;
+		cursor:pointer;
+
+		.title,
+		.project {
+			display:inline-block;
+			width:100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.project {
+			color:$colorNeutral06;
+		}
+	}
+
+	.container.taskItem {
+		border-left-width:8px;
+		border-right-width:4px;
+		border-right-style:solid;
+		padding-left:5px;
+		padding-right:24px;
+	}
+
+	.handle {
+		height:100%;
+		width:5px;
+		position:absolute;
+		cursor:move;
+		top:0;
+		left:0;
+		margin-left: -5px;
+	}
+
+	form {
+		display: inline-block;
+		width: 95%;
+		padding: 1px 5px;
+		margin-top: 3px;
+		margin-bottom: 5px;
+
+		.fField {
+			width: 160px;
+		}
+
+		.fLabel {
+			width: 70px;
+		}
+	}
+
+}

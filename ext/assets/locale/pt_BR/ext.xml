@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="ext.title">Recursos da Tarefa</label>
+	<label index="tab.noAssets">Adicionar o Primeiro Recurso</label>
+	<label index="tab.asset">Recurso</label>
+	<label index="tab.assets">Recursos</label>
+	<label index="tab.toggle">Recursos On/Off</label>
+	<label index="list.header.uploaddate">Upload Data</label>
+	<label index="alt.download">Baixar Arquivo</label>
+	<label index="alt.uploadedby">Uploaded por</label>
+	<label index="alt.delete">Excluir Arquivo</label>
+	<label index="alt.changeVisibility">Alterar Visibilidade</label>
+	<label index="alt.selectall">Selecionar Todos/Nenhum</label>
+	<label index="upload.selectfile">Selecione o Arquivo para Upload</label>
+	<label index="upload.filename">Nome do Arquivo</label>
+	<label index="upload.new">Adicionar Novo Arquivo</label>
+	<label index="delete.confirm">Deseja realmente excluir o arquivo?</label>
+	<label index="download.selection">Baixar Seleção</label>
+	<label index="download.normal">Somente um arquivo selecionado, download normal de arquivo</label>
+	<label index="download.compressed">Os arquivos selecionados foram compactados em um só para download</label>
+	<label index="error.minimumFile">Selecione pelo menos um arquivo</label>
+	<label index="maxFileSizeExceeded">O arquivo '#{filename}' excedeu o tamanho máximo (#{maxFileSize}) para upload</label>
+	<label index="uploadFailed">O upload do arquivo '#{filename}' falhou</label>
+	<label index="uploadOk">Upload do arquivo foi concluído</label>
+</labels>

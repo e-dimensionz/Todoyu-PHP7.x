@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<labels>
+	<label index="title">Recherche</label>
+	<label index="showAll.label">Afficher tout</label>
+	<label index="clearSword">Effacer la recherche</label>
+</labels>
