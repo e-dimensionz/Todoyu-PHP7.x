@@ -17,7 +17,7 @@
 		{select options=$conjunctionOptions value=$conjunction size=1 noPleaseSelect=true id="filtercontrol-conjunction" name="conjunction"}
 	</span>
 
-	{if sizeof($groupedSortingOptions) > 0}
+	{if !empty($groupedSortingOptions) && sizeof($groupedSortingOptions) > 0}
 		<span class="sorting">
 			<select id="filtercontrol-sorting" name="sorting">
 				<option value="none" class="default">{Label search.ext.filtercontrol.add.sorting}</option>

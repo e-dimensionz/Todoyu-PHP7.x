@@ -3,7 +3,7 @@
 {block name="title"}{Title "LLL:sysmanager.ext.notInstalledExtensions"}{/block}
 
 {block name="contentMessage"}
-	{if sizeof($extensions)>0}
+	{if !emnpty($extensions) && sizeof($extensions)>0}
 		{contentMessage label="sysmanager.extension.imported.info" class="importInfo"}
 	{/if}
 {/block}

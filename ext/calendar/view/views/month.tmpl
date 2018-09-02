@@ -33,7 +33,7 @@
 								{/if}
 								{* ------ Holiday Icon ----- *}
 								{*
-								{if sizeof($holidays[$dayDateKey])>0}
+								{if !empty($holidays[$dayDateKey]) && sizeof($holidays[$dayDateKey])>0}
 									<span id="holiday-{$timestamps[$dayCounter]}" class="holiday quickInfoHoliday"></span>
 								{/if}
 								*}

@@ -23,7 +23,7 @@
 
 				</tr>
 
-				{if sizeof($dayEvents) > 0}
+				{if !empty($dayEvents) && sizeof($dayEvents) > 0}
 				{* ------------ All-day events  ------------------ *}
 				<tr>
 					<td class="dayEvents" colspan="{$amountDaysShown}">

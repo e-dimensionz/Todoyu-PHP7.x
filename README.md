@@ -5,9 +5,9 @@ I worked all the bugs I could find so far.
 
 # Todoyu Project Management
 
-Todoyu was one of the best Open Source Software for Project and Task
-Management, Time Tracking and Team Collaboration. Sadly, this project
-was abandoned years ago and never worked on PHP7.x. This is a fork
+Todoyu was one of the best Open Source Self-Hosted Software for Project
+and Task Management, Time Tracking and Team Collaboration. Sadly, this
+project was abandoned years ago and never worked on PHP7.x. This is a fork
 created from the main repository and parsed/moddified to work with PHP7
 as well as MySQLi.
 

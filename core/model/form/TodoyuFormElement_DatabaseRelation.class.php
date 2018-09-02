@@ -54,7 +54,7 @@ class TodoyuFormElement_DatabaseRelation extends TodoyuFormElement {
 	 *
 	 * @param	Array		$value
 	 */
-	public function setValue($value) {
+	public function setValue($value, $updateForm = true) {
 		$records	= TodoyuArray::assure($value);
 
 		parent::setValue($records);

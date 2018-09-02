@@ -1,6 +1,6 @@
 {if empty($multiple) && !$noPleaseSelect && $size==1}
 	<option value="0">{if $pleaseSelectLabel}{Label $pleaseSelectLabel}{else}{Label core.form.select.pleaseSelect}{/if}</option>
-	{if sizeof($options)}
+	{if !empty($options) && sizeof($options)}
 	<option value="0" disabled="disabled">---------------------------</option>
 	{/if}
 {/if}

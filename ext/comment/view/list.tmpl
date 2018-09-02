@@ -3,13 +3,13 @@
 	{if isAddInTaskAllowed($idTask)}
 		{Button label="comment.ext.button.addComment" class="addComment" onclick="Todoyu.Ext.comment.add($idTask)"}
 	{/if}
-	{if sizeof($comments) > 1}
+	{if !empty($comments) && sizeof($comments) > 1}
 		{Button label="comment.ext.button.reverseOrder" class="order {if $desc}desc{/if}" onclick="Todoyu.Ext.comment.List.toggleSorting($idTask)"}
 	{/if}
 </div>
 
 	{* List of comments *}
-{if sizeof($comments) > 0}
+{if !empty($comments) && sizeof($comments) > 0}
 	<section class="commentList {if $desc}desc{else}asc{/if}" id="task-{$idTask}-comments">
 	{foreach $comments commentHTML}
 		{$commentHTML}
@@ -22,7 +22,7 @@
 	{if isAddInTaskAllowed($idTask)}
 		{Button label="comment.ext.button.addComment" class="addComment" onclick="Todoyu.Ext.comment.add($idTask)"}
 	{/if}
-	{if sizeof($comments) > 1}
+	{if !empty($comments) && sizeof($comments) > 1}
 		{Button label="comment.ext.button.reverseOrder" class="order {if $desc}desc{/if}" onclick="Todoyu.Ext.comment.List.toggleSorting($idTask)"}
 	{/if}
 </div>

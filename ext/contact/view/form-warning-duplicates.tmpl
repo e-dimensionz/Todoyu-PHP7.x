@@ -1,4 +1,4 @@
-{if sizeof($records) > 0}
+{if !empty($records) && sizeof($records) > 0}
 	<span class="icon"></span>
 	<span class="label">{Label contact.form.warning.duplicatedEntries}:</span>
 

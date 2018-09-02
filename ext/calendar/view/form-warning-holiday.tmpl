@@ -1,4 +1,4 @@
-{if sizeof($holidays) > 0}
+{if !empty($holidays) && sizeof($holidays) > 0}
 	<span class="icon"></span>
 	<span class="label">{Label calendar.event.warning.holidayInRange}</span>
 

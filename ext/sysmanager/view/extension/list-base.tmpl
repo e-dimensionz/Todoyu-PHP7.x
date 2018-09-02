@@ -8,7 +8,7 @@
 	This part is replaced by the contentMessage block
 {/block}
 
-{if sizeof($extensions)>0}
+{if !emnpty($extensions) && sizeof($extensions)>0}
 	<table class="list extlist">
 		<colgroup>
 			<col class="icon" />

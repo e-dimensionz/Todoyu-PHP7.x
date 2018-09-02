@@ -21,7 +21,7 @@
 	<span class="taskNumber">
 		<span class="taskNumberProject">{$task.id_project}.</span><span class="taskNumberTask">{$task.tasknumber}</span>
 	</span>
-	<span class="taskIcons{if sizeof($taskIcons) > 4} taskIconsOverflow{/if}">
+	<span class="taskIcons{if !empty($taskIcons) && sizeof($taskIcons) > 4} taskIconsOverflow{/if}">
 		{foreach $taskIcons taskIcon}
 			<span id="{$taskIcon.id}" class="{$taskIcon.class}" title="{Label $taskIcon.label}" {if $taskIcon.onclick}onclick="{$taskIcon.onclick}"{/if}></span>
 		{/foreach}

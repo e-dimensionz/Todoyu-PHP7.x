@@ -6,7 +6,7 @@
 
 		<p>{Label install.installer.updatetocurrentversion.updates}</p>
 
-		{if sizeof($diff.missingTables) > 0}
+		{if !empty($diff.missingTables) && sizeof($diff.missingTables) > 0}
 			<p class="section">{Label install.installer.updatetocurrentversion.newTables}</p>
 			<table class="dbstruct">
 				<tr>
@@ -32,7 +32,7 @@
 			</table>
 		{/if}
 
-		{if sizeof($diff.missingColumns) > 0}
+		{if !empty($diff.missingColumns) && sizeof($diff.missingColumns) > 0}
 			<p class="section">{Label install.installer.updatetocurrentversion.newColumns}</p>
 			<table class="dbstruct">
 				<tr>
@@ -54,7 +54,7 @@
 			</table>
 		{/if}
 
-		{if sizeof($diff.changedColumns) > 0}
+		{if !empty($diff.changedColumns) && sizeof($diff.changedColumns) > 0}
 			<p class="section">{Label install.installer.updatetocurrentversion.changedColumns}</p>
 			<table class="dbstruct">
 				<tr>
@@ -76,7 +76,7 @@
 			</table>
 		{/if}
 
-		{if sizeof($diff.missingKeys) > 0}
+		{if !empty($diff.missingKeys) && sizeof($diff.missingKeys) > 0}
 			<p class="section">{Label install.installer.updatetocurrentversion.missingKeys}</p>
 			<table class="dbstruct">
 				<tr>
