@@ -60,6 +60,7 @@ Todoyu::$CONFIG['LOCALE']['SYSTEMLOCALES'] = array(
 
 	// Fallback locales for labels
 Todoyu::$CONFIG['LOCALE']['fallback'] = array(
+	'en_CA' => 'en_US',
 	'de_CH'	=> 'de_DE',
 	'de_AT'	=> 'de_DE'
 );
