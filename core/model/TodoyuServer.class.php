@@ -87,7 +87,6 @@ class TodoyuServer {
 		$requiredExtensions	= array(
 			'mbstring',
 			'mysqli',
-			//'mcrypt',
 			'zip',
 			'json',
 			'pcre',

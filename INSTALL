@@ -66,5 +66,5 @@ Instructions to install todoyu
 Debian install todoyu
 ==============================
         * run in Debian 8
-	1. aptitude install apache2 php5 git mysql-server
-	2. aptitude install php5-mcrypt php5-gd php5-mysql 
+	1. aptitude install apache2 php7.x git mysql-server
+	2. aptitude install php5-gd php5-mysql

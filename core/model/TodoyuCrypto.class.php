@@ -1,22 +1,22 @@
 <?php
 /****************************************************************************
-* todoyu is published under the BSD License:
-* http://www.opensource.org/licenses/bsd-license.php
-*
-* Copyright (c) 2012, snowflake productions GmbH, Switzerland
-* All rights reserved.
-*
-* This script is part of the todoyu project.
-* The todoyu project is free software; you can redistribute it and/or modify
-* it under the terms of the BSD License.
-*
-* This script is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the BSD License
-* for more details.
-*
-* This copyright notice MUST APPEAR in all copies of the script.
-*****************************************************************************/
+ * todoyu is published under the BSD License:
+ * http://www.opensource.org/licenses/bsd-license.php
+ *
+ * Copyright (c) 2012, snowflake productions GmbH, Switzerland
+ * All rights reserved.
+ *
+ * This script is part of the todoyu project.
+ * The todoyu project is free software; you can redistribute it and/or modify
+ * it under the terms of the BSD License.
+ *
+ * This script is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the BSD License
+ * for more details.
+ *
+ * This copyright notice MUST APPEAR in all copies of the script.
+ *****************************************************************************/
 
 /**
  * Crypto functions
@@ -27,32 +27,36 @@
 class TodoyuCrypto {
 
 	/**
-	 * Mcrypt instance
-	 *
-	 * @var	Object
+	 * Initialize process cryptkey
 	 */
-	private static $mcrypt = null;
+	private static function cryptKey() {
+		// Generate initialisation vector
+		$method = 'DES-EDE3'; // Or whatever you want
 
+		$vector	= openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
+		// Get the expected key size based on mode and cipher
 
+		$ivSize = openssl_cipher_iv_length($method);
 
-	/**
-	 * Initialize mcrypt
-	 */
-	private static function initMcrypt() {
-		if( is_null(self::$mcrypt) ) {
-				// Open module
-			self::$mcrypt = mcrypt_module_open('tripledes', '', 'ecb', '');
-				// Random seed
-			$random = 596328;
-				// Generate initialisation vector
-			$vector	= mcrypt_create_iv(mcrypt_enc_get_iv_size(self::$mcrypt), $random);
-				// Get the expected key size based on mode and cipher
-			$expectedKeySize = mcrypt_enc_get_key_size(self::$mcrypt);
-				// Get a key in the needed length (use encryption key)
-			$key = substr(Todoyu::$CONFIG['SYSTEM']['encryptionKey'], 0, $expectedKeySize);
-				// Initialize mcrypt library with mode/cipher, encryption key, and random initialization vector
-			mcrypt_generic_init(self::$mcrypt, $key, $vector);
+		if ($ivSize > 0) {
+			/*
+			 * This will fit will with most.
+			 * A few might get a larger key than required, but larger is better than smaller
+			 * since larger keys just get's downsized rather than padded.
+			 *
+			 */
+			$expectedKeySize = $ivSize * 2;
+
+		} else {
+			// Defaults to 128 when IV is not used
+			$expectedKeySize = 16;
 		}
+
+
+
+		// Get a key in the needed length (use encryption key)
+		return substr(Todoyu::$CONFIG['SYSTEM']['encryptionKey'], 0, $expectedKeySize);
+
 	}
 
 
@@ -64,10 +68,10 @@ class TodoyuCrypto {
 	 * @return	String
 	 */
 	public static function encrypt($input) {
-		self::initMcrypt();
+		$key = self::cryptKey();
 
 		$stringToEncrypt	= serialize($input);
-		$encryptedString	= mcrypt_generic(self::$mcrypt, $stringToEncrypt);
+		$encryptedString	= openssl_encrypt($stringToEncrypt, 'DES-EDE3', $key, OPENSSL_RAW_DATA);
 
 		return base64_encode($encryptedString);
 	}
@@ -81,10 +85,10 @@ class TodoyuCrypto {
 	 * @return	Mixed		With unserialize
 	 */
 	public static function decrypt($encryptedString) {
-		self::initMcrypt();
+		$key = self::cryptKey();
 
 		$encryptedString	= base64_decode($encryptedString);
-		$decryptedString	= mdecrypt_generic(self::$mcrypt, $encryptedString);
+		$decryptedString	= openssl_decrypt($encryptedString, 'DES-EDE3', $key, OPENSSL_RAW_DATA);
 
 		return unserialize($decryptedString);
 	}
