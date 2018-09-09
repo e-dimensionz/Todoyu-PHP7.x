@@ -90,7 +90,7 @@ class TodoyuFormValidator {
 			$validator		= key($allowConfig);
 			$validatorConfig= $allowConfig[$validator];
 
-			$allow	= call_user_func(array(self, $validator), $validatorConfig, $formData);
+			$allow	= call_user_func('self::'.$validator, $validatorConfig, $formData);
 		}
 
 		return $allow;
