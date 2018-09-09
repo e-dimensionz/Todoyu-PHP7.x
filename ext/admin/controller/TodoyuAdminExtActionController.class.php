@@ -1,22 +1,22 @@
 <?php
 /****************************************************************************
-* todoyu is published under the BSD License:
-* http://www.opensource.org/licenses/bsd-license.php
-*
-* Copyright (c) 2011, snowflake productions GmbH, Switzerland
-* All rights reserved.
-*
-* This script is part of the todoyu project.
-* The todoyu project is free software; you can redistribute it and/or modify
-* it under the terms of the BSD License.
-*
-* This script is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the BSD License
-* for more details.
-*
-* This copyright notice MUST APPEAR in all copies of the script.
-*****************************************************************************/
+ * todoyu is published under the BSD License:
+ * http://www.opensource.org/licenses/bsd-license.php
+ *
+ * Copyright (c) 2011, snowflake productions GmbH, Switzerland
+ * All rights reserved.
+ *
+ * This script is part of the todoyu project.
+ * The todoyu project is free software; you can redistribute it and/or modify
+ * it under the terms of the BSD License.
+ *
+ * This script is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the BSD License
+ * for more details.
+ *
+ * This copyright notice MUST APPEAR in all copies of the script.
+ *****************************************************************************/
 
 /**
  * Admin Ext action controller
@@ -31,7 +31,7 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 	 *
 	 * @param	Array		$params
 	 */
-	public function init(array $params) {
+	public function init(array $params = array()) {
 		TodoyuRightsManager::restrictAdmin();
 	}
 
@@ -49,21 +49,21 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 
 		TodoyuFrontend::setActiveTab('none');
 
-			// Load config
-		TodoyuExtensions::loadAllAdmin();
+		// Load config
+		TodoyuExtensions::loadAllConfig('admin');
 
-			// Get current admin module
+		// Get current admin module
 		$module	= $params['mod'];
 		if( ! TodoyuAdminManager::isModule($module) ) {
 			$module = TodoyuAdminManager::getActiveModule();
 		} else {
-				// Save current module
+			// Save current module
 			TodoyuAdminPreferences::saveActiveModule($module);
 		}
 
 		TodoyuPage::addBodyClass('module' . ucfirst($module));
 
-			// Add colors stylesheet to page
+		// Add colors stylesheet to page
 		TodoyuColors::generate();
 
 		$panelWidgets	= TodoyuAdminRenderer::renderPanelWidgets();
@@ -72,7 +72,7 @@ class TodoyuAdminExtActionController extends TodoyuActionController {
 		TodoyuPage::setPanelWidgets($panelWidgets);
 		TodoyuPage::setFullContent($fullContent);
 
-			// Render output
+		// Render output
 		return TodoyuPage::render();
 	}
 
