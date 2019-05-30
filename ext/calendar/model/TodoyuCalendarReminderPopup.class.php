@@ -31,8 +31,8 @@ class TodoyuCalendarReminderPopup extends TodoyuCalendarReminder {
 	 *
 	 * @return	Boolean|Integer
 	 */
-	public function getAdvanceTime() {
-		return parent::getAdvanceTime(CALENDAR_TYPE_EVENTREMINDER_POPUP);
+	public function getAdvanceTime($type = CALENDAR_TYPE_EVENTREMINDER_EMAIL) {
+		return parent::getAdvanceTime($type);
 	}
 
 
@@ -42,8 +42,8 @@ class TodoyuCalendarReminderPopup extends TodoyuCalendarReminder {
 	 *
 	 * @return	Integer
 	 */
-	public function getDateRemind() {
-		return parent::getDateRemind(CALENDAR_TYPE_EVENTREMINDER_POPUP);
+	public function getDateRemind($reminderType = CALENDAR_TYPE_EVENTREMINDER_EMAIL) {
+		return parent::getDateRemind($reminderType);
 	}
 
 
@@ -53,7 +53,7 @@ class TodoyuCalendarReminderPopup extends TodoyuCalendarReminder {
 	 *
 	 * @return	String
 	 */
-	public function isDismissed() {
+	public function isDismissed($reminderType) {
 			// Already dismissed or not scheduled at all?
 		$isDismissed	= $this->get('is_remindpopupdismissed') || ($this->getDateRemind() == 0);
 
