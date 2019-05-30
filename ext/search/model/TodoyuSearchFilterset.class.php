@@ -42,7 +42,7 @@ class TodoyuSearchFilterset extends TodoyuBaseObject {
 	 *
 	 * @return	TodoyuContactPerson
 	 */
-	public function getPerson($type) {
+	public function getPerson($type = null) {
 		return $this->getPerson('create');
 	}
 

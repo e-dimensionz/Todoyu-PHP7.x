@@ -197,7 +197,7 @@ class TodoyuCalendarReminderPopupManager {
 		foreach($events as $idEvent => $eventData) {
 			$reminder	= self::getReminderByAssignment($idEvent);
 				// Setup event reminder data / remove dismissed reminders from schedule
-			if( ! $reminder->isDismissed() ) {
+			if( ! $reminder->isDismissed(null) ) {
 				$reminders[] = array(
 					'id'	=> $idEvent,
 					'popup'	=> $reminder->getDateRemind(),
@@ -237,7 +237,7 @@ class TodoyuCalendarReminderPopupManager {
 		$idPerson	= Todoyu::personid($idPerson);
 		$reminder	= self::getReminderByAssignment($idEvent, $idPerson);
 
-		return $reminder->isDismissed();
+		return $reminder->isDismissed(null);
 	}
 
 

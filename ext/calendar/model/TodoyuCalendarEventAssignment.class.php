@@ -74,7 +74,7 @@ class TodoyuCalendarEventAssignment extends TodoyuBaseObject {
 	 *
 	 * @return	TodoyuContactPerson
 	 */
-	public function getPerson($type) {
+	public function getPerson($type = null) {
 		return TodoyuContactPersonManager::getPerson($this->getPersonID());
 	}
 

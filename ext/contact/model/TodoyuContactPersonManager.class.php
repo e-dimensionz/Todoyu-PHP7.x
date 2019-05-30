@@ -74,7 +74,7 @@ class TodoyuContactPersonManager {
 	 * @param	Integer		$idPerson
 	 * @return	TodoyuContactPerson
 	 */
-	public static function getPerson($idPerson) {
+	public static function getPerson($idPerson = null) {
 		return TodoyuRecordManager::getRecord('TodoyuContactPerson', $idPerson);
 	}
 

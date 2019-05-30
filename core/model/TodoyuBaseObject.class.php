@@ -330,7 +330,7 @@ class TodoyuBaseObject implements ArrayAccess, Dwoo_IDataProvider {
 	 * @param	String		$type
 	 * @return	TodoyuContactPerson
 	 */
-	public function getPerson($type) {
+	public function getPerson($type = null) {
 		$idPerson = $this->getPersonID($type);
 
 		return TodoyuContactPersonManager::getPerson($idPerson);
