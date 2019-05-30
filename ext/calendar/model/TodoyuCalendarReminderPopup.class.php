@@ -55,7 +55,7 @@ class TodoyuCalendarReminderPopup extends TodoyuCalendarReminder {
 	 */
 	public function isDismissed($reminderType) {
 			// Already dismissed or not scheduled at all?
-		$isDismissed	= $this->get('is_remindpopupdismissed') || ($this->getDateRemind() == 0);
+		$isDismissed	= $this->get('is_remindpopupdismissed') || ($this->getDateRemind($reminderType) == 0);
 
 		return $isDismissed;
 	}
