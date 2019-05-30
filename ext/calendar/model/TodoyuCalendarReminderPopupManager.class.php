@@ -200,7 +200,7 @@ class TodoyuCalendarReminderPopupManager {
 			if( ! $reminder->isDismissed(null) ) {
 				$reminders[] = array(
 					'id'	=> $idEvent,
-					'popup'	=> $reminder->getDateRemind(),
+					'popup'	=> $reminder->getDateRemindPopup(),
 					'start'	=> intval($eventData['date_start'])
 				);
 			}
@@ -220,7 +220,7 @@ class TodoyuCalendarReminderPopupManager {
 	public static function getDateRemind($idEvent) {
 		$reminder	= self::getReminderByAssignment($idEvent);
 
-		return $reminder->getDateRemind();
+		return $reminder->getDateRemindPopup();
 	}
 
 
