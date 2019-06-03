@@ -29,7 +29,7 @@ class TodoyuCalendarReminderActionController extends TodoyuActionController {
 	/**
 	 * Initialize (restrict rights)
 	 */
-	public function init() {
+	public function init(array $params = array()) {
 		Todoyu::restrict('calendar', 'general:use');
 		Todoyu::restrictInternal();
 	}

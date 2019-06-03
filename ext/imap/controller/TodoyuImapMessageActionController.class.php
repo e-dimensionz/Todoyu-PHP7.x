@@ -29,7 +29,7 @@ class TodoyuImapMessageActionController extends TodoyuActionController {
 	 *
 	 * @param	Array		$params
 	 */
-	public function emlAction(array $params) {
+	public function emlAction(array $params = array()) {
 		$idMessage	= intval($params['message']);
 		$message	= TodoyuImapMessageManager::getMessage($idMessage);
 
