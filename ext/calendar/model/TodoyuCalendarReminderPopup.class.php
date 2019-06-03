@@ -66,8 +66,8 @@ class TodoyuCalendarReminderPopup extends TodoyuCalendarReminder {
 	 *
 	 * @return	Boolean
 	 */
-	public function isDisabled() {
-		return parent::isDisabled(CALENDAR_TYPE_EVENTREMINDER_POPUP);
+	public function isDisabled($reminderType) {
+		return parent::isDisabled($reminderType);
 	}
 
 }

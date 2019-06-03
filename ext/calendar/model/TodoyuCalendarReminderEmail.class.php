@@ -42,8 +42,8 @@ class TodoyuCalendarReminderEmail extends TodoyuCalendarReminder {
 	 *
 	 * @return	Boolean|Integer
 	 */
-	public function getAdvanceTime() {
-		return parent::getAdvanceTime(CALENDAR_TYPE_EVENTREMINDER_EMAIL);
+	public function getAdvanceTime($type = CALENDAR_TYPE_EVENTREMINDER_EMAIL) {
+		return parent::getAdvanceTime($type);
 	}
 
 
@@ -53,8 +53,8 @@ class TodoyuCalendarReminderEmail extends TodoyuCalendarReminder {
 	 *
 	 * @return	Boolean
 	 */
-	public function isDisabled() {
-		return parent::isDisabled(CALENDAR_TYPE_EVENTREMINDER_EMAIL);
+	public function isDisabled($reminderType) {
+		return parent::isDisabled($reminderType);
 	}
 
 
