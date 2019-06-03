@@ -328,6 +328,7 @@ class TodoyuCalendarEventStaticManager {
 						$overbooked[$idPerson]['person']	= $idPerson;
 					}
 
+					if(empty($overbooked[$idPerson]['events'])) $overbooked[$idPerson]['events'] = array();
 					if( count($overbooked[$idPerson]['events']) < Todoyu::$CONFIG['EXT']['calendar']['maxShownOverbookingsPerPerson'] ) {
 						$overbooked[$idPerson]['events'][]	= $otherEvent;
 					}
