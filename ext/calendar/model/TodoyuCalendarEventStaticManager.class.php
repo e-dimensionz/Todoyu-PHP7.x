@@ -324,6 +324,7 @@ class TodoyuCalendarEventStaticManager {
 				$conflictedPersonIDs= array_intersect($personIDs, $assignedPersonIDs);
 
 				foreach($conflictedPersonIDs as $idPerson) {
+					if(empty($overbooked[$idPerson])) $overbooked[$idPerson] = array();
 					if( ! isset($overbooked[$idPerson]['person']) ) {
 						$overbooked[$idPerson]['person']	= $idPerson;
 					}
