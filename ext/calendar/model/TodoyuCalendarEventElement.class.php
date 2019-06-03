@@ -172,8 +172,8 @@ abstract class TodoyuCalendarEventElement {
 	 * @param	Integer
 	 * @return	Array
 	 */
-	public function getTemplateData($date = 0) {
-		$elementTemplateData= $this->getElementTemplateData($date);
+	public function getTemplateData(TodoyuDayRange $range) {
+		$elementTemplateData= $this->getElementTemplateData($range);
 		$eventTemplateData	= $this->getEvent()->getTemplateData(true);
 
 		return array_merge($eventTemplateData, $elementTemplateData);
@@ -213,7 +213,7 @@ abstract class TodoyuCalendarEventElement {
 	 * @param	Integer		$date
 	 * @return	Array
 	 */
-	protected function getElementTemplateData($date = 0) {
+	protected function getElementTemplateData(TodoyuDayRange $range) {
 		$elementData	= array();
 
 			// Add base classes
@@ -261,7 +261,7 @@ abstract class TodoyuCalendarEventElement {
 	 *
 	 * @return	String
 	 */
-	public function render($date = null) {
+	public function render(TodoyuDayRange $range = null) {
 		$tmpl	= $this->getTemplate();
 		$data	= $this->getTemplateData();
 
