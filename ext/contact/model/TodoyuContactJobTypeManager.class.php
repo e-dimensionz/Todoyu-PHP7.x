@@ -133,7 +133,7 @@ class TodoyuContactJobTypeManager {
 		$search		= TodoyuArray::trimExplode(' ', $search, true);
 		$searchFields = array('title');
 
-		if( sizeof($search) > 0 ) {
+		if( !empty($search)  ) {
 			$where = TodoyuSql::buildLikeQueryPart($search, $searchFields);
 		} else {
 			$where = '1';

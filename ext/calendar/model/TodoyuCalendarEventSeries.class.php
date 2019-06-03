@@ -242,7 +242,7 @@ class TodoyuCalendarEventSeries extends TodoyuBaseObject {
 	public function getYearParts() {
 		$yearParts	= $this->getConfig();
 
-		if( sizeof($yearParts) === 0 ) {
+		if( empty($yearParts) ) {
 			if( $this->getEventDate() !== 0 ) {
 				$yearParts = array(
 					'month'	=> date('n', $this->getEventDate()),
@@ -265,7 +265,7 @@ class TodoyuCalendarEventSeries extends TodoyuBaseObject {
 		$config	= $this->getConfig();
 
 			// Get defaults if no config is set
-		if( sizeof($config) === 0 ) {
+		if( empty($config)) {
 			$config = $this->getDefaultWeekDays();
 		}
 
@@ -1012,7 +1012,7 @@ class TodoyuCalendarEventSeries extends TodoyuBaseObject {
 		$personIDs	= TodoyuArray::intval($personIDs, true, true);
 		$limit		= intval($limit);
 
-		if( sizeof($ranges) === 0 || sizeof($personIDs) === 0 ) {
+		if( empty($ranges) || empty($personIDs) ) {
 			return array();
 		}
 
@@ -1045,7 +1045,7 @@ class TodoyuCalendarEventSeries extends TodoyuBaseObject {
 		}
 
 			// Add sub where conditions
-		if( sizeof($subWheres) > 0 ) {
+		if( !empty($subWheres)  ) {
 			$where .= ' AND (' . implode(') OR (', $subWheres) . ')';
 		}
 

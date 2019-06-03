@@ -196,7 +196,7 @@ class TodoyuCalendarViewWeek extends TodoyuCalendarView {
 		$mapPattern			= null;
 		$dayEventElements	= $this->getDayEventsElements();
 
-		if( sizeof($dayEventElements) > 0 ) {
+		if( !empty($dayEventElements)) {
 			$mapPattern			= $this->getRange()->getDayMap('Ymd', false);
 			$dayEventWeekMap[]	= $mapPattern;
 		}
@@ -238,7 +238,7 @@ class TodoyuCalendarViewWeek extends TodoyuCalendarView {
 				$firstDayKey		= array_shift($eventDayKeys);
 				$dayEventWeekMap[$index][$firstDayKey]	= array(
 					'html'	=> $dayEventElement->render($this->getRange()),
-					'length'=> sizeof($eventDayKeys)+1
+					'length'=> !empty($eventDayKeys) ? sizeof($eventDayKeys)+1 : 1
 				);
 
 				foreach($eventDayKeys as $dayKey) {

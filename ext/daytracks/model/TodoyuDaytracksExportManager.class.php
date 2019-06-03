@@ -154,7 +154,7 @@ class TodoyuDaytracksExportManager {
 		$dateStart		= intval($dateStart);
 		$dateEnd		= intval($dateEnd);
 
-		if( sizeof($projectIDs) > 0 ) {
+		if( !empty($projectIDs)  ) {
 			$customerIDs = array();
 		}
 
@@ -181,21 +181,21 @@ class TodoyuDaytracksExportManager {
 				. ' AND track.id_person_create	= person.id';
 		$order	= '	track.date_track ASC';
 
-		if( sizeof($personIDs) > 0 ) {
+		if( !empty($personIDs) ) {
 			$where .= ' AND person.id IN(' . implode(',', $personIDs) . ')';
 		}
 
-		if( sizeof($employerIDs) > 0 ) {
+		if( !empty($employerIDs) ) {
 			$tables	.= ',ext_contact_mm_company_person pcmm';
 			$where .= ' AND person.id = pcmm.id_person
 						AND pcmm.id_company IN(' . implode(',', $employerIDs) . ')';
 		}
 
-		if( sizeof($customerIDs) > 0 ) {
+		if( !empty($customerIDs)  ) {
 			$where .= ' AND company.id IN(' . implode(',', $customerIDs) . ')';
 		}
 
-		if( sizeof($projectIDs) > 0 ) {
+		if( !empty($projectIDs)) {
 			$where .= ' AND project.id IN(' . implode(',', $projectIDs) . ')';
 		}
 

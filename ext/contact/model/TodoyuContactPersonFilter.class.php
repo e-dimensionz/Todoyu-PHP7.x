@@ -75,7 +75,7 @@ class TodoyuContactPersonFilter extends TodoyuSearchFilterBase {
 		$valueParts	= TodoyuArray::trimExplode(' ', $value, true);
 		$queryParts	= false;
 
-		if( sizeof($valueParts) > 0 ) {
+		if( !empty($valueParts)  ) {
 			$fields		= array(
 				self::TABLE . '.username',
 				self::TABLE . '.lastname',
@@ -104,7 +104,7 @@ class TodoyuContactPersonFilter extends TodoyuSearchFilterBase {
 		$valueParts	= TodoyuArray::trimExplode(' ', $value, true);
 		$queryParts	= false;
 
-		if( sizeof($valueParts) > 0 ) {
+		if( !empty($valueParts)  ) {
 			$fields	= array(
 				self::TABLE . '.lastname',
 				self::TABLE . '.firstname',
@@ -369,7 +369,7 @@ class TodoyuContactPersonFilter extends TodoyuSearchFilterBase {
 		$valueParts	= TodoyuArray::trimExplode(' ', $value, true);
 		$queryParts	= false;
 
-		if( sizeof($valueParts) > 0 ) {
+		if( !empty($valueParts) ) {
 			$fields	= array('ext_contact_address.street');
 			$queryParts	= array(
 					'tables'=> array(

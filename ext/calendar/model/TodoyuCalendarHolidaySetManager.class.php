@@ -233,7 +233,7 @@ class TodoyuCalendarHolidaySetManager {
 		$swords		= TodoyuArray::trimExplode(' ', $sword, true);
 		$results	= array();
 
-		if( sizeof($swords) > 0 ) {
+		if( !empty($swords) ) {
 			$fields	= 'id, name';
 			$table	= self::TABLE;
 			$where	= TodoyuSql::buildLikeQueryPart($swords, array('name', 'description'));

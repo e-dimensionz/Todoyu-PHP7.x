@@ -65,7 +65,7 @@ class TodoyuCommentCommentManager {
 
 		$form	= TodoyuFormManager::getForm($xmlPath, $idComment, $formParams, $formData);
 
-		if( sizeof($formData) ) {
+		if( !empty($formData) ) {
 			$form->setFormData($formData);
 		}
 
@@ -249,7 +249,7 @@ class TodoyuCommentCommentManager {
 		$result['feedback'] = TodoyuCommentFeedbackManager::saveFeedbackRequests($idComment, $personFeedbackIDs);
 
 			// Save new uploaded assets
-		if( sizeof($assets) ) {
+		if( !empty($assets) ) {
 			TodoyuCommentAssetManager::saveAssets($data['id'], $idComment, $idTask, $assets);
 		}
 
@@ -260,7 +260,7 @@ class TodoyuCommentCommentManager {
 		TodoyuHookManager::callHook('comment', 'comment.save', array($idComment, $isNew));
 
 			// Send emails
-		if( sizeof($receiverTuples) ) {
+		if( !empty($receiverTuples) ) {
 			$result['email'] = TodoyuCommentMailer::sendEmails($idComment, $receiverTuples);
 		}
 

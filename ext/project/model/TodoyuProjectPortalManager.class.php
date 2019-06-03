@@ -115,7 +115,7 @@ class TodoyuProjectPortalManager {
 	public static function getTodoCount(array $filtersetIDs = array()) {
 		$taskIDs	= self::getTodoTaskIDs();
 
-		return sizeof($taskIDs);
+		return !empty($taskIDs) ? sizeof($taskIDs) : 0;
 	}
 
 }

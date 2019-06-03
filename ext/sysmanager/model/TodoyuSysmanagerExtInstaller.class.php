@@ -319,7 +319,7 @@ class TodoyuSysmanagerExtInstaller {
 		}
 
 			// Return false if no problems were found
-		if( sizeof($foundConflicts) === 0 && sizeof($foundDependencies) === 0 && !$requiredCore ) {
+		if( empty($foundConflicts) && empty($foundDependencies)  && !$requiredCore ) {
 			return false;
 		} else {
 			return array(
@@ -461,7 +461,7 @@ class TodoyuSysmanagerExtInstaller {
 			// Check if the extension conflicts with an installed one
 		$installedConflicts	= TodoyuExtensions::getConflicts($ext);
 
-		if( sizeof($installedConflicts) > 0 ) {
+		if( !empty($installedConflicts) ) {
 			throw new TodoyuSysmanagerInstallerException(Todoyu::Label('sysmanager.extension.install.error.conflicts') . ': ' . implode(', ', $installedConflicts));
 		}
 
@@ -470,7 +470,7 @@ class TodoyuSysmanagerExtInstaller {
 		$installedExts	= TodoyuExtensions::getInstalledExtKeys();
 		$foundConflicts	= array_intersect($extConflicts, $installedExts);
 
-		if( sizeof($foundConflicts) > 0 ) {
+		if( !empty($foundConflicts) ) {
 			throw new TodoyuSysmanagerInstallerException(Todoyu::Label('sysmanager.extension.install.error.conflicts') . ': ' . implode(', ', $foundConflicts));
 		}
 

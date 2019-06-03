@@ -118,7 +118,7 @@ class TodoyuProjectPanelWidgetProjectList extends TodoyuPanelWidgetSearchList {
 	private function getListedProjectsData() {
 		$projectIDs	= $this->getProjectIDs();
 
-		if( sizeof($projectIDs) > 0 ) {
+		if( !empty($projectIDs) ) {
 			$fields	= '	ext_project_project.id,
 						ext_project_project.title,
 						ext_project_project.status,

@@ -105,7 +105,7 @@ class TodoyuSearch {
 		$where	.= $addToWhere;
 		$limit	= intval($limit);
 
-		if( sizeof($ignore) > 0 ) {
+		if( !empty($ignore) ) {
 			$where .= ' AND NOT (' . TodoyuSql::buildLikeQueryPart($ignore, $fields) . ')';
 		}
 

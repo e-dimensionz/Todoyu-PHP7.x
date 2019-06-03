@@ -107,7 +107,7 @@ class TodoyuProjectTaskFilterDataSource {
 		$taskFilter	= new TodoyuProjectTaskFilter($filters);
 		$taskIDs	= $taskFilter->getTaskIDs('', $limit);
 
-		if( sizeof($taskIDs) > 0 ) {
+		if( !empty($taskIDs)) {
 				// Get task details
 			$fields	= 'id, title, id_project, tasknumber';
 			$table	= 'ext_project_task';

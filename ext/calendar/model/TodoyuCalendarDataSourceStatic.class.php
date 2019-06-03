@@ -47,7 +47,7 @@ class TodoyuCalendarDataSourceStatic extends TodoyuCalendarDataSource {
 	public function getEventCount() {
 		$eventIDs	= $this->getEventIDs();
 
-		return sizeof($eventIDs);
+		return !empty($eventIDs) ? sizeof($eventIDs) : 0;
 	}
 
 
@@ -79,7 +79,7 @@ class TodoyuCalendarDataSourceStatic extends TodoyuCalendarDataSource {
 		$field	= 'e.id';
 		$tables	= 'ext_calendar_event e';
 			// Add join to person mm table
-		if( sizeof($personIDs) > 0 ) {
+		if( !empty($personIDs)) {
 			$tables .= ' LEFT JOIN ext_calendar_mm_event_person mmep ON e.id = mmep.id_event';
 		}
 
@@ -107,12 +107,12 @@ class TodoyuCalendarDataSourceStatic extends TodoyuCalendarDataSource {
 		}
 
 			// Limit to given event types
-		if( sizeof($eventTypeIDs) > 0 ) {
+		if( !empty($eventTypeIDs) ) {
 			$where .= ' AND e.eventtype IN(' . implode(',', $eventTypeIDs) . ')';
 		}
 
 			// Limit to given assigned persons
-		if( sizeof($personIDs) > 0 ) {
+		if( !empty($personIDs)) {
 			$where	.= ' AND mmep.id_person IN(' . implode(',', $personIDs) . ')';
 		}
 

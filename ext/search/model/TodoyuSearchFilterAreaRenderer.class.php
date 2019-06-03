@@ -39,7 +39,7 @@ class TodoyuSearchFilterAreaRenderer {
 		$idFilterset= intval($idFilterset);
 
 			// If no filterset and conditions set, check for preset filterset
-		if( $idFilterset === 0 && sizeof($conditions) === 0 ) {
+		if( $idFilterset === 0 && empty($conditions) ) {
 			$idFilterset = TodoyuSearchPreferences::getActiveFilterset($activeTab);
 		}
 
@@ -64,7 +64,7 @@ class TodoyuSearchFilterAreaRenderer {
 		}
 
 			// If filterset or conditions are defined, render search results
-		if( $idFilterset !== 0 || sizeof($conditions) > 0 ) {
+		if( $idFilterset !== 0 || !empty($conditions) ) {
 			$searchResults	= self::renderResults($activeTab, $idFilterset, $conditions, $conjunction);
 		}
 
@@ -227,7 +227,7 @@ class TodoyuSearchFilterAreaRenderer {
 			}
 
 				// Prepare variables
-			$numItems	= sizeof($itemIDs);
+			$numItems	= !empty($itemIDs) ? sizeof($itemIDs) : 0;
 			$totalItems	= $typeFilter->getTotalItems();
 			$resultLabel= self::renderResultInfoText($type, $numItems, $totalItems, $hardLimit);
 		} else {

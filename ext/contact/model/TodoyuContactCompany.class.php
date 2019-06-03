@@ -262,7 +262,7 @@ class TodoyuContactCompany extends TodoyuBaseObject {
 	public function getEmail() {
 		$emails	= $this->getEmails();
 
-		if( sizeof($emails) > 0 ) {
+		if( !empty($emails) ) {
 			return $emails[0]['info'];
 		} else {
 			return false;
@@ -286,7 +286,7 @@ class TodoyuContactCompany extends TodoyuBaseObject {
 	public function getPhone() {
 		$phones = $this->getPhones();
 
-		if( sizeof($phones) ) {
+		if( !empty($phones) ) {
 			return $phones[0]['info'];
 		} else {
 			return false;

@@ -160,7 +160,7 @@ class TodoyuCalendarEventSeriesViewHelper {
 				$eventData	= TodoyuArray::assure($field->getForm()->getVar('eventData'));
 
 					// No event data set, use form data (fallback in case of invalid save request)
-				if( !sizeof($eventData) ) {
+				if( empty($eventData) ) {
 					$eventData = $field->getForm()->getFormData();
 				}
 
@@ -172,7 +172,7 @@ class TodoyuCalendarEventSeriesViewHelper {
 
 					$warningMessages	= $series->getOverbookingConflictsWarningMessages(true);
 
-					if( sizeof($warningMessages) > 0 ) {
+					if( !empty($warningMessages) ) {
 						return implode('<br>', $warningMessages);
 					}
 				}

@@ -632,7 +632,7 @@ class TodoyuCalendarEventStatic extends TodoyuBaseObject implements TodoyuCalend
 		$assignedPersonIDs	= $this->getAssignedPersonIDs();
 		$others				= array_diff($assignedPersonIDs, array(Todoyu::personid()));
 
-		return sizeof($others) > 0;
+		return !empty($others);
 	}
 
 

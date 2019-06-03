@@ -49,7 +49,7 @@ class TodoyuCalendarEventStaticManager {
 //			'eventData'	=> $formData
 //		));
 
-		if( sizeof($formData) ) {
+		if( !empty($formData) ) {
 			$form->setFormData($formData);
 		}
 
@@ -178,14 +178,14 @@ class TodoyuCalendarEventStaticManager {
 		}
 
 			// Limit to given event types
-		if( sizeof($eventTypes) > 0 ) {
+		if( !empty($eventTypes) ) {
 			$where .= ' AND e.eventtype IN(' . implode(',', $eventTypes) . ')';
 		}
 
 			// Not allowed to see all events? Limit to own events!
 		if( ! Todoyu::allowed('calendar', 'event:seeAll') ) {
 			$where .= ' AND mmep.id_person IN(' . Todoyu::personid() . ')';
-		} elseif( sizeof($persons) > 0 ) {
+		} elseif( !empty($persons)  ) {
 				// Limit to given assigned persons
 			$where	.= ' AND mmep.id_person IN(' . implode(',', $persons) . ')';
 		}
@@ -238,7 +238,7 @@ class TodoyuCalendarEventStaticManager {
 	public static function getAssignedPersonsOfEvents(array $eventIDs) {
 		$persons	= array();
 
-		if( sizeof($eventIDs) > 0 ) {
+		if( !empty($eventIDs)  ) {
 			$fields	= 'id_event, id_person';
 			$tables	= 'ext_calendar_mm_event_person';
 			$where	= TodoyuSql::buildInListQueryPart($eventIDs, 'id_event');
@@ -575,7 +575,7 @@ class TodoyuCalendarEventStaticManager {
 		$assignedPersons= $event->getAssignedPersonIDs();
 		$overbookedInfos= self::getOverbookingInfos($dateStart, $dateEnd, $assignedPersons, $idEvent);
 
-		if( sizeof($overbookedInfos) > 0 ) {
+		if( !empty($overbookedInfos) ) {
 			$errorMessages	= array();
 			foreach($overbookedInfos as $idPerson => $infos) {
 				$errorMessages[]	= Todoyu::Label('calendar.event.error.personsOverbooked') . ' ' . TodoyuContactPersonManager::getPerson($idPerson)->getFullName();
@@ -976,7 +976,7 @@ class TodoyuCalendarEventStaticManager {
 		$warning		= '';
 		$overbookedInfos= TodoyuCalendarEventStaticManager::getOverbookingInfos($dateStart, $dateEnd, $personIDs, $idEvent);
 
-		if( sizeof($overbookedInfos) > 0 ) {
+		if( !empty($overbookedInfos)  ) {
 			$tmpl	= 'ext/calendar/view/overbooking-info.tmpl';
 			$formData	= array(
 				'idEvent'		=> $idEvent,

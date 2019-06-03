@@ -72,7 +72,7 @@ class TodoyuContactCompanySearch implements TodoyuSearchEngineIf {
 		$companyIDs		= self::searchCompanies($find, $ignore, $limit);
 
 			// Get comment details
-		if( sizeof($companyIDs) > 0 ) {
+		if( !empty($companyIDs) ) {
 			$fields	= '	c.id,
 						c.title,
 						c.shortname';

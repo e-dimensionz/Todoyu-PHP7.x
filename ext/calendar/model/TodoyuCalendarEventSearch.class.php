@@ -65,7 +65,7 @@ class TodoyuCalendarEventSearch implements TodoyuSearchEngineIf {
 		$eventIDs		= self::searchEvents($find, $ignore, $limit);
 
 			// Get event details
-		if( sizeof($eventIDs) > 0 ) {
+		if( !empty($eventIDs) ) {
 			$fields	= '	e.id,
 						e.date_start,
 						e.date_end,

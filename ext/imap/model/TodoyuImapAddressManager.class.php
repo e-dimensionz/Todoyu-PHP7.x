@@ -199,7 +199,7 @@ class TodoyuImapAddressManager {
 	 */
 	public static function searchAddresses(array $searchWords, array $ignoreIDs = array(), $limit = 500) {
 			// Abort empty input
-		if( sizeof($searchWords) === 0 ) {
+		if( empty($searchWords) ) {
 			return array();
 		}
 
@@ -210,7 +210,7 @@ class TodoyuImapAddressManager {
 		);
 		$likePart	= ' AND ' . TodoyuSql::buildLikeQueryPart($searchWords, $searchFields);
 
-		if( sizeof($ignoreIDs) ) {
+		if( !empty($ignoreIDs) ) {
 			$ignorePart	= ' AND ' . TodoyuSql::buildInListQueryPart($ignoreIDs, 'id', true, true);
 		} else {
 			$ignorePart	= '';

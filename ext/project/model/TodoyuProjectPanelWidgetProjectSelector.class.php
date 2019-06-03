@@ -110,7 +110,7 @@ class TodoyuProjectPanelWidgetProjectSelector extends TodoyuPanelWidgetSearchLis
 		$items		= array();
 		$searchWords= $this->getSearchWords();
 
-		if( sizeof($searchWords) === 0 ) {
+		if( empty($searchWords) ) {
 			return $items;
 		}
 		
@@ -187,7 +187,7 @@ class TodoyuProjectPanelWidgetProjectSelector extends TodoyuPanelWidgetSearchLis
 
 		$selectedJobTypeIDs	= $this->getSelectedGroupIDs();
 
-		if( sizeof($selectedJobTypeIDs) > 0 ) {
+		if( !empty($selectedJobTypeIDs)) {
 			$where .= ' AND jt.id NOT IN(' . implode(',', $selectedJobTypeIDs) . ')';
 		}
 

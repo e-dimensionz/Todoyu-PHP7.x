@@ -56,7 +56,7 @@ class TodoyuCalendarEventMailManager {
 	public static function hookToggleAutoMailField(TodoyuForm $form, $idEvent, array $params) {
 		$autoEmailPersons	= self::getAutoNotifiedPersonIDs($idEvent);
 
-		if( sizeof($autoEmailPersons) === 0 ) {
+		if( empty($autoEmailPersons) ) {
 			$form->removeFieldset('autoemail');
 		}
 
@@ -80,7 +80,7 @@ class TodoyuCalendarEventMailManager {
 		$autoMailRoleIDs	= TodoyuCalendarManager::getAutoMailRoleIDs();
 		$notifiedPersonIDs	= array();
 
-		if( sizeof($autoMailRoleIDs) > 0 ) {
+		if( !empty($autoMailRoleIDs)  ) {
 			$assignedPersons= $event->getAssignedPersons();
 
 			foreach($assignedPersons as $assignedPerson) {
@@ -262,7 +262,7 @@ class TodoyuCalendarEventMailManager {
 	public static function getAutoNotifiedPersonIDsOLD($participantIDs = array()) {
 		$autoMailPersonIDs	= array();
 
-		if( sizeof($participantIDs) > 0 ) {
+		if( !empty($participantIDs)  ) {
 			$participantIDs		= TodoyuArray::intval($participantIDs);
 
 				// Get preset roles
@@ -280,7 +280,7 @@ class TodoyuCalendarEventMailManager {
 				$autoMailPersonIDs	= array_intersect($autoMailPersonIDs, $participantIDs);
 
 					// Sort persons alphabetically
-				if( sizeof($autoMailPersonIDs) > 0 ) {
+				if( !empty($autoMailPersonIDs)  ) {
 					$autoMailPersonIDs	= TodoyuContactPersonManager::sortPersonIDs($autoMailPersonIDs);
 				}
 			}
@@ -347,7 +347,7 @@ class TodoyuCalendarEventMailManager {
 	public static function sendAutoInfoMails($idEvent, array $options = array()) {
 		$autoMailUserIDs = self::getAutoNotifiedPersonIDs($idEvent, true);
 
-		if( sizeof($autoMailUserIDs) > 0 ) {
+		if( !empty($autoMailUserIDs) ) {
 			self::sendEvent($idEvent, $autoMailUserIDs, $options);
 		}
 
@@ -368,7 +368,7 @@ class TodoyuCalendarEventMailManager {
 		$receiverTuples	= TodoyuArray::trim($receiverTuples);
 		$sent			= false;
 
-		if( sizeof($receiverTuples) > 0 ) {
+		if( !empty($receiverTuples) ) {
 			$sent	= self::sendEmails($idEvent, $receiverTuples, $options);
 		}
 

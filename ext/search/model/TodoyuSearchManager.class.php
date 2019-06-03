@@ -174,7 +174,7 @@ class TodoyuSearchManager {
 
 		$searchEngines	= TodoyuArray::assure(Todoyu::$CONFIG['EXT']['search']['engines']);
 
-		if( sizeof($searchEngines) > 0 ) {
+		if( !empty($searchEngines) ) {
 			$searchEngines = TodoyuArray::sortByLabel($searchEngines, 'position');
 		}
 

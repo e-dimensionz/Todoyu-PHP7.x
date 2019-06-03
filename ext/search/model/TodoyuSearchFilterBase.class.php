@@ -425,7 +425,7 @@ abstract class TodoyuSearchFilterBase {
 		$tables		= array();
 		$join		= array();
 
-		if( TodoyuAuth::isAdmin() || sizeof($this->rightsFilters) === 0 ) {
+		if( TodoyuAuth::isAdmin() || empty($this->rightsFilters) ) {
 			return false;
 		}
 
@@ -452,7 +452,7 @@ abstract class TodoyuSearchFilterBase {
 		}
 
 			// Only add WHERE clause
-		if( sizeof($whereParts) > 0 ) {
+		if( !empty($whereParts)) {
 			$where = '(' . implode(' AND ', $whereParts) . ')';
 		} else {
 			$where = '';
@@ -484,7 +484,7 @@ abstract class TodoyuSearchFilterBase {
 		$queryParts	= $this->fetchFilterQueryParts();
 
 			// If no conditions in WHERE clause and $noResultOnEmptyConditions flag set, return flag (no SQL query performed)
-		if( $noResultOnEmptyConditions && sizeof($queryParts['where']) === 0 ) {
+		if( $noResultOnEmptyConditions && empty($queryParts['where']) ) {
 			return false;
 		}
 
@@ -507,7 +507,7 @@ abstract class TodoyuSearchFilterBase {
 		$queryArray['limit']	= $limit;
 
 			// Has custom sorting or use fallback?
-		if( sizeof($queryParts['order']) === 0 ) {
+		if( empty($queryParts['order']) ) {
 			$queryArray['order'] = $sortingFallback;
 		} else {
 			$queryArray['order'] = implode(', ', $queryParts['order']);
@@ -530,7 +530,7 @@ abstract class TodoyuSearchFilterBase {
 		$queryArray['whereAND']	= $whereParts;
 
 			// Filter
-		if( sizeof($queryParts['where']) > 0 ) {
+		if( !empty($queryParts['where']) ) {
 			$basicFilterWhere			= implode(' ' . $connection . ' ', $queryParts['where']);
 			$whereParts[]				= $basicFilterWhere;
 				// Make a backup of the basic filters which are combined by the conjunction of the filterset
@@ -538,13 +538,13 @@ abstract class TodoyuSearchFilterBase {
 		}
 
 			// Join
-		if( sizeof($join) > 0 ) {
+		if( !empty($join)) {
 			$whereParts[] = implode(' AND ', $join);
 				// Save joins for further use
 			$queryArray['join'] = $join;
 		}
 
-		if( sizeof($whereParts) > 0 ) {
+		if( !empty($whereParts) ) {
 			$queryArray['where'] = '(' . implode(') AND (', $whereParts) . ')';
 		}
 
@@ -659,7 +659,7 @@ abstract class TodoyuSearchFilterBase {
 			}
 		}
 
-		if( sizeof($filterObjects) > 0 ) {
+		if( !empty($filterObjects) ) {
 			return TodoyuSearchFiltersetManager::Filter_filterObject($filterObjects, $negate);
 		} else {
 			return false;

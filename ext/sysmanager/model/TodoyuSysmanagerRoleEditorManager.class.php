@@ -63,7 +63,7 @@ class TodoyuSysmanagerRoleEditorManager {
 
 		$data	= array(
 			'rows'	=> array(),
-			'total'	=> sizeof($roles)
+			'total'	=> !empty($roles) ? sizeof($roles) : 0
 		);
 
 			// Add all roles to list

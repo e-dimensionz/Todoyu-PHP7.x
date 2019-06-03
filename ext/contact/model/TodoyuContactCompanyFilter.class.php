@@ -288,7 +288,7 @@ class TodoyuContactCompanyFilter extends TodoyuSearchFilterBase implements Todoy
 		$valueParts	= TodoyuArray::trimExplode(' ', $value, true);
 		$queryParts	= false;
 
-		if( sizeof($valueParts) > 0 ) {
+		if( !empty($valueParts) ) {
 			$fields	= array('ext_contact_address.street');
 			$queryParts	= array(
 					'tables'=> array(
@@ -320,7 +320,7 @@ class TodoyuContactCompanyFilter extends TodoyuSearchFilterBase implements Todoy
 		$valueParts	= TodoyuArray::trimExplode(' ', $value, true);
 		$queryParts	= false;
 
-		if( sizeof($valueParts) > 0 ) {
+		if( !empty($valueParts) ) {
 			$fields	= array('ext_contact_address.zip');
 			$queryParts	= array(
 					'tables'=> array(

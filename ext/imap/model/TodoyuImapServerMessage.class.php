@@ -354,7 +354,7 @@ class TodoyuImapServerMessage {
 	 * @return int
 	 */
 	public function getAmountAttachments() {
-		return sizeof($this->attachments);
+		return !empty($this->attachments) ? sizeof($this->attachments) : 0;
 	}
 
 

@@ -82,7 +82,7 @@ class TodoyuContactContactInfoManagerCompany extends TodoyuContactContactInfoMan
 
 		if( empty($email) ) {
 			$contactEmails	= self::getContactInfos('company', $idCompany, CONTACT_INFOTYPE_CATEGORY_EMAIL);
-			if( sizeof($contactEmails) > 0 ) {
+			if( !empty($contactEmails) ) {
 				$email = $contactEmails[0]['info'];
 			}
 		}

@@ -58,7 +58,7 @@ class TodoyuPortalPanelWidgetFilterPresetList extends TodoyuPanelWidget {
 		foreach($typeKeys as $typeKey) {
 			$typeFiltersets	= TodoyuSearchFiltersetManager::getTypeFiltersets($typeKey, 0, false, true);
 
-			if( sizeof($typeFiltersets) > 0 ) {
+			if( !empty($typeFiltersets) ) {
 				$types[$typeKey]['title'] = TodoyuSearchFilterManager::getFilterTypeLabel($typeKey);
 			}
 

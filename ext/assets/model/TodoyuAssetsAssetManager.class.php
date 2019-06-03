@@ -97,7 +97,7 @@ class TodoyuAssetsAssetManager {
 		$amount = 0;
 
 		foreach($assets as $typeAssets) {
-			$amount += sizeof($typeAssets);
+			$amount += !empty($typeAssets) ? sizeof($typeAssets) : 0;
 		}
 
 		return $amount;
@@ -624,7 +624,7 @@ class TodoyuAssetsAssetManager {
 		$idTask		= intval($idTask);
 		$assetIDs	= self::getTaskAssetIDs($idTask);
 
-		return sizeof($assetIDs) > 0;
+		return !empty($assetIDs);
 	}
 
 
@@ -905,13 +905,13 @@ class TodoyuAssetsAssetManager {
 		$order	= '	a.file_name';
 		$limit	= ($size != '') ? intval($offset) . ',' . intval($size) : '';
 
-		if( sizeof($searchWords) > 0 ) {
+		if( !empty($searchWords) ) {
 			$searchFields	= array('a.file_ext', 'a.file_name');
 			$where			.= ' AND ' . TodoyuSql::buildLikeQueryPart($searchWords, $searchFields);
 		}
 
 			// Add ignore IDs
-		if( sizeof($ignoreIDs) > 0 ) {
+		if( !empty($ignoreIDs) ) {
 			$where .= ' AND ' . TodoyuSql::buildInListQueryPart($ignoreIDs, 'a.id', true, true);
 		}
 

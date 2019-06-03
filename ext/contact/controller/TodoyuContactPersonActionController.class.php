@@ -342,7 +342,7 @@ class TodoyuContactPersonActionController extends TodoyuActionController {
 
 		$persons	= array();
 
-		if( sizeof($duplicates) > 0) {
+		if( !empty($duplicates) ) {
 			foreach( $duplicates as $person) {
 				$personRecord = TodoyuContactPersonManager::getPerson($person['id']);
 				$persons[]['title'] = $personRecord->getFullName() . ' - ' . $personRecord->getCompany()->getTitle() ;

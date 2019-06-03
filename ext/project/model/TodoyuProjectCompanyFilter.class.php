@@ -58,7 +58,7 @@ class TodoyuProjectCompanyFilter extends TodoyuSearchFilterBase implements Todoy
 	public function Filter_projectstatus($value, $negate = false) {
 		$statuses	= TodoyuArray::intExplode(',', $value, true, true);
 
-		if( sizeof($statuses) === 0 ) {
+		if( empty($statuses) ) {
 			return false;
 		}
 
@@ -124,7 +124,7 @@ class TodoyuProjectCompanyFilter extends TodoyuSearchFilterBase implements Todoy
 		$searchWords= TodoyuArray::trimExplode(' ', $searchWords);
 		$queryParts	= false;
 
-		if( sizeof($searchWords) > 0 ) {
+		if( !empty($searchWords) ) {
 			$searchInFields	= array(
 				TodoyuProjectProjectFilter::TABLE . '.id',
 				TodoyuProjectProjectFilter::TABLE . '.title',

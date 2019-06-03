@@ -54,7 +54,7 @@ class TodoyuSearchFilterWidgetManager	{
 		}
 
 			// If no configuration available, log
-		if( sizeof($config) === 0 ) {
+		if( empty($config) ) {
 			TodoyuLogger::logError('Filter widget not found', array($type, $widgetName));
 		}
 
@@ -279,7 +279,7 @@ class TodoyuSearchFilterWidgetManager	{
 
 		$definitions	= TodoyuArray::assure(Todoyu::$CONFIG['FILTERS'][$filterType]['widgets'][$widgetName]);
 
-		if( sizeof($definitions) === 0 ) {
+		if( empty($definitions) ) {
 			TodoyuLogger::logError('Widget definitions not found', array($filterType, $widgetName));
 		}
 

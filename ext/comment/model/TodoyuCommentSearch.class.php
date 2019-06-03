@@ -87,7 +87,7 @@ class TodoyuCommentSearch implements TodoyuSearchEngineIf {
 		$commentIDs		= self::searchComments($find, $ignore, $limit);
 
 			// Get comment details
-		if( sizeof($commentIDs) > 0 ) {
+		if( !empty($commentIDs)  ) {
 			$fields	= '	c.id,
 						c.comment,
 						c.date_create,

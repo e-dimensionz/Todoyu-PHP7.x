@@ -380,7 +380,7 @@ class TodoyuContactCompanyActionController extends TodoyuActionController {
 		$duplicates = TodoyuContactCompanyManager::searchCompany(array($value));
 		$companies	= array();
 
-		if( sizeof($duplicates) > 0) {
+		if( !empty($duplicates)) {
 			foreach( $duplicates as $company) {
 				$companies[]['title'] = TodoyuContactCompanyManager::getCompany($company['id'])->getTitle();
 			}

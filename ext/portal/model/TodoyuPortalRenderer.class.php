@@ -114,7 +114,7 @@ class TodoyuPortalRenderer {
 
 			// Check if type is available as parameter
 		if( ! isset($params['type']) ) {
-			if( sizeof($filtersetIDs) > 0 ) {
+			if( !empty($filtersetIDs)  ) {
 				$type	= TodoyuSearchFiltersetManager::getFiltersetType($filtersetIDs[0]);
 			} else {
 				$type	= 'task';
@@ -124,7 +124,7 @@ class TodoyuPortalRenderer {
 		}
 
 			// Send items amount header to update filter-tab, render items listing
-		if( sizeof($filtersetIDs) === 0 ) {
+		if( empty($filtersetIDs) ) {
 				// No filterset selected
 			TodoyuHeader::sendTodoyuHeader('items', 0);
 
@@ -134,10 +134,10 @@ class TodoyuPortalRenderer {
 			$resultItemIDs	= TodoyuSearchFiltersetManager::getFiltersetsResultItemIDs($filtersetIDs, 200);
 
 				// If only one filterset, get real count
-			if( sizeof($filtersetIDs) === 1 ) {
+			if( !empty($filtersetIDs) && sizeof($filtersetIDs) === 1 ) {
 				$totalCount	= TodoyuSearchFiltersetManager::getFiltersetCount($filtersetIDs[0]);
 			} else {
-				$totalCount	= sizeof($resultItemIDs);
+				$totalCount	= !empty($resultItemIDs) ? sizeof($resultItemIDs) : 0;
 			}
 
 			TodoyuHeader::sendTodoyuHeader('items', $totalCount);

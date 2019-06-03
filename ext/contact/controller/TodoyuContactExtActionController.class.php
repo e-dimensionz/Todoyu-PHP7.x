@@ -86,7 +86,7 @@ class TodoyuContactExtActionController extends TodoyuActionController {
 
 		$records = TodoyuContactContactInfoManager::getContactInfoDuplicates($contactInfo);
 
-		if( sizeof($records) > 0 ) {
+		if( !empty($records) ) {
 			TodoyuHeader::sendTodoyuHeader('duplicates', true);
 		}
 
@@ -106,7 +106,7 @@ class TodoyuContactExtActionController extends TodoyuActionController {
 
 		$records = TodoyuContactAddressManager::getDuplicatedAddresses($addressInformations);
 
-		if( sizeof($records) > 0 ) {
+		if( !empty($records)  ) {
 			TodoyuHeader::sendTodoyuHeader('duplicates', true);
 		}
 

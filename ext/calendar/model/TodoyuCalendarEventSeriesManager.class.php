@@ -336,7 +336,7 @@ class TodoyuCalendarEventSeriesManager {
 
 		if( $idEvent === 0 || $editSeries ) {
 			if( $idEvent === 0 ) {
-				$newEvent	= sizeof($formData) === 0;
+				$newEvent	= empty($formData);
 				$series		= self::getSeries(0);
 			} else {
 				$event		= TodoyuCalendarEventStaticManager::getEvent($idEvent);

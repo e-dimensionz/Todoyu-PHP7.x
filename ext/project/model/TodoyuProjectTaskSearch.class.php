@@ -82,7 +82,7 @@ class TodoyuProjectTaskSearch implements TodoyuSearchEngineIf {
 			// Search matching projects
 		$taskIDs	= self::searchTasks($find, $ignore, $limit);
 
-		if( sizeof($taskIDs) > 0 ) {
+		if( !empty($taskIDs) ) {
 			$fields	= '	t.id,
 						t.id_project,
 						t.tasknumber,
@@ -181,7 +181,7 @@ class TodoyuProjectTaskSearch implements TodoyuSearchEngineIf {
 				// Limit to tasks which are in available projects
 			if( ! Todoyu::allowed('project', 'project:seeAll') ) {
 				$availableProjects = TodoyuProjectProjectManager::getAvailableProjectsForPerson();
-				if( sizeof($availableProjects) > 0) {
+				if( !empty($availableProjects) ) {
 					$addToWhere	.= ' AND ext_project_task.id_project IN(' . implode(',', $availableProjects) . ')';
 				}
 			}

@@ -131,7 +131,7 @@ class TodoyuCommentTaskFilter extends TodoyuSearchFilterBase {
 		$queryParts	= false;
 		$groupIDs	= TodoyuArray::intExplode(',', $groupIDs, true, true);
 
-		if( sizeof($groupIDs) > 0 ) {
+		if( !empty($groupIDs)) {
 			$tables	= array(
 				'ext_project_task',
 				'ext_comment_comment',
@@ -253,7 +253,7 @@ class TodoyuCommentTaskFilter extends TodoyuSearchFilterBase {
 		$queryParts	= false;
 		$roleIDs	= TodoyuArray::intExplode(',', $roleIDs, true, true);
 
-		if( sizeof($roleIDs) > 0 ) {
+		if( !empty($roleIDs)  ) {
 			$tables	= array(
 				'ext_project_task',
 				'ext_comment_comment',

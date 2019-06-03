@@ -38,7 +38,7 @@ class TodoyuContactAddressFilterDataSource {
 		$data = array();
 
 		$cityNames		= TodoyuContactAddressManager::searchStoredCities($input);
-		if( sizeof($cityNames) > 0 ) {
+		if( !empty($cityNames) ) {
 			foreach($cityNames as $cityName) {
 				$data[$cityName] = $cityName;
 			}

@@ -85,7 +85,7 @@ class TodoyuFirstStepsWizardStepCompany extends TodoyuFirstStepsWizardStep {
 		$addresses	= $company->getAddresses();
 		$data	= $company->getTemplateData();
 
-		if( sizeof($addresses) > 0 ) {
+		if( !empty($addresses)  ) {
 			/** @var TodoyuContactAddress $mainAddress */
 			$mainAddress= reset($addresses);
 
@@ -131,7 +131,7 @@ class TodoyuFirstStepsWizardStepCompany extends TodoyuFirstStepsWizardStep {
 
 		$addresses	= $this->getCompany()->getAddresses();
 
-		if( sizeof($addresses) === 0 ) {
+		if( empty($addresses) ) {
 			$idAddress	= TodoyuContactAddressManager::addAddress($data);
 			TodoyuContactCompanyManager::linkAddresses($idCompany, array($idAddress));
 		} else {

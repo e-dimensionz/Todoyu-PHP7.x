@@ -1081,7 +1081,7 @@ class TodoyuImapMailbox {
 			return false;
 		}
 
-		if( sizeof($flags) === 0 ) {
+		if( empty($flags) ) {
 			TodoyuLogger::logNotice('No flags defined for  message <' . $idMessage . '>. Do nothing');
 			return false;
 		}
@@ -1108,7 +1108,7 @@ class TodoyuImapMailbox {
 			return false;
 		}
 
-		if( sizeof($flags) === 0 ) {
+		if( empty($flags)) {
 			TodoyuLogger::logNotice('No flags defined for  message <' . $idMessage . '>. Do nothing');
 			return false;
 		}

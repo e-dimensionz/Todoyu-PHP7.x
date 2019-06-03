@@ -174,7 +174,7 @@ class TodoyuImapImapAccount extends TodoyuBaseObject {
 				$flags	= TodoyuHookManager::callHookDataModifier('imap', 'account.flags', $flags, array($this->getID(), $this));
 			}
 
-			if( sizeof($flags) > 0 ) {
+			if( !empty($flags) ) {
 				$label .= ' (' . implode(', ', $flags) . ')';
 			}
 		}

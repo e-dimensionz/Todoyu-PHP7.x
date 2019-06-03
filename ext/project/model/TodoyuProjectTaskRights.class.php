@@ -336,7 +336,7 @@ class TodoyuProjectTaskRights {
 	public static function isQuickAddAllowed() {
 		$projectIDs	= TodoyuProjectProjectManager::getProjectIDsForTaskAdd();
 
-		return sizeof($projectIDs) > 0;
+		return !empty($projectIDs);
 	}
 
 

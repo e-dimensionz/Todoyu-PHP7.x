@@ -260,7 +260,7 @@ class TodoyuCalendarReminderManager {
 				}
 			}
 
-			if( sizeof($data) > 0 ) {
+			if( !empty($data)  ) {
 				self::updateReminder($reminder->getID(), $data);
 			}
 		}

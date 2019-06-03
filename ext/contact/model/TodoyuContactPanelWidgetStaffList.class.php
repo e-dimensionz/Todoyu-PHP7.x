@@ -112,7 +112,7 @@ class TodoyuContactPanelWidgetStaffList extends TodoyuPanelWidgetSearchList {
 	private function getListedPersons() {
 		$personIDs	= $this->getPersonIDs();
 
-		if( sizeof($personIDs) > 0 ) {
+		if( !empty($personIDs) ) {
 			$fields	=	'p.id,
 						 p.firstname,
 						 p.lastname,

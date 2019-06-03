@@ -154,7 +154,7 @@ class TodoyuProjectTaskManager {
 		$taskIDs= TodoyuArray::intval($taskIDs, true, true);
 		$tasks	= array();
 
-		if( sizeof($taskIDs) > 0 ) {
+		if( !empty($taskIDs) ) {
 			$where	= 'id IN(' . implode(',', $taskIDs) . ')';
 			$tasks	= TodoyuRecordManager::getAllRecords(self::TABLE, $where, $order);
 		}
@@ -315,7 +315,7 @@ class TodoyuProjectTaskManager {
 
 		$allSubTaskIDs	= self::getAllSubTaskIDs($idTask);
 
-		if( sizeof($allSubTaskIDs) > 0 ) {
+		if( !empty($allSubTaskIDs) ) {
 			$where	= 'id IN(' . implode(',', $allSubTaskIDs) . ')';
 			$update	= array(
 				'deleted'		=> 1,
@@ -418,7 +418,7 @@ class TodoyuProjectTaskManager {
 	public static function updateTasks(array $taskIDs, array $data) {
 		$taskIDs= TodoyuArray::intval($taskIDs);
 
-		if( sizeof($taskIDs) > 0 ) {
+		if( !empty($taskIDs) ) {
 			$where	= 'id IN(' . implode(',', $taskIDs) . ')';
 
 			Todoyu::db()->doUpdate(self::TABLE, $where, $data);
@@ -567,7 +567,7 @@ class TodoyuProjectTaskManager {
 		}
 
 			// Remove add if empty
-		if( ! is_array($items['add']['submenu']) || sizeof($items['add']['submenu']) === 0 ) {
+		if( ! is_array($items['add']['submenu']) || empty($items['add']['submenu']) ) {
 			unset($items['add']);
 		}
 
@@ -630,7 +630,7 @@ class TodoyuProjectTaskManager {
 			$order	= 'sorting';
 
 			$newTasks	= Todoyu::db()->getColumn($field, $table, $where, '', $order);
-
+			if(empty($newTasks)) $newTasks = array();
 			while( sizeof($newTasks) > 0 ) {
 				$subTasks = array_merge($subTasks, $newTasks);
 				$where = sprintf($whereF, implode(',', $newTasks));

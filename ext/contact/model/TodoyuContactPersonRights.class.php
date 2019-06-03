@@ -132,7 +132,7 @@ class TodoyuContactPersonRights {
 
 			// Get all projects the current user is allowed to see
 		$projectIDs	= TodoyuProjectProjectManager::getAvailableProjectsForPerson();
-		if( sizeof($projectIDs) > 0 ) {
+		if( !empty($projectIDs) ) {
 				// Get all persons marked "visible for externals" in any of their projects
 			$projectsPersonsIDs	= TodoyuProjectProjectManager::getProjectsPersonsIDs($projectIDs, $withAccount);
 		} else {
@@ -152,7 +152,7 @@ class TodoyuContactPersonRights {
 		$personIDs[]		= Todoyu::personid();
 		$allowedPersonsIDs	= array_unique(array_merge($personIDs, $projectsPersonsIDs, $companyPersonIDs));
 
-		if( sizeof($allowedPersonsIDs) > 0 ) {
+		if( !empty($allowedPersonsIDs) ) {
 			return TodoyuSql::buildInListQueryPart($allowedPersonsIDs, 'id');
 		} else {
 			return ' 0';

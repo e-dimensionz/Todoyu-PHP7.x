@@ -484,7 +484,7 @@ class TodoyuDatabase {
 	 * @return	String
 	 */
 	public function getLastQuery() {
-		$index	= sizeof($this->queryHistory);
+		$index	= empty($this->queryHistory) ? 0 : sizeof($this->queryHistory);
 
 			// Inform about disabled history
 		if( ! $this->config['queryHistory'] ) {

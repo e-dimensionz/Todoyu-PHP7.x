@@ -86,7 +86,7 @@ class TodoyuContactViewHelper {
 		$options	= array();
 		$persons	= TodoyuContactPersonManager::getInternalPersons(false, false, $onlyWithEmail);
 
-		if( sizeof($persons) > 0 ) {
+		if( !empty($persons) ) {
 				// List internal persons
 			foreach($persons as $person) {
 				$options[] = array(
@@ -295,7 +295,7 @@ class TodoyuContactViewHelper {
 		$favoriteCountries			= array();
 		$favoriteCountrySortOrder	= array_flip($favoriteCountryIDs);
 
-		if( sizeof($favoriteCountryIDs) > 0 ) {
+		if( !empty($favoriteCountryIDs) ) {
 			foreach($countryOptions as $countryOption) {
 				if( in_array($countryOption['value'], $favoriteCountryIDs) ) {
 					$sortOrderKey						= $favoriteCountrySortOrder[$countryOption['value']];

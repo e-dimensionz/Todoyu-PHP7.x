@@ -226,7 +226,7 @@ class TodoyuContactContactInfoManager {
 			$duplicates = self::searchForDuplicatedContactInfo($contactInfo);
 		}
 
-		if ( sizeof($duplicates) > 0 ) {
+		if ( !empty($duplicates)  ) {
 			foreach ($duplicates as $duplicatedContactInfo) {
 				$label = '';
 

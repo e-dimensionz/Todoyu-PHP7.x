@@ -134,7 +134,7 @@ class TodoyuCommentCommentActionController extends TodoyuActionController {
 			}
 
 				// Send back feedback status
-			if( sizeof($saveResult['feedback']) ) {
+			if( !empty($saveResult['feedback']) ) {
 				$feedbackData = array();
 				foreach($saveResult['feedback'] as $idPerson) {
 					$feedbackData[] = array(

@@ -265,7 +265,7 @@ class TodoyuSearchFiltersetManager {
 	public static function getFiltersetsCount(array $filtersetIDs) {
 		$resultItems	= self::getFiltersetsResultItemIDs($filtersetIDs);
 
-		return sizeof($resultItems);
+		return !empty($resultItems) ?  sizeof($resultItems) : 0;
 	}
 
 
@@ -595,7 +595,7 @@ class TodoyuSearchFiltersetManager {
 			}
 
 				// If conditions found, build query parts
-			if( sizeof($wheres) > 0 ) {
+			if( !empty($wheres) ) {
 					// Remove double tables
 				$tables	= array_unique($tables);
 				$where	= '(' . implode(' AND ', $wheres) . ')';

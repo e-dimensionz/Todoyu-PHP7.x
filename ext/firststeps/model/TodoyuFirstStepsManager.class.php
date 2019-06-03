@@ -40,7 +40,7 @@ class TodoyuFirstStepsManager {
 		$labelToAdd		= TodoyuArray::diffLeft($newRecords, $dbRecords);
 
 			// Delete removed records
-		if( sizeof($labelsToDelete) > 0 ) {
+		if( !empty($labelsToDelete) ) {
 			$titleList	= TodoyuArray::implodeQuoted($labelsToDelete);
 			$where		= $field . ' IN(' . $titleList . ')';
 

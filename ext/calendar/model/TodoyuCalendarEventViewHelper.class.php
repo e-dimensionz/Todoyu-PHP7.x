@@ -115,9 +115,9 @@ class TodoyuCalendarEventViewHelper {
 		$options[$groupLabel]	= TodoyuContactViewHelper::getInternalPersonOptions($field, true, true, true);
 
 			// Deselect + disable options of persons receiving an automatic notification email
-		if( sizeof($autoNotifiedPersonIDs) > 0 ) {
+		if( !empty($autoNotifiedPersonIDs)  ) {
 			foreach($options as $groupLabel => $groupOptions) {
-				if( sizeof($groupOptions) > 0 ) {
+				if( !empty($groupOptions) ) {
 					foreach($options[$groupLabel] as $optionKey => $option) {
 						if( in_array($option['value'], $autoNotifiedPersonIDs)  ) {
 							$options[$groupLabel][$optionKey]['disabled']	= 1;
@@ -195,7 +195,7 @@ class TodoyuCalendarEventViewHelper {
 		);
 		$searchWords	= TodoyuArray::trimExplode(' ', $input, true);
 
-		if( sizeof($searchWords) > 0 ) {
+		if( !empty($searchWords)  ) {
 			$fields	= '	p.id';
 			$table	= '	ext_contact_person p,
 						ext_contact_mm_company_person mmcp,

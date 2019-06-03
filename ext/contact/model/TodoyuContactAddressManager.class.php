@@ -300,7 +300,7 @@ class TodoyuContactAddressManager {
 
 		$duplicates = self::searchForDuplicatedAddresses($searchWords);
 
-		if ( sizeof($duplicates) > 0 ) {
+		if ( !empty($duplicates)  ) {
 			foreach ($duplicates as $duplicatedAddressInfo) {
 				$label = '';
 
