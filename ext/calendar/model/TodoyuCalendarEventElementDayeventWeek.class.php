@@ -53,11 +53,11 @@ class TodoyuCalendarEventElementDayeventWeek extends TodoyuCalendarEventElementW
 	/**
 	 * Get event element templating data
 	 *
-	 * @param TodoyuDayRange $range
+	 * @param $date
 	 * @return Array
 	 */
-	protected function getElementTemplateData(TodoyuDayRange $range) {
-		$data	= parent::getElementTemplateData($range);
+	protected function getElementTemplateData($date = 0) {
+		$data	= parent::getElementTemplateData($date);
 
 		$data['titleCropLength']= TodoyuCalendarPreferences::isWeekendDisplayed() ? 11 : 16;
 
@@ -94,8 +94,8 @@ class TodoyuCalendarEventElementDayeventWeek extends TodoyuCalendarEventElementW
 	 * @param	TodoyuDayRange		$range		Week in where the elements is rendered
 	 * @return	Array
 	 */
-	public function getTemplateData(TodoyuDayRange $range) {
-		$elementTemplateData= $this->getElementTemplateData($range);
+	public function getTemplateData($date = 0) {
+		$elementTemplateData= $this->getElementTemplateData($date);
 		$eventTemplateData	= $this->getEvent()->getTemplateData(true);
 
 		return array_merge($eventTemplateData, $elementTemplateData);

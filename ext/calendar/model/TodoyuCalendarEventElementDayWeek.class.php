@@ -52,7 +52,7 @@ abstract class TodoyuCalendarEventElementDayWeek extends TodoyuCalendarEventElem
 	 * @param	Integer		$date
 	 * @return	Array
 	 */
-	protected function getElementTemplateData(TodoyuDayRange $range) {
+	protected function getElementTemplateData($range = 0) {
 		$elementData	= parent::getElementTemplateData($range);
 
 		$elementData['positionStyles']	= $this->getPositionStyleString($range);
