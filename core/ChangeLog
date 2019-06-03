@@ -1,5 +1,9 @@
 todoyu core changelog
 
+core 3.0.2 - 2019-06-04
+	* Fixed: Many bugs from the PHP7.x migration
+	* Fixed: Bugs reported by J.R. (Thank you!)
+
 core 2.3.1 - 2013-12-31
 	* Added: Enlarged width of rte - input
 	* Added: Button for scrolling to top, that appears when scrolling down on long pages
