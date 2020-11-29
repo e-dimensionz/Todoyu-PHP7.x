@@ -918,10 +918,11 @@ Todoyu.Ui = {
 	 */
 	buildCalendarFieldConfig: function(fieldConfig) {
 		fieldConfig	= fieldConfig || {};
+		const currentYear = new Date();
 
 		if( !this.calendarDefaultOptions ) {
 			this.calendarDefaultOptions = {
-				range:		[1990,2020],
+				range:		[1990, currentYear.getFullYear()+5],
 				align:		"br",
 				firstDay:	1,
 				onClose:	Todoyu.Helper.onCalendarDateChanged.bind(Todoyu.Helper)
