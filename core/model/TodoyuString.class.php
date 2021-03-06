@@ -699,12 +699,12 @@ class TodoyuString {
 		$replaceSimple	= '\1<a href="http://\2" target="_blank">\2</a>';
 
 			// Find mailto links
-		$patternEmail	= '/(?<before>mailto:)(?<completeTag><(?<tagOpen>\w+)(?<tagattributes>[^>]?)*>)?(?<content>[\w-\.]+@[\w-\.]+)(?<tagClose><\/\2>)?/';
+		$patternEmail	= "/(?<before>mailto:)(?<completeTag><(?<tagOpen>\w+)(?<tagattributes>[^>]?)*>)?(?<content>[-\w\.]+@[-\w\.]+)(?<tagClose><\/\2>)?/";
 
 			// Replace URLs
 		$htmlContent	= preg_replace($patternFull, $replaceFull, $htmlContent);
 		$htmlContent	= preg_replace($patternSimple, $replaceSimple, $htmlContent);
-		$htmlContent	= preg_replace_callback($patternEmail, "self::replaceEmailInText", $htmlContent);
+		$htmlContent	= preg_replace_callback($patternEmail, array("TodoyuString","replaceEmailInText"), $htmlContent);
 
 		return $htmlContent;
 	}

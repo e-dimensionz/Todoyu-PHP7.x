@@ -31,7 +31,7 @@ class TodoyuCrypto {
 	 */
 	private static function cryptKey() {
 		// Generate initialisation vector
-		$method = 'DES-EDE3'; // Or whatever you want
+		$method = 'AES-128-CBC'; // Or whatever you want
 
 		$vector	= openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
 		// Get the expected key size based on mode and cipher

@@ -101,7 +101,7 @@ class TodoyuProjectPortalManager {
 		$dateA	= $taskA['istask'] && $taskA['date_end'] ? $taskA['date_end'] : $taskA['date_deadline'];
 		$dateB	= $taskB['istask'] && $taskB['date_end'] ? $taskB['date_end'] : $taskB['date_deadline'];
 
-		return $dateA === $dateB ? 0 : $dateA < $dateB ? -1 : 1;
+		return $dateA === $dateB ? 0 : ($dateA < $dateB ? -1 : 1);
 	}
 
 
