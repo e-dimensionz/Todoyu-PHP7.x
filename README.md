@@ -26,6 +26,6 @@ We are also taking suggestions on new names for this revival fork.
 
 If you like this revival, Please buy us a beer :)
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/edimensionz)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/edimensionzinc)
 
 
