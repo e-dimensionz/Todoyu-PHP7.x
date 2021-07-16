@@ -198,7 +198,7 @@ class TodoyuExportCSV extends TodoyuExportBase {
 	 *
 	 * @param	String	$filename
 	 */
-	public function download($filename = '') {
+	public function download($type = '', $filename = '') {
 		parent::download('text/csv', $filename);
 	}
 
