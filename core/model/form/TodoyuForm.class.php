@@ -411,7 +411,7 @@ class TodoyuForm implements ArrayAccess {
 			/**
 			 * @var	$field	TodoyuFormElement
 			 */
-			if( ! is_null($this->formdata[$name]) ) {
+			if( ! empty($this->formdata[$name]) ) {
 				$field->setValue($this->formdata[$name], false);
 			}
 		}

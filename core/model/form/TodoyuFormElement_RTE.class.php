@@ -48,7 +48,7 @@ class TodoyuFormElement_RTE extends TodoyuFormElement_Textarea {
 	 * @return	String
 	 */
 	private function buildRTEjs() {
-		$extraOptions	= TodoyuArray::assure($this->config['tinymce']);
+		$extraOptions	= TodoyuArray::assure($this->config['tinymce'] ?? []);
 		$config			= array();
 
 			// Add own callback to focus the active editor (auto_focus fails because of a bug)

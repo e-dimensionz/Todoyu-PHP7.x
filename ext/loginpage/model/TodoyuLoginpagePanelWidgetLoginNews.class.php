@@ -54,7 +54,7 @@ class TodoyuLoginpagePanelWidgetLoginNews extends TodoyuPanelWidget {
 	public function renderContent() {
 		$tmpl	= 'ext/loginpage/view/panelwidget-loginnews.tmpl';
 		$data	= array(
-			'content'	=> TodoyuLoginpageLoginNewsManager::getNewsFileContent()
+			'content'	=> ''
 		);
 
 		return Todoyu::render($tmpl, $data);

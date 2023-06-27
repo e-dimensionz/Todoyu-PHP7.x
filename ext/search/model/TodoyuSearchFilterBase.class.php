@@ -323,7 +323,7 @@ abstract class TodoyuSearchFilterBase {
 					// Filter function parameters
 				$params		= array(
 					$filter['value'],
-					$filter['is_negated'] == 1
+					$filter['is_negated'] ?? 0 == 1
 				);
 
 					// Call filter function to get query parts for filter
@@ -336,7 +336,7 @@ abstract class TodoyuSearchFilterBase {
 
 					#### Add queryParts from filter ####
 					// Add tables
-				if( is_array($filterQueryParts['tables']) ) {
+				if( !empty($filterQueryParts['tables']) && is_array($filterQueryParts['tables']) ) {
 					$queryParts['tables'] = TodoyuArray::merge($queryParts['tables'], $filterQueryParts['tables']);
 				}
 					// Add WHERE
@@ -344,11 +344,11 @@ abstract class TodoyuSearchFilterBase {
 					$queryParts['where'][] = $filterQueryParts['where'];
 				}
 					// Add JOIN WHERE
-				if( is_array($filterQueryParts['join']) ) {
+				if(  !empty($filterQueryParts['join']) && is_array($filterQueryParts['join']) ) {
 					$queryParts['join'] = TodoyuArray::merge($queryParts['join'], $filterQueryParts['join']);
 				}
 					// Add remove tables
-				if( is_array($filterQueryParts['removeTables']) ) {
+				if( !empty($filterQueryParts['removeTables']) && is_array($filterQueryParts['removeTables']) ) {
 					$queryParts['removeTables'] = TodoyuArray::merge($queryParts['removeTables'], $filterQueryParts['removeTables']);
 				}
 			} else {
@@ -492,8 +492,8 @@ abstract class TodoyuSearchFilterBase {
 		$rightsParts= $this->fetchRightsQueryParts();
 
 			// Combine join from filter and rights
-		$join	= array_unique(TodoyuArray::merge($queryParts['join'], $rightsParts['join']));
-		$tables	= array_unique(TodoyuArray::merge($queryParts['tables'], $rightsParts['tables']));
+		$join	= array_unique(TodoyuArray::merge($queryParts['join'], $rightsParts ? $rightsParts['join'] : []));
+		$tables	= array_unique(TodoyuArray::merge($queryParts['tables'], $rightsParts ? $rightsParts['tables'] : []));
 			// Remove tables
 		$tables	= array_diff($tables, $queryParts['removeTables']);
 

@@ -84,7 +84,7 @@ class TodoyuSearchFilterConditionManager {
 		$config = self::getTypeFilterConditions(TodoyuSearchFiltersetManager::getFiltersetType($idFilterset));
 			// Remove conditions without configuration
 		foreach($conditions as $key => $condition) {
-			if( ! $config[$condition['filter']] ) {
+			if( empty($config[$condition['filter']])) {
 				unset($conditions[$key]);
 			}
 		}

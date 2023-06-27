@@ -43,7 +43,7 @@ class TodoyuSearchHeadletQuickSearch extends TodoyuHeadletTypeOverlay {
 		$data	= array(
 			'name'			=> $this->getName(),
 			'searchModes'	=> TodoyuSearchManager::getEngines(),
-			'query'			=> $this->params['query']
+			'query'			=> $this->params['query'] ?? ''
 		);
 
 		return Todoyu::render($tmpl, $data);

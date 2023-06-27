@@ -182,6 +182,9 @@ class TodoyuInstallerRenderer {
 
 			// PreRender database selection options
 		foreach($databases as $database) {
+            if($database == 'information_schema' || $database == 'mysql' || $database == 'performance_schema') {
+                continue;
+            }
 			$dbConf['database']	= $database;
 			$tables				= TodoyuDbAnalyzer::getDatabaseTables($dbConf);
 			$dbOptions[] = array(

@@ -127,7 +127,7 @@ class TodoyuTimetracking {
 	public static function getTaskID() {
 		$record	= self::getCurrentTracking();
 
-		return intval($record['id_task']);
+		return intval($record['id_task'] ?? 0);
 	}
 
 

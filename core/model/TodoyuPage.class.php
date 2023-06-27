@@ -141,7 +141,7 @@ class TodoyuPage {
 		$files	= TodoyuArray::assure(Todoyu::$CONFIG['EXT'][$ext]['assets']['css']);
 
 		foreach($files as $file) {
-			self::addStylesheet($file['file'], $file['media'], $file['position'], $file['compress'], $file['merge']);
+			self::addStylesheet($file['file'], $file['media'] ?? 'all', $file['position'] ?? 100, $file['compress'] ?? true, $file['merge'] ?? true);
 		}
 	}
 

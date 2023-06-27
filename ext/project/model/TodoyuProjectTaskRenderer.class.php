@@ -52,6 +52,7 @@ class TodoyuProjectTaskRenderer {
 		if( $isExpanded ) {
 			$activeTab		= TodoyuProjectPreferences::getActiveItemTab($idTask, TodoyuProjectTaskManager::getTask($idTask)->getTypeKey());
 			$data['details']= TodoyuProjectTaskRenderer::renderTaskDetail($idTask, $activeTab);
+            if(empty($data['task']['class'])) $data['task']['class'] = '';
 			$data['task']['class'] .= ' expanded';
 		}
 

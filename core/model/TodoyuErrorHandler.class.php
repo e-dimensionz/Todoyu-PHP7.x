@@ -88,7 +88,7 @@ class TodoyuErrorHandler {
 	 * @param	Array		$context
 	 * @return	Boolean
 	 */
-	public static function handleError($errorno, $errorstr, $file, $line, $context) {
+	public static function handleError($errorno, $errorstr, $file, $line, $context=null) {
 		if( self::$active !== true ) {
 			return true;
 		}

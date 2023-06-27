@@ -68,7 +68,7 @@ class TodoyuFormElement_Date extends TodoyuFormElement {
 		$format	= $this->getFormat();
 
 		$baseConfig	= self::getBaseCalendarConfig($htmlID, $format);
-		$fieldConfig= TodoyuArray::assure($this->config['calendar']);
+		$fieldConfig= TodoyuArray::assure($this->config['calendar'] ?? []);
 		$config		= array_merge($baseConfig, $fieldConfig);
 		$jsCode		= 'Todoyu.Ui.initCalendar(' . json_encode($config) . ');';
 

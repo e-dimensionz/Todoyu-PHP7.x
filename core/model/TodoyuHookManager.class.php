@@ -46,7 +46,7 @@ class TodoyuHookManager {
 		$extKey	= strtolower($extKey);
 		$name	= trim(strtolower($name));
 
-		$hooks	= TodoyuArray::assure(self::$hooks[$extKey][$name]);
+		$hooks	= TodoyuArray::assure(self::$hooks[$extKey][$name] ?? '');
 		$hooks	= TodoyuArray::sortByLabel($hooks, 'position');
 
 		return TodoyuArray::getColumn($hooks, 'function');

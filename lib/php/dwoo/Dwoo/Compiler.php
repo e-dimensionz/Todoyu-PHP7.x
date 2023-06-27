@@ -1663,10 +1663,10 @@ class Dwoo_Compiler implements Dwoo_ICompiler
 			if ($this->debug) echo 'FUNC ADDS '.((isset($paramstr) ? strlen($paramstr) : 0) + (')' === $paramsep ? 2 : ($paramspos === false ? 0 : 1)) + strlen($func)).' TO POINTER<br/>';
 		}
 
-		if ($curBlock === 'method' || $func === 'do' || strstr($func, '::') !== false) {
+		if ($curBlock === 'method' || $func === 'do' || strstr($func, '::') !== false || is_callable($func)) {
 			$pluginType = Dwoo::NATIVE_PLUGIN;
-		} else {
-			$pluginType = $this->getPluginType($func);
+		} else {        
+            $pluginType = $this->getPluginType($func);
 		}
 
 		// blocks
@@ -1769,7 +1769,12 @@ class Dwoo_Compiler implements Dwoo_ICompiler
 					$funcCompiler = 'Dwoo_Plugin_'.$func.'_compile';
 				}
 				array_unshift($params, $this);
-				$output = call_user_func_array($funcCompiler, $params);
+                $param_list = array();
+                foreach ($params as $key => $param) {
+                    if($key == 0 || !is_numeric($key))
+                        $param_list[] = $param;
+                }
+				$output = call_user_func_array($funcCompiler, $param_list);
 			} else {
 				array_unshift($params, '$this');
 				$params = self::implode_r($params);
@@ -2117,7 +2122,8 @@ class Dwoo_Compiler implements Dwoo_ICompiler
 
 				$output = preg_replace('#(^""\.|""\.|\.""$|(\()""\.|\.""(\)))#', '$2$3', '$this->readVar("'.$key.'")');
 			} else {
-				$output = $this->parseVarKey($key, $hasModifiers ? 'modifier' : $curBlock);
+                $substr = substr($in, $from, $to-$from);
+				$output = $this->parseVarKey($key, $hasModifiers ? 'modifier' : $curBlock, (substr($in, $from+strlen($key)+1, 1)) == '}');
 			}
 
 			// methods
@@ -2268,7 +2274,7 @@ class Dwoo_Compiler implements Dwoo_ICompiler
 	 * @param string $curBlock the current parser-block being processed
 	 * @return string parsed variable
 	 */
-	protected function parseVarKey($key, $curBlock)
+	protected function parseVarKey($key, $curBlock, $isOutput)
 	{
 		if ($key === '') {
 			return '$this->scope';
@@ -2304,8 +2310,11 @@ class Dwoo_Compiler implements Dwoo_ICompiler
 				} else {
 					if ($curBlock === 'root') {
 						$output = '$this->scope["'.$key.'"]';
+                        if($isOutput) {
+                            $output = '('.$output.' ?? null)';
+                        }
 					} else {
-						$output = '(isset($this->scope["'.$key.'"]) ? $this->scope["'.$key.'"] : null)';
+                        $output = '(isset($this->scope["'.$key.'"]) ? $this->scope["'.$key.'"] : null)';
 					}
 				}
 			} else {
@@ -2470,7 +2479,7 @@ class Dwoo_Compiler implements Dwoo_ICompiler
 		}
 
 		$breaker = false;
-		while (list($k,$char) = each($breakChars)) {
+		foreach ((array)$breakChars as $k => $char) {
 			$test = strpos($substr, $char);
 			if ($test !== false && $test < $end) {
 				$end = $test;
@@ -2976,7 +2985,7 @@ class Dwoo_Compiler implements Dwoo_ICompiler
 		}
 
 		// loops over the param map and assigns values from the template or default value for unset optional params
-		while (list($k,$v) = each($map)) {
+		foreach ((array)$map as $k => $v) {
 			if ($v[0] === '*') {
 				// "rest" array parameter, fill every remaining params in it and then break
 				if (count($ps) === 0) {

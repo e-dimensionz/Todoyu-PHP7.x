@@ -102,7 +102,7 @@ class TodoyuCalendarDataSourceManager {
 	 * @param	String		$name
 	 * @return	Array
 	 */
-	protected function getDataSourceConfig($name) {
+	protected static function getDataSourceConfig($name) {
 		return TodoyuArray::assure(self::$dataSourceConfigs[$name]['config']);
 	}
 

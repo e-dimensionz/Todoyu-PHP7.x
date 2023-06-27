@@ -730,7 +730,7 @@ class TodoyuPageAssetManager {
 	/**
 	 * Add IE custom scripts to the browser (if its an IE)
 	 */
-	function addInternetExplorerAssets() {
+	static function addInternetExplorerAssets() {
 		if( TodoyuBrowserInfo::isIE() ) {
 			self::addStylesheet('core/asset/css/compatibility/ie.scss', 'all', 1000);
 

@@ -48,7 +48,7 @@ class TodoyuFormHook {
 	 */
 	private static function getHooks($type, $xmlPath) {
 		$xmlPath= TodoyuFileManager::pathWeb($xmlPath);
-		$hooks	= self::$hooks[$type][$xmlPath];
+		$hooks	= self::$hooks[$type][$xmlPath] ?? null;
 
 		if( ! is_array($hooks) ) {
 			$hooks = array();

@@ -763,11 +763,11 @@ class TodoyuFileManager {
 			curl_setopt($ch, CURLOPT_HEADER, true);
 		}
 
-		if( sizeof($options['requestHeaders']) > 0 ) {
+		if( !empty($options['requestHeaders'])) {
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $options['requestHeaders']);
 		}
 
-		if( sizeof($options['curl']) > 0 ) {
+		if( !empty($options['curl']) ) {
 			curl_setopt_array($ch, $options['curl']);
 		}
 

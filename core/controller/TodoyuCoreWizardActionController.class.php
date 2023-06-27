@@ -34,8 +34,8 @@ class TodoyuCoreWizardActionController extends TodoyuActionController {
 	 * @return	String
 	 */
 	public function loadAction(array $params) {
-		$wizardName	= trim($params['wizard']);
-		$step		= trim($params['step']);
+		$wizardName	= trim($params['wizard'] ?? '');
+		$step		= trim($params['step'] ?? '');
 
 		$wizard		= TodoyuWizardManager::getWizard($wizardName);
 
@@ -58,7 +58,7 @@ class TodoyuCoreWizardActionController extends TodoyuActionController {
 		$step		= trim($params['step']);
 		$direction	= trim($params['direction']);
 		$noSave		= (boolean)$params['nosave'];
-		$data		= TodoyuArray::assure($params['data']);
+		$data		= TodoyuArray::assure($params['data'] ?? '');
 
 		$wizard		= TodoyuWizardManager::getWizard($wizardName);
 

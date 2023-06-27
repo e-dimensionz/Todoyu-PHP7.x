@@ -181,7 +181,8 @@ class TodoyuBrowserInfo {
 		$accepted	= explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
 
 		foreach($accepted as $acceptedLocale) {
-			list($localeString, $quality) = explode(';', $acceptedLocale);
+			$l = explode(';', $acceptedLocale);
+            $localeString = $l[0];
 
 			if( strstr($localeString, '-') ) {
 				list($lang, $country) = explode('-', $localeString);

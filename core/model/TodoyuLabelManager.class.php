@@ -175,11 +175,16 @@ class TodoyuLabelManager {
 	 * @return	String		The label with the key $index for $language
 	 */
 	private static function getCachedLabel($extKey, $fileKey, $labelKey, $locale) {
-		if( ! is_string(self::$cache[$extKey][$fileKey][$locale][$labelKey]) ) {
+        if(empty(self::$cache)) self::$cache = array();
+        if(empty(self::$cache[$extKey])) self::$cache[$extKey] = array();
+        if(empty(self::$cache[$extKey][$fileKey])) self::$cache[$extKey][$fileKey] = array();
+        if(empty(self::$cache[$extKey][$fileKey][$locale])) self::$cache[$extKey][$fileKey][$locale] = array();
+
+		if( empty(self::$cache[$extKey][$fileKey][$locale][$labelKey]) || ! is_string(self::$cache[$extKey][$fileKey][$locale][$labelKey]) ) {
 			self::$cache[$extKey][$fileKey][$locale] = self::getFileLabels($extKey, $fileKey, $locale);
 		}
 
-		return self::$cache[$extKey][$fileKey][$locale][$labelKey];
+		return self::$cache[$extKey][$fileKey][$locale][$labelKey] ?? '';
 	}
 
 

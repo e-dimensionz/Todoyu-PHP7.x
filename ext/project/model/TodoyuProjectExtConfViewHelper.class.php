@@ -118,7 +118,7 @@ class TodoyuProjectExtConfViewHelper {
 	public static function getMaxNumberOfOpenProjects(){
 		$conf	= self::getExtConf();
 
-		return intval($conf['maxOpenProjects']) > 0 ? intval($conf['maxOpenProjects']) : 3;
+		return intval($conf['maxOpenProjects'] ?? 0) > 0 ? intval($conf['maxOpenProjects'] ?? 0) : 3;
 	}
 
 

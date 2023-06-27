@@ -53,7 +53,7 @@ class TodoyuHeadletQuickCreate extends TodoyuHeadletTypeMenu {
 				'label'	=> $engine['label']
 			);
 
-			if( $engine['isPrimary'] ) {
+			if( $engine['isPrimary'] ?? false ) {
 				$item['class']	.= ' primary';
 				$item['id']		.= '-primary';
 			}

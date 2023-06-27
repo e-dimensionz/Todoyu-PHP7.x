@@ -146,7 +146,7 @@ class TodoyuBaseObject implements ArrayAccess, Dwoo_IDataProvider {
 	 * @return	Mixed
 	 */
 	public function get($key) {
-		return $this->data[$key];
+		return $this->data[$key] ?? null;
 	}
 
 

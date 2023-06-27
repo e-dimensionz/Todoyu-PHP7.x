@@ -46,9 +46,12 @@ class TodoyuSession {
 	public static function get($path) {
 		$parts	= explode('/', $path);
 		$key	= array_shift($parts);
-		$value	= $_SESSION[self::key()][$key];
+		$value	= isset($_SESSION[self::key()]) && isset($_SESSION[self::key()][$key]) ? $_SESSION[self::key()][$key] : null;
 
 		foreach($parts as $part) {
+            if(empty($value[$part])) {
+                continue;
+            }
 			$value = $value[$part];
 		}
 

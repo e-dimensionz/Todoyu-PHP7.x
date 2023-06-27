@@ -209,7 +209,7 @@ abstract class TodoyuFormElement implements TodoyuFormElementInterface {
 		}
 
 		$this->config['htmlId']			= $this->getForm()->makeID($this->name);
-		$this->config['htmlName']		= $this->getForm()->makeName($this->name, $this->config['multiple']);
+		$this->config['htmlName']		= $this->getForm()->makeName($this->name, $this->config['multiple'] ?? false);
 //		$this->config['label']			= $this->config['label'] ? TodoyuString::getLabel($this->config['label']) : '&nbsp;';
 		$this->config['containerClass']	= 'type' . ucfirst($this->type) . ' fieldname' . ucfirst(str_replace('_', '', $this->name));
 		$this->config['inputClass']		= $this->type;
@@ -347,7 +347,7 @@ abstract class TodoyuFormElement implements TodoyuFormElementInterface {
 	 * @return	Mixed
 	 */
 	public function getAttribute($name) {
-		return $this->config[$name];
+		return $this->config[$name] ?? null;
 	}
 
 
@@ -687,7 +687,7 @@ abstract class TodoyuFormElement implements TodoyuFormElementInterface {
 	 * @param	Array		$validatorConfig
 	 * @return	Boolean
 	 */
-	private final function runValidator($validatorName, array $validatorConfig) {
+	private function runValidator($validatorName, array $validatorConfig) {
 		$isValid = TodoyuFormValidator::validate($validatorName, $this->getStorageData(true), $validatorConfig, $this, $this->getForm()->getFormData());
 
 			// If validation failed, set error message
