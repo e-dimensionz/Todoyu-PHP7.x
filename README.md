@@ -1,6 +1,12 @@
 # Todoyu for PHP7!
 
-**PHP 8 Support coming soon - Most fixes are already implemented**
+**!!! IMPORTANT RE: PHP 8 Support! The new repo is [here](https://github.com/e-dimensionz/Todoyu-PHP8.x)**
+
+**THE CODE IS UNSTABLE AND NOT READY FOR USE YET!**
+
+We are getting there. We use this software as well so we are desperate to getting it live. Any help would speed up progress
+
+---
 
 This is the latest version of `todoyu` ported/modded to work with PHP 7.x.
 I worked all the bugs I could find so far.
